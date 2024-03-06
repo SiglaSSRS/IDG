@@ -1,0 +1,93 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="sacstrutturasize9">
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3">			
+</HEADER>
+<FOOTER>
+<include file="\INCLUDE\IncludedStruttura.frw" value="footercartaintestatasac">
+</FOOTER>
+<BODY>
+<TEXT>
+<BR><BR><BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=25%>A mezzo</TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond><then>EGREGIO SIGNOR<else>GENTILE SIG.RA</if></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> (cqs <valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs>)</TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs>  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs>  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs></TD>
+</TR><BR><BR><BR><BR><BR>
+<TR>
+<TD WIDTH=25%>e p.c.</TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>SPETTABILE</TD><BR>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCTR00F/RECORD/IDGFCTR_RAGSOC_MED</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCTR00F/RECORD/IDGFCTR_INDIR_MED</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CAP_MED</valueabs>  <valueabs>IDGFCTR00F/RECORD/IDGFCTR_LOCAL_MED</valueabs>  <valueabs>IDGFCTR00F/RECORD/IDGFCTR_PROV_MED</valueabs></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+<BR>
+<BR>
+<TABLE WIDTH=100%><TR>
+<TD WIDTH=100% ALIGN="J">
+Conegliano,<valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs> <BR><BR>
+Oggetto: Richiesta recesso contratto nr. <valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs> a nome <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>.<BR><BR><BR>
+Gentile cliente, esponiamo qui di seguito,  i termini e le modalità di recesso del contratto di cui all'oggetto: <BR>
+restituzione importo erogato (comprensivo di eventuali acconti e/o estinzioni di contratti con altre società) euro :___________<BR><BR>
+<B>importo bonifico da inviarci pari a Euro: ____________________________ ;</B><BR><BR>
+<B>validità della presente : __________________;</B><BR><BR>
+Il versamento dovrà essere effettuato a mezzo:<BR>
+[ ] Bonifico bancario su Cassa di Risparmio del Veneto, c.c. 100000004722, Abi 06225, Cab 61620, <B>Iban IT 08 S 06225 61620 100000004722 </B> intestato a Sigla Srl;<BR>
+[ ] Assegno Circolare non trasferibile intestato a Sigla Srl.<BR><BR>
+Le ricordiamo che la data di validità della presente e' il termine perentorio entro cui dovremo ricevere l'importo, pena l'impossibilita'
+a procedere al recesso con le modalità qui esposte.<BR><BR>
+Alla ricezione di quanto richiesto, renderemo operativo il recesso inviandoLe una lettera di conferma e di quietanza.<BR><BR>
+Rimanendo a Sua completa disposizione per eventuali chiarimenti al numero 0438/45990, Le porgiamo distinti saluti.<BR><BR>
+</TD>
+</TR>
+</TABLE>
+<BR><BR><BR>
+<TABLE WIDTH=100% FONT SIZE=9>
+<TR HEIGHT=3%>
+<TD WIDTH=77%></TD>
+<TD WIDTH=23% ALIGN="C" CELLBACKGROUND="<valueabs>Immagini/FIRMACM1/Path</valueabs><valueabs>Immagini/FIRMACM1/Nome</valueabs>"><BR><BR>Conformità Clienti e<BR>Monitoraggio Contratti<BR><BR>Sigla Srl</TD>
+</TR>
+</TABLE>
+</TEXT>
+</BODY>
+</PDF>

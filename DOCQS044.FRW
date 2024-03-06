@@ -1,0 +1,99 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="sacstrutturasize10">
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3">			
+</HEADER>
+<FOOTER>
+<include file="\INCLUDE\IncludedStruttura.frw" value="footercartaintestatasacinformazionisac">
+</FOOTER>
+<BODY>
+<TEXT>
+<BR><BR><BR><BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=25%>A MEZZO POSTA</TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond><then>EGREGIO SIGNOR<else>GENTILE SIG.RA</if></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> (cqs <valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs>)</TD>
+</TR>
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs>==</ifcond><then>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs>  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs>  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs></TD>
+</TR>
+<else>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_RES</valueabs>  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_RES</valueabs>  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_RES</valueabs></TD>
+</TR>
+</if>
+</TABLE>
+<BR>
+<BR>
+<BR>
+<BR>
+<TABLE WIDTH=100%><TR>
+<TD WIDTH=100% ALIGN="J">
+Conegliano,<valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs> <BR><BR>
+Oggetto: Contratto di finanziamento nr. <valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs> a nome <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>.<BR><BR>
+Gentile cliente, a seguito della Sua comunicazione, con la presente Le confermiamo di aver provveduto ad
+aggiornare i nostri archivi con il Suo nuovo indirizzo; pertanto tutta la corrispondenza che Le invieremo sarà
+recapitata presso:<BR><BR></TD>
+</TR>
+</TABLE>
+<TABLE WIDTH=100% ALIGN="J" LINESPACE=6>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=5%></TD>
+<TD WIDTH=50%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></TD>
+<TD WIDTH=20%></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=5%></TD>
+<TD WIDTH=50%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs></TD>
+<TD WIDTH=20%></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=5%></TD>
+<TD WIDTH=50%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs>  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs>  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs></TD><BR><BR>
+<TD WIDTH=20%></TD>
+</TR>
+</TABLE><P ALIGN="J">
+<BR><BR><BR><BR>
+Rimanendo a Sua completa disposizione per eventuali chiarimenti al numero 0438/45990, Le porgiamo distinti saluti.</P><BR><BR><BR><BR><BR><BR>
+
+
+<TABLE WIDTH=100% FONT SIZE=9>
+<TR HEIGHT=3%>
+<TD WIDTH=77%></TD>
+<TD WIDTH=23% ALIGN="C"><BR><BR>Conformità Clienti e<BR>Monitoraggio Contratti<BR><BR>Sigla Srl</TD>
+</TR>
+</TABLE>
+</TEXT>
+<IMG SRC="<valueabs>Immagini/FIRMABATT/Path</valueabs><valueabs>Immagini/FIRMABATT/Nome</valueabs>" BACKGROUND X=15 Y=23 SCALE=10>
+</BODY>
+</PDF>

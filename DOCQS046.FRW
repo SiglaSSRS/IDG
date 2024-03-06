@@ -1,0 +1,60 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="sacstrutturasize10">
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3">			
+</HEADER>
+<FOOTER>
+<include file="\INCLUDE\IncludedStruttura.frw" value="footercartaintestatasacrimborsorate">
+</FOOTER>
+<BODY>
+<TEXT>
+<BR><BR><BR><BR><BR><BR><BR><BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=25%>Raccomandata A/r</TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond><then>EGREGIO SIGNOR<else>GENTILE SIG.RA</if></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> (cqs <valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs>)</TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs>  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs>  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+<BR>
+<BR>
+</TEXT>
+<TEXT LINESPACE=6>
+Conegliano,<valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs> <BR><BR>
+Oggetto: Rimborso a seguito estinzione contratto nr. <valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs> a nome <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>.<BR><BR>
+Gentile cliente, con riferimento all' estinzione  del contratto di finanziamento in oggetto, Le inviamo, allegato alla presente, assegno circolare non trasferibile a Lei intestato  di €_____________ , a titolo di rimborso rate. <BR>
+<BR><BR>
+Distinti saluti.</P><BR><BR><BR><BR><BR><BR>
+
+
+<TABLE WIDTH=100% FONT SIZE=9>
+<TR HEIGHT=3%>
+<TD WIDTH=77%></TD>
+<TD WIDTH=23% ALIGN="C"><BR><BR>Conformità Clienti e<BR>Monitoraggio Contratti<BR><BR>Sigla Srl</TD>
+</TR>
+</TABLE>
+</TEXT>
+<IMG SRC="<valueabs>Immagini/FIRMABATT/Path</valueabs><valueabs>Immagini/FIRMABATT/Nome</valueabs>" BACKGROUND X=15 Y=21 SCALE=10>
+</BODY>
+</PDF>

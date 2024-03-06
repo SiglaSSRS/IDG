@@ -1,0 +1,91 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="sacstrutturasize10">
+
+<FOOTER>
+<include file="\INCLUDE\IncludedStruttura.frw" value="footercartaintestatasigla">
+</FOOTER>
+
+<BODY>
+<TEXT>
+<BR><BR><BR><BR><BR>
+<BR><BR><BR><BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>Spettabile</TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>CATTOLICA ASSICURAZIONI</TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%>c/o</TD>
+<TD WIDTH=40%>Class Consulting</TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>Piazza A. De Gasperi 24</TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>20147 Saronno (VA)</TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+<BR>
+<BR>
+<TABLE WIDTH=100%><TR>
+<TD WIDTH=100% ALIGN="J">
+_________________,_________________<BR><BR>
+Oggetto: richiesta rimborso premio non goduto delle polizze del contratto nr. <valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs> 
+a nome <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> estinto alla data del <valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN</valueabs> .
+<BR></TD>
+</TR>
+</TABLE>
+<BR>
+Io sottoscritt<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond><then>o<else>a</if> 
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> nat<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond><then>o<else>a</if> a <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCNASC</valueabs> il <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC</valueabs> e residente in 
+(Via/Piazza) <valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs> a <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs>),
+titolare del contratto in oggetto, estinto anticipatamente, <B>chiedo il rimborso del premio non goduto delle polizze relative al contratto in oggetto</B> da effettuarsi possibilmente a mezzo:<BR>
+<BR>
+<IMG SRC="<valueabs>Immagini/BOX/Path</valueabs><valueabs>Immagini/BOX/Nome</valueabs>" SCALE=<valueabs>Immagini/BOX/Scale</valueabs>> Bonifico bancario alle seguenti coordinate:<BR>
+	IBAN:    IT  _____ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __<BR>
+	Intestato a <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs><BR>
+<BR>
+<IMG SRC="<valueabs>Immagini/BOX/Path</valueabs><valueabs>Immagini/BOX/Nome</valueabs>" SCALE=<valueabs>Immagini/BOX/Scale</valueabs>> Assegno Circolare da inviare all’ indirizzo sopra indicato.<BR>	
+<BR><BR><BR>
+Distinti saluti.</P><BR><BR><BR><BR>
+
+
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=50%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>In fede</TD>
+</TR>
+<TR>
+<TD WIDTH=50%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40% SIZE=6>_____________________<BR><I>Firma leggibile</I></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+All.: - copia della polizza collegata al contratto;<BR>
+      - copia conteggio estintivo;<BR>
+      - copia lettera liberatoria.<BR>
+<BR>
+</TEXT>
+</BODY>
+</PDF>

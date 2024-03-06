@@ -1,0 +1,734 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize5.5_times">
+
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headersiglax247">
+</HEADER>
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestatasigla">
+</FOOTER>
+
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT">Pag. 1 di 10</TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+
+<BODY>
+<TEXT SIZE=6.5 ALIGN=J><U>Distribuito da SIGLA Srl, quale mandataria con rappresentanza di :</U><BR>
+B@nca 24-7 S.p.A..<BR>
+Società per azioni<BR>
+Sede legale: Piazza Vittorio Veneto 8 - 24122 Bergamo - Sede operativa: Stoppani, 15 - 24121 Bergamo<BR>
+Telefono: 035-3833611// Fax 035-3833799 e-mail: info@banca247.it<BR>
+Cod. Fisc., Part. IVA ed Iscrizione al Reg. Imprese di Bergamo n. 02805490162<BR>
+Cap. soc. ver. euro 316.800.000 i.v.,<BR>
+ABI 3186.4 // CAB 11100<BR>
+Aderente al Fondo Interbancario di Tutela dei Depositi<BR>
+Aderente al Fondo Nazionale di Garanzia<BR>
+Iscritta all'Albo delle Banche n. 5487<BR>
+Albo Gruppi Bancari n. 3111.2<BR>
+Società con unico socio, soggetta all'attività di direzione e coordinamento di Unione di Banche Italiane S.c.p.a.
+<BR><BR>
+</TEXT>
+<TEXT SIZE=7.5 ALIGN=C><B>INFORMAZIONI EUROPEE DI BASE SUL CREDITO AI CONSUMATORI</B></TEXT>
+<BR><BR>
+<TEXT SIZE=7.5 ALIGN=J>
+<B>1.	Identità e contatti del finanziatore/ intermediario del credito</B>
+<BR><BR>
+<TABLE WIDTH=100% BORDER=0.1 SIZE=7>
+<TR>
+<TD WIDTH=50%><BR>Finanziatore  Istituto mutuante mandante<BR>
+Indirizzo  <BR>
+<BR>
+Telefono<BR>
+Email<BR>
+Fax<BR>
+Sito web<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+Finanziatore  - Mandataria di B@nca 24-7 S.p.A.<BR>
+Indirizzo  <BR>
+Telefono<BR>
+Email<BR>
+Fax<BR>
+Sito web<BR><BR>
+</TD>
+<TD WIDTH=50%><BR>B@nca 24-7 S.p.A.<BR>
+Sede legale: Piazza Vittorio Veneto 8 - 24122 Bergamo  <BR>
+Sede operativa: Stoppani, 15 - 24121 Bergamo <BR>
+035-3833611 <BR>
+info@banca247.it <BR>
+035-3833799<BR>
+http://www.banca247.it<BR>
+Cod. Fisc., Part. IVA ed Iscrizione al Reg. Imprese di Bergamo n. 02805490162<BR>
+Cap. soc. ver. euro 316.800.000 i.v., <BR>
+ABI 3186.4 // CAB 11100<BR>
+Aderente al Fondo Interbancario di Tutela dei Depositi<BR>
+Aderente al Fondo Nazionale di Garanzia<BR>
+Iscritta all'Albo delle Banche n. 5487<BR>
+Albo Gruppi Bancari n. 3111.2 <BR>
+Società con unico socio, soggetta all'attività di direzione e coordinamento di Unione di Banche Italiane  S.c.p.a.<BR>
+<BR>
+Sigla Srl, Mandataria di B@NCA 24-7 S.p.A.<BR>
+Sede legale e operativa:Via Vital, 98/b 31015 Conegliano (TV)<BR>
+tel. ufficio assistenza clienti 0438 45990  sac@siglafinanziamenti.it <BR>
+0438 45975  <BR>
+http://www.siglacredit.it<BR><BR>
+</TD>
+</TR>
+<TR>
+<TD WIDTH=50%><BR>Intermediario del credito<BR> 
+Indirizzo
+</TD>
+<TD WIDTH=50%><BR><B><valueabs>IDGFCTR00F/RECORD/IDGFCTR_RAGSOC_MED</valueabs><BR><valueabs>IDGFCTR00F/RECORD/IDGFCTR_INDIR_MED</valueabs> <valueabs>IDGFCTR00F/RECORD/IDGFCTR_CAP_MED</valueabs> <valueabs>IDGFCTR00F/RECORD/IDGFCTR_LOCAL_MED</valueabs> (<valueabs>IDGFCTR00F/RECORD/IDGFCTR_PROV_MED</valueabs>)</B><BR><BR></TD>
+</TR>
+</TABLE>
+<BR><B>2.	Caratteristiche principali del prodotto di credito</B><BR><BR>
+<TABLE WIDTH=100% BORDER=0.1  SIZE=7>
+<TR>
+<TD WIDTH=50%><BR>Tipo di contratto di credito<BR></TD>
+<TD WIDTH=50%><BR><if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==DEL</ifcond>
+	<then>Prestito contro delegazione di pagamento su quote della retribuzione mensile</then>
+	</if>
+	<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>!=</ifcond>
+		<then>Prestito contro cessione del quinto di quote della retribuzione</then>
+	</if>
+	<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>==</ifcond>
+		<then>Prestito contro cessione del quinto di quote della pensione</then>
+	</if><BR><BR></TD>
+</TR>
+<TR>
+<TD WIDTH=50%><BR>Importo totale del credito<BR><BR>
+<I>Limite massimo o somma totale degli importi messi a disposizione del consumatore.</I><BR><BR>
+</TD>
+<TD WIDTH=50%><BR><B>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPFIN</valueabs></B><BR><BR><BR></TD>
+</TR>
+<TR>
+<TD><BR>Condizioni di prelievo<BR><BR>
+<I>Modalità e tempi con i quali il consumatore può utilizzare il credito.</I>
+</TD>
+<TD><BR>Erogazione in unica soluzione mediante:<BR>
+bonifico bancario sul c/c indicato dal Cliente presso _________ IBAN ___________<BR>
+assegno circolare non trasferibile intestato al Cliente.
+</TD>
+</TR>
+<TR>
+<TD><BR>Durata del contratto di credito</TD>
+<TD><BR>n. mesi <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs></B></TD>
+</TR>
+<TR>
+<TD WIDTH=50%><BR>Rate e loro ordine di imputazione</TD>
+<TD WIDTH=50%><BR>L'importo di ciascuna rata è pari a <B>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPCAN</valueabs></B>, il numero delle rate è pari a n. <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs></B>, la periodicità è mensile. Il consumatore pagherà gli importi degli interessi e/o delle spese nel seguente ordine:<BR>
+<li> eventuale mora<BR>
+<li> interessi<BR>
+<li> capitale<BR>
+</TD>
+</TR>
+</TABLE>
+<PAGE>
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT">Pag. 2 di 10</TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+
+<TABLE WIDTH=100% BORDER=0.1  SIZE=7>
+<TR>
+<TD WIDTH=50%><BR>Importo totale dovuto dal consumatore<BR><BR>
+<I>Importo del capitale preso in prestito, più gli interessi e i costi connessi al credito.</I> <BR>
+</TD>
+<TD WIDTH=50%><BR><B>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPMUTLRD</valueabs></B></TD>
+</TR>
+<TR>
+<TD WIDTH=50%><BR>Garanzie richieste<BR><BR>
+<I>Garanzie che il consumatore deve prestare per ottenere il credito.</I>
+</TD>
+<TD WIDTH=50%><BR>- POLIZZA VITA <B>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMASSMRT</valueabs></B> Tale costo, in caso di estinzione anticipata, sarà restituito al Cliente in relazione alle condizioni di polizza sottoscritte con le Compagnie Assicurative, o con l'INPDAP in caso di Garanzia INPDAP, o con  le FS in caso di garanzia rilasciata dal Gruppo FS.<BR>
+<BR>
+- POLIZZA PERDITE PECUNIARIE <B>&euro <if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_FLG_RSK_IMP</valueabs>!=S</ifcond><then></then><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMASSIMP</valueabs><else>0,00</else></if></B>. Tale costo, in caso di estinzione anticipata, sarà restituita al Cliente in relazione alle condizioni di polizza sottoscritte con le Compagnie Assicurative, o con l'INPDAP in caso di Garanzia INPDAP, o con  le FS in caso di garanzia rilasciata dal Gruppo FS.
+(obbligatorie ai sensi della legge 180/1950)<BR>
+<BR>
+- Trattamento di Fine Rapporto: In caso di cessazione del rapporto di lavoro, la cessione si estenderà su quanto al Cliente spetti per effetto di tale cessazione, come meglio specificato nelle Condizioni generali di contratto.
+</TD>
+</TR>
+</TABLE>
+<BR><B>3.	Costi del credito</B><BR><BR>
+<TABLE WIDTH=100% BORDER=0.1  SIZE=7>
+<TR>
+<TD WIDTH=50%><BR>Tasso di interesse (TAN)</TD>
+<TD WIDTH=50%><BR>-TASSO NOMINALE ANNUO SCALARE APPLICATO IN MISURA FISSA PER L'INTERA DURATA DEL PRESTITO: <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTAN</valueabs> %</B> , pari a <B>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPINTER</valueabs></B> 
+</TD>
+</TR>
+<TR>
+<TD><BR>Tasso annuo effettivo globale (TAEG)<BR><BR>
+<I>Costo totale del credito espresso in percentuale, calcolata su base annua, dell'importo totale del credito.<BR><BR>
+Il TAEG consente al consumatore di confrontare le varie offerte.</I>
+</TD>
+<TD><BR><B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTAEG</valueabs> %</B> (tasso annuo effettivo globale) indicatore di costo totale  convenzionale (denominato anche ISC, indicatore sintetico di costo), è comprensivo di tutti i costi incluse le imposte e non subirà modificazioni; è stato calcolato ipotizzando l'anno composto da dodici mesi uguali ai sensi del decreto del Ministero del Tesoro del 8 luglio 1992, come successivamente modificato ed integrato dal decreto del Ministero del Tesoro del 6 maggio 2000 e dal decreto legislativo 141/2010.<BR>
+[TUTTE LE VOCI DI SPESA SONO INCLUSE NEL CALCOLO DEL TAEG]
+</TD>
+</TR>
+<TR>
+<TD><BR>Per ottenere il credito o per ottenerlo alle condizioni contrattuali offerte è obbligatorio sottoscrivere:<BR>
+-	un'assicurazione che garantisca il credito e/o<BR>
+-	un altro contratto per un servizio accessorio no<BR>
+<I>Se B@nca 24-7 non conosce i costi dei servizi accessori, questi non sono inclusi nel TAEG.</I>
+</TD>
+<TD><BR><BR><BR>Si vedi le garanzie richieste<BR>
+<BR>
+No
+</TD>
+</TR>
+</TABLE>
+</TEXT>
+
+<TEXT SIZE=7 ALIGN=J>
+<BR><B>3.1	Costi connessi</B><BR><BR>
+<TABLE WIDTH=100% BORDER=0.1  SIZE=7>
+<TR>
+<TD WIDTH=50%><BR>Eventuali altri costi derivanti dal contratto di credito</TD>
+<TD WIDTH=50%><BR>- COMMISSIONI BANCARIE: <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COMBAN1</valueabs> %</B> sulla cifra indicata alla sezione 2, alla voce Importo totale dovuto dal consumatore, pari a <B>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMCOMMBA</valueabs></B>.Tale costo per il Finanziatore è composto da istruttoria, archiviazione fisica e ottica, ossia componenti non rapportate alla durata del finanziamento e non restituito al Cliente in caso di estinzione anticipata.<BR>  
+<BR>
+- COMMISSIONI A FAVORE DELL’INTERMEDIARIO FINANZIARIO: <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COMBAN4</valueabs> %</B> sulla cifra indicata alla sezione 2, alla voce Importo totale dovuto dal consumatore, pari a <B>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMCOMM</valueabs></B>. Tale costo è composto da costi relativi all’istruttoria del finanziamento (processing pratica, info commerciali, costo interrogazione banche dati, costo per il personale addetto all’istruttoria dei finanziamenti, raccolta e archiviazione dei documenti), e da costi relativi all’organizzazione della società (altre spese operative, consulenze, pubblicità, Enasarco), ossia componenti non rapportate alla durata del finanziamento e non restituito al Cliente in caso di estinzione anticipata.<BR>
+<BR>
+- ONERI ERARIALI: <B>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMRIVALSA</valueabs></B> Per loro natura non rimborsabili in caso di estinzione anticipata.<BR>
+<BR>
+- SPESE DI RISCOSSIONE RATA PER IL MUTUANTE : <B>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_SPINCFIN</valueabs></B> Tale costo, essendo riferito a componenti rapportate alla durata del finanziamento sarà restituita al Cliente in caso di estinzione anticipata in misura pari alla durata residua del finanziamento.<BR>
+<BR>
+- SPESE DI RISCOSSIONE RATA DA CORRISPONDERE AL DATORE DI LAVORO/ENTE PREVIDENZIALE: <B>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPFISSI</valueabs></B> Tale costo, essendo riferito a componenti rapportate alla durata del finanziamento sarà restituita al Cliente in caso di estinzione anticipata in misura pari alla durata residua del finanziamento.<BR>
+<BR>
+– SPESE PER INVIO DI OGNI COMUNICAZIONE SU SUPPORTO CARTACEO: Euro 0<BR>
+<BR>
+– SPESE PER L’OFFERTA FUORI SEDE Euro 0<BR>
+- COMMISSIONI PER ESTINZIONE ANTICIPATA: Euro 0
+</TD>
+</TR></TABLE>
+</TEXT>
+<PAGE>
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT">Pag. 3 di 10</TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+<TEXT SIZE=7.5 ALIGN=J>
+
+<TABLE WIDTH=100% BORDER=0.1  SIZE=7>
+<TR>
+<TD><BR>Costi in caso di ritardo nel pagamento<BR><BR>
+<I>Tardare con i pagamenti potrebbe avere gravi conseguenze per il consumatore (ad esempio la vendita forzata dei beni) e rendere più difficile ottenere altri crediti in futuro.</I>
+</TD>
+<TD><BR>Per i ritardi di pagamento saranno addebitati al consumatore interessi di mora al tasso del TAN + 1%<BR><BR>
+</TD>
+</TR>
+</TABLE>
+<B><BR>4.	Altri importanti aspetti legali</B>  <BR><BR>
+<TABLE WIDTH=100% BORDER=0.1  SIZE=7>
+<TR>
+<TD WIDTH=50%><BR>Diritto di recesso<BR>  
+<I>Il consumatore ha il diritto di recedere dal contratto di credito entro quattordici giorni di calendario dalla conclusione del contratto.</I>
+</TD>
+<TD WIDTH=50%><BR>Si</TD>
+</TR>
+
+<TR>
+<TD><BR>Rimborso anticipato<BR>
+<I>Il consumatore ha il diritto di rimborsare il credito anche prima della scadenza del contratto, in qualsiasi momento, in tutto o in parte.<BR>
+<BR>
+B@nca 24-7 ha il diritto a un indennizzo in caso di rimborso anticipato.</I>
+</TD>
+<TD><BR>Sì, fatto salvo quanto previsto dalla Legge 180/50<BR>
+<BR>
+Sì, fatto salvo quanto previsto dall'art. 125 sexies TUB
+</TD>
+</TR>
+
+<TR>
+<TD><BR>Consultazione di una banca dati
+</TD>
+<TD><BR>Se B@nca 24-7 rifiuta la domanda di credito dopo aver consultato una banca dati, il consumatore ha il diritto di essere informato immediatamente e gratuitamente del risultato della consultazione. <BR>
+Il consumatore non ha questo diritto se comunicare tale informazione è vietato dalla normativa comunitaria o è contrario all'ordine pubblico o alla pubblica sicurezza.
+</TD>
+</TR>
+<TR>
+<TD><BR>Diritto a ricevere una copia del contratto
+</TD>
+<TD><BR>Il consumatore ha il diritto, su sua richiesta, di ottenere gratuitamente copia del contratto di credito idonea per la stipula. <BR>
+Il consumatore non ha questo diritto se il B@nca 24-7, al momento della richiesta, non intende concludere il contratto. 
+</TD>
+</TR>
+<TR>
+<TD><BR>Periodo di validità dell'offerta</TD>
+<TD><BR>Informazione valida dal (data di stampa) <loop>
+				<loopda>1</loopda>
+				<looproot>IDGFDAT00F/RECORD</looproot>
+					<if><ifcond><value>IDGFDAT_CODICE</value>==DTSTAMPA</ifcond>
+					<then>
+					<value>IDGFDAT_DATA</value>
+					</if>	
+				</loop>	 al (ultimo giorno del trimestre in corso) 
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS_MM</valueabs><in> (01,02,03)</ifcond><then>31/03/</then></if>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS_MM</valueabs><in> (04,05,06)</ifcond><then>30/06/</then></if>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS_MM</valueabs><in> (07,08,09)</ifcond><then>30/09/</then></if>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS_MM</valueabs><in> (10,11,12)</ifcond><then>31/12/</then></if><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS_AAAA</valueabs>
+</TD>
+</TR>
+</TABLE>
+<BR><B>5.	Informazioni supplementari in caso di commercializzazione a distanza di servizi finanziari</B><BR><BR>
+<TABLE WIDTH=100% BORDER=0.1  SIZE=7>
+<TR>
+<TD WIDTH=25% ALIGN=J><BR>a) Finanziatore<BR>
+Indirizzo<BR>
+Telefono<BR>
+Email<BR>
+Fax<BR>
+Sito web
+</TD>
+<TD WIDTH=75% ALIGN=J><BR>Sigla Srl, quale mandataria di Banca 24-7 SpA<BR>
+Via Vital 98/B - 31015 Conegliano (TV)<BR>
+0438/45990<BR>
+<U>sac@siglafinanziamenti.it</U><BR>
+0438/45975<BR>
+www.siglacredit.it<BR>
+</TD>
+</TR>
+<TR>
+<TD><BR>Iscrizione</TD>
+<TD><BR>Intermediario Finanziario iscritto Elenco Speciale ex art.107 TUB n. 33023.3</TD>
+</TR>
+<TR>
+<TD><BR>Autorità di controllo  </TD>
+<TD><BR>Banca d'Italia - Via Nazionale 91 - 00184 Roma</TD>
+</TR>
+<TR>
+<TD><BR>b)  Contratto di credito   </TD>
+<TD></TD>
+</TR>
+<TR>
+<TD WIDTH=25% ALIGN=J><BR>Esercizio del diritto di recesso</TD>
+<TD WIDTH=75% ALIGN=J><BR>1. Il Cliente può recedere dal contratto entro quattordici giorni; il termine decorre dalla sottoscrizione del contratto o, se successivo, dal momento in cui il cliente riceve tutte le condizioni e le informazioni previste ai sensi dell'articolo 125-bis, comma 1 D.Lgs. 385/93 e s.m.i.. <BR>
+2. Il Cliente che recede:<BR>
+a) ne dà comunicazione a Sigla srl, in qualità di mandataria di B@nca 24-7 inviandole, prima della scadenza del termine previsto dal comma 1, una comunicazione secondo le modalità prescelte nel contratto tra quelle previste dall'articolo 64, comma 2, del Codice del consumo. <BR>
+Il diritto di recesso si esercita con l'invio, entro i termini previsti dal comma 1, di una comunicazione scritta a Sigla srl in forza del Mandato concesso da B@nca 24-7 mediante lettera raccomandata con avviso di ricevimento all'indirizzo: "Sigla srl Via A. Vital 98/B 31015 Conegliano (TV)". La comunicazione può essere inviata, entro lo stesso termine, anche mediante telegramma, telex, posta elettronica, all'indirizzo sac@siglafinanziamenti.it e fax al n. 0438/45926, a condizione che sia confermata mediante lettera raccomandata con avviso di ricevimento entro le quarantotto ore successive; la raccomandata si intende spedita in tempo utile se consegnata all'ufficio postale accettante entro i termini previsti dal codice o dal contratto, ove diversi. L'avviso di ricevimento non è, comunque, condizione essenziale per provare l'esercizio del diritto di recesso. <BR>
+b) se il contratto ha avuto esecuzione in tutto o in parte, entro trenta giorni dall'invio della comunicazione prevista dalla lettera a), restituisce il capitale e paga gli interessi maturati fino al momento della restituzione, calcolati secondo quanto stabilito dal contratto. Inoltre, rimborsa alla banca le somme non ripetibili da questa corrisposte alla pubblica amministrazione.<BR>
+3. La banca non può pretendere somme ulteriori rispetto a quelle previste dal comma 2, lettera b).<BR>
+4. Il recesso disciplinato dal presente articolo si estende automaticamente, anche in deroga alle condizioni e ai termini eventualmente previsti dalla normativa di settore, ai contratti aventi a oggetto servizi accessori connessi col contratto, se tali servizi sono resi dalla banca ovvero da un terzo sulla base di un accordo colla banca. L'esistenza dell'accordo è presunta. E' ammessa, da parte del terzo, la prova contraria.<BR>
+</TD>
+</TR>
+</TABLE>
+</TEXT>
+<PAGE>
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT">Pag. 4 di 10</TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+<TEXT SIZE=7.5 ALIGN=J>
+<TABLE WIDTH=100% BORDER=0.1  SIZE=7>
+<TR><TD></TD>
+<TD>5. Il cliente può rivolgersi all'ufficio assistenza clienti di Sigla, a cui risponderà personale con un'adeguata e aggiornata conoscenza dei contratti di credito offerti, nonché dei diritti dei consumatori e delle regole previste dal T.U.B., dalle 10.00 alle 12.30 e dalle 14.00 alle 16.00 al numero telefonico 0438-45990, oppure via fax al numero 0438-45926, oppure via email all'indirizzo: sac@siglafinanziamenti.it oppure, nei normali orari di lavoro, potrà rivolgersi all'intermediario del credito, per ottenere gratuitamente spiegazioni aventi ad oggetto: - la documentazione precontrattuale fornitagli;  - le caratteristiche essenziali del prodotto offerto;  - gli effetti che possono derivargli dalla conclusione del contratto, in termini di obblighi economici e conseguenze del mancato pagamento.
+</TD>
+</TR>
+<TR>
+<TD><BR>Lingua</TD>
+<TD><BR>Le informazioni sul contratto saranno comunicate in ITALIANO. Con l'accordo del consumatore, il finanziatore intende comunicare in ITALIANO nel corso del rapporto contrattuale.</TD>
+</TR>
+<TR>
+<TD><BR>c)  Reclami e ricorsi</TD>
+<TD></TD>
+</TR>
+<TR>
+<TD><BR>Strumenti di tutela stragiudiziale e modalità per accedervi.</TD>
+<TD><BR>Il Cliente può presentare reclami a B@nca 24-7 con lettera semplice, da consegnarsi
+personalmente presso la sede di B@nca 24-7 Via Stoppani 15- 24121 Bergamo; con
+lettera raccomandata con avviso di ricevimento, da inviare all’Ufficio Reclami di
+B@nca 24-7, sito in Via Stoppani 15 24121 Bergamo, anticipati tramite posta
+elettronica all’indirizzo email reclami@banca247.it.. B@nca 24-7 deve rispondere
+entro 30 giorni dalla ricezione del reclamo.
+Il Cliente rimasto insoddisfatto o il cui reclamo non abbia avuto esito nel termine di 30
+giorni dalla sua ricezione da parte di B@nca 24-7 può presentare ricorso all’Arbitro
+Bancario e Finanziario, come indicato di seguito alla lettera b).
+In relazione all’obbligo di esperire il tentativo di conciliazione, quale condizione di
+procedibilità nei casi previsti dalla legge per l’esercizio di azioni individuali davanti
+all’Autorità Giudiziaria (art. 5 del D. Lgs. n. 28/2010), B@nca 24-7 e il Cliente
+concordano di sottoporre le controversie che dovessero sorgere in relazione al
+contratto: a) all’Organismo di conciliazione presso il Conciliatore Bancario Finanziario
+– Associazione per la soluzione delle controversie bancarie, finanziarie e societarie –
+ADR (iscritto nel registro degli organismi di conciliazione tenuto dal Ministero della
+Giustizia) in quanto organismo specializzato nelle controversie bancarie e finanziarie,
+che dispone di una rete di conciliatori diffusa sul territorio nazionale. Il Conciliatore
+Bancario Finanziario può essere attivato sia da B@nca 24-7 sia dal Cliente e non
+richiede che sia stato preventivamente presentato un reclamo a B@nca 24-7.
+Essendo il Cliente consumatore ai sensi dell’art. 3 del D. Lgs. n. 206/2005, la
+conciliazione dovrà avere luogo presso la sede più vicina alla residenza o al domicilio
+del Cliente stesso. Le condizioni e le procedure sono definite nel relativo
+regolamento, disponibile sul sito www.conciliatorebancario.it e presso le sedi
+dell’Intermediario del credito a cui si è rivolto e nel sito internet www.siglacredit.it.
+B@nca 24-7 e il Cliente restano comunque liberi, anche dopo la sottoscrizione del
+presente contratto, di concordare per iscritto di rivolgersi a un altro organismo, purché
+iscritto nel medesimo registro del Ministero della Giustizia; b) solo su attivazione del
+Cliente all’Arbitro Bancario Finanziario (in breve, ABF) - istituito ai sensi dell’art.128-
+bis del T.U.B. - dopo aver presentato reclamo a B@nca 24-7 secondo le modalità
+precedentemente indicate. L’ABF è un sistema di risoluzione stragiudiziale delle
+controversie con la clientela per il mero accertamento di diritti, obblighi e facoltà
+(indipendentemente dal valore del rapporto) ovvero per la richiesta della
+corresponsione di una somma di denaro di importo non superiore a 100.000 euro.
+Tale sistema, al quale B@nca 24-7 deve aderire, è regolato dalle disposizioni
+emanate dalla Banca d’Italia. Per qualsiasi ulteriore informazione sulla procedura, il
+Cliente può chiedere a B@nca 24-7, alle filiali della Banca d’Italia o visitare il sito web
+dell’Arbitro Bancario Finanziario (www.arbitrobancariofinanziario.it)”.
+</TD>
+</TR>
+
+</TABLE>
+
+</TEXT>
+
+<TEXT SIZE=9 ALIGN=C>
+<BR>
+<BR>
+	<B>CONTRATTO DI PRESTITO RIMBORSABILE MEDIANTE CESSIONE "PRO-SOLVENDO" DI QUOTE DELLA RETRIBUZIONE MENSILE</B>
+<BR>
+<BR>
+	<B>GENERALITÀ DEL CLIENTE</B>
+<BR>
+<BR>
+	
+</TEXT>
+<TABLE BORDER=1>
+	<TR>
+	  <TD WIDTH=100%>
+		<TABLE SIZE=8>
+			<TR>
+				<TD WIDTH=50%>Cognome e Nome<BR><B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></B>    </TD>
+				<TD WIDTH=50%>Cod. Fiscale<BR><B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs></B></TD>
+			</TR>
+		</TABLE>
+	  </TD>
+	</TR>
+	<TR>
+      <TD WIDTH=100%>  	
+		<TABLE SIZE=8>	
+			<TR>
+				<TD WIDTH=50%>Nato a<BR><B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCNASC</valueabs></B></TD>
+				<TD WIDTH=50%>il<BR><B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC</valueabs></B></TD>
+			</TR>					
+		</TABLE>
+		</TD>
+	</TR>
+	<TR>
+      <TD WIDTH=100%>
+		<TABLE SIZE=8>
+			<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs>==</ifcond><then>
+			<TR>
+			 	<TD WIDTH=52%>Residente in<BR><B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs></B></TD>
+				<TD WIDTH=20%>C.a.p.<BR><B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs></B></TD>
+				<TD WIDTH=28%>Località<BR><B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs>)</B></TD>
+			</TR>					
+			<else>
+			<TR>
+			 	<TD WIDTH=52%>Residente in<BR><B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs></B></TD>
+				<TD WIDTH=20%>C.a.p.<BR><B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_RES</valueabs></B></TD>
+				<TD WIDTH=28%>Località<BR><B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_RES</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_RES</valueabs>)</B></TD>
+			</TR>					
+			</if>
+			<TR>
+			 	<TD>Telefono  <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_TELE_RES</valueabs>  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_TELE_ALT</valueabs></B></TD>
+				<TD>Fax</TD>
+				<TD>Email <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_EMAIL</valueabs></B> </TD>
+			</TR>
+		</TABLE>
+	  </TD>
+	</TR>
+	<TR>
+      <TD WIDTH=100%>
+		<TABLE SIZE=8>
+			 <TR>
+				<TD WIDTH=52%>Estremi documento: <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DSDOCUM</valueabs> n. <valueabs>IDGFCLI00F/RECORD/IDGFCLI_NUM_DOCUM</valueabs></B></TD>
+				<TD WIDTH=20%>rilasciato il <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_DA_IL</valueabs></B></TD>
+				<TD WIDTH=28%>da <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_ENTE</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_DA</valueabs></B></TD>
+			 </TR>					
+		</TABLE>
+		</TD>
+	</TR>
+	<TR>
+      <TD WIDTH=100%>
+		<TABLE SIZE=8>
+			 <TR COLSPAN=2>
+				<TD WIDTH=100%>Titolare di trattamento retributivo pubblico/privato <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs>  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_STATOGIUR</valueabs>  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_LAV</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_LAV</valueabs>  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_LAV</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_LAV</valueabs>)</B></TD>
+     		 </TR>	
+			 <TR>
+				<TD WIDTH=50%>Dal <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTASSUNZ</valueabs></B></TD>
+				<TD WIDTH=50%></TD>
+     		 </TR>	
+			 <TR>
+					<TD WIDTH=50%>Retribuzione  mensile lorda <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LRDULTBP</valueabs></TD>
+					<TD WIDTH=50%>Retribuzione  mensile netta <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_NETULTBP</valueabs> </TD>
+     		 </TR>	
+		</TABLE>
+	  </TD>
+	</TR>
+</TABLE>
+<TEXT ALIGN=J><BR>
+<B>Recapito per corrispondenza se diverso dall’indirizzo del Cliente:</B><BR><BR>
+<BR><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs>==<valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_COR</valueabs></ifcond>
+<then>
+Presso ________________________________ indirizzo  _________________________________ città _________________  prov ______cap______<BR><BR><BR>
+<else>
+Presso <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_COR</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CORRISPONDENZA</valueabs></B><BR><BR>
+</if>
+</TEXT>
+<PAGE>
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT">Pag. 5 di 10</TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+<TEXT SIZE=7.5 ALIGN=J>
+Con la presente scrittura privata il sottoscritto (in seguito denominato "Cliente"), avendo intenzione di stipulare un prestito contro cessione del quinto della sua retribuzione con B@nca 24-7 spa (in seguito denominata "B@nca 24-7" o Mutuante) distribuito da Sigla srl  quale mandataria con rappresentanza di B@nca 24-7 spa, entrambe società soggette ai controlli esercitati dalla Banca d'Italia, con sede in Roma, Via Nazionale, 91 - 00184 Roma e meglio descritte nel modello "Informazioni Europee di Base sul Credito ai Consumatori - Standard European Consumer Credit Information" (in seguito denominato SECCI) che costituisce il frontespizio e facente parte integrante del presente contratto, in base alle vigenti disposizioni di legge con riguardo particolare ma non esclusivo, al Testo Unico approvato con il DPR 05/01/1950 n. 180, come successivamente modificato ed integrato, ed al relativo regolamento di attuazione di cui al DPR 28/07/1950 n. 895 e s.m.i. (di seguito, la "Normativa di Riferimento"), conviene l'erogazione di un prestito contro cessione del quinto delle quote dello retribuzione per la cifra meglio descritta nel SECCI, nella sezione 2, alla voce Importo totale del credito, secondo le modalità ed alle condizioni sotto indicate. <BR>
+A tal fine, il Cliente dichiara di conoscere ed accettare le Condizioni di Contratto riportate qui di seguito e le condizioni economiche del contratto stesso, riportate nel precitato modello SECCI.<BR>
+<BR>
+Per effetto della suindicata cessione l’Amministrazione/datore di lavoro dal quale il Cliente dipende sarà obbligata a norma di legge e, per quanto possa occorrere, anche per volontà del Cliente medesimo, a prelevare mensilmente dalla sua retribuzione &euro <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPCAN</valueabs></B> , a decorrere dal mese successivo alla notifica ai sensi di legge del presente atto, ed a versare, entro il giorno 10 di ogni mese, tali importi mensili a Sigla srl, sul c/c bancario n. 100000001913 presso la Banca - Cassa di Risparmio del Veneto (cod. IBAN:IT50H0622561620100000001913) - ovvero
+sul c/c n. 000073807760 - intestato a SIGLA SRL. (cod. IBAN:IT53G0760112000000073807760 ); È facoltà di B@nca 24-7 e della Mandataria Sigla srl modificare unilateralmente e discrezionalmente in qualunque momento l'anzidetta modalità di versamento delle quote mensili indicando altro conto corrente bancario o postale ove dovranno affluire le quote.<BR>
+<BR>
+<BR>
+</TEXT>
+<TEXT SIZE=9 ALIGN=C>
+<BR>
+	<B>CONDIZIONI GENERALI DEL CONTRATTO DI PRESTITO RIMBORSABILE MEDIANTE CESSIONE DI QUOTE DELLA RETRIBUZIONE</B>
+<BR>
+<BR>
+</TEXT>
+<TEXT SIZE=7.5 ALIGN=J>
+<B>Art. 1) Durata e rate del contratto di Credito.</B> La durata del presente contratto di prestito contro cessione del quinto delle quote della retribuzione è specificata nel SECCI alla voce <I>Durata del contratto di credito</I>, ed è costituito dal numero di rate mensili di importo specificati nel SECCI alla voce <I>rate e loro ordine di imputazione</I>.<BR>
+<BR>
+<B>Art. 2) Importo totale del credito e condizioni di utilizzo.</B> L'importo totale del credito è specificato nella sezione 2 del SECCI alla voce <I>Importo totale del credito</I> e viene erogato in unica soluzione con bonifico bancario sul conto corrente indicato dal Cliente nel SECCI o mediante assegno circolare non trasferibile intestato al Cliente alla voce <I>Condizioni di Prelievo</I> entro 30 giorni antecedenti la scadenza della prima rata stabilita con piano di ammortamento. Qualora il capitale erogato al netto degli oneri trattenuti sia erogato prima dei 30 giorni non dovrà essere riconosciuta alcuna commissione aggiuntiva. Al Cliente, in sede di erogazione del prestito, verrà trattenuta, in un'unica soluzione, dal valore attualizzato del prestito, la cifra come meglio specificata al successivo articolo 9.<BR>
+<BR>
+<B>Art.3) Cessazione del rapporto di lavoro.</B> In caso di cessazione dal rapporto di lavoro la presente cessione si estenderà su quanto al Cliente spetti per effetto di tale cessazione ed il Cliente consente che l'Amministrazione/datore di lavoro ceduto trattenga l'importo necessario per l'estinzione della cessione sulle somme che, a qualunque titolo e sotto qualsiasi denominazione - non escluse le erogazioni a titolo di liberalità e gli eventuali rimborsi delle ritenute per fondo retribuzione e di soccorso - spettassero al Cliente e che parimenti la trattenuta venga effettuata presso qualsiasi Ente di Previdenza o di Assicurazione ai quali il Cliente medesimo sia iscritto per legge, regolamento o per contratto di lavoro, anche nel caso in cui sussista il diritto a trattamento pensionistico. Il Cliente, inoltre per la durata della cessione si impegna a non avvalersi del diritto di richiedere l'anticipazione delle indennità di fine rapporto di cui al comma 6 dell'art. 2120 c.c. se ed in quanto a lui applicabile. L'Amministrazione/ datore di lavoro si uniformeranno all'obbligazione come sopra assunta dal Cliente.<BR>
+A garanzia del debito riveniente dal presente contratto, il Cliente autorizza sin da ora il datore di lavoro, a trattenere e versare in favore di B@nca 24-7 ovvero dei suoi aventi causa a qualsiasi titolo ed esclusivamente nel caso di inadempimento e/o cessazione del rapporto di lavoro, l'importo in denaro che al verificarsi delle condizioni che precedono sarà ancora dovuto a B@nca 24-7 ovvero ai suoi aventi causa a qualsiasi titolo per il rimborso del presente prestito. All'uopo il datore di lavoro dovrà attingere da somme, maturate e maturande, dal medesimo accantonate e dovute al Cliente a titolo di indennità di fine rapporto (T.F.R.).<BR>
+<BR>
+<B>Art. 4) Riduzione della retribuzione.</B> Nei casi di riduzione, per qualsiasi causa, della retribuzione mensile del Cliente, ferme restando le pattuizioni afferenti la copertura assicurativa,  qualora la retribuzione stessa subisca una riduzione non superiore al terzo, la trattenuta continuerà ad essere effettuata nella misura stabilita dal presente contratto; ove la riduzione sia superiore al terzo dello retribuzione, la trattenuta non potrà eccedere il quinto dello retribuzione ridotto, così come previsto dagli artt. 35 e 55 del D.P.R. n. 180/50. <BR>
+<BR>
+<B>Art. 5) risoluzione del rapporto di lavoro.</B> In caso di risoluzione del rapporto di lavoro, ove il Cliente agli effetti della previdenza fosse iscritto ad uno speciale fondo gestito dall'INPS, egli dichiara formalmente di rinunciare alla iscrizione alla Cassa Pensioni (assicurazione facoltativa) ed a tutti i conseguenti benefici e di cedere a B@nca 24-7 ovvero ai suoi aventi causa a qualsiasi titolo il diritto di esercitare la facoltà di chiedere la liquidazione ed il pagamento dei contributi di assicurazione versati o della riserva matematica che risulterà maturata a suo favore nella suddetta Cassa Pensioni.<BR>
+<BR>
+<B>Art. 6) Trasferimento ad altro impiego.</B> Nel caso in cui il Cliente venga a trovarsi alle dipendenze di altra Amministrazione statale, parastatale oppure di azienda privata, il Cliente stesso autorizza sin da ora B@nca 24-7 ovvero i suoi aventi causa a qualsiasi titolo a notificare ai sensi di legge  il presente contratto alla citata Amministrazione statale, parastatale oppure di azienda privata, perché questa operi sulla retribuzione che a qualsiasi titolo gli corrisponderà, la ritenuta della rata mensile indicata nel SECCI alla sezione 2., voce <I>Rate e  loro ordine di imputazione</I>, nonché quanto all'art. 3 delle presenti Condizioni di Contratto. Agli effetti di cui sopra il Cliente si obbliga a denunciare il suo trasferimento a B@nca 24-7 ovvero ai suoi aventi causa a qualsiasi titolo nonché all'Amministrazione/datore di lavoro da cui si allontana, perché questa possa inviare a quella ove assumerà servizio, anche se non compresa tra quelle indicate nell'art. 1 del DPR 05/01/1950 n. 180, il conto della presente cessione assumendo, in difetto, ogni responsabilità a norma di legge. Tutte le spese, gli oneri e le perdite di valuta a cui B@nca 24-7 ovvero i suoi aventi causa a qualsiasi titolo potrà eventualmente andare incontro per la notifica ai sensi di legge e per il fatto stesso del trasferimento saranno a carico del Cliente. <BR>
+Peraltro, nel caso sopra evidenziato, il Cliente autorizza fin da ora B@nca 24-7 ovvero i suoi aventi causa a qualsiasi titolo ad introitare la somma corrispondente al TFR, in tutto o in parte, fino a concorrenza del credito maturato. Nel caso in cui il totale introito del TFR estingua solo parzialmente il finanziamento, ciò comporterà solo la riduzione della durata del vincolo contrattuale sulla base di un nuovo piano di ammortamento del prestito, senza che ciò comporti novazione dell'originario contratto di prestito.
+</TEXT>
+<PAGE>
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT">Pag. 6 di 10</TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+<TEXT SIZE=7.5 ALIGN=J>
+<B>Art. 7) Tasso.</B> Il Tasso Annuo Nominale (TAN) riferito al presente contratto è pari al <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTAN</valueabs> %</B> , fisso per tutta la durata del prestito.<BR>
+<BR>
+<B>Art. 8) TAEG.</B> Il Tasso Annuo Effettivo Globale (TAEG) relativo al presente contratto è pari al <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTAEG</valueabs> %</B>, come meglio specificato nel SECCI alla sezione 3 voce <I>TAEG</I>. Si precisa inoltre che il TAEG indicato è comprensivo di tutti i costi incluso le imposte e non subirà modificazioni e che il TEG (parametro rilevante ai fini della normativa antiusura, di cui alla legge 108/96 e successive modificazioni ed integrazioni) è pari al <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTEG</valueabs> %</B>. Il TAEG è stato calcolato ipotizzando l'anno composto da dodici mesi uguali ai sensi della normativa vigente.<BR>
+<BR>
+<B>Art. 9) Spese derivanti dal contratto.</B> Il Cliente, in sede di erogazione del prestito, verserà, in un'unica soluzione, mediante trattenuta sull'<I>Importo totale dovuto dal consumatore</I>, come descritto alla sezione 2. del SECCI, le cifre come evidenziate nel SECCI stesso alle seguenti voci: sezione 2., voce <I>Garanzie richieste</I> (Polizza Vita e Polizza Perdite Pecuniarie); sezione 3 voce <I>tasso di interesse</I>; sezione 3.1 voce  <I>Eventuali altri costi derivanti dal contratto di credito</I> (Commissioni bancarie, commissioni a favore dell'intermediario Finanziario, Oneri erariali, Spese riscossione rata da corrispondere alla Mutuante, Spese di riscossione rata da corrispondere al datore di lavoro/Ente previdenziale). Pertanto, l'importo risultante al netto dei versamenti di cui sopra è pari a <B>&euro  <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPNETRIC</valueabs></B>.<BR>
+<BR>
+Al Contratto sono altresì connesse le altre due voci presenti nella medesima sezione 3.1 del SECCI, voce <I>Eventuali altri costi derivanti dal contratto di credito</I>: Spese per invio di ogni comunicazione su supporto cartaceo (per le quali si rimanda al successivo articolo 23), Spese per l'offerta fuori sede e Commissioni per l'estinzione anticipata (per le quali si rimanda al successivo articolo 14).<BR>
+<BR>
+<B>Art. 10)  Ritardo nei versamenti e interessi di mora.</B> In caso di ritardo od omissione del versamento delle quote cedute o di qualsiasi altra somma contrattualmente dovuta dal Cliente, anche in conseguenza di risoluzione, decadenza dal beneficio del termine o recesso, è facoltà di B@nca 24-7, ovvero di suoi aventi causa a qualsiasi titolo, inclusa la surroga (ad es. ad es. Sigla srl in qualità di Mandataria , a seguito di pagamento in forza della garanzia "non riscosso per riscosso") richiedere gli interessi di mora. Tali interessi decorreranno di pieno diritto, a seguito di semplice richiesta, dalla scadenza delle singole rate fino all'effettivo pagamento, a carico del Cliente stesso, dalla data di scadenza e fino al momento del pagamento, e saranno calcolati nella misura annua pari al tasso annuo nominale applicato al prestito, maggiorato di 1 punti percentuali, fermo restando che la misura di tali interessi, nel momento in cui essi sono promessi o comunque convenuti, non potrà mai essere superiore al limite fissato ai sensi dell'art. 2, comma 4, della Legge n. 108/1996, dovendosi intendere, in caso di teorico superamento di detto limite, che la loro misura sia pari al limite medesimo. Su questi interessi non è consentita la capitalizzazione periodica.<BR>
+<BR>
+<B>Art. 11) Conseguenze per mancato pagamento.</B> Risoluzione. Ferma la possibilità di dichiarare la decadenza dal beneficio del termine ai sensi dell'art. 1186 c.c., nel caso di mancato pagamento anche di una sola rata relativa alla somma finanziata, nonché di inosservanza degli altri obblighi stabiliti dal presente contratto, B@nca 24-7  ovvero di suoi aventi causa a qualsiasi titolo si riservano la facoltà di dichiarare risolto il presente contratto ai sensi dell'art. 1456 c.c., con conseguente facoltà di B@nca 24-7 ovvero di suoi aventi causa a qualsiasi titolo di esigere l'immediato pagamento di tutte le rate, anche non scadute. <BR>
+In caso di pagamenti con ritardo o di omessi pagamenti B@nca 24-7 7 ovvero di suoi aventi causa a qualsiasi titolo procederanno a segnalare le informazioni negative relative al Cliente nei Sistemi di informazione creditizia ai sensi del Codice di deontologia e di buona condotta per i sistemi informativi gestiti da soggetti privati in tema di crediti al consumo, affidabilità e puntualità nei pagamenti come meglio specificati nel modulo "Come utilizziamo i suoi dati" già consegnato al Cliente stesso.<BR>
+<BR>
+<B>Art. 12) Polizze assicurative.</B> All'atto del perfezionamento del contratto di prestito contro cessione di quote della retribuzione vengono stipulate due polizze assicurative rispettivamente a copertura del rischio vita e di rischi relativi alla perdita dell'occupazione del lavoratore i cui costi sono evidenziati nel SECCI alla voce "Garanzie richieste" e detratti dall'Importo totale del credito indicato nel SECCI all'atto dell'erogazione (vedi art.9). Per i lavoratori dipendenti dello Stato, la copertura assicurativa del prestito potrà essere fornita direttamente dall'Istituto Nazionale di Previdenza per i Dipendenti delle Amministrazione Pubbliche (INPDAP) mediante rilascio della garanzia di cui all'art. 32 del DPR 180/1950 e per i lavoratori del Gruppo FS della garanzia rilasciata dal medesimo Gruppo FS. B@nca 24-7, con oneri a proprio carico, potrà stipulare in alternativa alla summenzionata polizza assicurativa relativa alla copertura dei rischi di perdite pecuniarie derivanti dalla perdita dell'occupazione, una polizza per il rischio "perdite patrimoniali derivanti da insolvenze" a garanzia del mancato adempimento dell'obbligazione di pagamento non derivante da decesso. In tal caso la compagnia di assicurazione potrà surrogarsi al Cliente una volta che avrà rimborsato B@nca 24-7 del residuo credito. <BR>
+Con riferimento alle assicurazioni connesse al presente prestito, si precisa che il Cliente, nel caso in cui eserciti il diritto di richiedere il trasferimento del prestito mediante surrogazione per volontà del debitore (portabilità) ovvero l'estinzione anticipata totale o parziale del prestito stesso, ha diritto al rimborso - secondo le modalità indicate nelle condizioni di assicurazione e ai sensi di quanto previsto dalla normativa vigente in materia assicurativa - dell'importo del costo per il servizio accessorio assicurativo da esso pagato corrispondente al periodo assicurativo che residua al momento del trasferimento o dell'estinzione del prestito, fermo restando il diritto del Cliente di chiedere il mantenimento della copertura assicurativa fino alla scadenza contrattuale a favore del nuovo beneficiario designato. Se il Cliente ha corrisposto il costo del servizio accessorio assicurativo a terzi intermediari diversi da B@nca 24-7, i diritti di cui sopra spettano verso detti intermediari e/o la Compagnia assicuratrice.<BR>
+<BR>
+<B>Art. 13) Diritto di recesso1.</B> Il Cliente può recedere dal contratto entro quattordici giorni; il termine decorre dalla sottoscrizione del contratto o, se successivo, dal momento in cui il cliente riceve tutte le condizioni e le informazioni previste ai sensi dell'articolo 125-bis, comma 1 D.Lgs. 385/93 e s.m.i.. <BR>
+2. Il Cliente che recede:<BR>
+a) ne dà comunicazione a Sigla srl, in qualità di mandataria di B@nca 24-7 inviandole, entro la scadenza del termine previsto dal comma 1, una comunicazione secondo le modalità prescelte nel contratto tra quelle previste dall'articolo 64, comma 2, del Codice del consumo. <BR>
+Il diritto di recesso si esercita con l'invio, entro i termini previsti dal comma 1, di una comunicazione scritta a Sigla srl in forza del Mandato concesso da B@nca 24-7 mediante lettera raccomandata con avviso di ricevimento all'indirizzo: "Sigla srl Via A. Vital 98/B 31015 Conegliano (TV)". La comunicazione può essere inviata, entro lo stesso termine, anche mediante telegramma, telex, posta elettronica, all'indirizzo sac@siglafinanziamenti.it e fax al n. 0438/45926, a condizione che sia confermata mediante lettera raccomandata con avviso di ricevimento entro le quarantotto ore successive; la raccomandata si intende spedita in tempo utile se consegnata all'ufficio postale accettante entro i termini previsti dal codice o dal contratto, ove diversi. L'avviso di ricevimento non è, comunque, condizione essenziale per provare l'esercizio del diritto di recesso. <BR>
+b) se il contratto ha avuto esecuzione in tutto o in parte, entro trenta giorni dall'invio della comunicazione prevista dalla lettera a), restituisce il capitale e paga gli interessi maturati fino al momento della restituzione, calcolati secondo quanto stabilito dal contratto. Inoltre, rimborsa alla banca le somme non ripetibili da questa corrisposte alla pubblica amministrazione.<BR>
+3. La banca non può pretendere somme ulteriori rispetto a quelle previste dal comma 2, lettera b).<BR>
+4. Il recesso disciplinato dal presente articolo si estende automaticamente, anche in deroga alle condizioni e ai termini eventualmente previsti dalla normativa di settore, ai contratti aventi a oggetto servizi accessori connessi col contratto, se tali servizi sono resi dalla banca ovvero da un terzo sulla base di un accordo colla banca. L'esistenza dell'accordo è presunta. E' ammessa, da parte del terzo, la prova contraria.<BR>
+</TEXT>
+<PAGE>
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT">Pag. 7 di 10</TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+<TEXT SIZE=7.5 ALIGN=J>
+5. Il cliente può rivolgersi all'ufficio assistenza clienti di Sigla, a cui risponderà personale con un'adeguata e aggiornata conoscenza dei contratti di credito offerti, nonché dei diritti dei consumatori e delle regole previste dal T.U.B., dalle 10.00 alle 12.30 e dalle 14.00 alle 16.00 al numero telefonico 0438-45990, oppure via fax al numero 0438-45926, oppure via email all'indirizzo: sac@siglafinanziamenti.it oppure, nei normali orari di lavoro, potrà rivolgersi all'intermediario del credito, per ottenere gratuitamente spiegazioni aventi ad oggetto: - la documentazione precontrattuale fornitagli;  - le caratteristiche essenziali del prodotto offerto;  - gli effetti che possono derivargli dalla conclusione del contratto, in termini di obblighi economici e conseguenze del mancato pagamento.<BR>
+<BR>
+<B>Art. 14) Estinzione anticipata.</B> In caso di estinzione anticipata della presente cessione, che, per quanto ovvio, determina la cessazione della cessione del quinto della retribuzione, nel rispetto delle norme di legge, il Cliente, dovrà versare a B@nca 24-7 la quota capitale residua, mentre avrà diritto di non riconoscere a B@nca 24-7 stessa la quota interessi di cui al SECCI alla sezione 3. voce <I>Tasso di interesse</I> non maturati. Il Cliente avrà altresì diritto alla restituzione di una parte dei costi del prestito, di cui alla Sezione 3.1 del SECCI, voce <I>Eventuali altri costi derivanti dal contratto di credito</I> descritti nelle spese di riscossione rata per B@nca 24-7 e spese riscossione rata da corrispondere al datore di lavoro il cui importo sarà determinato, in misura decrescente, con riferimento al numero delle rate scadute alla data della predetta estinzione al netto di eventuali commissioni di estinzione anticipata per il periodo di rateazione non goduto. La quota rimborsabile delle Polizze determinate dalla Compagnia Assicurativa o della garanzia INPDAP al momento dell'estinzione anticipata del Finanziamento, sarà da questa riconosciuta al Cliente, direttamente o per il tramite di B@nca 24-7 o di Sigla, in funzione delle specifiche condizioni di Polizza o di regolamento dell'ente emittente della garanzia. <BR>
+Il Cliente dovrà riconoscere a a Sigla in forza del Mandato concesso da B@nca 24-7 un indennizzo, così come determinato secondo le condizioni indicate nel SECCI alla sezione 3.1. In ogni caso, l'indennizzo citato non  può  superare  l'importo  degli  interessi  che  il Cliente avrebbe pagato per la vita residua del contratto.<BR>
+<BR>
+<B>Art. 15) Mezzi di tutela stragiudiziale.</B> Il Cliente può presentare reclami a B@nca 24-7 con lettera semplice, da consegnarsi personalmente presso B@nca 24-7; con lettera raccomandata con avviso di ricevimento, da inviare all'Ufficio Reclami, sito in Via Stoppani, 15 - 24122 Bergamo; con posta elettronica, all'indirizzo e-mail reclami@banca247.it. B@nca 24-7 deve rispondere entro 30 giorni dalla ricezione del reclamo. <BR>
+Il Cliente rimasto insoddisfatto o il cui reclamo non abbia avuto esito nel termine di 30 giorni dalla sua ricezione da parte di B@nca 24-7 può presentare ricorso all'Arbitro Bancario e Finanziario, di cui al successivo art. 9.3, lett. b).<BR>
+In relazione all'obbligo di esperire il tentativo di conciliazione, quale condizione di procedibilità nei casi previsti dalla legge per l'esercizio di azioni individuali davanti all'Autorità Giudiziaria (art. 5 del D. Lgs. n. 28/2010), B@nca 24-7 e il Cliente concordano di sottoporre le controversie che dovessero sorgere in relazione al contratto: a) all'Organismo di conciliazione presso il Conciliatore Bancario Finanziario - Associazione per la soluzione delle controversie bancarie, finanziarie e societarie - ADR (iscritto nel registro degli organismi di conciliazione tenuto dal Ministero della Giustizia) in quanto organismo specializzato nelle controversie bancarie e finanziarie, che dispone di una rete di conciliatori diffusa sul territorio nazionale. Il Conciliatore Bancario Finanziario può essere attivato sia da B@nca 24-7 sia dal Cliente e non richiede che sia stato preventivamente presentato un reclamo a B@nca 24-7. Essendo il Cliente consumatore ai sensi dell'art. 3 del D. Lgs. n. 206/2005, la conciliazione dovrà avere luogo presso la sede più vicina alla residenza o al domicilio del Cliente stesso. Le condizioni e le procedure sono definite nel relativo regolamento, disponibile sul sito www.conciliatorebancario.it e presso le sedi dell'Intermediario del credito a cui si è rivolto e nel sito internet www.siglacredit.it.B@nca 24-7 e il Cliente restano comunque liberi, anche dopo la sottoscrizione del presente contratto, di concordare per iscritto di rivolgersi a un altro organismo, purché iscritto nel medesimo registro del Ministero della Giustizia; b) solo su attivazione del Cliente all'Arbitro Bancario Finanziario (in breve, ABF) ? istituito ai sensi dell'art.128-bis del T.U.B. - dopo aver presentato reclamo a B@nca 24-7 secondo le modalità sopra descritte. L'ABF è un sistema di risoluzione stragiudiziale delle controversie con la clientela per il mero accertamento di diritti, obblighi e facoltà (indipendentemente dal valore del rapporto) ovvero per la richiesta della corresponsione di una somma di denaro di importo non superiore a 100.000 euro. Tale sistema, al quale B@nca 24-7 deve aderire, è regolato dalle disposizioni emanate dalla Banca d'Italia. Per qualsiasi ulteriore informazione sulla procedura, il Cliente può chiedere a B@nca 24-7, alle filiali della Banca d'Italia o visitare il sito web dell'Arbitro Bancario Finanziario (www.arbitrobancariofinanziario.it)".<BR>
+<BR>
+<B>Art. 16) Rimborso altri prestiti in corso.</B> Il Cliente autorizza B@nca 24-7 ovvero i suoi aventi causa a qualsiasi titolo, anche ai sensi e per gli effetti dell'art. 1723, comma 2, cod.civ., a destinare direttamente parte del capitale erogato al rimborso anticipato dei prestiti in corso di ammortamento indicati nel modulo di richiesta del presente prestito, ovvero a destinare parte del capitale erogato al rimborso anticipato (parziale o totale) delle altre posizioni debitorie intestate allo stesso Cliente, in ogni caso nel rispetto della normativa vigente, tra gli altri, a titolo esemplificativo e non esaustivo, degli articolo 38 e 39 L. 180/50. <BR>
+<BR>
+<B>Art. 17) Tempi massimi di chiusura del rapporto.</B>  In caso di richiesta di estinzione anticipata o cessazione per qualsiasi causa del contratto, la B@nca 24-7 ovvero i suoi aventi causa a qualsiasi titolo provvederà ad estinguere il rapporto entro il termine massimo di 30 giorni lavorativi. Tale termine decorre dal momento in cui il Cliente avrà eseguito il rimborso del proprio debito e adempiuto a tutte le proprie obbligazioni previste dal presente contratto.<BR>
+<BR>
+<B>Art. 18) Compensi per surrogazione.</B> Si conviene ai sensi dell'art. 120 quater D. Lgs. 1 settembre 1993 n. 385 e s.m.i., che nessun compenso, né altra prestazione saranno dovuti a B@nca 24-7 ovvero ai suoi aventi causa a qualsiasi titolo dal Cliente in caso di surrogazione per volontà del Cliente. Sono fatte salve in ogni caso le disposizioni inderogabili di legge in vigore.<BR>
+<BR>
+<B>Art. 19) Compensi ulteriori.</B> Il Cliente prende atto che nessun ulteriore compenso rispetto a quanto riportato nel SECCI alla sezione 3.1 voci Commissioni bancarie e Commissioni a favore dell'intermediario finanziario è dallo stesso dovuto a soggetti che a vario titolo possono comporre la rete distributiva; ogni eventuale richiesta di ulteriori compensi da parte di questi ultimi verrà segnalata dal Cliente alla B@nca 24-7 ovvero a i suoi aventi causa a qualsiasi titolo mediante formale comunicazione scritta.<BR>
+<BR>
+<B>Art. 20) Spese di bollo e registro.</B> Le spese e tasse di bollo e di registro del presente atto, come specificate nel SECCI alla sezione 3.1 voce <I>Oneri erariali</I>, richieste dagli Uffici Fiscali, sia all'atto della registrazione sia successivamente, anche in via supplementare, nonché la rivalsa per gli oneri erariali, le spese postali, di notifica ai sensi di legge e quelle eventualmente richieste dall'Ente ceduto per ogni esigenza anche successiva all'instaurazione del rapporto, ivi comprese le comunicazioni relative al trasferimento del Cliente sono a carico del Cliente stesso, il quale autorizza, ora per allora, l'Ente dal quale dipende a trattenere dagli emolumenti dovutigli la somma che, a tale titolo, gli venisse richiesta da B@nca 24-7 o ovvero dai suoi aventi causa a qualsiasi titolo.<BR>
+<BR>
+<B>Art. 21)  Assenza requisiti.</B> B@nca 24-7 ovvero i suoi aventi causa a qualsiasi titolo non provvederanno all'erogazione del prestito se, a giudizio insindacabile di B@nca 24-7, non saranno stati forniti tutti gli atti ed i documenti necessari per la validità e la garanzia della cessione stessa e specialmente se non sarà stato rilasciato il consenso definitivo da parte dell'Amministrazione/datore di lavoro dalla quale il Cliente dipende.<BR>
+<BR>
+<B>Art. 22). Lingua.</B> Tutte le comunicazioni di B@nca 24-7 ovvero i suoi aventi causa a qualsiasi titolo saranno effettuate in lingua italiana al domicilio del Cliente indicato nel contratto o successivamente da questi indicato per iscritto.<BR>
+<BR>
+<B>Art. 23) Comunicazioni periodiche.</B> B@nca 24-7 ovvero i suoi aventi causa a qualsiasi titolo forniscono al Cliente alla scadenza del contratto, e comunque almeno una volta l'anno, una comunicazione analitica, al domicilio del Cliente indicato nel contratto o successivamente da questi indicato per iscritto, che dia completa e chiara informazione sullo svolgimento del rapporto e un aggiornato quadro delle condizioni economiche applicate. In mancanza di opposizione scritta da parte del Cliente, le condizioni si intendono
+</TEXT>
+<PAGE>
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT">Pag. 8 di 10</TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+<TEXT SIZE=7.5 ALIGN=J>
+approvate trascorsi 60 (sessanta) giorni dal ricevimento della predetta comunicazione. Tale comunicazione periodica sarà resa in forma cartacea o mediante altro supporto durevole preventivamente accettato dal Cliente, laddove disponibile; in tal caso, in ogni momento del rapporto il Cliente ha diritto di cambiare la tecnica di comunicazione utilizzata.
+Il Cliente, colui che gli succede a qualunque titolo e colui che subentra nell'amministrazione dei suoi beni possono ottenere a proprie spese copia di documenti inerenti singole operazioni poste in essere negli ultimi dieci anni.<BR>
+Tali spese saranno indicate al Cliente al momento della richiesta e saranno commisurate alla complessità della ricerca della documentazione, fermo restando che non saranno in ogni caso superiori ai costi che B@nca 24-7 ovvero i suoi aventi causa a qualsiasi titolo hanno sostenuto per la relativa produzione, nei limiti di quanto indicato nel SECCI.<BR>
+<BR>
+<B>Art. 24). Legge regolatrice del contratto, foro competente.</B> Il presente contratto, stipulato ed eseguito in lingua italiana, è regolato dalla legge italiana. Per qualunque controversia che dovesse sorgere in dipendenza del contratto è competente in via esclusiva il Foro nella cui circoscrizione si trova la residenza o il domicilio elettivo del Cliente.<BR>
+<BR>
+<B>Art. 25) Esclusione di responsabilità.</B>  Fatte salve inderogabili disposizioni di legge, B@nca 24-7 ovvero i suoi aventi causa a qualsiasi titolo non rispondono dei casi di forza maggiore (compresi gli scioperi del personale) e di caso fortuito che possono verificarsi presso B@nca 24-7 medesima o presso corrispondenti ovvero presso i suoi aventi causa a qualsiasi titolo, così come ogni qual volta essa abbia agito in conformità con i vincoli derivanti da obblighi di legge o da disposizioni delle competenti Autorità.<BR>
+<BR>
+<B>Art. 26) Cessione del contratto.</B> Il Cliente autorizza sin da ora B@nca 24-7 ovvero i suoi aventi causa a qualsiasi titolo, a parità di tutela dei propri diritti, a cedere il presente contratto e i relativi diritti e obbligazioni, in tutto o in parte, anche nel caso di cessione di rapporti giuridici in blocco ai sensi della normativa bancaria di tempo in tempo vigente, ferme restando le prescrizioni normative applicabili in materia.<BR>
+<BR>
+<B>Art. 27) Sostituzione.</B> - Fermi restando i diritti del Cliente e nel pieno rispetto della normativa applicabile, B@nca 24-7 è autorizzata a farsi sostituire da soggetti terzi per l'esecuzione delle obbligazioni derivanti dal presente contratto.<BR>
+<BR>
+<B>Art. 28). Jus Variandi.</B> Ai sensi e per gli effetti dell'art. 118 del D. Lgs. 385/1993 e successive modifiche e integrazioni, in qualunque momento B@nca 24-7 può, se sussiste un giustificato motivo, modificare unilateralmente le condizioni contrattuali, a eccezione dei tassi di interesse che potranno variare solo con le modalità e in base al parametro eventualmente previsti nel contratto. Le relative comunicazioni saranno validamente fatte da B@nca 24-7 in forma scritta, trasmesse mediante lettera semplice o su altro supporto durevole trasmesso mediante una qualsiasi idonea tecnica di comunicazione a distanza preventivamente accettata dal Cliente, con preavviso minimo di due mesi ed entreranno in vigore con la decorrenza ivi indicata. Nel caso di modifica unilaterale delle condizioni di contratto ai sensi del precedente comma, il Cliente può recedere dal medesimo contratto entro la data di decorrenza della modifica proposta senza spese e con l'applicazione, in sede di liquidazione del rapporto, delle condizioni precedentemente praticate. Se non viene comunicato a B@nca 24-7 il recesso entro il termine predetto, le modifiche si intenderanno approvate con la decorrenza indicata nella citata comunicazione. <BR>
+Se il tasso o le altre condizioni sono determinate con riferimento a specifici parametri oggettivi prescelti dalle parti (es. Euribor), non costituiscono modifica delle condizioni economiche le variazioni conseguenti alle diverse valorizzazioni di tali parametri; queste ultime sono, pertanto, automaticamente applicate e sono indicate nell'ambito delle ordinarie comunicazioni periodiche previste dalla normativa tempo per tempo vigente. <BR>
+Ai sensi del presente articolo, per giustificato motivo si intende qualsiasi accadimento, sopravvenuto alla conclusione del contratto, che abbia per effetto l'alterazione dell'originario equilibrio delle prestazioni contrattuali e rispetto al quale il comportamento di B@nca 24-7 non abbia avuto un effetto causale, come, a titolo meramente esemplificativo e non esaustivo: modifica di disposizioni legislative e/o regolamentari, straordinari processi di ristrutturazione e riorganizzazione aziendale (anche a seguito di modifiche regolamentari) che incidano in modo rilevante sulle dinamiche dei costi, eventi che riguardino il Cliente o il settore di appartenenza di questi e che incidano in modo oggettivo sul profilo di rischio del Cliente medesimo, incrementi di costi dovuti alle procedure interbancarie applicate o ad altri fattori oggettivi ed esterni a B@nca 24-7, mutamenti relativi al grado di solvibilità e di affidabilità del Cliente espresso in termini di rischio di credito e determinato sulla base di oggettive procedure di valutazione, ecc.; <BR>
+<BR>
+<B>Art. 29) Centrale Rischi e sistemi di informazione creditizia.</B> B@nca 24-7 ovvero i suoi aventi causa a qualsiasi titolo dichiarano di aderire e trasmettere i dati relativi al credito derivante dal presente contratto, oltre che alle banche dati di centralizzazione delle informazioni bancarie previste obbligatoriamente dalla normativa bancaria vigente (Centrale Rischi gestita da Banca d'Italia), anche a sistemi di informazione creditizia gestiti da soggetti privati, come meglio descritti nel modulo "Come utilizziamo i suoi dati" già consegnato al Cliente stesso. Tale comunicazione e ogni relativo trattamento di dati personali afferenti al Cliente e/o a eventuali coobbligati in solido avverrà nel rispetto della normativa tempo per tempo vigente per ciascun tipo di banca dati/sistema di informazione creditizia, che il Cliente medesimo dichiara di conoscere.
+<BR>
+<BR>
+<BR>
+<BR><BR>
+<B>Dichiaro di aver ricevuto copia del presente contratto - comprensiva del SECCI e delle Condizioni di contratto.<BR><BR></B>
+FIRMA DEL CLIENTE _______________________________<BR>
+<BR>
+____________________  li <if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS_MM</valueabs><in>(01,1)</ifcond><then>30/12/2011</then><else></else><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></if>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR><BR>
+<B>Dopo attenta ponderazione, avendone riscontrato la rispondenza con la proposta in precedenza consegnatami provvedo alla formale accettazione del presente contratto mediante sottoscrizione.</B><BR><BR>
+<TABLE SIZE=8.5>
+<TR>
+	<TD WIDTH=50% ALIGN=L>FIRMA DEL CLIENTE</TD>
+	<TD WIDTH=50% ALIGN=C SIZE=7>Timbro e firma del soggetto abilitato per la Mandataria <BR>
+	(per autentica e riconoscimento)</TD> 	 	
+</TR>
+<TR><TD><BR><BR></TD></TR>
+<TR>
+	<TD WIDTH=50%>____________________  li <if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS_MM</valueabs><in>(01,1)</ifcond><then>30/12/2011</then><else></else><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></if></TD>	
+	<TD WIDTH=50% ALIGN=C>Conegliano li <if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS_MM</valueabs><in>(01,1)</ifcond><then>30/12/2011</then><else></else><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></if></TD>	
+</TR> 
+</TABLE>
+
+</TEXT>
+<PAGE>
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT">Pag. 9 di 10</TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+<TEXT SIZE=7.5 ALIGN=J>
+
+<B>Dichiaro altresì, sotto la mia piena responsabilità e tenendo indenne B@nca 24-7 ovvero i suoi aventi causa a qualsiasi titolo da ogni e qualsiasi conseguenza che da tale dichiarazione possa derivare nei confronti di chiunque, che il prestito è richiesto per mio conto e nel mio interesse.</B><BR><BR>
+<TABLE SIZE=8.5><B>
+<TR>
+	<TD WIDTH=50% ALIGN=L>FIRMA DEL CLIENTE</TD>
+	<TD WIDTH=50% ALIGN=C SIZE=7>Timbro e firma del soggetto abilitato per la Mandataria <BR>
+	(per autentica e riconoscimento)</TD> 	 	
+</TR>
+<TR><TD><BR><BR></TD></TR>
+<TR>
+	<TD WIDTH=50%>____________________  li <if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS_MM</valueabs><in>(01,1)</ifcond><then>30/12/2011</then><else></else><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></if></TD>	
+	<TD WIDTH=50% ALIGN=C>Conegliano li <if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS_MM</valueabs><in>(01,1)</ifcond><then>30/12/2011</then><else></else><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></if></TD>	
+</TR> 
+</TABLE>
+<BR><BR><BR><BR>
+Dichiaro di approvare specificamente, anche ai sensi e per gli effetti dell'art. 1341, secondo comma, cod. civ., ovvero delle disposizioni in materia di trasparenza bancaria, le seguenti clausole:<BR>
+Art.3) Cessazione del rapporto di lavoro , Art. 4) Riduzione della retribuzione,  Art. 5) risoluzione del rapporto di lavoro, Art. 6) Trasferimento ad altro impiego. Art. 10)  Ritardo nei versamenti e interessi di mora, Art. 11) Conseguenze per mancato pagamento. Risoluzione, Art. 21)  Assenza requisiti, Art. 25) Esclusione di responsabilità,  Art. 26) Cessione del contratto, Art. 27) Sostituzione
+<BR><BR><BR><BR><BR><BR>
+<TABLE SIZE=8.5><B>
+<TR>
+	<TD WIDTH=50% ALIGN=L>FIRMA DEL CLIENTE</TD>
+	<TD WIDTH=50% ALIGN=C SIZE=7>Timbro e firma del soggetto abilitato per la Mandataria <BR>
+	(per autentica e riconoscimento)</TD> 	 	
+</TR>
+<TR><TD><BR><BR></TD></TR>
+<TR>
+	<TD WIDTH=50%>____________________  li <if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS_MM</valueabs><in>(01,1)</ifcond><then>30/12/2011</then><else></else><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></if></TD>	
+	<TD WIDTH=50% ALIGN=C>Conegliano li <if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS_MM</valueabs><in>(01,1)</ifcond><then>30/12/2011</then><else></else><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></if></TD>	
+</TR> 
+</TABLE>
+<BR><BR><BR>
+</TEXT>
+<TEXT SIZE=7.5 ALIGN=J>
+Dichiaro di aver ricevuto/ essere stato informato , in tempo utile prima della conclusione del presente contratto, di:<BR><BR><X VALUE=1.2>
+<LI>  aver ricevuto il documento contenente i Tassi Effettivi  Globali Medi (TEGM);
+<LI>  essere stato informato della possibilità di rivolgersi all’ABF (Arbitro Bancarioe Finanziario);
+<LI>  aver ricevuto la Guida pratica per la risoluzione stragiudiziale delle controversie;
+<LI>  essere stato informato della possibilità di ottenere copia del testo del contratto idonea per la stipula;
+<LI>  piano di ammortamento;
+</X>
+<BR><BR><BR>
+</TEXT>
+<TABLE SIZE=8.5>
+<TR>
+	<TD WIDTH=50% ALIGN=L>FIRMA DEL CLIENTE</TD>
+	<TD WIDTH=50% ALIGN=C SIZE=7>Timbro e firma del soggetto abilitato per la Mandataria <BR>
+	(per autentica e riconoscimento)</TD> 	 	
+</TR>
+<TR><TD><BR><BR></TD></TR>
+<TR>
+	<TD WIDTH=50%>____________________  li <if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS_MM</valueabs><in>(01,1)</ifcond><then>30/12/2011</then><else></else><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></if></TD>	
+	<TD WIDTH=50% ALIGN=C>Conegliano li <if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS_MM</valueabs><in>(01,1)</ifcond><then>30/12/2011</then><else></else><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></if></TD>	
+</TR> 
+</TABLE>
+
+</TEXT>
+<TEXT SIZE=8 ALIGN=J><BR><BR>Identificazione ai sensi del D.Lgs 231/2007 e successive modifiche<BR><BR></TEXT>
+<TABLE BORDER=0.7>
+<TR><TD><TABLE SIZE=7.5>
+			<TR><TD WIDTH=100% ALIGN=J>Il sottoscritto___________________________________________________________</TD></TR>
+			<TR><TD WIDTH=100% ALIGN=J>in qualità di ____________________  incaricato all'identificazione del/i Cliente/i, con la presente sottoscrizione attesta di aver proceduto, ai sensi della normativa in materia di antiriciclaggio, all'identificazione personale del/i Cliente/i medesimo/i il cui adempimento ricade sotto la propria responsabilità.</TD></TR>
+			<TR><TD WIDTH=100% ALIGN=J>Luogo e data ______________________________</TD></TR>
+			<TR><TD WIDTH=100% ALIGN=J>Timbro e Firma del soggetto delegato ___________________________</TD></TR>
+		</TABLE>
+	</TD>
+</TR>
+</TABLE>	</TEXT>
+</BODY>
+</PDF>

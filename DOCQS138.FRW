@@ -1,0 +1,86 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="sacstrutturasize10">
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3">			
+</HEADER>
+<FOOTER>
+<include file="\INCLUDE\IncludedStruttura.frw" value="footercartaintestatasac">
+</FOOTER>
+<BODY>
+<TEXT>
+<BR><BR><BR><BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>Spettabile</TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DES_COMP_VIT</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IND_COMP_VIT</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CAP_COMP_VIT</valueabs> <valueabs>IDGFCQS00F/RECORD/IDGFCQS_LOV_COMP_VIT</valueabs> (<valueabs>IDGFCQS00F/RECORD/IDGFCQS_PRV_COMP_VIT</valueabs>)</TD>
+</TR><BR><BR><BR><BR>
+</TABLE>
+<BR>
+<BR>
+<BR>
+<BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=100% ALIGN="J"><B>
+Oggetto:<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_ATTIVITA</valueabs>==PEN</ifcond><then>Contratto di mutuo contro cessione del quinto della pensione </then></if>
+		
+		<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_ATTIVITA</valueabs>!=PEN</ifcond><and><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond>
+			<then>Contratto di mutuo contro cessione del quinto dello stipendio </then>
+	    </if>
+
+		<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_ATTIVITA</valueabs>!=PEN</ifcond><and><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==DEL</ifcond>
+			<then>Contratto di prestito contro delegazione di pagamento </then>
+	    </if>
+ nr. <valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs> sottoscritto tra Sigla Srl e  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>.<BR><BR><BR>
+</B><BR></TD>
+</TR>
+<TR>
+<TD WIDTH=100% ALIGN="J">Con la presente siamo a richiedere l’annullamento della seguente polizza: <BR>
+<BR>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> emessa il 
+				<loop>
+				<loopda>1</loopda>
+				<looproot>IDGFDAT00F/RECORD</looproot>
+					<if><ifcond><value>IDGFDAT_CODICE</value>==RITPOL</ifcond>
+					<then>
+					<value>IDGFDAT_DATA</value>
+					</if>	
+				</loop>	
+</TD>
+</TR>
+</TABLE>
+<BR><BR><BR>
+Cordiali saluti.</P><BR><BR><BR><BR><BR><BR>
+
+
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=50%>Conegliano, <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSTS</valueabs></TD>
+<TD WIDTH=40% ALIGN=C>Gaetano Di Cerbo<BR>Direzione prodotto<BR>Sigla Srl<BR><IMG SRC="<valueabs>Immagini/FIRMA/Path</valueabs><valueabs>Immagini/FIRMA/Nome</valueabs>" SCALE=<valueabs>Immagini/FIRMA/Scale</valueabs>></TD>
+<TD WIDTH=5%></TD>
+<TD WIDTH=5%></TD>
+</TR>
+</TABLE>
+</TEXT>
+</BODY>
+</PDF>

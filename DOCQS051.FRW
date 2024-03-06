@@ -1,0 +1,87 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="sacstrutturasize10">
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3">			
+</HEADER>
+<FOOTER>
+<include file="\INCLUDE\IncludedStruttura.frw" value="footercartaintestatasac">
+</FOOTER>
+<BODY>
+<TEXT ALIGN=J>
+<BR><BR><BR><BR><BR>
+Gentile Cliente,<BR>
+come da Sua cortese richiesta Le inviamo, allegato alla presente, il conteggio per estinzione anticipata del Suo contratto di finanziamento.<BR><BR>
+Dal calcolo del debito residuo sono state detratte le seguenti quote:<BR><BR>
+- quota parte delle commissioni Sigla; <if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDANAFIN</valueabs><in>(12002220)</ifcond><then>- quota commissioni della banca plafonataria; </if> <if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_COMP_VIT</valueabs>==12001843</ifcond><and><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_IMPABBPR</valueabs>>0</ifcond><then> - quota premio assicurazione net;</if><BR>
+<BR>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDANAFIN</valueabs>!=72000314</ifcond><then>
+	<if>(<ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTRGG</valueabs><11</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTRMM</valueabs>==1</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTRAA</valueabs>==2011</ifcond>)<or><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTRAA</valueabs><=2010</ifcond><then>
+		<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_COMP_VIT</valueabs>==12001843</ifcond><and>((<ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs><3</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_AA</valueabs>==2010</ifcond>)<or><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_AA</valueabs><=2009</ifcond>)<and><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_IMPABBPR</valueabs><=0</ifcond><then>ci faremo parte attiva anche presso l’agente e la Compagnia Assicurativa affinchè venga valutato un eventuale rimborso, se dovuto.</then></if>
+		<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_COMP_VIT</valueabs>==12001843</ifcond><and>((<ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs><3</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_AA</valueabs>==2010</ifcond>)<or><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_AA</valueabs><=2009</ifcond>)<and><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_IMPABBPR</valueabs>>0</ifcond><then>ci faremo parte attiva anche presso l’agente affinchè venga valutato un eventuale rimborso, se dovuto.</then></if>
+		<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_COMP_VIT</valueabs>==12001843</ifcond><and>((<ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>>=3</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_AA</valueabs>==2010</ifcond>)<or><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_AA</valueabs>>2010</ifcond>)<and><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_IMPABBPR</valueabs><=0</ifcond><then>ci faremo parte attiva anche presso l’agente e la Compagnia Assicurativa affinchè venga valutato un eventuale rimborso, se dovuto.</then></if>
+		<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_COMP_VIT</valueabs>==12001843</ifcond><and>((<ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>>=3</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_AA</valueabs>==2010</ifcond>)<or><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_AA</valueabs>>2010</ifcond>)<and><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_IMPABBPR</valueabs>>0</ifcond><then>ci faremo parte attiva anche presso l’agente affinchè venga valutato un eventuale rimborso, se dovuto.</then></if>
+		<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_COMP_VIT</valueabs>!=12001843</ifcond><then>ci faremo parte attiva anche presso l’agente e la Compagnia Assicurativa affinchè venga valutato un eventuale rimborso, se dovuto.</then></if>
+	</then></if>
+	<if>(<ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTRGG</valueabs>>=11</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTRMM</valueabs>==1</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTRAA</valueabs>==2011</ifcond>)<or>(<ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTRMM</valueabs>>1</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTRAA</valueabs>==2011</ifcond>)<or><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTRAA</valueabs>>2011</ifcond><then>
+		<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_COMP_VIT</valueabs>!=12001843</ifcond><then>ci faremo parte attiva anche presso l’agente e la Compagnia Assicurativa affinchè venga valutato un eventuale rimborso, se dovuto.</then></if>
+	</then></if>
+</then></if>
+
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDANAFIN</valueabs>==72000314</ifcond><then>
+		<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_COMP_VIT</valueabs>!=12001843</ifcond><then>ci faremo parte attiva anche presso la Compagnia Assicurativa affinchè venga valutato un eventuale rimborso, se dovuto. </then></if>
+</then></if>
+
+</TEXT>
+<BR><BR><BR><BR><BR><BR><BR>
+<TABLE WIDTH=100% BORDER=0.5>
+<TR>
+<TD WIDTH=100% ALIGN="C" SIZE=12>
+<U><B>ATTENZIONE:</B></U>
+</TD>
+</TR>
+<TR>
+<TD WIDTH=100% ALIGN="J">
+<BR>Specifichiamo che <B>l'importo totale indicato nel conteggio estintivo comprende anche la quota maturata nel mese di <if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_MM</valueabs>==1</ifcond><then>Gennaio</then></if>
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_MM</valueabs>==2</ifcond><then>Febbraio</then></if>
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_MM</valueabs>==3</ifcond><then>Marzo</then></if>
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_MM</valueabs>==4</ifcond><then>Aprile</then></if>
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_MM</valueabs>==5</ifcond><then>Maggio</then></if>
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_MM</valueabs>==6</ifcond><then>Giugno</then></if>
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_MM</valueabs>==7</ifcond><then>Luglio</then></if>
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_MM</valueabs>==8</ifcond><then>Agosto</then></if>
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_MM</valueabs>==9</ifcond><then>Settembre</then></if>
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_MM</valueabs>==10</ifcond><then>Ottobre</then></if>
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_MM</valueabs>==11</ifcond><then>Novembre</then></if>
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_MM</valueabs>==12</ifcond><then>Dicembre</then></if>, indicata alla  voce "Quote insolute".</B><BR>
+Pertanto, qualora decidesse di portare a termine l'estinzione con le modalità esposte in allegato, <B>La invitiamo a comunicare al Suo datore di lavoro che tale quota non dovrà essere trattenuta e versata a Sigla con il prossimo cedolino paga del mese di <if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_MM</valueabs>==1</ifcond><then>Gennaio</then></if>
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_MM</valueabs>==2</ifcond><then>Febbraio</then></if>
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_MM</valueabs>==3</ifcond><then>Marzo</then></if>
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_MM</valueabs>==4</ifcond><then>Aprile</then></if>
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_MM</valueabs>==5</ifcond><then>Maggio</then></if>
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_MM</valueabs>==6</ifcond><then>Giugno</then></if>
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_MM</valueabs>==7</ifcond><then>Luglio</then></if>
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_MM</valueabs>==8</ifcond><then>Agosto</then></if>
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_MM</valueabs>==9</ifcond><then>Settembre</then></if>
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_MM</valueabs>==10</ifcond><then>Ottobre</then></if>
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_MM</valueabs>==11</ifcond><then>Novembre</then></if>
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_MM</valueabs>==12</ifcond><then>Dicembre</then></if></B>, poiché già compresa nel calcolo di estinzione.
+</TD>
+</TR>
+</TABLE>
+<BR><BR>
+<TEXT ALIGN=J>
+Rimanendo a Sua completa disposizione per eventuali ulteriori chiarimenti Le ricordiamo di seguito i nostri
+riferimenti:<BR><BR>
+nr. telefono 0438/45990 attivo dal lunedì al venerd' dalle ore 10.00 alle ore 12.30 e dalle ore 14.00 alle ore 16.00<BR>
+nr. fax 0438/45926 e indirizzo email:  <A HREF="mailto:sac@siglafinanziamenti.it">sac@siglafinanziamenti.it</A><BR><BR><BR>
+Restando a disposizione per eventuali chiarimenti, porgiamo distinti saluti.<BR><BR><BR>
+</TEXT>
+
+<TABLE WIDTH=100% FONT SIZE=9>
+<TR HEIGHT=3%>
+<TD WIDTH=70%></TD>
+<TD WIDTH=30% ALIGN="C" CELLBACKGROUND="<valueabs>Immagini/FIRMACM1/Path</valueabs><valueabs>Immagini/FIRMACM1/Nome</valueabs>"><BR><BR>Conformità Clienti e Monitoraggio Contratti<BR><BR>Sigla Srl</TD>
+</TR>
+</TABLE>
+</BODY>
+</PDF>

@@ -1,0 +1,114 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize9">
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3">			
+</HEADER>
+<FOOTER>
+<include file="\INCLUDE\IncludedStruttura.frw" value="footercartaintestcqsstd">
+</FOOTER>
+<BODY>
+<TEXT>
+<TEXT X=16.5 Y=-1 ><FONT SIZE=6>N° Pratica: <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs></TEXT> 
+<BR><BR><BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><B>SPETTABILE</B></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCTR00F/RECORD/IDGFCTR_RAGSOC_MED</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCTR00F/RECORD/IDGFCTR_INDIR_MED</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCTR00F/RECORD/IDGFCTR_MEDIATORE</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCTR00F/RECORD/IDGFCTR_MED_AGENCY</valueabs></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+<BR>
+<BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=100% ALIGN="J">
+Conegliano, lì &date <BR><BR>
+<B>Oggetto: anticipo su contratto n. <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs> del <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTR</valueabs> , richiedente <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></B><BR><BR><BR></TD>
+</TR>
+<TR>
+<TD WIDTH=100% ALIGN="J">Come da accordi, trasmettiamo documentazione relativa alla pratica in oggetto:<BR><BR></TD>
+</TR>
+</TABLE>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=5%>1)</TD>
+<TD WIDTH=95% ALIGN="J">Richiesta di anticipo di € <valueabs>IDGFERT00F/RECORD/IDGFERT_IMPERG</valueabs><BR><BR></TD>
+</TR>
+<TR>
+<TD WIDTH=5%>2)</TD>
+<TD WIDTH=95% ALIGN="J">Ricevuta per quietanza e ricezione<BR><BR></TD>
+</TR>
+<loop>
+<loopda>1</loopda>
+<looproot>IDGFERD00F/RECORD</looproot>
+<TR>
+<TD WIDTH=5%><if><ifcond><value>IDGFERD_PROG</value>==1</ifcond><then>3)</if></TD>
+<TD WIDTH=95% ALIGN=L> - <value>IDGFERD_DESCPAG</value> a favore del richiedente emesso da Cassa di Risparmio del Veneto di € <value>IDGFERD_IMPERG</value></TD>
+</TR>
+</loop>
+<BR><BR>
+<TR>
+<TD WIDTH=5%>4)</TD>
+<TD WIDTH=95% ALIGN="J">Contratto n° <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs> del <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTR</valueabs> sottoscritto dalle parti in originale.<BR></TD>
+</TR>
+</TABLE>
+<BR><BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=100% ALIGN="J">Vi preghiamo pertanto di ritornarci a stretto giro di posta i documenti in originale debitamente sottoscritti dal cliente.</TD>
+</TR><BR>
+<TR>
+<TD WIDTH=100% ALIGN="J">Distinti Saluti</TD>
+</TR>
+</TABLE>
+<BR><BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=50%></TD>
+<TD WIDTH=40% ALIGN="C">Sigla Srl</TD>
+<TD WIDTH=5%></TD>
+<TD WIDTH=5%></TD>
+</TR>
+<TR>
+<TD WIDTH=50%></TD>
+<TD WIDTH=40% ALIGN="C">Direzione Cessione Quinto</TD>
+<TD WIDTH=5%></TD>
+<TD WIDTH=5%></TD>
+</TR>
+<TR>
+<TD WIDTH=50%></TD>
+<TD WIDTH=40% ALIGN="C">Tacchin Alberto</TD>
+<TD WIDTH=5%></TD>
+<TD WIDTH=5%></TD>
+</TR>
+</TABLE>
+</TEXT>
+</BODY>
+</PDF>

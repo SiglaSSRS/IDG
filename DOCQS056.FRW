@@ -1,0 +1,107 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="sacstrutturasize10">
+<FOOTER>
+<include file="\INCLUDE\IncludedStruttura.frw" value="footercartaintestatasigla">
+</FOOTER>
+<SUBFOOTER><TEXT>
+</TEXT>
+</SUBFOOTER>
+<BODY>
+<TEXT>
+<BR><BR><BR><BR><BR><BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10% ALIGN=R></TD>
+<TD WIDTH=40%>Spettabile</TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10% ALIGN=R></TD>
+<TD WIDTH=40%><valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFAZI00F/RECORD/IDGFAZI_INDIR_SIG</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFAZI00F/RECORD/IDGFAZI_SIGLASRL</valueabs></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10% ALIGN=R></TD>
+<TD WIDTH=40%>Fax 0438/45926</TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10% ALIGN=R></TD>
+<TD WIDTH=40%>E-mail sac@siglafinanziamenti.it</TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+<TEXT ALIGN=J>
+Oggetto: Richiesta conteggio estintivo contratto n. <valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs> a nome <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>.<BR><BR>
+</TEXT>
+<TEXT ALIGN=C>
+<B>DICHIARAZIONE DEL CEDENTE</B><BR><BR>
+</TEXT>
+<TEXT ALIGN=J>
+Spettabile Sigla, con la presente io sottoscritt<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond><then>o<else>a</if><BR>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_COGNOME</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_NOME</valueabs> nat<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond><then>o<else>a</if> a <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCNASC</valueabs> il <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC</valueabs> e residente in
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs> a <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs>(<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs>)<BR><BR>
+</TEXT>
+<TEXT ALIGN=C>
+<B>DICHIARO</B><BR><BR>
+</TEXT>
+<TEXT ALIGN=J><B>
+di essere a conoscenza di quanto disposto dall’ art. 39 del D.P.R. n. 180/1950 e dal Decreto ministeriale n. 313/2006 in merito al divieto di rinnovare un contratto di cessione del quinto dello stipendio/pensione prima che siano decorsi i due quinti della durata dello stesso; <BR>
+pertanto, inoltro formale richiesta di conteggio per l’estinzione anticipata del contratto di finanziamento da me sottoscritto e di cui all’ oggetto, confermando che non provvederò al rinnovo dello stesso prima che siano trascorsi 12 mesi dalla data dell’ estinzione. 
+</B><BR><BR>
+</TEXT>
+<TEXT ALIGN=J>
+Il conteggio per estinzione anticipata potrà essermi inviato a mezzo:<BR><BR>
+</TEXT>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=5%><IMG SRC="<valueabs>Immagini/BOX/Path</valueabs><valueabs>Immagini/BOX/Nome</valueabs>" SCALE=<valueabs>Immagini/BOX/Scale</valueabs>></TD>
+<TD WIDTH=95%>Posta<BR><BR></TD>
+</TR>
+<TR>
+<TD WIDTH=5%><IMG SRC="<valueabs>Immagini/BOX/Path</valueabs><valueabs>Immagini/BOX/Nome</valueabs>" SCALE=<valueabs>Immagini/BOX/Scale</valueabs>></TD>
+<TD WIDTH=95%>Fax al nr _________________________________________________<BR><BR></TD>
+</TR>
+<TR>
+<TD WIDTH=5%><IMG SRC="<valueabs>Immagini/BOX/Path</valueabs><valueabs>Immagini/BOX/Nome</valueabs>" SCALE=<valueabs>Immagini/BOX/Scale</valueabs>></TD>
+<TD WIDTH=95%>email     _________________________________________________<BR><BR></TD>
+</TR>
+</TABLE><TEXT ALIGN="J">
+<BR><BR><BR><BR><BR>
+Dichiaro di essere informato, ai sensi e per gli effetti di cui all'art.10 del Dlgs 196/2003 che i dati personali raccolti saranno trattati, anche con strumenti informatici, esclusivamente nell'ambito del procedimento per il quale la presente dichiarazione viene resa.</P><BR><BR><BR>
+</TEXT>
+
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=50% ALIGN="C"><BR>__________________________________<BR><FONT SIZE=7><I>(Luogo e data)</I></TD>
+<TD WIDTH=50% ALIGN="C"><BR>__________________________________<BR><FONT SIZE=7><I>(Firma leggibile)</I></TD>
+</TR>
+</TABLE>
+<TEXT>
+<BR><BR><BR><BR><BR>
+All.: documento d'identità valido
+</TEXT>
+</BODY>
+</PDF>

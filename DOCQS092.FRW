@@ -1,0 +1,421 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize5.5_times">
+<HEADER>
+<TEXT X=16.5 Y=-0.3>cqs-P. – 12.03.2014</TEXT>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintsiglaubi">
+</HEADER>
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestatasigla">
+</FOOTER>
+
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT">Pag. 1 di 10</TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+<BODY>
+
+<TEXT SIZE=7.5 ALIGN=C><BR><BR><B>CONTRATTO DI PRESTITO RIMBORSABILE MEDIANTE CESSIONE <I>"PRO SOLVENDO"</I> <BR>
+DI <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs> QUOTE DELLA RETRIBUZIONE MENSILE<BR>
+  CONTRATTO N. <valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs><BR>
+Tra
+</B>
+<BR><BR></TEXT>
+<TEXT SIZE=9 ALIGN=J>
+<B>SIGLA SRL</B> (in seguito denominata “SIGLA”) Codice Fiscale e Partita IVA 03951740269 Sede Legale e Operativa via Cesare Battisti, 5/a – 31015 Conegliano (TV) - Indirizzo telematico www.siglacredit.it - Iscritta nell’elenco speciale al n. 33023.3 ex art. 107 del D. Lgs. n. 385/93 - R.E.A. TV 311003 - Capitale Sociale Euro 600.000,00 i.v. (di seguito denominata anche "FINANZIATORE") ,soggetta ai controlli esercitati dalla Banca d'Italia, con sede in Via Nazionale n. 91, 00184 Roma.<BR></TEXT>
+<TEXT SIZE=9 ALIGN=C><B>e</B><BR></TEXT>
+<TEXT SIZE=9 ALIGN=J><B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></B>, nato a <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCA_NASC</valueabs>, il <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC</valueabs>, codice fiscale <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs>
+, <if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs>==</ifcond>
+<then>residente in <valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs>, <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs>, località <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs>),</then>
+<else>residente in <valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs>, <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_RES</valueabs>, località <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_RES</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_RES</valueabs>),</else>
+</if>
+ <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DSDOCUM</valueabs> n° <valueabs>IDGFCLI00F/RECORD/IDGFCLI_NUM_DOCUM</valueabs> rilasciata da <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_ENTE</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_DA</valueabs> con data emissione <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_DA_IL</valueabs> valida sino al <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_SCAD_IL</valueabs>, che riveste la qualifica di  “Consumatore”, dipendente dell’Amministrazione <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs> dal <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTASSUNZ</valueabs>,
+ Retribuzione mensile lorda &euro <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LRDULTBP</valueabs> , retribuzione mensile netta &euro <valueabs>IDGFCLI00F/RECORD/IDGFCLI_NETULTBP</valueabs>
+ , il quale ai fini del presente atto elegge il proprio domicilio presso: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs>, <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs>, località <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs>).<BR>
+
+ <BR></TEXT>
+<TEXT SIZE=9 ALIGN=C><B>PREMESSA</B><BR>
+<BR></TEXT>
+<TEXT SIZE=9 ALIGN=J>Adempiute le formalità precontrattuali Sigla, all’esito favorevole della istruttoria, comunicherà al Consumatore l’avvenuta delibera del finanziamento richiesto, che si perfezionerà con la ricezione e la sottoscrizione da parte dello stesso Consumatore del contratto già sottoscritto da Sigla. Da quel momento il contratto avrà efficacia e Sigla  procederà alla erogazione secondo le modalità e condizioni previste nel contratto stesso.<BR>
+<BR>
+Definizioni. Le parole utilizzate nel contratto con la lettera iniziale maiuscola, hanno il seguente significato :<BR>
+-	Amministrazione o Ente : l’Ente datore di lavoro o erogante la pensione del Consumatore;<BR>
+-	Collocamento : il servizio reso da operatori interni a Sigla ed esterni, gli agenti, i quali oltre a presentare il cliente si adoperano per la ricerca della documentazione istruttoria e per i rapporti con l’ Amministrazione;<BR>
+-	Consumatore : il cliente;<BR>
+-	Decorrenza : la data dalla quale il capitale erogato produce gli interessi, convenzionalmente fissata il primo giorno del mese di scadenza della prima rata;<BR>
+-	Istruttoria : la fase preliminare alla deliberazione del prestito nella quale sono analizzati i documenti necessari e valutate le condizioni di concedibilità;<BR>
+-	Netto Ricavo : Importo totale del credito.<BR>
+-	Piano di Ammortamento : è lo schema di rimborso del prestito ove viene reso evidente il metodo c.d. “alla francese” di imputazione delle singole rate per capitale rimborsato ed interessi applicati, prevedendo una rata costante composta da una quota interessi decrescente, perché calcolata su un capitale residuo che diminuisce, ed una quota capitale crescente, in quanto calcolata sottraendo alla rata costante una quota interessi sempre minore.<BR>
+-	Preammortamento : l’eventuale addebito di interessi dovuto per l’erogazione del prestito anteriormente alla Decorrenza (art. 18.5);<BR>
+-	Prospetto Analitico di Liquidazione : il documento emesso all’atto della liquidazione del prestito nel quale sono evidenziate le eventuali trattenute (Preammortamento, estinzione altri prestiti, prefinanziamento); <BR>
+-	Scadenza delle rate : le rate scadono l’ultimo giorno del mese a partire dal mese di decorrenza del contratto;<BR>
+-	SECCI : il quadro nel frontespizio del Contratto che evidenzia le informazioni di base per il Consumatore.<BR>
+<BR>
+Ciò premesso, il sottoscritto <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>, avvalendosi della facoltà di cedere il quinto della sua retribuzione in base alle vigenti disposizioni di legge con riguardo, particolare ma non esclusivo, al D.P.R. 5/1/1950 n. 180, come successivamente modificato e integrato, nonché al relativo Regolamento di attuazione di cui al D.P.R. 28/7/1950 n. 895 ed alle norme generali del Codice Civile (di seguito "normativa di riferimento"), conviene di stipulare il seguente contratto di finanziamento, di seguito sviluppato sinteticamente nel quadro SECCI e poi integralmente nel testo contrattuale.
+</TEXT> 
+
+<PAGE>
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT">Pag. 2 di 10</TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+
+<TEXT SIZE=7.5 ALIGN=C>
+<BR><BR>
+<B>SECCI - INFORMAZIONI EUROPEE DI BASE SUL CREDITO AI CONSUMATORI</B><BR>
+(STANDARD EUROPEAN CONSUMER CREDIT INFORMATION)<BR><BR></TEXT>
+<TEXT SIZE=7.5 ALIGN=J><B>1.	Identità e contatti di Sigla / intermediario del credito</B><BR><BR>
+<TABLE WIDTH=100% BORDER=0.1 SIZE=7>
+<TR>
+<TD WIDTH=50%><B>Finanziatore</B><BR>
+Indirizzo  <BR>
+Telefono<BR>
+E-mail<BR>
+Fax<BR>
+Sito web
+</TD>
+<TD WIDTH=50%>Sigla Srl <BR>
+Sede Legale e operativa: via Cesare Battisti, 5/a - 31015 Conegliano (TV)<BR>
+0438/45990 (assistenza clienti) 0438/372950 (interruzione rapporto di lavoro o decesso) <BR>
+sac@siglafinanziamenti.it <BR>
+0438/45917 <BR>
+www.siglacredit.it<BR>
+</TD>
+</TR>
+<TR>
+<TD WIDTH=50%><B>Intermediario del credito</B><BR>
+Indirizzo  <BR>
+Telefono<BR>
+E-mail<BR>
+Fax<BR>
+Sito web
+</TD>
+<TD WIDTH=50%><valueabs>IDGFCTR00F/RECORD/IDGFCTR_RAGSOC_MED</valueabs><BR><valueabs>IDGFCTR00F/RECORD/IDGFCTR_INDIR_MED</valueabs> <valueabs>IDGFCTR00F/RECORD/IDGFCTR_CAP_MED</valueabs> <valueabs>IDGFCTR00F/RECORD/IDGFCTR_LOCAL_MED</valueabs> (<valueabs>IDGFCTR00F/RECORD/IDGFCTR_PROV_MED</valueabs>)
+<BR><valueabs>IDGFCTR00F/RECORD/IDGFCTR_TELE_MED</valueabs>
+<BR>
+<BR><valueabs>IDGFCTR00F/RECORD/IDGFCTR_FAX_MED</valueabs></TD></TR>
+</TABLE>
+<BR><B>2.	Caratteristiche principali del prodotto di credito</B><BR><BR>
+<TABLE WIDTH=100% BORDER=0.1  SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=50%><B>Tipo di contratto di credito</B></TD>
+<TD WIDTH=50%>Prestito rimborsabile mediante cessione <I>pro solvendo</I> di quote pari ad un massimo del quinto della retribuzione mensile.</TD>
+</TR>
+<TR>
+<TD WIDTH=50%><B>Importo totale del credito</B><BR>
+<I>Limite massimo o somma totale degli importi messi a disposizione del Consumatore.</I>
+</TD>
+<TD WIDTH=50%>L’importo totale del credito, pari a <B>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPNETRIC</valueabs></B>, corrisponde al totale delle quote cedute (Importo totale dovuto dal Consumatore), al netto:<BR>
+•	degli interessi;<BR>
+•	delle Commissioni Sigla;<BR>
+•	degli oneri erariali;<BR>
+•	delle spese di riscossione da corrispondere al datore di lavoro;<BR>
+•	delle spese di invio di comunicazione su supporto cartaceo.</TD>
+</TR>
+<TR>
+<TD><B>Condizioni di prelievo</B><BR>
+<I>Modalità e tempi con i quali il Consumatore può utilizzare il credito.</I>
+</TD>
+<TD>Perfezionato il contratto (sottoscrizione di entrambe le parti), Sigla provvede alla notifica di una sua copia all’Amministrazione datrice di lavoro.<BR>
+Salvo eventi eccezionali (Art. 18), l’erogazione sarà effettuata dopo il rilascio del “benestare” o “nulla osta” dell’Amministrazione. <BR>
+L' erogazione sarà eseguita in unica soluzione mediante:<BR>
+1.	bonifico bancario sul conto corrente del Consumatore;<BR>
+In via del tutto eccezionale, qualora il Consumatore sia nella comprovata impossibilità di accedere alla somma erogata mediante la modalità indicata, l’erogazione potrà avvenire mediante assegno circolare munito della clausola di non trasferibilità e intestato al Consumatore.<BR>
+<BR>
+La Decorrenza del piano di rimborso coincide con il 1° giorno del mese successivo a quello di notifica del contratto all’Amministrazione (mese al termine del quale viene normalmente rimborsata la prima rata).<BR>
+<BR>
+Qualora l’Amministrazione datrice di lavoro differisca o anticipi l’inizio dei versamenti delle rate, Sigla provvederà a comunicare al Consumatore la  variazione della Decorrenza, comunque fissata nel 1 giorno del mese in cui viene riconosciuta a Sigla la prima rata. Tale comunicazione avverrà mediante il Prospetto Analitico di Liquidazione emesso all’atto dell’erogazione.<BR>
+<BR>
+L’erogazione del prestito prima della data di Decorrenza, comporta la facoltà di Sigla di addebitare gli interessi di Preammortamento nella misura del TAN per il periodo intercorso tra l’erogazione e la data di Decorrenza effettiva, fatta salva l’espressa volontà del Consumatore di far coincidere l’erogazione con la data di Decorrenza.<BR>
+L’erogazione del prestito dopo la data di Decorrenza comporta il rimborso da parte di Sigla al Consumatore degli interessi non dovuti nella misura del TAN per il periodo intercorso tra la data di Decorrenza effettiva e l’erogazione.
+</TD>
+</TR>
+<TR>
+<TD><B>Durata del contratto di credito</B></TD>
+<TD><B>N. mesi <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs> </B> dal mese di Decorrenza determinata come stabilito al punto precedente.</TD>
+</TR>
+<TR>
+<TD><B>Rate e loro ordine di imputazione</B></TD>
+<TD>L’importo di ciascuna rata è pari a <B>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPCAN</valueabs></B>, il numero delle rate è pari a n. <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs></B>, la periodicità è mensile.<BR>
+Il Consumatore pagherà gli importi degli interessi e/o delle spese nel seguente ordine:<BR>
+•	eventuale mora<BR>
+•	interessi<BR>
+•	capitale<BR>
+Per una migliore comprensione dei costi, del loro ordine di imputazione e della loro maturazione, il Consumatore potrà richiedere anticipatamente ed ottenere una copia del testo contrattuale idoneo per la stipula.
+</TD>
+</TR>
+<TR>
+<TD><B>Importo totale dovuto dal Consumatore</B><BR>
+<I>Importo del capitale preso in prestito, più gli interessi e i costi connessi al credito.</I>  
+</TD>
+<TD>L’Importo totale dovuto dal Consumatore, pari a <B>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPMUTLRD</valueabs></B>, corrisponde alla somma di tutte le quote mensili cedute, previste nel Piano di Ammortamento (montante lordo).
+	</TD>
+</TR>
+</TABLE></TEXT>
+<PAGE>
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT">Pag. 3 di 10</TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+<TEXT SIZE=7.5 ALIGN=J>
+<TABLE WIDTH=100% BORDER=0.1  SIZE=7  ALIGN=J>
+<TR>
+<TD WIDTH=50%><B>Garanzie richieste</B><BR>
+<I>Garanzie che il Consumatore deve prestare per ottenere il credito.</I>
+</TD>
+<TD WIDTH=50%>
+<B>Pro-solvendo</B>. La cessione è convenuta pro solvendo, ossia il Consumatore può essere chiamato a pagare personalmente a fronte di mancate rimesse mensili o insolvenze diverse.<BR>
+<BR>
+<B>Vincolo del TFR</B>. Il TFR ed ogni altro emolumento od indennità da corrispondersi alla cessazione del rapporto di lavoro, sono vincolati a garanzia della estinzione dell’eventuale residuo debito, a norma del DPR 180/50.<BR>
+<BR>
+<B>Estensione sulla pensione</B>. Nel caso vi sia un debito residuo al momento del collocamento in pensione del Consumatore, il contratto si estenderà agli emolumenti pensionistici corrisposti da qualsiasi ente previdenziale.<BR>
+<BR>
+<B>Garanzie assicurative</B>. Le coperture assicurative del rischio di perdita della vita e dell’occupazione, obbligatorie ai sensi del D.P.R. n. 180/1950, sono sostenute dal Finanziatore.<BR>
+<BR>
+Qualora si verifichi un evento che interrompa il regolare rimborso del prestito, Sigla farà ricorso alla garanzia assicurativa ove le altre garanzie risultino insufficienti o non immediatamente disponibili.<BR>
+Nell’ipotesi di liquidazione dell’indennizzo per cessazione del rapporto di lavoro, per qualsiasi causa, l’intervento dell’Assicurazione determina la surroga della stessa Assicurazione nei diritti di credito del Finanziatore. La liquidazione dell’indennizzo per il rischio vita non determina alcuna surroga.
+</TD>
+</TR>
+</TABLE></TEXT>
+<TEXT SIZE=7.5 ALIGN=J>
+<BR><B>3.	Costi del credito</B><BR><BR>
+<TABLE WIDTH=100% BORDER=0.1  SIZE=7  ALIGN=J>
+<TR>
+<TD WIDTH=50%><B>Tasso di interesse (T.A.N.)</B></TD>
+<TD WIDTH=50%>Tasso Annuo Nominale del <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTAN</valueabs> %</B>, applicato in misura fissa per l’intera durata del prestito, a scalare sul debito residuo mensile, secondo un Piano di Ammortamento a rate costanti  (c.d. “alla francese”), per un totale interessi pari a <B>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPINTER</valueabs></B><BR>
+Il T.A.N. comprende la remunerazione di tutte le attività ed i costi che Sigla  sosterrà nel corso del contratto, comprese le coperture assicurative e le eventuali attività ricorrenti della rete distributiva.<BR>
+Non sono compresi nel TAN i costi fissi indicati nel successivo quadro 3.1.
+</TD>
+</TR>
+<TR>
+<TD><B>Tasso annuo effettivo globale (T.A.E.G.)</B><BR>
+<I>Costo totale del credito espresso in percentuale, calcolata su base annua, dell'importo totale del credito.<BR>
+Il TAEG consente al Consumatore di confrontare le varie offerte.</I>
+</TD>
+<TD><B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTAEG</valueabs> %</B><BR>
+Il TAEG è stato calcolato considerando:<BR>
+•	Interessi pari a <B>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPINTER</valueabs></B>, calcolati al TAN del <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTAN</valueabs> %</B><BR>
+•	Commissioni Sigla pari a <B>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMCOMM</valueabs></B><BR>
+•	Oneri erariali pari a  <B>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMRIVALSA</valueabs></B><BR>
+•	Spese di riscossione da corrispondere al datore di lavoro pari a  <B>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_SPINCFIN</valueabs></B> <BR>
+•	Spese di invio di comunicazione su supporto cartaceo pari a  <B>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_SPINCBAN</valueabs></B><BR>
+<BR>
+Il costo totale del credito è pari a <B>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_TOT_COSTI_UBI</valueabs></B><BR>
+<BR>
+Il calcolo del TAEG è basato sulle seguenti condizioni :<BR>
+- il contratto rimarrà valido per il periodo di tempo convenuto;<BR>
+- il creditore e il Consumatore adempiranno ai loro obblighi nei termini ed entro le date convenuti nel contratto;<BR>
+- l’intervallo di tempo compreso tra la data di Decorrenza e la data di ciascun rimborso è espresso in mesi ed è pari a mesi uno; <BR>
+- ciascun mese è costituito da 30,41666 giorni (vale a dire 365/12), a prescindere dal fatto che l’anno sia bisestile o meno, i decimali sono espressi fino alla seconda cifra ed arrotondati alla cifra superiore se la cifra seguente è maggiore o uguale a 5;<BR>
+- la data iniziale ai fini del calcolo del TAEG è quella di Decorrenza;<BR>
+- il pagamento delle rate avviene nei termini del calendario indicati (in tal caso maturano esclusivamente gli interessi contrattuali pattuiti senza alcuna indennità aggiuntiva);<BR>
+- l’importo totale del credito viene messo a disposizione per intero in un’unica soluzione.<BR>
+<BR>
+Tutti i costi elencati nella sezione 3 “Costi del credito”, ad eccezione dei costi per eventuale ritardo nel pagamento, sono stati inclusi nel calcolo del TAEG.<BR>
+Il tasso è fisso e non modificabile.<BR>
+La formula di calcolo del TAEG si sviluppa sulla base del regime di liquidazione degli interessi a capitalizzazione semplice.
+</TD>
+</TR>
+<TR>
+<TD><B>Per ottenere il credito o per ottenerlo alle condizioni contrattuali offerte è obbligatorio sottoscrivere:<BR>
+-	un'assicurazione che garantisca il credito<BR><BR><BR><BR><BR><BR><BR><BR>
+-	un altro contratto per un servizio accessorio</B><BR>
+<I>Se il Finanziatore non conosce i costi dei servizi accessori, questi non sono inclusi nel TAEG.</I>
+</TD>
+<TD><BR><BR>No. <BR>
+Sigla provvede a propria cura e proprie spese alle garanzie assicurative previste dal DPR 180/50.<BR>
+Il Consumatore, quale soggetto assicurato per il rischio Vita, ancorché non contraente della Polizza  stipulata direttamente da Sigla, dovrà prestare il consenso ai sensi dell’articolo 1919 cod. civ., per l’autorizzazione al trattamento dei dati personali e, se richiesto dalla Compagnia, sottoscrivere per ricevuta gli eventuali documenti informativi consegnati da quest’ultima.<BR>
+<BR>
+No, non è obbligatorio sottoscrivere altri contratti per servizi accessori.
+</TD>
+</TR>
+</TABLE>
+</TEXT>
+<PAGE>
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT">Pag. 4 di 10</TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+
+<TEXT SIZE=7.5 ALIGN=J>
+<B>3.1	Costi connessi</B><BR><BR>
+<TABLE WIDTH=100% BORDER=0.1  SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=50%><B>Eventuali altri costi derivanti dal contratto di credito</B></TD>
+<TD WIDTH=50%><B>Commissioni</B> Sigla: <B>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMCOMM</valueabs></B><BR>
+Tale importo corrisponde ai “Costi fissi di Istruttoria e Collocamento”  composti da:<BR>
+- acquisizione documentale;<BR>
+- informazioni commerciali;<BR>
+- costo attività di analisi e delibera;<BR>
+- notificazione degli atti; <BR>
+- gestione del trattamento dati;<BR>
+- archiviazione dati e documenti;<BR>
+- compensi fissi per attività di promozione e collocamento della rete distributiva pari a <BR><B>&euro <if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_FLG_IMPROV1</valueabs>==S</ifcond>
+<then><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPROV1</valueabs></then>
+<else><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMCOMM</valueabs></else>
+</if></B>
+<BR>
+- contribuzione Enasarco.<BR>
+Tali componenti non sono rapportati alla durata del finanziamento e non saranno restituiti al Consumatore in caso di estinzione anticipata in quanto si esauriscono al momento della erogazione del finanziamento.<BR>
+<BR>
+<B>Oneri Erariali</B>, pari a <B>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMRIVALSA</valueabs></B> di cui:<BR>
+- euro 16,00 a titolo di imposta di bollo sul contratto, costo non rimborsabile in caso di estinzione anticipata del contratto,<BR>
+- euro 2,00 a titolo di imposta di bollo sul Prospetto Analitico  di Liquidazione, costo non rimborsabile in caso di estinzione anticipata del contratto.<BR>
+<BR>
+<B>Spese di riscossione rata da corrispondere al datore di lavoro</B> (eventuali): <B>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_SPINCFIN</valueabs></B> (ovvero<BR><B>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_SPINCFIN_XRATA</valueabs></B> per rata).<BR>
+Tale costo, essendo riferito ad attività da svolgere nel corso della durata del finanziamento, in caso di estinzione anticipata sarà restituito al Consumatore in misura pari al costo delle rate non più dilazionate.<BR>
+<BR>
+<B>Spese per invio di ogni comunicazione su supporto cartaceo</B>: <B>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_SPINCBAN</valueabs></B>.<BR>
+<BR>
+<B>Commissioni per estinzione anticipata</B>:  <B>Euro 0,00.</B>
+</TD>
+</TR>
+<TR>
+<TD><B>Costi in caso di ritardo nel pagamento</B><BR>
+<I>Tardare con i pagamenti potrebbe avere gravi conseguenze per il Consumatore (ad esempio la vendita forzata dei beni) e rendere più difficile ottenere altri crediti in futuro.</I>
+</TD>
+<TD>Per i pagamenti effettuati oltre il giorno 10 (dieci) del mese successivo a quello di scadenza saranno addebitati al Consumatore interessi di mora al tasso contrattuale (TAN) maggiorato di 1,5 punti percentuali.<BR>
+In caso di mancato pagamento potranno essere attivate azioni di recupero, con conseguente aggravio di costi non preventivamente misurabili per azioni giudiziarie, anche tendenti alla vendita forzata dei beni.<BR>
+Il ritardo nei pagamenti potrebbe inoltre avere significative conseguenze per il Consumatore per effetto della segnalazione nelle banche dati obbligatorie per legge e nei sistemi di informazioni creditizie private, con la conseguenza di rendere più difficile ottenere altri crediti in futuro (le informazioni relative ai gestori delle banche dati sono contenute nel modello INFORMATIVA di cui all’art. 13 D. Lgs.196/2003 – Privacy).
+</TD>
+</TR>
+</TABLE>
+</TEXT>
+<TEXT SIZE=7.5 ALIGN=J>
+<BR><B>4.	Altri importanti aspetti legali</B><BR><BR>
+<TABLE WIDTH=100% BORDER=0.1  SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=50%><B>Diritto di recesso</B><BR>  
+<I>Il Consumatore ha il diritto di recedere dal contratto di credito entro quattordici giorni di calendario dalla conclusione del contratto.</I>
+</TD>
+<TD WIDTH=50%>Il diritto di recesso decorre dalla data di sottoscrizione da parte del Consumatore del contratto, e si esercita con l’invio di una comunicazione scritta alla sede operativa di Sigla mediante lettera raccomandata con avviso di ricevimento. La comunicazione può essere anticipata anche mediante telegramma, posta elettronica, fax, a condizione che sia confermata mediante lettera raccomandata con avviso di ricevimento entro le quarantotto ore successive.<BR>
+Se il contratto ha avuto esecuzione in tutto o in parte, la facoltà di recesso è condizionata al rimborso da parte del Consumatore, entro 30 (trenta) giorni dall’invio della comunicazione sopra indicata, dell’importo totale del credito e degli interessi maturati fino al momento della restituzione, calcolati al medesimo tasso contrattuale (TAN), nonché al rimborso  delle somme non ripetibili corrisposte alla Pubblica Amministrazione.<BR>
+Qualora la restituzione intervenga in data antecedente alla data di Decorrenza del piano di rimborso contrattuale, Sigla dovrà rideterminare il conteggio degli interessi di Preammortamento percepiti in sede di erogazione riconoscendo al Consumatore la differenza in suo favore. 
+</TD>
+</TR>
+
+<TR>
+<TD><B>Rimborso anticipato</B><BR>
+<I>Il Consumatore ha il diritto di rimborsare il credito anche prima della scadenza del contratto, in qualsiasi momento, in tutto o in parte.<BR>
+Il Finanziatore ha il diritto a un indennizzo in caso di rimborso anticipato.</I>
+</TD>
+<TD>Si.<BR>
+In caso di rimborso il Consumatore ha diritto a una riduzione del costo totale del credito con la sola esclusione dei costi non rapportati alla durata del finanziamento sopra richiamati ed evidenziati nella sezione 3.1. “Costi Connessi” <BR>
+<BR>
+No.<BR>
+Nel caso di rimborso anticipato del finanziamento Sigla non richiede alcun indennizzo.
+</TD>
+</TR>
+
+<TR>
+<TD><B>Consultazione di una banca dati</B><BR>
+<I>Se il Finanziatore rifiuta la domanda di credito dopo aver consultato una banca dati, il Consumatore ha il diritto di essere informato immediatamente e gratuitamente del risultato della consultazione.  Il Consumatore non ha questo diritto se comunicare tale informazione è vietato dalla normativa comunitaria o è contrario all'ordine pubblico o alla pubblica sicurezza.</I>
+</TD>
+<TD>Nel procedimento istruttorio delle richieste di finanziamento Sigla, qualora lo ritenga opportuno, ricorre a sistemi di informazione creditizia e antifrode messi a disposizione da gestori privati di sistemi informativi in tema di crediti al consumo accessibili da banche e intermediari.<BR>
+Le informazioni relative ai gestori delle banche dati sono contenute nel modello INFORMATIVA di cui all’art. 13 D. Lgs.196/2003 (Privacy).
+</TD>
+</TR>
+</TABLE>
+<PAGE>
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT">Pag. 5 di 10</TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+<TEXT SIZE=7.5 ALIGN=J>
+<TABLE WIDTH=100% BORDER=0.1  SIZE=7 ALIGN=J>
+<TR>
+<TD><B>Diritto a ricevere una copia del contratto</B><BR>
+<I>Il Consumatore ha il diritto, su sua richiesta, di ottenere gratuitamente copia del contratto di credito idonea per la stipula. Il Consumatore non ha questo diritto se il Finanziatore, al momento della richiesta, non intende concludere il contratto.</I>
+</TD>
+<TD>
+Su richiesta del Consumatore e prima della sottoscrizione, Sigla consegna una copia del testo contrattuale idonea per la stipula.
+</TD>
+</TR>
+<TR>
+<TD><B>Periodo di validità dell'offerta</B></TD>
+<TD>Informazione valida sino al 
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS_MM</valueabs><in>(01,1,02,2,03,3)</ifcond><then>(31/03/<valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS_AAAA</valueabs>)</if>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS_MM</valueabs><in>(04,4,05,5,06,6)</ifcond><then>(30/06/<valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS_AAAA</valueabs>)</if>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS_MM</valueabs><in>(07,7,08,8,09,9)</ifcond><then>(30/09/<valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS_AAAA</valueabs>)</if>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS_MM</valueabs><in>(10,11,12)</ifcond><then>(31/12/<valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS_AAAA</valueabs>)</if>
+ (data fine trimestre).</TD>
+</TR>
+</TABLE>
+</TEXT>
+<TEXT SIZE=7.5 ALIGN=J>
+<BR><B>5.	Informazioni supplementari in caso di commercializzazione a distanza di servizi finanziari</B><BR><BR>
+<TABLE WIDTH=100% BORDER=0.1  SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=50%>a) Finanziatore<BR>
+Indirizzo<BR>
+Telefono<BR>
+Email<BR>
+Fax<BR>
+Sito web
+</TD>
+<TD WIDTH=50%>Sigla Srl<BR>
+via Cesare Battisti, 5/a - 31015 Conegliano (TV)<BR>
+0438/45990 (assistenza clienti) 0438/372950 (interruzione rapporto di lavoro o decesso) <BR>
+<U>sac@siglafinanziamenti.it</U><BR>
+0438/45917<BR>
+www.siglacredit.it<BR>
+</TD>
+</TR>
+<TR>
+<TD>Iscrizione</TD>
+<TD>Intermediario Finanziario iscritto Elenco Speciale ex art.107 TUB n. 33023.3</TD>
+</TR>
+<TR>
+<TD>Autorità di controllo  </TD>
+<TD>Banca d'Italia - Via Nazionale 91 - 00184 Roma</TD>
+</TR>
+<TR>
+<TD>b)  Contratto di credito   </TD>
+<TD></TD>
+</TR>
+<TR>
+<TD>Esercizio del diritto di recesso</TD>
+<TD>Il diritto di recesso decorre dalla data di sottoscrizione da parte del Consumatore del contratto, e si esercita con l’invio di una comunicazione scritta alla sede operativa di Sigla mediante lettera raccomandata con avviso di ricevimento. La comunicazione può essere anticipata anche mediante telegramma, posta elettronica, fax, a condizione che sia confermata mediante lettera raccomandata con avviso di ricevimento entro le quarantotto ore successive.<BR>
+Se il contratto ha avuto esecuzione in tutto o in parte, la facoltà di recesso è condizionata al rimborso da parte del Consumatore, entro 30 (trenta) giorni dall’invio della comunicazione sopra indicata, dell’importo totale del credito e degli interessi maturati fino al momento della restituzione, calcolati al medesimo tasso contrattuale (TAN), nonché al rimborso  delle somme non ripetibili corrisposte alla Pubblica Amministrazione.<BR>
+Qualora la restituzione intervenga in data antecedente alla data di Decorrenza del piano di rimborso contrattuale, Sigla dovrà rideterminare il conteggio degli interessi di Preammortamento percepiti in sede di erogazione riconoscendo al Consumatore la differenza in suo favore. 
+</TD>
+</TR>
+<TR>
+<TD>Lingua</TD>
+<TD>Le informazioni sul contratto saranno comunicate in ITALIANO. Con l'accordo del Consumatore, il Finanziatore intende comunicare in ITALIANO nel corso del rapporto contrattuale.</TD>
+</TR>
+<TR>
+<TD>c)  Reclami e ricorsi</TD>
+<TD></TD>
+</TR>
+<TR>
+<TD>Strumenti di tutela stragiudiziale e modalità per accedervi.</TD>
+<TD>Per eventuali contestazioni in ordine al rapporto contrattuale il Consumatore può presentare reclamo scritto indirizzandolo a Sigla srl – Ufficio Assistenza clienti – via Cesare Battisti, 5/a 31015 Conegliano (TV) oppure, in alternativa, tramite fax al n. 0438/45926 o e-mail all'indirizzo: sac@siglafinanziamenti.it. Sigla evaderà la richiesta entro un termine massimo di 30 (trenta) giorni dalla presentazione del reclamo. Ove il reclamo sia ritenuto fondato nella risposta saranno indicati anche i tempi tecnici entro i quali Sigla si impegna a provvedere alla risoluzione della problematica esposta. Qualora il Consumatore sia rimasto insoddisfatto dell'esito del reclamo (perché non ha avuto risposta, ovvero ha avuto risposta negativa ovvero perché la decisione, sebbene positiva, non è stata eseguita da Sigla) egli potrà, preliminarmente all'esercizio di una azione giudiziale, esperire il procedimento di mediazione obbligatoria (di cui al D. Lgs. n. 28 del 4 marzo 2010 e successivo regolamento attuativo) ovvero il procedimento di conciliazione istituito con l'Arbitro Bancario Finanziario - ABF (di cui al D. Lgs. 1° settembre 1993 n. 385). A tal fine Sigla e il Consumatore concordano di sottoporre le controversie che dovessero sorgere in relazione al contratto:<BR>
+a) all'Organismo di conciliazione presso il Conciliatore Bancario Finanziario - Associazione per la soluzione delle controversie bancarie, finanziarie e societarie - ADR (iscritto nel registro degli organismi di conciliazione tenuto dal Ministero della Giustizia), in quanto organismo specializzato nelle controversie bancarie e finanziarie, che dispone di una rete di conciliatori diffusa sul territorio nazionale.   Il Conciliatore Bancario Finanziario può essere attivato sia da Sigla che dal Consumatore. La conciliazione potrà avere luogo presso la sede più vicina alla residenza o al domicilio del Consumatore. Le condizioni e le procedure sono definite nel relativo regolamento, disponibile sul sito www.conciliatorebancario.it, presso qualsiasi sede degli intermediari del credito abilitati da Sigla dislocati sul territorio. Quest’ultima e il Consumatore restano liberi, anche dopo la sottoscrizione del presente contratto, di concordare per iscritto di rivolgersi a un altro organismo, purché iscritto nel medesimo registro del Ministero della Giustizia;<BR>
+b) all'Arbitro Bancario Finanziario - ABF (D.lgs. 1° settembre 1993 n. 385). L'ABF è un sistema di risoluzione stragiudiziale delle controversie attivabile solo dal Consumatore per il mero accertamento di diritti, obblighi e facoltà (indipendentemente dal valore del rapporto) ovvero per la richiesta della corresponsione di una somma di denaro di importo non superiore a 100.000 euro. Tale sistema, al quale Sigla aderisce, è regolato dalle disposizioni emanate dalla Banca d'Italia. Per maggiori informazioni su come rivolgersi all'Arbitro Bancario Finanziario basta consultare l'apposita Guida messa a disposizione del Consumatore da parte di Sigla, ovvero chiedere presso la sede di Sigla srl o presso le sedi degli intermediari del credito abilitati da Sigla dislocati sul territorio, oppure contattare la segreteria tecnica dell'Arbitro Bancario Finanziario i cui recapiti sono disponibili sul sito internet www.arbitrobancariofinanziario.it.
+</TD>
+</TR>
+
+</TABLE>
+
+
+
+
+</TEXT>
+</BODY>
+</PDF>

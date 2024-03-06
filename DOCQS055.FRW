@@ -1,0 +1,86 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="sacstrutturasize9">
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3">			
+</HEADER>
+<FOOTER>
+<include file="\INCLUDE\IncludedStruttura.frw" value="footercartaintestatasac">
+</FOOTER>
+<BODY>
+<TEXT ALIGN=J>
+<BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>Egregio Signor / Gentile Signora</TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> (cqs <valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs>)</TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs>  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs>  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs></TD>
+</TR>
+<BR><BR><BR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10% ALIGN=R>c/o  </TD>
+<TD WIDTH=40%>Spettabile</TD><BR>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>___________________________________</TD><BR>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>Fax/Email__________________________</TD><BR>
+</TR>
+</TABLE>
+<BR>
+<BR>
+Conegliano, <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs> <BR><BR>
+Oggetto: Richiesta conteggio estintivo contratto  nr. <valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs> a nome <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>.<BR><BR>
+Gentile cliente, con la presente riscontriamo la Sua richiesta di conteggio del debito residuo, precisando che, al momento, l’ eventuale estinzione anticipata del contratto di cui all’ oggetto viene considerata <I>ante-termine</I>, perché effettuata prima dello scadere dei 2/5 della durata del finanziamento.<BR><BR>
+L’ eventuale estinzione del contratto nella fase cosiddetta <I>ante-termine</I>, comporta per Lei l’ impossibilità di rinnovare il contratto nonché accedere a nuovi finanziamenti della stessa tipologia di quello convenuto, prima che siano trascorsi almeno 12 mesi dalla data di estinzione, ai sensi dell’ art. 39 del D.P.R n.180/1950 e del Decreto ministeriale n. 313/2006.<BR><BR>
+Alla luce di quanto sopra, qualora la Sua intenzione sia quella di rinnovare il contratto di cui all’ oggetto, La invitiamo a presentare la Sua richiesta di estinzione dopo aver verificato che siano trascorsi almeno 2/5 del finanziamento, in modo da poter effettuare un’ operazione finanziaria nel rispetto della normativa di cui sopra.<BR><BR>
+Resta inteso che, qualora invece la Sua richiesta di estinzione non fosse dovuta al rinnovo del finanziamento, ma stesse valutando di chiudere la posizione con mezzi propri, Le chiediamo gentilmente di compilare e sottoscrivere il documento allegato e di inviarlo ai nostri uffici tramite posta oppure ai riferimenti fax 0438/45926 o e-mail sac@siglafinanziamenti.it, unitamente a copia del Suo documento d’ identità in corso di validità.<BR><BR>
+Alla ricezione di quanto richiesto sarà nostra cura inviarLe il conteggio estintivo entro i termini di legge.<BR><BR>
+Rimanendo a disposizione per eventuali chiarimenti al nr. 0438/45990, porgiamo distinti saluti.<BR><BR>
+
+
+<TABLE WIDTH=100% FONT SIZE=9>
+<TR HEIGHT=3%>
+<TD WIDTH=77%></TD>
+<TD WIDTH=23% ALIGN="C"><BR>Conformità Clienti e<BR>Monitoraggio Contratti<BR><BR>Sigla Srl</TD>
+</TR>
+</TABLE>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=50 ALIGN="L"><BR><BR><BR>All.: richiesta estinzione</TD>
+<TD WIDTH=40%></TD>
+<TD WIDTH=5%></TD>
+<TD WIDTH=5%></TD>
+</TR>
+</TABLE>
+</TEXT>
+<IMG SRC="<valueabs>Immagini/FIRMAGER1/Path</valueabs><valueabs>Immagini/FIRMAGER1/Nome</valueabs>" BACKGROUND X=15 Y=23 SCALE=10>
+</BODY>
+</PDF>

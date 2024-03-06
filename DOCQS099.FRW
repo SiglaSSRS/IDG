@@ -1,0 +1,297 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize7_times">
+<HEADER>
+<TEXT X=16.5 Y=-0.3 SIZE=5.5>cqp-P. – 09.06.2014</TEXT>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintsiglaubi">
+</HEADER>
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestatasiglabollo">
+</FOOTER>
+
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT">Pag. 6 di 10</TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+<BODY>
+
+
+<TEXT SIZE=7.5 ALIGN=C><BR><B>CONTRATTO DI PRESTITO CON CESSIONE DEL QUINTO DELLA PENSIONE</B>
+<BR><BR></TEXT>
+<TEXT ALIGN=J>
+Con il presente contratto Sigla ed il Consumatore convengono e stipulano la costituzione del prestito alle seguenti condizioni :<BR>
+<BR>
+<B>Art. 1) Oggetto del contratto.</B><BR>
+<BR>
+1.1 <B>Costituzione del prestito</B>. Con la sottoscrizione del presente contratto, Sigla concede il finanziamento richiesto ed il Consumatore si dichiara debitore a titolo di prestito nei confronti della medesima Sigla dell'importo di <B>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPMUTLRD</valueabs></B>, che si obbliga a restituire mediante la cessione <I>pro solvendo</I>, (con gli effetti previsti dagli artt. 1198, 1260 c.c. e dalla normativa di riferimento) di n. <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs></B> quote della pensione, uguali, mensili e consecutive, di <B>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPCAN</valueabs></B> ciascuna, comprensive delle quote di ammortamento del capitale e degli interessi di cui in prosieguo.<BR>
+<BR>
+1.2 <B>Condizioni economiche</B>. Il prestito è concesso all'interesse nominale annuo del <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTAN</valueabs> %</B> , fisso per tutta la durata, applicato a scalare mensilmente secondo un Piano di Ammortamento a rate costanti c.d. “alla francese”, gli interessi sono pari a complessivi <B>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPINTER</valueabs></B> per l'intera cessione; pertanto il valore attualizzato del prestito ammonta a <B>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPFIN</valueabs></B>. L’interesse è calcolato in base al capitale e al tempo, secondo il metodo della capitalizzazione semplice.<BR>
+<BR>
+1.3 <B>Importo totale del credito</B>. L'importo messo a disposizione del Consumatore, definito Netto Ricavo, è pari ad <B>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPNETRIC</valueabs></B>, ed è costituito dal valore totale ceduto dal Consumatore di <B>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPMUTLRD</valueabs></B>, al netto degli oneri trattenuti anticipatamente (come descritti nel SECCI alla sezione 3) per: interessi <B>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPINTER</valueabs></B>, spese di riscossione rate da corrispondere all'Ente previdenziale <B>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_SPINCFIN</valueabs></B>, commissioni Sigla <B>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMCOMM</valueabs></B>, oneri erariali <B>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMRIVALSA</valueabs></B>.<BR>
+Dal Netto Ricavo potranno essere trattenute le somme necessarie per estinguere gli impegni previsti nel successivo articolo 2.<BR>
+<BR>
+1.4 <B>TAEG - TEG</B>.<BR>
+Il Tasso Annuo Effettivo Globale (TAEG) relativo al presente contratto è pari al <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTAEG</valueabs> %</B> , come meglio specificato nel SECCI alla sezione 3 <I>Costi del credito</I>, alla voce TAEG, ed è comprensivo di tutti i costi, incluse le imposte e non subirà modificazioni.<BR>
+Il TAEG è stato calcolato ai sensi dell'art. 121, comma 3, del D. Lgs. n. 385/1993 e delle Disposizioni della Banca d'Italia del 29 luglio 2009 e s.m.i.. Il calcolo si sviluppa sulla base del regime di liquidazione degli interessi c.d. a capitalizzazione semplice. <BR>
+Il TEG (parametro rilevante ai fini della normativa antiusura, di cui alla legge n. 108/1996 e successive modificazioni ed integrazioni) è pari al <B>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTEG</valueabs> %</B>.<BR>
+<BR>
+1.5 <B>Erogazione del prestito</B>. L’erogazione del prestito sarà eseguita mediante:<BR>
+- bonifico bancario sul conto corrente comunicato dal Consumatore e a quest'ultimo intestato;<BR>
+In casi particolari ed eccezionali, qualora il Consumatore sia nella comprovata impossibilità di accedere alla somma erogata mediante la modalità
+sopra indicata, l’erogazione potrà avvenire anche mediante assegno circolare munito della clausola di non trasferibilità e intestato al Consumatore.
+L’erogazione avverrà dopo il ricevimento del benestare o nulla osta dall'Ente previdenziale salvo quanto previsto dall’art. 14.4 delle
+condizioni di contratto.<BR>
+<BR>
+1.6 <B>Obblighi dell’Ente previdenziale</B>. Per effetto della suindicata cessione, l'Ente che eroga la pensione al Consumatore sarà obbligato a norma di legge e, per quanto possa occorrere, anche per volontà del Consumatore medesimo, a prelevare mensilmente dalla pensione percepita <B>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPCAN</valueabs></B>, a decorrere dal mese successivo alla notifica del presente contratto, ed a versare, entro 40 giorni dalla scadenza delle rate, tali importi mensili a Sigla nei seguenti c/c:<BR>
+<B>Bonifico bancario su Cassa di Risparmio del Veneto, IBAN: IT50H0622561620100000001913 intestato a Sigla S.r.l.<BR>
+Bonifico Postale su Poste Italiane SPA, IBAN: IT53G0760112000000073807760 intestato a Sigla S.r.l.<BR></B>
+E' facoltà di Sigla modificare unilateralmente e discrezionalmente in qualunque momento l'anzidetta modalità di versamento delle quote mensili indicando altro conto corrente bancario o postale ove potranno affluire le quote.<BR>
+<BR>
+1.7 <B>Durata e rate del contratto di credito</B>. La durata del contratto corrisponde, come specificato nel SECCI alla voce <I>Durata del contratto di credito</I>, al tempo di rimborso del numero di rate mensili indicate nel SECCI alla voce <I>Rate e loro ordine di imputazione</I>, nonché nel Piano di Ammortamento del prestito.<BR>
+<BR>
+<B>Art. 2) Estinzione precedenti impegni. </B><BR>
+Il Consumatore, secondo le necessità emerse e convenute nel corso dell’Istruttoria ovvero per adempiere a disposizioni di legge (Art. 38 e 39 del DPR 180/50), autorizza Sigla, anche ai sensi e per gli effetti dell’Art. 1723, comma 2, c.c.,  ad operare le trattenute di somme dal Netto Ricavo necessarie per : a) estinguere ai sensi degli articoli 38 e 39 DPR 180/50 eventuali prestiti o altre posizioni debitorie preesistenti in corso di ammortamento; b) estinguere o rimborsare in misura parziale altri prestiti in corso di ammortamento; c) remunerare gli eventuali interessi di Preammortamento od estinguere altri prefinanziamenti concessi da Sigla; d) recuperare le rate non riconosciute a Sigla dall’Ente a seguito di comunicazione di quest’ultimo alla stessa Sigla<BR>
+Il conteggio di tutto quanto trattenuto in sede di erogazione del finanziamento per tali titoli sarà comunicato al Consumatore mediante il Prospetto Analitico di Liquidazione, emesso  all’atto dell’erogazione stessa.<BR>
+<BR>
+<B>Art. 3) Garanzie assicurative.</B><BR>
+All’atto del perfezionamento del contratto Sigla provvederà, a proprie spese, ad accendere le garanzie assicurative richieste dal DPR 180/50 a copertura del rischio vita. <BR>
+La garanzia per il rischio vita non comporta surroga nei confronti degli eredi.<BR>
+Il Consumatore, quale soggetto assicurato per il rischio vita, ancorché non contraente della polizza  stipulata direttamente da Sigla a proprie spese, dovrà prestare il consenso ai sensi dell’articolo 1919 cod. civ., autorizzare il trattamento dei dati personali e, se richiesto dalla Compagnia, sottoscrivere per ricevuta gli eventuali documenti informativi consegnati da quest’ultima.<BR>
+<BR>
+<B>Art. 4) Riduzione della pensione.</B><BR>
+Nei casi di riduzione, per qualsiasi causa, della pensione mensile del Consumatore in misura non superiore al terzo, la trattenuta continuerà ad essere effettuata nella misura stabilita dal presente contratto; ove la riduzione sia superiore al terzo, la trattenuta non potrà eccedere il quinto della pensione ridotta, così come previsto dagli art. 35 e 55 del D.P.R. n.180/1950.<BR>
+Nei casi di riduzione della pensione, sia temporanea che definitiva, Sigla produrrà un nuovo Piano di Ammortamento del prestito basato sulla quota cedibile risultante disponibile, comunicandolo al Consumatore ed all’Ente. L’adozione del nuovo Piano di Ammortamento, eseguita ai sensi delle norme del DPR 180/50 sopra richiamate, non determinerà mutazione delle condizioni contrattuali né novazione del contratto di finanziamento.<BR>
+<BR>
+<B>Art. 5) Ritardo nei versamenti e interessi di mora.</B><BR>
+In caso di ritardo di oltre 40 giorni dalla scadenza od omissione del versamento delle quote cedute o di qualsiasi altra somma contrattualmente dovuta dal Consumatore, anche in conseguenza di risoluzione, decadenza dal beneficio del termine o recesso, è facoltà di Sigla, ovvero di suoi aventi causa a qualsiasi titolo, richiedere gli interessi di mora. Tali interessi decorreranno di pieno diritto, a seguito di semplice richiesta del Finanziatore, dalla scadenza delle singole rate fino all’effettivo pagamento a carico del Consumatore e saranno calcolati nella misura annua pari al tasso annuo nominale (T.A.N.) applicato al prestito, maggiorato di 1,5 punti percentuali, fermo restando che la misura di tali interessi, nel momento in cui essi sono promessi o comunque convenuti, non potrà mai essere superiore al limite fissato ai sensi dell’art. 2, comma 4, della legge n. 108/1996, dovendosi intendere, in caso di teorico superamento di detto limite, che la loro misura sia pari al limite medesimo.<BR>
+Su questi interessi non è consentita la capitalizzazione periodica. Resta ferma in ogni caso la facoltà di Sigla di risolvere il contratto ai sensi dell'art. 1456 c.c. e, pertanto, di richiedere, in deroga al beneficio del termine di cui all'art. 1184 c.c., l'immediato pagamento di tutte le rate ancora non scadute ai sensi dell'art. 1186 c.c. e del seguente art. 6 delle Condizioni di contratto.
+Qualora successivamente ad un periodo di ritardo od omissione del versamento dei ratei indicati nell’originario Piano di Ammortamento, sulla base di accordi con il Consumatore e l'Ente, si ripristini il regolare versamento mensile, Sigla elaborerà un nuovo Piano di Ammortamento del prestito comprendente anche gli interessi di mora maturati, senza che ciò comporti la mutazione delle condizioni o la novazione dell’originario contratto di finanziamento.
+
+</TEXT>
+<PAGE>
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT">Pag. 7 di 10</TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+
+
+<TEXT ALIGN=J>
+<B>Art. 6) Rispetto del Piano di Ammortamento ed adeguamento ad eventi riguardanti il Consumatore. Conseguenze per mancato pagamento. Risoluzione. </B><BR>
+Il Piano di Ammortamento rappresenta l’ordine dei pagamenti convenuto tra le parti, con il dettaglio delle singole componenti delle rate. L’eventuale variazione del Piano di Ammortamento, come previsto nei precedenti articoli, possibile soltanto in dipendenza di eventi riguardanti il Consumatore che determinano inadempimenti temporanei (ad esempio per incapacità della pensione in ragione di
+adempimenti fiscali demandati all’Istituto pensionistico) e ci si aspetta una ripresa della regolarità dei versamenti, comporta la mera rielaborazione di un nuovo ordine di versamento delle quote di rimborso del prestito al momento della ripresa dei pagamenti, comprensivo degli eventuali interessi di mora maturati, senza che ciò comporti mutamento delle condizioni o novazione dell’originario contratto di mutuo, bensì esclusivamente un obbligo di comunicazione del nuovo Piano di Ammortamento al Consumatore ed alla Amministrazione.<BR>
+Qualora non si verifichi la possibilità di ripristinare la regolarità dei pagamenti, ovvero qualora emesso un nuovo Piano di Ammortamento non si ripristini la regolarità dei pagamenti, rimane ferma la possibilità per Sigla di dichiarare la decadenza dal beneficio del termine ai sensi dell’art. 1186 c.c. e la risoluzione del contratto ai sensi dell’art. 1456 c.c., con conseguente facoltà della medesima di esigere l’immediato pagamento di tutte le rate, anche non scadute. <BR>
+In ogni caso in cui Sigla fosse costretta ad attivare procedure legali per recuperare il credito o parte di esso, le relative spese giudiziali  saranno addebitate al Consumatore.<BR>
+<BR>
+<B>Art. 7) Diritto di recesso del Consumatore.</B><BR>
+Il Consumatore può recedere dal contratto entro 14 (quattordici) giorni; il termine decorre dalla data della sua sottoscrizione del contratto uguale o successiva a quella di Sigla (data di perfezionamento del contratto). Il Consumatore che recede:<BR>
+a) deve dare comunicazione al Finanziatore inviandogli, prima della scadenza del termine previsto dall’art. 125 ter comma 1 D. Lgs.  n. 385/1993 e s.m.i., una comunicazione secondo le modalità prescelte nel contratto tra quelle previste dall’art. 64, comma 2, del Codice del consumo.<BR>
+Il diritto di recesso si esercita, nei termini di legge sopra descritti, con l'invio di una comunicazione scritta a Sigla mediante lettera raccomandata con avviso di ricevimento all’indirizzo: “Sigla srl, via Cesare Battisti, 5/a, 31015 Conegliano (TV)”. La comunicazione può essere anticipata, entro lo stesso termine, anche mediante telegramma o posta elettronica all’indirizzo: sac@siglafinanziamenti.it e tramite fax al n. 0438/45926, a condizione che sia confermata mediante lettera raccomandata con avviso di ricevimento entro le quarantotto ore successive; la raccomandata si intende spedita in tempo utile se consegnata all'ufficio postale entro i termini previsti dal codice o dal contratto, ove diversi. L'avviso di ricevimento non è, comunque, condizione essenziale per provare l'esercizio del diritto di recesso;<BR>
+b) se il contratto ha avuto esecuzione in tutto o in parte, entro 30 (trenta) giorni dall’invio della comunicazione prevista dalla lettera a), deve restituire l’importo totale del credito e pagare gli interessi maturati fino al momento della restituzione, calcolati al medesimo tasso contrattuale (TAN) , nonché le somme non ripetibili corrisposte alla Pubblica Amministrazione. Nell'ipotesi di recesso dopo l'avvenuta erogazione dell'importo del credito messo a disposizione dalla Sigla, il SECCI indica i dietimi giornalieri che il Consumatore pagherà fino al giorno della restituzione. <BR>
+Qualora la restituzione intervenga in data antecedente alla data di Decorrenza del piano di rimborso contrattuale, Sigla dovrà rideterminare il conteggio degli interessi di Preammortamento percepiti in sede di erogazione riconoscendo al Consumatore la differenza in suo favore.<BR>
+Sigla non può pretendere somme ulteriori rispetto a quelle previste al punto sub lettera b) del presente articolo.<BR>
+Il recesso disciplinato dal presente articolo si estende automaticamente, anche in deroga alle condizioni e ai termini eventualmente previsti dalla normativa di settore, ai contratti aventi a oggetto servizi accessori connessi col contratto, se tali servizi sono resi da Sigla ovvero da un terzo sulla base di un accordo con il Finanziatore. L’esistenza dell’accordo è presunta. E’ ammessa, da parte del terzo, la prova contraria. <BR>
+<BR>
+<B>Art. 8) Estinzione anticipata.</B><BR>
+Il Consumatore ha diritto di rimborsare il credito, in tutto o in parte, anche prima della scadenza del contratto, in qualsiasi momento.<BR>
+L’estinzione anticipata determina la cessazione degli effetti del contratto.<BR>
+Sigla non richiede alcuna penale od indennizzo per l’anticipata estinzione del contratto di finanziamento.<BR>
+Il Consumatore avrà diritto alla riduzione del costo totale del credito in misura pari all’importo degli interessi relativi alle rate non ancora scadute e dei costi soggetti a maturazione nel tempo, dovuti per la vita residua del contratto, ai sensi dell’articolo 125 sexies del D. Lgs. 385/1993 e s.m.i., ed, in particolare :<BR>
+- <U>Rimborso del Capitale Residuo - TAN e Costi</U> riferiti ad attività da svolgere nel corso della durata del finanziamento. Il Consumatore dovrà rimborsare a Sigla  il capitale residuo alla data di estinzione, come rilevabile dal Piano di Ammortamento che Sigla consegna contestualmente alla liquidazione del contratto definitivo. Non dovranno essere corrisposti dal Consumatore gli interessi (T.A.N.) che maturano dopo la data di estinzione.<BR>
+- <U>Spese Anticipate Rimborsabili</U>. Nel conteggio di estinzione saranno rimborsati al Consumatore i costi eventualmente addebitati di cui alla sezione 3.1 del SECCI <I>Costi Connessi</I> – <I>“Spese riscossione rata da corrispondere all'Ente previdenziale”</I>, il cui importo sarà determinato in misura pari al costo applicato a ciascuna rata per il numero delle stesse non più scadenti.<BR>
+- <U>Spese non rimborsabili</U>. Il Consumatore non avrà diritto al rimborso dei costi relativi alla attivazione del prestito indicati nella medesima sezione 3.1 del SECCI <I>“Costi Connessi”</I>alla voce <I>Commissioni Sigla  - Costi Fissi di Istruttoria e Collocamento</I>, alla voce <I>Oneri Erariali</I>, comprendenti l’<I>Imposta di Bollo</I>, in quanto non rapportati alla durata del finanziamento e relativi ad attività che si esauriscono interamente nel corso dell’istruttoria.<BR>
+<BR>
+<B>Art. 9) Mezzi di tutela stragiudiziale.</B><BR>
+Per eventuali contestazioni in ordine al rapporto contrattuale il Consumatore può presentare reclamo scritto indirizzandolo a Sigla srl – Ufficio Assistenza clienti – via Cesare Battisti, 5/a 31015 Conegliano (TV) oppure, in alternativa, tramite fax al n. 0438/45926 o e-mail all'indirizzo: sac@siglafinanziamenti.it. Sigla evaderà la richiesta entro un termine massimo di 30 (trenta) giorni dalla presentazione del reclamo. Ove il reclamo sia ritenuto fondato nella risposta saranno indicati anche i tempi tecnici entro i quali Sigla si impegna a provvedere alla risoluzione della problematica esposta. Qualora il Consumatore sia rimasto insoddisfatto dell'esito del reclamo (perché non ha avuto risposta, ovvero ha avuto risposta negativa ovvero perché la decisione, sebbene positiva, non è stata eseguita da Sigla) egli potrà, preliminarmente all'esercizio di una azione giudiziale, esperire il procedimento di mediazione obbligatoria (di cui al D. Lgs. n. 28 del 4 marzo 2010 e successivo regolamento attuativo) ovvero il procedimento di conciliazione istituito con l'Arbitro Bancario Finanziario - ABF (di cui al D. Lgs. 1° settembre 1993 n. 385). A tal fine Sigla e il Consumatore concordano di sottoporre le controversie che dovessero sorgere in relazione al contratto: <BR>
+a) all'Organismo di conciliazione presso il Conciliatore Bancario Finanziario - Associazione per la soluzione delle controversie bancarie, finanziarie e societarie - ADR (iscritto nel registro degli organismi di conciliazione tenuto dal Ministero della Giustizia), in quanto organismo specializzato nelle controversie bancarie e finanziarie, che dispone di una rete di conciliatori diffusa sul territorio nazionale.   Il Conciliatore Bancario Finanziario può essere attivato sia da Sigla che dal Consumatore. La conciliazione potrà avere luogo presso la sede più vicina alla residenza o al domicilio del Consumatore. Le condizioni e le procedure sono definite nel relativo regolamento, disponibile sul sito www.conciliatorebancario.it, presso qualsiasi sede degli intermediari del credito abilitati da Sigla dislocati sul territorio. Quest’ultima e il Consumatore restano liberi, anche dopo la sottoscrizione del presente contratto, di concordare per iscritto di rivolgersi a un altro organismo, purché iscritto nel medesimo registro del Ministero della Giustizia; <BR>
+b) all'Arbitro Bancario Finanziario - ABF (D.lgs. 1° settembre 1993 n. 385). L'ABF è un sistema di risoluzione stragiudiziale delle controversie attivabile solo dal Consumatore per il mero accertamento di diritti, obblighi e facoltà (indipendentemente dal valore del rapporto) ovvero per la richiesta della corresponsione di una somma di denaro di importo non superiore a 100.000 euro. Tale sistema, al quale Sigla aderisce, è regolato dalle disposizioni emanate dalla Banca d'Italia. Per maggiori informazioni su come rivolgersi all'Arbitro Bancario Finanziario basta consultare l'apposita Guida messa a disposizione del Consumatore da parte di Sigla, ovvero chiedere presso la sede di Sigla srl o presso le sedi degli intermediari del credito abilitati da Sigla dislocati sul territorio, oppure contattare la segreteria tecnica dell'Arbitro Bancario Finanziario i cui recapiti sono disponibili sul sito internet www.arbitrobancariofinanziario.it.<BR>
+<BR>
+<B>Art. 10) Tempi massimi di chiusura del rapporto.</B><BR>
+In caso di richiesta di estinzione anticipata o cessazione per qualsiasi causa del contratto, Sigla provvederà ad estinguere il rapporto entro il termine massimo di 30 (trenta) giorni lavorativi. Tale termine decorre dal momento in cui il Consumatore avrà eseguito il rimborso del proprio debito e adempiuto a tutte le proprie obbligazioni previste dal presente contratto.<BR>
+<BR>
+<B>Art. 11) Surroga o Portabilità del Finanziamento. Compensi per surrogazione.</B><BR>
+Al Consumatore è concesso l’esercizio della facoltà di surrogazione prevista dall’art. 1202 c.c. (cd Portabilità) che comporta il trasferimento del contratto, alle condizioni stipulate con il Finanziatore subentrante, con esclusione di penali o altri oneri di qualsiasi natura.<BR>
+Si conviene, ai sensi dell'art. 120 quater del D. Lgs. 385/1993 e s.m.i.., che nessun compenso, né altra prestazione saranno dovuti a Sigla dal Consumatore in caso di surrogazione per volontà del medesimo. Sono fatte salve in ogni caso le disposizioni inderogabili di legge in vigore.<BR>
+</TEXT>
+<PAGE>
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT">Pag. 8 di 10</TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+
+
+<TEXT ALIGN=J>
+<B>Art. 12) Compensi ulteriori.</B><BR>
+Il Consumatore prende atto che nessun compenso, commissione o retribuzione ulteriori rispetto a quelli riportati nel presente contratto sarà dallo stesso Consumatore corrisposto a qualsiasi soggetto che a vario titolo possa comporre la rete distributiva. Ogni eventuale richiesta di ulteriori compensi da parte di questi ultimi verrà segnalata dal Consumatore a Sigla  mediante formale comunicazione scritta.<BR>
+<BR>
+<B>Art. 13) Spese di bollo e registro.</B><BR>
+L’imposta di bollo e l’eventuale tassa di registro del presente atto, come specificate nel SECCI alla sezione 3.1 <I>Costi connessi</I>, alla voce <I>Oneri erariali</I>, richieste dagli uffici fiscali, sia all’atto dell’eventuale registrazione sia successivamente, anche in via supplementare, nonché la rivalsa per gli oneri erariali, le spese postali, le spese di notifica ai sensi di legge e quelle eventualmente richieste dall’Amministrazione ceduta per ogni esigenza, anche successiva all’instaurazione del rapporto, ivi comprese le comunicazioni relative al trasferimento del Consumatore, sono a carico del Consumatore stesso, il quale autorizza, ora per allora, lo stesso Ente a trattenere dagli emolumenti dovutigli la somma che, a tale titolo, gli venisse richiesta da Sigla o da chi per essa.<BR>
+<BR>
+<B>Art. 14) Condizioni dell’Erogazione. Requisiti. Recesso o Risoluzione del contratto. Interessi di Preammortamento.</B><BR>
+14.1 – <U>Benestare dell'Ente finanziatore</U>. Sigla  non provvederà all’erogazione del prestito e recederà dal contratto se, a giudizio insindacabile della medesima, non saranno stati forniti tutti gli atti ed i documenti necessari per la validità e la garanzia della cessione stessa ed, in particolare, se non sarà stato rilasciato il consenso definitivo da parte dell'Ente previdenziale che eroga la pensione al Consumatore (nulla osta o benestare).<BR>
+14.2 – <U>Mutamento dei Tassi di cui alla Legge 108/96</U>. Qualora al momento della sottoscrizione del contratto da parte del Consumatore (data di perfezionamento del contratto), successiva alla data di sottoscrizione da parte di Sigla, dovesse essere mutato il valore del Tasso Soglia indicato dal Ministero dell’Economia e delle Finanze, ponendosi il limite del Tasso Soglia al di sotto del TEG del contratto, Sigla  non potrà dare corso alla erogazione. In tal caso il contratto sarà risolto di diritto per impossibilità della prestazione e Sigla  potrà esimersi da ogni nuova negoziazione ovvero, a suo insindacabile giudizio, rettificare il Tasso Effettivo Globale del finanziamento per adeguarsi ai nuovi parametri e ripresentare al Consumatore un nuovo contratto con i tassi rettificati.<BR>
+14.3 – <U>Pregiudizievoli sopravvenute all’istruttoria</U>. Qualora successivamente alla sottoscrizione del contratto, ma prima della erogazione del finanziamento, Sigla  dovesse rilevare la sopravvenienza di cause pregiudizievoli (ad esempio un significativo mutamento delle condizioni personali del Consumatore) potrà recedere dal contratto. <BR>
+14.4 – <U>Erogazione</U>. Una volta verificate le condizioni di cui sopra, l’erogazione sarà effettuata in un’unica soluzione. <BR>
+14.5 – <U>Interessi di Preammortamento</U>.<BR>
+A - Qualora la data di erogazione non sia coincidente con la data di Decorrenza, ma anteriore alla stessa, Sigla  avrà la facoltà di addebitare gli interessi di Preammortamento nella misura del TAN contrattuale per il periodo intercorrente tra la data di erogazione e la data di Decorrenza.<BR>
+B - Qualora l'Ente previdenziale differisca la data di versamento della prima rata di rimborso Sigla  avrà la facoltà di addebitare gli interessi di Preammortamento nella misura del TAN contrattuale per il periodo intercorrente tra la data di Decorrenza prevista in contratto e la data di Decorrenza risultante dal differimento disposto dall'Ente previdenziale.<BR>
+C - In entrambi i casi Sigla  potrà trattenere i relativi interessi dalle somme dovute in sede di erogazione del prestito.<BR>
+L’importo degli interessi addebitati a tale titolo sarà evidenziato nel Prospetto Analitico di Liquidazione emesso al momento dell’erogazione e successivamente inviato al Consumatore.<BR>
+D - Qualora dovesse verificarsi un anticipato adempimento dell’Ente previdenziale rispetto alla prima scadenza del piano di rimborso delle rate previsto in contratto, o l’erogazione dovesse essere eseguita meno di 30 giorni antecedenti la scadenza della prima rata di rimborso, Sigla rimborserà al Consumatore, entro 90 giorni, gli interessi nella misura del TAN contrattuale per il periodo di dilazione non fruito.<BR>
+<BR>
+<B>Art. 15) Lingua.</B><BR>
+Tutte le comunicazioni di Sigla  saranno effettuate in lingua italiana al domicilio del Consumatore indicato nel contratto o successivamente da questi indicato per iscritto.<BR>
+<BR>
+<B>Art. 16) Comunicazioni periodiche.</B><BR>
+Sigla  fornisce al Consumatore alla scadenza del contratto, e comunque almeno una volta l’anno, una comunicazione analitica, al domicilio del Consumatore, indicato nel contratto o successivamente da questi indicato per iscritto, che dia completa e chiara informazione sullo svolgimento del rapporto e un aggiornato quadro delle condizioni economiche applicate. In mancanza di opposizione scritta da parte del Consumatore, le condizioni si intendono approvate trascorsi 60 (sessanta) giorni dal ricevimento della predetta comunicazione. Tale comunicazione periodica sarà resa in forma cartacea o mediante altro supporto durevole preventivamente accettato dal Consumatore, laddove disponibile; in tal caso, in ogni momento del rapporto, il Consumatore ha diritto di cambiare la tecnica di comunicazione utilizzata.<BR>
+Il Consumatore, colui che gli succede a qualunque titolo e colui che subentra nell’amministrazione dei suoi beni, possono ottenere a proprie spese copia di documenti inerenti singole operazioni poste in essere negli ultimi 10 (dieci) anni.<BR>
+Tali spese saranno indicate al Consumatore al momento della richiesta e saranno commisurate alla complessità della ricerca della documentazione, fermo restando che non saranno in ogni caso superiori ai costi che Sigla  dovrà sostenere per la relativa produzione.<BR>
+<BR>
+<B>Art. 17) Legge regolatrice del contratto, Foro competente.</B><BR>
+Il presente contratto è regolato dalla legge italiana. Per qualunque controversia che dovesse sorgere in dipendenza del contratto è competente in via esclusiva il Foro nella cui circoscrizione si trova la residenza o il domicilio elettivo del Consumatore.<BR>
+<BR>
+<B>Art. 18) Esclusione di responsabilità.</B><BR>
+Fatte salve inderogabili disposizioni di legge, Sigla  non risponde dei casi di forza maggiore (compresi gli scioperi del personale) e di caso fortuito che possono verificarsi presso la medesima o presso corrispondenti, così come ogni qual volta essa abbia agito in conformità con vincoli derivanti da obblighi di legge o da disposizioni delle competenti Autorità.<BR>
+<BR>
+<B>Art. 19) Cessione del contratto.</B><BR>
+Il Consumatore autorizza sin da ora Sigla S.r.l. , a parità di tutela dei propri diritti, a cedere, ai sensi degli articoli 1406 e seguenti del CC, in favore di Prestitalia SpA , il presente contratto di finanziamento e tutti i crediti e diritti accessori e garanzie derivanti dallo stesso. Ogni adempimento pubblicitario inerente alla suddetta cessione si intenderà adempiuto ai sensi del disposto di cui all’Art. 58 TUB. <BR>
+<BR>
+<B>Art. 20) Sostituzione.</B><BR>
+Fermi restando i diritti del Consumatore e nel pieno rispetto della normativa applicabile, Sigla è autorizzata a farsi sostituire da soggetti terzi per l’esecuzione delle obbligazioni derivanti dal presente contratto.<BR>
+<BR>
+<B>Art. 21) Jus Variandi.</B><BR>
+Ogni variazione del contratto o del Piano di Ammortamento dipendente da eventi riguardanti il Consumatore e disciplinati dal DPR 180/50 e dalle ulteriori norme ad esso collegate, come previsti nei precedenti articoli, non costituisce modifica delle condizioni ai sensi e per gli effetti dell’Art. 118 del D. Lgs. 385/1993 e successive modifiche e integrazioni.<BR>
+</TEXT>
+<PAGE>
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT">Pag. 9 di 10</TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+
+<TEXT ALIGN=J>
+Al di fuori dei casi indicati, in qualunque momento Sigla può, se sussiste un giustificato motivo, modificare unilateralmente le condizioni contrattuali, ad eccezione dei tassi di interesse che potranno variare solo con le modalità e in base ai parametri eventualmente previsti nel contratto. Le relative comunicazioni saranno validamente fatte da Sigla in forma scritta, trasmesse mediante lettera semplice o su altro supporto durevole inviato mediante una qualsiasi idonea tecnica di comunicazione a distanza preventivamente accettata dal Consumatore, con preavviso minimo di 2 (due) mesi ed entreranno in vigore con la decorrenza ivi indicata.<BR>
+Nel caso di modifica unilaterale delle condizioni di contratto ai sensi del precedente comma, il Consumatore può recedere dal medesimo contratto entro la data di efficacia della modifica proposta senza spese e con l’applicazione, in sede di liquidazione del rapporto, delle condizioni precedentemente praticate. Se non viene comunicato a Sigla il recesso entro il termine predetto, le modifiche si intenderanno approvate con la decorrenza indicata nella citata comunicazione. <BR>
+Ai sensi del presente articolo, per giustificato motivo si intende qualsiasi accadimento, sopravvenuto alla conclusione del contratto, che abbia per effetto l’alterazione
+dell’originario equilibrio delle prestazioni contrattuali e rispetto al quale il comportamento di Sigla non abbia avuto un effetto causale, come, a titolo meramente esemplificativo e non esaustivo: modifica di disposizioni legislative e/o regolamentari, straordinari processi di ristrutturazione e riorganizzazione aziendale (anche a seguito di modifiche regolamentari) che incidano in modo rilevante sulle dinamiche dei costi, eventi che riguardino il Consumatore o il settore di appartenenza di questi e che incidano in modo oggettivo sul profilo di rischio del Consumatore medesimo, incrementi di costi dovuti alle procedure interbancarie applicate o ad altri fattori oggettivi ed esterni a Sigla, mutamenti relativi al grado di solvibilità e di affidabilità del Consumatore espresso in termini di rischio di credito e determinato sulla base di oggettive procedure di valutazione, ecc..<BR>
+<BR>
+<BR>
+<BR>
+<TABLE WIDTH=100% BORDER=0 SIZE=6>
+<TR>
+<TD WIDTH=50%></TD>
+<TD WIDTH=50% ALIGN=C>SIGLA SRL via Cesare Battisti, 5/a 31015 CONEGLIANO (TV)<BR>ITALIA - Intermediario Finanziario iscritto Elenco Speciale <BR>ex art.107 TUB n. 33023.3 Registro Imprese, codice fiscale<BR>e partita IVA 03951740269 - Capitale <BR>Sociale 600.000,00 €</TD>
+</TR>
+<TR>
+<TD WIDTH=50%>Conegliano,lì<BR>..........................................................................................</TD>
+<TD WIDTH=50% ALIGN=C SIZE=7><BR><BR>TIMBRO E FIRMA<BR>Un procuratore<BR>..........................................................................................</TD>
+</TR>
+</TABLE>
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+
+<B>Dopo attenta ponderazione, avendo riscontrato la corrispondenza del suesteso testo contrattuale con il documento “SECCI” e con la “Copia del testo contrattuale idoneo alla stipula” eventualmente consegnatami, sottoscrivo il contratto di finanziamento accettando formalmente tutte le condizioni in esso riportate.</B><BR>
+Resta inteso tra le parti che – anche in deroga a quanto previsto nel presente contratto ed al fine di confermare la validità delle relative clausole contrattuali – il calcolo degli interessi maturati avverrà in ogni caso in conformità alla normativa bancaria tempo per tempo vigente e alle sue disposizioni di attuazione.<BR>
+<I>"Attenzione : l’apposizione della data da parte del Consumatore al momento della sua sottoscrizione, costituisce perfezionamento del contratto per la decorrenza dei termini di recesso e per la messa a disposizione dell’Importo Totale del Credito, salvo quanto previsto all’articolo 14 (inefficacia per mancato benestare, pregiudizievoli sopravvenute all’istruttoria e variazioni tassi ai sensi della Legge 108/96)".</I><BR>
+<BR>
+Luogo                        , data _ _   _ _   _ _ _ _<BR>
+                                            gg    mm     anno<BR>
+<BR>
+<BR>
+Firma del Consumatore ___________________________<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<B>Dichiaro di approvare specificamente, anche ai sensi e per gli effetti dell’art. 1341, comma 2, c.c., ovvero delle disposizioni in materia di trasparenza bancaria, le seguenti clausole:</B><BR>
+Art. 2 Autorizzazione per l’estinzione di altri impegni; Art. 3) Garanzie assicurative ; Art. 4) Riduzione della pensione - <I>stabilità della trattenuta;</I> Art. 5) Ritardo nei versamenti e interessi di mora; Art. 6) Rispetto del Piano di Ammortamento ed adeguamento ad eventi
+riguardanti il Consumatore. Conseguenze per mancato pagamento. Risoluzione; Art. 8) Estinzione anticipata – <I>costi non rimborsabili</I>; Art. 14) Condizioni dell’Erogazione. Requisiti. Recesso o Risoluzione del contratto. Interessi di Preammortamento - <I>-cause di recesso o
+risoluzione per mancato Benestare, mutamento dei Tassi di cui alla Legge 108/96, pregiudizievoli sopravvenute all’istruttoria, interessi di
+Preammortamento;</I> Art. 18) Esclusione responsabilità; Art. 19) Cessione del contratto; Art. 21) Jus variandi – <I>modifica unilaterale</I>.<BR>
+<BR>
+Luogo e data ___________________<BR>
+<BR>
+<BR>
+Firma del Consumatore ___________________________<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+
+</TEXT>
+<PAGE>
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT">Pag. 10 di 10</TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+
+<TEXT ALIGN=J>
+<B>Dichiaro di aver ricevuto copia del presente contratto, comprensiva del SECCI, oltre ai seguenti documenti consegnati in tempo utile prima della sua conclusione: <BR>
+-	   Guida della Banca d'Italia "Il credito ai consumatori in parole semplici"<BR>
+-	   Guida pratica per la risoluzione stragiudiziale delle controversie;<BR>
+-	   Tabella TEGM corrente nel trimestre.</B><BR>
+<BR>
+<BR>
+Firma del Consumatore ___________________________<BR>
+<BR>
+<BR>
+<BR>
+PARTE RISERVATA ALL’ACCERTATORE. Il sottoscritto, incaricato dell’identificazione (art.30, comma 8 del Dlgs 231/2007),  dichiara, sotto la propria personale responsabilità,di aver provveduto ad adeguata verifica dell’identità del Consumatore,  le cui generalità  sono state desunte dai documenti d’identità esibiti in originale e sono state esattamente riportate  nel presente contratto unitamente ai riferimenti del documento esibito; dichiara inoltre che il Consumatore afferma,   e tale appare sulla base degli elementi disponibili, di essere l’effettivo titolare del finanziamento oggetto del  presente contratto, il cui scopo è stato indicato nella richiesta unitamente alle altre informazioni fornite  (art. 21 del Dlgs 231/2007). Il sottoscritto dichiara inoltre che la sottoscrizione del contratto e degli   allegati è avvenuta in sua presenza e che tutta la documentazione fornita ai fini dell’ottenimento del   presente finanziamento è stata visionata dall’originale presentato dal Consumatore.<BR>
+<BR>
+<BR>
+<BR>
+Cognome e nome accertatore 	Firma leggibile (accertatore)  _____________________	<BR>
+(che opera per conto della società sotto indicata)<BR>
+<BR>
+<TABLE WIDTH=20% BORDER=0.7>
+<TR><TD WIDTH=100%><BR><BR><BR><BR></TD>
+</TR>
+</TABLE>
+<BR>								
+<BR>
+<BR>
+Timbro agente<BR>
+<BR>
+Si specifica che la notifica potrà avvenire tramite Ufficiale Giudiziario (vedi Relazione di notifica qui sotto riportata) oppure tramite altro mezzo (raccomandata a/r, PEC, ecc.)  in conformità all’art. 1264, c.1 CC.<BR>
+<BR>
+<BR>
+<TABLE WIDTH=100% BORDER=0.7>
+<TR><TD WIDTH=100%>RELAZIONE DI NOTIFICA :<BR>
+a richiesta di SIGLA SRL <BR>
+io sottoscritto Ufficiale Giudiziario addetto al Tribunale di Treviso sezione di Conegliano ho notificato il su esteso atto a :<BR>
+Al Legale Rappresentante del ...............................<BR>
+Nella sua sede di ...............................<BR>
+A mezzo del servizio postale come per Legge<BR>
+Conegliano, Li RACCOMANDATA N. Spedita il
+</TD>
+</TR>
+</TABLE>
+
+
+</TEXT>
+</BODY>
+</PDF>

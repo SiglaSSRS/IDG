@@ -1,0 +1,142 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="sacstrutturasize8">
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3">			
+</HEADER>
+<FOOTER>
+<include file="\INCLUDE\IncludedStruttura.frw" value="footercartaintestcqsstd">
+</FOOTER>
+<BODY>
+<ENCRYPT OWNER="soloiopossomodificare" NOCHANGE NOCOPY>
+<TEXT>
+<TEXT X=16.5 Y=-2.2 ><FONT SIZE=6><valfoot/><BR>N° Pratica: <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs></TEXT> 
+<BR><BR><BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=25%><B>RACCOMANDATA</B></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><B>SPETTABILE</B></TD><BR>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFERT00F/RECORD/IDGFERT_RAGSOCBEN</valueabs></TD><BR>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFERT00F/RECORD/IDGFERT_INDIRBEN</valueabs></TD><BR>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFERT00F/RECORD/IDGFERT_CAPBEN</valueabs>  <valueabs>IDGFERT00F/RECORD/IDGFERT_LOCALBEN</valueabs>  (<valueabs>IDGFERT00F/RECORD/IDGFERT_PROVBEN</valueabs>)</TD>
+</TR><BR><BR><BR>
+<TR>
+<TD WIDTH=25%><B>e p.c.</B></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><B>SPETTABILE</B></TD><BR>
+</TR>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==DEL</ifcond>
+<or>
+<ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>!=</ifcond>
+<then>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAVP</valueabs></TD><BR>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_LAVP</valueabs></TD><BR>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_LAVP</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_LAVP</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_LAVP</valueabs>)</TD>
+</TR>
+</then>
+<else>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_ANA_LAVP</valueabs>==40007202</ifcond><then><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAVP</valueabs></then><else><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs></else></if></TD><BR>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_ANA_LAVP</valueabs>==40007202</ifcond><then><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_LAVP</valueabs><else><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_LAV</valueabs></else></if></TD><BR>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_ANA_LAVP</valueabs>==40007202</ifcond><then><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_LAVP</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_LAVP</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_LAVP</valueabs>)<else><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_LAV</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_LAV</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_LAV</valueabs>)</else></if></TD>
+</TR>
+</else></if>
+<BR><BR><BR>
+
+</TABLE>
+<BR>
+<BR>
+<BR>
+<TABLE WIDTH=100%><TR>
+<TD WIDTH=100% ALIGN="J">
+Conegliano, lì &date <BR><BR>
+<B>Oggetto: saldo vostro conto estintivo <if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>==</ifcond>
+<then>e contestuale richiesta di rimborso quote in favore di Sigla S.r.l.</then>
+</if></B><BR><BR><BR>
+Signor:  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>  Cod. Fiscale: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs><BR>
+Dipendente presso: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs> <BR><BR><BR>
+Con riferimento alla precedente corrispondenza, Vogliate prendere nota che abbiamo provveduto ad erogare tramite: </TD><BR></TR>
+<loop>
+<loopda>1</loopda>
+<looproot>IDGFERD00F/RECORD</looproot>
+<TR>
+<TD WIDTH=100% ALIGN=L>- <value>IDGFERD_DESCPAG</value> <BR>
+presso: <value>IDGFERD_DESCBAN</value> <value>IDGFERD_DESCCAB</value> c/c num. <value>IDGFERD_CONTOC</value> <BR>
+a Vs. favore, per l'importo di € <value>IDGFERD_IMPERG</value>
+</TD><BR>
+</TR>
+</loop>
+<TR><TD WIDTH=100% ALIGN="J">
+Restiamo in attesa di copia della dichiarazione estintiva con effetto liberatorio al <valueabs>IDGFERT00F/RECORD/IDGFERT_DTFINEVAL</valueabs>, che andrete ad inviare
+all'amministrazione di competenza, che ci legge per conoscenza, con richiesta di anticipo della liberatoria anche al nostro n° di fax 0438/45917 oppure all'indirizzo email contratticqs@siglafinanziamenti.it <BR><BR>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>==</ifcond>
+<then>Si richiede contestualmente il rimborso di tutte le quote che doveste ricevere successivamente alla data di estinzione del Vostro contratto, 
+come da espressa autorizzazione rilasciataci dal/la signor/a <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>, in quanto le stesse sono di competenza del nuovo contratto stipulato 
+dal/la signor/a <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> con Sigla S.r.l.<BR><BR>
+Il versamento dovrà avvenire a mezzo bonifico bancario utilizzando le seguenti coordinate bancarie:<BR>
+IBAN: IT 88 E 06225 61628 100000011962 intestato a SIGLA SRL
+Causale di pagamento: <i>"rimborso quote cqs n. <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs> a nome <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>"</i><BR><BR>
+Vi chiediamo infine di considerare solo ed esclusivamente le richieste di rimborso provenienti da Sigla srl - indirizzo mail <i>quotecqs@siglafinanziamenti.it</i> con 
+richiesta di accredito sul conto corrente sopra indicato.</then></if>
+<BR><BR>
+
+N.B.: resta convenuto che qualora, per qualsiasi causa, il finanziamento stipulato non dovesse perfezionarsi, rimarrà in 
+vigore la Vostra cessione e l'importo da noi versato dovrà esserci restituito a nostra richiesta.
+</TD><BR></TR>
+</TABLE>
+<BR><BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=50%></TD>
+<TD WIDTH=40% ALIGN="C"><B>Sigla Srl</B></TD>
+<TD WIDTH=5%></TD>
+<TD WIDTH=5%></TD>
+</TR>
+</TABLE>
+</TEXT>
+</BODY>
+</PDF>

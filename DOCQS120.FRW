@@ -1,0 +1,131 @@
+<if><ifcond><valueabs>IDGFFONT0F/RECORD/IDGFONT_CDFONTE</valueabs><in>(___CONS_00,CONSOLIDA)</ifcond><then>
+<include file="DOCON001.frw">
+<include file="DOCON002.frw">
+</then><else>
+<if><ifcond><valueabs>IDGFFONT0F/RECORD/IDGFONT_CDFONTE</valueabs><in>(_YOU_CONS)</ifcond><then>
+<include file="DOCON003.frw"></then></if>
+<PDF>
+
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize5.5">
+
+<FOOTER>
+</FOOTER>
+<BODY>	
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<TABLE SIZE=9.5>
+	<TR>
+	<TD WIDTH=70%></TD>	
+	<TD WIDTH=30%>
+	<B>SPETTABILE</B><BR>
+	<B><INPUT TYPE=TEXT NAME=A-AUTEDEL###DOCQS120##-01 SIZE=5 WIDTH=4 HEIGHT=1.5 ></B><BR>
+	<BR>
+	<B>Via <INPUT TYPE=TEXT NAME=A-AUTEDEL###DOCQS120##-02 SIZE=8 WIDTH=3.5 HEIGHT=1.5 ></B><BR>
+	<BR>
+	<B>Città <INPUT TYPE=TEXT NAME=A-AUTEDEL###DOCQS120##-03 SIZE=8 WIDTH=3.3 HEIGHT=1.5 ></B><BR>
+	<BR>
+	</TD> 	
+	</TR> 
+</TABLE>
+<BR>
+<BR>
+<TABLE SIZE=9.5>
+	<TR>
+		<TD WIDTH=70%>Data: <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></TD>
+		<TD WIDTH=30%></TD>
+	</TR>
+	<TR>
+	</TR>	
+	<TR>
+		<TD WIDTH=70%><B>OGGETTO: Richiesta conteggio estintivo a nome <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></B></TD>	
+		<TD WIDTH=30%></TD>
+	</TR>
+</TABLE>
+<BR><BR><BR>
+<TEXT SIZE=9.5 ALIGN=J>
+Il sottoscritto/a  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>, nato a <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCNASC</valueabs> il <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC</valueabs>, C.F. <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs> , 
+titolare del contratto di cessione di quota di stipendio/delegazione di pagamento con rata di &euro <INPUT TYPE=TEXT NAME=A-AUTEDEL###DOCQS120##-04 SIZE=8 WIDTH=3 HEIGHT=1.5 ><BR> 
+</TEXT>
+<BR><BR><BR>
+<TEXT SIZE=9.5 ALIGN=C>
+<B><U>AUTORIZZA E DELEGA</U></B><BR> 
+</TEXT>
+<BR><BR>
+<TEXT SIZE=9.5 ALIGN=J>
+<valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs>, direttamente o mediante i suoi incaricati, affinché in suo nome e per suo conto provveda a richiedere al Vostro Istituto il conto del residuo debito relativo al finanziamento in essere con chiusura al _______________________. <BR><BR>
+Il/la sottoscritto/a autorizza Codesta Spettabile Società ad inviare il conteggio estintivo, entro e non oltre 10 giorni, ai sensi dell’art. 17 D.P.R. 895/1950, alla società <B><valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs></B>
+ai seguenti recapiti <B>contratticqs@siglafinanziamenti.it</B> oppure <B>siglacredit.cessionequinto@pec.it</B><BR><BR>
+<B>Si precisa che è mia volontà procedere al rinnovo dell’operazione di finanziamento per il tramite della società <valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs></B>
+<BR> 
+</TEXT>
+<BR>
+<BR>
+<BR>
+<TABLE SIZE=9.5>
+	<TR>
+		<TD WIDTH=70%></TD>	
+		<TD WIDTH=30% ALIGN=C></TD>
+	</TR> 
+</TABLE>
+<BR>
+<BR>
+<TABLE SIZE=9.5>
+	<TR>
+		<TD WIDTH=70%>
+		</TD>	
+		<TD WIDTH=30% VALIGN=B>
+				
+		</TD>
+	</TR>
+	<BR>
+	<BR>
+	<BR>
+	<BR>
+	<BR>
+</TABLE>	
+<TABLE SIZE=9.5>
+	<TR>
+	<TD WIDTH=100%>Agente in attività finanziaria Sigla ( timbro e firma)<BR></TD>	
+	</TR>
+	<TR><TD WIDTH=100%><BR></TD>
+	</TR>		
+	<TR>
+	<TD WIDTH=100%>____________________________________________________________________<BR><BR><BR></TD>
+	</TR>		  
+</TABLE>	
+<TABLE SIZE=9.5>
+	<TR>
+		<TD WIDTH=70%></TD>	
+		<TD WIDTH=30% VALIGN=T>Firma richiedente</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=70%></TD>	
+		<TD WIDTH=30% VALIGN=T><if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FEA</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FSE</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FSP</ifcond><then>
+				<INPUT TYPE=SIGNATURE NAME=C-AUTEDEL###DOCQS120##-1 WIDTH=5 HEIGHT=3></then></if></TD>
+	</TR>		 
+</TABLE>
+
+<if>
+	(<ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CODENTE</valueabs>==696</ifcond><or>
+	<ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CODENTE</valueabs>==3771542</ifcond>)<and>
+	(<ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>==FEA</ifcond><or>
+	<ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>==FSE</ifcond><or>
+	<ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>==FSP</ifcond>)<then>
+<IMG SRC="<valueabs>Immagini/TIMBROCQ/Path</valueabs><valueabs>Immagini/TIMBROCQ/Nome</valueabs>" BACKGROUND X=7 Y=20.5 SCALE=35>
+</then></if>
+
+<BR>
+<BR>
+<BR>
+<TEXT SIZE=9.5 ALIGN=J>
+All.: copia documento di riconoscimento
+</TEXT>
+
+</TEXT>
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\AUTEDEL###DOCQS120##01_01_01.png" BACKGROUND X=2.3 Y=2.2 SCALE=25>
+</BODY>
+</PDF>
+</else></if>

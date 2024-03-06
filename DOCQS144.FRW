@@ -1,0 +1,72 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="sacstrutturasize10">
+<FOOTER>
+<include file="\INCLUDE\IncludedStruttura.frw" value="footercartaintestatasigla">
+</FOOTER>
+<BODY>
+<TEXT ALIGN=J>
+<BR><BR>
+<BR><BR><BR><BR>
+<FONT SIZE=15><B>COMUNICAZIONE IMPORTANTE</B><FONT SIZE=10><BR>
+Gentile cliente, La informiamo che per ottenere l’eventuale rimborso del premio non goduto, per quanto riguarda la polizza assicurativa <B>AMISSIMA ASSICURAZIONI  - Linea Impiego</B>, collegata al Suo contratto, qualora dovesse decidere di portare a termine l’estinzione come da conteggio allegato, <B><U>dovrà necessariamente restituirci la presente dichiarazione compilata</U>, al numero di fax 0438/45926 o all’indirizzo e-mail sac@siglafinanziamenti.it</B>, pena l’impossibilità per la società AMISSIMA ASSICURAZIONI  di valutare l’eventuale rimborso, <B>qualora sia dovuto</B>.
+<BR><BR><BR><BR>
+
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>Spettabile</TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DES_COMP_VIT</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IND_COMP_VIT</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CAP_COMP_VIT</valueabs>  <valueabs>IDGFCQS00F/RECORD/IDGFCQS_LOC_COMP_VIT</valueabs>  (<valueabs>IDGFCQS00F/RECORD/IDGFCQS_PRV_COMP_VIT</valueabs>)</TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+<BR>
+<BR>
+<TABLE WIDTH=100%><TR>
+<TD WIDTH=100% ALIGN="J">
+___________________________________<BR><BR>
+Oggetto: richiesta rimborso premio non goduto delle polizze del contratto nr. <valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs> 
+a nome <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> estinto alla data del <valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN</valueabs> .
+<BR></TD>
+</TR>
+</TABLE>
+<BR>
+Io sottoscritt<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond><then>o<else>a</if> titolare del contratto in oggetto, estinto anticipatamente, chiedo il rimborso del premio non goduto delle polizze relative al contratto in oggetto.<BR>
+<BR><BR>
+Distinti saluti.</P><BR><BR><BR><BR><BR><BR>
+
+
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=50%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>In fede</TD>
+</TR>
+<TR>
+<TD WIDTH=50%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>_____________________</TD>
+</TR>
+</TABLE>
+</TEXT>
+</BODY>
+</PDF>

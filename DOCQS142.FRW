@@ -1,0 +1,79 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="sacstrutturasize10">
+<FOOTER>
+<include file="\INCLUDE\IncludedStruttura.frw" value="footercartaintestatasigla">
+</FOOTER>
+<SUBFOOTER><TEXT>
+All.:<BR> 
+-  copia documento d’identità e codice fiscale;<BR>
+-  copia lettera liberatoria.</TEXT>
+</SUBFOOTER>
+<BODY>
+<TEXT>
+<BR><BR><BR><BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>Spettabile</TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DES_COMP_VIT</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IND_COMP_VIT</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CAP_COMP_VIT</valueabs>  <valueabs>IDGFCQS00F/RECORD/IDGFCQS_LOC_COMP_VIT</valueabs>  (<valueabs>IDGFCQS00F/RECORD/IDGFCQS_PRV_COMP_VIT</valueabs>)</TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+<BR>
+<BR>
+<TABLE WIDTH=100%><TR>
+<TD WIDTH=100% ALIGN="J">
+________________ ,__________________<BR><BR>
+Oggetto: richiesta rimborso premio non goduto delle polizze del contratto nr. <valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs> 
+a nome <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> estinto alla data del <valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN</valueabs> .
+<BR></TD>
+</TR>
+</TABLE>
+<BR><BR><BR><BR><BR>
+Io sottoscritt<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond><then>o<else>a</if> <BR>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> nat<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond><then>o<else>a</if> a <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCNASC</valueabs> il <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC</valueabs> e residente in 
+ <valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs> a <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs>),
+<BR>
+titolare del contratto in oggetto, estinto anticipatamente, <B>chiedo il rimborso del premio non goduto delle polizze relative al contratto in oggetto</B> da effettuarsi a mezzo bonifico alle seguenti coordinate:<BR>
+<BR>
+	IBAN:    IT  _____ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __<BR>
+	Intestato a <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs><BR>
+<BR><BR>
+Distinti saluti.</P><BR><BR><BR><BR><BR><BR>
+
+
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=50%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>In fede</TD>
+</TR>
+<TR>
+<TD WIDTH=50%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><BR>______________________________<BR><FONT SIZE=6><I>Firma leggibile</I></TD>
+</TR>
+</TABLE>
+</TEXT>
+</BODY>
+</PDF>

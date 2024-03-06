@@ -1,0 +1,145 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="sacstrutturasize9">
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3">			
+</HEADER>
+<FOOTER>
+<include file="\INCLUDE\IncludedStruttura.frw" value="footercartaintestatasac">
+</FOOTER>
+<BODY>
+<TEXT ALIGN=J>
+<BR><BR><BR>
+<TABLE WIDTH=100% SIZE=8.5>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><U><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond><then>Gentil Signor<else>Gentil Signora</if></U></TD><BR>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></B></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs>  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs>  (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs>)</TD>
+</TR><BR><BR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><U>Spettabile</U></TD><BR>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><B><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_ANA_LAVP</valueabs>==40007202</ifcond><then><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAVP</valueabs></then><else><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs></else></if> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_STATOGIUR</valueabs></B></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_ANA_LAVP</valueabs>==40007202</ifcond><then><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_LAVP</valueabs><else><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_LAV</valueabs></else></if></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_ANA_LAVP</valueabs>==40007202</ifcond><then><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_LAVP</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_LAVP</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_LAVP</valueabs>)<else><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_LAV</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_LAV</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_LAV</valueabs>)</else></if></TD>
+</TR><BR><BR>
+
+<loop>
+<loopda>1</loopda>
+<looproot>IDGFTFR00F/RECORD</looproot>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_COMP_VIT</valueabs>==12048971</ifcond><and><ifcond><value>IDGFTFR_TERZO</value>!=12052635</ifcond><and><ifcond><value>IDGFTFR_CDGSTTFR</value>!=DLV</ifcond><then>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><U>Spettabile</U></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><B><value>IDGFTFR_RGANATFR</value></B></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><value>IDGFTFR_INANATFR</value></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><value>IDGFTFR_CPANATFR</value> - <value>IDGFTFR_LCANATFR</value>  (<value>IDGFTFR_PRANATFR</value>)</TD>
+</TR>
+</then>
+<else>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_COMP_VIT</valueabs>!=12048971</ifcond><and><ifcond><value>IDGFTFR_CDGSTTFR</value>!=DLV</ifcond><then>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><U>Spettabile</U></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><B><value>IDGFTFR_RGANATFR</value></B></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><value>IDGFTFR_INANATFR</value></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><value>IDGFTFR_CPANATFR</value> - <value>IDGFTFR_LCANATFR</value>  (<value>IDGFTFR_PRANATFR</value>)</TD>
+</TR>
+</then></if>
+</else></if>
+</loop>
+</TABLE>
+<BR>
+<BR>
+<BR>
+<BR>
+Conegliano, <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs><BR><BR><BR>
+Oggetto: contratto di mutuo contro cessione del quinto dello stipendio n. <valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs> a nome <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>.</TD>
+<BR><BR>
+Con riferimento alla Sua richiesta di anticipazione della Sua posizione maturata presso il <B>Suo datore di lavoro <INPUT TYPE=CHECKBOX NAME=a>  presso il Fondo Pensione <INPUT TYPE=CHECKBOX NAME=b></B>  , La informiamo che alla data odierna il debito totale del Suo contratto in oggetto ammonta a Euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DEBRES</valueabs>, calcolato come differenza tra il montante che Lei si è impegnato a rimborsare e le somme sino ad ora corrisposte.<BR>
+<BR>
+Premesso che con la sottoscrizione del contratto in oggetto, Lei si è impegnato a non richiedere anticipazioni delle indennità di fine rapporto o altre somme depositate presso qualsiasi ente di previdenza o assicurazione cui aderisce, <B>si acconsente eccezionalmente all’anticipazione da Lei richiesta, per la sola parte eccedente il debito residuo sopra indicato; dovrà quindi rimanere in giacenza presso il Suo datore di lavoro <INPUT TYPE=CHECKBOX NAME=c> presso il Fondo Pensione <INPUT TYPE=CHECKBOX NAME=d> ,  l’importo di Euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DEBRES</valueabs> a garanzia del finanziamento.</B><BR>
+<BR>
+Rimanendo a disposizione per eventuali chiarimenti al n. 0438/45990, porgiamo distinti saluti.<BR>
+<BR><BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=50%></TD>
+<TD WIDTH=50% ALIGN=C>Conformità Clienti e Monitoraggio Contratti<BR>Sigla S.r.l.</TD>
+</TR>
+</TABLE>
+
+
+</TEXT>
+<IMG SRC="<valueabs>Immagini/FIRMAGER1/Path</valueabs><valueabs>Immagini/FIRMAGER1/Nome</valueabs>" BACKGROUND X=12 Y=22.4 SCALE=10>
+</BODY>
+</PDF>

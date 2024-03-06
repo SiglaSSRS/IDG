@@ -1,0 +1,110 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize5.5">
+
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headersiglarischio">
+</HEADER>
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestatasigla">
+</FOOTER>
+
+<BODY>
+				<TABLE WIDTH=100% SIZE=5>
+					<TR>
+						<TD WIDTH=70%></TD>
+						<TD WIDTH=30% ALIGN=R>Pratica: <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs></TD>
+					</TR>
+				</TABLE>	
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<TABLE SIZE=9.5>
+<TR>
+<TD WIDTH=70%><B>VIA FAX</B></TD>	
+<TD WIDTH=30%>
+<B>Spettabile</B><BR><BR>
+
+				<loop>
+				<loopda>1</loopda>
+				<looproot>IDGFDEB00F/RECORD</looproot>
+					<if><ifcond><value>IDGFDEB_FLAGESTIN</value>==S</ifcond>
+					<then>
+<value>IDGFDEB_DESANACON</value><BR>
+<BR>
+<value>IDGFDEB_INDIRCON</value><BR>
+<BR>
+<value>IDGFDEB_CAPCON</value> - <value>IDGFDEB_CITTACON</value> (<value>IDGFDEB_PROVCON</value>)<BR>
+<BR>			    </then>
+					</if>	
+				</loop>
+
+
+
+</TD> 	
+</TR> 
+<BR>
+<BR>
+<BR>
+<TR>
+<TD WIDTH=70%></TD>
+<TD WIDTH=30%>Conegliano, lì <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+<BR>
+<BR>
+<TABLE SIZE=9.5><TR>
+<TD WIDTH=70%><B>OGGETTO</B>: richiesta conto del residuo debito</TD>	
+<TD WIDTH=30%></TD></TR>
+</TABLE>
+<BR>
+<BR>
+<BR>
+<TEXT SIZE=9.5 ALIGN=J>
+Signor: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>, C.F. <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs>, nato il <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC</valueabs> a <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCNASC</valueabs><BR>
+Dipendente presso: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_STATOGIUR</valueabs> <BR><BR><BR><BR>
+Con la presente la nostra società, debitamente autorizzata dal Sig. <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>, chiede alla Loro società il conto
+del residuo debito (in doppio originale) relativo al finanziamento in oggetto, chiuso al 31/05/2011.<BR>
+Preghiamo Loro di inviare quanto sopra richiesto entro il termine di 10 giorni (così come previsto dall'art.17 DPR. 895/50 in
+caso di delegazione di pagamento) e, se possibile, di anticiparne una copia via fax al seguente n. 043845917.
+<BR><BR><BR>
+All'uopo alleghiamo alla presente comunicazione autorizzazione irrevocabile debitamente sottoscritta dal sig. <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>.<BR><BR>
+In attesa ringraziamo e porgiamo distinti saluti.
+</TEXT>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<TABLE SIZE=9.5>
+<TR>
+<TD WIDTH=70%></TD>	
+<TD WIDTH=30%><B>Sigla S.r.l.</B></TD>
+</TR>
+<TR>
+<TD WIDTH=70%>N.B.: da inviare al seguente indirizzo:</TD>	
+<TD WIDTH=30%></TD></TR>
+<TR>
+<TD WIDTH=70%>VIA VITAL, 98/B 31015 - CONEGLIANO (TV)</TD>	
+<TD WIDTH=30%></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+		
+</BODY>
+</PDF>

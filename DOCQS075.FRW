@@ -1,0 +1,209 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize7">
+
+<HEADER>
+</HEADER>
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestcqsstd">
+</FOOTER>
+
+<BODY>	
+<ENCRYPT OWNER="soloiopossomodificare" NOCHANGE NOCOPY>
+	<SUBFOOTER>
+		<TABLE WIDTH=100%>
+			<TR>
+				<TD WIDTH=50%>__________________________, li _______________</TD>
+				<TD WIDTH=50%>______________________________________________</TD>
+			</TR>
+			<TR>
+				<TD WIDTH=50%></TD>
+				<TD WIDTH=50%>Timbro e Firma del legale rappresentante</TD>
+			</TR>
+		</TABLE>
+		<TEXT SIZE=6.5 ALIGN=JUSTIFIED>
+			*: la data da inserire è a carico del Datore di Lavoro. Si segnala che il presente documento dovrà essere firmato da persona in possesso della capacità giuridica di assumere, a tutti gli effetti, impegni per conto del Datore di lavoro. Si raccomanda di verificare la validità dei dati riportati sul contratto notificato.
+			<BR><BR>
+			Si specifica che la notifica potrà avvenire tramite Ufficiale Giudiziario (vedi Relazione di notifica qui sotto riportata) oppure tramite altro mezzo (raccomandata a/r, PEC, ecc.) in conformità all’art. 1264, c.1 CC.
+		</TEXT>
+		
+		<TABLE  BORDER=0.5 CELLPADDING=15 WIDTH=100%>
+			<TR>
+				<TD WIDTH=50%>
+					<B>RELAZIONE DI NOTIFICA</B>
+					<BR>
+					Ad istanza di Sigla S.r.l.
+					<BR>
+					Io sottoscritto Ufficiale giudiziario addetto al Tribunale di Treviso sezione di Conegliano ho notificato il presente atto a:
+					<BR>
+					al Legale Rappresentante della <B><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_ANA_LAVP</valueabs>==12030038</ifcond><then><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAVP</valueabs></then><else><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs></else></if></B>
+					<BR>
+					<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_ANA_LAVP</valueabs>==12030038</ifcond><then>
+					nella sua sede di <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_LAVP</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_LAVP</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_LAVP</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_LAVP</valueabs>)</B>
+					</then><else>
+					nella sua sede di <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_LAV</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_LAV</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_LAV</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_LAV</valueabs>)</B>
+					</else></if>
+					<BR>
+					a mezzo del servizio postale come per Legge
+					<BR>
+					Conegliano, li _______________
+					<BR>
+					Raccomandata N° _______________
+					<BR>
+					Spedita il _______________
+				</TD>
+			</TR>
+		</TABLE>
+	</SUBFOOTER>
+
+	<TEXT><B>COPIA DA RESTITUIRE (anticipata a mezzo fax allo 0438/45917 o via mail a contratticqs@siglafinanziamenti.it; per <br>
+	info o ulteriori chiarimenti n° tel. 0438/45960) oppure all'indirizzo PEC siglacredit.cessionequinto@pec.it tramite il vostro indirizzo PEC</B></TEXT>
+
+	<BR>
+
+	<CENTER>
+		<TEXT SIZE=13.0><FONT COLOR=#0070D0><B>ATTO DI BENESTARE</B></FONT></TEXT>
+	</CENTER>
+
+	<BR><HR><BR>
+
+	<TABLE WIDTH=100%>
+		<TR>
+			<TD WIDTH=50%>
+				<TABLE SIZE=7 BORDER=0.5>
+					<TR>
+						<TD><B>Pratica</B></TD>
+						<TD><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs></TD>
+					</TR>
+				</TABLE>
+			</TD>
+			<TD WIDTH=50%>
+				<B>Spettabile</B>:
+				<BR>
+				Sigla S.r.l.
+				<BR>
+				<valueabs>IDGFAZI00F/RECORD/IDGFAZI_INDIR_SIGF</valueabs>
+				<BR>
+				<valueabs>IDGFAZI00F/RECORD/IDGFAZI_CAP_SIGF</valueabs> - <valueabs>IDGFAZI00F/RECORD/IDGFAZI_LOCAL_SIGF</valueabs> (<valueabs>IDGFAZI00F/RECORD/IDGFAZI_PROV_SIGF</valueabs>)
+			</TD>
+		</TR>
+	</TABLE>
+
+	<BR>
+
+	<TABLE WIDTH=100%>
+		<TR>
+			<TD><B>Oggetto</B>:</TD>
+			<TD>
+				contratto di prestito con delegazione di pagamento sottoscritto da:
+				<BR>
+				<valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>
+				<BR>
+				Dipendente da <if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_ANA_LAVP</valueabs>==12030038</ifcond><then><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAVP</valueabs></then><else><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs></else></if>
+				<BR>
+				Nato a <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCNASC</valueabs> il <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC</valueabs>, C.F. <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs>
+				<BR>
+				rappresentato da SIGLA S.r.l. - Ufficio CQS Tel. 0438-45908
+			</TD>
+		</TR>
+	</TABLE>
+
+	<BR><BR>
+
+	<TEXT ALIGN=JUSTIFIED>
+In data <BGCOLOR VALUE=YELLOW>* ____________________ <BGCOLOR VALUE=WHITE> ci è stato notificato il contratto di prestito con delegazione di pagamento in oggetto ai sensi dell'art.3 del DM nr. 313 del 27/12/2006.
+<BR><BR>
+Vi assicuriamo pertanto che provvederemo in conformità ed in applicazione delle norme contenute nel D.P.R. 05/01/1950 n. 180 e relativo
+Regolamento D.P.R. 28/07/1950 n. 895, successive modifiche ed integrazioni e norme in materia del codice civile (artt.1269 e segg.).
+<BR><BR>
+Conseguentemente la quota ceduta di &euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPCAN</valueabs> verrà mensilmente ed ininterrottamente trattenuta al nostro dipendente in oggetto dalla retribuzione del mese di <BGCOLOR VALUE=YELLOW>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==1</ifcond><then>GENNAIO </then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==2</ifcond><then>FEBBRAIO </then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==3</ifcond><then>MARZO </then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==4</ifcond><then>APRILE </then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==5</ifcond><then>MAGGIO </then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==6</ifcond><then>GIUGNO </then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==7</ifcond><then>LUGLIO </then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==8</ifcond><then>AGOSTO </then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==9</ifcond><then>SETTEMBRE </then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==10</ifcond><then>OTTOBRE </then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==11</ifcond><then>NOVEMBRE </then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==12</ifcond><then>DICEMBRE </then></if> <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_AA</valueabs> (oppure indicare nuova data ___________________) <BGCOLOR VALUE=WHITE>e versata a Voi fino a completa estinzione del debito nella somma complessiva di &euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPMUTLRD</valueabs>.
+<BR><BR>
+Il versamento sarà eseguito a mezzo:
+	</TEXT>
+	<TABLE>
+		<TR>
+			<TD ALIGN=JUSTIFIED>
+<B>[_] 
+Bonifico bancario su Intesa Sanpaolo, c.c. n° 100000012670,
+CAB: 12711, ABI: 03069, CIN: A,
+IBAN: IT29A0306912711100000012670 intestato a Sigla S.r.l.
+</B>
+			</TD>
+		</TR>
+		<TR>
+			<TD ALIGN=JUSTIFIED>
+<B>[_] 
+Bonifico Postale n° 000073807760,
+CAB: 12000, ABI: 07601, CIN: G,
+IBAN: IT53G0760112000000073807760 intestato a Sigla S.r.l.
+</B>
+			</TD>
+		</TR>
+		<TR>
+			<TD ALIGN=JUSTIFIED>
+<B>[_] Assegno circolare non trasferibile intestato a Sigla S.r.l.</B>
+			</TD>
+		</TR>
+	</TABLE>
+	<TEXT ALIGN=JUSTIFIED>
+entro il giorno 10 del mese successivo a quello cui si riferisce la trattenuta.
+<BR><BR>
+Se la gestione del TFR è nella nostra disponibilità, si dichiara che:
+<BR>
+- non sarà concessa alcuna anticipazione sul trattamento di fine rapporto al cedente/mutuatario che ne faccia richiesta durante il periodo di ammortamento del prestito;
+<BR>
+- in caso di cessazione, per qualsiasi causa del rapporto di lavoro, verserà a Sigla S.r.l. fino ad estinzione del debito in essere a quella data, il TFR maturato alla data della risoluzione ed eventuali somme collegate alla risoluzione del rapporto (a titolo esemplificativo ma non esaustivo : indennizzo all’esodo, ecc.) ed un quinto delle somme liquidate con la risoluzione del rapporto (a titolo esemplificativo ma non esaustivo: ratei 13^ e 14^, indennità per ferie, permessi, ROL, non goduti, premi di periodo, altri accessori della retribuzione, ecc.). Si impegna a comunicare tempestivamente gli estremi del fondo prescelto in modo che la Vs società possa procedere con la notifica del vincolo, se il dipendente deciderà di destinare il TFR maturando ad un Fondo di Pensione Complementare.
+<BR>
+Il  TFR a tutt’oggi accantonato, spettante in caso di cessazione dal servizio, ammonta a €_________________ al netto di anticipo 
+pari a € ______________________ lordi           corrisposto in data _______________ e risulta depositato presso: <BR>
+o         La scrivente azienda per l’ importo di € ___________.<BR>
+o         Il fondo _______________________________________________________(indicare il fondo) per l’importo di euro ___________<BR>
+<BR>
+La decorrenza del presente atto è subordinata all'estinzione da parte di Sigla S.r.l. dei seguenti finanziamenti:
+<BR><BR>
+<TABLE BORDER=0>
+								
+				<loop>
+				<loopda>1</loopda>
+				<looproot>IDGFDEB00F/RECORD</looproot>
+					<if><ifcond><value>IDGFDEB_FLAGESTIN</value>==S</ifcond><and><ifcond><value>IDGFDEB_CDTIPIMP</value>!=PPP</ifcond>
+					<then>
+						<TR>
+							<TD ALIGN=LEFT>- <value>IDGFDEB_DESTIPIMP</value> <value>IDGFDEB_DESANACON</value> di rata &euro <value>IDGFDEB_IMPCAN</value></TD>
+						</TR>
+					</if>	
+				</loop>
+				
+</TABLE><BR>
+Non saranno estinti i seguenti impegni:
+<BR><BR>
+<TABLE BORDER=0>
+								
+				<loop>
+				<loopda>1</loopda>
+				<looproot>IDGFDEB00F/RECORD</looproot>
+					<if><ifcond><value>IDGFDEB_FLAGESTIN</value>==N</ifcond><and><ifcond><value>IDGFDEB_IMMONRES</value>!=<valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPFIN</valueabs></ifcond><and><ifcond><value>IDGFDEB_CDTIPIMP</value>!=MRS</ifcond><and><ifcond><value>IDGFDEB_CDTIPIMP</value>!=PPP</ifcond>
+					<then>
+						<TR>
+							<TD ALIGN=LEFT>- <value>IDGFDEB_DESTIPIMP</value> <value>IDGFDEB_DESANACON</value> di rata &euro <value>IDGFDEB_IMPCAN</value></TD>
+						</TR>
+					</if>	
+				</loop>
+				
+</TABLE><BR><BR>
+	</TEXT>
+
+</BODY>
+</PDF>

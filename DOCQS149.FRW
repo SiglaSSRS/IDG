@@ -1,0 +1,129 @@
+	<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="sacstrutturasize9">
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3">			
+</HEADER>
+<FOOTER>
+<include file="\INCLUDE\IncludedStruttura.frw" value="footercartaintestatasacbolloinformazionisacnew">
+</FOOTER>
+<BODY>
+<TEXT>
+<BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond><then>Egregio Signor<else>Gentile Signora</if></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> (cqs <valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs>)</TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs>)</TD>
+</TR>
+<BR><BR><BR>
+<TR>
+<TD WIDTH=25%>PEC</TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>Spettabile</TD>
+</TR>
+<TR>
+<TD WIDTH=25%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_PEC_LAVP</valueabs></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_ANA_LAVP</valueabs><in>(40001376,40000211)</ifcond><then><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs></then><else><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAVP</valueabs></else></if> (cqs <valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs>)</TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_ANA_LAVP</valueabs><in>(40001376,40000211)</ifcond><then><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_LAV</valueabs><else><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_LAVP</valueabs></else></if></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_ANA_LAVP</valueabs><in>(40001376,40000211)</ifcond><then><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_LAV</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_LAV</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_LAV</valueabs>)<else><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_LAVP</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_LAVP</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_LAVP</valueabs>)</else></if></TD>
+</TR>
+<BR><BR><BR>
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDANATFR</valueabs>!= </ifcond><and><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDANATFR</valueabs>!=12052635</ifcond><then>
+<TR>
+<TD WIDTH=25%>PEC</TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>Spettabile</TD>
+</TR>
+<TR>
+<TD WIDTH=25%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFR_EMAIL</valueabs></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRRAGSOC</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRINDIR</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRCAP</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRLOCAL</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRPROV</valueabs>)</TD>
+</TR>
+</then></if>
+</TABLE>
+<BR>
+<BR>
+<BR>
+<BR>
+<TABLE WIDTH=100%><TR>
+<TD WIDTH=100% ALIGN="J">
+Conegliano,<valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs> <BR><BR>
+Oggetto: Contratto di <if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==DEL</ifcond>
+	<then>DELEGAZIONE DI PAGAMENTO </then>
+	</if>
+	<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>!=</ifcond>
+		<then>CESSIONE DEL QUINTO DELLO STIPENDIO </then>
+	</if>
+	<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>==</ifcond>
+		<then>CESSIONE DEL QUINTO DELLA PENSIONE </then>
+	</if> nr. <valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs> a nome <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>, nat<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond><then>o<else>a</if> a <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCNASC</valueabs> il <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC</valueabs> , C.F. <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs>.<BR>
+</TD>
+</TR>
+</TABLE>
+<BR>
+</TEXT>
+<TEXT ALIGN=J>
+Gentile cliente, con la presente si dichiara che a seguito dell'avvenuta estinzione del contratto in oggetto di n° <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs> quote da <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPCAN</valueabs> € cadauna, il prestito deve ritenersi, ad ogni effetto, estinto anticipatamente alla data del  <valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN</valueabs>.<BR>
+<BR>
+La presente deve costituire prova per codesta Amministrazione dell’avvenuta estinzione e sostituisce pertanto, in conformità a quanto precisato dal competente Ispettorato del Ministero del Tesoro con nota n. 57201 pos. R/59 del 16 novembre 1948 e n. 67850 Pos. R/58 del 27 ottobre 1955, l’atto di revoca registrato in bollo.<BR>
+<BR>
+Restando a Sua completa disposizione allo 0438/45990, porgiamo distinti saluti.</P><BR><BR>
+
+
+<TABLE WIDTH=100% FONT SIZE=9>
+<TR HEIGHT=3%>
+<TD WIDTH=77%></TD>
+<TD WIDTH=23% ALIGN="C"><BR><BR><BR>Sigla Srl</TD>
+</TR>
+</TABLE>
+</TEXT>
+<IMG SRC="<valueabs>Immagini/FIRMABATT/Path</valueabs><valueabs>Immagini/FIRMABATT/Nome</valueabs>" BACKGROUND X=15 Y=22.0 SCALE=10>
+
+</BODY>
+</PDF>

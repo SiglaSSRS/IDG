@@ -1,0 +1,261 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize5.5">
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestatasigla">
+</FOOTER>
+
+<BODY>	
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>==FEA</ifcond>
+<then></then>
+<else>
+<if>(<ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CODENTE</valueabs>!=2483748</ifcond>
+<and><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CODENTE</valueabs>!=82207</ifcond>)
+<or>(<ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CODENTE</valueabs><in>(2483748,82207)</ifcond>
+    <and>(<ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP042 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP043 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP044 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP0421 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP0431 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP0441 </ifcond>)
+)<then><ENCRYPT OWNER="soloiopossomodificare" NOCHANGE NOCOPY></then>
+</else>
+</if></if>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<TABLE SIZE=9.5>
+<TR>
+<TD WIDTH=70%></TD>	
+<TD WIDTH=30%>
+Spett.le Istituto<BR>
+<B>FONDO</B><BR>
+<B>________________________</B><BR>
+<BR>
+<B>Via _____________________</B><BR>
+<BR>
+<B>Città ____________________</B><BR>
+<BR>
+</TD> 	
+</TR> 
+</TABLE>
+<BR>
+<BR>
+<BR>
+<BR>
+<TABLE SIZE=9.5><TR>
+<TD WIDTH=65%><B>Oggetto: contratto di mutuo contro cessione di quota dello  stipendio:</B></TD>	
+<TD WIDTH=35%>
+<TABLE FORCEWIDTH SIZE=6.5>
+<TR>
+  <TD WIDTH=50%></TD>
+	<TD WIDTH=20% BORDER=0.8>Pratica</TD>
+	<TD WIDTH=30% BORDER=0.8><B><valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs><B></TD> 
+</TR> 
+</TABLE>	
+</TD>
+</TR>
+</TABLE>
+</TABLE>
+<BR>
+<TEXT SIZE=9.5 ALIGN=J>
+del <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs> RATA MENSILE: &euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPCAN</valueabs>  N. RATE <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs>     
+CAPITALE LORDO MUTUATO &euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPMUTLRD</valueabs> DURATA <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DURATA</valueabs> MESI<BR> 
+</TEXT>
+<BR>
+<TEXT SIZE=9.5 ALIGN=J>
+Il/La sottoscritto/a:<BR>
+Cognome e Nome <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>  nato a <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCNASC</valueabs> il <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC</valueabs> 
+C.F. <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs> 
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs>==</ifcond><then>
+residente e domiciliato in <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs> c.a.p. <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs>, via/piazza <valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs> 
+<else>
+residente in <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_RES</valueabs> c.a.p. <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_RES</valueabs>, via/piazza <valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs> 
+e domiciliato in <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs> c.a.p. <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs>, via/piazza <valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs> 
+</if>
+n. tel <valueabs>IDGFCLI00F/RECORD/IDGFCLI_TELE_RES</valueabs>  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_TELE_ALT</valueabs>
+dipendente da <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_STATOGIUR</valueabs> sede di <valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_LAV</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_LAV</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_LAV</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_LAV</valueabs>) 
+avendo stipulato con Sigla Srl il contratto di  mutuo contro cessione di quota dello 
+stipendio di cui in oggetto, con la presente , in forza di quanto stabilito dal DPR 180/50 
+e successive modifiche ed integrazioni, con la presente dichiarazione<BR>  
+</TEXT>
+<BR>
+<BR>
+<TEXT SIZE=9.5 ALIGN=C>
+<B><U>AUTORIZZA E DELEGA</U></B><BR> 
+</TEXT>
+<BR>
+<BR>
+<BR>
+<TEXT SIZE=9.5 ALIGN=J>
+ora per allora, Sigla srl e ogni altro soggetto giuridico che dovesse surrogarsi a giusto titolo nel diritto di credito vantato dal citato Istituto finanziario verso lo scrivente delegante a richiedere per suo nome e conto:<BR>
+- in caso di cessazione del rapporto di lavoro del sottoscritto/a prima dell’estinzione del finanziamento, 
+il riscatto anticipato dell’intera posizione maturata dal sottoscritto presso codesto Fondo, ciò fino a 
+completa soddisfazione del credito residuo di Sigla Srl, come da conto estintivo che quest’ultima 
+Vi inoltrerà.<BR>
+- in caso di cessazione del rapporto di lavoro del sottoscritto, maturati i requisiti per la prestazione 
+pensionistica, prima dell’estinzione del finanziamento, il versamento della prestazione erogata da codesto 
+Fondo e spettante al sottoscritto in capitale, in rendita o in entrambe le formule; ciò fino a completa 
+soddisfazione del credito residuo di Sigla srl,  come da conto estintivo che quest’ultima Vi inoltrerà.<BR>
+<BR>
+Resta inteso che l’istanza di riscatto, da me ora per allora esercitata nei Vs confronti, potrà essere 
+avanzata da Sigla srl in mio nome e conto, esclusivamente nel caso di risoluzione del rapporto di lavoro 
+prima dell’estinzione del finanziamento.<BR>
+<BR>
+La presente dichiarazione, che qualifico come irrevocabile, manterrà efficacia vincolante per il/la 
+sottoscritto/a  sino a concorrenza del residuo debito, comprensivo di penali, spese ed interessi di mora, 
+in essere con Sigla Srl. Autorizzo, inoltre, Sigla Srl a notificare le presente dichiarazione, 
+unitamente al suddetto contratto di finanziamento. <BR>  
+</TEXT>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</TABLE>	
+<TABLE SIZE=9.5><TR>
+<TD WIDTH=70%>DATA, <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></TD>	
+<TD WIDTH=30%>IL <if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CODPROD</valueabs>==DPY</ifcond><then>CLIENTE</then><else>CEDENTE</else></if> ___________________________________</TD></TR>
+<TR>
+<TD WIDTH=70%></TD>	
+<TD WIDTH=30% ALIGN=C><B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></B></TD></TR>				 
+</TABLE>
+<BR>
+<BR>
+<BR>
+<BR>
+
+
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\LETTFONDO#DOCQS122##01_01_02.png" BACKGROUND X=0.8 Y=2.7 SCALE=25>
+<PAGE>
+
+<TABLE SIZE=8.5>
+<TR>
+<TD WIDTH=70%></TD>	
+<TD WIDTH=30%>
+<B>Spett.le Istituto</B><BR>
+<B>FONDO</B><BR>
+<B>________________________</B><BR>
+<BR>
+<B>Via _____________________</B><BR>
+<BR>
+<B>Città ____________________</B><BR>
+<BR>
+</TD> 	
+</TR> 
+</TABLE>
+<BR>
+<BR>
+<BR>
+<TABLE SIZE=8.5><TR>
+<TD WIDTH=65%><B>Oggetto: contratto di mutuo contro cessione di quota dello  stipendio:</B></TD>	
+<TD WIDTH=35%>
+<TABLE FORCEWIDTH SIZE=6.5>
+<TR>
+  <TD WIDTH=50%></TD>
+	<TD WIDTH=20% BORDER=0.8>Pratica</TD>
+	<TD WIDTH=30% BORDER=0.8><B><valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs><B></TD> 
+</TR> 
+</TABLE>	
+</TD>
+</TR>
+</TABLE>
+<BR>
+<TEXT SIZE=8.5 ALIGN=J>
+del <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs>  RATA MENSILE: &euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPCAN</valueabs> N. RATE <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs> CAPITALE LORDO MUTUATO 
+&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPMUTLRD</valueabs> DURATA <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DURATA</valueabs> MESI stipulato tra <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> e <valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs><BR> 
+</TEXT>
+<BR>
+<TEXT SIZE=8.5 ALIGN=L>
+La presente per comunicarVi che:<BR>
+</TEXT>
+<BR>
+<BR>
+<TEXT SIZE=8.5 ALIGN=J>
+1. in data <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs> il Sig. <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> nato a <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCNASC</valueabs>  il <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC</valueabs> 
+C.F. <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs> 
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs>==</ifcond><then>
+residente e domiciliato in <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs> c.a.p. <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs>, via/piazza <valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs> 
+<else>
+residente in <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_RES</valueabs> c.a.p. <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_RES</valueabs>, via/piazza <valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs> 
+e domiciliato in <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs> c.a.p. <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs>, via/piazza <valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs> 
+</if>
+n. tel <valueabs>IDGFCLI00F/RECORD/IDGFCLI_TELE_RES</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_TELE_ALT</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_TELE_DOM</valueabs><BR>
+<BR>
+ha sottoscritto il contatto di finanziamento assistito da garanzia:
+<BR>
+<BR>
+<IMG SRC="<valueabs>Immagini/BOX/Path</valueabs><valueabs>Immagini/BOX/Nome</valueabs>" SCALE=<valueabs>Immagini/BOX/Scale</valueabs>>
+  con cessione del quinto dello stipendio<BR>
+<BR>
+<IMG SRC="<valueabs>Immagini/BOX/Path</valueabs><valueabs>Immagini/BOX/Nome</valueabs>" SCALE=<valueabs>Immagini/BOX/Scale</valueabs>>
+  con delegazione di pagamento<BR>
+</TEXT>
+<BR>
+<BR>
+<TABLE SIZE=8.5>
+<TR>
+ <TD WIDTH=6%></TD>	
+ <TD WIDTH=40%>
+  <TABLE FORCEWIDTH SIZE=6.5>
+   <TR>
+    <TD WIDTH=50%></TD>
+	  <TD WIDTH=20% BORDER=0.8>Pratica</TD>
+	  <TD WIDTH=30% BORDER=0.8><B><valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs><B></TD> 
+   </TR> 
+  </TABLE>		
+ </TD>
+ <TD WIDTH=4%></TD>
+ <TD WIDTH=40%>n.  della durata di <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs> mesi</TD>
+ <TD WIDTH=10%></TD>
+</TR>
+</TABLE>	
+<BR>
+<BR>
+<BR>
+<TEXT SIZE=8.5 ALIGN=J>
+<B>La scadenza naturale del contratto è fissata il ____________________________. In mancanza di ulteriori 
+comunicazioni entro tale data, il contratto si intenderà estinto regolarmente.</B><BR>	
+</TEXT>
+<BR>
+
+<TEXT SIZE=8.5 ALIGN=J>
+2. il datore di lavoro <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_STATOGIUR</valueabs> sede di <valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_LAV</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_LAV</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_LAV</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_LAV</valueabs>) ha dichiarato 
+che il Sig. <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>  è aderente del Vs fondo pensione;<BR>
+<BR>
+3. il contratto è stato regolarmente notificato al fondo pensione in data odierna.<BR>
+<BR>
+4. il contratto è stato regolarmente notificato al datore di lavoro in data __________________________<BR>
+<BR>
+5. se delegazione la stessa è stata accettata  dal datore di lavoro in data ___________________________<BR>
+<BR>
+6. allegata al contratto notificato è la delega al riscatto.<BR>
+<BR>
+Tutto ciò premesso, la scrivente Società resta in attesa di conoscere se il debitore non sia aderente al Vs fondo pensione.<BR>
+<BR>
+</TEXT>
+<BR>
+<BR>
+<BR>
+<TABLE SIZE=8.5>
+<TR>
+<TD WIDTH=40%></TD>	
+<TD WIDTH=10%></TD>
+<TD ALIGN=C WIDTH=40%><IMG SRC="<valueabs>Immagini/TACCHIN01/Path</valueabs><valueabs>Immagini/TACCHIN01/Nome</valueabs>" SCALE=<valueabs>Immagini/TACCHIN01/Scale</valueabs>></TD> 	 	
+</TR>
+<TR>
+<TD WIDTH=40%>Conegliano,__________________________</TD>	
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>____________________________________________</TD> 	 	
+</TR> 
+<TR>
+<TD WIDTH=40%></TD>	
+<TD WIDTH=10%></TD>
+<TD WIDTH=40% ALIGN=C>Ufficio Cessione Quinto SIGLA SRL</TD> 	 	
+</TR> 
+</TABLE>
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\LETTFONDO#DOCQS122##01_02_02.png" BACKGROUND X=0.8 Y=2.7 SCALE=25>
+</BODY>
+</PDF>

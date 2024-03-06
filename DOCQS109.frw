@@ -1,0 +1,97 @@
+<PDF>
+
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8">
+<include file="\INCLUDE\Percorsi.frw">
+
+<PDFPAGE SRC="DOCQS109.PDF" VALUE=1>
+
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8">
+<PDFPAGE SRC="DOCQS109.PDF" VALUE=2>
+
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8">
+<PDFPAGE SRC="DOCQS109.PDF" VALUE=3>
+
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8">
+<PDFPAGE SRC="DOCQS109.PDF" VALUE=4>
+
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8">
+<PDFPAGE SRC="DOCQS109.PDF" VALUE=5>
+
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8">
+<PDFPAGE SRC="DOCQS109.PDF" VALUE=6>
+
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8">
+<PDFPAGE SRC="DOCQS109.PDF" VALUE=7>
+
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8">
+<PDFPAGE SRC="DOCQS109.PDF" VALUE=8>
+
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8">
+<PDFPAGE SRC="DOCQS109.PDF" VALUE=9>
+
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8">
+<PDFPAGE SRC="DOCQS109.PDF" VALUE=10>
+
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8">
+<PDFPAGE SRC="DOCQS109.PDF" VALUE=11>
+
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8">
+<PDFPAGE SRC="DOCQS109.PDF" VALUE=12>
+
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8">
+<PDFPAGE SRC="DOCQS109.PDF" VALUE=13>
+
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8">
+<PDFPAGE SRC="DOCQS109.PDF" VALUE=14>
+
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8">
+<PDFPAGE SRC="DOCQS109.PDF" VALUE=15>
+
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8">
+<PDFPAGE SRC="DOCQS109.PDF" VALUE=16>
+
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8">
+<PDFPAGE SRC="DOCQS109.PDF" VALUE=17>
+
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8">
+<PDFPAGE SRC="DOCQS109.PDF" VALUE=18>
+
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8">
+<PDFPAGE SRC="DOCQS109.PDF" VALUE=19>
+
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8">
+<PDFPAGE SRC="DOCQS109.PDF" VALUE=10>
+
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8">
+<PDFPAGE SRC="DOCQS109.PDF" VALUE=21>
+
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8">
+<PDFPAGE SRC="DOCQS109.PDF" VALUE=22>
+
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8">
+<PDFPAGE SRC="DOCQS109.PDF" VALUE=23>
+
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8">
+<PDFPAGE SRC="DOCQS109.PDF" VALUE=24>
+
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8">
+<PDFPAGE SRC="DOCQS109.PDF" VALUE=25>
+
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8">
+<PDFPAGE SRC="DOCQS109.PDF" VALUE=26>
+
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8">
+<PDFPAGE SRC="DOCQS109.PDF" VALUE=27>
+
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8">
+<PDFPAGE SRC="DOCQS109.PDF" VALUE=28>
+
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8">
+<PDFPAGE SRC="DOCQS109.PDF" VALUE=29>
+
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8">
+<PDFPAGE SRC="DOCQS109.PDF" VALUE=30>
+
+</PAGE>	
+</BODY>
+</PDF>

@@ -1,0 +1,84 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize7">
+<include file="\INCLUDE\Percorsi.frw">
+
+<PDFPAGE SRC="DOCQS043.PDF" VALUE=1>
+	<TEXT X=3.2 Y=6.35><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></TEXT>
+	<TEXT X=11.7 Y=6.35><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs></TEXT>
+
+	<TEXT X=3.2 Y=6.9><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs></TEXT>
+	<TEXT X=11.7 Y=6.9><valueabs>IDGFCLI00F/RECORD/IDGFCLI_ETA</valueabs></TEXT>
+	
+	<TEXT X=3.2 Y=7.4><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCNASC</valueabs></TEXT>
+	<TEXT X=11.7 Y=7.4><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC</valueabs></TEXT>
+
+	<TEXT X=3.2 Y=8><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs></TEXT>
+	<TEXT X=11.7 Y=8><valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs></TEXT>
+
+	<TEXT X=3.2 Y=8.5><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs></TEXT>
+	<TEXT X=11.7 Y=8.5><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs></TEXT>
+
+	<TEXT X=3.2 Y=9><valueabs>IDGFCLI00F/RECORD/IDGFCLI_TELE_RES</valueabs></TEXT>
+
+	<TEXT X=3.2 Y=9.6><valueabs>IDGFCLI00F/RECORD/IDGFCLI_TELE_ALT</valueabs></TEXT>
+	<TEXT X=11.7 Y=9.6><valueabs>IDGFCLI00F/RECORD/IDGFCLI_EMAIL</valueabs></TEXT>
+
+	<TEXT X=3.2 Y=10.1><valueabs>IDGFCLI00F/RECORD/IDGFCLI_NUM_DOCUM</valueabs></TEXT>
+	<TEXT X=11.7 Y=10.1><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DSDOCUM</valueabs></TEXT>
+
+	<TEXT X=3.2 Y=10.7><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_ENTE</valueabs></TEXT>
+	<TEXT X=11.7 Y=10.7><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_DA</valueabs></TEXT>
+	
+	<TEXT X=3.2 Y=11.2><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_SCAD_IL</valueabs></TEXT>
+	
+	<TEXT X=8 Y=12.3><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DSRUOLO</valueabs></TEXT>
+
+	<TEXT X=5.7 Y=12.9><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs>  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_STATOGIUR</valueabs></TEXT>
+
+	<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDCATEG</valueabs>==PUB</ifcond><then><TEXT X=5.3 Y=13.6><B>X</B></TEXT></if>	
+	<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDCATEG</valueabs>==PRI</ifcond><then><TEXT X=9.2 Y=13.6><B>X</B></TEXT></if>	
+	<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDCATEG</valueabs>==MIN</ifcond><then><TEXT X=12.2 Y=13.6><B>X</B></TEXT></if>	
+	<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDCATEG</valueabs>==PAP</ifcond><then><TEXT X=5.3 Y=14.1><B>X</B></TEXT></if>	
+	<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDCATEG</valueabs>==STA</ifcond><then><TEXT X=9.2 Y=14.1><B>X</B></TEXT></if>	
+	
+	
+	<TEXT X=3 Y=15.3><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DESCFIN</valueabs></TEXT>
+
+	<TEXT X=6 Y=16.8><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs></TEXT>
+	
+	<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>!=CQS</ifcond><then><TEXT X=14.5 Y=17><B>X</B></TEXT></if>	
+	<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><then><TEXT X=11.5 Y=17><B>X</B></TEXT></if>	
+	
+	<TEXT X=3.5 Y=17.5><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT</valueabs></TEXT>
+	<TEXT X=11.5 Y=17.5><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTULTSCAD</valueabs></TEXT>
+	<TEXT X=17.5 Y=17.5><valueabs>IDGFCTR00F/RECORD/IDGFCTR_MESPER</valueabs></TEXT>
+	
+	<TEXT X=3.5 Y=18><valueabs>IDGFCTR00F/RECORD/IDGFCTR_PERDUR</valueabs></TEXT>
+	<TEXT X=11.8 Y=18><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CANONE</valueabs></TEXT>
+	
+	<TEXT X=3.5 Y=18.6><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPMUTLRD</valueabs></TEXT>
+	<TEXT X=13.5 Y=18.6><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMASSMRT</valueabs></TEXT>
+	
+	<TEXT X=14.9 Y=19.1><valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTAN</valueabs></TEXT>
+	
+	<loop>
+	<loopda>1</loopda>
+	<looproot>IDGFTRA00F/RECORD</looproot>
+		<if><ifcond><value>IDGFTRA_TIPASS</value>==VIT</ifcond><then><TEXT X=9 Y=24.2><value>IDGFTRA_IMP_COST</value></TEXT></if>
+		<if><ifcond><value>IDGFTRA_TIPASS</value>==VIT</ifcond><then><TEXT X=13.5 Y=24.2><value>IDGFTRA_IMP_PROV</value></TEXT></if>
+	</loop>
+		
+	<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8">
+<PDFPAGE SRC="DOCQS043.PDF" VALUE=2> 
+	<TEXT X=3.2 Y=17.3><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs>  <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></TEXT>	
+	
+	
+<PAGE>
+<PDFPAGE SRC="DOCQS043.PDF" VALUE=3>
+	<TEXT X=3.2 Y=14.5><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs>  <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></TEXT>	
+
+
+</PAGE>	
+</BODY>
+</PDF>
+	

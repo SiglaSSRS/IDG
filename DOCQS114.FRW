@@ -1,0 +1,75 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="sacstrutturasize9">
+
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3">			
+</HEADER>
+<FOOTER>
+<include file="\INCLUDE\IncludedStruttura.frw" value="footercartaintestcqsstd">
+</FOOTER>
+
+<BODY>
+<TEXT>
+<BR><BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=100% ALIGN=C><B><U>ALLEGATO C - PRATICA N° <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs></U></B></TD>
+</TR>
+</TABLE>
+<BR><BR><BR>
+<TEXT ALIGN="J">
+Il sottoscritto <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>                                                          CF: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs><BR>
+Matr.                           in servizio presso <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs>  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_STATOGIUR</valueabs> <BR>
+residente a  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs>)<BR>
+Via/Piazza <valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs> - CAP <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs><BR>
+avendo avanzato tramite la <valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs> <valueabs>IDGFAZI00F/RECORD/IDGFAZI_INDIR_SIG</valueabs> <valueabs>IDGFAZI00F/RECORD/IDGFAZI_SIGLASRL</valueabs>, richiesta di concessione di credito per &euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPMUTLRD</valueabs> ,  con rimborso mediante rate mensili costanti scadenti a partire da 
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==1</ifcond><then>GENNAIO</then> <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_AA</valueabs></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==2</ifcond><then>FEBBRAIO</then> <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_AA</valueabs></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==3</ifcond><then>MARZO</then> <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_AA</valueabs></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==4</ifcond><then>APRILE</then> <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_AA</valueabs></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==5</ifcond><then>MAGGIO</then> <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_AA</valueabs></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==6</ifcond><then>GIUGNO</then> <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_AA</valueabs></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==7</ifcond><then>LUGLIO</then> <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_AA</valueabs></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==8</ifcond><then>AGOSTO</then> <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_AA</valueabs></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==9</ifcond><then>SETTEMBRE</then> <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_AA</valueabs></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==10</ifcond><then>OTTOBRE</then> <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_AA</valueabs></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==11</ifcond><then>NOVEMBRE</then> <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_AA</valueabs></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==12</ifcond><then>DICEMBRE</then> <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_AA</valueabs></if>
+per n. <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs> mesi di &euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPCAN</valueabs> con la presente autorizza irrevocabilmente Poste Italiane da cui dipende, a trattenere dalle competenze mensili  l'importo delle summenzionate rate e ne conferisce fin d'ora delegazione , ai sensi dell'art. 1269 del codice civile, a versare sull c/c postale n° 000073807760 (IBAN IT53G0760112000000073807760) intestato alla Sigla S.r.l. per il rimborso del prestito accordatogli, sino al saldo totale per capitale ed interessi anche moratori e accessori tutti. Qualora, prima dell'estinzione della suddetta obbligazione, per effetto di sospensione cautelare dal servizio, per causa di malattia, o per aspettativa, overo per qualsiasi altra causa, le sue spettanze fossero temporaneamente ridotte autorizza sin d'ora Poste Italiane ad effettuare le trattenute nella misura suesposta, senza variazione alcuna ove non contrasti con le vigenti disposizioni contrattuali. Qualora per qualsiasi causa il sottoscritto restasse temporaneamente assente dal servizio con totale privazione di ogni spettanza, del pari autorizza Poste Italiane a trattenere le suesposte quote mensili ancora da corrispondere, all'atto della prima liquidazione delle sue spettanze conseguente alla sua riammissione in servizio. In caso di risoluzione del rapporto di lavoro per qualsiasi causa, ovvero nel caso di dimissioni volontarie la delega di pagamento si intende revocata con decorrenza dalla cessazione del rapporto. Il sottoscritto dichiara infine che la presente delegazione non può essere revocata prima della estinzione delle suddette obbligazioni, salvo il consenso della <valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs>.
+</TEXT>
+<BR><BR><BR><BR>			
+<BR><BR><BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=50% ALIGN="C">In fede, letto, datato e sottoscritto</TD>
+<TD WIDTH=50% ALIGN="C">Estremi del documento di riconoscimento </TD>
+</TR>
+<TR>
+<TD WIDTH=50% ALIGN="C">____________________________________________</TD>
+<TD WIDTH=50% ALIGN="C">____________________________________________</TD>
+</TR>
+<TR>
+<TD WIDTH=100% COLSPAN=2 ALIGN="L"><BR><BR><BR>Luogo e data: ________________________________________________________</TD>
+</TR>
+<TR>
+<TD WIDTH=50% ALIGN="C"><BR><BR><BR>Firma del dipendente</TD>
+<TD WIDTH=50% ALIGN="C"><BR><BR><BR>Firma del Responsabile della Società</TD>
+</TR>
+<TR>
+<TD WIDTH=50% ALIGN="C">____________________________________________</TD>
+<TD WIDTH=50% ALIGN="C">Sigla Srl<BR>Alberto Tacchin</TD>
+</TR>
+<TR>
+<TD WIDTH=50% ALIGN="C"><BR><BR><BR>Per conoscenza e accettazione del Datore di Lavoro<BR>Il Direttore della Filiale</TD>
+<TD WIDTH=50% ALIGN="C"></TD>
+</TR>
+<TR>
+<TD WIDTH=50% ALIGN="C">____________________________________________</TD>
+<TD WIDTH=50% ALIGN="C">Addì________________________________________</TD>
+</TR>
+
+</TABLE>
+<IMG SRC="<valueabs>Immagini/TACCHIN01/Path</valueabs><valueabs>Immagini/TACCHIN01/Nome</valueabs>" BACKGROUND X=13 Y=21.5 SCALE=<valueabs>Immagini/TACCHIN01/Scale</valueabs>>
+</TEXT>
+</BODY>
+</PDF>

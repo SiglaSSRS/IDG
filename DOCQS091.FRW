@@ -1,0 +1,15 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize7">
+<include file="\INCLUDE\Percorsi.frw">
+<BODY>
+<PDFPAGE SRC="DOCQS091.PDF" VALUE=1 SHOWONCE PDFOVERLAY>
+
+<TEXT X=2.3 Y=2.25><if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_RAGSCLI</valueabs>></ifcond><then><valueabs>IDGFCQP00F/RECORD/IDGFCQP_RAGSCLI</valueabs></then><else><valueabs>IDGFCQP00F/RECORD/IDGFCQP_COGNCLI</valueabs> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_NOMECLI</valueabs></else></if></TEXT>
+
+<TEXT X=2.3 Y=3.2><valueabs>IDGFCQP00F/RECORD/IDGFCQP_LOCNSCLI</valueabs> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_PRVNSCLI</valueabs></TEXT>
+
+<TEXT X=13.75 Y=3.2><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs></TEXT>
+
+
+</BODY>
+</PDF>

@@ -1,0 +1,92 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="sacstrutturasize10">
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3">			
+</HEADER>
+<FOOTER>
+<include file="\INCLUDE\IncludedStruttura.frw" value="footercartaintestatasac">
+</FOOTER>
+<BODY>
+<TEXT>
+<BR><BR><BR><BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=25%>Raccomandata A/r</TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><U>Spett.le</U></TD><BR>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><B><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_ANA_LAVP</valueabs><in>(40001376,40000211)</ifcond><then><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs></then><else><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAVP</valueabs></else></if></B></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_ANA_LAVP</valueabs><in>(40001376,40000211)</ifcond><then><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_LAV</valueabs><else><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_LAVP</valueabs></else></if></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_ANA_LAVP</valueabs><in>(40001376,40000211)</ifcond><then><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_LAV</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_LAV</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_LAV</valueabs>)<else><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_LAVP</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_LAVP</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_LAVP</valueabs>)</else></if></TD>
+</TR><BR><BR>
+<TR>
+<TD WIDTH=25%>E p.c.</TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><U><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond><then>Gentil Signor<else>Gentil Signora</if></U></TD><BR>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></B></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs>  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs>  (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs>)</TD>
+</TR></TABLE>
+<BR>
+<BR>
+<BR>
+<BR>
+<TABLE WIDTH=100%><TR>
+<TD WIDTH=100% ALIGN="J">
+<B>Oggetto: <U>Contratto di mutuo contro cessione del quinto dello stipendio  nr.  <if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRCTREST</valueabs>!=</ifcond>
+<then><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRCTREST</valueabs> </then>
+<else><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs> </else>
+</if>  sottoscritto tra Sigla S.r.l. e <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> (cf: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs>).</U></B></TD>
+</TR>
+</TABLE>
+<BR><BR><BR><BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=100%>       Con riferimento al contratto di cessione in oggetto, siamo a comunicare che la pratica di finanziamento è da intendersi  <I><U>annullata</U></I> e pertanto revocata la nostra notifica nei vostri confronti.</TD>
+</TR>
+</TABLE>
+<BR><BR><BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=50%>Cordiali saluti.</TD>
+<TD WIDTH=50% ALIGN=C><IMG SRC="<valueabs>Immagini/TACCHIN01/Path</valueabs><valueabs>Immagini/TACCHIN01/Nome</valueabs>" SCALE=<valueabs>Immagini/TACCHIN01/Scale</valueabs>><BR>
+Alberto Tacchin<BR>Direzione prodotto<BR>Sigla S.r.l.</TD>
+</TR>
+</TABLE>
+<BR><BR><BR>
+Conegliano, <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSTS</valueabs>
+
+</TEXT>
+</BODY>
+</PDF>

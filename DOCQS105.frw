@@ -1,0 +1,80 @@
+<loop>
+	<loopda>1</loopda>
+		<looproot>IDGFDEB00F/RECORD</looproot>
+					<if><ifcond><value>IDGFDEB_FLAGESTIN</value>==S</ifcond>
+					<then>	
+
+	<PDF>
+					<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8">
+					<include file="\INCLUDE\Percorsi.frw">
+
+	<if>(<ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CODENTE</valueabs>!=2483748</ifcond>
+	<and><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CODENTE</valueabs>!=82207</ifcond>)
+	<or>(<ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CODENTE</valueabs><in>(2483748,82207)</ifcond>
+	<and>(<ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP042 </ifcond>
+	<and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP043 </ifcond>
+	<and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP044 </ifcond>
+	<and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP0421 </ifcond>
+	<and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP0431 </ifcond>
+	<and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP0441 </ifcond>)
+	)<or><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FEA</ifcond><AND><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FSE</ifcond><AND><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FSP</ifcond>
+	<then><ENCRYPT OWNER="soloiopossomodificare" NOCHANGE NOCOPY></then>
+	</if>
+					<PDFPAGE SRC="DOCQS105.PDF" VALUE=1 SHOWONCE NOFIRSTBREAK PDFOVERLAY>
+
+					<DATE FORMAT="DD/MM/YYYY">
+					<TEXT X=20.5 Y=4.4>
+					<TABLE WIDTH=100%>
+
+					<tr>
+					<TD WIDTH=44%></TD>
+					<TD WIDTH=10%></TD>
+					<TD WIDTH=11%></TD>
+						<TD WIDTH=35%><value>IDGFDEB_DESANACON</value></TD> 
+					</tr>
+					<tr>
+					<TD WIDTH=44%></TD>
+					<TD WIDTH=10%></TD>
+					<TD WIDTH=11%></TD>
+						<TD WIDTH=35%><value>IDGFDEB_INDIRCON</value></TD> 
+					</tr>
+					<tr>
+					<TD WIDTH=44%></TD>
+					<TD WIDTH=10%></TD>
+					<TD WIDTH=11%></TD>
+						<TD WIDTH=35%><value>IDGFDEB_CAPCON</value>, <value>IDGFDEB_CITTACON</value> </TD>
+					</tr>
+					<tr>
+					<TD WIDTH=44%></TD>
+					<TD WIDTH=10%></TD>
+					<TD WIDTH=11%></TD>
+						<TD WIDTH=35%></TD>	
+					</tr>
+					<tr>
+					<TD WIDTH=44%></TD>
+					<TD WIDTH=10%></TD>
+					<TD WIDTH=11%></TD>
+					<TD WIDTH=35%></TD>
+					</tr>
+			
+</TABLE><BR></TEXT> 
+<TEXT X=3 Y=7>&date</TEXT>
+<TEXT X=4.5 Y=10.35><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></TEXT> 
+<TEXT X=10.5 Y=10.35><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC</valueabs></TEXT> 
+<TEXT X=12.7 Y=10.35><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCNASC</valueabs></TEXT>
+ 
+<TEXT X=11 Y=10.85><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs></TEXT> 
+<TEXT X=8.5 Y=16.95><valueabs>IDGFDEB00F/RECORD/IDGFDEB_DESANACON</valueabs></TEXT> 
+
+
+<TEXT X=8.75 Y=23><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs></TEXT> 
+<TEXT X=12.35 Y=23><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>
+
+</TEXT> 
+
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\MANDINCQUODOCQS105##01_01_01.png" BACKGROUND X=0.8 Y=2.7 SCALE=25>
+</PAGE>	
+
+</PDF>
+</if>	
+</loop>

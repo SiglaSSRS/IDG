@@ -1,0 +1,22 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize7">
+<include file="\INCLUDE\Percorsi.frw">
+<BODY>
+<PDFPAGE SRC="DOCQS094.PDF" ALLPAGES SHOWONCE NOFIRSTBREAK PDFOVERLAY>
+
+<TEXT X=3.5 Y=3.85><if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_RAGSCLI</valueabs>></ifcond><then><valueabs>IDGFCQP00F/RECORD/IDGFCQP_RAGSCLI</valueabs></then><else><valueabs>IDGFCQP00F/RECORD/IDGFCQP_COGNCLI</valueabs> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_NOMECLI</valueabs></else></if></TEXT>
+<TEXT X=11.7 Y=3.85><valueabs>IDGFCQP00F/RECORD/IDGFCQP_LOCNSCLI</valueabs> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_PRVNSCLI</valueabs></TEXT>
+<TEXT X=16.8 Y=3.85><valueabs>IDGFCQP00F/RECORD/IDGFCQP_DTNSCLI</valueabs></TEXT>
+
+<TEXT X=1.8 Y=4.3><valueabs>IDGFCQP00F/RECORD/IDGFCQP_SESSOCLI</valueabs></TEXT>
+<TEXT X=4.8 Y=4.3><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs></TEXT>
+<TEXT X=11 Y=4.3><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs></TEXT>
+<TEXT X=13 Y=4.3><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs></TEXT>
+
+<TEXT X=3.3 Y=4.7><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs></TEXT>
+
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\EPACA#####DOCQS094##01_01_01.gif" BACKGROUND X=20 Y=27 SCALE=27 ROTATE=90>
+
+
+</BODY>
+</PDF>

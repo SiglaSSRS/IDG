@@ -1,0 +1,112 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize9">
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3">			
+</HEADER>
+<FOOTER>
+<include file="\INCLUDE\IncludedStruttura.frw" value="footercartaintestcqsstd">
+</FOOTER>
+<BODY>
+<TEXT>
+<TEXT X=16.5 Y=-1.5 ><FONT SIZE=6><valfoot/></TEXT> 
+<TEXT X=16.5 Y=-1 ><FONT SIZE=6>N° Pratica: <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs></TEXT> 
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=50%></TD>
+<TD WIDTH=50% FCOLOR="BLUE" SIZE=14>ATTO DI QUIETANZA</TD>
+</TR>
+<TR>
+<TD WIDTH=50% FCOLOR="BLUE">__________________________________________________</TD>
+<TD WIDTH=50%></TD>
+</TR>
+<BR><BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=25%><B>Io sottoscritto</B> </TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%></TD>
+</TR>
+<TR>
+<TD WIDTH=25%><B>Signor/a:</B> </TD>
+<TD WIDTH=25%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%></TD>
+</TR>
+<TR>
+<TD WIDTH=25%><B>Dipendente presso:</B> </TD>
+<TD WIDTH=25%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%></TD>
+</TR>
+<TR>
+<TD WIDTH=25%><B>Contratto:</B> </TD>
+<TD WIDTH=25%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DSATTIVITA</valueabs></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%></TD>
+</TR>
+</TABLE><BR><BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=100% ALIGN="C">DICHIARO</TD>
+</TR>
+</TABLE>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=100% ALIGN="J">- Di essere tuttora alle dipedenze e in servizio effettivo presso il Datore di lavoro sopra indicato e affermo sul mio onore
+che non    sussistono cause di sospensione della retribuzione mensile.<BR><BR>
+- Di ricevere, come ricevo, copia del contratto di mutuo completo di ogni sua parte, che, previa lettura, verifico conforme a
+quanto pattuito.<BR><BR>
+- Di ricevere, come ricevo, copia del conto del residuo debito.<BR><BR>
+- Di non aver null'altro a pretendere, essendo stato/a soddisfatto/a di ogni mio diritto in ragione del contratto di mutuo e
+riconoscere,    come riconosco, pienamente valide ed efficaci le obbligazioni derivanti da tale contratto.
+Cessione del Quinto dello Stipendio.<BR><BR>
+- Dichiaro altresì che, dopo la sottoscrizione del contratto di mutuo contro cessione del quinto dello stipendio non è
+intervenuta nessuna circostanza valida ed efficace ad interrompere e/o sospendere il rapporto di lavoro.<BR><BR>
+- Di ricevere da Sigla S.r.l., come ricevo, contestualmente alla sottoscrizione del presente atto la somma di € <valueabs>IDGFERT00F/RECORD/IDGFERT_IMPERG</valueabs>
+a valere quale saldo   dell'importo erogatomi a titolo di mutuo e di cui al relativo contratto, da restituirsi
+secondo le modalità ivi precisate.</TD><BR><BR><BR>
+</TR>
+<TR>
+<TD WIDTH=100%>Le somme da me ricevute sono così corrisposte:</TD><BR><BR><BR>
+</TR>
+
+<loop>
+<loopda>1</loopda>
+<looproot>IDGFERD00F/RECORD</looproot>
+<TR>
+<TD WIDTH=100% ALIGN=L>€ <value>IDGFERD_IMPERG</value> a mezzo di <value>IDGFERD_DESCPAG</value> tratto/emesso da Cassa di Risparmio del Veneto</TD><BR><BR>
+</TR>
+</loop>
+
+</TABLE>
+<BR>
+<BR><BR><BR><BR>
+<BR><BR><BR><BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=50%>Data</TD>
+<TD WIDTH=50%></TD>
+</TR>
+<BR><BR>
+<TR>
+<TD WIDTH=50% ALIGN="C">________________________________</TD>
+<TD WIDTH=50% ALIGN="C">________________________________</TD>
+</TR>
+<TR>
+<TD WIDTH=30% ALIGN="C">Per ricevuta del titolo, Il Finanziato</TD>
+<TD WIDTH=30% ALIGN="C">Il Collaboratore (timbro e firma)</TD>
+</TR>
+<TR>
+<TD WIDTH=30%></TD>
+<TD WIDTH=30% ALIGN="C" SIZE=7>La firma del finanziato, da me identificato, è stata apposta in mia presenza</TD>
+</TR>
+<TR>
+<TD WIDTH=30%></TD>
+<TD WIDTH=30% ALIGN="C"><B>Sigla S.r.l.</B></TD>
+</TR>
+</TABLE>
+
+</TEXT>
+</BODY>
+</PDF>

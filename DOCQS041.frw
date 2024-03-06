@@ -1,0 +1,135 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8">
+<include file="\INCLUDE\Percorsi.frw">
+
+<PDFPAGE SRC="DOCQS041.PDF" VALUE=1>
+	<TEXT X=14 Y=3.8><valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs></TEXT>
+	
+	<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><then><TEXT X=0.6 Y=5><B>X</B></TEXT></if>		
+	<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>!=CQS</ifcond><then><TEXT X=3.3 Y=5><B>X</B></TEXT></if>		
+	
+	<TEXT X=2.5 Y=6.5><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DURATA</valueabs></TEXT>
+	<TEXT X=5.5 Y=6.5><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_GG</valueabs>           <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_MM</valueabs>      <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_AA</valueabs></TEXT>
+	<TEXT X=9.2 Y=6.5><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTULTSCAD_GG</valueabs>        <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTULTSCAD_MM</valueabs>        <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTULTSCAD_AA</valueabs></TEXT>
+	<TEXT X=15.5 Y=6.5><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPCAN</valueabs></TEXT>
+
+	<TEXT X=3.3 Y=6.9>1</TEXT>
+	<TEXT X=7.7 Y=6.9><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPMUTLRD</valueabs></TEXT>
+	<TEXT X=15.5 Y=6.9><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMASSMRT</valueabs></TEXT>
+	
+	<TEXT X=5.4 Y=7.2><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></TEXT>
+	
+	<TEXT X=2 Y=7.6><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCA_NASC</valueabs>  (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_NASC</valueabs>)</TEXT>
+	<TEXT X=15 Y=7.6><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC_GG</valueabs>           <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC_MM</valueabs>         <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC_AA</valueabs></TEXT>
+	
+	
+	<TEXT X=2 Y=8><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs></TEXT>
+	<TEXT X=5.7 Y=8><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs></TEXT>
+	<TEXT X=7.2 Y=8><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs></TEXT>
+	
+	<TEXT X=4 Y=8.35><valueabs>IDGFCLI00F/RECORD/IDGFCLI_ETA</valueabs></TEXT>
+	<TEXT X=7 Y=8.35><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs></TEXT>
+	
+	<TEXT X=8.5 Y=8.7><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs>  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_STATOGIUR</valueabs></TEXT>
+
+	<TEXT X=5 Y=9.8><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DESCFIN</valueabs>  <valueabs>IDGFCQS00F/RECORD/IDGFCQS_INDIR_FIN</valueabs>  <valueabs>IDGFCQS00F/RECORD/IDGFCQS_INDIRIZZO_FIN</valueabs></TEXT>
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8">
+<PDFPAGE SRC="DOCQS041.PDF" VALUE=2>
+	<TEXT X=14 Y=3.8><valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs></TEXT>
+	
+	<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><then><TEXT X=0.6 Y=5><B>X</B></TEXT></if>		
+	<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>!=CQS</ifcond><then><TEXT X=3.3 Y=5><B>X</B></TEXT></if>		
+	
+	<TEXT X=2.5 Y=6.5><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DURATA</valueabs></TEXT>
+	<TEXT X=5.5 Y=6.5><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_GG</valueabs>           <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_MM</valueabs>      <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_AA</valueabs></TEXT>
+	<TEXT X=9.2 Y=6.5><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTULTSCAD_GG</valueabs>        <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTULTSCAD_MM</valueabs>        <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTULTSCAD_AA</valueabs></TEXT>
+	<TEXT X=15.5 Y=6.5><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPCAN</valueabs></TEXT>
+
+	<TEXT X=3.3 Y=6.9>1</TEXT>
+	<TEXT X=7.7 Y=6.9><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPMUTLRD</valueabs></TEXT>
+	<TEXT X=15.5 Y=6.9><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMASSMRT</valueabs></TEXT>
+	
+	<TEXT X=5.4 Y=7.2><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></TEXT>
+	
+	<TEXT X=2 Y=7.6><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCA_NASC</valueabs>  (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_NASC</valueabs>)</TEXT>
+	<TEXT X=15 Y=7.6><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC_GG</valueabs>           <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC_MM</valueabs>         <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC_AA</valueabs></TEXT>
+	
+	
+	<TEXT X=2 Y=8><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs></TEXT>
+	<TEXT X=5.7 Y=8><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs></TEXT>
+	<TEXT X=7.2 Y=8><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs></TEXT>
+	
+	<TEXT X=4 Y=8.35><valueabs>IDGFCLI00F/RECORD/IDGFCLI_ETA</valueabs></TEXT>
+	<TEXT X=7 Y=8.35><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs></TEXT>
+	
+	<TEXT X=8.5 Y=8.7><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs>  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_STATOGIUR</valueabs></TEXT>
+
+	<TEXT X=5 Y=9.8><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DESCFIN</valueabs>  <valueabs>IDGFCQS00F/RECORD/IDGFCQS_INDIR_FIN</valueabs>  <valueabs>IDGFCQS00F/RECORD/IDGFCQS_INDIRIZZO_FIN</valueabs></TEXT>
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8">
+<PDFPAGE SRC="DOCQS041.PDF" VALUE=3>
+	<TEXT X=14 Y=3.8><valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs></TEXT>
+	
+	<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><then><TEXT X=0.6 Y=5><B>X</B></TEXT></if>		
+	<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>!=CQS</ifcond><then><TEXT X=3.3 Y=5><B>X</B></TEXT></if>		
+	
+	<TEXT X=2.5 Y=6.5><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DURATA</valueabs></TEXT>
+	<TEXT X=5.5 Y=6.5><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_GG</valueabs>           <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_MM</valueabs>      <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_AA</valueabs></TEXT>
+	<TEXT X=9.2 Y=6.5><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTULTSCAD_GG</valueabs>        <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTULTSCAD_MM</valueabs>        <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTULTSCAD_AA</valueabs></TEXT>
+	<TEXT X=15.5 Y=6.5><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPCAN</valueabs></TEXT>
+
+	<TEXT X=3.3 Y=6.9>1</TEXT>
+	<TEXT X=7.7 Y=6.9><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPMUTLRD</valueabs></TEXT>
+	<TEXT X=15.5 Y=6.9><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMASSMRT</valueabs></TEXT>
+	
+	<TEXT X=5.4 Y=7.2><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></TEXT>
+	
+	<TEXT X=2 Y=7.6><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCA_NASC</valueabs>  (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_NASC</valueabs>)</TEXT>
+	<TEXT X=15 Y=7.6><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC_GG</valueabs>           <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC_MM</valueabs>         <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC_AA</valueabs></TEXT>
+	
+	
+	<TEXT X=2 Y=8><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs></TEXT>
+	<TEXT X=5.7 Y=8><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs></TEXT>
+	<TEXT X=7.2 Y=8><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs></TEXT>
+	
+	<TEXT X=4 Y=8.35><valueabs>IDGFCLI00F/RECORD/IDGFCLI_ETA</valueabs></TEXT>
+	<TEXT X=7 Y=8.35><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs></TEXT>
+	
+	<TEXT X=8.5 Y=8.7><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs>  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_STATOGIUR</valueabs></TEXT>
+
+	<TEXT X=5 Y=9.8><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DESCFIN</valueabs>  <valueabs>IDGFCQS00F/RECORD/IDGFCQS_INDIR_FIN</valueabs>  <valueabs>IDGFCQS00F/RECORD/IDGFCQS_INDIRIZZO_FIN</valueabs></TEXT>
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8">
+<PDFPAGE SRC="DOCQS041.PDF" VALUE=4>
+	<TEXT X=14 Y=3.8><valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs></TEXT>
+	
+	<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><then><TEXT X=0.6 Y=5><B>X</B></TEXT></if>		
+	<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>!=CQS</ifcond><then><TEXT X=3.3 Y=5><B>X</B></TEXT></if>		
+	
+	<TEXT X=2.5 Y=6.5><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DURATA</valueabs></TEXT>
+	<TEXT X=5.5 Y=6.5><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_GG</valueabs>           <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_MM</valueabs>      <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_AA</valueabs></TEXT>
+	<TEXT X=9.2 Y=6.5><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTULTSCAD_GG</valueabs>        <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTULTSCAD_MM</valueabs>        <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTULTSCAD_AA</valueabs></TEXT>
+	<TEXT X=15.5 Y=6.5><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPCAN</valueabs></TEXT>
+
+	<TEXT X=3.3 Y=6.9>1</TEXT>
+	<TEXT X=7.7 Y=6.9><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPMUTLRD</valueabs></TEXT>
+	<TEXT X=15.5 Y=6.9><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMASSMRT</valueabs></TEXT>
+	
+	<TEXT X=5.4 Y=7.2><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></TEXT>
+	
+	<TEXT X=2 Y=7.6><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCA_NASC</valueabs>  (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_NASC</valueabs>)</TEXT>
+	<TEXT X=15 Y=7.6><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC_GG</valueabs>           <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC_MM</valueabs>         <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC_AA</valueabs></TEXT>
+	
+	
+	<TEXT X=2 Y=8><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs></TEXT>
+	<TEXT X=5.7 Y=8><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs></TEXT>
+	<TEXT X=7.2 Y=8><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs></TEXT>
+	
+	<TEXT X=4 Y=8.35><valueabs>IDGFCLI00F/RECORD/IDGFCLI_ETA</valueabs></TEXT>
+	<TEXT X=7 Y=8.35><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs></TEXT>
+	
+	<TEXT X=8.5 Y=8.7><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs>  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_STATOGIUR</valueabs></TEXT>
+
+	<TEXT X=5 Y=9.8><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DESCFIN</valueabs>  <valueabs>IDGFCQS00F/RECORD/IDGFCQS_INDIR_FIN</valueabs>  <valueabs>IDGFCQS00F/RECORD/IDGFCQS_INDIRIZZO_FIN</valueabs></TEXT>
+</PAGE>	
+</BODY>
+</PDF>
+	

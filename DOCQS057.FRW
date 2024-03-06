@@ -1,0 +1,85 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="sacstrutturasize9">
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3">			
+</HEADER>
+<FOOTER>
+<include file="\INCLUDE\IncludedStruttura.frw" value="footercartaintestatasac">
+</FOOTER>
+<BODY>
+<BR><BR><BR><BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>Egregio Signor / Gentile Signora</TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> (cqs <valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs>)</TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs>  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs>  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs></TD>
+</TR>
+<BR><BR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10% ALIGN=R>c/o</TD>
+<TD WIDTH=40%>Spettabile</TD><BR>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>________________________________</TD><BR>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>Fax/Email________________________</TD><BR>
+</TR>
+</TABLE>
+<BR>
+<BR>
+<BR>
+<TEXT ALIGN=J>Conegliano,<valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs> <BR><BR>
+Oggetto: Richiesta conteggio estintivo contratto  nr. <valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs> a nome <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>.<BR><BR>
+Gentile cliente, con la presente riscontriamo la Sua richiesta di conteggio del debito residuo, precisando che, al momento, l’ eventuale estinzione anticipata del contratto di cui all’ oggetto viene considerata <I>ante-termine</I>, perché effettuata prima dello scadere dei 2/5 della durata del finanziamento.<BR><BR>
+Per tale motivo, prima di procedere con il rilascio del conteggio estintivo, La invitiamo gentilmente a compilare e sottoscrivere il documento allegato e ad inviarlo ai nostri uffici tramite posta oppure ai riferimenti fax 0438/45926 o e-mail sac@siglafinanziamenti.it, unitamente a copia del Suo documento d’ identità in corso di validità.<BR><BR>
+Con tale dichiarazione, Lei confermerà a Sigla che l’ eventuale estinzione del finanziamento verrà eseguita nel pieno rispetto di quanto disposto dall’ art. 39 del D.P.R n.180/1950 e dal Decreto ministeriale n. 313/2006, secondo cui un contratto di cessione con durata uguale o inferiore a 60 mesi, come quello che Lei ha in corso con Sigla, potrà essere eventualmente rinnovato solo ed esclusivamente con un contratto con durata di 120 mesi e solamente se è la prima volta che si avvale di tale previsione normativa.<BR><BR>
+Rimanendo a disposizione per eventuali chiarimenti al n. 0438/45990, precisiamo che sarà nostra cura, una volta ricevuto quanto richiesto, inviarLe il conteggio estintivo entro i termini di legge.<BR><BR>
+Rimanendo a disposizione per eventuali chiarimenti al nr. 0438/45990, porgiamo distinti saluti.<BR><BR>
+<BR>
+<TABLE WIDTH=100% FONT SIZE=9>
+<TR HEIGHT=3%>
+<TD WIDTH=77%></TD>
+<TD WIDTH=23% ALIGN="C"><BR><BR>Conformità Clienti e<BR>Monitoraggio Contratti<BR><BR>Sigla Srl</TD>
+</TR>
+</TABLE>
+
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=50 ALIGN="L"><BR><BR><BR><BR>All.: richiesta estinzione</TD>
+<TD WIDTH=40%></TD>
+<TD WIDTH=5%></TD>
+<TD WIDTH=5%></TD>
+</TR>
+</TABLE>
+</TEXT>
+<IMG SRC="<valueabs>Immagini/FIRMAGER1/Path</valueabs><valueabs>Immagini/FIRMAGER1/Nome</valueabs>" BACKGROUND X=15 Y=23.7 SCALE=10>
+</BODY>
+</PDF>

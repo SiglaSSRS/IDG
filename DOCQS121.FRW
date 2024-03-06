@@ -1,0 +1,126 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize5.5">
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestatasigla">
+</FOOTER>
+
+<BODY>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>==FEA</ifcond><or><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>==FSE</ifcond><or><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>==FSP</ifcond>
+<then></then>
+<else>
+<if>(<ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CODENTE</valueabs>!=2483748</ifcond>
+<and><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CODENTE</valueabs>!=82207</ifcond>)
+<or>(<ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CODENTE</valueabs><in>(2483748,82207)</ifcond>
+    <and>(<ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP042 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP043 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP044 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP0421 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP0431 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP0441 </ifcond>)
+)<then><ENCRYPT OWNER="soloiopossomodificare" NOCHANGE NOCOPY></then>
+</else>
+</if></if>
+<TEXT SIZE=6.5 ALIGN=L>
+PER I DIPENDENTI DI AZIENDE PRIVATE (artt. 51 e 52 DPR 5/1/1950 n° 180 e seguenti modifiche) 
+(Esente da tasse ed imposte indirette sugli affari ai sensi dell’Art.15 D.P.R. 29.9.1973 N.601).<BR>	
+</TEXT>			
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<TABLE SIZE=8.5><TR>
+<TD WIDTH=80%></TD>
+<TD WIDTH=10% BORDER=0.8>Pratica</TD> 
+<TD WIDTH=10% BORDER=0.8><B><valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs><B></TD>
+</TR></TABLE>
+<BR>
+<BR>
+<BR>
+<BR>
+<TEXT SIZE=9.5 ALIGN=C><B><U>DICHIARAZIONE DEL DIPENDENTE DI VINCOLO DEL TFR</U></B></TEXT>
+<BR>
+<BR>
+<BR>
+<BR>
+<TEXT SIZE=9.5 ALIGN=J>
+Io sottoscritto: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>, nato a <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCNASC</valueabs>,  il <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC</valueabs>, C.F. <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs>  premesso che a tutt’oggi 
+sono in regolare attività di servizio e che non vi sono a mio carico provvedimenti di qualsiasi natura anche disciplinari 
+atti a ridurre o sospendere, anche temporaneamente, la mia retribuzione e che ho in corso una pratica per la concessione 
+di un finanziamento da parte di <valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs> da estinguersi mediante rate mensili consecutive con cessione di quota 
+del mio stipendio, sin d’ora autorizzo irrevocabilmente il mio datore di lavoro, (così come indicato al punto 4 del certificato 
+di stipendio e salario) esonerandolo da qualsiasi responsabilità, a versare le rate sopraddette a <valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs>, trattenendole 
+dalle somme dovute al sottoscritto dal mese successivo a quello di notifica del Contratto di finanziamento. I suddetti importi 
+mensili dovranno essere rimessi a <valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs> mediante versamento su cc postale o con bonifico bancario entro e non oltre 
+il 10 del mese successivo a quello a cui le trattenute si riferiscono, con aggravio a mio carico, in caso di ritardo, degli 
+interessi di mora nella misura prevista dal contratto. A conferma dell’impegno preso, sottoscrivendo il contratto di cessione 
+sulla mia retribuzione mensile, dichiaro di conferire, ora per allora, mandato irrevocabile all’azienda da cui dipendo a trattenere, 
+in caso di cessazione del rapporto di lavoro e fino ad estinzione del debito in essere a quella data, il TFR maturato alla data della 
+risoluzione ed eventuali somme collegate alla risoluzione del rapporto (a titolo esemplificativo ma non esaustivo : indennizzo all’esodo, ecc.) 
+ed un quinto delle somme liquidate con la risoluzione del rapporto (a titolo esemplificativo ma non esaustivo: ratei 13^ e 14^, indennità per ferie, 
+permessi, ROL, non goduti, premi di periodo, altri accessori della retribuzione, ecc.) ed a versare il dovuto in un’unica soluzione a <valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs>, 
+<valueabs>IDGFAZI00F/RECORD/IDGFAZI_INDIR_SIG</valueabs>, <valueabs>IDGFAZI00F/RECORD/IDGFAZI_SIGLASRL</valueabs>. Dichiaro inoltre, in conformità con quanto previsto in contratto, per la durata della cessione, a non avvalermi 
+del diritto di cui al comma 6 dell’art. 2120 cod. civ., come modificato dalla legge 29.05.1982 n. 297 se ed in quanto a me applicabile.<BR> 
+</TEXT>
+<BR>
+<BR>
+<TABLE SIZE=9.5><TR>
+<TD WIDTH=70%></TD>	
+<TD WIDTH=30% ALIGN=C>In fede</TD></TR> 
+</TABLE>
+<BR>
+<BR>
+<TABLE SIZE=9.5><TR>
+<TD WIDTH=70%></TD>	
+<TD WIDTH=30% VALIGN=B>__________________________________</TD></TR>
+</TABLE>	
+<TABLE SIZE=9.5><TR>
+<TD WIDTH=70%></TD>	
+<TD WIDTH=30% VALIGN=T>Firma <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></B><I>(firma leggibile)</I></TD></TR>		 
+</TABLE>
+<BR>
+<BR>
+<TABLE SIZE=9.5><TR>
+<TD WIDTH=70%>Luogo, ______________________, <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></TD>	
+<TD WIDTH=30%></TD></TR>		 
+</TABLE>
+<BR>
+<BR>
+<TABLE SIZE=9.5 ALIGN=J><TR>
+<TD>_____________________________________________________________________________________________________</TD>
+</TR>
+<TR>
+<TD VALIGN=T><B>DICHIARAZIONE DEL DATORE DI LAVORO</B></TD>				
+</TR> 
+</TABLE>
+<TEXT SIZE=9.5 ALIGN=J>
+La sottoscritta ditta  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_STATOGIUR</valueabs> indirizzo <valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_LAV</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_LAV</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_LAV</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_LAV</valueabs>) presa visione della sopra citata dichiarazione conferma l’esattezza 
+delle indicazioni sopra riportate e si impegna a ottemperare alle indicazioni ricevute ed a sottoscrivere 
+l’Atto di Benestare che le sarà trasmesso da <valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs>.   	
+</TEXT>
+<BR>
+<BR>
+<BR>
+<TABLE SIZE=9.5><TR>
+<TD WIDTH=40%>N. di dipendenti: _____________</TD>	
+<TD WIDTH=60%>Capitale sociale interamente versato: ___________________________</TD>
+</TR>		 
+</TABLE>
+<BR>
+<BR>
+<BR>
+<TABLE SIZE=9.5><TR>
+<TD WIDTH=40%>Data ________________</TD>	
+<TD WIDTH=60%>__________________________________________________________</TD>
+</TR>
+<TR>
+<TD WIDTH=40%></TD>	
+<TD WIDTH=60% ALIGN=C>Firma del legale rappresentante (nome, cognome, qualifica)</TD>
+</TR>				 
+</TABLE>
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\VINC TFR##DOCQS121##01_01_01.png" BACKGROUND X=0.8 Y=2.7 SCALE=25>
+
+		
+</BODY>
+</PDF>

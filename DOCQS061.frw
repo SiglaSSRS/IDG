@@ -1,0 +1,170 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize7.5">
+<FONT FACE="Times">
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3">			
+</HEADER>
+<FOOTER>
+<include file="\INCLUDE\IncludedStruttura.frw" value="footercartaintestcqsstd">
+</FOOTER>
+<BODY>
+<TEXT>
+<TEXT X=16.5 Y=-1 ><FONT SIZE=6>N° Pratica: <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs></TEXT> 
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=50%></TD>
+<TD WIDTH=50% FCOLOR="BLUE" SIZE=14>RICHIESTA DI PREFINANZIAMENTO</TD>
+</TR>
+<TR>
+<TD WIDTH=50% FCOLOR="BLUE">_________________________________________________________</TD>
+<TD WIDTH=50%></TD>
+</TR>
+</TABLE>
+<BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=100%><B>Oggetto: allegato al contratto n. <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs> del <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTR</valueabs> , richiesta di anticipo.</B></TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=25%><B>Io sottoscritto:</B> </TD>
+<TD WIDTH=25%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%></TD>
+</TR>
+<TR>
+<TD WIDTH=25%><B>Nato a:</B> </TD>
+<TD WIDTH=25%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCNASC</valueabs></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><B>Il:</B> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%><B>Dipendente presso:</B> </TD>
+<TD WIDTH=25%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%></TD>
+</TR>
+</TABLE><BR><BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=100% ALIGN="J">Nel prosieguo indicato come richiedente, con la presente richiedo la somma di € <valueabs>IDGFERT00F/RECORD/IDGFERT_IMPERG</valueabs> quale anticipo sull'operazione di prestito estinguibile
+con Cessione (o Delegazione di Pagamento) di quote della retribuzione in corso di perfezionamento con questa società.<BR>
+Autorizzo, con espresso esonero da ogni responsabilità, la SIgla S.r.l. a trattenere, sulla liquidazione del sopracitato prestito , l'importo richiesto
+comprensivo di una commissione pari allo 0,00% sull'importo nominale dell'acconto , per un TAEG pari allo 0,00%.<BR>
+Qualora per qualsiasi ragione , il contratto di cessione (o Delegazione di Pagamento) non venisse regolarmente adempiuto, mi impegno a restituire 
+immediatamente a Sigla S.r.l. dietro sua semplice richiesta, da inviarsi a mezzo lettera raccomandata, l'importo richiesto a titolo di anticipo,
+maggiorato degli interessi come previsto in contratto e delle spese e oneri, comprensivi quelli assicurativi, sostenuti da Sigla S.r.l., in relazione al
+contratto non onorato (rimasto inadempiuto).<BR>
+Le obbligazioni assunte con la presente richiesta si intendono solidali ed invisibili anche nei confronti di eventuali eredi ed aventi causa. In
+espressa deroga al disposto dell'art. 190 c.c. la Sigla S.r.l. è autorizzata ad agire in via principale, anzichè sussidiaria, per il recupero di metà del suo
+credito sui beni personali del coniuge coobligato.<BR>
+In caso di risoluzione dell'attuale rapporto di lavoro, delego irrevocabilmente Sigla S.r.l., esonerando da qualsiasi responsabilità il mio datore di
+lavoro, a riscuotere l'indennità di fine rapporto e quant'altro a qualsiasi titolo mi competesse a seguito dell'anzidetta risoluzione del rapporto di 
+lavoro, e ciò fino alla concorrenza dell'importo come innanzi da me dovuto alla Sigla S.r.l. stessa.</TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=60%></TD>
+<TD WIDTH=30% ALIGN="C">Il Richiedente</TD>
+<TD WIDTH=5%></TD>
+<TD WIDTH=5%></TD>
+</TR>
+<TR>
+<TD WIDTH=60%></TD>
+<TD WIDTH=30% ALIGN="C"><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></TD>
+<TD WIDTH=5%></TD>
+<TD WIDTH=5%></TD>
+</TR>
+</TABLE>
+___________________________________________________________________________________________________________________________________________________________
+<BR><BR>
+<TABLE>
+<TR>
+<TD WIDTH=100%>RICEVUTA DELL'ANTICIPO</TD>
+</TR>
+<TR>
+<TD WIDTH=100%>A fronte della richiesta di cui sopra dichiaro di ricevere:</TD>
+</TR>
+
+<loop>
+<loopda>1</loopda>
+<looproot>IDGFERD00F/RECORD</looproot>
+<TR>
+<TD WIDTH=100% ALIGN=L> - <value>IDGFERD_DESCPAG</value> a mio favore tratto su:</TD>
+</TR>
+<TR>
+<TD WIDTH=100% ALIGN=L> di €  <value>IDGFERD_IMPERG</value> a titolo di anticipo sul contratto n. <value>IDGFERD_NRPROP</value> del <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTR</valueabs> sottoscritto dalle parti.</TD>
+</TR>
+</loop>
+
+<BR>
+<TR>
+<TD WIDTH=100%></TD>
+</TR>
+<TR>
+<TD WIDTH=100%>Data: &Date</TD>
+<BR>
+</TR>
+<TR>
+<TD WIDTH=100%>Firma del richiedente per ricevuta e quietanza dell'anticipo e per ricevuta del titolo e del contratto n. <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs></TD>
+<BR>
+</TR>
+</TABLE>
+<BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=60%></TD>
+<TD WIDTH=30% ALIGN="C">Il Richiedente</TD>
+<TD WIDTH=5%></TD>
+<TD WIDTH=5%></TD>
+</TR>
+<TR>
+<TD WIDTH=60%></TD>
+<TD WIDTH=30% ALIGN="C"><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></TD>
+<TD WIDTH=5%></TD>
+<TD WIDTH=5%></TD>
+</TR>
+</TABLE><BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=100% ALIGN="J">PARTE RISERVATA ALL'ACCERTATORE. Il sottoscritto, incaricato dell'identificazione  (art. 30, comma 8 del Dlgs 231/2007), dichiara, sotto la 
+propria personale responsabilità , di aver provveduto ad adeguata verifica dell'identità del Richiedente, le cuoi generalità sono state desunte dai
+documenti d'identità esibiti in originale  e sono state esattamente riportate nel contratto qui richiamato unitamente ai riferimenti del documento 
+esibito; dichiara inoltre che il Richiedente afferma , e tale appare sulla base degli elementi disponibili, di essere l'effettivo titolare del 
+finanziamento oggetto del contratto, il cui scopo è stato indicato nella premessa unitamente alle altre informazioni fornite (art. 21 del Dlgs 
+231/2007). Il sottoscritto dichiara inoltre che la sottoscrizione della presente quietanza è avvenuta in sua presenza.</TD><BR><BR><BR>
+</TR>
+</TABLE>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=100%>Firma dell'accertatore _________________________________________________________________________________________________</TD>
+</TR>
+<TR>
+<TD WIDTH=100% SIZE=8>Imposta di bollo assolta su originale</TD>
+</TR>
+</TABLE>
+<TEXT>
+<BR>
+Specifica approvazione per iscritto<BR>
+Richiamando quanto sopra si riporta la seguente clausola al fine della specifica approvazione tra le parti:
+"In espressa deroga al disposto dell'art. 190 c.c. Sigla S.r.l. è autorizzata ad agire in via principale, anzichè sussidiaria, per il recupero di metà del suo credito sui beni personali 
+del coniuge coobbligato".
+<BR><BR><BR><BR>
+</TEXT>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=50% ALIGN="C">Il Richiedente</TD>
+<TD WIDTH=50% ALIGN="C">L'Accertatore</TD>
+</TR>
+<TR>
+<TD WIDTH=50% ALIGN="C"><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></TD>
+<TD WIDTH=50% ALIGN="C">__________________________</TD>
+</TR>
+</TABLE>
+</BODY>
+</PDF>

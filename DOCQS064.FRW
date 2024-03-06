@@ -1,0 +1,138 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize9">
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3">			
+</HEADER>
+<FOOTER>
+<include file="\INCLUDE\IncludedStruttura.frw" value="footercartaintestcqsstd">
+</FOOTER>
+<BODY>
+<TEXT>
+<TEXT X=16.5 Y=-1 ><FONT SIZE=6>N° Pratica: <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs></TEXT> 
+<BR><BR><BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><B>SPETTABILE</B></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCTR00F/RECORD/IDGFCTR_RAGSOC_MED</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCTR00F/RECORD/IDGFCTR_INDIR_MED</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCTR00F/RECORD/IDGFCTR_MEDIATORE</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCTR00F/RECORD/IDGFCTR_MED_AGENCY</valueabs> - <valueabs>IDGFCTR00F/RECORD/IDGFCTR_MED_OFFICE</valueabs></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=100% ALIGN="J">
+Conegliano, lì &date <BR><BR>
+<B>Oggetto: Assegno per liquidazione pratica <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs> del <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSTS</valueabs> , richiedente <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></B><BR><BR><BR></TD>
+</TR>
+<TR>
+<TD WIDTH=100% ALIGN="J">Come da accordi, trasmettiamo documentazione relativa alla pratica in oggetto:<BR><BR></TD>
+</TR>
+</TABLE>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=5%>1)</TD>
+<TD WIDTH=95% ALIGN="J">Atto di quietanza<BR><BR></TD>
+</TR>
+<TR>
+<TD WIDTH=5%>2)</TD>
+<TD WIDTH=95% ALIGN="J">Piano di ammortamento<BR><BR></TD>
+</TR>
+<TR>
+<TD WIDTH=5%>3)</TD>
+<TD WIDTH=95% ALIGN="J">€ <valueabs>IDGFERT00F/RECORD/IDGFERT_IMPERG</valueabs> a mezzo di:<BR></TD>
+</TR>
+<loop>
+<loopda>1</loopda>
+<looproot>IDGFERD00F/RECORD</looproot>
+<TR>
+<TD WIDTH=5%></TD>
+<TD WIDTH=95% ALIGN=L><value>IDGFERD_DESCPAG</value> - <value>IDGFERD_IMPERG</value></TD><BR>
+</TR>
+</loop>
+
+<TR>
+<TD WIDTH=5%>4)</TD>
+<TD WIDTH=100% ALIGN="J">Contratto di finanziamento da consegnare al cliente<BR></TD>
+</TR>
+</TABLE>
+<BR><BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=100% ALIGN="J">Vi preghiamo pertanto di ritornarci a stretto giro di posta i documenti in originale debitamente sottoscritti dal cliente.</TD>
+</TR><BR>
+<TR>
+<TD WIDTH=100% ALIGN="J">Distinti Saluti</TD>
+</TR>
+<TR>
+<TD WIDTH=100% ALIGN="J"><BR><BR>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs><not in>(10010013,10014650,10015106,10015331,10015470,10015303,10015510,10015911,10016236,10015433,10016160,10016517,10016595,10016388,10016672,10016679
+,10016768,10016816,10016524,10016871,10016884,10017066,10017071,10017061,10017084,10016985,10017181,10017240,10017244,10016970,10017330,10017391
+,10017179,10017310,10017398,10017421
+)</ifcond><then>
+Con riferimento al contratto da Lei sottoscritto si precisa che l’art. 4 delle condizioni generali di finanziamento riportava un errore di compilazione; 
+infatti, le commissioni banca sono state erroneamente indicate pari agli interessi, mentre, come si evince sia dal modulo Secci che dal testo contrattuale alla prima pagina, 
+sono pari a € <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMCOMMBA</valueabs>
+</then></if></TD>
+</TR>
+</TABLE>
+<BR><BR><BR><BR><BR><BR><BR><BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=50%>Conegliano, li &date</TD>
+<TD WIDTH=40%></TD>
+<TD WIDTH=5%></TD>
+<TD WIDTH=5%></TD>
+</TR>
+<TR>
+<TD WIDTH=50%></TD>
+<TD WIDTH=40% ALIGN="C">Sigla Srl</TD>
+<TD WIDTH=5%></TD>
+<TD WIDTH=5%></TD>
+</TR>
+<TR>
+<TD WIDTH=50%></TD>
+<TD WIDTH=40% ALIGN="C">Direzione Cessione Quinto</TD>
+<TD WIDTH=5%></TD>
+<TD WIDTH=5%></TD>
+</TR>
+<TR>
+<TD WIDTH=50%></TD>
+<TD WIDTH=40% ALIGN="C">GOVONI RICCARDO</TD>
+<TD WIDTH=5%></TD>
+<TD WIDTH=5%></TD>
+</TR>
+</TABLE>
+</TEXT>
+</BODY>
+</PDF>

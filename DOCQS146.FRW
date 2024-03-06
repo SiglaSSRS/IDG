@@ -1,0 +1,40 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="sacstrutturasize10">
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3">			
+</HEADER>
+<FOOTER>
+<include file="\INCLUDE\IncludedStruttura.frw" value="footercartaintestatasac">
+</FOOTER>
+<BODY>
+<TEXT LINESPACE=6>
+<BR><BR><BR><BR><BR>
+<FONT SIZE=15><B>COMUNICAZIONE IMPORTANTE</B><FONT SIZE=10>
+<BR><BR>
+Gentile cliente, La informiamo che per ottenere l'eventuale rimborso del premio non goduto, per quanto riguarda la polizza assicurativa <B>CATTOLICA</B> collegata al Suo contratto, qualora dovesse decidere di portare a termine l'estinzione come da conteggio allegato, <U><B>dovrà necessariamente inviare alla società CATTOLICA ASSICURAZIONI</B></U> la seguente documentazione:<BR><BR>
+•	Richiesta rimborso (vedi esempio allegato) riportante i Suoi dati anagrafici compreso il Suo indirizzo di residenza, il numero del Suo contratto estinto, la data di estinzione del Suo contratto e la modalità con la quale desidera ottenere tale eventuale rimborso (assegno circolare o bonifico bancario, in quest'ultimo caso dovrà indicare le Sue coordinate ove la società Cattolica possa effettuarLe il rimborso);<BR>
+•	copia della polizza collegata al Suo contratto estinto;<BR>
+•	copia del conteggio estinto inviatoLe;<BR>
+•	copia della lettera liberatoria che Le sarà inviata ad estinzione conclusa.<BR>
+<BR><BR>
+Tale documentazione, dovrà essere da Lei spedita tramite raccomandata A/r a:<BR><BR>
+<B>CATTOLICA ASSICURAZIONI<BR>
+C/O CLASS CONSULTING<BR>
+PIAZZA A . DE GASPERI 24<BR>
+20147 SARONNO (VA)</B><BR>
+<BR>
+Restando a Sua disposizione per eventuali chiarimenti allo 0438/45990, Le porgiamo distinti saluti.<BR>
+<BR><BR><BR>
+
+
+<TABLE WIDTH=100% FONT SIZE=9>
+<TR HEIGHT=3%>
+<TD WIDTH=77%></TD>
+<TD WIDTH=23% ALIGN="C" CELLBACKGROUND="<valueabs>Immagini/FIRMACM1/Path</valueabs><valueabs>Immagini/FIRMACM1/Nome</valueabs>"><BR><BR><BR>Sigla Srl</TD>
+</TR>
+</TABLE>
+<BR><BR><BR>
+<BR>
+</TEXT>
+</BODY>
+</PDF>

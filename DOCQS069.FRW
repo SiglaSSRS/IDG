@@ -1,0 +1,130 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize9">
+
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headersiglarischio">
+<TEXT ALIGN=C FCOLOR=2995>_____________________________________________________________________________</TEXT>
+</HEADER>
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestcqsstd">
+</FOOTER>
+
+<BODY>
+<SUBHEADER>
+<TEXT>
+<X VALUE=10>
+<BR><BR>
+<B>Spettabile</B><BR>
+AXERIA PREVOYANCE S.A.<BR>
+VIA VITTOR PISANI, 19<BR>
+20100 - MILANO (MI)<BR>
+<X VALUE=0>
+</TEXT>
+</SUBHEADER>
+<SUBFOOTER>
+<TEXT>
+<BR>
+Allegati:<BR>
+1) Certificato di stipendio<BR>
+2) Copia busta paga<BR>
+3) Copia documento di identità e codice fiscale<BR>
+4) Proposta di assicurazione in originale<BR>
+5) Schermata Garf<BR>
+<BR>
+</TEXT>
+<TABLE BORDER=0>
+	<TR>
+		<TD WIDTH=45%></TD>
+		<TD WIDTH=10%></TD>
+		<TD ALIGN=C WIDTH=45%><B>Sigla S.r.l.</B><BR><BR></TD>
+	</TR>
+	<TR>
+		<TD WIDTH=45%>Data: <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></TD>
+		<TD WIDTH=10%></TD>
+		<TD WIDTH=45% ALIGN=C>___________________________________________</TD>
+	</TR>
+	<TR><TD><BR></TD></TR>
+	
+</TABLE>
+
+</SUBFOOTER>
+
+<TEXT>
+<BR>
+Conegliano, li <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs><BR><BR>
+<B>Oggetto: RICHIESTA COPERTURA ASSICURATIVA<BR></B>
+<TABLE BORDER=0.7>
+	<TR HEIGHT=1.2>
+		<TD WIDTH=10%><BR>Pratica<BR> </TD>
+		<TD WIDTH=25%><BR>Prodotto</TD>
+		<TD WIDTH=10%><BR>N° quote</TD>
+		<TD WIDTH=15%><BR>Decorrenza</TD>
+		<TD WIDTH=15%><BR>Imp. quota</TD>
+		<TD WIDTH=25%><BR>Capitale (montante)</TD>
+	</TR>
+	<TR HEIGHT=1.2>
+		<TD WIDTH=10%><BR><valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs><BR> </TD>
+		<TD WIDTH=25%><BR><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DSRAGPRD</valueabs></TD>
+		<TD WIDTH=10%><BR><valueabs>IDGFCTR00F/RECORD/IDGFCTR_PERDUR</valueabs></TD>
+		<TD WIDTH=15%><BR><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT</valueabs></TD>
+		<TD WIDTH=15%><BR>&euro <valueabs>IDGFCTR00F/RECORD/IDGFCTR_CANONE</valueabs></TD>
+		<TD WIDTH=25%><BR>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPMUTLRD</valueabs></TD>
+	</TR>
+</TABLE>
+<BR>
+<B>CEDENTE/DELEGANTE</B><BR><BR>
+Cognome e nome: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs><BR>
+Nato/a a: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCNASC</valueabs> <TAB VALUE=12>Il: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC</valueabs><BR>
+Indirizzo: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs><BR>
+C.a.p./Città/Prov.: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs>)<BR>
+Codice fiscale: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs><BR>
+Documento tipo: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DSDOCUM</valueabs><TAB VALUE=8>N°: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_NUM_DOCUM</valueabs><TAB VALUE=4>Data rilascio: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_DA_IL</valueabs><BR><BR>
+<B>AMMINISTRAZIONE</B><BR><BR>
+Ragione sociale: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs> - P. Iva <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CODFIS_LAV</valueabs><BR>
+Capitale sociale: &euro <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAPSOC</valueabs><TAB VALUE=8>N° dipendenti: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DIPDATLAV</valueabs><BR>
+Indirizzo:<valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_LAV</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_LAV</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_LAV</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_LAV</valueabs>)<BR>
+Data pensionamento: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTASSUNZ</valueabs><BR>
+Pensione mensile: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_NETULTBP</valueabs><BR><BR>
+<B>CONTR. BENEFICIARIO:</B> <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DESCFIN</valueabs> <valueabs>IDGFCQS00F/RECORD/IDGFCQS_INDIR_FIN</valueabs> - <valueabs>IDGFCQS00F/RECORD/IDGFCQS_INDIRIZZO_FIN</valueabs><BR><BR>
+Premi:<BR>
+<TABLE BORDER=0>
+	<TR>
+		<TD WIDTH=50%>
+			<TABLE BORDER=0.7>
+				<TR>
+					<TD WIDTH=50%>RISCHIO VITA</TD>
+					<TD WIDTH=50%>EURO <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMASSMRT</valueabs></TD>
+				</TR>
+				<TR>
+					<TD WIDTH=50%> </TD>
+					<TD WIDTH=50%> </TD>
+				</TR>
+				<TR>
+					<TD WIDTH=50%>TOTALE</TD>
+					<TD WIDTH=50%>EURO <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMASSMRT</valueabs></TD>
+				</TR>
+			</TABLE>	
+		</TD>
+		<TD WIDTH=50%> </TD>
+	</TR>
+</TABLE>
+<BR>
+Estinzioni: 
+<TABLE BORDER=0>
+								
+				<loop>
+				<loopda>1</loopda>
+				<looproot>IDGFDEB00F/RECORD</looproot>
+					<if><ifcond><value>IDGFDEB_FLAGESTIN</value>==S</ifcond><and><ifcond><value>IDGFDEB_CDTIPIMP</value>!=PPP</ifcond>
+					<then>
+						<TR>
+							<TD ALIGN=LEFT><value>IDGFDEB_DESTIPIMP</value> <value>IDGFDEB_DESANACON</value> di rata &euro <value>IDGFDEB_IMPCAN</value> per un residuo di &euro <value>IDGFDEB_IMMONRES</value></TD>
+						</TR>
+					</if>	
+				</loop>
+				
+			</TABLE>
+</TEXT>
+</BODY>
+</PDF>

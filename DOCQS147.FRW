@@ -1,0 +1,70 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="sacstrutturasize10">
+<FOOTER>
+<include file="\INCLUDE\IncludedStruttura.frw" value="footercartaintestatasigla">
+</FOOTER>
+<BODY>
+<TEXT ALIGN=J>
+<BR><BR>
+<FONT SIZE=15><B>COMUNICAZIONE IMPORTANTE</B><FONT SIZE=10><BR>
+Gentile cliente, La informiamo che per ottenere l’eventuale rimborso del premio non goduto, per quanto riguarda la polizza assicurativa <B>AXA</B>, collegata al Suo contratto, qualora dovesse decidere di portare a termine l’estinzione come da conteggio allegato, <B><U>dovrà necessariamente restituirci la presente dichiarazione compilata</U>, al numero di fax 0438/45926 o all’indirizzo e-mail sac@siglafinanziamenti.it</B>, pena l’impossibilità per la società AXA di valutare l’eventuale rimborso, <B>qualora sia dovuto</B>.
+<BR><BR><BR><BR>
+<BR><BR><BR><BR>
+
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>Spettabile</TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>COMPAGNIA ASSICURATIVA</TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>AXA </TD><BR><BR>
+</TR>
+</TABLE>
+<BR>
+<BR>
+<TABLE WIDTH=100%><TR>
+<TD WIDTH=100% ALIGN="J">
+____________________________________<BR><BR>
+Oggetto: richiesta rimborso premio non goduto delle polizze del contratto nr. <valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs> 
+a nome <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> estinto alla data del <valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN</valueabs> .
+<BR></TD>
+</TR>
+</TABLE>
+<BR>
+Io sottoscritt<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond><then>o<else>a</if> titolare del contratto in oggetto, estinto anticipatamente, chiedo il rimborso del premio non goduto delle polizze relative al contratto in oggetto, da effettuarsi possibilmente a mezzo:<BR>
+<BR>
+<IMG SRC="<valueabs>Immagini/BOX/Path</valueabs><valueabs>Immagini/BOX/Nome</valueabs>" SCALE=<valueabs>Immagini/BOX/Scale</valueabs>> Bonifico bancario alle seguenti coordinate:<BR>
+	IBAN:    IT  _____ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __<BR>
+	Intestato a <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs><BR>
+<BR>
+<IMG SRC="<valueabs>Immagini/BOX/Path</valueabs><valueabs>Immagini/BOX/Nome</valueabs>" SCALE=<valueabs>Immagini/BOX/Scale</valueabs>> Assegno Circolare da inviare all’ indirizzo sopra indicato.<BR>
+<BR>
+Distinti saluti.</P><BR><BR><BR><BR><BR><BR>
+
+
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=50%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>In fede</TD>
+</TR>
+<TR>
+<TD WIDTH=50%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>_____________________</TD>
+</TR>
+</TABLE>
+</TEXT>
+</BODY>
+</PDF>
