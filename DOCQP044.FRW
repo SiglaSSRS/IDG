@@ -1,0 +1,398 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize5.5_times">
+<HEADER>
+<TEXT X=16 Y=-0.3>(PREV) del-SC. – 01.10.2023</TEXT>
+<include file="\INCLUDE\includedStruttura.frw" value="headersiglarischio">
+</HEADER>
+
+
+
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT">Pag. 1 di 4</TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+
+<BODY>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>==FEA</ifcond><or><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>==FSE</ifcond><or><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>==FSP</ifcond>
+<then></then>
+<else>
+<if>(<ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CODENTE</valueabs>!=2483748</ifcond>
+<and><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CODENTE</valueabs>!=82207</ifcond>)
+<or>(<ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CODENTE</valueabs><in>(2483748,82207)</ifcond>
+    <and>(<ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP042 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP043 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP044 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP0421 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP0431 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP0441 </ifcond>)
+)<then><ENCRYPT OWNER="soloiopossomodificare" NOCHANGE NOCOPY></then>
+</else>
+</if></if>
+<TEXT SIZE=6.5 ALIGN=J>PREMESSA: Il documento SECCI qui riportato potrà variare in seguito a:<BR>
+<li>	Discordanza di uno qualsiasi dei dati caricati dall'intermediario del credito al fine della stampa della richiesta (tutti i dati presenti sono fondamentali per la valutazione della fattibilità) e la documentazione prodotta
+<li>	Discordanza tra il calcolo della quota cedibile e la documentazione/le informazioni prodotte
+<li>	Evidenza di problematiche derivanti dalle verifiche antifrode effettuate (discordanza rispetto alla residenza dichiarata e in generale delle dichiarazioni fornite, presenza del soggetto nelle liste antiterrorismo o nel data base di Sigla come soggetto inadempiente, incongruenza tra la documentazione prodotta e la posizione contributiva, mancato reperimento del soggetto presso la sua residenza)
+<li>	Variazione della documentazione fornita, dopo la verifica da parte del suo datore di lavoro/Ente previdenziale
+<li>	Assenza di emissione del benestare da parte del suo datore di lavoro/Ente previdenziale
+<li>	Variazione da parte delle Compagnie d'Assicurazione
+<li>	Assenza di emissione della copertura assicurativa da parte delle Compagnie d'Assicurazione
+<li>	Se non sarà possibile parlare telefonicamente con lei e con il suo datore di lavoro o con altri Enti, nel caso Sigla lo valuti necessario
+<li>	In caso di mancata risposta da parte del suo datore di lavoro/Ente previdenziale
+<li>	Impossibilità di procedere con l'estinzione anticipata di eventuali altre cessioni di quota di stipendio/pensione in corso (ad esempio per presenza di quote non pagate da parte del suo datore di lavoro oppure per impossibilità derivante dalla società finanziatrice della cessione in corso oppure derivante dal mancato rispetto delle normative in materia), necessaria ai fini della stipula del nuovo contratto di finanziamento;
+<BR><BR>
+</TEXT>
+<TEXT SIZE=7.5 ALIGN=J>
+INFORMAZIONI EUROPEE DI BASE SUL CREDITO AI CONSUMATORI<BR><BR>
+1.	Identità e contatti del finanziatore/intermediario del credito<BR><BR>
+<TABLE WIDTH=100% BORDER=0.1 SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=27%>Finanziatore<BR>
+Indirizzo<BR>
+Telefono<BR>
+Fax<BR>
+Sito web
+</TD>
+<TD WIDTH=73%>Sigla Srl <BR>
+Sede Legale e operativa: via Cesare Battisti, 5/a - 31015 Conegliano (TV)<BR>
+0438/45990 (assistenza clienti) 0438/372950 (interruzione rapporto di lavoro o decesso) <BR>
+0438/45917 <BR>
+www.siglacredit.it<BR>
+</TD>
+</TR>
+
+<if><ifcond><valueabs>IDGFFONT0F/RECORD/IDGFONT_CDFONTE</valueabs><in>(_CRECO,_CRECO_RIN,CRECO_07,CRECO_15,CRECO_25,CRECO_30,CRECO_31,CRECO_32,CRECO_33,CRECO_34,CRECO_35,CRECO_36,CRECO_37,CRECO_38,CRECO_39,CRECO_40,CRECO_41,CRECO_42,CRECO_43,CRECO_44,CRECO_45,CRECO_46,CRECO_47,CRECO_48,CRECO_49,CRECO_50,CRECO_51,CRECO_52,CRECO_53,CRECO_54,CRECO_55,CRECO_56,CRECO_57,CRECO_58,CRECO_59,CRECO_60,CRECO_61,CRECO_62,CRECO_63,CRECO_64,CRECO_65,CRECO_66,CRECO_67,CRECO_68,CRECO_69,CRECO_70,CRECO_71,CRECO_72,CRECO_73,CRECO_74,CRECO_75,CRECO_76,CRECO_77,CRECO_78,CRECO_79,CRECO_80)</ifcond>
+<then>
+<TR>
+<TD WIDTH=27%>Intermediario del credito<BR>
+Indirizzo
+</TD>
+<TD WIDTH=73%>BCC CREDITO CONSUMO Codice: 19309.4 (Intermediario finanziario)
+<BR>Via Verzegnis, 15
+<BR>Udine 33100 UD</TD>
+</TR>
+<TR>
+<TD WIDTH=27%></TD>
+<TD WIDTH=73%><valueabs>IDGFFONT0F/RECORD/IDGFONT_DESABI</valueabs> - <valueabs>IDGFFONT0F/RECORD/IDGFONT_DESCAB</valueabs>
+<BR><valueabs>IDGFFONT0F/RECORD/IDGFONT_INDIR</valueabs>
+<BR><valueabs>IDGFFONT0F/RECORD/IDGFONT_LOCAL</valueabs> <valueabs>IDGFFONT0F/RECORD/IDGFONT_CAP</valueabs> <valueabs>IDGFFONT0F/RECORD/IDGFONT_PROV</valueabs>
+</TD>
+</TR>
+
+</then><else><if><ifcond><valueabs>IDGFFONT0F/RECORD/IDGFONT_CDFONTE</valueabs><in>(YOUNI_35,YOUNI_36,YOUNI_37,YOUNI_38,YOUNI_39,YOUNI_40,YOUNI_41,YOUNI_42,YOUNI_43,YOUNI_44,YOUNI_45,YOUNI_46,YOUNI_47,YOUNI_48,YOUNI_49,YOUNI_50)</ifcond>
+<then>
+<TR>
+<TD WIDTH=27%>Intermediario del credito<BR>
+Indirizzo
+</TD>
+<TD WIDTH=73%>YOUNITED SA
+<BR>Via Appia Nuova, 41/D
+<BR>Roma 00183 RM</TD>
+</TR>
+</then><else>
+<TR>
+
+<TD WIDTH=27%>Intermediario del credito<BR>
+Indirizzo<BR>
+Telefono<BR>
+E-mail<BR>
+Fax<BR>
+Sito web
+</TD>
+<TD WIDTH=73%><valueabs>IDGFCQP00F/RECORD/IDGFCQP_DESCENTE</valueabs>
+<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_BRPR_TYPE</valueabs><in>(AMP,AP2,APM,AMD,AGP,AGM)</ifcond><then> (Agente)</then></if>
+<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_BRPR_TYPE</valueabs><in>(INC,INT)</ifcond><then> (Intermediario finanziario)</then></if>
+<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_BRPR_TYPE</valueabs>==MAQ</ifcond><then> (Mediatore)</then></if>
+<BR><valueabs>IDGFCQP00F/RECORD/IDGFCQP_INDIRENTE</valueabs> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_CAPENTE</valueabs> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_LOCALENTE</valueabs> (<valueabs>IDGFCQP00F/RECORD/IDGFCQP_PROVENTE</valueabs>)
+<BR><valueabs>IDGFCQP00F/RECORD/IDGFCQP_TELENTE</valueabs>
+<BR><if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CODENTE</valueabs>==3675460</ifcond><then>DEPASCALE.SIGLA@GMAIL.COM</then></if>
+<BR><valueabs>IDGFCQP00F/RECORD/IDGFCQP_FAXENTE</valueabs>
+<BR><if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CODENTE</valueabs>==3675460</ifcond><then>www.depascalefinanziamenti.it</then></if></TD></TR>
+</else>
+</if></else></if>
+
+</TABLE>
+<BR>2.	Caratteristiche principali del prodotto di credito<BR><BR>
+<TABLE WIDTH=100% BORDER=0.1  SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=27%>Tipo di contratto di credito</TD>
+<TD WIDTH=73%>DELEGAZIONE DI PAGAMENTO<BR>Contratto a tasso fisso e rata costante, rimborsabile mediante cessione di quota dello stipendio mensile netto, a seguito conferimento da parte del Delegante al proprio Datore di Lavoro di uno specifico mandato irrevocabile (artt. 1269 e succ e 1723 2° comma Codice Civile).</TD>
+</TR>
+<TR>
+<TD WIDTH=27%>Importo totale del credito<BR>
+<I>Limite massimo o somma totale degli importi messi a disposizione del consumatore.</I>
+</TD>
+<TD WIDTH=73%>&euro <valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMPNETRIC</valueabs>
+<BR>Detto importo si intende:<BR>
+• al netto di qualsiasi costo, spesa e commissione a carico del Cliente;<BR>
+• al lordo di eventuali prefinanziamenti richiesti dal Cliente e concessi dal Finanziatore;<BR>
+• al lordo di eventuali estinzioni anticipate di altri debiti relativi a preesistenti finanziamenti del Cliente accesi con il Finanziatore stesso o con altri soggetti finanziatori.
+</TD>
+</TR>
+<TR>
+<TD WIDTH=27%>Condizioni di prelievo<BR>
+<I>Modalità e tempi con i quali il consumatore può utilizzare il credito.</I>
+</TD>
+<TD WIDTH=73%>L'importo totale del credito sarà erogato al Cliente dopo la conclusione del contratto, mediante bonifico bancario o assegno circolare.<BR>
+Dall'importo totale del credito verrà sottratto l'importo destinato ad estinguere altri debiti (prefinanziamenti ed estinzioni anticipate di precedenti finanziamenti).
+</TD>
+</TR>
+<TR>
+<TD WIDTH=27%>Durata del contratto di credito</TD>
+<TD WIDTH=73%><valueabs>IDGFCQP00F/RECORD/IDGFCQP_NUMCAN</valueabs> mesi</TD>
+</TR>
+<TR>
+<TD WIDTH=27%>Rate ed, eventualmente, loro ordine di imputazione</TD>
+<TD WIDTH=73%>Rate da pagare:<BR>
+&euro <valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMPCAN</valueabs>, per <valueabs>IDGFCQP00F/RECORD/IDGFCQP_NUMCAN</valueabs> rate, con cadenza mensile; le rate sono calcolate secondo un piano di ammortamento alla francese, la cui caratteristica è quella di avere rate costanti, interessi decrescenti e quote di capitale crescente.<BR>
+Il consumatore pagherà gli interessi e/o le spese nel seguente ordine:<BR>
+capitale<BR>
+interessi<BR>
+spese<BR>
+DIRITTO DI COMPENSAZIONE<BR>
+Quando esistono tra il Cliente e il Finanziatore più rapporti di finanziamento caratterizzati da un mandato a pagare su quote della retribuzione/pensione del Cliente, il Finanziatore al verificarsi di una delle ipotesi di cui all'articolo 1186 del codice civile o al prodursi di eventi che possano incidere sul recupero del credito vantato dal Finanziatore stesso, quest'ultimo si riserva il diritto di valersi della compensazione tra crediti e debiti afferenti ai suddetti finanziamenti ancorché non siano liquidi ed esigibili e ciò in qualunque momento senza obbligo di preavviso e/o formalità.<BR>
+MANCATO AVVIO DELLE TRATTENUTE<BR>
+In caso di mancato avvio delle trattenute da parte del Datore di Lavoro nei termini definiti dallo stesso Datore di Lavoro in fase di notifica del contratto di credito, potranno essere effettuate sulle mensilità successive il recupero delle rate scadute mediante l'applicazione di una o più ritenute aggiuntive mensili.
+</TD>
+</TR>
+</TABLE></TEXT>
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\SECCIPRV##DOCQP044##01_02_05.png" BACKGROUND X=1.5 Y=0 SCALE=25>
+<PAGE>
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT">Pag. 2 di 4</TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+<TEXT SIZE=7.5 ALIGN=J>
+<TABLE WIDTH=100% BORDER=0.1  SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=27%>Importo totale dovuto dal consumatore<BR>
+<I>Importo del capitale preso in prestito, più gli interessi e i costi connessi al credito.</I>
+</TD>
+<TD WIDTH=73%>L'Importo Totale Dovuto dal Cliente a conclusione del periodo di ammortamento è pari a:<BR>
+&euro <valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMPMUTLRD</valueabs> (Capitale Lordo Mutuato)<BR>Detto importo comprende il totale degli interessi e dei costi connessi a carico del Cliente; per il dettaglio delle commissioni, spese ed altri oneri si veda la sezione “3. Costi del Credito”.</TD>
+</TR>
+<TR>
+<TD WIDTH=27%>Garanzie richieste<BR>
+<I>Garanzie che il consumatore deve prestare per ottenere il credito.</I>
+</TD>
+<TD WIDTH=73%>
+In caso di cessazione, per qualsiasi causa,del rapporto di lavoro, la cessione si estenderà sul trattamento di fine rapporto, sull'eventuale liquidazione della prestazione di cui agli artt. 7 e
+10 D. Lgs 124/93, sull'eventuale trattamento pensionistico e sulle somme dovute al DELEGANTE a qualunque titolo e sotto qualsiasi denominazione; a tal fine il DELEGANTE consente che l'Amministrazione ceduta trattenga da tali somme l'importo necessario per l'estinzione della cessione e che parimenti la trattenuta venga effettuata da qualsiasi Ente di previdenza o di assicurazione ai quali il DELEGANTE medesimo sia iscritto per legge, per regolamento o per contratto di lavoro. 
+Qualora dette somme non fossero sufficienti a coprire il residuo debito od il DELEGANTE non avesse diritto ad alcuna indennità o pensione, il DELEGANTE è tenuto a versare immediatamente a SIGLA in un'unica soluzione il residuo
+debito con le modalità ed alle condizioni previste dall'art.12.Il DELEGANTE si impegna a non richiedere la liquidazione o anticipazioni su dette somme durante la vigenza del presente Contratto, riconoscendo che tali somme, ivi comprese quelle di futura maturazione, costituiscono oggetto di garanzia a favore di Sigla per l'integrale rimborso del finanziamento erogato. 
+In caso di esercizio del diritto di cui al comma 6 dell'art. 2120 cod. civ., se ed in quanto a lui applicabile, il delegante e l'ente ceduto dovranno avere da parte di Sigla s.r.l. 
+la preventiva indicazione del debito residuo sussistente in capo al DELEGANTE alla data della richiesta con assenso alla corresponsione della anticipazione, fermo restando il diritto di Sigla s.r.l. 
+a ricevere dall'ente ceduto la quota pari all'intero debito residuo sussistente in capo al DELEGANTE alla data della richiesta. Il DELEGANTE conferisce ora per allora mandato irrevocabile a Sigla per richiedere la liquidazione delle somme dovute, esercitando ove d'uopo il diritto di riscatto, verso ogni ente, compresi i fondi pensione integrativi, nei cui confronti il DELEGANTE risultasse creditore, autorizzando le relative comunicazioni al Datore di lavoro e agli Enti interessati. Gli eventuali oneri imposti dall'Amministrazione e dagli Enti di Previdenza per l'effettuazione delle trattenute saranno a carico del DELEGANTE.
+</TD>
+</TR>
+<TR>
+<TD WIDTH=27%>I pagamenti effettuati dal consumatore non comportano l'ammortamento immediato del capitale</TD>
+<TD WIDTH=73%>Le commissioni, imposte, spese ed altri costi pagati dal Cliente e trattenuti dal Finanziatore dall'importo del credito (netto ricavo dell'operazione) non sono computati nell'ammortamento del capitale.</TD>
+</TR>
+</TABLE></TEXT>
+<TEXT SIZE=7.5 ALIGN=J>
+<BR>3.	Costi del credito<BR><BR>
+<TABLE WIDTH=100% BORDER=0.1  SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=27%>Tasso di interesse (TAN)</TD>
+<TD WIDTH=73%><valueabs>IDGFCQP00F/RECORD/IDGFCQP_TXTAN</valueabs> % (tasso annuo nominale) tasso annuo nominale scalare applicato in misura fissa per l'intera durata del prestito (con riferimento all'anno commerciale, con 12 mesi da 30 giorni)</TD>
+</TR>
+<TR>
+<TD WIDTH=27%>Tasso annuo effettivo globale (TAEG)<BR>
+<I>Costo totale del credito espresso in percentuale, calcolata su base annua, dell'importo totale del credito.<BR>
+Il TAEG consente al consumatore di confrontare le varie offerte.</I>
+</TD>
+<TD WIDTH=73%><valueabs>IDGFCQP00F/RECORD/IDGFCQP_TXTAEG</valueabs> % (tasso annuo effettivo globale) indicatore di costo totale convenzionale (denominato anche ISC, indicatore sintetico di costo), è comprensivo di tutti i costi incluse le imposte e non subirà modificazioni; è stato calcolato ipotizzando l'anno composto da dodici mesi uguali, sulla base del calendario civile, ai sensi del decreto Legislativo 141/2010, a decorrere dal primo giorno del mese successivo alla conclusione del presente contratto.<BR>
+Il tasso di interesse, comprensivo di ogni spesa, non potrà mai superare il limite previsto dalla normativa in materia di usura, nel momento in cui tale interesse è stato convenuto (data di sottoscrizione del contratto), dovendo intendersi che anche in caso di eventuale superamento del suddetto limite, la misura di tali interessi sarà comunque pari al limite medesimo.<BR>Il TAEG, calcolato al tasso di interesse del <valueabs>IDGFCQP00F/RECORD/IDGFCQP_TXTAN</valueabs> % su un capitale finanziato di &euro <valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMPFIN</valueabs> per la durata di <valueabs>IDGFCQP00F/RECORD/IDGFCQP_NUMCAN</valueabs> mesi, comprensivo di:<BR>
+COMMISSIONI A FAVORE DELL'INTERMEDIARIO FINANZIARIO: &euro <valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMCOMSGCMIT2</valueabs><BR>
+COMMISSIONI DI DISTRIBUZIONE: &euro <if><ifcond><valueabs>IDGFFONT0F/RECORD/IDGFONT_CDFONTE</valueabs><in>(_CRECO,_CRECO_RIN,_CREDIPER,CRECO_07,CRECO_15,CRECO_25,CRECO_30,CRECO_31,CRECO_32,CRECO_33,CRECO_34,CRECO_35,CRECO_36,CRECO_37,CRECO_38,CRECO_39,CRECO_40,CRECO_41,CRECO_42,CRECO_43,CRECO_44,CRECO_45,CRECO_46,CRECO_47,CRECO_48,CRECO_49,CRECO_50,CRECO_51,CRECO_52,CRECO_53,CRECO_54,CRECO_55,CRECO_56,CRECO_57,CRECO_58,CRECO_59,CRECO_60,CRECO_61,CRECO_62,CRECO_63,CRECO_64,CRECO_65,CRECO_66,CRECO_67,CRECO_68,CRECO_69,CRECO_70,CRECO_71,CRECO_72,CRECO_73,CRECO_74,CRECO_75,CRECO_76,CRECO_77,CRECO_78,CRECO_79,CRECO_80)</ifcond>
+<then><if><ifcond><valueabs>IDGFFONT0F/RECORD/IDGFONT_CDFONTE</valueabs>==_CREDIPER</ifcond>
+	  <then><valueabs>IDGFCQP00F/RECORD/IDGFCQP_PV_IMCOMMBA</valueabs></then>
+	  <else><valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMCOMMBA</valueabs></else></if>
+</then>
+<else>
+<valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMPROV1</valueabs>
+</else>
+</if>
+<BR>ONERI ERARIALI/IMPOSTA DI BOLLO: &euro <valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMRIVALSA</valueabs>	
+</TD>
+</TR>
+<TR>
+<TD WIDTH=27%>Per ottenere il credito o per ottenerlo alle condizioni contrattuali offerte è obbligatorio sottoscrivere:<BR>
+-	un'assicurazione che garantisca il credito e/o<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>	
+-	un altro contratto per un servizio accessorio<BR>
+<I>Se il finanziatore non conosce i costi dei servizi accessori, questi non sono inclusi nel TAEG.</I>
+</TD>
+<TD WIDTH=73%><BR><BR>Sì, Il prestito può essere garantito per legge (articolo 54 del D.P.R. 180/50 e successive modifiche ed integrazioni) da polizze assicurative che garantiscono il pagamento del credito residuo in caso di decesso del DELEGANTE (polizza Rischio Vita) e in caso di risoluzione definitiva del rapporto di lavoro (polizza Rischio Impiego del Cliente).<BR>
+Sigla stipula apposite polizze, di cui è beneficiario, pagando il relativo premio.<BR>
+POLIZZA RISCHIO VITA: garantisce il mancato adempimento dell'obbligazione di rimborso del prestito da parte del Cliente in caso di decesso. A tal fine il Cliente è tenuto a rilasciare in sede di istruttoria del prestito apposite dichiarazioni sul suo stato di salute. Nei casi di invalidità della Polizza Assicurativa, anche conseguenza di dichiarazioni inesatte e/o reticenti rilasciate dal Cliente sul suo stato di salute, così come della falsità e/o alterazione della documentazione presentata dallo stesso Cliente, il Finanziatore, ovvero la compagnia assicurativa, laddove abbia già provveduto al pagamento dell'indennizzo, e ciò sia espressamente previsto dalle condizioni di assicurazione, potrà rivalersi nei confronti degli eredi di quest'ultimo per il soddisfacimento del proprio diritto di credito.<BR>
+Salvo i casi di cui sopra, la compagnia di assicurazione non ha diritto di rivalersi nei confronti degli eredi per quanto corrisposto a titolo di indennizzo al cessionario. Le rate scadute e non pagate precedenti alla data dell'evento di sinistro, non sono oggetto di copertura assicurativa e pertanto per tali rate il cessionario potrà rivalersi nei confronti degli eredi del DELEGANTE per il soddisfacimento del proprio diritto di credito.<BR>
+POLIZZA RISCHIO IMPIEGO (RAMO ASSICURATIVO CREDITO): garantisce il mancato adempimento dell'obbligazione di rimborso del prestito da parte del Cliente in caso di risoluzione definitiva, qualunque sia la causa, del rapporto di lavoro tra il Cliente stesso ed il Datore di Lavoro. Qualora la Compagnia Assicurativa, al verificarsi dell'evento oggetto di copertura,provveda a liquidare l'indennizzo al Finanziatore è previsto per detto importo il diritto di rivalsa da parte della Compagnia Assicurativa nei confronti del Cliente. La Compagnia Assicurativa potrà quindi agire nei confronti del Cliente al fine di recuperare le somme pagate a Sigla a titolo di indennizzo.<BR>
+Per tutte le condizioni contrattuali di assicurazione, generali e particolari, si rimanda al fascicolo informativo, ove ne sia disposta la consegna.<BR>
+Sigla non svolge attività di intermediazione assicurativa e non percepisce alcun compenso provvigionale dalle compagnie di assicurazione.
+<BR><BR><BR><BR><BR><BR>
+No
+</TD>
+</TR>
+</TABLE>
+</TEXT>
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\SECCIPRV##DOCQP044##01_03_05.png" BACKGROUND X=1.5 Y=0 SCALE=25>
+<PAGE>
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT">Pag. 3 di 4</TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+<TEXT SIZE=7.5 ALIGN=J>
+3.1	Costi connessi<BR><BR>
+<TABLE WIDTH=100% BORDER=0.1  SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=27%>Eventuali altri costi derivanti dal contratto di credito</TD>
+<TD WIDTH=73%>COMMISSIONI A FAVORE DELL'INTERMEDIARIO FINANZIARIO: &euro <valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMCOMSGCMIT2</valueabs> 
+costi ripetibili (in misura proporzionale alla vita residua del contratto e secondo la curva degli interessi del piano di ammortamento del contratto di finanziamento) in caso di estinzione anticipata, utilizzati per altrettante competenze dovute a SIGLA, a copertura degli oneri e dei costi che non siano altrimenti disciplinati in contratto e gravanti sull'Intermediario mutuante per l'attività d'intermediazione del prestito, quali il costo del servizio, la gestione delle rate di rimborso in scadenza, le attività post vendita, l'invio di ulteriore copia di documenti, l'elaborazione dati per la gestione degli archivi, l'assistenza scritta e altri costi ripetibili.
+In caso di sinistro per decesso i costi ripetibili delle commissioni a favore dell'intermediario finanziario non potranno essere tali e diventeranno pertanto costi non ripetibili, al fine di coprire le spese sostenute da Sigla connesse alla lavorazione del sinistro.
+<BR>
+COMMISSIONI DI DISTRIBUZIONE: &euro <if><ifcond><valueabs>IDGFFONT0F/RECORD/IDGFONT_CDFONTE</valueabs><in>(_CRECO,_CRECO_RIN,_CREDIPER,CRECO_07,CRECO_15,CRECO_25,CRECO_30,CRECO_31,CRECO_32,CRECO_33,CRECO_34,CRECO_35,CRECO_36,CRECO_37,CRECO_38,CRECO_39,CRECO_40,CRECO_41,CRECO_42,CRECO_43,CRECO_44,CRECO_45,CRECO_46,CRECO_47,CRECO_48,CRECO_49,CRECO_50,CRECO_51,CRECO_52,CRECO_53,CRECO_54,CRECO_55,CRECO_56,CRECO_57,CRECO_58,CRECO_59,CRECO_60,CRECO_61,CRECO_62,CRECO_63,CRECO_64,CRECO_65,CRECO_66,CRECO_67,CRECO_68,CRECO_69,CRECO_70,CRECO_71,CRECO_72,CRECO_73,CRECO_74,CRECO_75,CRECO_76,CRECO_77,CRECO_78,CRECO_79,CRECO_80)</ifcond>
+<then><if><ifcond><valueabs>IDGFFONT0F/RECORD/IDGFONT_CDFONTE</valueabs>==_CREDIPER</ifcond>
+	  <then><valueabs>IDGFCQP00F/RECORD/IDGFCQP_PV_IMCOMMBA</valueabs></then>
+	  <else><valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMCOMMBA</valueabs></else></if>
+</then>
+<else>
+<valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMPROV1</valueabs>
+</else>
+</if> costi ripetibili (in misura proporzionale alla vita residua del contratto e secondo la curva degli interessi del piano di ammortamento del contratto di finanziamento) in caso di estinzione anticipata, utilizzati dall'intermediario del credito per: acquisizione e controllo documentazione precontrattuale, predisposizione preventivo, inserimento delle informazioni e delle anagrafiche nel sistema informativo, stampa del contratto inviato da Sigla e raccolta delle firme da parte del cliente (nel solo caso di Agenti in Attività Finanziaria e di Intermediari Finanziari), notifica, richiesta a finanziarie terze di eventuali conteggi estintivi, ritiro del benestare presso ATC, invio della documentazione preliminare e definitiva Sigla (nel caso di Mediatori Creditizi, tali attività potranno essere svolte solo previa richiesta specifica del cliente).
+<BR>ONERI ERARIALI/IMPOSTA DI BOLLO: &euro <valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMRIVALSA</valueabs> costo non ripetibile in caso di estinzione anticipata.	
+</TD>
+</TR>
+<TR>
+<TD WIDTH=27%>Costi in caso di ritardo nel pagamento<BR>
+<I>Tardare con i pagamenti potrebbe avere gravi conseguenze per il consumatore (ad esempio la vendita forzata dei beni) e rendere più difficile ottenere altri crediti in futuro.</I>
+</TD>
+<TD WIDTH=73%>Interessi di mora: TAN + 1%<BR>
+Gli interessi di mora previsti si applicano ad ogni somma dovuta ai sensi del presente
+Contratto dal DELEGANTE e dai Debitori Ceduti al Finanziatore.<BR>
+Il tasso di mora è escluso dal calcolo del TAEG e non sarà mai superiore alla misura massima consentita dalla legge al momento della conclusione del contratto (sottoscrizione del contratto), dovendosi intendere che anche in caso di eventuale superamento del suddetto limite, la misura di tali interessi sarà comunque pari al limite medesimo. In ogni caso, gli interesse di mora sono alternativi agli interessi corrispettivi indicati in contratto.<BR>
+Eventuali spese di esazione: spese sostenute per eventuali solleciti effettuati a mezzo posta o telefono anche da soggetti terzi specificatamente incaricati, da € 5,00 fino ad un massimo di € 60,00 per rata, ed il costo di eventuali interventi domiciliari svolti anche da soggetti terzi specificatamente incaricati, da € 10,00 fino ad un massimo di € 80,00 a rata, nonché per eventuali spese legali sostenute in base alle parcelle liquidate.
+</TD>
+</TR>
+</TABLE>
+<BR>4.	Altri importanti aspetti legali <BR><BR>
+<TABLE WIDTH=100% BORDER=0.1  SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=27%>Diritto di recesso<BR>  
+<I>Il consumatore ha il diritto di recedere dal contratto di credito entro quattordici giorni di calendario dalla conclusione del contratto.</I>
+</TD>
+<TD WIDTH=73%>Si</TD>
+</TR>
+
+<TR>
+<TD WIDTH=27%>Rimborso anticipato<BR>
+<I>Il consumatore ha il diritto di rimborsare il credito anche prima della scadenza del contratto, in qualsiasi momento, in tutto o in parte.<BR>
+Il finanziatore ha il diritto a un indennizzo in caso di rimborso anticipato.</I>
+</TD>
+<TD WIDTH=73%>Si<BR>L'indennizzo è dovuto solo se il capitale rimborsato in anticipo è superiore ad Euro 10.000,00, ed è pari a:<BR>
+- all'1% dell'importo totale del credito rimborsato in anticipo e da versare alla data della richiesta, se la vita residua del contratto è superiore ad 1 anno;<BR>
+- allo 0,5% dell'importo totale del credito rimborsato in anticipo e da versare alla data della richiesta, se la vita residua del contratto è pari o inferiore ad 1 anno.<BR>
+In caso di estinzione parziale del finanziamento, l'importo delle rate, con riferimento alla quota non estinta, verrà mantenuto invariato, con imputazione dei successivi versamenti alle rate di più
+imminente scadenza e con conseguente riduzione della durata del piano di ammortamento originario.
+</TD>
+</TR>
+
+<TR>
+<TD WIDTH=27%>Consultazione di una banca dati<BR>
+<I>Se il finanziatore rifiuta la domanda di credito dopo aver consultato una banca dati, il consumatore ha il diritto di essere informato immediatamente e gratuitamente del risultato della consultazione. Il consumatore non ha questo diritto se comunicare tale informazione è vietato dalla normativa comunitaria o è contrario all'ordine pubblico o alla pubblica sicurezza.</I>
+</TD>
+<TD WIDTH=73%>Nel procedimento istruttorio delle richieste di finanziamento Sigla, qualora lo ritenga opportuno, ricorre a sistemi di informazione creditizia e antifrode messi a disposizione da gestori privati e pubblici di sistemi informativi in tema di crediti al consumo accessibili da banche e intermediari.<BR>
+Le informazioni relative ai gestori delle banche dati sono contenute nel modello " Informativa ex art. 13-14, GDPR UE/2016/679" in materia di protezione dei dati personali.
+</TD>
+</TR>
+
+<TR>
+<TD WIDTH=27%>Diritto a ricevere una copia del contratto<BR>
+<I>Il consumatore ha il diritto, su sua richiesta, di ottenere gratuitamente copia del contratto di credito idonea per la stipula. Il consumatore non ha questo diritto se il finanziatore, al momento della richiesta, non intende concludere il contratto.</I>
+</TD>
+<TD WIDTH=73%>
+</TD>
+</TR>
+<TR>
+<TD WIDTH=27%>Periodo di validità dell'offerta</TD>
+<TD WIDTH=73%>L’offerta avrà validità di sei mesi dalla data della richiesta di finanziamento.</TD>
+</TR>
+</TABLE>
+</TEXT>
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\SECCIPRV##DOCQP044##01_04_05.png" BACKGROUND X=1.5 Y=0 SCALE=25>
+<PAGE>
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT">Pag. 4 di 4</TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+<TEXT SIZE=7.5 ALIGN=J>
+
+5.	Informazioni supplementari in caso di commercializzazione a distanza di servizi finanziari<BR><BR>
+<TABLE WIDTH=100% BORDER=0.1  SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=27%>a) Finanziatore<BR>
+Indirizzo<BR>
+Telefono<BR>
+Fax<BR>
+Sito web
+</TD>
+<TD WIDTH=73%>Sigla Srl<BR>
+via Cesare Battisti, 5/a - 31015 Conegliano (TV)<BR>
+0438/45990 (assistenza clienti) 0438/372950 (interruzione rapporto di lavoro o decesso) <BR>
+0438/45917<BR>
+www.siglacredit.it<BR>
+</TD>
+</TR>
+<TR>
+<TD WIDTH=27%>Iscrizione</TD>
+<TD WIDTH=73%>Iscrizione Albo Unico degli Intermediari Finanziari ex art.106 TUB con n. 88 (codice meccanografico 33023)</TD>
+</TR>
+<TR>
+<TD WIDTH=27%>Autorità di controllo </TD>
+<TD WIDTH=73%>Banca d'Italia - Via Nazionale 91 - 00184 Roma</TD>
+</TR>
+<TR>
+<TD WIDTH=27%>b)  Contratto di credito</TD>
+<TD WIDTH=73%></TD>
+</TR>
+<TR>
+<TD WIDTH=27%>Esercizio del diritto di recesso</TD>
+<TD WIDTH=73%>Il cliente, ai sensi dell'art. 125-ter del TUB, ha facoltà di recedere dal contratto
+sottoscritto con Sigla senza alcuna penalità e senza specificarne il motivo. In tal caso, il recesso dovrà avvenire non oltre 14 (quattordici) giorni dalla data di stipula del contratto di finanziamento e a mezzo lettera raccomandata con avviso di
+ricevimento indirizzata a Intermediario al seguente indirizzo: SIGLA SRL via Cesare Battisti, 5/a - 31015 Conegliano (TV).<BR>
+L'esercizio della facoltà di recesso comporterà l'obbligo di restituire al cessionario quanto ricevuto a titolo di finanziamento ed il contratto non verrà sciolto prima dell'avvenuta restituzione in unica soluzione della somma corrispondente al netto ricavo dell'operazione. Nel caso il contratto abbia avuto esecuzione, entro 30 giorni dall'invio della comunicazione sopra indicata, il cliente restituirà l'importo liquidato maggiorato degli interessi maturati fino al momento della restituzione, calcolati al tan indicato nel contratto, nonché le somme non ripetibili quali il bollo sul contratto.</TD>
+</TR>
+<TR>
+<TD WIDTH=27%>Lingua</TD>
+<TD WIDTH=73%>Le informazioni sul contratto saranno comunicate in ITALIANO. Con l'accordo del consumatore, il finanziatore intende comunicare in ITALIANO nel corso del rapporto contrattuale.</TD>
+</TR>
+<TR>
+<TD WIDTH=27%>c)  Reclami e ricorsi</TD>
+<TD WIDTH=73%></TD>
+</TR>
+<TR>
+<TD WIDTH=27%>Strumenti di tutela stragiudiziale e modalità per accedervi.</TD>
+<TD WIDTH=73%>Ogni cliente può presentare reclamo a Sigla Srl - Ufficio Reclami - via Cesare Battisti, 5/a 31015 Conegliano TV, mediante raccomandata A/R, posta ordinaria, e-mail: reclami@siglafinanziamenti.it, PEC: siglacredit.assistenzaclienti@pec.it, fax 0438/45926. Come indicato nella Guida ai diritti del Cliente, ogni cliente ha diritto, in caso di reclamo, a ricevere risposta dall'Intermediario entro 60 giorni. Se il cliente non è soddisfatto o non ha ricevuto risposta entro i 60 giorni, prima di ricorrere al giudice può rivolgersi a: a) Arbitro Bancario Finanziario (ABF), nella sede più vicina al suo domicilio (Segreteria tecnica di: Milano Via Cordusio, 5-20123
+Milano - Tel. 02 72424246; Roma Via Venti Settembre, 97/e - 00187 Roma - Tel. 06 47929235; Napoli Via Miguel Cervantes, 71 - 80133 Napoli - Tel: 081 7975350; Torino via Arsenale, 8 - 10121 - Torino - Tel. 011 5518590; Bologna Piazza Cavour, 6 - 40124 Bologna - Tel. 051 6430120; Bari Corso Cavour, 4 - 70121 Bari - Tel. 080 5731510; Palermo Via Cavour, 131/A - 90133 Palermo - Tel. 091 6074310), oppure presso le Filiali della Banca d'Italia,come ampiamente indicato nella Guida ai diritti del Cliente, che ha visionato e che è consultabile al sito www.arbitrobancariofinanziario.it . b) Conciliatore Bancario Finanziario. Se sorge una controversia con Sigla, il cliente può attivare una procedura di conciliazione che consiste nel tentativo di raggiungere un accordo con Sigla, grazie all'assistenza di un conciliatore indipendente. Detto tentativo sarà esperito, ai sensi e per gli effetti di quanto previsto dall'articolo 40, comma 6, del decreto legislativo 17 gennaio 2003 n.5, dall'Organismo di conciliazione bancarie, finanziarie e societarie - ADR, iscritto al n.3 del registro, tenuto dal Ministero della Giustizia, ex articolo 38 del dlg 17 gennaio 2003, n.5. Resta impregiudicata la facoltà di ricorrere all'autorità giudiziaria nel caso in cui la conciliazione si dovesse concludere senza il raggiungimento di un accordo. Per questo servizio è possibile rivolgersi al Conciliatore Bancario Finanziario (Organismo iscritto nel Registro tenuto dal Ministero della Giustizia), con sede a Roma, Via delle Botteghe Oscure 54, tel 06 674821, sito internet: www.conciliatorebancario.it.<BR>
+Qualora il cliente necessiti di assistenza, potrà rivolgersi all'ufficio conformità clienti di Sigla, a cui risponderà personale con un'adeguata e aggiornata conoscenza dei contratti di credito offerti, nonché dei diritti dei consumatori e delle regole previste dal T.U.B., al numero telefonico 0438-45990, oppure via fax al numero 0438-45926, oppure via email all'indirizzo: informazionisac@siglafinanziamenti.it oppure, potrà rivolgersi all'intermediario del credito, per ottenere gratuitamente spiegazioni aventi ad oggetto: - la documentazione precontrattuale fornitagli; - le caratteristiche essenziali del prodotto offerto; - gli effetti che possono derivargli dalla conclusione del contratto, in termini di obblighi economici e conseguenze del mancato pagamento. Resta inteso che il cliente ha diritto di ricevere in qualsiasi
+momento del rapporto, su sua richiesta e senza spese, una tabella di ammortamento. Inoltre, ogni cliente potrà verificare preventivamente tramite Monitorata (disponibile presso l'intermediario del credito a cui si è rivolto oppure nel sito www.siglacredit.it) se le Sue entrate ed uscite mensili attuali siano compatibili con la rata che dovrà pagare. Monitorata è uno strumento di analisi sofisticato che, del tutto gratuitamente, viene messo a disposizione dei clienti per aiutarli a prendere decisioni importanti. Monitorata fornisce un quadro preciso della situazione del cliente e lo consiglia se procedere o meno con la sottoscrizione di un ulteriore finanziamento.
+</TD>
+</TR>
+
+</TABLE>
+
+</TEXT>
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\SECCIPRV##DOCQP044##01_05_05.png" BACKGROUND X=1.5 Y=0 SCALE=25>
+</BODY>
+</PDF>

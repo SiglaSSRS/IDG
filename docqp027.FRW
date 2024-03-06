@@ -1,0 +1,292 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize10">
+
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headerunifin">			
+</HEADER>
+
+
+<SUBFOOTER><TEXT SIZE=5 ALIGN=C>
+Preventivo <if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>==DEL</ifcond>
+	<then> DEL </then>
+	</if>
+	<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_COD_CONV_IMP</valueabs>!=</ifcond>
+		<then> CQS </then>
+	</if>
+	<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_COD_CONV_IMP</valueabs>==</ifcond>
+		<then> CQP </then>
+	</if>      del <valueabs>IDGFCQP00F/RECORD/IDGFCQP_DTINSPRV</valueabs>        pagina 1 di 2 </TEXT>
+</SUBFOOTER>
+
+<BODY><TEXT>		
+<TEXT SIZE=10 ALIGN=C><BR><B>
+Messaggio pubblicitario con finalità promozionali. Esempio rappresentativo di simulazione finanziaria per:
+un prestito rimborsabile mediante <if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>==DEL</ifcond>
+	<then>DELEGAZIONE DI PAGAMENTO</then>
+	</if>
+	<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_COD_CONV_IMP</valueabs>!=</ifcond>
+		<then>CESSIONE DEL QUINTO DELLO STIPENDIO</then>
+	</if>
+	<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_COD_CONV_IMP</valueabs>==</ifcond>
+		<then>CESSIONE DEL QUINTO DELLA PENSIONE</then>
+	</if></B><BR>
+<BR>
+</TEXT>
+
+<TEXT SIZE=8 ALIGN=J>
+<I>[Versione del documento valida dal: 01/06/2011]</I><BR>
+<BR>
+</TEXT>
+
+<TEXT SIZE=10 ALIGN=C><B>
+Identità e contatti del finanziatore / intermediario del credito</B>
+</TEXT>
+
+<TABLE WIDTH=100% BORDER=0.6>
+<TR>
+<TD WIDTH=50% LINESPACE=0.5>Finanziatore</TD>
+<TD WIDTH=50% LINESPACE=0.5>Santander Consumer Bank S.p.A.</TD>
+</TR> 
+<TR>
+<TD WIDTH=50% LINESPACE=0.5>Indirizzo</TD>
+<TD WIDTH=50% LINESPACE=0.5>Via Nizza, 262/26 - 10126 TORINO</TD>
+</TR> 
+<TR>
+<TD WIDTH=50% LINESPACE=0.5>Telefono</TD>
+<TD WIDTH=50% LINESPACE=0.5>011 63 19 111</TD>
+</TR> 
+<TR>
+<TD WIDTH=50% LINESPACE=0.5>Email</TD>
+<TD WIDTH=50% LINESPACE=0.5>santanderconsumer@santanderconsumer.it</TD>
+</TR> 
+<TR>
+<TD WIDTH=50% LINESPACE=0.5>Fax</TD>
+<TD WIDTH=50% LINESPACE=0.5>011 63 19 119</TD>
+</TR> 
+<TR>
+<TD WIDTH=50% LINESPACE=0.5>Sito web</TD>
+<TD WIDTH=50% LINESPACE=0.5>www.santanderconsumer.it</TD>
+</TR> 
+<TR>
+<TD WIDTH=50% LINESPACE=0.5><I>Rappresentata dalla propria mandataria</I></TD>
+<TD WIDTH=50% LINESPACE=0.5>UNIFIN S.p.A. a socio unico</TD>
+</TR> 
+<TR>
+<TD WIDTH=50% LINESPACE=0.5>Indirizzo</TD>
+<TD WIDTH=50% LINESPACE=0.5>Via Di Vittorio, 21/B - 40013 Castel Maggiore (BO)</TD>
+</TR> 
+<TR>
+<TD WIDTH=50% LINESPACE=0.5>Telefono</TD>
+<TD WIDTH=50% LINESPACE=0.5>011 63 18 877</TD>
+</TR> 
+<TR>
+<TD WIDTH=50% LINESPACE=0.5>Email</TD>
+<TD WIDTH=50% LINESPACE=0.5>assistenza.unifin@santanderconsumer.it</TD>
+</TR> 
+<TR>
+<TD WIDTH=50% LINESPACE=0.5>Fax</TD>
+<TD WIDTH=50% LINESPACE=0.5>011 195 26 256</TD>
+</TR> 
+<TR>
+<TD WIDTH=50% LINESPACE=0.5>Sito web</TD>
+<TD WIDTH=50% LINESPACE=0.5>www.santanderconsumer.it/unifin</TD>
+</TR> 
+</TABLE>
+
+<TABLE WIDTH=100% BORDER=0.6>
+<TR>
+<TD WIDTH=50% LINESPACE=0.5>Intermediario del credito</TD>
+<TD WIDTH=50% LINESPACE=0.5>Offerente fuori sede. Non operante in regime di esclusiva<BR>
+<IMG SRC="<valueabs>Immagini/BOX/Path</valueabs><valueabs>Immagini/BOX/Nome</valueabs>" SCALE=<valueabs>Immagini/BOX/Scale</valueabs>> Agente in attività finanziaria<BR>
+|x| Intermediario Finanziario ex art. 106 TUB - SIGLA SRL</TD>
+</TR> 
+<TR>
+<TD WIDTH=50% LINESPACE=0.5>Indirizzo</TD>
+<TD WIDTH=50% LINESPACE=0.5>(spazio per timbro e recapito dell’intermediario del credito)<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</TD>
+</TR> 
+</TABLE>
+
+<BR>
+
+<TEXT SIZE=10 ALIGN=C><B>
+Caratteristiche principali del soggetto e del prodotto</B>
+</TEXT>
+<TABLE WIDTH=100% BORDER=0.6>
+<TR>
+<TD WIDTH=50% LINESPACE=0.5>Soggetto</TD>
+<TD WIDTH=50% LINESPACE=0.5>Sesso: <valueabs>IDGFCQP00F/RECORD/IDGFCQP_SESSOCLI</valueabs> Data di nascita: <valueabs>IDGFCQP00F/RECORD/IDGFCQP_DTNSCLI</valueabs><BR>
+Data assunzione: <valueabs>IDGFCQP00F/RECORD/IDGFCQP_DTASSCLI</valueabs><BR>
+Amministrazione: <valueabs>IDGFCQP00F/RECORD/IDGFCQP_DATLVCLI</valueabs></TD>
+</TR> 
+<TR>
+<TD WIDTH=50% LINESPACE=0.5>Prodotto</TD>
+<TD WIDTH=50% LINESPACE=0.5>Istituto Fin. <valueabs>IDGFCQP00F/RECORD/IDGFCQP_DESCFIN</valueabs><BR>
+Codice Prod. <valueabs>IDGFCQP00F/RECORD/IDGFCQP_DESPROD</valueabs><BR>
+Tabella Fin.</TD>
+</TR> 
+</TABLE>
+
+<BR>
+
+<TEXT SIZE=10 ALIGN=C><B>
+Esempio rappresentativo</B>
+</TEXT>
+<TABLE WIDTH=100% BORDER=0.6>
+<TR>
+<TD WIDTH=50% LINESPACE=0.5>Tipo di Contratto di credito</TD>
+<TD WIDTH=50% LINESPACE=0.5>Contratto di prestito rimborsabile mediante cessione "pro
+solvendo" di quote della retribuzione mensile.</TD>
+</TR> 
+<TR>
+<TD WIDTH=50% LINESPACE=0.5>Importo totale del credito<BR>
+<I>Limite massimo o somma totale degli importi messi a
+disposizione del consumatore.</I></TD>
+<TD WIDTH=50% LINESPACE=0.5>somma messa a disposizione del Cliente: &euro <valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMPNETRIC</valueabs>
+, quale netto ricavo del finanziamento, per un valore
+attuale del finanziamento di &euro <valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMPFIN</valueabs> (montante
+lordo meno interessi).</TD>
+</TR> 
+<TR>
+<TD WIDTH=50% LINESPACE=0.5>Condizioni di prelievo<BR>
+<I>Modalità e tempi con i quali il consumatore può utilizzare il
+credito.</I></TD>
+<TD WIDTH=50% LINESPACE=0.5></TD>
+</TR> 
+<TR>
+<TD WIDTH=50% LINESPACE=0.5>Durata del Contratto di credito</TD>
+<TD WIDTH=50% LINESPACE=0.5><valueabs>IDGFCQP00F/RECORD/IDGFCQP_DURATA</valueabs> mesi</TD>
+</TR> 
+<TR>
+<TD WIDTH=50% LINESPACE=0.5>Rate ed, eventualmente, loro ordine di imputazione</TD>
+<TD WIDTH=50% LINESPACE=0.5>Rate da pagare<BR>
+importo rata: &euro <valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMPCAN</valueabs> numero rate: <valueabs>IDGFCQP00F/RECORD/IDGFCQP_DURATA</valueabs> periodicità della rata: mensile.</TD>
+</TR> 
+<TR>
+<TD WIDTH=50% LINESPACE=0.5>Importo totale dovuto dal consumatore<BR>
+<I>Importo del capitale preso in prestito, più gli interessi e i
+costi connessi al credito.</I></TD>
+<TD WIDTH=50% LINESPACE=0.5>La somma dell’importo totale del credito e del costo totale
+del credito, ossia il montante lordo del finanziamento, è pari
+a: &euro <valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMPMUTLRD</valueabs>, comprensivo delle voci elencate
+nella sezione TAEG, del presente esempio rappresentativo.</TD>
+</TR> 
+</TABLE>
+</TEXT>
+<PAGE>
+<SUBFOOTER><TEXT SIZE=5 ALIGN=C>
+Preventivo <if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>==DEL</ifcond>
+	<then> DEL </then>
+	</if>
+	<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_COD_CONV_IMP</valueabs>!=</ifcond>
+		<then> CQS </then>
+	</if>
+	<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_COD_CONV_IMP</valueabs>==</ifcond>
+		<then> CQP </then>
+	</if>      del <valueabs>IDGFCQP00F/RECORD/IDGFCQP_DTINSPRV</valueabs>        pagina 2 di 2 </TEXT>
+</SUBFOOTER>
+<TEXT>
+<BR><BR>
+<TABLE WIDTH=100% BORDER=0.6>
+<TR>
+<TD WIDTH=50% LINESPACE=0.5>Tasso di interesse</TD>
+<TD WIDTH=50% LINESPACE=0.5>TAN <valueabs>IDGFCQP00F/RECORD/IDGFCQP_TXTAN</valueabs> %. E’ calcolato con regime di capitalizzazione
+mensile degli interessi con riferimento all’anno civile di 365
+giorni.<BR>
+TEG <valueabs>IDGFCQP00F/RECORD/IDGFCQP_TXTEG</valueabs> %. E’ valido ai fini della rilevazione del tasso
+usuraio.</TD>
+</TR> 
+<TR>
+<TD WIDTH=50% LINESPACE=0.5>Tasso annuo effettivo globale (TAEG) <BR>
+<I>Costo totale del credito espresso in percentuale, calcolata
+su base annua, dell'importo totale del credito.<BR>
+Il TAEG consente al consumatore di confrontare le varie
+offerte.</I></TD>
+<TD WIDTH=50% LINESPACE=0.5><B><FONT SIZE=13>TAEG </B><FONT SIZE=10><valueabs>IDGFCQP00F/RECORD/IDGFCQP_TXTAEG</valueabs> %. E’ calcolato a norma del
+Provvedimento Banca d’Italia del 29 luglio 2009 e
+successive modifiche/integrazioni, su base annua con mese
+pari a 365/12. Il TAEG è comprensivo degli interessi e di
+tutti i costi riportati di seguito. Il TAEG è fondato sull’ipotesi
+che il contratto di credito rimarrà valido per il periodo di
+tempo convenuto e che Cliente e Finanziatore adempiranno
+i loro obblighi nei termini ed entro le date convenute nel
+contratto di credito. Sono esclusi dal calcolo del TAEG, e
+pertanto vanno considerati come ulteriori costi le eventuali
+penali che il cedente è tenuto a pagare per la mancata
+esecuzione di un qualsiasi obbligo contrattuale, inclusi gli
+interessi di mora.<BR>
+Del TAEG fanno parte:<BR>
+i) Interessi = &euro <valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMPINTER</valueabs><BR>
+a) Commissioni al Finanziatore Santander Consumer
+Bank S.p.A. = &euro 0,00<BR>
+b) Commissioni a Unifin S.p.A in qualità di mandataria
+= &euro <valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMCOMMBA</valueabs><BR>
+c) Provvigioni all’Intermediario del credito = &euro <valueabs>IDGFCQP00F/RECORD/IDGFCQP_PRVCMSG</valueabs>. Nessuna somma deve essere versata
+direttamente dal Cliente all’Intermediario del
+credito.<BR>
+d) Imposte e Tasse = &euro <valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMRIVALSA</valueabs><BR>
+e) Spese di istruttoria della pratica = &euro <valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMSPIST</valueabs><BR>
+f) Spese per le comunicazioni periodiche, online e/o
+cartacee a mezzo posta ordinaria = GRATUITE<BR>
+g) Spese di incasso quote =(ATC) &euro <valueabs>IDGFCQP00F/RECORD/IDGFCQP_SPINCFIN</valueabs> (Intermed.) &euro <valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMPFISSI</valueabs><BR>
+Premi relativi alla polizza di assicurazione rischi sulla
+Vita e alla polizza di assicurazione rischio di perdita
+dell’occupazione, copertura perdite pecuniarie (cfr.
+riquadro successivo)</TD>
+</TR> 
+<TR>
+<TD WIDTH=50% LINESPACE=0.5>Per ottenere il credito o per ottenerlo alle condizioni
+contrattuali offerte è obbligatorio sottoscrivere:<BR>
+1) un'assicurazione che garantisca il credito<BR>
+2) e/o un altro Contratto per un servizio accessorio<BR>
+<I>Se il finanziatore non conosce i costi dei servizi accessori,
+questi non sono inclusi nel TAEG.</I></TD>
+<TD WIDTH=50% LINESPACE=0.5>1) Si.<BR>
+h) Premio relativo alla polizza di assicurazione rischi
+sulla Vita = &euro <valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMASSMRT</valueabs><BR>
+k) Premio relativo alla polizza di assicurazione rischio di perdita dell’occupazione, copertura perdite pecuniarie = &euro <if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_FLG_RSK_IMP</valueabs>!=S</ifcond><then></then><valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMASSIMP</valueabs><else>0,00</else></if><BR>
+2) No.</TD>
+</TR> 
+</TABLE>
+
+<BR>
+
+<TABLE WIDTH=100% BORDER=0.6>
+<TR>
+<TD WIDTH=50% LINESPACE=0.5>Eventuali altri costi derivanti dal Contratto di credito</TD>
+<TD WIDTH=50% LINESPACE=0.5></TD>
+</TR> 
+<TR>
+<TD WIDTH=50% LINESPACE=0.5>Condizioni in presenza delle quali i costi relativi al
+Contratto di credito possono essere modificati</TD>
+<TD WIDTH=50% LINESPACE=0.5>Nessuna condizione.</TD>
+</TR> 
+<TR>
+<TD WIDTH=50% LINESPACE=0.5>Costi in caso di ritardo nel pagamento<BR>
+<I>Tardare con i pagamenti potrebbe avere gravi
+conseguenze per il consumatore (ad esempio la vendita
+forzata dei beni) e rendere più difficile ottenere altri crediti
+in futuro.</I></TD>
+<TD WIDTH=50% LINESPACE=0.5>Per i ritardi di pagamento saranno addebitati al Cliente
+interessi di mora pari al TAN del Contratto maggiorato di
+due punti percentuali.<BR>
+Rimborso dei costi e delle spese sostenuti per eventuali
+interventi di recupero crediti per una somma non superiore
+al 15% (quindici per cento) dell’importo scaduto.</TD>
+</TR> 
+</TABLE>
+
+<TEXT SIZE=10 ALIGN=J>
+<BR><BR><B>
+La consegna del preventivo NON impegna le parti alla stipula del contratto.<BR>
+La documentazione precontrattuale e il modulo “Informazioni europee di base sul credito ai consumatori” sono
+disponibili presso le filiali del Finanziatore, le agenzie e gli intermediari convenzionati della Mandataria.</B>
+</TEXT>
+
+</TEXT>
+</BODY>
+</PDF>

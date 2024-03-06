@@ -1,0 +1,110 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize5.5_times">
+
+<HEADER>
+<TEXT X=16 Y=-0.3>(PREV)</TEXT>
+<include file="\INCLUDE\includedStruttura.frw" value="headersiglarischio">
+</HEADER>
+
+
+
+
+<BODY>
+<ENCRYPT OWNER="soloiopossomodificare" NOCHANGE NOCOPY>
+<TEXT SIZE=9 ALIGN=C>	
+Piccolo Prestito Personale
+</TEXT>
+<BR><BR>
+<TEXT SIZE=8 ALIGN=J><B>INFORMAZIONI EUROPEE DI BASE SUL CREDITO AI CONSUMATORI  (denominato SECCI)</B>
+<BR><BR>
+PAGINA INTRODUTTIVA AL DOCUMENTO:<BR><BR>
+Il documento SECCI che troverà nelle pagine seguenti è stato elaborato sulla base dei dati forniti da lei e qui di seguito riassunti
+</TEXT><BR>
+<TABLE WIDTH=100% BORDER=0.6><TR><TD WIDTH=100%>
+<TABLE FORCEWIDTH SIZE=7.5 BORDER=0>
+<TR>
+	<TD WIDTH=30%>N° Preventivo: <valueabs>IDGPPVO00F/RECORD/IDGPPVO_NRPREV</valueabs></TD>
+	<TD WIDTH=40%></TD>
+	<TD WIDTH=30%>Data inserimento preventivo: <valueabs>IDGPPVO00F/RECORD/IDGPPVO_DATINS</valueabs></TD> 
+</TR> 
+</TABLE>
+<TABLE FORCEWIDTH SIZE=7.5 BORDER=0>
+<TR>
+	<TD WIDTH=30%>Cognome Nome: <valueabs>IDGPCLI00F/RECORD/IDGPCLI_RAGSOC</valueabs></TD> 
+	<TD WIDTH=40%></TD>
+	<TD WIDTH=30%>Sesso: <valueabs>IDGPCLI00F/RECORD/IDGPCLI_SESSO</valueabs></TD> 
+</TR> 
+</TABLE>
+<TABLE FORCEWIDTH SIZE=7.5 BORDER=0>
+<TR>
+	<TD WIDTH=35%>Nato a: <valueabs>IDGPCLI00F/RECORD/IDGPCLI_LOCNASC</valueabs></TD> 
+	<TD WIDTH=35%>Data di nascita: <valueabs>IDGPCLI00F/RECORD/IDGPCLI_DTNASC</valueabs></TD>
+	<TD WIDTH=30%>Età: <valueabs>IDGPCLI00F/RECORD/IDGPCLI_ETA</valueabs></TD> 
+</TR> 
+</TABLE>
+<TABLE FORCEWIDTH SIZE=7.5 BORDER=0>
+<TR>
+	<TD WIDTH=60%>Netto mensile: &euro <valueabs>IDGPPVO00F/RECORD/IDGPPVO_IMPNETRIC</valueabs></TD> 
+	<TD WIDTH=20%></TD>
+	<TD WIDTH=20%></TD> 
+</TR> 
+</TABLE>
+</TD></TR>
+</TABLE>
+<BR>
+<TEXT SIZE=8 ALIGN=J>
+Impegni finanziari: &euro <BR>
+- tipologia impegno: _________________ importo rata:________ scadenza:________ <IMG SRC="<valueabs>Immagini/BOX/Path</valueabs><valueabs>Immagini/BOX/Nome</valueabs>" SCALE=<valueabs>Immagini/BOX/Scale</valueabs>> intestatario:_________ <IMG SRC="<valueabs>Immagini/BOX/Path</valueabs><valueabs>Immagini/BOX/Nome</valueabs>" SCALE=<valueabs>Immagini/BOX/Scale</valueabs>> cointestatario: _________ da estinguere: <IMG SRC="<valueabs>Immagini/BOX/Path</valueabs><valueabs>Immagini/BOX/Nome</valueabs>" SCALE=<valueabs>Immagini/BOX/Scale</valueabs>> si <IMG SRC="<valueabs>Immagini/BOX/Path</valueabs><valueabs>Immagini/BOX/Nome</valueabs>" SCALE=<valueabs>Immagini/BOX/Scale</valueabs>> no<BR>
+- tipologia impegno: _________________ importo rata:________ scadenza:________ <IMG SRC="<valueabs>Immagini/BOX/Path</valueabs><valueabs>Immagini/BOX/Nome</valueabs>" SCALE=<valueabs>Immagini/BOX/Scale</valueabs>> intestatario:_________ <IMG SRC="<valueabs>Immagini/BOX/Path</valueabs><valueabs>Immagini/BOX/Nome</valueabs>" SCALE=<valueabs>Immagini/BOX/Scale</valueabs>> cointestatario: _________ da estinguere: <IMG SRC="<valueabs>Immagini/BOX/Path</valueabs><valueabs>Immagini/BOX/Nome</valueabs>" SCALE=<valueabs>Immagini/BOX/Scale</valueabs>> si <IMG SRC="<valueabs>Immagini/BOX/Path</valueabs><valueabs>Immagini/BOX/Nome</valueabs>" SCALE=<valueabs>Immagini/BOX/Scale</valueabs>> no<BR>
+- tipologia impegno: _________________ importo rata:________ scadenza:________ <IMG SRC="<valueabs>Immagini/BOX/Path</valueabs><valueabs>Immagini/BOX/Nome</valueabs>" SCALE=<valueabs>Immagini/BOX/Scale</valueabs>> intestatario:_________ <IMG SRC="<valueabs>Immagini/BOX/Path</valueabs><valueabs>Immagini/BOX/Nome</valueabs>" SCALE=<valueabs>Immagini/BOX/Scale</valueabs>> cointestatario: _________ da estinguere: <IMG SRC="<valueabs>Immagini/BOX/Path</valueabs><valueabs>Immagini/BOX/Nome</valueabs>" SCALE=<valueabs>Immagini/BOX/Scale</valueabs>> si <IMG SRC="<valueabs>Immagini/BOX/Path</valueabs><valueabs>Immagini/BOX/Nome</valueabs>" SCALE=<valueabs>Immagini/BOX/Scale</valueabs>> no<BR>
+<BR>
+Pertanto, la sua posizione debitoria totale, comprensiva della rata sotto riportata, non sarà mai superiore al 60% del suo reddito totale.<BR><BR>
+Motivo del finanziamento:  ______________(scegliere tra "per scopi personali"  e "per l'attività lavorativa svolta")<BR>
+L’accoglimento dell’eventuale Sua richiesta di finanziamento è subordinata alla consegna della documentazione completa che Le verrà richiesta, alla verifica della veridicità della stessa e all’eventuale consultazione di banche dati.<BR>
+<BR>
+Tenendo conto dei dati e degli impegni finanziari da Lei indicati all’Intermediario del credito a cui ha deciso spontaneamente di rivolgersi 
+<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_BRPR_TYPE</valueabs><in>(AMP,AP2,APM)</ifcond><then> (Agente)</then></if>
+<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_BRPR_TYPE</valueabs>==INC</ifcond><then> (Intermediario finanziario)</then></if>
+<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_BRPR_TYPE</valueabs>==MAQ</ifcond><then> (Mediatore) </then></if>, nel caso non lo avesse già fatto, Le consigliamo   di verificare preventivamente    tramite Monitorata   (disponibile   presso  l'intermediario   del  credito  a cui si è rivolto  oppure  nel sito www. siglacredit.it) se le Sue entrate ed uscite mensili attuali sono compatibili con la rata che dovrà pagare.<BR>
+<BR>
+Monitorata è uno strumento di analisi sofisticato che, del tutto gratuitamente, viene messo a Sua disposizione per aiutarLa a prendere decisioni importanti.<BR>
+In ogni caso Monitorata Le fornirà un quadro più preciso della Sua situazione e la consiglierà se procedere o meno con la sottoscrizione di un ulteriore finanziamento.<BR>
+<BR>
+La proposta, che troverà descritta in dettaglio nel modulo Secci riportato nelle pagine seguenti, avrà le caratteristiche principali di seguito riportate:<BR>
+n° rate: <valueabs>IDGPPVO00F/RECORD/IDGPPVO_RATETOT</valueabs> (6 mesi preammortamento gratuito)<BR>
+rata mensile: &euro <valueabs>IDGPPVO00F/RECORD/IDGPPVO_CANONE</valueabs><BR>
+Prodotto: Piccolo Prestito Personale<BR>
+TAN: <valueabs>IDGPPVO00F/RECORD/IDGPPVO_TXTAN</valueabs> %<BR>
+TAEG (calcolato includendo tutti i costi): <valueabs>IDGPPVO00F/RECORD/IDGPPVO_TXTAEG</valueabs> %<BR>
+Importo totale del credito: &euro <valueabs>IDGPPVO00F/RECORD/IDGPPVO_IMPNETRIC</valueabs> (al netto di qualsiasi costo a Suo carico e precisato nelle pagine seguenti.)<BR>
+<BR>
+DICHIARAZIONE DEL CLIENTE:<BR>
+I tassi di interesse sopra esposti sono stati da me verificati con la tabella dei tassi soglia in vigore nel presente trimestre di cui mi è stata consegnata copia e non superano mai il limite imposto nella stessa.<BR>
+<BR>
+<BR>
+<BR>
+IBAN PER ACCREDITO CON BONIFICO  _________________________________________________________________________<BR>
+<BR>
+INTESTATO A	__________________________________________________ DATA APERTURA CONTO CORRENTE ________________________<BR>
+<BR>
+N.B. allegare documento ufficiale della banca di riferimento
+<BR>
+<BR>
+</TEXT>
+<TEXT SIZE=8 ALIGN=J>
+<BR>
+<BR>
+Con la presente dichiaro di aver ricevuto il modulo SECCI, come da conferma data anche sul modulo di richiesta, nonché il documento contenente i tassi soglia previsti dalla legge 108/1996 in tema di usura. Inoltre, dichiaro espressamente di non aver versato alcuna somma di denaro per l'istruzione della pratica.<BR>
+<BR>
+<BR>
+<TABLE WIDTH=100% SIZE=9>
+<TR>
+<TD WIDTH=50%><B>Data consegna: <U><valueabs>IDGPPVO00F/RECORD/IDGPPVO_DATINS</valueabs></U></TD>
+<TD WIDTH=50% ALIGN=R><B>Firma del richiedente per ricevuta:</B><BR>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FEA</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FSE</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FSP</ifcond><then><INPUT TYPE=SIGNATURE NAME=C-SECCIPRV##DOCQP045##-1 WIDTH=5 HEIGHT=3></then></if></TD>
+</TR>
+</TABLE>
+</TEXT>
+</BODY>
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\SECCIPRV##DOCQP045##01_01_04.png" BACKGROUND X=14 Y=2 SCALE=25>
+</PDF>

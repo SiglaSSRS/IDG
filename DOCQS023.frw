@@ -1,0 +1,55 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8">
+<include file="\INCLUDE\Percorsi.frw">
+
+<BODY>
+<DATE FORMAT="DD/MM/YYYY">
+<FONT SIZE=12>
+<PDFPAGE SRC="DOCQS023.PDF" VALUE=1 SHOWONCE PDFOVERLAY>   
+<TEXT X=8.3 Y=3><valueabs>IDGFCQP00F/RECORD/IDGFCQP_DTINSPRV</valueabs></TEXT>
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\PRIVSIGLA#DOCQS023##01_01_09.png" BACKGROUND X=15.5 Y=1.0 SCALE=20>
+
+<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDFONTEB</valueabs><in>(FEA,FSE,FSP)</ifcond><or><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs><in>(FEA,FSE,FSP)</ifcond><then>
+<TEXT ALIGN=J x=0.0 y=23.5 x2=18.1 y2=26.5><FONT FACE="Times" SIZE=9.5>Il/La sottoscritto/a <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>, in relazione al proprio rapporto con Sigla S.r.l. e in virtù del contratto in essere tra Sigla S.r.l. e il Prestatore di Servizi Fiduciari Qualificati (QTSP – Qualified Trust Service Provider) Intesi Group S.p.A., chiede di aderire al Servizio di Firma elettronica Qualificata erogato dal QTSP nelle modalità espressamente previste dal Manuale Operativo e dai Termini e Condizioni, liberamente scaricabili al seguente link: <u>https://www.intesigroup.com/it/qtsp/documenti/</u>.
+</TEXT>
+<TEXT ALIGN=J x=0.0 y=25.5 > <FONT FACE="Times" SIZE=9.5>
+Firma Cliente: ____________________
+</TEXT>
+<TEXT ALIGN=J x=10 y=25.5 > <FONT FACE="Times" SIZE=9.5>
+Firma RAO Accertatore: ____________________________
+</TEXT>
+</then></if>
+
+<PAGE>
+<PDFPAGE SRC="DOCQS023.PDF" VALUE=2 SHOWONCE PDFOVERLAY> 
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\PRIVSIGLA#DOCQS023##01_01_09.png" BACKGROUND X=15.5 Y=1.0 SCALE=20>
+<PAGE>
+<PDFPAGE SRC="DOCQS023.PDF" VALUE=3 SHOWONCE PDFOVERLAY>    
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\PRIVSIGLA#DOCQS023##01_01_09.png" BACKGROUND X=15.5 Y=1.0 SCALE=20>
+<PAGE>
+<PDFPAGE SRC="DOCQS023.PDF" VALUE=4 SHOWONCE PDFOVERLAY>	
+<TEXT X=2 Y=14.25><valueabs>IDGFCQP00F/RECORD/IDGFCQP_DTINSPRV</valueabs></TEXT>
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\PRIVSIGLA#DOCQS023##01_01_09.png" BACKGROUND X=15.5 Y=1.0 SCALE=20>
+<PAGE>
+<PDFPAGE SRC="DOCQS023-2.PDF" VALUE=1 SHOWONCE PDFOVERLAY>	
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\PRIVSIGLA#DOCQS023##01_01_09.png" BACKGROUND X=15.5 Y=1.0 SCALE=20>
+<PAGE>
+<PDFPAGE SRC="DOCQS023-2.PDF" VALUE=2 SHOWONCE PDFOVERLAY>	
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\PRIVSIGLA#DOCQS023##01_01_09.png" BACKGROUND X=15.5 Y=1.0 SCALE=20>
+<PAGE>
+<PDFPAGE SRC="DOCQS023-2.PDF" VALUE=3 SHOWONCE PDFOVERLAY>	
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\PRIVSIGLA#DOCQS023##01_01_09.png" BACKGROUND X=15.5 Y=1.0 SCALE=20>
+<PAGE>
+<PDFPAGE SRC="DOCQS023-2.PDF" VALUE=4 SHOWONCE PDFOVERLAY>	
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\PRIVSIGLA#DOCQS023##01_01_09.png" BACKGROUND X=15.5 Y=1.0 SCALE=20>
+<PAGE>
+<PDFPAGE SRC="DOCQS023-2.PDF" VALUE=5 SHOWONCE PDFOVERLAY>
+<TEXT X=2.6 Y=20.55><valueabs>IDGFCQP00F/RECORD/IDGFCQP_DTINSPRV</valueabs></TEXT>
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\PRIVSIGLA#DOCQS023##01_01_09.png" BACKGROUND X=15.5 Y=1.0 SCALE=20>
+
+</PAGE>	
+</BODY>
+
+
+</PDF>
+	

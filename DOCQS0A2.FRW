@@ -1,0 +1,468 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize5.5">
+
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla">			
+</HEADER>
+
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestatasigla">
+</FOOTER>
+
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT">Pag. 3 di 6</TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+
+<BODY>	
+<BR>
+<BR>
+<TEXT SIZE=7.2 ALIGN=C><B>CONTRATTO DI MUTUO CONTRO CESSIONE DEL QUINTO</B></TEXT>
+<BR>
+<TEXT SIZE=7.0 ALIGN=J>
+Premessa: Il sottoscritto (in seguito denominato "CEDENTE'), presa visione delle condizioni che regolano 
+il Contratto di finanziamento rimborsabile mediante cessione salvo buon fine (o “pro solvendo”) di quote 
+della propria retribuzione mensile, di seguito riportate e che dichiara di accettare integralmente e senza 
+riserve,  
+</TEXT>
+<BR>
+<TEXT SIZE=7.0 ALIGN=C><B>Chiede</B></TEXT>
+<BR>
+<TEXT SIZE=7.0 ALIGN=J>
+a <B><valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs></B> (in seguito denominata “SIGLA”) che agisce nel presente contratto in nome e per conto di 
+B@nca 24-7 S.p.A. (di seguito denominata Banca 24-7) Sede Legale Piazza V. Veneto, 24122 Bergamo - Sede Operativa 
+Via Stoppani, 15 - 24121 Bergamo, aderente al Fondo Interbancario di Tutela dei Depositi e aderente al Fondo Nazionale 
+di Garanzia, soggetta all'attività di direzione e coordinamento di Unioni di Banche Italiane S.c.p.a, iscritto 
+all'Albo dei Gruppi Bancari n° 5026.0. e Albo delle banche 5487 - Codice Fiscale, P. Iva e n. iscr. R.I. 
+Bergamo 02805490162 - Capitale sociale &euro 316.800.000,00. - Giusta procura Atto Notaio Leonardo Ferrara in 
+Bergamo, rep. n° 131911, racc. n° 2959S1T, del 21/02/2008, la concessione di un finanziamento alle condizioni
+indicate nella presente domanda dichiarando, anche ai sensi dell'art. 18 del Dlgs 231/2007 (norme antiriciclaggio), 
+che lo stesso è finalizzato a soddisfare bisogni attinenti alla vita privata ed ai consumi propri e della famiglia. 
+Il rimborso della somma erogata verrà effettuato dal CEDENTE mediante cessione “pro-solvendo” del quinto della 
+sua retribuzione secondo le modalità sotto indicate nel rispetto delle vigenti disposizioni di legge con riguardo, 
+particolare ma non esclusivo, al Testo Unico approvato con il DPR 05/01/1950 n. 180 e relativo regolamento 
+di cui al DPR 28/07/1950 n. 895 e successive modifiche ed all’art.1198 cod. civ. <BR><BR>Il Cedente dichiara che:
+</TEXT>
+<BR>
+<TABLE SIZE=7.0 BORDER=0.5>
+<TR>
+<TD WIDTH=100% ALIGN=J>
+	DATI DEL CEDENTE<BR>
+	Cognome e Nome <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></B>   nato a <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCNASC</valueabs></B>           il <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC</valueabs></B><BR>
+	C.F. <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs>  </B>  residente e domiciliato in <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs>)</B> c.a.p. <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs></B><BR>
+	via/piazza <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs></B> n.tel  <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_TELE_RES</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_TELE_ALT</valueabs></B>
+<BR>
+Documento di identità <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DSDOCUM</valueabs></B> n.<B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_NUM_DOCUM</valueabs></B> rilasciato da <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_ENTE</valueabs> di <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_DA</valueabs></B> data emissione <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_DA_IL</valueabs></B> valido sino al <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_SCAD_IL</valueabs></B><BR>
+	Dipendente da <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs>  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_LAV</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_LAV</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_LAV</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_LAV</valueabs>)</B> dal <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTASSUNZ</valueabs></B> con la qualifica di <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DSRUOLO</valueabs></B><BR>
+	con la retribuzione annua lorda di &euro <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LRDAA</valueabs></B>    mensile lordo &euro <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LRDULTBP</valueabs></B> mensile netto &euro <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_REDD_MENS</valueabs></B>
+</TD>
+</TR>
+<TR>
+<TD WIDTH=100% ALIGN=J>
+		<B>Condizioni economiche del prestito contro cessione del quinto: </B><BR><BR>
+		- RATA MENSILE: &euro <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPCAN</valueabs></B> N. RATE <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs></B> CAPITALE LORDO MUTUATO &euro <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPMUTLRD</valueabs></B> DURATA <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DURATA</valueabs></B> MESI<BR>
+		- MODALITA’ DI PAGAMENTO : trattenuta sullo stipendio secondo le modalità indicate al punto 5 delle condizioni generali del contratto di prestito;<BR>
+		- SCADENZA PAGAMENTO DA PARTE DEL DATORE DI LAVORO : a decorrere dal mese successivo alla notifica del contratto entro il giorno 10 di ogni mese; la decorrenza del piano d’ammortamento è il giorno 1 del mese successivo alla notifica del presente contratto<BR>
+		- TASSO NOMINALE ANNUO SCALARE (TAN) APPLICATO IN MISURA FISSA PER L'INTERA DURATA DEL PRESTITO (con riferimento all’anno  commerciale , con 12 mesi da 30 giorni)<B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTAN</valueabs></B> %<BR>
+<TABLE SIZE=7.0>
+<TR>
+<TD WIDTH=70% ALIGN=J>- INTERESSI SCALARI AL TAN SOPRA ESPOSTO</TD>
+<TD WIDTH=30% ALIGN=J>&euro <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPINTER</valueabs></B></TD>
+</TR>
+<TR>
+<TD WIDTH=70% ALIGN=J>- COMMISSIONI IN FAVORE DI BANCA 24-7<FONT SIZE=4>(1)</FONT></TD>
+<TD WIDTH=30% ALIGN=J>&euro <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMCOMMBA</valueabs></B></TD>
+</TR>
+<TR>
+<TD WIDTH=70% ALIGN=J>- COMMISSIONI IN FAVORE DI SIGLA<FONT SIZE=4>(2)</FONT></TD>
+<TD WIDTH=30% ALIGN=J>&euro <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMCOMM</valueabs></B></TD>
+</TR>
+<TR>
+<TD WIDTH=70% ALIGN=J>- COMMISSIONI IN FAVORE DELL’AGENTE</TD>
+<TD WIDTH=30% ALIGN=J>&euro <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPROVTOT</valueabs></B></TD>
+</TR>
+<TR>
+<TD WIDTH=70% ALIGN=J>- COSTO DEL SERVIZIO ADDEBITATO DAL DATORE DI LAVORO O ENTE PREVIDENZIALE<FONT SIZE=4>(3)</FONT></TD>
+<TD WIDTH=30% ALIGN=J>&euro <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPFISSI</valueabs></B></TD>
+</TR>
+<TR>
+<TD WIDTH=70% ALIGN=J>- COSTI PREMIO ASSICURATIVO GARANZIA CASO MORTE<FONT SIZE=4>(4)</FONT></TD>
+<TD WIDTH=30% ALIGN=J>&euro <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMASSMRT</valueabs></B></TD>
+</TR>
+<TR>
+<TD WIDTH=70% ALIGN=J>- COSTI PREMIO ASSICURATIVO RISCHIO PERDITA D’IMPIEGO<FONT SIZE=4>(4)</FONT></TD>
+<TD WIDTH=30% ALIGN=J>&euro <B><if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_FLG_RSK_IMP</valueabs>==N</ifcond><then><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMASSIMP</valueabs><else>0,00</if></B></TD>
+</TR>
+<TR>
+<TD WIDTH=70% ALIGN=J>- COSTI PREMIO ASSICURATIVO RISCHIO CREDITO<FONT SIZE=4>(4)</FONT></TD>
+<TD WIDTH=30% ALIGN=J>&euro <B><if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_FLG_RSK_IMP</valueabs>==S</ifcond><then><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMASSIMP</valueabs><else>0,00</if></B></TD>
+</TR>
+<TR>
+<TD WIDTH=70% ALIGN=J>- ONERI ERARIALI/IMPOSTA DI BOLLO<FONT SIZE=4>(1)</FONT></TD>
+<TD WIDTH=30% ALIGN=J>&euro <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMRIVALSA</valueabs></B></TD>
+</TR>
+<TR>
+<TD WIDTH=70% ALIGN=J>- NETTO RICAVO</TD>
+<TD WIDTH=30% ALIGN=J>&euro <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPNET</valueabs></B></TD>
+</TR>
+<TR>
+<TD WIDTH=70% ALIGN=J>- COMMISSIONE ESTINZIONE ANTICIPATA <B>1 %</B>  del capitale residuo</TD>
+<TD WIDTH=30% ALIGN=J></TD>
+</TR>
+<TR>
+<TD WIDTH=70% ALIGN=J>- INTERESSI DI MORA : pari all’<B>1.25</B> % in ragione di ogni mese o frazione di mese</TD>
+<TD WIDTH=30% ALIGN=J></TD>
+</TR>
+</TABLE>
+<TABLE SIZE=7.0><TR><TD>
+	  - EROGAZIONE DEL PRESTITO: L’erogazione del prestito avverrà secondo le previsioni dell’art.2 delle Condizioni Generali del contratto di prestito<BR>
+		- TAEG/ISC <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTAEG</valueabs></B> %, calcolato includendo tutte le spese indicate sopra, inclusi gli oneri erariali, come da Istruzioni di Banca d’Italia.<BR> 
+		- TEG <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTEG</valueabs></B> %, calcolato includendo tutte le spese  indicate sopra ad esclusione degli oneri erariali, come da Istruzioni di Banca d’Italia.<BR>
+ 			Il TAEG e il TEG sono stati calcolati ipotizzando l’anno composto da dodici mesi uguali, sulla base del calendario civile, ai sensi del decreto 
+ 			del Ministero del Tesoro 6/5/2000, a decorrere dal primo giorno del mese successivo alla conclusione del presente contratto.<BR>
+<BR>
+(1) Costo non ripetibile in caso di estinzione anticipata<BR>
+(2) Di cui la quota ripetibile è quantificata in 1,7 € a rata<BR>
+(3) Costo ripetibile in caso di estinzione anticipata<BR>
+(4) Costo di cui una parte ripetibile e l’altra no, come indicato all’art. 4 delle cond. generali</TD></TR>
+</TABLE>
+</TD></TR>
+
+<TR>
+<TD>
+<B>Dichiarazione per ricezione comunicazioni periodiche e lettera di conferma del contratto</B><BR>
+Il sottoscritto <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></B> dichiara di voler ricevere le comunicazioni periodiche 
+che SIGLA invierà almeno una volta all’anno, e comunque alla scadenza del contratto, contenenti le informazioni 
+chiare e complete sullo svolgimento del rapporto e un quadro aggiornato delle condizioni applicate, nonché la 
+lettera di conferma contratto, al seguente indirizzo:<BR> 
+<IMG SRC="<valueabs>Immagini/BOX/Path</valueabs><valueabs>Immagini/BOX/Nome</valueabs>" SCALE=<valueabs>Immagini/BOX/Scale</valueabs>>  <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs>)</B> c.a.p. <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs></B><BR>
+<IMG SRC="<valueabs>Immagini/BOX/Path</valueabs><valueabs>Immagini/BOX/Nome</valueabs>" SCALE=<valueabs>Immagini/BOX/Scale</valueabs>> eventuale indirizzo e-mail su cui ricevere le comunicazioni
+periodiche:___________________________________________________________________________________________________ 
+</TD>
+</TR>
+</TABLE>
+<BR>
+<TEXT SIZE=7.0 ALIGN=L>
+Il CEDENTE approva con la firma del presente contratto le condizioni generali di finanziamento di seguito riportate che accetta integralmente senza riserva alcuna.
+<BR>
+Il CEDENTE <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></B>__________________________________
+</TEXT>
+<PAGE>
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT">Pag. 4 di 6</TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+<BR>
+<BR>
+<TEXT SIZE=7.0 ALIGN=J>
+Il CEDENTE afferma che tutto quanto sopra dichiarato corrisponde a verità e dichiara di non aver mai subito procedure concorsuali, esecutive o azioni legali in genere, di non versare in difficoltà economica e finanziaria. Dichiara, inoltre, di non essere titolare di alcuna attività che potrebbe determinare una sua personale dichiarazione di fallimento. Il CEDENTE dichiara altresì:<BR>
+<LI> Che gli è stata consegnata copia dell’avviso “principali <B>diritti del cliente</B>”, del foglio informativo, del documento sui tassi soglia previsti dalla legge n. 108/1996 in tema di usura nonché di essere stati informati della possibilità di rivolgersi all'ABF (procedura reclami) e di aver ricevuto la Guida sull’Arbitro Bancario e Finanziario.<BR>
+<LI> Di essere stati informati della possibilità di ottenere copia del testo del contratto idonea per la stipula, che include il "documento di sintesi", prima della conclusione del contratto, come da loro stessi sottoscritto nella richiesta-consenso.<BR>
+<LI> Di aver ricevuto copia del presente contratto compilato in ogni sua parte, completo del documento di sintesi, di aver preso visione delle condizioni generali di finanziamento che accettano integralmente senza riserva alcuna e di aver ricevuto l’estratto delle condizioni di polizza.<BR>
+<LI> Di essere stato previamente informato per iscritto, mediante presa visione dell’informativa contenuta nel modulo richiesta-consenso sottoscritto, circa gli  elementi indicati   dall’art.13 del   D.Lgs.196/03 e dall’art.5 del codice deontologico sui sistemi di informazioni creditizie, ed espressamente  consente  che i dati forniti  per lo svolgimento dell’istruttoria  preliminare e,  in caso di  accoglimento della domanda di finanziamento, 
+   i dati relativi allo svolgimento del rapporto contrattuale, siano trattati e comunicati a terzi nei termini di cui alla predetta informativa.<BR><BR>
+	<BR>
+	<BR>
+	IL CEDENTE <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></B>__________________________________
+</TEXT>
+<BR>
+<TEXT SIZE=7.0 ALIGN=J>
+Il sottoscritto dichiara di aver letto e di accettare integralmente le condizioni economiche riportate sopra; 
+e le condizioni generali del prestito ed in particolare, di approvare espressamente i disposti di cui ai seguenti 
+punti delle Condizioni generali di finanziamento ( artt.1341 e 1342 cod.civ., nonché artt.33 e ss. del D.L. n.206 
+del 6.09.05 – Codice del Consumo) : 2 (Validità e Conclusione del contratto); 3. (Obbligazioni del CEDENTE); 
+4. (Trattenute); 5. (Autorizzazione del CEDENTE); 7. (Cessazione del rapporto di lavoro); 
+8. (Copertura assicurativa del rischio di decesso del CEDENTE); 
+9 (Copertura assicurativa del rischio di mancato adempimento, da parte del CEDENTE dell’ obbligazione di rimborso del finanziamento); 
+14. (Estinzione anticipata); 15. (Ritardo nei pagamenti); 16. (Decadenza dal beneficio del termine e risoluzione del contratto);  
+18. (Variazioni delle condizioni economiche e normative); 23. (Reclamo cliente)<BR>
+	<BR>
+	<BR>
+	<BR>
+	IL CEDENTE <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></B>__________________________________
+</TEXT>
+<BR>
+<TEXT SIZE=7.0 ALIGN=J>
+<I><valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs> quale mandataria informa il cedente che il finanziamento richiesto può essere ottenuto anche direttamente 
+presso gli uffici della <valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs>, siti in <valueabs>IDGFAZI00F/RECORD/IDGFAZI_INDIR_SIG</valueabs>, tel. <valueabs>IDGFAZI00F/RECORD/IDGFAZI_TELE_SIG</valueabs> o tramite il sito Internet www.siglacredit.it 
+e che, pertanto, l’attività dell’agente non è necessaria per l’ottenimento del credito. Resta , inoltre, inteso 
+che l’agente viene già ricompensato da Sigla Srl per la sua attività di agente in attività finanziaria per l’ottenimento 
+del presente finanziamento (voce compresa nel taeg) e che pertanto nulla è dovuto a nessun titolo dal CEDENTE all’agente 
+con riferimento al presente contratto di finanziamento.</I><BR>
+<BR>
+PARTE RISERVATA ALL’ACCERTATORE. Il sottoscritto, incaricato dell’identificazione (art.30, comma 8 del Dlgs 231/2007), 
+dichiara, sotto la propria personale responsabilità,di aver provveduto ad adeguata verifica dell’identità del CEDENTE, 
+le cui generalità  sono state desunte dai documenti d’identità esibiti in originale e sono state esattamente riportate 
+nel presente contratto unitamente ai riferimenti del documento esibito; dichiara inoltre che il CEDENTE afferma, 
+e tale appare sulla base degli elementi disponibili, di essere l’effettivo titolare del finanziamento oggetto del 
+presente contratto, il cui scopo è stato indicato nella premessa unitamente alle altre informazioni fornite 
+(art. 21 del Dlgs 231/2007). Il sottoscritto dichiara inoltre che la sottoscrizione del contratto e degli 
+allegati è avvenuta in sua presenza e che tutta la documentazione fornita ai fini dell’ottenimento del 
+presente finanziamento è stata visionata dall’originale presentato dal CEDENTE.
+</TEXT>
+<BR>
+<BR>
+<TABLE SIZE=7.0>
+<TR>
+	<TD WIDTH=50%><BR>Cognome e nome accertatore_________________________________________<BR>
+	<BR>	
+	(che opera per conto della società sotto indicata)<BR><BR></TD> 
+	<TD WIDTH=50%></TD>
+</TR>
+<TR>
+	<TD WIDTH=50%></TD> 
+	<TD WIDTH=50% ALIGN=C><B><valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs></B>
+	<valueabs>IDGFAZI00F/RECORD/IDGFAZI_INDIR_SIG</valueabs> <valueabs>IDGFAZI00F/RECORD/IDGFAZI_SIGLASRL</valueabs>  <valueabs>IDGFAZI00F/RECORD/IDGFAZI_DSNAZ_SIG</valueabs> -
+	<BR>Intermediario Finanziario iscritto Elenco Speciale ex art.107 TUB n. 33023.3 Registro Imprese, codice fiscale 
+	<BR>e partita IVA <valueabs>IDGFAZI00F/RECORD/IDGFAZI_IVA_SIG</valueabs> - Capitale Sociale  
+	<valueabs>IDGFAZI00F/RECORD/IDGFAZI_CAPSOC_SIG</valueabs> &euro  
+	<BR><IMG SRC="<valueabs>Immagini/FIRMA/Path</valueabs><valueabs>Immagini/FIRMA/Nome</valueabs>" SCALE=<valueabs>Immagini/FIRMA/Scale</valueabs>><BR>
+	TIMBRO E FIRMA <valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs><BR></TD>
+</TR>
+<TR>
+	<TD WIDTH=50%></TD> 
+	<TD ALIGN=C WIDTH=50%>
+	<BR>	
+	<TABLE SIZE=7.0 BORDER=0.5>
+	<TR><TD>Quale Mandataria di B@NCA 24-7 S.p.a., giusta procura <BR> 
+			Atto Notaio Leonardo Ferrara in Bergamo del 21/02/2008 <BR>
+		Rep. n. 131911 Racc. 2959S1T<BR>
+		</TD></TR>
+  </TABLE>
+  <BR>	
+	</TD>
+</TR>
+<TR>
+	<TD WIDTH=50%><BR> <B>Firma leggibile (accertatore)</B> ___________________________________________<BR>
+	 <BR>
+	 <TABLE>
+	 	<TR>
+	 	<TD WIDTH=28% VALIGN=B ALIGN=R SIZE=6.5>Timbro agente</TD>
+	 	<TD WIDTH=5%></TD>
+	 	<TD WIDTH=70% BORDER=0.8><BR><BR><BR><BR><BR></TD>	
+	 	<TD WIDTH=2%></TD>	
+	 </TR>
+	 </TABLE>
+	</TD> 
+	<TD WIDTH=50%></TD>
+</TR>    
+</TABLE>
+<PAGE>
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT">Pag. 5 di 6</TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+<BR>
+<BR>
+<TEXT SIZE=6.0 ALIGN=J>
+<B>Condizioni generali del contratto di prestito contro cessione del quinto</B><BR>
+<B>1. Documento di sintesi.</B> Il documento di sintesi costituisce parte integrante e sostanziale del presente contratto.<BR>
+<B>2. Validità e Conclusione del contratto.</B> Sigla comunica in forma scritta al CEDENTE, mediante sottoscrizione della 
+presente scrittura o altri mezzi equipollenti, l’eventuale accoglimento della domanda di prestito contro cessione del quinto. 
+L’erogazione del finanziamento è comunque subordinata alla ricezione di tutti gli atti e dei documenti necessari per la validità 
+e garanzia della cessione dello stipendio e, in particolare, del benestare all’effettuazione delle trattenute da parte del datore 
+di lavoro o atto ad esso equipollente. Sigla è autorizzata a trattenere e compensare tutte le somme eventualmente corrisposte al 
+CEDENTE a titolo di acconti sull’importo da erogare con il finanziamento nonché, nell’ipotesi di concorrenza con altri prestiti 
+e/o pignoramenti sulla retribuzione, tutte le somme occorrenti per l’estinzione di tali operazioni.  Ai fini dell’applicazione 
+al contratto delle condizioni economiche pro-tempore vigenti, come da foglio informativo consegnato al cedente e dei tassi debitori 
+di cui alla L.108/1996, si fa riferimento alla data della presente proposta contrattuale.<BR>
+<B>3. Obbligazioni del CEDENTE.</B> Il CEDENTE si obbliga : a) a cedere a SIGLA tutta la quota di stipendio disponibile fino ad un 
+massimo di 1/5 e/o  tutta la liquidazione  secondo leggi, decreti e regolamenti vigenti in materia di cessione dello stipendio ed 
+in base a quanto previsto dal codice civile per la cessione pro-solvendo; b) a rimborsare a SIGLA, mediante la cessione pro-solvendo 
+della propria quota di retribuzione, l’intero importo convenuto alla scadenza e con le modalità indicate nel frontespizio alla voce 
+condizioni economiche del prestito contro cessione del quinto; c) a comunicare a Sigla l’esistenza di eventuali vincoli sulla 
+retribuzione e di anticipazioni sul trattamento di fine rapporto o su indennità equipollenti; d) a comunicare a Sigla qualsiasi 
+variazione dei dati forniti.<BR>
+<B>4. Trattenute.</B> SIGLA, in sede di liquidazione del prestito verserà al CEDENTE il netto ricavo dell’operazione, 
+pari ad <B> &euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPNET</valueabs></B>  (al lordo di eventuali anticipazioni ed estinzioni). Tale somma è stata determinata trattenendo dall’importo 
+capitale lordo mutuato di <B> &euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPMUTLRD</valueabs></B>  le somme corrispondenti alle seguenti voci:<BR>
+(i) Interessi scalari pari a <B> &euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPINTER</valueabs></B>  calcolati al tasso nominale annuo (TAN) del <B> <valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTAN</valueabs> % </B> . <BR>
+(ii) la commissione pari ad <B> &euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMCOMMBA</valueabs></B>  a favore di BANCA 24-7 a copertura delle attività preliminari 
+e conclusive del prestito quali, a titolo esemplificativo, l’esame della documentazione; la copertura del 
+relativo rischio per tutta la durata dell’operazione; gli oneri per le operazioni di acquisizione della provvista; 
+la elaborazione dei dati in funzione della legge 197/91 etc.;<BR>
+(iii) <B> &euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMSPIST</valueabs></B>  per l’attività istruttoria del prestito: le spese di istruttoria tra le quali quelle di notifica, postali 
+ed ogni altra necessaria alla tempestiva esecuzione  del servizio;<BR>
+(iv) <B> &euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPROVTOT</valueabs></B>  per la la promozione ed il collocamento dei prestiti mediante offerta fuori sede, l’informativa precontrattuale, 
+l’acquisizione della documentazione necessaria, l’elaborazione dei dati in funzione delle leggi in materia di trasparenza, antiriciclaggio, 
+antiusura e trattamento dei dati personali<BR>
+(v) <B> &euro <valu	eabs>IDGFCQS00F/RECORD/IDGFCQS_IMCOMM</valueabs></B>  per altrettante competenze dovute a SIGLA, a copertura degli oneri e dei costi che non siano altrimenti disciplinati  
+in contratto e gravanti sull’Intermediario mutuante per l’attività d’intermediazione del prestito, in particolare : 1)la promozione, l’informativa 
+precontrattuale, l’analisi della documentazione necessaria, l’elaborazione dei dati in funzione delle leggi in materia di trasparenza, antiriciclaggio, 
+antiusura e trattamento dei dati personali, la notificazione dei contratti di mutuo agli Enti interessati, la rimessa del netto ricavo al CEDENTE, 
+le segnalazioni di vigilanza; 2) la definizione dei relativi rapporti contabili e delle operazioni di provvista ; 3) l’eventuale estinzione dei prestiti 
+in precedenza contratti dal CEDENTE; 4) la gestione delle rate di rimborso in scadenza; 5)  le perdite relative alla differenza di valuta tra erogazione 
+iniziale e decorrenza dell’ammortamento; 6)le operazioni di copertura del rischio di andamento dei tassi di interesse; 7) le comunicazioni periodiche; 
+8) eventuali costi per garanzia del mancato adempimento, non derivante dal decesso, dell’obbligazione di rimborso del finanziamento; 
+9) eventuali coperture assicurative del rischio crediti il cui beneficiario è Sigla stessa; 10)  oneri per la prestazione della garanzia 
+“non riscosso per riscosso”<BR>
+(vi) il costo del servizio da versare all’Inps pari a &euro <B> <valueabs> RECORD/IDGFCQS_IMPFISSI</valueabs></B> <BR>
+(vii) la rivalsa degli oneri erariali conseguenti all’operazione, se e per quanto dovuti, pari a &euro <B> <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMRIVALSA</valueabs></B> <BR>
+(viii) eventuali  premi pari a <B> &euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMASSTOT</valueabs> </B> anticipatamente dovuti in funzione del rimborso del capitale mutuato relativi:<BR>
+<IMG SRC="<valueabs>Immagini/BOX/Path</valueabs><valueabs>Immagini/BOX/Nome</valueabs>" SCALE=<valueabs>Immagini/BOX/Scale</valueabs>>
+  Premio anticipatamente dovuto relativo alla polizza  di assicurazione in virtù della quale il CEDENTE ha ottenuto,  nell’ interesse del cessionario,  
+copertura del rischio di decesso avvenuto prima dell’estinzione del debito.<BR>
+<IMG SRC="<valueabs>Immagini/BOX/Path</valueabs><valueabs>Immagini/BOX/Nome</valueabs>" SCALE=<valueabs>Immagini/BOX/Scale</valueabs>>
+  Premio anticipatamente dovuto alla polizza di assicurazione in virtù della quale il CEDENTE ha ottenuto copertura del rischio di cessazione del diritto 
+allo stipendio causato dalla risoluzione definitiva del rapporto di lavoro.<BR>
+<B>5. Autorizzazioni del CEDENTE.</B> IL CEDENTE autorizza: a) SIGLA a notificare al proprio Datore di lavoro il presente contratto di prestito contro cessione 
+del quinto secondo quanto previsto dalla normativa vigente in materia; b) il Datore di Lavoro a prelevare dalla propria retribuzione la somma dovuta a 
+SIGLA ad iniziare dal mese successivo alla notifica del presente atto e così di seguito, ininterrottamente, fino alla totale estinzione del debito, 
+ed a versarla a SIGLA nei seguenti c/c: <BR><B>Bonifico bancario su Cassa di Risparmio del Veneto, 
+IBAN: IT50H0622561620100000001913 intestato a Sigla S.r.l.<BR>
+Bonifico Postale su Poste Italiane SPA, IBAN: IT53G0760112000000073807760 intestato a Sigla S.r.l.<BR><BR></B>
+<B>6. Riduzione della retribuzione.</B> Nei casi di eventuale riduzione, per qualsiasi causa, della retribuzione mensile del CEDENTE – ferme restando le 
+pattuizioni afferenti la copertura assicurativa – la presente cessione avrà effetto  per quote non superiori a un quinto della retribuzione ridotta e 
+per tutto il tempo necessario all’estinzione del residuo debito del CEDENTE.<BR>
+<B>7. Cessazione del rapporto di lavoro.</B> In caso di cessazione, per qualsiasi causa,del rapporto di lavoro, la cessione si estenderà sul trattamento 
+di fine rapporto, sull’eventuale liquidazione della prestazione di cui agli artt. 7 e 10 D. Lgs 124/93, sull’eventuale trattamento pensionistico e sulle 
+somme dovute al CEDENTE a qualunque titolo e sotto qualsiasi denominazione; a tal fine il CEDENTE consente che l’Amministrazione ceduta trattenga da 
+tali somme l’importo necessario per l’estinzione della cessione e che parimenti la trattenuta venga effettuata da qualsiasi Ente di previdenza o di 
+assicurazione ai quali il CEDENTE medesimo sia iscritto per legge, per regolamento o per contratto di lavoro. Qualora dette somme non fossero sufficienti 
+a coprire il residuo debito od il CEDENTE non avesse diritto ad alcuna indennità o pensione, il CEDENTE è tenuto a versare immediatamente a SIGLA in un'unica 
+soluzione il residuo debito con le modalità ed alle condizioni previste dall’art.12.Il CEDENTE si impegna a non richiedere la liquidazione o anticipazioni 
+su dette somme durante la vigenza del presente Contratto, riconoscendo che tali somme, ivi comprese quelle di futura maturazione, costituiscono oggetto di 
+garanzia a favore di Sigla per l’integrale rimborso del finanziamento erogato. Il CEDENTE si impegna, quindi, per la durata della cessione, a non avvalersi 
+del diritto di cui al comma 6 dell’art. 2120 cod. civ., come modificato dalla legge 29.05.1982 n. 297 se ed in quanto a lui applicabile. 
+Il CEDENTE conferisce ora per allora mandato irrevocabile a Sigla per richiedere la liquidazione delle somme dovute, esercitando ove d’uopo il diritto di riscatto, 
+verso ogni ente, compresi i fondi pensione integrativi, nei cui confronti il CEDENTE risultasse creditore, autorizzando le relative comunicazioni al Datore di lavoro 
+e agli Enti interessati. Gli eventuali oneri imposti dall’Amministrazione e dagli Enti di Previdenza per l’effettuazione delle trattenute saranno a carico del CEDENTE. <BR>
+<B>8. Copertura assicurativa del rischio di decesso del CEDENTE:</B> La premorienza del CEDENTE determina a favore del CESSIONARIO la corresponsione da parte 
+dell’ Assicuratore di un importo pari al debito residuo, in linea capitale, computato alla data del decesso. A ricezione del suddetto importo, da parte del CESSIONARIO, 
+il debito si considera estinto. L’Assicuratore rinuncia ad ogni diritto, ragione o azione verso gli eredi del CEDENTE e rinuncia altresì a qualsiasi pretesa in relazione 
+alle somme poste dal CEDENTE a garanzia del finanziamento: trattamento di fine rapporto (art 2120 del c.c.) o indennità equipollente, somme maturate presso Fondo Pensione.<BR>
+<B>9. Copertura assicurativa del rischio di mancato adempimento, da parte del CEDENTE dell’ obbligazione di rimborso del finanziamento.</B> Il CEDENTE  prende atto che 
+il Cessionario potrà, con costi a proprio carico, stipulare una polizza credito a garanzia del mancato adempimento, non derivante dal decesso, dell’obbligazione di rimborso 
+del finanziamento, Per le somme corrisposte al CESSIONARIO dall’Assicuratore, questo resta surrogato in ogni diritto, ragione, privilegio ed azione del CESSIONARIO verso 
+il CEDENTE ed il relativo: Datore di lavoro o altro ente, quali depositari del trattamento di fine rapporto (art.2120 CC) o indennità equipollente; Fondo Pensione; 
+Istituto di previdenza Obbligatoria. Alternativamente il CEDENTE potrà stipulare polizza individuale nel proprio interesse, a copertura delle perdite pecuniarie 
+causate dalla risoluzione definitiva del rapporto di lavoro non derivante dal decesso. L’ Assicuratore in caso di indennizzo rinunzia alla rivalsa o surrogazione 
+nei confronti dell’ Assicurato.<BR>
+<B>10. Richiamo alle armi.</B> In caso di richiamo alle armi del CEDENTE, la cessione estenderà i suoi effetti anche sulle indennità che venissero in tal caso liquidate 
+al CEDENTE medesimo, rimanendo fin da ora autorizzato il Datore di lavoro da cui dipende, o eventualmente altri Enti, non escluso l’INPS, a prelevare mensilmente dalle 
+dette indennità un importo pari a un quinto di esse, per versarlo a SIGLA<BR>
+<B>11. Trasferimento ad altro impiego</B> Nel caso in cui il CEDENTE venga a trovarsi alle dipendenze di altro Datore di lavoro autorizza sin da ora SIGLA a notificare 
+il presente contratto al nuovo Datore di lavoro perché questo possa operare sulla retribuzione che a qualsiasi titolo gli corrisponderà, la ritenuta della quota mensile 
+prevista dalla presente cessione, nonché su quanto previsto all’art.7 del presente contratto, escluso ogni effetto novativo. Agli effetti di cui sopra il CEDENTE 
+si obbliga a denunciare immediatamente il suo trasferimento a SIGLA nonché al Datore di lavoro da cui si allontana, affinché quest’ultimo possa inviare al nuovo 
+Datore di lavoro del CEDENTE (anche se non compreso tra quelli indicati nell’art. 1 del DPR 180/50) il conto della precedente cessione assumendo, in difetto, 
+ogni responsabilità a norma di legge. Tutte le spese, gli oneri e le perdite di valuta a cui SIGLA  potrà eventualmente andare incontro per la notifica e per il fatto 
+stesso del trasferimento saranno a carico del CEDENTE.<BR>
+<B>12. Pagamenti</B> Tutti i pagamenti devono essere eseguiti a favore di SIGLA così come indicato all’art.5 di cui sopra. Eventuali somme dovute a favore dell’agente, 
+cui il CEDENTE ha discrezionalmente ritenuto di rivolgersi sono a suo esclusivo carico ed il relativo pagamento non potrà avere alcun effetto nei confronti di SIGLA.<BR>
+<B>13. Clausola di ripensamento.</B> Il CEDENTE ha la facoltà di recedere dal presente contratto entro 14 giorni dalla data di conclusione dello stesso. L’esercizio 
+della facoltà di recesso dovrà essere comunicato per iscritto a mezzo lettera raccomandata con avviso di ricevimento, consegnata alle PP.TT entro il termine sopra 
+indicato e indirizzata a : <B><valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs></B> <valueabs>IDGFAZI00F/RECORD/IDGFAZI_INDIR_SIG</valueabs><valueabs>IDGFAZI00F/RECORD/IDGFAZI_SIGLASRL</valueabs>. 
+L’esercizio della facoltà di recesso comporterà l’obbligo di restituzione a SIGLA da parte del CEDENTE di quanto eventualmente ricevuto a titolo di finanziamento ed il recesso non avrà efficacia 
+se non sarà restituita la somma corrispondente al netto ricavo dell’operazione di cui all’art. 4.<BR>
+</TEXT>
+<PAGE>
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT">Pag. 6 di 6</TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+<BR>
+<BR>
+<TEXT SIZE=6.0 ALIGN=J>
+<B>14. Estinzione anticipata.</B> Anche in deroga a quanto previsto dall’art.38 del DPR 180/50, il CEDENTE ha facoltà in ogni momento di estinguere anticipatamente il proprio debito. Non verranno invece accettate , in
+conformità all’art. 39 del DPR 180/50, richieste di estinzione anticipata ante-termine del finanziamento proposte da altri operatori finanziari né verranno effettuate direttamente da SIGLA; nel caso di richieste di
+rinnovo e di estinzione non ante-termine del finanziamento, SIGLA restituirà al CLIENTE gli interessi per il periodo di ammortamento non goduto e quota parte delle commissioni SIGLA; inoltre, SIGLA si
+adopererà affinché ai clienti siano ristorate anche la quota parte delle commissioni percepite dalla rete distributiva non maturate e le quote non maturate dei premi assicurativi.
+Ricevuta la relativa richiesta, SIGLA comunica al CEDENTE l'ammontare del capitale residuo, degli interessi (calcolati al medesimo tasso annuo nominale – TAN – applicato) e degli altri oneri maturati, nonché di
+una commissione nella misura massima dell'1% del capitale residuo, il tutto con riferimento alla data della prima rata successiva in scadenza. Entro quest'ultima data il CEDENTE provvederà quindi al pagamento in
+un'unica soluzione delle somme dovute, determinando così l'estinzione del debito. Qualora il CEDENTE non versi tempestivamente dette somme, l'estinzione non avrà luogo e potrà essere effettuata solo con
+riferimento alla data della successiva scadenza, salvo il pagamento degli interessi di mora per ritardato pagamento. Dopo il ricevimento del pagamento, SIGLA provvederà a comunicare al Datore di lavoro che il
+CEDENTE ha estinto anticipatamente il proprio debito.<BR>
+
+<B>15. Ritardo nei pagamenti.</B> in caso di ritardo nel versamento anche di una singola rata, a qualsiasi causa sia attribuibile, gli interessi di mora decorreranno di pieno diritto senza 
+necessità di comunicazione dalla scadenza della rata non pagata fino all’effettivo pagamento. L’interesse di mora sarà applicato sulla somma capitale e calcolato in misura pari all’1.25% 
+in ragione di mese o frazione di mese; comporta, inoltre, l’obbligo di rimborsare le spese sostenute per eventuali solleciti effettuati a mezzo posta o telefono anche da soggetti terzi 
+specificatamente incaricati, da &euro 5,00 fino ad un massimo di &euro 60,00 per rata, ed il costo di eventuali interventi domiciliari svolti anche da soggetti terzi specificatamente incaricati, 
+da &euro 10,00 fino ad un massimo di &euro 80,00 a rata, nonché per eventuali spese legali sostenute in base alle parcelle liquidate. Gli interessi di mora previsti dal presente articolo si 
+applicano ad ogni somma dovuta ai sensi del presente Contratto dal Cedente e dai Debitori Ceduti al Finanziatore.	<BR>
+<B>16. Decadenza dal beneficio del termine e risoluzione del contratto.</B> La cessazione del rapporto di lavoro, l’eventuale cessazione, sospensione o riduzione per qualsiasi causa, dell’emolumento 
+mensile, il mancato pagamento di almeno due rate ,ovvero la mancata osservanza degli altri obblighi contrattuali previsti all’art.3, e 5, o l’infedele dichiarazione circa i dati e le informazioni 
+forniti da parte del CEDENTE, nonché il verificarsi delle ipotesi di cui all’art.1186 cod. civ., comporta la facoltà per SIGLA di dichiarare senz’altro la decadenza dal beneficio del termine o 
+la risoluzione del contratto. In tal caso il CEDENTE dovràrimborsare in un’unica soluzione, entro 15 giorni dal ricevimento della relativa comunicazione, il capitale residuo, scaduto ed a scadere, 
+gli interessi e gli eventuali oneri relativi alle rate scadute e non pagate e una penale pari al 5% del capitale a scadere ed ogni altra somma eventualmente dovuta ai sensi del presente contratto. 
+In caso di mancato pagamento della predetta somma, dalla data della ricezione della dichiarazione di decadenza dal beneficio del termine o di risoluzione del contratto, decorreranno gli interessi 
+di mora sull’intera somma non pagata.<BR>
+<B>17. Oneri e spese.</B> Le spese e tasse di bollo e di registro del presente atto, richieste dagli Uffici Fiscali, sia all’atto della registrazione sia successivamente, anche in via supplementare, 
+nonché gli oneri erariali, le spese postali, di notifica e quelle eventualmente richieste da parte del Datore di lavoro per ogni esigenza anche successiva all’instaurazione del rapporto, ivi comprese 
+le comunicazione relative al trasferimento del CEDENTE sono a carico del CEDENTE stesso, il quale autorizza, ora per allora, il Datore di lavoro da quale dipende attualmente o dipenderà in futuro e 
+dal quale percepirà in quell’epoca i suoi emolumenti a trattenere dagli emolumenti dovuti la somma che, a tale titolo, gli venisse richiesta da SIGLA o da chi per essa; tale trattenuta potrà avvenire 
+anche in eccedenza del quinto della retribuzione. Sono inoltre a carico del Cedente le spese sostenute per il recupero del credito, anche in dipendenza delle eventuali azioni giudiziarie e non, 
+che dovessero rendersi necessarie.<BR>
+<B>18. Variazioni delle condizioni economiche e normative.</B> Fermo restando che il presente finanziamento è a tasso fisso, nel rispetto della normativa vigente, Sigla può modificare unilateralmente 
+le condizioni economiche e normative del presente contratto (inclusi, a titolo esemplificativo, spese e oneri accessori) in  caso di giustificato motivo (a titolo esemplificativo costituiscono giustificato 
+motivo, tra l’altro, le variazioni generalizzate dei tassi di interesse e delle condizioni di mercato nonché i mutamenti della disciplina civilistica e fiscale relativa ai rapporti regolati nelle presenti condizioni). 
+Le variazioni delle condizioni economiche e normative dovranno essere comunicate espressamente al Cedente con lettera ovvero mediante supporto durevole preventivamente accettato dal Cedente. La comunicazione dovrà 
+contenere l’indicazione del giustificato motivo, la data di decorrenza della modifica e le modalità ed i termini per l’esercizio del diritto di recesso in capo al Cedente. Il termine di decorrenza delle variazioni 
+non potrà essere inferiore a 30 giorni dalla data della comunicazione. In caso di variazioni sfavorevoli, il Cedente avrà diritto di recedere dal contratto entro 60 giorni dalla ricezione della relativa comunicazione, 
+senza penalità e con applicazione delle condizioni precedentemente praticate, saldando contestualmente ogni suo debito verso Sigla. Se il cedente non esercita tale diritto nel termine indicato, le variazioni si intendono 
+accettate.<BR>
+<B>19. Normativa applicabile.</B> Per tutto ciò che non fosse disciplinato dal presente Contratto, si applicano le disposizioni del codice civile, il DPR 180/50 ed ogni relativa modifica e integrazione.<BR>
+<B>20. Elezione domicilio e comunicazioni periodiche.</B> Ai fini di ogni comunicazione relativa al presente contratto e per la notifica di eventuali atti giudiziali, le parti eleggono domicilio presso l’indirizzo 
+indicato nel frontespizio. Sigla invia al Cedente una volta all’anno e, comunque, alla conclusione del rapporto, una comunicazione relativa allo svolgimento del Contratto ed alle condizioni applicate. Il contenuto 
+di tali comunicazioni si intende approvato qualora, decorsi 60 giorni dal loro ricevimento, non sia pervenuta a Sigla specifica contestazione scritta.<BR>
+<B>21. Cessione.</B> Sigla potrà cedere i diritti derivanti dal presente Contratto con le relative garanzie, dandone comunicazione al Cedente nelle forme eventualmente previste dalla legge.<BR>
+<B>22. Fallimento del datore di lavoro.</B> In caso di fallimento, liquidazione coatta amministrativa o apertura di altre procedure concorsuali a carico del datore di lavoro, Sigla potrà richiedere l’ammissione al passivo 
+dei crediti relativi alle somme cedute in via privilegiata per le stesse qualità spettanti al Cedente, il quale rinuncia espressamente a favore di Sigla e fino a completa estinzione della cessione, alla facoltà di richiedere 
+l’intervento del Fondo di Garanzia previsto dalla L. 297/82.<BR>
+<B>23. Reclamo cliente e risoluzione stragiudiziale delle controversie:</B> Ogni cliente può presentare reclamo a mezzo raccomandata con ricevuta di ritorno a <U><valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs> - Ufficio Assistenza clienti - 
+<valueabs>IDGFAZI00F/RECORD/IDGFAZI_INDIR_SIG</valueabs><valueabs>IDGFAZI00F/RECORD/IDGFAZI_SIGLASRL</valueabs>. </U>
+Come indicato nella Guida ai diritti del Cliente, ogni cliente ha diritto, in caso di reclamo, a ricevere risposta dall’Intermediario entro 30 giorni. Se il cliente non è soddisfatto o non ha ricevuto risposta entro i 30 giorni, prima 
+di ricorrere al giudice può rivolgersi a :a)Arbitro Bancario Finanziario (ABF), nella sede più vicina al suo domicilio (Segreteria tecnica del Collegio di Milano Via Cordusio, 5-20123 Milano-Telefono: 02 724241; Segreteria tecnica del 
+Collegio di Roma Via Venti Settembre, 97/e- 00187 Roma- Telefono: 06 47921;Segreteria tecnica del Collegio di Napoli Via Miguel Cervantes, 71- 80133 Napoli- Telefono: 081 7975111), oppure presso le Filiali della Banca d’Italia,come 
+ampiamente indicato nella Guida ai diritti del Cliente, che ha visionato e che è consultabile al sito <U>www.arbitrobancariofinanziario.it</U>. b) Conciliatore Bancario Finanziario. Se sorge una controversia con Sigla, il cliente può attivare 
+una procedura di conciliazione che consiste nel tentativo di raggiungere un accordo con Sigla, grazie all’assistenza di un conciliatore indipendente.  Detto tentativo sarà esperito, ai sensi e per gli effetti di quanto previsto dall’articolo 40, 
+comma 6, del decreto legislativo 17 gennaio 2003 n.5, dall’Organismo di conciliazione bancarie, finanziarie e societarie – ADR, iscritto al n.3 del registro, tenuto dal Ministero della Giustizia, ex articolo 38 del dlg 17 gennaio 2003, n.5. 
+Resta impregiudicata la facoltà di ricorrere all’autorità giudiziaria nel caso in cui la conciliazione si dovesse concludere senza il raggiungimento di un accordo. Per questo servizio è possibile rivolgersi al Conciliatore Bancario Finanziario 
+(Organismo iscritto nel Registro tenuto dal Ministero della Giustizia), con sede a Roma, Via delle Botteghe Oscure 54, tel 06 674821, sito internet: <U>www.conciliatorebancario.it</U>.<BR>		
+</TEXT>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<TEXT SIZE=7.0 ALIGN=J>
+Si specifica che la notifica potrà avvenire tramite Ufficiale Giudiziario (vedi Relazione di notifica qui sotto riportata) oppure tramite altro mezzo (raccomandata a/r, PEC, ecc.) 
+in conformità all’art. 1264, c.1 CC.<BR>	
+</TEXT>
+<BR>
+<BR>
+<TABLE>
+<TR>
+<TD WIDTH=70% SIZE=6.5 BORDER=0.7 ALIGN=L>
+RELAZIONE DI NOTIFICA :<BR>
+a richiesta di <valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs> quale Mandataria di B@NCA 24-7 S.p.A.,<BR>
+io sottoscritto Ufficiale Giudiziario addetto al Tribunale di Treviso sezione di Conegliano<BR>
+ho notificato il su esteso atto a :<BR>
+Al Legale Rappresentante del <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs><BR>
+Nella sua sede di <valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_LAV</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_LAV</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_LAV</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_LAV</valueabs>)<BR>
+A mezzo del servizio postale come per Legge<BR>
+Conegliano, Li<BR>
+RACCOMANDATA N.<BR>
+Spedita il<BR>
+</TD>
+<TD WIDTH=30%></TD>
+</TR>
+</TABLE>
+</BODY>
+</PDF>

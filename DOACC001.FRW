@@ -1,0 +1,77 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize10">
+<GRID MT=2 MB=2 ML=2 MR=2 XUNITS=19 YUNITS=27.5>
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headersiglarischio">
+</TABLE>
+</HEADER>
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestatasigla">
+</FOOTER>
+<BODY>
+<SUBFOOTER>
+<TABLE>	
+	<TR>
+		<TD WIDTH=100%>
+			<TABLE  >
+				<TR>
+					<TD WIDTH=25%></TD>
+					<TD WIDTH=50%></TD>
+					<TD WIDTH=25% ALIGN=C>Distinti saluti<BR><B>Sigla S.r.l.<B></TD>
+				</TR>
+			</TABLE>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE>	
+	<TR>
+		<TD WIDTH=100%>
+			<TABLE>
+				<TR>
+					<TD WIDTH=25% ALIGN=L><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></TD>
+					<TD WIDTH=50%></TD>
+					<TD WIDTH=25%></TD>
+				</TR>
+			</TABLE>
+		</TD>
+	</TR>
+</TABLE>
+</SUBFOOTER>
+<SUBHEADER>
+<TABLE WIDTH=100% ALIGN=C SIZE=9>
+	<TR>
+		<TD SIZE=5  ALIGN=R>n° pratica <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs></TD>
+	</TR>
+</TABLE>
+<TABLE WIDTH=100% ALIGN=C SIZE=9>
+	<TR>
+		<TD SIZE=15 FCOLOR=2995 ALIGN=C ><B>CONTO DEFINITIVO DI LIQUIDAZIONE</B></TD>
+	</TR>
+</TABLE>
+<TABLE WIDTH=100% ALIGN=C SIZE=9>
+	<TR>
+		<TD SIZE=15 FCOLOR=2995 ALIGN=C >________________________________________________________</TD>
+	</TR>
+</TABLE>
+<TEXT>
+<X VALUE=10>
+<BR><BR><BR>
+<B>Spettabile</B><BR>
+<valueabs>IDGFCQS00F/RECORD/IDGFCQS_DESCFIN</valueabs> <BR>
+<valueabs>IDGFCQS00F/RECORD/IDGFCQS_INDIR_FIN</valueabs> <BR>
+<valueabs>IDGFCQS00F/RECORD/IDGFCQS_INDIRIZZO_FIN</valueabs> <BR>
+<X VALUE=0>
+</TEXT>
+</SUBHEADER>
+<BR><BR><BR>
+<TEXT>
+
+
+<valueabs>IDGFERT00F/RECORD/IDGFERT_IMPERG</valueabs> <BR>
+<valueabs>IDGFERD00F/RECORD/IDGFERD_IMPERG</valueabs> <BR>
+<valueabs>IDGFERD00F/RECORD/IDGFERD_NASSEGNO</valueabs> <BR>
+
+
+</TEXT>
+</BODY>
+</PDF>

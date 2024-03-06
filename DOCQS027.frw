@@ -1,0 +1,11 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8">
+<include file="\INCLUDE\Percorsi.frw">
+
+<PDFPAGE SRC="DOCQS027.PDF" VALUE=1> 	
+	<TEXT X=3.2 Y=22.1><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs>  <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></TEXT>	
+
+</PAGE>	
+</BODY>
+</PDF>
+	

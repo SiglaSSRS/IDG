@@ -1,0 +1,113 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize6">
+
+<HEADER>
+	<include file="\INCLUDE\includedStruttura.frw" value="headercartaintsiglasiglappp">			
+</HEADER>
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestatasigla">
+</FOOTER>
+
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT">Pag. 6 di 6</TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+
+<BODY>	
+
+	<BR>
+
+	<TEXT SIZE=14.0 ALIGN=CENTER><FONT COLOR=#0070D0><B>PIANO D'AMMORTAMENTO</B><BR><BR></FONT></TEXT>
+
+	<TABLE WIDTH=100% SIZE=7.5>
+		<TR>
+			<TD><B>Cliente</B>: <valueabs>IDGPCLI00F/RECORD/IDGPCLI_RAGSOC</valueabs></TD>
+		</TR>
+		<TR>
+			<TD>
+				<TABLE size=7.5 WIDTH=100%>
+					<TR>
+						<TD WIDTH=13%><B>Data decorrenza</B>: </TD>
+						<TD WIDTH=14% ALIGN=RIGHT><valueabs>IDGPCTR00F/RECORD/IDGPCTR_DTDECORR</valueabs></TD>
+						<TD WIDTH=8%>  </TD>
+						<TD WIDTH=13%><B>N° rate</B>:</TD>
+						<TD WIDTH=14% ALIGN=RIGHT><valueabs>IDGPCTR00F/RECORD/IDGPCTR_RATETOT</valueabs> mesi (6 mesi di preammortamento gratuito)</TD>
+						<TD WIDTH=8%>  </TD>
+						<TD WIDTH=15%><B>Importo</B>:</TD>
+						<TD WIDTH=15% ALIGN=RIGHT>&euro <valueabs>IDGPCTR00F/RECORD/IDGPCTR_CANONE</valueabs></TD>
+					</TR>
+					<TR>
+						<TD ALIGN=LEFT><B>Montante lordo</B>:</TD>
+						<TD ALIGN=RIGHT>&euro <valueabs>IDGPCTR00F/RECORD/IDGPCTR_MONTANTE</valueabs></TD>
+						<TD> </TD>
+						<TD ALIGN=LEFT><B>Finanziato</B>:</TD>
+						<TD ALIGN=RIGHT>&euro <valueabs>IDGPCTR00F/RECORD/IDGPCTR_LITACCORD</valueabs></TD>
+						<TD> </TD>
+						<TD ALIGN=LEFT><B>Importo totale del credito</B>:</TD>
+						<TD ALIGN=RIGHT>&euro <valueabs>IDGPCTR00F/RECORD/IDGPCTR_IMPNETRIC</valueabs></TD>
+					</TR>
+					<TR>
+						<TD ALIGN=LEFT><B>Commissioni intermediario finanziario</B>:</TD>
+						<TD ALIGN=RIGHT>&euro <valueabs>IDGPCTR00F/RECORD/IDGPCTR_IMCOMM</valueabs></TD>
+						<TD> </TD>
+						<TD ALIGN=LEFT><B>Imposta di bollo</B>:</TD>
+						<TD ALIGN=RIGHT>&euro <valueabs>IDGPCTR00F/RECORD/IDGPCTR_IMRIVALSA</valueabs></TD>
+						<TD> </TD>
+						<TD ALIGN=LEFT><B>Interessi</B>:</TD>
+						<TD ALIGN=RIGHT>&euro <valueabs>IDGPCTR00F/RECORD/IDGPCTR_IMPINTER</valueabs></TD>
+					</TR>
+					<TR>
+						<TD ALIGN=LEFT><B>TAN</B>:</TD>
+						<TD ALIGN=RIGHT><valueabs>IDGPCTR00F/RECORD/IDGPCTR_TXTAN</valueabs>%</TD>
+						<TD> </TD>
+						<TD ALIGN=LEFT><B>TAEG</B>:</TD>
+						<TD ALIGN=RIGHT> <valueabs>IDGPCTR00F/RECORD/IDGPCTR_TXTAEG</valueabs>%</TD>
+						<TD> </TD>
+						<TD ALIGN=LEFT><B>TEG</B>:</TD>
+						<TD ALIGN=RIGHT> <valueabs>IDGPCTR00F/RECORD/IDGPCTR_TXTEG</valueabs>%</TD>
+						<TD> </TD>
+						
+					</TR>
+				</TABLE>
+			</TD>
+		</TR>
+	</TABLE>
+	<BR><BR><BR>
+
+	<TABLE WIDTH=100% BORDER=0.1 SIZE=7.5>
+		<TR>
+			<TD WIDTH= 4% ALIGN=RIGHT><B>N° rata</B></TD>
+			<TD WIDTH=12% ALIGN=RIGHT><B>Data Scadenza</B></TD>
+			<TD WIDTH=12% ALIGN=RIGHT><B>Importo Rata</B></TD>
+			<TD WIDTH=12% ALIGN=RIGHT><B>Quota capitale</B></TD>
+			<TD WIDTH=12% ALIGN=RIGHT><B>Quota interessi</B></TD>
+			<TD WIDTH=12% ALIGN=RIGHT><B>Capitale residuo<BR><BR>(Dopo il pagamento della rata)</B></TD>
+			<TD WIDTH=12% ALIGN=RIGHT><B>Commissioni Sigla totalmente ripetibili<BR><BR>(Dopo il pagamento della rata)</B></TD>
+			<TD WIDTH=12% ALIGN=RIGHT><B>Debito residuo in caso di estinzione anticipata<BR><BR>(Dopo il pagamento della rata)</B></TD>
+			
+		</TR>
+		<loop>
+		<loopda>1</loopda>
+		<looproot>IDGPPFIN0F/RECORD</looproot>
+			<if><ifcond><value>IDGPPFIN_NUMRATA</value>!=000</ifcond><and><ifcond><value>IDGPPFIN_NUMRATA</value>!=999</ifcond><then>
+				<TR>
+					<TD WIDTH= 4% ALIGN=RIGHT><value>IDGPPFIN_NUMRATA</value></TD>
+					<TD WIDTH=12% ALIGN=RIGHT><value>IDGPPFIN_DTSCAD</value></TD>
+					<TD WIDTH=12% ALIGN=RIGHT><value>IDGPPFIN_IMPRATA</value></TD>
+					<TD WIDTH=12% ALIGN=RIGHT><value>IDGPPFIN_QTACAP</value></TD>
+					<TD WIDTH=12% ALIGN=RIGHT><value>IDGPPFIN_QTAINT</value></TD>
+					<TD WIDTH=12% ALIGN=RIGHT><value>IDGPPFIN_CAPRES</value></TD>
+					<TD WIDTH=12% ALIGN=RIGHT><value>IDGPPFIN_IMCOMR</value></TD>
+					<TD WIDTH=12% ALIGN=RIGHT><value>IDGPPFIN_DEBRES</value></TD>
+					
+				</TR>
+			</if>
+		</loop>
+	</TABLE>
+</BODY>
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\PIANOAMMORDOAMM006##01_01_01.png" BACKGROUND X=4 Y=1.75 SCALE=25>
+</PDF>

@@ -1,0 +1,100 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize5.5">
+
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headerallegato7b">			
+</HEADER>
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestatasigla">
+</FOOTER>
+
+<BODY>
+<SUBFOOTER>
+	<TEXT ALIGN=J SIZE=7.5><B>Parte riservata al contraente/assicurato (da trattenere allegata al relativo contratto)</B></TEXT>
+</SUBFOOTER>
+<TABLE  SIZE=10 BORDER=1>
+	<TR>
+		<TD ALIGN=C WIDTH=100%><B> INFORMAZIONI GENERALI SULL’INTERMEDIARIO CHE ENTRA IN CONTATTO CON IL CONTRAENTE/ASSICURATO</B></TD>
+	</TR>
+</TABLE>
+<TEXT ALIGN=J SIZE=8.5>
+<BR>
+<B>Ai sensi della vigente normativa, l’Intermediario assicurativo ha l’obbligo di consegnare al contraente il presente documento che
+contiene notizie sull’Intermediario stesso, su potenziali situazioni di conflitto di interessi e sugli strumenti di tutela del contraente.
+L’inosservanza dell’obbligo di consegna è punita con sanzioni amministrative pecuniarie e disciplinari.</B>
+<BR><BR>
+<TABLE SIZE=8.5 BORDER=0.7>
+	<TR>
+		<TD ALIGN=J WIDTH=100%>Il sottoscritto <valueabs>IDGFCQS00F/RECORD/IDGFCQS_RGSISVAP</valueabs> tel. <valueabs>IDGFCQS00F/RECORD/IDGFCQS_TELISVAP</valueabs> indirizzo posta elettronica <valueabs>IDGFCQS00F/RECORD/IDGFCQS_EMLISVAP</valueabs> iscritto in data <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTISVAP</valueabs> con numero di iscrizione <valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDISVAP</valueabs> alla Sezione E del Registro Unico degli Intermediari assicurativi e riassicurativi è incaricato in qualità di Responsabile per conto della <valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs> con sede in <valueabs>IDGFAZI00F/RECORD/IDGFAZI_INDIR_SIG</valueabs> <valueabs>IDGFAZI00F/RECORD/IDGFAZI_SIGLASRL</valueabs> tel. 0438/45908 indirizzo internet <valueabs>IDGFAZI00F/RECORD/IDGFAZI_SITO_SIG</valueabs> indirizzo posta elettronica sigla@siglafinanziamenti.it iscritta in data 24/07/2007  con numero di iscrizione E000201535  alla Sezione E del Registro Unico degli Intermediari assicurativi e riassicurativi, che collabora con <B>RECINA SERVIZI S.p.A.</B>, Via A. Torlonia n. 16 – 00161 Roma tel. +39/06/4416171, iscritta in data 16 aprile 2007 con numero di iscrizione A000135861 alla Sezione A del Registro Unico degli Intermediari assicurativi e riassicurativi preponente prodotti dell’Impresa Assicuratrice AXERIA PREVOYANCE S.A..
+		</TD>
+	</TR>
+</TABLE>
+<BR>
+L’autorità competente alla vigilanza sull’attività di intermediazione assicurativa e riassicurativa è l’ISVAP, Istituto per la Vigilanza sulle
+Assicurazioni Private e di Interesse Collettivo.<BR>
+<B>Sul sito <U>www.isvap.it</U>, consultando il Registro Unico degli Intermediari, è possibile verificare gli estremi identificativi e di iscrizione
+dell’Intermediario presso il quale è stata fatta richiesta di adesione alla copertura assicurativa.</B><BR><BR><BR>
+</TEXT>
+<TABLE  SIZE=10 BORDER=1>
+	<TR>
+		<TD ALIGN=C WIDTH=100%><B>INFORMAZIONI RELATIVE A POTENZIALI SITUAZIONI DI CONFLITTO D’INTERESSI</B></TD>
+	</TR>
+</TABLE>
+<TABLE SIZE=8.5 BORDER=0.7>
+	<TR>
+		<TD ALIGN=J WIDTH=100%>RECINA SERVIZI S.p.A. non è detentrice di alcuna partecipazione diretta o indiretta nel capitale sociale o nei diritti di voto in Imprese di
+Assicurazione.<BR>AXERIA PREVOYANCE S.A. non è detentrice di alcuna partecipazione diretta o indiretta nel capitale sociale o nei diritti di voto di RECINA
+SERVIZI S.p.A..<BR>
+<valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs> non è detentrice di alcuna partecipazione diretta o indiretta nel capitale sociale o nei diritti di voto in AXERIA PREVOYANCE S.A.
+AXERIA PREVOYANCE S.A. non è detentrice di alcuna partecipazione diretta o indiretta nel capitale sociale o nei diritti di voto in <valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs>.
+Con riguardo al contratto proposto:<BR>
+- lo scrivente Intermediario non è vincolato ad alcun obbligo contrattuale che gli imponga di offrire esclusivamente i contratti di una o più Imprese di
+Assicurazione. E’ facoltà del cliente richiedere la denominazione delle Imprese di assicurazione con le quali lo scrivente Intermediario ha o potrebbe
+avere rapporti di affari.<BR>
+- RECINA SERVIZI S.p.A. non è vincolata ad alcun obbligo contrattuale che le imponga di offrire esclusivamente i contratti di una o più Imprese di Assicurazione. E’ facoltà del cliente richiedere la denominazione delle Imprese di assicurazione con le quali RECINA SERVIZI S.p.A. ha o potrebbe avere rapporti di affari.<BR>
+		</TD>
+	</TR>
+</TABLE>
+<BR><BR>
+<TABLE  SIZE=10 BORDER=1>
+	<TR>
+		<TD ALIGN=C WIDTH=100%><B>INFORMAZIONI SUGLI STRUMENTI DI TUTELA DEL CONTRAENTE/ASSICURATO</B></TD>
+	</TR>
+</TABLE>
+<TEXT ALIGN=J SIZE=8.5>
+In ottemperanza a quanto previsto dall’art. 54 del Regolamento ISVAP n. 5 del 16/10/2006, i premi assicurativi pagati dal cedente
+all’Intermediario e le somme destinate ai risarcimenti o ai pagamenti dovuti dall’Impresa, eventualmente regolati per il tramite
+dell’Intermediario, costituiscono patrimonio autonomo e separato dal patrimonio dell’Intermediario medesimo.<BR>
+L’attività di intermediazione è garantita da una polizza di assicurazione della responsabilità civile, che copre i danni arrecati ai
+contraenti/assicurati da negligenze ed errori professionali dell’Intermediario o da negligenze, errori professionali ed infedeltà dei dipendenti,
+dei collaboratori o delle persone del cui operato l’Intermediario deve rispondere a norma di legge.<BR>
+Eventuali reclami riguardanti il rapporto contrattuale assicurativo o la gestione dei sinistri devono essere inoltrati per iscritto all’Impresa
+AXERIA PREVOYANCE S.A. – Via Vittor Pisani, 19 – 20124 Milano tel. n. +39/02/67141302- fax n. +39/02/76020988, e-mail
+<U>reclami@aprilitalia.com</U>.<BR>
+Qualora l’esponente non si ritenga soddisfatto dall’esito del reclamo o in caso di assenza di riscontro nel termine massimo di quarantacinque
+giorni, potrà rivolgersi all’ISVAP – Servizio Tutela degli Utenti – Via del Quirinale n. 21 – 00187 Roma, fax n. +39/06/42133353 - 745,
+corredando l’esposto della documentazione relativa al reclamo trattato dall’Impresa.<BR>
+Si ricorda che permane la facoltà per il contraente/assicurato di rivolgersi all’Autorità Giudiziaria, oltre alla facoltà di ricorrere a sistemi
+conciliativi ove esistenti.
+<BR><BR><BR>
+</TEXT>
+<TABLE  SIZE=10 BORDER=1>
+	<TR>
+		<TD ALIGN=C WIDTH=100%><B>INFORMATIVA PRECONTRATTUALE</B></TD>
+	</TR>
+</TABLE>
+<TEXT ALIGN=J SIZE=8.5>
+Dichiaro di aver letto, approvato e ricevuto l'informativa in ordine alle regole di comportamento che l’Intermediario assicurativo deve rendere
+al contraente/assicurato prima della sottoscrizione della proposta o, qualora non prevista, del contratto, nonché in caso di modifiche di rilievo
+del contratto o di rinnovo che comporti tali modifiche.
+<BR><BR>
+</TEXT>
+<TABLE  SIZE=8.5>
+	<TR>
+		<TD ALIGN=L WIDTH=50%><B>Data____________________________</B></TD>
+		<TD ALIGN=L WIDTH=50%><B>Firma per ricevuta_______________________________</B></TD>
+	</TR>
+</TABLE>
+</BODY>
+</PDF>

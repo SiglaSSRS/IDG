@@ -1,0 +1,129 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize5.5">
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestatasigla">
+</FOOTER>
+
+<BODY>	
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<TABLE SIZE=9.5>
+<TR>
+<TD WIDTH=70%></TD>	
+<TD WIDTH=30%>
+Spett.le Istituto<BR>
+<B>FONDO</B><BR>
+<B>________________________</B><BR>
+<BR>
+<B>Via _____________________</B><BR>
+<BR>
+<B>Città ____________________</B><BR>
+<BR>
+</TD> 	
+</TR> 
+</TABLE>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDANAFIN</valueabs>==12001691</ifcond><then>
+<TABLE SIZE=9.5>
+<TR>
+<TD WIDTH=70% ALIGN=R>Pc</TD>	
+<TD WIDTH=30%><B>Spett.le <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DESCFIN</valueabs></B><BR>
+<B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_INDIR_FIN</valueabs></B><BR>
+<B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_INDIRIZZO_FIN</valueabs></B>
+</TD> 	
+</TR> 
+</TABLE>
+<BR>
+<BR>
+<else>
+<BR>
+<BR>
+<BR>
+<BR>
+</if>
+<TABLE SIZE=9.5><TR>
+<TD WIDTH=65%><B>Oggetto: contratto di mutuo contro cessione di quota dello  stipendio:</B></TD>	
+<TD WIDTH=35%>
+<TABLE FORCEWIDTH SIZE=6.5>
+<TR>
+  <TD WIDTH=50%></TD>
+	<TD WIDTH=20% BORDER=0.8>Pratica</TD>
+	<TD WIDTH=30% BORDER=0.8><B><valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs><B></TD> 
+</TR> 
+</TABLE>	
+</TD>
+</TR>
+</TABLE>
+</TABLE>
+<BR>
+<TEXT SIZE=9.5 ALIGN=J>
+del <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs> RATA MENSILE: &euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPCAN</valueabs>  N. RATE <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs>     
+CAPITALE LORDO MUTUATO &euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPMUTLRD</valueabs> DURATA <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DURATA</valueabs> MESI<BR> 
+</TEXT>
+<BR>
+<TEXT SIZE=9.5 ALIGN=J>
+Il/La sottoscritto/a:<BR>
+Cognome e Nome <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>  nato a <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCNASC</valueabs> il <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC</valueabs> 
+C.F. <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs> 
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs>==</ifcond><then>
+residente e domiciliato in <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs> c.a.p. <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs>, via/piazza <valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs> 
+<else>
+residente in <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_RES</valueabs> c.a.p. <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_RES</valueabs>, via/piazza <valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs> 
+e domiciliato in <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs> c.a.p. <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs>, via/piazza <valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs> 
+</if>n. tel <valueabs>IDGFCLI00F/RECORD/IDGFCLI_TELE_RES</valueabs>  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_TELE_ALT</valueabs>
+dipendente da <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_STATOGIUR</valueabs>  sede di <valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_LAV</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_LAV</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_LAV</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_LAV</valueabs>) 
+avendo stipulato con Sigla Srl il contratto di  mutuo contro cessione di quota dello 
+stipendio di cui in oggetto, con la presente , in forza di quanto stabilito dal DPR 180/50 
+e successive modifiche ed integrazioni, con la presente dichiarazione<BR>  
+</TEXT>
+<BR>
+<BR>
+<TEXT SIZE=9.5 ALIGN=C>
+<B><U>AUTORIZZA E DELEGA</U></B><BR> 
+</TEXT>
+<BR>
+<BR>
+<BR>
+<TEXT SIZE=9.5 ALIGN=J>
+ora per allora, autorizza Apulia prontoprestito Spa, a garanzia del credito residuo di Apulia Prontoprestito Spa, per il tramite di
+Sigla Srl in qualità di mandataria a richiedere per suo nome e conto:<BR>
+- in caso di cessazione del rapporto di lavoro del sottoscritto/a prima dell’estinzione del finanziamento, il riscatto anticipato
+dell’intera posizione maturata dal sottoscritto presso codesto Fondo, ciò fino a completa soddisfazione del credito residuo di Apulia
+Prontoprestito Spa, per il tramite di Sigla Srl in qualità di mandataria, come da conto estintivo che quest’ultima Vi inoltrerà.<BR>
+- in caso di cessazione del rapporto di lavoro del sottoscritto, maturati i requisiti per la prestazione pensionistica, prima
+dell’estinzione del finanziamento, il versamento della prestazione erogata da codesto Fondo e spettante al sottoscritto in capitale, in
+rendita o in entrambe le formule; ciò fino a completa soddisfazione del credito residuo di Apulia Prontoprestito Spa, per il tramite
+di Sigla srl in qualità di mandataria, come da conto estintivo che quest’ultima Vi inoltrerà<BR>
+<BR>
+Resta inteso che l’istanza di riscatto, da me ora per allora esercitata nei Vs confronti, potrà essere avanzata da Apulia
+Prontoprestito Spa, per il tramite di Sigla Srl in qualità di mandataria, in mio nome e conto, esclusivamente nel caso di risoluzione
+del rapporto di lavoro prima dell’estinzione del finanziamento.<BR>
+<BR>
+La presente dichiarazione, che qualifico come irrevocabile, manterrà efficacia vincolante per il/la sottoscritto/a sino a concorrenza
+del residuo debito, comprensivo di penali, spese ed interessi di mora, in essere con Apulia Prontoprestito Spa , per il tramite di
+Sigla Srl in qualità di mandataria.
+Autorizzo, inoltre, Sigla Srl a notificare le presente dichiarazione, unitamente al suddetto contratto di finanziamento <BR>  
+</TEXT>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</TABLE>	
+<TABLE SIZE=9.5><TR>
+<TD WIDTH=70%>DATA, <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></TD>	
+<TD WIDTH=30%>IL CEDENTE ___________________________________</TD></TR>
+<TR>
+<TD WIDTH=70%></TD>	
+<TD WIDTH=30% ALIGN=C><B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></B></TD></TR>				 
+</TABLE>
+<BR>
+<BR>
+<BR>
+<BR>
+
+</BODY>
+</PDF>

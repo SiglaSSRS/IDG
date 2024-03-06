@@ -1,0 +1,83 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize5.5">
+
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headerallegato7b">			
+</HEADER>
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestatasigla">
+</FOOTER>
+
+<BODY>
+<SUBFOOTER>
+	<TEXT ALIGN=J SIZE=7.5><B>Parte riservata al contraente/assicurato (da trattenere allegata al relativo contratto)</B></TEXT>
+</SUBFOOTER>
+<TABLE  SIZE=10 BORDER=1>
+	<TR>
+		<TD ALIGN=C WIDTH=100%><B> INFORMAZIONI GENERALI SULL’INTERMEDIARIO CHE ENTRA IN CONTATTO CON IL CONTRAENTE/ASSICURATO</B></TD>
+	</TR>
+</TABLE>
+<TEXT ALIGN=J SIZE=8.5>
+<BR>
+<B>Ai sensi della vigente normativa, l’Intermediario assicurativo ha l’obbligo di consegnare al contraente il presente documento che contiene notizie sull’Intermediario stesso, su potenziali situazioni di conflitto di interessi e sugli strumenti di tutela del contraente. L’inosservanza dell’obbligo di consegna è punita con sanzioni amministrative pecuniarie e disciplinari.</B>
+<BR><BR>
+<TABLE SIZE=8.5 BORDER=0.7>
+	<TR>
+		<TD ALIGN=J WIDTH=100%>Il sottoscritto <valueabs>IDGFCQS00F/RECORD/IDGFCQS_RGSISVAP</valueabs> tel. <valueabs>IDGFCQS00F/RECORD/IDGFCQS_TELISVAP</valueabs> <valueabs>IDGFCQS00F/RECORD/IDGFCQS_CELISVAP</valueabs> indirizzo posta elettronica <valueabs>IDGFCQS00F/RECORD/IDGFCQS_EMLISVAP</valueabs> iscritto in data <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTISVAP</valueabs> con numero di iscrizione <valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDISVAP</valueabs> alla Sezione E del Registro Unico degli Intermediari assicurativi e riassicurativi è incaricato in qualità di Responsabile per conto della <valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs> con sede in <valueabs>IDGFAZI00F/RECORD/IDGFAZI_INDIR_SIG</valueabs> <valueabs>IDGFAZI00F/RECORD/IDGFAZI_SIGLASRL</valueabs>  tel. 0438/45908 indirizzo internet <valueabs>IDGFAZI00F/RECORD/IDGFAZI_SITO_SIG</valueabs> indirizzo posta elettronica sigla@siglafinanziamenti.it iscritta in data 24/07/2007  con numero di iscrizione E000201535 alla Sezione E del Registro Unico degli Intermediari assicurativi e riassicurativi, che collabora con STAYING ALIVE LIMITED con sede legale a Broombridge Business Centre – Suite 304 – Broombridge Station 288 Bannow Road, Dublin 7 – Irlanda, iscritta presso l’Autorità di Vigilanza irlandese Irish Financial Services Refulatory Authority n. C53881 consultabile all’indirizzo internet www.financialregulator.ie, operante in Italia in regime di libera prestazione di servizi dal 9 settembre 2009 con numero di iscrizione UE00007234. Le Imprese di assicurazione i cui prodotti vengono offerti sono: AXA France Vie S.A. iscritta presso l’Autorità di Vigilanza francese ACP (Autorité de Controle Prudentiel) n. 00510502 consultabile all’indirizzo internet www.acam-france.fr, operante in Italia in regime di libera prestazione di servizi dal 03 gennaio 2008 con il n. II.00022 ed AXA France IARD S.A. iscritta presso l’Autorità di Vigilanza francese ACP (Autorité de Controle Prudentiel) n. 21090402 consultabile all’indirizzo internet www.acam-france.fr, operante in Italia in regime di libera prestazione di servizi dal 03 gennaio 2008 con il n. II.00600. L’autorità competente alla vigilanza sull’attività di intermediazione assicurativa e riassicurativa è l’ISVAP, Istituto per la Vigilanza sulle Assicurazioni Private e di Interesse Collettivo.
+		</TD>
+	</TR>
+</TABLE>
+<BR>
+<BR>
+<B>Sul sito <U>www.isvap.it</U>, consultando il Registro Unico degli Intermediari, è possibile verificare gli estremi identificativi e di iscrizione dell’Intermediario presso il quale è stata fatta richiesta di adesione alla copertura assicurativa.</B><BR><BR><BR>
+</TEXT>
+<TABLE  SIZE=10 BORDER=1>
+	<TR>
+		<TD ALIGN=C WIDTH=100%><B>INFORMAZIONI RELATIVE A POTENZIALI SITUAZIONI DI CONFLITTO D’INTERESSI</B></TD>
+	</TR>
+</TABLE>
+<TABLE SIZE=8.5 BORDER=0.7>
+	<TR>
+		<TD ALIGN=J WIDTH=100%>STAYING ALIVE LIMITED non è detentrice di alcuna partecipazione diretta o indiretta nel capitale sociale o nei diritti di voto in Imprese di Assicurazione.<BR>
+AXA France Vie S.A. ed AXA France IARD S.A. non sono detentrici di alcuna partecipazione diretta o indiretta nel capitale sociale o nei diritti di voto di STAYING ALIVE LIMITED.<BR>
+<valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs> non è detentrice di alcuna partecipazione diretta o indiretta nel capitale sociale o nei diritti di voto in STAYING ALIVE LIMITED.
+STAYING ALIVE LIMITED non è detentrice di alcuna partecipazione diretta o indiretta nel capitale sociale o nei diritti di voto in
+<valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs>.<BR>
+Con riguardo al contratto proposto:<BR>
+- lo scrivente Intermediario non è vincolato ad alcun obbligo contrattuale che gli imponga di offrire esclusivamente i contratti di una o più Imprese di Assicurazione. E’ facoltà del cliente richiedere la denominazione delle Imprese di assicurazione con le quali lo scrivente Intermediario ha o potrebbe avere rapporti di affari.<BR>
+- STAYING ALIVE LIMITED non è vincolata ad alcun obbligo contrattuale che le imponga di offrire esclusivamente i contratti di una o più Imprese di Assicurazione. E’ facoltà del cliente richiedere la denominazione delle Imprese di assicurazione con le quali STAYING ALIVE LIMITED ha o potrebbe avere rapporti di affari.<BR>
+		</TD>
+	</TR>
+</TABLE>
+<BR><BR>
+<TABLE  SIZE=10 BORDER=1>
+	<TR>
+		<TD ALIGN=C WIDTH=100%><B>INFORMAZIONI SUGLI STRUMENTI DI TUTELA DEL CONTRAENTE/ASSICURATO</B></TD>
+	</TR>
+</TABLE>
+<TEXT ALIGN=J SIZE=8.5>
+In ottemperanza a quanto previsto dall’art. 54 del Regolamento ISVAP n. 5 del 16/10/2006, i premi assicurativi pagati dal cedente all’Intermediario e le somme destinate ai risarcimenti o ai pagamenti dovuti dall’Impresa, eventualmente regolati per il tramite dell’Intermediario, costituiscono patrimonio autonomo e separato dal patrimonio dell’Intermediario medesimo.<BR>
+L’attività di intermediazione è garantita da una polizza di assicurazione della responsabilità civile, che copre i danni arrecati ai contraenti/assicurati da negligenze ed errori professionali dell’Intermediario o da negligenze, errori professionali ed infedeltà dei dipendenti, dei collaboratori o delle persone del cui operato l’Intermediario deve rispondere a norma di legge.<BR>
+Eventuali reclami riguardanti il rapporto contrattuale assicurativo o la gestione dei sinistri devono essere inoltrati per iscritto all’Impresa AXA France Vie S.A. ed AXA France IARD S.A. – Service qualité, 26 rue Drouot 75458 Paris Cedex fax n. +33/156354760.<BR>
+Qualora l’esponente non si ritenga soddisfatto dall’esito del reclamo o in caso di assenza di riscontro nel termine massimo di quarantacinque giorni, potrà rivolgersi all’ISVAP – Servizio Tutela degli Utenti – Via del Quirinale n. 21 – 00187 Roma, fax n. +39/06/42133353 - 745, corredando l’esposto della documentazione relativa al reclamo trattato dall’Impresa.<BR>
+Si ricorda che permane la facoltà per il contraente/assicurato di rivolgersi all’Autorità Giudiziaria, oltre alla facoltà di ricorrere a sistemi conciliativi ove esistenti.
+<BR><BR><BR>
+</TEXT>
+<TABLE  SIZE=10 BORDER=1>
+	<TR>
+		<TD ALIGN=C WIDTH=100%><B>INFORMATIVA PRECONTRATTUALE</B></TD>
+	</TR>
+</TABLE>
+<TEXT ALIGN=J SIZE=8.5>
+Dichiaro di aver letto, approvato e ricevuto l'informativa in ordine alle regole di comportamento che l’Intermediario assicurativo deve rendere al contraente/assicurato prima della sottoscrizione della proposta o, qualora non prevista, del contratto, nonché in caso di modifiche di rilievo del contratto o di rinnovo che comporti tali modifiche.
+<BR><BR>
+</TEXT>
+<TABLE  SIZE=8.5>
+	<TR>
+		<TD ALIGN=L WIDTH=50%><B>Data <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></B></TD>
+		<TD ALIGN=L WIDTH=50%><B>Firma per ricevuta_______________________________</B></TD>
+	</TR>
+</TABLE>
+</BODY>
+</PDF>

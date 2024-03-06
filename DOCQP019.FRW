@@ -1,0 +1,367 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize5.5_times">
+
+
+<BODY>		
+<TABLE WIDTH=100% CELLSPACING=1 CELLPADDING=1 FORCEWIDTH ALIGN=J SIZE=5.5 VALIGN=T BORDER=0.1> 
+<TR>
+<TD WIDTH=60% SIZE=5.5 ALIGN=J><BR>Prestitalia S.p.A.<BR><FONT SIZE=4>
+Sede Legale e Direzione Amministrativa: Via Ostiense, 131/L - 00154 Roma - Tel. 06.4203221 (r.a) - Fax 06.42012264 (r.a.)<BR>
+Call Center 800 262626 - www.prestitalia.it - Società avente socio unico - Appartenente al Gruppo Bancario Unione di Banche<BR>
+Italiane, in breve Gruppo UBI Banca - Albo dei Gruppi Bancari n. 3111.2 - Soggetta all’attività di direzione e coordinamento di<BR>
+Unione di Banche Italiane s.c.p.a. - Cap. Soc. € 46.385.482 i.v. - C. F. e R.I. RM 01464750668 - P. IVA: 05889861000 - R.E.A.<BR>
+RM n. 932748 Elenco generale n. 31065 ex art. 106 D.Lgs. 385/93 e iscritta Elenco speciale ex art. 107 D.Lgs. 385/93 – <BR>
+Codice ABI 32334.5</TD> 
+<TD ALIGN=C SIZE=6.5 WIDTH=40%><BR><IMG SRC="<valueabs>Immagini/LOGOPRITA/Path</valueabs><valueabs>Immagini/LOGOPRITA/Nome</valueabs>" SCALE=<valueabs>Immagini/LOGOPRITA/Scale</valueabs>></TD>
+</TR> 
+</TABLE>
+<BR>
+<TEXT SIZE=9 ALIGN=C>	<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>==DEL</ifcond>
+	<then>DEL DIP</then>
+	</if>
+	<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_COD_CONV_IMP</valueabs>!=</ifcond>
+		<then>CQS DIP</then>
+	</if>
+	<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_COD_CONV_IMP</valueabs>==</ifcond>
+		<then>CQS PENS</then>
+	</if>
+</TEXT>
+<BR>
+<TEXT SIZE=7.5 ALIGN=C><B>INFORMAZIONI EUROPEE DI BASE SUL CREDITO AI CONSUMATORI: SECCI</B><BR>
+(STANDARD EUROPEAN CONSUMER CREDIT INFORMATION)<BR>
+SECCI NR. <valueabs>IDGFCQP00F/RECORD/IDGFCQP_NRPREV</valueabs> CLIENTE: <if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_RAGSCLI</valueabs>></ifcond><then><valueabs>IDGFCQP00F/RECORD/IDGFCQP_RAGSCLI</valueabs></then><else><valueabs>IDGFCQP00F/RECORD/IDGFCQP_COGNCLI</valueabs> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_NOMECLI</valueabs></else></if> </TEXT>
+<BR>
+<TEXT SIZE=7.5 ALIGN=J>
+<B>1.	Identità e contatti di Prestitalia / intermediario del credito</B>
+<BR><BR>
+<TABLE WIDTH=100% BORDER=0.1 SIZE=7.5>
+<TR>
+<TD WIDTH=42% ALIGN=C><BR><BR><BR><B>Prestitalia S.p.A.</B></TD>
+<TD WIDTH=58%><BR>Via Ostiense n. 131/L<BR>
+Tel. 06/4203221<BR>
+E-mail info@prestitalia.it<BR>
+Fax 06/42032264<BR>
+www.prestitalia.it<BR><BR></TD>
+</TR>
+<TR><TD WIDTH=42%><BR>Intermediario del credito<BR>
+Indirizzo<BR>
+Telefono *<BR>
+Fax *<BR>
+E-mail *<BR>
+Sito web *</TD>
+<TD WIDTH=58%><BR>Sigla Srl<BR>
+Sede legale e operativa:Via Vital, 98/b 31015 Conegliano (TV)<BR>
+tel. ufficio assistenza clienti 0438 45990<BR>
+0438 45975<BR>
+sac@siglafinanziamenti.it <BR>
+http://www.siglacredit.it<BR><BR>
+</TD>
+</TR>
+<TR><TD WIDTH=42%><BR>Intermediario di Sigla<BR>
+Indirizzo<BR>
+Telefono<BR>
+Fax<BR>
+E-mail</TD>
+<TD WIDTH=58%><BR><valueabs>IDGFCQP00F/RECORD/IDGFCQP_DESCAGE</valueabs><BR>
+<valueabs>IDGFCQP00F/RECORD/IDGFCQP_INDIRENTE</valueabs> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_CAPENTE</valueabs> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_LOCALENTE</valueabs> (<valueabs>IDGFCQP00F/RECORD/IDGFCQP_PROVENTE</valueabs>)<BR>
+<valueabs>IDGFCQP00F/RECORD/IDGFCQP_TELENTE</valueabs><BR>
+<valueabs>IDGFCQP00F/RECORD/IDGFCQP_FAXENTE</valueabs><BR>
+<valueabs>IDGFCQP00F/RECORD/IDGFCQP_EMLENTE</valueabs><BR>
+</TD>
+</TR>
+</TABLE>
+<BR><B>2.	Caratteristiche principali del prodotto di credito</B><BR><BR>
+<TABLE WIDTH=100% BORDER=0.1  SIZE=7.5>
+<TR>
+<TD WIDTH=40%><BR>Tipo di contratto di credito<BR></TD>
+<TD WIDTH=60%><BR>
+	<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>==DEL</ifcond>
+	<then>Contratto di prestito rimborsabile mediante conferimento di mandato irrevocabile a trattenere una quota della retribuzione mensile</then>
+	</if>
+	<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_COD_CONV_IMP</valueabs>!=</ifcond>
+		<then>Prestito rimborsabile mediante cessione <I>pro solvendo</I> di quote pari ad un massimo del quinto della retribuzione mensile.</then>
+	</if>
+	<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_COD_CONV_IMP</valueabs>==</ifcond>
+		<then>Prestito rimborsabile mediante cessione <I>pro solvendo</I> di quote pari ad un massimo del quinto della pensione mensile.</then>
+	</if>
+	<BR><BR></TD>
+</TR>
+<TR>
+<TD WIDTH=40% ALIGN=J><BR>Importo totale del credito<BR><BR>
+<I>Limite massimo o somma totale degli importi messi a disposizione del Consumatore.</I><BR><BR>
+</TD>
+<TD WIDTH=60% ALIGN=J><BR><B>&euro <valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMPNETRIC</valueabs></B> è la somma messa a disposizione del Consumatore (netto ricavo). Il totale delle quote cedute (montante lordo da restituire), al netto dei soli interessi, determina il valore attuale del prestito concesso pari a <B>&euro <valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMPFIN</valueabs></B> .<BR><BR><BR></TD>
+</TR>
+<TR>
+<TD  WIDTH=40%><BR>Condizioni di prelievo<BR><BR>
+<I>Modalità e tempi con i quali il Consumatore può utilizzare il credito.</I><BR><BR>
+</TD>
+<TD WIDTH=60% ALIGN=J><BR>Erogazione in unica soluzione mediante:<BR>
+1. bonifico bancario sul conto corrente comunicato
+dal consumatore;<BR>
+2. bonifico domiciliato alle Poste Italiane. Per tale
+modalità di erogazione il consumatore potrà
+recarsi presso un qualunque ufficio postale munito
+di un documento di riconoscimento in corso di
+validità e del codice fiscale per ritirare la somma a
+partire dal 3° giorno successivo alla data della
+comunicazione di avviso di avvenuta messa a
+disposizione dei fondi. Qualora l’ufficio postale non
+dovesse avere disponibilità la somma, il
+consumatore potrà prenotare l’importo per i giorni
+successivi oppure recarsi presso un altro ufficio
+postale. La somma erogata resterà disponibile
+presso le Poste Italiane fino all’ultimo giorno
+lavorativo del mese successivo alla data di
+disposizione del pagamento.<BR>
+In via residuale e del tutto eccezionale, qualora il
+consumatore sia nell’impossibilità di accedere alla somma
+erogata mediante una delle modalità sopra indicate,
+l’erogazione potrà avvenire anche mediante assegno circolare munito della clausola di non trasferibilità.
+Una volta sottoscritto dalle parti il contratto di credito la
+Prestitalia provvede alla notifica di una copia del medesimo
+all’amministrazione datrice di lavoro. L’erogazione sarà
+effettuata entro e non oltre 10 (dieci) giorni dopo
+l’ottenimento degli atti e documenti necessari per la validità
+della cessione stessa e dopo il rilascio della conferma
+definitiva dell’amministrazione dalla quale il Consumatore
+dipende (benestare o nulla osta). La decorrenza del piano di
+rimborso è fissata nel 1° giorno del mese successivo a quello
+di notifica del contratto all’amministrazione; essa potrà
+subire delle variazioni in base alle indicazioni circa il mese di
+avvio delle ritenute da parte dell’amministrazione. La
+Prestitalia provvederà a comunicare l’eventuale variazione
+della decorrenza, appresa dall’amministrazione, mediante il
+prospetto analitico di liquidazione predisposto all’atto
+dell’erogazione.<BR><BR>
+L’erogazione prima della data di decorrenza del piano di
+rimborso comporta il pagamento di un interesse di
+preammortamento per il quale si fa rinvio al documento
+allegato sulle informazioni aggiuntive.<BR>
+<BR>
+</TD>
+</TR>
+<TR>
+<TD WIDTH=40%><BR>Durata del contratto di credito<BR><BR></TD>
+<TD WIDTH=60%><BR>n. mesi <B><valueabs>IDGFCQP00F/RECORD/IDGFCQP_NUMCAN</valueabs></B> dal mese di decorrenza determinato come stabilito al punto precedente.</TD>
+</TR>
+<TR>
+<TD WIDTH=40%><BR>Rate e loro ordine di imputazione</TD>
+<TD WIDTH=60%><BR>L'importo di ciascuna rata è pari a <B>&euro <valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMPCAN</valueabs></B>, il numero delle rate è pari a n. <B><valueabs>IDGFCQP00F/RECORD/IDGFCQP_NUMCAN</valueabs></B>, la periodicità è mensile. Il Consumatore pagherà gli importi degli interessi e/o delle spese nel seguente ordine:<BR>
+<li> eventuale mora,<BR>
+<li> interessi,<BR>
+<li> capitale.<BR>
+Per una miglior comprensione dei costi, del loro ordine di imputazione e della loro maturazione, il Consumatore potrà richiedere ed ottenere la tabella di ammortamento ed una copia del testo contrattuale idoneo per la stipula.<BR>
+<BR>
+</TD>
+</TR>
+<TR>
+<TD WIDTH=40%><BR>Importo totale dovuto dal Consumatore<BR><BR>
+<I>Importo del capitale preso in prestito, più gli interessi e i costi <BR>connessi al credito.</I> <BR><BR>
+</TD>
+<TD WIDTH=60%><BR>Pari a  <B>&euro <valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMPMUTLRD</valueabs></B> somma di tutte le quote mensili cedute, previste nel piano di ammortamento (montante lordo).</TD>
+</TR>
+<TR>
+<TD WIDTH=40%><BR>Garanzie richieste<BR><BR>
+<I>Garanzie che il Consumatore deve prestare per ottenere il credito.</I>
+</TD>
+<TD WIDTH=60% ALIGN=J><BR>Il contratto di finanziamento è rimborsabile mediante cessione di quote della pensione; la cessione è convenuta <I>pro solvendo</I>, ossia il Consumatore può essere chiamato a pagare 
+a fronte di un mancato invio, parziale o totale, della rimessa mensile della quota da parte dell'ente previdenziale per qualsiasi ragione. Il D.P.R. n. 180/1950, che disciplina la cessione del quinto dello stipendio
+finalizzata ad ottenere un finanziamento, stabilisce che essa debba avere la garanzia della assicurazione sulla vita. Nella successiva sezione dei costi del credito l'assicurazione viene meglio descritta e
+quantificata nel suo costo.<BR>
+<BR>
+</TD>
+</TR>
+</TABLE>
+
+<BR><B>3.	Costi del credito</B><BR><BR>
+<TABLE WIDTH=100% BORDER=0.1  SIZE=7.5>
+<TR>
+<TD WIDTH=40%><BR>Tasso di interesse (T.A.N.)</TD>
+<TD WIDTH=60% ALIGN=J><BR>-Tasso Annuo Nominale del <B><valueabs>IDGFCQP00F/RECORD/IDGFCQP_TXTAN02</valueabs> %</B> , applicato in misura fissa per l’intera durata del prestito, a scalare sul debito residuo mensile, secondo un piano di ammortamento a rate costanti  c.d. “alla francese”  per un totale interessi pari a euro  <B>&euro <valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMPINTER</valueabs></B> <BR>
+<BR>
+</TD>
+</TR>
+<TR>
+<TD WIDTH=40% ALIGN=J><BR>Tasso annuo effettivo globale (T.A.E.G.)<BR><BR>
+<I>Costo totale del credito espresso in percentuale, calcolata su base annua, dell'importo totale del credito.<BR><BR>
+Il T.A.E.G. consente al Consumatore di confrontare le varie offerte.</I>
+</TD>
+<TD ALIGN=J WIDTH=60%><BR><B><valueabs>IDGFCQP00F/RECORD/IDGFCQP_TXTAEG02</valueabs> %</B><BR>
+<BR>
+Le ipotesi utilizzate per il calcolo del T.A.E.G. sono le seguenti: <BR>
+- il contratto di credito rimarrà valido per il periodo di tempo convenuto;<BR>
+- il creditore e il Consumatore adempiranno ai loro obblighi nei termini ed entro le date convenuti nel contratto di credito;<BR>
+- l’intervallo di tempo compreso tra la data di decorrenza primo utilizzo e la data di ciascun rimborso è espresso in mesi ed è pari a mesi uno; <BR>
+- ciascun mese è costituito da 30,41666 giorni (vale a dire 365/12), a prescindere dal fatto che l’anno sia bisestile o meno, i decimali sono espressi fino alla prima cifra ed arrotondati alla cifra superiore se la cifra seguente è maggiore o uguale a 5;<BR>
+- la data iniziale è ai fini del calcolo del T.A.E.G. è quella di decorrenza, coincidente con la data di decorrenza confermata dall’amministrazione/datore di lavoro;<BR>
+- qualora il pagamento avvenga nei termini del calendario sopra indicati maturano esclusivamente gli interessi contrattuali pattuiti senza alcuna indennità aggiuntiva;<BR>
+- tutti i costi elencati nella presente sezione 3 - Costi del credito, ad eccezione dei costi in caso di ritardo nel pagamento sono stati inclusi nel calcolo del T.A.E.G..<BR>
+Il tasso è fisso e non modificabile.<BR>
+L’importo totale del credito viene messo a disposizione per intero in un’unica soluzione. <BR>
+La formula di calcolo del T.A.E.G. si sviluppa sulla base del regime di liquidazione degli interessi a capitalizzazione semplice.<BR>
+<BR>
+</TD>
+</TR>
+<TR>
+<TD WIDTH=40% ALIGN=J><BR>Per ottenere il credito o per ottenerlo alle condizioni contrattuali offerte è obbligatorio sottoscrivere: <BR>
+•	un'assicurazione che garantisca il credito e/o <BR><BR><BR><BR><BR><BR>
+•	un altro contratto per un servizio accessorio <BR>
+<BR><BR><BR><BR><BR><BR>
+<I>Se il Prestitalia non conosce i costi dei servizi accessori, questi<BR> non sono inclusi nel TAEG. </I>
+</TD>
+<TD WIDTH=60% ALIGN=J>1) Si, è obbligatorio prevedere una assicurazione per il rischio Vita.
+Prestitalia però assicura in proprio il credito, assolvendo così anche
+agli obblighi di legge (DPR 180/50).<BR><BR>No, non è obbligatorio sottoscrivere altri contratti per servizi accessori.
+</TD>
+</TR>
+</TABLE>
+</TEXT>
+<PAGE>
+<TEXT SIZE=7.5 ALIGN=J>
+<BR><B>3.1	Costi connessi</B><BR><BR>
+<TABLE WIDTH=100% BORDER=0.1  SIZE=7.5>
+<TR>
+<TD WIDTH=40% ALIGN=J><BR>Eventuali altri costi derivanti dal contratto di credito</TD>
+<TD WIDTH=60% ALIGN=J><BR>- <B>Commissioni Prestitalia &euro <valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMCOMM</valueabs></B><BR> Tale importo corrisponde ai costi fissi di istruttoria e collocamento,  composti da:<BR>
+- acquisizione documentale;<BR>
+- informazioni commerciali;<BR>
+- attività di cui al D.lgs. n. 231/07 (adeguata verifica);<BR>
+- costo attività di analisi e delibera;<BR>
+- notificazione degli atti; <BR>
+- gestione del trattamento dati;<BR>
+- archiviazione dati e documenti;<BR>
+- compensi fissi rete distributiva;<BR>
+- Enasarco.<BR>
+Tali componenti non sono rapportati alla durata del
+finanziamento e non saranno restituiti al Consumatore in caso
+di estinzione anticipata in quanto si esauriscono al momento
+della erogazione del finanziamento.<BR>
+<BR>
+<B>Oneri Erariali</B> pari a euro 16,43 di cui:<BR>
+- euro 14,62 a titolo di imposta di bollo sul contratto, costo non rimborsabile in caso di estinzione anticipata del contratto,<BR>
+- euro 1,81 a titolo di imposta di bollo sul prospetto analitico del conteggio di liquidazione, costo non rimborsabile in caso di estinzione anticipata del contratto.<BR>
+<BR>
+- <B>Spese di riscossione rata da corrispondere all'ente previdenziale (eventuali): &euro <valueabs>IDGFCQP00F/RECORD/IDGFCQP_SPINCFIN</valueabs></B>. Tale costo, essendo riferito a componenti rapportate alla durata del finanziamento sarà restituito al Consumatore in caso di estinzione anticipata in misura pari al costo applicato a  ciascuna rata per il numero residuo delle stesse.<BR>
+<BR>
+- <B>Spese per invio di ogni comunicazione su supporto cartaceo: Euro 0.</B><BR>
+<BR>
+- <B>Commissioni per estinzione anticipata: Euro 0.</B><BR>
+<BR>
+</TD>
+</TR>
+<TR>
+<TD ALIGN=J WIDTH=40%><BR>Costi in caso di ritardo nel pagamento<BR><BR>
+<I>Tardare con i pagamenti potrebbe avere gravi conseguenze per il Consumatore (ad esempio la vendita forzata dei beni) e rendere più difficile ottenere altri crediti in futuro.</I>
+</TD>
+<TD ALIGN=J WIDTH=60%><BR>
+Per i pagamenti effettuati oltre il 10 del mese successivo a quello di scadenza saranno addebitati al Consumatore interessi di mora al tasso contrattuale maggiorato di 1,5 punti percentuali. In caso di mancato pagamento potranno essere attivate dalla Prestitalia azioni di recupero giudiziale, con conseguente aggravio di costi per l’impiego di strutture interne ed esterne, compreso il ricorso all’autorità giudiziaria, non preventivamente commisurabili. <BR>
+Il ritardo nei pagamenti potrebbe avere gravi conseguenze per il Consumatore, ad esempio: la vendita forzata dei beni, la segnalazione nelle banche dati del contenzioso obbligatorie per legge, azioni su crediti vantati dal debitore e rendere più difficile ottenere altri crediti in futuro.<BR>
+<BR>
+</TD>
+</TR>
+</TABLE>
+
+<B><BR>4.	Altri importanti aspetti legali</B>  <BR><BR>
+<TABLE WIDTH=100% BORDER=0.1  SIZE=7.5>
+<TR>
+<TD WIDTH=40% ALIGN=J><BR>Diritto di recesso<BR>  
+<BR>
+<I>Il Consumatore ha il diritto di recedere dal contratto di credito entro quattordici giorni di calendario dalla conclusione del contratto.</I>
+</TD>
+<TD WIDTH=60% ALIGN=J><BR>Si<BR>
+<BR>Il diritto decorre dalla sottoscrizione del contratto da parte del Consumatore e della Prestitalia .<BR>
+Il diritto di recesso si esercita con l’invio di una comunicazione scritta alla sede legale della Prestitalia  mediante lettera raccomandata con avviso di ricevimento. La comunicazione può essere inviata anche mediante telegramma, posta elettronica, fax, a condizione che sia confermata mediante lettera raccomandata con avviso di ricevimento entro le quarantotto ore successive. Se il contratto ha avuto esecuzione in tutto o in parte, entro trenta giorni dall’invio della comunicazione sopra indicata, il Consumatore restituisce il capitale e paga gli interessi maturati fino al momento della restituzione pari a <B>&euro <valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMPTANGG</valueabs> </B>giornalieri, calcolati al medesimo tasso contrattuale (T.A.N.) . Inoltre, rimborsa al finanziatore le somme non ripetibili da questa corrisposte alla pubblica amministrazione.<BR>
+Qualora la restituzione intervenga in data antecedente alla data di decorrenza del piano di rimborso contrattuale, la Prestitalia  dovrà rideterminare il conteggio degli interessi di preammortamento percepiti in sede di erogazione riconoscendo al Consumatore la differenza in suo favore.<BR>
+<BR>
+</TD>
+</TR>
+
+<TR>
+<TD WIDTH=40% ALIGN=J><BR>Rimborso anticipato<BR>
+<BR>
+<I>Il Consumatore ha il diritto di rimborsare il credito anche prima della <BR>scadenza del contratto, in qualsiasi momento, in tutto o in parte.<BR>
+<BR><BR><BR><BR><BR><BR><BR>Il finanziatore  ha il diritto a un indennizzo in caso di rimborso anticipato.</I>
+</TD>
+<TD WIDTH=60% ALIGN=J><BR>Si, tuttavia l’art. 39 del D.P.R. n. 180/1950 stabilisce il divieto di contrarre una nuova cessione prima che sia decorso almeno il 40% dall’inizio del piano di ammortamento della presente cessione e le relative eccezioni al caso previste dalla legge. <BR>
+In caso di rimborso il Consumatore ha diritto a una riduzione del costo totale del credito nei termini descritti in corrispondenza delle suesposte voci di costo e nella tabella di ammortamento che la Prestitalia invita a richiedere contestualmente al presente documento.<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+Nel caso di rimborso anticipato del finanziamento la Prestitalia  non ha previsto alcun indennizzo.<BR>
+<BR>
+</TD>
+</TR>
+
+<TR>
+<TD WIDTH=40% ALIGN=J><BR>Consultazione di una banca dati<BR>
+<BR><I>Se la Prestitalia rifiuta la domanda di credito dopo aver consultato una banca dati, il Consumatore ha il diritto di essere informato immediatamente e gratuitamente del risultato della consultazione. <BR>
+Il Consumatore non ha questo diritto se comunicare tale informazione è vietato dalla normativa comunitaria o è contrario all'ordine pubblico o alla pubblica sicurezza.</I><BR>
+<BR>
+</TD>
+<TD WIDTH=60% ALIGN=J><BR>Nel procedimento istruttorio delle richieste di finanziamento la Prestitalia non ricorre a sistemi di informazione creditizia messi a disposizione da gestori privati di sistemi informativi in tema di crediti al consumo accessibili da banche e intermediari.<BR>
+</TD>
+</TR>
+<TR>
+<TD WIDTH=40% ALIGN=J><BR>Diritto a ricevere una copia del contratto<BR>
+<BR><I>Il Consumatore ha il diritto, su sua richiesta, di ottenere gratuitamente copia del contratto di credito idonea per la stipula. Il Consumatore non ha questo diritto se la Prestitalia , al momento della richiesta, non intende concludere il contratto.</I><BR>
+<BR>
+</TD>
+<TD WIDTH=60% ALIGN=J><BR>La Prestitalia  consegna prima della sottoscrizione una copia del testo contrattuale idonea per la stipula.<BR>
+</TD>
+</TR>
+<TR>
+<TD WIDTH=40%><BR>Periodo di validità dell'offerta</TD>
+<TD WIDTH=60%><BR>Informazione valida fino alla fine del mese.<BR>
+<BR></TD>
+</TR>
+</TABLE>
+<BR><B>INFORMAZIONI AGGIUNTIVE ALLE INFORMAZIONI EUROPEE DI BASE SUL CREDITO AI CONSUMATORI - ALLEGATE AL SECCI NR. <valueabs>IDGFCQP00F/RECORD/IDGFCQP_NRPREV</valueabs> (PREAMMORTAMENTO). Le informazioni aggiuntive inerenti il preammortamento non vengono allegate al presente SECCI in quanto, nel suo caso, il finanziatore non ha previsto alcun costo aggiuntivo per l’erogazione prima della data di decorrenza.
+</B>
+</TEXT>
+<PAGE>
+<TEXT SIZE=10 ALIGN=J>
+<BR><BR><BR><BR>
+<B>DISCLAIMER</B>
+<BR><BR>
+<TABLE WIDTH=100% SIZE=8>
+<TR>
+<TD WIDTH=30%></TD>
+<TD WIDTH=70%>Egr. sig./sig.ra</TD>
+</TR>
+<TR>
+<TD WIDTH=30%></TD>
+<TD WIDTH=70%><if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_RAGSCLI</valueabs>></ifcond><then><valueabs>IDGFCQP00F/RECORD/IDGFCQP_RAGSCLI</valueabs></then><else><valueabs>IDGFCQP00F/RECORD/IDGFCQP_COGNCLI</valueabs> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_NOMECLI</valueabs></else></if></TD>
+</TR>
+</TABLE>
+<BR>																			
+<BR>
+<BR>
+<BR>Roma lì, <valueabs>IDGFCQP00F/RECORD/IDGFCQP_DATSYS</valueabs> <BR>
+<BR>
+<BR>
+<BR>
+Facciamo seguito alla sua richiesta di un preventivo finanziario finalizzata ad una verifica delle condizioni di finanziamento, rimborsabile mediante cessione del quinto o delegazione di quote della retribuzione/pensione, a Lei riservate dalla Prestitalia . Le condizioni richieste vengono fornite attraverso l’allegato documento denominato “Informazioni europee di base sul credito ai consumatori”   nr. <valueabs>IDGFCQP00F/RECORD/IDGFCQP_NRPREV</valueabs>  d’ora in poi in breve anche  “SECCI”.<BR>
+<BR>
+Le informazioni e le condizioni relative al contratto di credito, che  vengono in allegato fornite attraverso il modulo “Informazioni Europee di base sul credito ai consumatori” sono state elaborate esclusivamente sulla base delle informazioni e della documentazione  fornite dal Consumatore e/o delle preferenze da questi  manifestate , senza il compimento del previsto iter istruttorio interno atto alla   verifica del merito creditizio, ed al successivo eventuale accoglimento  e  concessione del finanziamento. I dati anagrafici del Consumatore e quelli economici afferenti il rapporto di lavoro dipendente o di trattamento pensionistico sotto riportati, acquisiti previa sottoscrizione del   consenso al trattamento dei dati personali, sono stati dunque utilizzati con la finalità di rendere al Consumatore, anche prima di una eventuale decisione di sottoscrivere una richiesta di finanziamento ovvero prima del compimento dell’iter istruttorio previsto dalla Prestitalia  e di essere vincolato da un contratto o da un’offerta di credito, le informazioni necessarie per consentire il confronto delle diverse offerte di credito sul mercato e prendere una decisione informata e consapevole.<BR>
+<BR>
+La consegna del documento delle “Informazioni europee di base sul credito ai consumatori” con le informazioni personalizzate non è vincolante per il consumatore né per il finanziatore, fermo restando che il finanziatore, in seguito alla accettazione dell’offerta da parte del Consumatore nei tempi di validità del “Secci” e  all’esito  delle proprie  discrezionali valutazioni se positive, darà corso alla sottoscrizione di un contratto di finanziamento in base alle condizioni espresse nel “Secci”.<BR>
+<BR>
+Il Consumatore dichiara che le  informazioni  fornite - anche attraverso il rilascio di documenti - alla Prestitalia    sono veritiere  e si  impegna a comunicare immediatamente alla  medesima  ogni eventuale  variazione del quadro informativo  fornito. <BR>
+<BR>
+Il Consumatore prende atto che la richiesta di variazione dei termini del finanziamento per il mutamento delle proprie preferenze o per  modifiche rivenienti da un quadro informativo diversamente accertato  rispetto a quello inizialmente rappresentato, ad es.: differente  individuazione del quinto massimo cedibile, della età pensionabile, dell’ importo del trattamento di fine rapporto etc. comporta necessariamente la formulazione di un nuovo documento delle “Informazioni europee di base sul credito al consumatore” sulla base delle nuove informazioni, fatta salva l’eventuale decisione di non proseguire nelle trattative commerciali.<BR>
+<BR>
+La presente lettera accompagnatoria  è da considerare quale integrazione alle informazioni rilasciate con il “Secci” . Con l’occasione Le ricordiamo che Lei può richiedere gratuitamente in qualsiasi momento una copia del testo contrattuale idoneo per la stipula, la “Guida alla cessione del quinto e delegazione di pagamento”, la “Guida all’Arbitro Bancario Finanziario”, un’assistenza da parte della Prestitalia   per il tramite degli intermediari del credito abilitati presso i quali Lei si è rivolto per ottenere le presenti informazioni sul finanziamento o in alternativa chiamando il nr. 800.26.26.26 della Prestitalia <BR>
+<BR>
+Firma del Consumatore <BR>
+<BR><BR>
+Per ricevuta ed accettazione del contenuto della presente<BR>
+<BR>
+Luogo________________________  Data_________________________<BR>
+<BR>
+Firma del Cliente__________________<BR>
+<BR>
+</TEXT>
+</BODY>
+</PDF>

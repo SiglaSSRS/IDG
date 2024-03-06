@@ -1,0 +1,253 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize5.5">
+
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla51">			
+</HEADER>
+
+
+
+<BODY>		
+
+  <BR>
+   <BR>
+    <BR>
+     <BR>  
+<TABLE FORCEWIDTH SIZE=7.5>
+<TR>
+	<TD WIDTH=30%><B>
+	<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>==DEL</ifcond>
+	<then>DELEGAZIONE DI PAGAMENTO</then>
+	</if>
+	<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_COD_CONV_IMP</valueabs>!=</ifcond>
+		<then>CESSIONE DEL QUINTO DELLO STIPENDIO</then>
+	</if>
+	<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_COD_CONV_IMP</valueabs>==</ifcond>
+		<then>CESSIONE DEL QUINTO DELLA PENSIONE</then>
+	</if>
+	</B>
+	</TD>
+	<TD WIDTH=40%></TD>
+	<TD WIDTH=30% ALIGN=R><B>Simulazione finanziaria</B></TD> 
+</TR> 
+</TABLE>	
+<TABLE WIDTH=100% BORDER=0.8><TR><TD WIDTH=100%>
+<TABLE FORCEWIDTH SIZE=7.5 BORDER=0>
+<TR>
+	<TD WIDTH=30%><B>N° Preventivo:</B> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_ANPREV</valueabs> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_NRPREV</valueabs> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_PRPREV</valueabs></TD> 
+	<TD WIDTH=40%></TD>
+	<TD WIDTH=30%><B>Data inserimento preventivo:</B> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_DTINSPRV</valueabs></TD> 
+</TR> 
+</TABLE>
+<BR>
+<TABLE FORCEWIDTH SIZE=7.5 BORDER=0>
+<TR>
+	<TD WIDTH=30%><B>Cognome Nome:</B> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_COGNCLI</valueabs> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_NOMECLI</valueabs></TD> 
+	<TD WIDTH=40%></TD>
+	<TD WIDTH=30%><B>Sesso:</B> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_SESSOCLI</valueabs></TD> 
+</TR> 
+</TABLE>
+<BR>
+<TABLE FORCEWIDTH SIZE=7.5 BORDER=0>
+<TR>
+	<TD WIDTH=35%><B>Nato a:</B> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_LOCNSCLI</valueabs>(<valueabs>IDGFCQP00F/RECORD/IDGFCQP_PRVNSCLI</valueabs>)</TD> 
+	<TD WIDTH=35%><B>Data di nascita:</B> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_DTNSCLI</valueabs></TD>
+	<TD WIDTH=30%><B>Età:</B> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_ETA</valueabs></TD> 
+</TR> 
+</TABLE>
+<BR>
+<TABLE FORCEWIDTH SIZE=7.5 BORDER=0>
+<TR>
+	<TD WIDTH=60%><B>Assunto presso:</B> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_DATLVCLI</valueabs>  <valueabs>IDGFCQP00F/RECORD/IDGFCQP_STATOGIUR</valueabs></TD> 
+	<TD WIDTH=20%></TD>
+	<TD WIDTH=20%></TD> 
+</TR> 
+</TABLE>
+<BR>
+<TABLE FORCEWIDTH SIZE=7.5 BORDER=0>
+<TR>
+	<TD WIDTH=35%><B>Data assunzione:</B> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_DTASSCLI</valueabs></TD> 
+	<TD WIDTH=35%><B>Anzianità Servizio:</B><valueabs>IDGFCQP00F/RECORD/IDGFCQP_NRANNILV</valueabs> anni e <valueabs>IDGFCQP00F/RECORD/IDGFCQP_NRMESILV</valueabs> mesi</TD>
+	<TD WIDTH=30%><B>Netto mensile:</B> &euro <valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMPCEDOL</valueabs></TD> 
+</TR> 
+</TABLE>
+</TD></TR></TABLE>	
+<BR>
+<BR>
+<BR>
+<TEXT SIZE=9 ALIGN=J>
+A seguito della vostra richiesta trasmettiamo un'ipotesi relativa alla 	<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>==DEL</ifcond>
+	<then>DELEGAZIONE DI PAGAMENTO</then>
+	</if>
+	<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_COD_CONV_IMP</valueabs>!=</ifcond>
+		<then>CESSIONE DEL QUINTO DELLO STIPENDIO</then>
+	</if>
+	<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_COD_CONV_IMP</valueabs>==</ifcond>
+		<then>CESSIONE DEL QUINTO DELLA PENSIONE</then>
+	</if>
+ che, se avrà il Suo gradimento di
+massima, andremo a perfezionare con i dati e la documentazione definitiva. Ci riteniamo autorizzati fin da ora ad estinguere cessioni, delegazioni 
+o prestiti in essere che verranno detratti dall'importo da erogare.
+</TEXT>
+<BR>
+<TEXT SIZE=9 ALIGN=L>
+Ringraziando per la preferenza accordataci, gradite distinti saluti.<BR>
+<valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs>
+</TEXT>
+<BR>
+ <BR>
+  <BR>
+<TABLE FORCEWIDTH SIZE=7.5>
+<TR>
+	<TD WIDTH=30%><B>Istituto finanziario:</B> <valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs></TD> 
+	<TD WIDTH=40%></TD>
+	<TD WIDTH=30%></TD> 
+</TR> 
+</TABLE> 
+<TABLE WIDTH=100% BORDER=0.8><TR><TD WIDTH=100%>
+<TABLE FORCEWIDTH SIZE=7.5>
+<TR>
+	<TD WIDTH=19%><B>N°Rate:</B> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_NUMCAN</valueabs></TD> 
+	<TD WIDTH=21%><B>Rata Mensile:</B> &euro <valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMPCAN</valueabs></TD>
+	<TD WIDTH=53% ALIGN=R><B>Capitale lordo mutuato:</B> &euro </TD>  
+	<TD WIDTH=7% ALIGN="R"><valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMPMUTLRD</valueabs></TD>
+</TR> 
+</TABLE>
+<TABLE FORCEWIDTH SIZE=7.5>
+<TR>
+	<TD WIDTH=19%><B>Prodotto:</B></TD> 
+	<TD WIDTH=21% ALIGN="L"><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CODPROD</valueabs> - <valueabs>IDGFCQP00F/RECORD/IDGFCQP_DESPROD</valueabs></TD> 
+	<TD WIDTH=2%></TD>
+	<TD WIDTH=51% ALIGN=R><B>Interessi scalari al tan esposto:</B> &euro </TD> 
+	<TD WIDTH=7% ALIGN="R"><valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMPINTER</valueabs></TD>
+</TR> 
+</TABLE>
+<TABLE FORCEWIDTH SIZE=7.5>
+<TR>
+	<TD WIDTH=19%><B>Ag./Med:</B></TD> 
+	<TD WIDTH=21%> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_DESCAGE</valueabs></TD> 
+	<TD WIDTH=2%></TD>
+	<TD WIDTH=51% ALIGN=R><B>Oneri erariali/imposta di bollo:</B> &euro </TD> 
+	<TD WIDTH=7% ALIGN="R"><valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMRIVALSA</valueabs></TD>
+</TR> 
+</TABLE>
+<TABLE FORCEWIDTH SIZE=7.5>
+<TR>
+	<TD WIDTH=19%><B>BP:</B></TD> 
+	<TD WIDTH=21%> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_DESCFIN</valueabs></TD> 
+	<TD WIDTH=2% ALIGN=R></TD>
+	<TD WIDTH=51% ALIGN=R><B>Commissioni in favore della banca:</B> &euro </TD> 
+	<TD WIDTH=7% ALIGN="R"><valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMCOMMBA</valueabs></TD>
+</TR> 
+</TABLE>
+<TABLE FORCEWIDTH SIZE=7.5>
+<TR>
+	<TD WIDTH=19%><B>Decorrenza:</B></TD> 
+	<TD WIDTH=21%> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_DATATT</valueabs></TD> 
+	<TD WIDTH=2% ALIGN=R></TD>
+	<TD WIDTH=51% ALIGN=R><B>Commissioni in favore dell'intermediario finanziario:</B> &euro </TD> 
+	<TD WIDTH=7% ALIGN="R"><valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMCOMM</valueabs></TD>
+</TR> 
+</TABLE>
+<TABLE FORCEWIDTH SIZE=7.5>
+<TR>
+	<TD WIDTH=19%><B>Scadenza:</B></TD> 
+	<TD WIDTH=21%> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_DTPRISCAD</valueabs> - <valueabs>IDGFCQP00F/RECORD/IDGFCQP_DTULTSCAD</valueabs></TD> 
+	<TD WIDTH=2%></TD>
+	<TD WIDTH=51% ALIGN=R><if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDANAFIN</valueabs><in>(12002016,12002283,12001691,72000314)</ifcond><then><B>Provvigioni Agente :</B> &euro</if></TD> 
+	<TD WIDTH=7% ALIGN="R"><if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDANAFIN</valueabs><in>(12002016,12002283,12001691,72000314)</ifcond><then><valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMPROV1</valueabs></if></TD>
+</TR> 
+</TABLE>
+<TABLE FORCEWIDTH SIZE=7.5>
+<TR>
+	<TD WIDTH=19%><B>Convenzione ass.vita:</B></TD> 
+	<TD WIDTH=21%> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_DES_CONV_VIT</valueabs></TD> 
+	<TD WIDTH=2%></TD>
+	<TD WIDTH=51% ALIGN=R><B>Costi premio assicurativo garanzia caso morte:</B> &euro </TD> 
+	<TD WIDTH=7% ALIGN="R"><valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMASSMRT</valueabs></TD>
+</TR> 
+</TABLE>
+<TABLE FORCEWIDTH SIZE=7.5>
+<TR>
+	<TD WIDTH=19%><B>Convenzione ass.impiego:</B></TD> 
+	<TD WIDTH=21%> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_DES_CONV_IMP</valueabs></TD> 
+	<TD WIDTH=2%></TD>
+	<TD WIDTH=51% ALIGN=R><B>Costi premio assicurativo rischio perdita d'impiego :</B> &euro </TD> 
+	<TD WIDTH=7% ALIGN="R"><if>(<ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDANAFIN</valueabs>==12002203</ifcond><and><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_FLG_RSK_IMP</valueabs>==S</ifcond>)<or><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDANAFIN</valueabs>==12001691</ifcond><then>0,00<else><valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMASSIMP</valueabs></if></TD>
+</TR> 
+</TABLE>
+<TABLE FORCEWIDTH SIZE=7.5>
+<TR>
+	<TD WIDTH=40%></TD> 
+	<TD WIDTH=2%></TD>
+	<TD WIDTH=51% ALIGN=R><B><B>Spese e oneri:</B> &euro </TD> 
+	<TD WIDTH=7% ALIGN="R"><valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMSPIST</valueabs></TD>
+</TR> 
+</TABLE>
+<TABLE FORCEWIDTH SIZE=7.5>
+<TR>
+	<TD WIDTH=40%></TD> 
+	<TD WIDTH=2%></TD>
+	<TD WIDTH=51% ALIGN=R><B>Spese inc. ATC:</B> &euro </TD> 
+	<TD WIDTH=7% ALIGN="R"><valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMPFISSI</valueabs></TD>
+</TR> 
+</TABLE>
+<TABLE FORCEWIDTH SIZE=7.5>
+<TR>
+	<TD WIDTH=40%></TD> 
+	<TD WIDTH=2%></TD>
+	<TD WIDTH=51% ALIGN=R><B>Spese inc. Fin.:</B> &euro </TD> 
+	<TD WIDTH=7% ALIGN="R"><valueabs>IDGFCQP00F/RECORD/IDGFCQP_SPINCFIN</valueabs></TD>
+</TR> 
+</TABLE>
+<TABLE FORCEWIDTH SIZE=7.5>
+<TR>
+	<TD WIDTH=93% ALIGN=R><B>Commissione estinzione anticipata (su capitale residuo): % </B></TD> 
+	<TD WIDTH=7% ALIGN="R">1,000</TD>
+</TR> 
+</TABLE>
+<TABLE FORCEWIDTH SIZE=7.5>
+<TR>
+	<TD WIDTH=93% ALIGN=R><B>Tasso nominale annuo scalare (TAN) applicato in misura fissa per l'intera durata del prestito (con riferimento all'anno commerciale , con 12 mesi da 30 giorni): %</B></TD> 
+	<TD WIDTH=7% ALIGN="R" VALIGN="B"><valueabs>IDGFCQP00F/RECORD/IDGFCQP_TXTAN</valueabs></TD>
+</TR> 
+</TABLE>
+<TABLE FORCEWIDTH SIZE=7.5>
+<TR>
+	<TD WIDTH=93% ALIGN=R><B>TAEG ISC calcolato includendo tutte le spese indicate sopra ,inclusi gli oneri erariali, come da istruzioni di Banca d'Italia: %</B></TD> 
+	<TD WIDTH=7% ALIGN="R" VALIGN="B"><valueabs>IDGFCQP00F/RECORD/IDGFCQP_TXTAEG</valueabs></TD>
+</TR> 
+</TABLE>
+<TABLE FORCEWIDTH SIZE=7.5>
+<TR>
+	<TD WIDTH=93% ALIGN=R><B>TEG calcolato includendo tutte le spese indicate sopra ,ad esclusione degli oneri erariali, come da istruzioni di Banca d'Italia: %</B></TD> 
+	<TD WIDTH=7% ALIGN="R" VALIGN="B"><valueabs>IDGFCQP00F/RECORD/IDGFCQP_TXTEG</valueabs></TD>
+</TR> 
+</TABLE>
+</TD></TR></TABLE>
+<TABLE FORCEWIDTH SIZE=7.5>
+<TR>
+	<TD WIDTH=40%></TD> 
+	<TD WIDTH=40%></TD>
+	<TD WIDTH=20% ALIGN=R BORDER=1><B>Da erogare:</B> &euro <valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMPNETRIC</valueabs></TD> 
+</TR> 
+</TABLE>
+<BR>
+ <BR>
+  <BR>
+   <BR>
+    <BR>
+<TEXT SIZE=9 ALIGN=L>
+Il sottoscritto dichiara espressamente di non aver versato alcuna somma di denaro per l'istruzione della pratica.
+</TEXT>
+<BR>
+ <BR>
+  <BR>
+   <BR>
+    <BR>
+     <BR>
+<TEXT SIZE=9 ALIGN=R>
+<B>Firma del richiedente:</B> __________________________________________
+</TEXT>
+</BODY>
+</PDF>

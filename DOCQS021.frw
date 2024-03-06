@@ -1,0 +1,305 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize9">
+<include file="\INCLUDE\Percorsi.frw">
+<BODY>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>==FEA</ifcond><or><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>==FSE</ifcond><or><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>==FSP</ifcond>
+<then></then>
+<else>
+<if>(<ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CODENTE</valueabs>!=2483748</ifcond>
+<and><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CODENTE</valueabs>!=82207</ifcond>)
+<or>(<ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CODENTE</valueabs><in>(2483748,82207)</ifcond>
+	<and>(<ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP042 </ifcond>
+	<and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP043 </ifcond>
+	<and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP044 </ifcond>
+	<and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP0421 </ifcond>
+	<and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP0431 </ifcond>
+	<and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP0441 </ifcond>)
+)<then><ENCRYPT OWNER="soloiopossomodificare" NOCHANGE NOCOPY></then>
+</else>
+</if></if>
+
+
+
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond>
+<then>
+<PDFPAGE SRC="DOCQS021.PDF" VALUE=1 SHOWONCE> 
+<else><PDFPAGE SRC="DOCQS021.PDF" VALUE=9 SHOWONCE> 
+</else></if>
+
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==DEL</ifcond>
+<then>
+ <TEXT X=16.5 Y=1.5><B>4996</B></TEXT>
+</then><else>
+<TEXT X=16.5 Y=1.5><B>4995</B></TEXT>
+</else></if>
+
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==DEL</ifcond>
+<then><TEXT X=9.8 Y=5.15><B>X</B></TEXT>  </then>
+</if>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>!=</ifcond>
+	<then><TEXT X=0.5 Y=5.15><B>X</B></TEXT> </then>
+</if>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>==</ifcond>
+	<then><TEXT X=0.5 Y=5.15><B>X</B></TEXT> </then>
+</if>
+
+<TEXT X=4.7 Y=7.7><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></TEXT> 
+<TEXT X=15 Y=7.7><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC</valueabs></TEXT>
+
+<TEXT X=0.7 Y=8.25><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCNASC</valueabs></TEXT> 
+<TEXT X=7.8 Y=8.25><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs>==</ifcond><then><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs></then><else><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_RES</valueabs></else></if></TEXT> 
+<TEXT X=15.6 Y=8.25><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs>==</ifcond><then><valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs></then><else><valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_RES</valueabs></else></if></TEXT> 
+<TEXT X=17.3 Y=8.25><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs>==</ifcond><then><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs></then><else><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_RES</valueabs></else></if></TEXT> 
+
+<TEXT X=2.1 Y=8.75><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs>==</ifcond><then><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs></then><else><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs></else></if></TEXT> 
+<TEXT X=14.7 Y=8.75><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs></TEXT> 
+
+<TEXT X=0.7  Y=9.25><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs></TEXT> 
+<TEXT X=7.8  Y=9.25><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DSDOCUM</valueabs></TEXT> 
+<TEXT X=13.5 Y=9.25><valueabs>IDGFCLI00F/RECORD/IDGFCLI_NUM_DOCUM</valueabs></TEXT> 
+
+<TEXT X=0.7 Y=9.8><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_ENTE</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_DA</valueabs></TEXT> 
+<TEXT X=11.0 Y=9.75 SIZE=12><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_DA_IL</valueabs></TEXT> 
+
+<TEXT X=0.7 Y=10.3><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs></TEXT> 
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\PROPASSICUDOCQS021##01_01_12.PNG" BACKGROUND X=14.5 Y=1.2 SCALE=25>
+
+<PAGE>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond>
+<then>
+<PDFPAGE SRC="DOCQS021.PDF" VALUE=2 SHOWONCE> 
+<else><PDFPAGE SRC="DOCQS021.PDF" VALUE=10 SHOWONCE> 
+</else></if>
+<TEXT X=10.5 Y=1.05><valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs></TEXT>  
+<TEXT X=1.5 Y=8.02><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></TEXT>
+<TEXT X=2.5 Y=17.32><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></TEXT>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FEA</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FSE</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FSP</ifcond><then>
+<TEXT X=14 Y=7.25>		<INPUT TYPE=SIGNATURE NAME=C-PROPASSICUDOCQS021##-07 WIDTH=5 HEIGHT=3></TEXT>
+<TEXT X=11.7 Y=16.55>	<INPUT TYPE=SIGNATURE NAME=C-PROPASSICUDOCQS021##-08 WIDTH=5 HEIGHT=3></TEXT>
+</then></if>
+<TEXT X=13.7 Y=12.4>	<INPUT TYPE=CHECKBOX NAME=B-PROPASSICUDOCQS021##-19 SIZE=8></TEXT>
+<TEXT X=14.8 Y=12.4>	<INPUT TYPE=CHECKBOX NAME=B-PROPASSICUDOCQS021##-20 SIZE=8></TEXT>
+<TEXT X=13.7 Y=14.1> 	<INPUT TYPE=CHECKBOX NAME=B-PROPASSICUDOCQS021##-21 SIZE=8></TEXT>
+<TEXT X=14.8 Y=14.1> 	<INPUT TYPE=CHECKBOX NAME=B-PROPASSICUDOCQS021##-22 SIZE=8></TEXT>
+<TEXT X=13.7 Y=15.7> 	<INPUT TYPE=CHECKBOX NAME=B-PROPASSICUDOCQS021##-23 SIZE=8></TEXT>
+<TEXT X=14.7 Y=15.7>   	<INPUT TYPE=CHECKBOX NAME=B-PROPASSICUDOCQS021##-24 SIZE=8></TEXT>
+
+
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\PROPASSICUDOCQS021##01_02_12.PNG" BACKGROUND X=14.5 Y=1.2 SCALE=25>
+<PAGE>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond>
+<then>
+<PDFPAGE SRC="DOCQS021.PDF" VALUE=3 SHOWONCE> 
+<else><PDFPAGE SRC="DOCQS021.PDF" VALUE=11 SHOWONCE> 
+</else></if>
+
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==DEL</ifcond>
+<then>
+ <TEXT X=16.5 Y=1.3><B>4996</B></TEXT>
+</then><else>
+<TEXT X=16.5 Y=1.3><B>4995</B></TEXT>
+</else></if>
+
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==DEL</ifcond>
+<then><TEXT X=9.8 Y=4.9><B>X</B></TEXT>  </then>
+</if>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>!=</ifcond>
+	<then><TEXT X=0.5 Y=5.15><B>X</B></TEXT> </then>
+</if>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>==</ifcond>
+	<then><TEXT X=0.5 Y=5.15><B>X</B></TEXT> </then>
+</if>
+
+<TEXT X=4.7 Y=7.7><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></TEXT> 
+<TEXT X=15 Y=7.7><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC</valueabs></TEXT>
+
+<TEXT X=0.7 Y=8.25><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCNASC</valueabs></TEXT> 
+<TEXT X=7.8 Y=8.25><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs>==</ifcond><then><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs></then><else><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_RES</valueabs></else></if></TEXT> 
+<TEXT X=15.6 Y=8.25><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs>==</ifcond><then><valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs></then><else><valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_RES</valueabs></else></if></TEXT> 
+<TEXT X=17.3 Y=8.25><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs>==</ifcond><then><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs></then><else><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_RES</valueabs></else></if></TEXT> 
+
+<TEXT X=2.1 Y=8.75><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs>==</ifcond><then><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs></then><else><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs></else></if></TEXT> 
+<TEXT X=14.7 Y=8.75><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs></TEXT> 
+
+<TEXT X=0.7  Y=9.25><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs></TEXT> 
+<TEXT X=7.8  Y=9.25><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DSDOCUM</valueabs></TEXT> 
+<TEXT X=13.5 Y=9.25><valueabs>IDGFCLI00F/RECORD/IDGFCLI_NUM_DOCUM</valueabs></TEXT> 
+
+<TEXT X=0.7 Y=9.8><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_ENTE</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_DA</valueabs></TEXT> 
+<TEXT X=11.0 Y=9.75 SIZE=12><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_DA_IL</valueabs></TEXT> 
+
+<TEXT X=0.7 Y=10.3><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs></TEXT>  
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\PROPASSICUDOCQS021##01_03_12.PNG" BACKGROUND X=14.5 Y=1.2 SCALE=25>
+<PAGE>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond>
+<then>
+<PDFPAGE SRC="DOCQS021.PDF" VALUE=4 SHOWONCE> 
+<else><PDFPAGE SRC="DOCQS021.PDF" VALUE=12 SHOWONCE> 
+</else></if>
+<TEXT X=10.5 Y=1.05><valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs></TEXT>  
+<TEXT X=1.5 Y=8.02><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></TEXT>
+<TEXT X=2.5 Y=17.32><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></TEXT>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FEA</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FSE</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FSP</ifcond><then>
+<TEXT X=14 Y=7.25>		<INPUT TYPE=SIGNATURE NAME=C-PROPASSICUDOCQS021##-01 WIDTH=5 HEIGHT=3></TEXT>
+<TEXT X=11.7 Y=16.55>	<INPUT TYPE=SIGNATURE NAME=C-PROPASSICUDOCQS021##-02 WIDTH=5 HEIGHT=3></TEXT>
+</then></if>
+<TEXT X=13.7 Y=12.4>	<INPUT TYPE=CHECKBOX NAME=B-PROPASSICUDOCQS021##-01 SIZE=8></TEXT>
+<TEXT X=14.8 Y=12.4>	<INPUT TYPE=CHECKBOX NAME=B-PROPASSICUDOCQS021##-02 SIZE=8></TEXT>
+<TEXT X=13.7 Y=14.1> 	<INPUT TYPE=CHECKBOX NAME=B-PROPASSICUDOCQS021##-03 SIZE=8></TEXT>
+<TEXT X=14.8 Y=14.1> 	<INPUT TYPE=CHECKBOX NAME=B-PROPASSICUDOCQS021##-04 SIZE=8></TEXT>
+<TEXT X=13.7 Y=15.7> 	<INPUT TYPE=CHECKBOX NAME=B-PROPASSICUDOCQS021##-05 SIZE=8></TEXT>
+<TEXT X=14.7 Y=15.7>   	<INPUT TYPE=CHECKBOX NAME=B-PROPASSICUDOCQS021##-06 SIZE=8></TEXT>
+
+
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\PROPASSICUDOCQS021##01_04_12.PNG" BACKGROUND X=14.5 Y=1.2 SCALE=25>
+<PAGE>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond>
+<then>
+<PDFPAGE SRC="DOCQS021.PDF" VALUE=5 SHOWONCE> 
+<else><PDFPAGE SRC="DOCQS021.PDF" VALUE=13 SHOWONCE> 
+</else></if>
+
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==DEL</ifcond>
+<then>
+ <TEXT X=16.5 Y=1.3><B>4996</B></TEXT>
+</then><else>
+<TEXT X=16.5 Y=1.3><B>4995</B></TEXT>
+</else></if>
+
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==DEL</ifcond>
+<then><TEXT X=9.8 Y=4.9><B>X</B></TEXT>  </then>
+</if>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>!=</ifcond>
+	<then><TEXT X=0.5 Y=5.15><B>X</B></TEXT> </then>
+</if>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>==</ifcond>
+	<then><TEXT X=0.5 Y=5.15><B>X</B></TEXT> </then>
+</if>
+
+<TEXT X=4.7 Y=7.7><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></TEXT> 
+<TEXT X=15 Y=7.7><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC</valueabs></TEXT>
+
+<TEXT X=0.7 Y=8.25><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCNASC</valueabs></TEXT> 
+<TEXT X=7.8 Y=8.25><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs>==</ifcond><then><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs></then><else><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_RES</valueabs></else></if></TEXT> 
+<TEXT X=15.6 Y=8.25><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs>==</ifcond><then><valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs></then><else><valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_RES</valueabs></else></if></TEXT> 
+<TEXT X=17.3 Y=8.25><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs>==</ifcond><then><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs></then><else><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_RES</valueabs></else></if></TEXT> 
+
+<TEXT X=2.1 Y=8.75><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs>==</ifcond><then><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs></then><else><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs></else></if></TEXT> 
+<TEXT X=14.7 Y=8.75><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs></TEXT> 
+
+<TEXT X=0.7  Y=9.25><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs></TEXT> 
+<TEXT X=7.8  Y=9.25><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DSDOCUM</valueabs></TEXT> 
+<TEXT X=13.5 Y=9.25><valueabs>IDGFCLI00F/RECORD/IDGFCLI_NUM_DOCUM</valueabs></TEXT> 
+
+<TEXT X=0.7 Y=9.8><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_ENTE</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_DA</valueabs></TEXT> 
+<TEXT X=11.0 Y=9.75 SIZE=12><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_DA_IL</valueabs></TEXT> 
+
+<TEXT X=0.7 Y=10.3><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs></TEXT>  
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\PROPASSICUDOCQS021##01_05_12.PNG" BACKGROUND X=14.5 Y=1.2 SCALE=25>
+<PAGE>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond>
+<then>
+<PDFPAGE SRC="DOCQS021.PDF" VALUE=6 SHOWONCE> 
+<else><PDFPAGE SRC="DOCQS021.PDF" VALUE=14 SHOWONCE> 
+</else></if> 
+<TEXT X=10.5 Y=1.05><valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs></TEXT>  
+<TEXT X=1.5 Y=8.02><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></TEXT>
+<TEXT X=2.5 Y=17.32><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></TEXT>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FEA</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FSE</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FSP</ifcond><then>
+<TEXT X=14 Y=7.25>		<INPUT TYPE=SIGNATURE NAME=C-PROPASSICUDOCQS021##-03 WIDTH=5 HEIGHT=3></TEXT>
+<TEXT X=11.7 Y=16.55>	<INPUT TYPE=SIGNATURE NAME=C-PROPASSICUDOCQS021##-04 WIDTH=5 HEIGHT=3></TEXT>
+</then></if>
+<TEXT X=13.7 Y=12.4>	<INPUT TYPE=CHECKBOX NAME=B-PROPASSICUDOCQS021##-07 SIZE=8></TEXT>
+<TEXT X=14.8 Y=12.4>	<INPUT TYPE=CHECKBOX NAME=B-PROPASSICUDOCQS021##-08 SIZE=8></TEXT>
+<TEXT X=13.7 Y=14.1> 	<INPUT TYPE=CHECKBOX NAME=B-PROPASSICUDOCQS021##-09 SIZE=8></TEXT>
+<TEXT X=14.8 Y=14.1> 	<INPUT TYPE=CHECKBOX NAME=B-PROPASSICUDOCQS021##-10 SIZE=8></TEXT>
+<TEXT X=13.7 Y=15.7> 	<INPUT TYPE=CHECKBOX NAME=B-PROPASSICUDOCQS021##-11 SIZE=8></TEXT>
+<TEXT X=14.7 Y=15.7>   	<INPUT TYPE=CHECKBOX NAME=B-PROPASSICUDOCQS021##-12 SIZE=8></TEXT>
+
+
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\PROPASSICUDOCQS021##01_06_12.PNG" BACKGROUND X=14.5 Y=1.2 SCALE=25>
+<PAGE>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond>
+<then>
+<PDFPAGE SRC="DOCQS021.PDF" VALUE=7 SHOWONCE> 
+<else><PDFPAGE SRC="DOCQS021.PDF" VALUE=15 SHOWONCE> 
+</else></if>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==DEL</ifcond>
+<then>
+ <TEXT X=16.5 Y=1.5><B>4996</B></TEXT>
+</then><else>
+<TEXT X=16.5 Y=1.5><B>4995</B></TEXT>
+</else></if>
+
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==DEL</ifcond>
+<then><TEXT X=9.8 Y=5.15><B>X</B></TEXT>  </then>
+</if>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>!=</ifcond>
+	<then><TEXT X=0.5 Y=5.15><B>X</B></TEXT> </then>
+</if>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>==</ifcond>
+	<then><TEXT X=0.5 Y=5.15><B>X</B></TEXT> </then>
+</if>
+
+<TEXT X=4.7 Y=7.7><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></TEXT> 
+<TEXT X=15 Y=7.7><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC</valueabs></TEXT>
+
+<TEXT X=0.7 Y=8.25><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCNASC</valueabs></TEXT> 
+<TEXT X=7.8 Y=8.25><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs>==</ifcond><then><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs></then><else><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_RES</valueabs></else></if></TEXT> 
+<TEXT X=15.6 Y=8.25><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs>==</ifcond><then><valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs></then><else><valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_RES</valueabs></else></if></TEXT> 
+<TEXT X=17.3 Y=8.25><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs>==</ifcond><then><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs></then><else><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_RES</valueabs></else></if></TEXT> 
+
+<TEXT X=2.1 Y=8.75><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs>==</ifcond><then><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs></then><else><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs></else></if></TEXT> 
+<TEXT X=14.7 Y=8.75><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs></TEXT> 
+
+<TEXT X=0.7  Y=9.25><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs></TEXT> 
+<TEXT X=7.8  Y=9.25><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DSDOCUM</valueabs></TEXT> 
+<TEXT X=13.5 Y=9.25><valueabs>IDGFCLI00F/RECORD/IDGFCLI_NUM_DOCUM</valueabs></TEXT> 
+
+<TEXT X=0.7 Y=9.8><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_ENTE</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_DA</valueabs></TEXT> 
+<TEXT X=11.0 Y=9.75 SIZE=12><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_DA_IL</valueabs></TEXT> 
+
+<TEXT X=0.7 Y=10.3><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs></TEXT> 
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\PROPASSICUDOCQS021##01_07_12.PNG" BACKGROUND X=14.5 Y=1.2 SCALE=25>
+<PAGE>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond>
+<then>
+<PDFPAGE SRC="DOCQS021.PDF" VALUE=8 SHOWONCE> 
+<TEXT X=10.5 Y=1.05><valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs></TEXT>  
+<TEXT X=1.5 Y=8.02><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></TEXT>
+<TEXT X=2.5 Y=17.32><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></TEXT>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FEA</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FSE</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FSP</ifcond><then>
+<TEXT X=14 Y=7.25>		<INPUT TYPE=SIGNATURE NAME=C-PROPASSICUDOCQS021##-05 WIDTH=5 HEIGHT=3></TEXT>
+<TEXT X=11.7 Y=16.55>	<INPUT TYPE=SIGNATURE NAME=C-PROPASSICUDOCQS021##-06 WIDTH=5 HEIGHT=3></TEXT>
+</then></if>
+<TEXT X=13.7 Y=12.4>	<INPUT TYPE=CHECKBOX NAME=B-PROPASSICUDOCQS021##-13 SIZE=8></TEXT>
+<TEXT X=14.8 Y=12.4>	<INPUT TYPE=CHECKBOX NAME=B-PROPASSICUDOCQS021##-14 SIZE=8></TEXT>
+<TEXT X=13.7 Y=14.1> 	<INPUT TYPE=CHECKBOX NAME=B-PROPASSICUDOCQS021##-15 SIZE=8></TEXT>
+<TEXT X=14.8 Y=14.1> 	<INPUT TYPE=CHECKBOX NAME=B-PROPASSICUDOCQS021##-16 SIZE=8></TEXT>
+<TEXT X=13.7 Y=15.7> 	<INPUT TYPE=CHECKBOX NAME=B-PROPASSICUDOCQS021##-17 SIZE=8></TEXT>
+<TEXT X=14.7 Y=15.7>   	<INPUT TYPE=CHECKBOX NAME=B-PROPASSICUDOCQS021##-18 SIZE=8></TEXT>
+
+<else>
+
+<PDFPAGE SRC="DOCQS021.PDF" VALUE=16 SHOWONCE> 
+<TEXT X=10 Y=2><valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs></TEXT>  
+<TEXT X=1.5 Y=9><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></TEXT>
+<TEXT X=2.5 Y=17.4><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></TEXT>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FEA</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FSE</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FSP</ifcond><then>
+<TEXT X=14 Y=8>			<INPUT TYPE=SIGNATURE NAME=C-PROPASSICUDOCQS021##-05 WIDTH=5 HEIGHT=3></TEXT>
+<TEXT X=11.7 Y=16.5>		<INPUT TYPE=SIGNATURE NAME=C-PROPASSICUDOCQS021##-06 WIDTH=5 HEIGHT=3></TEXT>
+</then></if>
+<TEXT X=14.55  Y=13.15>	<INPUT TYPE=CHECKBOX NAME=B-PROPASSICUDOCQS021##-13 SIZE=8></TEXT>
+<TEXT X=15.65 Y=13.15>	<INPUT TYPE=CHECKBOX NAME=B-PROPASSICUDOCQS021##-14 SIZE=8></TEXT>
+<TEXT X=14.4  Y=14.7> 	<INPUT TYPE=CHECKBOX NAME=B-PROPASSICUDOCQS021##-15 SIZE=8></TEXT>
+<TEXT X=15.3  Y=14.7> 	    <INPUT TYPE=CHECKBOX NAME=B-PROPASSICUDOCQS021##-16 SIZE=8></TEXT>
+<TEXT X=14.4  Y=15.85> 	<INPUT TYPE=CHECKBOX NAME=B-PROPASSICUDOCQS021##-17 SIZE=8></TEXT>
+<TEXT X=15.3  Y=15.85>   	<INPUT TYPE=CHECKBOX NAME=B-PROPASSICUDOCQS021##-18 SIZE=8></TEXT>
+</else></if> 
+
+
+
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\PROPASSICUDOCQS021##01_08_12.PNG" BACKGROUND X=14.5 Y=1.2 SCALE=25>
+</PAGE>
+</BODY>
+</PDF>

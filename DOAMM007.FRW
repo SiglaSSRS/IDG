@@ -1,0 +1,180 @@
+<PDF>
+
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8_MB0b">
+<include file="\INCLUDE\Percorsi.frw">
+
+<BODY>	
+
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+	<TR>
+		<TD WIDTH=100% ALIGN="RIGHT"><if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs><72</ifcond><then>Pag. 12 di 14</then><else>Pag. 12 di 15</else></if></TD> 
+	</TR> 
+</TABLE>
+</SUBFOOTER>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDPRD</valueabs>==DPY</ifcond>
+<then><PDFPAGE SRC="DOAMM007_DEL.PDF" VALUE=1 SHOWONCE></then>
+<else><PDFPAGE SRC="DOAMM007.PDF" VALUE=1 SHOWONCE></else>
+</if>
+
+<!--FEA (da DOAMM004 PRODUZIONE)-->
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>==FEA</ifcond><or><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>==FSE</ifcond><or><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>==FSP</ifcond>
+<then></then>
+<else>
+<if>(<ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CODENTE</valueabs>!=2483748</ifcond>
+<and><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CODENTE</valueabs>!=82207</ifcond>)
+<or>(<ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CODENTE</valueabs><in>(2483748,82207)</ifcond>
+    <and>(<ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP042 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP043 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP044 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP0421 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP0431 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP0441 </ifcond>)
+)<then><ENCRYPT OWNER="soloiopossomodificare" NOCHANGE NOCOPY></then>
+</else>
+</if></if>
+
+<!--INSTESTAZIONE-->
+<TEXT X=8.89 Y=0.85><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></TEXT>
+<TEXT X=13.7 Y=0.85><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs></TEXT>
+<TEXT X=16.30 Y=0.85><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></TEXT>
+<TEXT X=9.7 Y=1.46><valueabs>IDGFFONT0F/RECORD/IDGFONT_DESABI</valueabs></TEXT>
+<!--<TEXT X=9.7 Y=1.46><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DESCENTE</valueabs></TEXT>-->
+
+<!--AMMINISTRAZIONE-->
+<TEXT X=2.0 Y=4.03><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs></TEXT>
+<!--CLIENTE-->
+<TEXT X=1.0 Y=4.54><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></TEXT>
+<!--DATA DECORRENZA-->
+<TEXT X=3.35 Y=5.07><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT</valueabs></TEXT>
+<!--NUMERO RATE-->
+<TEXT X=9.3 Y=5.07><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs></TEXT>
+<!--IMPORTO RATA-->
+<TEXT X=15.15 Y=5.07><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPCAN</valueabs></TEXT>
+<!--MONTANTE LORDO-->
+<TEXT X=3.5 Y=5.59><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPMUTLRD</valueabs></TEXT>
+<!--FINANZIATO-->
+<TEXT X=8.6 Y=5.59><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPFIN</valueabs></TEXT>
+<!--TOT CREDITO-->
+<TEXT X=14.8 Y=5.59><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPNETRIC</valueabs></TEXT>
+<!--INTERESSI-->
+<TEXT X=3.65 Y=6.10><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPINTER</valueabs></TEXT>
+<!--BOLLO-->
+<TEXT X=4.0 Y=6.62><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMRIVALSA</valueabs></TEXT>
+<!--TAN-->
+<TEXT X=3.85 Y=7.12><valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTAN</valueabs></TEXT>
+<!--TAEG-->
+<TEXT X=8.95 Y=7.12><valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTAEG</valueabs></TEXT>
+<!--TEG-->
+<TEXT X=15.15 Y=7.12><valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTEG</valueabs></TEXT>
+
+
+<PAGE>
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT"><if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs><72</ifcond><then>Pag. 13 di 14</then><else>Pag. 13 di 15</else></if></TD>
+</TR> 
+</TABLE>
+</SUBFOOTER> 
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDPRD</valueabs>==DPY</ifcond>
+<then><PDFPAGE SRC="DOAMM007_DEL.PDF" VALUE=2 SHOWONCE></then>
+<else><PDFPAGE SRC="DOAMM007.PDF" VALUE=2 SHOWONCE></else>
+</if>
+
+<!--INSTESTAZIONE-->
+<TEXT X=8.89 Y=0.85><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></TEXT>
+<TEXT X=13.7 Y=0.85><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs></TEXT>
+<TEXT X=16.30 Y=0.85><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></TEXT>
+<TEXT X=9.7 Y=1.46><valueabs>IDGFFONT0F/RECORD/IDGFONT_DESABI</valueabs></TEXT>
+<!--<TEXT X=9.7 Y=1.46><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DESCENTE</valueabs></TEXT>-->
+
+<TABLE Y=3.00 WIDTH=100% SIZE=6 ALIGN=RIGHT BORDER=0.1>
+	<TR>
+		<TD WIDTH=10%><B>N° rata</B></TD>
+		<TD WIDTH=20%><B>Montante<BR><BR>(dopo il pagamento della rata)</B></TD>
+		<TD WIDTH=20%><B>- interessi nominali scalari<BR><BR>(dopo il pagamento della rata)</B></TD>
+		<TD WIDTH=20%><B>= debito residuo in caso di estinzione anticipata<BR>(dopo il pagamento della rata)</B></TD>
+	</TR>
+
+	<loop>
+	<loopda>1</loopda>
+	<looproot>IDGFPA400F/RECORD</looproot>
+	<TR>
+		<TD><value>IDGFPA4_RATA_1</value></TD>
+		<TD><value>IDGFPA4_IMPMONT1</value></TD>
+		<TD><value>IDGFPA4_RESINT_RATA_1</value></TD>
+		<TD><value>IDGFPA4_RES_RATA_1</value></TD>
+	</TR>
+	<TR>
+		<TD><value>IDGFPA4_RATA_2</value></TD>
+		<TD><value>IDGFPA4_IMPMONT2</value></TD>
+		<TD><value>IDGFPA4_RESINT_RATA_2</value></TD>
+		<TD><value>IDGFPA4_RES_RATA_2</value></TD>
+	</TR>
+	<if><ifcond><value>IDGFPA4_RATA_2</value>==62</ifcond><then>
+</TABLE>
+
+<PAGE>
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT">Pag. 14 di 15</TD>
+</TR> 
+</TABLE>
+</SUBFOOTER> 
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDPRD</valueabs>==DPY</ifcond>
+<then><PDFPAGE SRC="DOAMM007_DEL.PDF" VALUE=3 SHOWONCE></then>
+<else><PDFPAGE SRC="DOAMM007.PDF" VALUE=3 SHOWONCE></else>
+</if>
+
+<!--INSTESTAZIONE-->
+<TEXT X=8.89 Y=0.85><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></TEXT>
+<TEXT X=13.7 Y=0.85><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs></TEXT>
+<TEXT X=16.30 Y=0.85><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></TEXT>
+<TEXT X=9.7 Y=1.46><valueabs>IDGFFONT0F/RECORD/IDGFONT_DESABI</valueabs></TEXT>
+<!--<TEXT X=9.7 Y=1.46><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DESCENTE</valueabs></TEXT>-->
+
+<TABLE Y=3.00 WIDTH=100% SIZE=6 ALIGN=RIGHT BORDER=0.1>
+	<TR>
+		<TD WIDTH=10%><B>N° rata</B></TD>
+		<TD WIDTH=20%><B>Montante<BR><BR>(dopo il pagamento della rata)</B></TD>
+		<TD WIDTH=20%><B>- interessi nominali scalari<BR><BR>(dopo il pagamento della rata)</B></TD>
+		<TD WIDTH=20%><B>= debito residuo in caso di estinzione anticipata<BR>(dopo il pagamento della rata)</B></TD>
+	</TR>
+	</then></if>
+	
+	<TR>
+		<TD><value>IDGFPA4_RATA_3</value></TD>
+		<TD><value>IDGFPA4_IMPMONT3</value></TD>
+		<TD><value>IDGFPA4_RESINT_RATA_3</value></TD>
+		<TD><value>IDGFPA4_RES_RATA_3</value></TD>
+	</TR>
+	<TR>
+		<TD><value>IDGFPA4_RATA_4</value></TD>
+		<TD><value>IDGFPA4_IMPMONT4</value></TD>
+		<TD><value>IDGFPA4_RESINT_RATA_4</value></TD>
+		<TD><value>IDGFPA4_RES_RATA_4</value></TD>
+	</TR>
+	</loop>
+
+	<BR><BR>
+	<TABLE WIDTH=100%>
+		<TR>
+			<TD WIDTH=50%><INPUT TYPE=TEXT NAME=A-PIANOAMMORDOAMM007##-01 SIZE=8 WIDTH=8 HEIGHT=2></TD>
+			<TD WIDTH=50%>
+				<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FEA</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FSE</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FSP</ifcond><then>
+					<INPUT TYPE=SIGNATURE NAME=C-PIANOAMMORDOAMM007##-01 WIDTH=5 HEIGHT=3>
+				</then></if>
+			</TD>
+		</TR>
+		<TR>
+			<TD WIDTH=50%>Luogo e data</TD>
+			<TD WIDTH=50%>Firma per presa visione e accettazione</TD>
+		</TR>
+	</TABLE>
+
+
+</PAGE>
+</BODY>
+</PDF>

@@ -1,0 +1,214 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize8.5">
+
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintsiglasigla">			
+</HEADER>
+
+<SUBFOOTER>
+<if><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQS191</ifcond><then>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT">Pag. 10 di 11</TD> 
+</TR> 
+</TABLE>
+</then></if>
+</SUBFOOTER>
+
+<BODY>	
+<TEXT X=16.5 Y=-1.5><FONT SIZE=6></TEXT> 
+<TEXT X=16.5 Y=-1 ><FONT SIZE=6>N° Pratica: <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs></TEXT> 
+
+
+
+	<BR><BR>
+
+	<TEXT SIZE=12.0><X VALUE=10><FONT COLOR=#0070D0><B>PIANO D'AMMORTAMENTO</B></FONT></TEXT>
+
+	<HR><BR>
+
+	<TABLE WIDTH=100%>
+		<TR>
+			<TD>
+				<TABLE size=10 WIDTH=100%>
+					<TR>
+						<TD><B>Amministrazione</B>: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs></TD>
+					</TR>
+				</TABLE>
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<TABLE size=10 WIDTH=100%>
+					<TR>
+						<TD><B>Cliente</B>: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></TD>
+					</TR>
+				</TABLE>
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<TABLE size=10 WIDTH=100%>
+					<TR>
+						<TD WIDTH=13%><B>Data decorrenza (*)</B>: </TD>
+						<TD WIDTH=14% ALIGN=RIGHT><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT</valueabs></TD>
+						<TD WIDTH=8%>  </TD>
+						<TD WIDTH=13%><B>N° rate</B>: </TD>
+						<TD WIDTH=14% ALIGN=RIGHT><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs></TD>
+						<TD WIDTH=8%>  </TD>
+						<TD WIDTH=15%><B>Importo</B>:</TD>
+						<TD WIDTH=15% ALIGN=RIGHT>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPCAN</valueabs></TD>
+					</TR>
+					<TR>
+						<TD ALIGN=LEFT><B>Montante lordo</B>:</TD>
+						<TD ALIGN=RIGHT>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPMUTLRD</valueabs></TD>
+						<TD> </TD>
+						<TD ALIGN=LEFT><B>Imp. totale credito</B>:</TD>
+						<TD ALIGN=RIGHT>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPFIN</valueabs></TD>
+						<TD> </TD>
+						<TD ALIGN=LEFT><B>Netto ricavo</B>:</TD>
+						<TD ALIGN=RIGHT>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPNETRIC</valueabs></TD>
+					</TR>
+					<TR>
+						<TD ALIGN=LEFT><B>Spese comunic. period.</B>:</TD>
+						<TD ALIGN=RIGHT>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_SPINCBAN</valueabs></TD>
+						<TD> </TD>
+						<TD ALIGN=LEFT><B>Comm. intermed. finanz.:</B></TD>
+						<TD ALIGN=RIGHT>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMCOMSGCMIT2</valueabs></TD>
+						<TD> </TD>
+						<TD ALIGN=LEFT><B>Comm. di distribuzione:</B></TD>
+						<TD ALIGN=RIGHT><if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDANAFIN</valueabs>!=12002203</ifcond><then>&euro <if><ifcond><valueabs>IDGFFONT0F/RECORD/IDGFONT_CDFONTE</valueabs><in>(_CREDIPER,CRECO_15,CRECO_30,CRECO_31,CRECO_32,CRECO_33,CRECO_34,CRECO_35,CRECO_36,CRECO_37,CRECO_38,CRECO_39,CRECO_40,CRECO_41,CRECO_42,CRECO_43,CRECO_44,CRECO_45,CRECO_46,CRECO_47,CRECO_48,CRECO_49,CRECO_50,CRECO_51,CRECO_52,CRECO_53,CRECO_54,CRECO_55,CRECO_56,CRECO_57,CRECO_58,CRECO_59,CRECO_60,CRECO_61,CRECO_62,CRECO_63,CRECO_64,CRECO_65,CRECO_66,CRECO_67,CRECO_68,CRECO_69,CRECO_70,CRECO_71,CRECO_72,CRECO_73,CRECO_74,CRECO_75,CRECO_76,CRECO_77,CRECO_78,CRECO_79,CRECO_80)</ifcond>
+<then><if><ifcond><valueabs>IDGFFONT0F/RECORD/IDGFONT_CDFONTE</valueabs>==_CREDIPER</ifcond>
+	  <then><valueabs>IDGFCQS00F/RECORD/IDGFCQS_PV_IMCOMMBA</valueabs></then>
+	  <else><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMCOMMBA</valueabs></else></if>
+</then>
+<else>
+<valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPROV1</valueabs>
+</else>
+</if></then></if></TD>
+					</TR>
+					<TR>
+						<TD ALIGN=LEFT><B>Oneri erariali / imposta di bollo</B>:</TD>
+						<TD ALIGN=RIGHT>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMRIVALSA</valueabs></TD>
+						<TD> </TD>
+						<TD ALIGN=LEFT><B>Spese Rata ATC</B>:</TD>
+						<TD ALIGN=RIGHT>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPFISSI</valueabs></TD>
+						<TD> </TD>
+						<TD ALIGN=LEFT><B>Interessi</B>:</TD>
+						<TD ALIGN=RIGHT>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPINTER</valueabs></TD>
+						<TD> </TD>
+					</TR>
+					<TR>
+						<TD ALIGN=LEFT><B>TAN</B>:</TD>
+						<TD ALIGN=RIGHT><valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTAN</valueabs> %</TD>
+						<TD> </TD>
+						<TD ALIGN=LEFT><B>TAEG</B>:</TD>
+						<TD ALIGN=RIGHT><valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTAEG</valueabs> %</TD>
+						<TD> </TD>
+						<TD ALIGN=LEFT><B>TEG</B>:</TD>
+						<TD ALIGN=RIGHT><valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTEG</valueabs> %</TD>
+						<TD> </TD>
+					</TR>
+				</TABLE>
+			</TD>
+		</TR>
+	</TABLE>
+
+	
+<TEXT ALIGN=J SIZE=10>
+<BR><HR><BR><BR><HR><BR>
+Come previsto dall'art. 13 delle Condizioni Generali di Contratto, in caso di estinzione anticipata del finanziamento il cedente/delegante ha diritto al rimborso degli importi non ancora maturati
+relativi alle voci "Interessi scalari" e "Commissioni Sigla" (vedi Frontespizio del Contratto) in misura proporzionale secondo la curva degli interessi.<BR>
+Si precisa che la quota parte rimborsabile dell'importo delle "Commissioni Sigla" è individuata nella misura massima di &euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMCOMSRIP</valueabs>, secondo la curva degli interessi.<BR>
+Di seguito sono indicati gli importi che verranno rimborsati, per ciascuna delle suddette voci previste, dettagliati in base al periodo temporale in cui verrà effettuata la richiesta di estinzione anticipata, ovvero riferiti al pagamento delle singole rate come da piano di ammortamento.<BR>
+Con riferimento a ciascuna rata, viene di seguito riportato - a mero titolo esemplificativo - il capitale residuo (al netto degli interessi) fermo restando che, in caso di estinzione anticipata, la determinazione puntuale dell'importo complessivo da rimborsare sarà effettuata ai sensi di quanto prevede l'art. 13 delle Condizioni Generali.<BR>
+Il piano annuale di rimborso interessi e commissioni ha efficacia dalla data di decorrenza effettiva del contratto di finanziamento.<BR><BR>
+<P>
+<B>(*) <I>Si precisa che la data di decorrenza qui riportata deve intendersi teorica in quanto la stessa, come indicato in contratto, è fissata a decorrere dal mese successivo alla data di notifica del presente contratto al Datore di Lavoro/Ente Previdenziale.</I></B>
+</P>
+<BR><BR><BR><BR><BR><BR>
+<B>Piano di ammortamento alla pagina seguente</B>
+</TEXT>
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\PIANOAMMORDOAMM004##01_01_02.gif" BACKGROUND X=20 Y=27 SCALE=27 ROTATE=90>
+
+<PAGE>
+<SUBFOOTER>
+<if><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQS191</ifcond><then>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT">Pag. 11 di 11</TD> 
+</TR> 
+</TABLE>
+</then></if>
+</SUBFOOTER>
+<TEXT X=16.5 Y=-1 ><FONT SIZE=6>N° Pratica: <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs></TEXT> 
+
+	<BR><BR>
+
+	<TEXT SIZE=12.0><X VALUE=10><FONT COLOR=#0070D0><B>PIANO D'AMMORTAMENTO</B></FONT></TEXT>
+
+	<HR><BR>
+
+
+	
+	<BR>
+	
+	<TABLE WIDTH=100% SIZE=5 BORDER=0.1>
+		<TR>
+			<TD WIDTH=6% ALIGN=RIGHT><B>N° rata</B></TD>
+			<TD WIDTH=13% ALIGN=RIGHT><B>Capitale residuo<BR><BR>(dopo il pagamento della rata)</B></TD>
+			<TD WIDTH=14% ALIGN=RIGHT><B>Rimborso interessi nominali scalari<BR>(dopo il pagamento della rata)</B></TD>
+			<TD WIDTH=16% ALIGN=RIGHT><B>Rimborso commissioni ripetibili Sigla<BR>(dopo il pagamento della rata)</B></TD>
+			<TD WIDTH=1% ALIGN=RIGHT> </TD>
+			<TD WIDTH=6% ALIGN=RIGHT><B>N° rata</B></TD>
+			<TD WIDTH=13% ALIGN=RIGHT><B>Capitale residuo<BR><BR>(dopo il pagamento della rata)</B></TD>
+			<TD WIDTH=14% ALIGN=RIGHT><B>Rimborso interessi nominali scalari<BR>(dopo il pagamento della rata)</B></TD>
+			<TD WIDTH=16% ALIGN=RIGHT><B>Rimborso commissioni ripetibili Sigla<BR>(dopo il pagamento della rata)</B></TD>
+		</TR>
+		<loop>
+		<loopda>1</loopda>
+		<looproot>IDGFPA400F/RECORD</looproot>
+		<TR>
+			<TD WIDTH=6% ALIGN=RIGHT><value>IDGFPA4_RATA_1</value></TD>
+			<TD WIDTH=13% ALIGN=RIGHT><value>IDGFPA4_RES_RATA_1</value></TD>
+			<TD WIDTH=14% ALIGN=RIGHT><value>IDGFPA4_RESINT_RATA_1</value></TD>
+			<TD WIDTH=16% ALIGN=RIGHT><value>IDGFPA4_IMPCOM_RATA1</value></TD>
+			<TD WIDTH=1% ALIGN=RIGHT> </TD>
+			<TD WIDTH=6% ALIGN=RIGHT><value>IDGFPA4_RATA_2</value></TD>
+			<TD WIDTH=13% ALIGN=RIGHT><value>IDGFPA4_RES_RATA_2</value></TD>
+			<TD WIDTH=14% ALIGN=RIGHT><value>IDGFPA4_RESINT_RATA_2</value></TD>
+			<TD WIDTH=16% ALIGN=RIGHT><value>IDGFPA4_IMPCOM_RATA2</value></TD>
+		</TR>
+		<TR>
+			<TD WIDTH=6% ALIGN=RIGHT><value>IDGFPA4_RATA_3</value></TD>
+			<TD WIDTH=13% ALIGN=RIGHT><value>IDGFPA4_RES_RATA_3</value></TD>
+			<TD WIDTH=14% ALIGN=RIGHT><value>IDGFPA4_RESINT_RATA_3</value></TD>
+			<TD WIDTH=16% ALIGN=RIGHT><value>IDGFPA4_IMPCOM_RATA3</value></TD>
+			<TD WIDTH=1% ALIGN=RIGHT> </TD>
+			<TD WIDTH=6% ALIGN=RIGHT><value>IDGFPA4_RATA_4</value></TD>
+			<TD WIDTH=13% ALIGN=RIGHT><value>IDGFPA4_RES_RATA_4</value></TD>
+			<TD WIDTH=14% ALIGN=RIGHT><value>IDGFPA4_RESINT_RATA_4</value></TD>
+			<TD WIDTH=16% ALIGN=RIGHT><value>IDGFPA4_IMPCOM_RATA4</value></TD>
+		</TR>
+
+			
+		</loop>
+	</TABLE>
+	<BR>
+	<BR><BR>
+		<TABLE WIDTH=100%>
+			<TR>
+				<TD WIDTH=50%>_____________________________________</TD>
+				<TD WIDTH=50%><INPUT TYPE=SIGNATURE NAME=C-PIANOAMMORDOAMM004##-1 WIDTH=5 HEIGHT=3></TD>
+			</TR>
+			<TR>
+				<TD WIDTH=50%>Luogo e data</TD>
+				<TD WIDTH=50%>Firma per presa visione e accettazione</TD>
+			</TR>
+		</TABLE>
+
+</BODY>
+</TEXT>
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\PIANOAMMORDOAMM004##01_02_02.gif" BACKGROUND X=20 Y=27 SCALE=27 ROTATE=90>
+
+</PDF>

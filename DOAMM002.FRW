@@ -1,0 +1,75 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize6">
+
+<HEADER>
+	<include file="\INCLUDE\includedStruttura.frw" value="headersiglax247">			
+</HEADER>
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestatasigla">
+</FOOTER>
+
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="C">Pag. 10 di 10</TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+
+<BODY>	
+
+	<BR>
+
+	<TEXT SIZE=14.0><X VALUE=10><FONT COLOR=#0070D0><B>PIANO D'AMMORTAMENTO</B></FONT></TEXT>
+
+	<BR><HR><BR>
+
+	<TABLE WIDTH=100% LINESPACE=0>
+		<TR>
+			<TD WIDTH=6% ALIGN=RIGHT><B>N° rata</B></TD>
+			<TD WIDTH=11% ALIGN=RIGHT><B>Data Scadenza</B></TD>
+			<TD WIDTH=11% ALIGN=RIGHT><B>Importo Rata</B></TD>
+			<TD WIDTH=11% ALIGN=RIGHT><B>Quota capitale</B></TD>
+			<TD WIDTH=10% ALIGN=RIGHT><B>Capitale residuo</B></TD>
+			<TD WIDTH=1% ALIGN=RIGHT>|</TD>
+			<TD WIDTH=6% ALIGN=RIGHT><B>N° rata</B></TD>
+			<TD WIDTH=11% ALIGN=RIGHT><B>Data Scadenza</B></TD>
+			<TD WIDTH=11% ALIGN=RIGHT><B>Importo Rata</B></TD>
+			<TD WIDTH=11% ALIGN=RIGHT><B>Quota capitale</B></TD>
+			<TD WIDTH=10% ALIGN=RIGHT><B>Capitale residuo</B></TD>
+		</TR>
+		<loop>
+		<loopda>1</loopda>
+		<looproot>IDGFPA400F/RECORD</looproot>
+			<TR>
+				<TD WIDTH=6% ALIGN=RIGHT><value>IDGFPA4_RATA_1</value></TD>
+				<TD WIDTH=11% ALIGN=RIGHT><value>IDGFPA4_SCAD_RATA_1</value></TD>
+				<TD WIDTH=11% ALIGN=RIGHT><value>IDGFPA4_IMP_RATA_1</value></TD>
+				<TD WIDTH=11% ALIGN=RIGHT><value>IDGFPA4_QCAP_RATA_1</value></TD>
+				<TD WIDTH=10% ALIGN=RIGHT><value>IDGFPA4_RES_RATA_1</value></TD>
+				<TD WIDTH=1% ALIGN=RIGHT>|</TD>
+				<TD WIDTH=6% ALIGN=RIGHT><value>IDGFPA4_RATA_2</value></TD>
+				<TD WIDTH=11% ALIGN=RIGHT><value>IDGFPA4_SCAD_RATA_2</value></TD>
+				<TD WIDTH=11% ALIGN=RIGHT><value>IDGFPA4_IMP_RATA_2</value></TD>
+				<TD WIDTH=11% ALIGN=RIGHT><value>IDGFPA4_QCAP_RATA_2</value></TD>
+				<TD WIDTH=11% ALIGN=RIGHT><value>IDGFPA4_RES_RATA_2</value></TD>
+			</TR>
+			<TR>
+				<TD WIDTH=6% ALIGN=RIGHT><value>IDGFPA4_RATA_3</value></TD>
+				<TD WIDTH=11% ALIGN=RIGHT><value>IDGFPA4_SCAD_RATA_3</value></TD>
+				<TD WIDTH=11% ALIGN=RIGHT><value>IDGFPA4_IMP_RATA_3</value></TD>
+				<TD WIDTH=11% ALIGN=RIGHT><value>IDGFPA4_QCAP_RATA_3</value></TD>
+				<TD WIDTH=10% ALIGN=RIGHT><value>IDGFPA4_RES_RATA_3</value></TD>
+				<TD WIDTH=1% ALIGN=RIGHT>|</TD>
+				<TD WIDTH=6% ALIGN=RIGHT><value>IDGFPA4_RATA_4</value></TD>
+				<TD WIDTH=11% ALIGN=RIGHT><value>IDGFPA4_SCAD_RATA_4</value></TD>
+				<TD WIDTH=11% ALIGN=RIGHT><value>IDGFPA4_IMP_RATA_4</value></TD>
+				<TD WIDTH=11% ALIGN=RIGHT><value>IDGFPA4_QCAP_RATA_4</value></TD>
+				<TD WIDTH=11% ALIGN=RIGHT><value>IDGFPA4_RES_RATA_4</value></TD>
+			</TR>
+		</loop>
+	</TABLE>
+
+</BODY>
+</PDF>

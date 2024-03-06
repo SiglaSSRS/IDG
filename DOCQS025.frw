@@ -1,0 +1,12 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8">
+<include file="\INCLUDE\Percorsi.frw">
+
+<BODY>
+<PDFPAGE SRC="DOCQS025.PDF" ALLPAGES SHOWONCE NOFIRSTBREAK>
+
+<TEXT X=4 Y=11.25><valueabs>IDGFCQP00F/RECORD/IDGFCQP_DTINSPRV</valueabs></TEXT>
+<TEXT X=4 Y=16.8><valueabs>IDGFCQP00F/RECORD/IDGFCQP_DTINSPRV</valueabs></TEXT>
+
+</BODY>
+</PDF>

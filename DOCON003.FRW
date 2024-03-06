@@ -1,0 +1,57 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize10_test">
+<include file="\INCLUDE\Percorsi.frw">
+
+<BODY>	
+<BR><BR><BR><BR><BR>	
+<TEXT SIZE=12 ALIGN=C><b>Autorizzazione e delega alla richiesta di conteggio estintivo e al pagamento</b></TEXT>
+<BR><BR><BR><BR><BR>
+<TEXT ALIGN=J>Io sottoscritto <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>, nato a <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCNASC</valueabs>, 
+residente in <valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs>, <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs>),
+Codice Fiscale <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs>, identificato tramite documento d'identità esibito in originale e allegato alla presente <B>(All. 1)</B>.
+</TEXT>
+<BR><BR>
+<TEXT SIZE=10 ALIGN=C><b>Premesso che</b></TEXT>
+<BR><BR>
+<TABLE WIDTH=100% ALIGN=J>
+<TR>
+<TD WIDTH=100% ALIGN=J>1. Il sottoscritto dichiara di avere in essere con la società YOUNITED SA con sede legale in 24 rue Drouot - CS 90600 - 75009 Parigi – Francia e sede secondaria in Roma, Via Sardegna 40, cap 00187, Codice Fiscale e Partita IVA 13722821009 un debito 
+del controvalore di &euro<valueabs>IDGFDEB00F/RECORD/IDGFDEB_IMMONRES</valueabs> che intende estinguere.</TD>
+</TR><TR>
+<TD WIDTH=100% ALIGN=J>2. In data <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs> ho richiesto alla società Sigla srl un finanziamento con cessione di quota dello stipendio/pensione dell'importo finanziato di &euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPFIN</valueabs>, prot. <valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs> 
+in attesa di approvazione.</TD></TR>
+</TABLE>
+<BR><BR>
+<TEXT SIZE=10 ALIGN=C><b>Tutto ciò premesso</b></TEXT>
+<BR><BR>
+<TEXT ALIGN=J>
+io sottoscritto <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> come sopra identificato, al buon esito dell'istruttoria del finanziamento con cessione di quota dello stipendio/pensione di cui al punto 2 delle premesse, con la presente
+</TEXT>
+<BR><BR>
+<TEXT SIZE=10 ALIGN=C><b>Autorizzo e delego</b></TEXT>
+<BR><BR>
+<TEXT ALIGN=J>
+sin d'ora la società Sigla srl con sede in Conegliano (TV) via Cesare Battisti 5/a Partita IVA 03951740269 a:<br><BR>
+-	richiedere alla società YOUNITED SA a mio nome il conteggio estintivo relativo al debito indicato all'art. 1 delle premesse;<BR>
+-	effettuare in mio nome e per mio conto il pagamento diretto dell'importo necessario all'estinzione totale del mio debito di cui alle premesse dell'Art. 1, a mezzo bonifico sul c/c intestato a YOUNITED SA, IBAN 
+IT 90 F 03069 05075 1000 0000 3695.
+<BR>
+<P>
+Autorizzo, altresì, Sigla srl ad accreditare la residua somma derivante dalla differenza tra l'importo totale del credito, così come definito nel documento Secci consegnatomi da Sigla srl, e l'importo necessario per l'estinzione del debito con la società YOUNITED SA sopra descritto, sul c/c intestato al sottoscritto, sull'IBAN già in vostre mani.
+</P><br><BR><BR><BR><BR>
+<B>Si allega in copia:</B><br>
+ 1.	Documento d'identità delegante
+<br><br><br><br><BR><BR><BR><BR>
+<TABLE WIDTH=100% SIZE=9>
+<TR>
+<TD WIDTH=50%>Data, </TD>
+<TD WIDTH=50% ALIGN=R>____________________________</TD>
+</TR>
+<TR>
+<TD WIDTH=50%></TD>
+<TD WIDTH=50% ALIGN=R>Firma del cliente per accettazione</TD>
+</TR>
+</TABLE>
+</TEXT>
+</BODY>
+</PDF>

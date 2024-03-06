@@ -1,0 +1,68 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8">
+<include file="\INCLUDE\Percorsi.frw">
+
+<PDFPAGE SRC="DOCQS033.PDF" VALUE=1>
+
+	<TEXT X=3.5 Y=6.2><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></TEXT>
+	<TEXT X=12.3 Y=6.2><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs></TEXT>
+
+	<TEXT X=3.5 Y=6.65><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs></TEXT>
+	<TEXT X=12.3 Y=6.65><valueabs>IDGFCLI00F/RECORD/IDGFCLI_ETA</valueabs></TEXT>
+	
+	<TEXT X=3.5 Y=7.15><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCNASC</valueabs></TEXT>
+	<TEXT X=12.3 Y=7.15><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC</valueabs></TEXT>
+	
+	<TEXT X=2 Y=7.6><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs></TEXT>
+	<TEXT X=12.3 Y=7.6><valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs></TEXT>
+	
+	<TEXT X=3.5 Y=8.1><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs></TEXT>
+	<TEXT X=12.3 Y=8.1><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs></TEXT>
+	
+	<TEXT X=3.5 Y=8.6><valueabs>IDGFCLI00F/RECORD/IDGFCLI_TELE_RES</valueabs></TEXT>
+
+	<TEXT X=3.5 Y=9.1><valueabs>IDGFCLI00F/RECORD/IDGFCLI_TELE_ALT</valueabs></TEXT>
+	<TEXT X=12.3 Y=9.1><valueabs>IDGFCLI00F/RECORD/IDGFCLI_EMAIL</valueabs></TEXT>
+	
+	<TEXT X=3.5 Y=9.55><valueabs>IDGFCLI00F/RECORD/IDGFCLI_NUM_DOCUM</valueabs></TEXT>
+	<TEXT X=12.3 Y=9.55><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DSDOCUM</valueabs></TEXT>
+	
+	<TEXT X=3.5 Y=10><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_ENTE</valueabs></TEXT>
+	<TEXT X=12.3 Y=10><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_DA</valueabs></TEXT>
+	
+	<TEXT X=3.5 Y=10.5><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_SCAD_IL</valueabs></TEXT>
+	
+		
+	<TEXT X=3.5 Y=11.8><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DESCFIN</valueabs></TEXT>
+	
+		
+	<TEXT X=4.8 Y=13><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs></TEXT> 
+	
+	<TEXT X=4.8 Y=13.5><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT</valueabs></TEXT> 
+	<TEXT X=10 Y=13.5><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTULTSCAD</valueabs></TEXT> 
+	<TEXT X=14.5 Y=13.5><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DURATA</valueabs></TEXT> 
+
+	<TEXT X=4.8 Y=13.9><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs></TEXT>
+	<TEXT X=14.5 Y=13.9><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPCAN</valueabs></TEXT>
+
+
+	<TEXT X=4.8 Y=14.4><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPMUTLRD</valueabs></TEXT>
+	<TEXT X=14.5 Y=14.4><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMASSMRT</valueabs></TEXT>
+
+	<TEXT X=14.5 Y=14.9><valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTAN</valueabs></TEXT>  
+	
+	<loop>
+	<loopda>1</loopda>
+	<looproot>IDGFTRA00F/RECORD</looproot>
+		<if><ifcond><value>IDGFTRA_TIPASS</value>==VIT</ifcond><and><ifcond><value>IDGFTRA_LIM_A</value>==75,00</ifcond><then><TEXT X=8.5 Y=18.5><value>IDGFTRA_IMP_COST</value></TEXT><TEXT X=13.6 Y=18.5><value>IDGFTRA_IMP_PROV</value></TEXT></if>
+		<if><ifcond><value>IDGFTRA_TIPASS</value>==VIT</ifcond><and><ifcond><value>IDGFTRA_LIM_A</value>==89,00</ifcond><then><TEXT X=8.5 Y=19><value>IDGFTRA_IMP_COST</value></TEXT><TEXT X=13.6 Y=19><value>IDGFTRA_IMP_PROV</value></TEXT></if>
+	</loop>
+	
+	<PAGE>
+	
+<PDFPAGE SRC="DOCQS033.PDF" VALUE=2>
+
+</PAGE>	
+</BODY>
+</PDF>
+	

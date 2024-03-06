@@ -1,0 +1,210 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize5.5_times">
+
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headersiglarischio">			
+</HEADER>
+
+
+
+
+<BODY>		
+<TEXT SIZE=9 ALIGN=C>	<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>==DEL</ifcond>
+	<then>DELEGAZIONE DI PAGAMENTO</then>
+	</if>
+	<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_COD_CONV_IMP</valueabs>!=</ifcond>
+		<then>CESSIONE DEL QUINTO DELLO STIPENDIO</then>
+	</if>
+	<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_COD_CONV_IMP</valueabs>==</ifcond>
+		<then>CESSIONE DEL QUINTO DELLA PENSIONE</then>
+	</if>
+</TEXT>
+<BR><BR>
+<TEXT SIZE=8 ALIGN=J><B>INFORMAZIONI EUROPEE DI BASE SUL CREDITO AI CONSUMATORI  (denominato SECCI)</B>
+<BR><BR>
+PAGINA INTRODUTTIVA AL DOCUMENTO:<BR><BR>
+Il documento SECCI che troverà nelle pagine seguenti è stato elaborato sulla base dei dati forniti da lei e qui di seguito riassunti
+</TEXT><BR>
+<TABLE WIDTH=100% BORDER=0.6><TR><TD WIDTH=100%>
+<TABLE FORCEWIDTH SIZE=7.5 BORDER=0>
+<TR>
+	<TD WIDTH=30%><B>N° Preventivo:</B> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_ANPREV</valueabs> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_NRPREV</valueabs> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_PRPREV</valueabs></TD> 
+	<TD WIDTH=40%></TD>
+	<TD WIDTH=30%><B>Data inserimento preventivo:</B> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_DTINSPRV</valueabs></TD> 
+</TR> 
+</TABLE>
+<TABLE FORCEWIDTH SIZE=7.5 BORDER=0>
+<TR>
+	<TD WIDTH=30%><B>Cognome Nome:</B> <if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_RAGSCLI</valueabs>></ifcond><then><valueabs>IDGFCQP00F/RECORD/IDGFCQP_RAGSCLI</valueabs></then><else><valueabs>IDGFCQP00F/RECORD/IDGFCQP_COGNCLI</valueabs> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_NOMECLI</valueabs></else></if></TD> 
+	<TD WIDTH=40%></TD>
+	<TD WIDTH=30%><B>Sesso:</B> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_SESSOCLI</valueabs></TD> 
+</TR> 
+</TABLE>
+<TABLE FORCEWIDTH SIZE=7.5 BORDER=0>
+<TR>
+	<TD WIDTH=35%><B>Nato a:</B> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_LOCNSCLI</valueabs>(<valueabs>IDGFCQP00F/RECORD/IDGFCQP_PRVNSCLI</valueabs>)</TD> 
+	<TD WIDTH=35%><B>Data di nascita:</B> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_DTNSCLI</valueabs></TD>
+	<TD WIDTH=30%><B>Età:</B> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_ETA</valueabs></TD> 
+</TR> 
+</TABLE>
+<TABLE FORCEWIDTH SIZE=7.5 BORDER=0>
+<TR>
+	<TD WIDTH=60%><B>Assunto presso:</B> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_DATLVCLI</valueabs>  <valueabs>IDGFCQP00F/RECORD/IDGFCQP_STATOGIUR</valueabs></TD> 
+	<TD WIDTH=20%></TD>
+	<TD WIDTH=20%></TD> 
+</TR> 
+</TABLE>
+<TABLE FORCEWIDTH SIZE=7.5 BORDER=0>
+<TR>
+	<TD WIDTH=35%><B>Data assunzione:</B> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_DTASSCLI</valueabs></TD> 
+	<TD WIDTH=35%><B>Anzianità Servizio:</B><valueabs>IDGFCQP00F/RECORD/IDGFCQP_NRANNILV</valueabs> anni e <valueabs>IDGFCQP00F/RECORD/IDGFCQP_NRMESILV</valueabs> mesi</TD>
+	<TD WIDTH=30%><B>Netto mensile:</B> &euro <valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMPCEDOL</valueabs></TD> 
+</TR> 
+</TABLE>
+</TD></TR>
+</TABLE>	
+<BR>
+<TEXT SIZE=7.5 ALIGN=J>
+Impegni finanziari:<BR>
+<LI> importo:&euro <valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMESTINZ</valueabs> </LI><BR>
+Pertanto, la sua posizione debitoria totale, comprensiva della rata sotto riportata, non sarà mai superiore al 60% del suo reddito totale.<BR><BR>
+Motivo del finanziamento:  ______________(scegliere tra per scopi personali  e per l'attività lavorativa svolta)<BR>
+Tale informativa sarà vincolante solo nel caso in cui le informazioni da lei date vengano poi confermate dalla documentazione che dovrà essere fornita unitamente alla richiesta di finanziamento da lei sottoscritta.
+Pertanto, tale informativa potrà variare oppure la sua richiesta non essere accolta, anche:<BR>
+¢	dopo la consultazione delle banche dati interne ed esterne a Sigla (consultazioni che lei dovrà autorizzare nel modulo di richiesta), <BR>
+¢	dopo la valutazione da parte delle Compagnie d'Assicurazione<BR>
+¢	dopo l'analisi della documentazione fornita,<BR>
+¢	se non sarà possibile parlare telefonicamente con lei e/o con il suo datore di lavoro o con altri Enti, nel caso Sigla lo valuti necessario,<BR>
+¢	se la sua richiesta non perverrà e il conseguente contratto non verrà stampato entro la fine del trimestre corrente. <BR><BR>
+Tenendo conto degli impegni da lei indicati, nel caso non lo avesse già fatto, le consigliamo di verificare preventivamente tramite <B>Monitorata</B> (disponibile presso l'intermediario del credito a cui si è rivolto oppure nel sito <U>www.siglacredit.it</U>) se le Sue entrate ed uscite mensili attuali sono compatibili con la rata che dovrà pagare.<BR><BR>
+<B>Monitorata</B> è uno strumento di analisi sofisticato che, del tutto gratuitamente, viene messo a Sua disposizione per aiutarLa a prendere decisioni importanti.<BR>
+In ogni caso <B>Monitorata</B> Le fornirà un quadro più preciso della Sua situazione e la consiglierà se procedere o meno con la sottoscrizione di un ulteriore finanziamento.<BR><BR>
+Qui di seguito un'ipotesi relativa alla 
+	<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>==DEL</ifcond>
+	<then>DELEGAZIONE DI PAGAMENTO</then>
+	</if>
+	<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_COD_CONV_IMP</valueabs>!=</ifcond>
+		<then>CESSIONE DEL QUINTO DELLO STIPENDIO</then>
+	</if>
+	<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_COD_CONV_IMP</valueabs>==</ifcond>
+		<then>CESSIONE DEL QUINTO DELLA PENSIONE</then>
+	</if>
+	 che, se avrà il Suo gradimento di massima, andremo a perfezionare con i dati e la documentazione definitiva che lei ci fornirà, nel qual caso ci riteniamo autorizzati fin da ora, se necessario, ad estinguere cessioni, delegazioni  o prestiti in essere che verranno detratti dall'importo da erogare.
+</TEXT>
+<BR>
+<TABLE FORCEWIDTH SIZE=7.5>
+<TR>
+	<TD WIDTH=30%><B>Istituto finanziario:</B> <valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs></TD> 
+	<TD WIDTH=40%></TD>
+	<TD WIDTH=30%></TD> 
+</TR> 
+</TABLE> 
+<TABLE WIDTH=100% BORDER=0.8><TR><TD WIDTH=100%>
+<TABLE FORCEWIDTH SIZE=7.5>
+<TR>
+	<TD WIDTH=19%><B>N°Rate:</B> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_NUMCAN</valueabs></TD> 
+	<TD WIDTH=21%><B>Rata Mensile:</B> &euro <valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMPCAN</valueabs></TD>
+	<TD WIDTH=53% ALIGN=R><B>Capitale lordo mutuato:</B> &euro </TD>  
+	<TD WIDTH=7% ALIGN="R"><valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMPMUTLRD</valueabs></TD>
+</TR> 
+</TABLE>
+<TABLE FORCEWIDTH SIZE=7.5>
+<TR>
+	<TD WIDTH=19%><B>Prodotto:</B></TD> 
+	<TD WIDTH=21% ALIGN="L"><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CODPROD</valueabs> - <valueabs>IDGFCQP00F/RECORD/IDGFCQP_DESPROD</valueabs></TD> 
+	<TD WIDTH=2%></TD>
+	<TD WIDTH=51% ALIGN=R><B>Interessi scalari al tan esposto:</B> &euro </TD> 
+	<TD WIDTH=7% ALIGN="R"><valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMPINTER</valueabs></TD>
+</TR> 
+</TABLE>
+<TABLE FORCEWIDTH SIZE=7.5>
+<TR>
+	<TD WIDTH=19%><B>Ag./Med:</B></TD> 
+	<TD WIDTH=21%> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_DESCAGE</valueabs></TD> 
+	<TD WIDTH=2%></TD>
+	<TD WIDTH=51% ALIGN=R><B>Oneri erariali/imposta di bollo:</B> &euro </TD> 
+	<TD WIDTH=7% ALIGN="R"><valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMRIVALSA</valueabs></TD>
+</TR> 
+</TABLE>
+<TABLE FORCEWIDTH SIZE=7.5>
+<TR>
+	<TD WIDTH=19%><B>Decorrenza:</B></TD> 
+	<TD WIDTH=21%> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_DATATT</valueabs></TD> 
+	<TD WIDTH=2% ALIGN=R></TD>
+	<TD WIDTH=51% ALIGN=R><B>Commissioni Sigla:</B> &euro </TD> 
+	<TD WIDTH=7% ALIGN="R"><valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMCOMM</valueabs></TD>
+</TR> 
+</TABLE>
+<TABLE FORCEWIDTH SIZE=7.5>
+<TR>
+	<TD WIDTH=19%><B>Scadenza:</B></TD> 
+	<TD WIDTH=21%> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_DTPRISCAD</valueabs> - <valueabs>IDGFCQP00F/RECORD/IDGFCQP_DTULTSCAD</valueabs></TD> 
+	<TD WIDTH=2%></TD>
+	<TD WIDTH=51% ALIGN=R><B>Commissioni in favore della rete distributiva :</B> &euro</TD> 
+	<TD WIDTH=7% ALIGN="R"><if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_FLG_IMPROV1</valueabs>==S</ifcond>
+<then><valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMPROV1</valueabs></then>
+<else><valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMCOMM</valueabs></else>
+</if></TD>
+</TR> 
+</TABLE>
+<TABLE FORCEWIDTH SIZE=7.5>
+<TR>
+	<TD WIDTH=40%></TD> 
+	<TD WIDTH=2%></TD>
+	<TD WIDTH=51% ALIGN=R><B>Spese inc. ATC:</B> &euro </TD> 
+	<TD WIDTH=7% ALIGN="R"><valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMPFISSI</valueabs></TD>
+</TR> 
+</TABLE><TABLE FORCEWIDTH SIZE=7.5>
+<TR>
+	<TD WIDTH=40%></TD> 
+	<TD WIDTH=2%></TD>
+	<TD WIDTH=51% ALIGN=R><B>Costo invio comunicazione period.:</B> &euro </TD> 
+	<TD WIDTH=7% ALIGN="R">0,00</TD>
+</TR> 
+</TABLE>
+<TABLE FORCEWIDTH SIZE=7.5>
+<TR>
+	<TD WIDTH=93% ALIGN=R><B>Commissione estinzione anticipata (su capitale residuo): </B></TD> 
+	<TD WIDTH=7% ALIGN="R">0,00</TD>
+</TR> 
+</TABLE>
+<TABLE FORCEWIDTH SIZE=7.5>
+<TR>
+	<TD WIDTH=93% ALIGN=R><B>Tasso nominale annuo scalare (TAN) applicato in misura fissa per l'intera durata del prestito (con riferimento all'anno commerciale , con 12 mesi da 30 giorni): %</B></TD> 
+	<TD WIDTH=7% ALIGN="R" VALIGN="B"><valueabs>IDGFCQP00F/RECORD/IDGFCQP_TXTAN</valueabs></TD>
+</TR> 
+</TABLE>
+<TABLE FORCEWIDTH SIZE=7.5>
+<TR>
+	<TD WIDTH=93% ALIGN=R><B>TAEG ISC calcolato includendo tutte le spese indicate sopra ,inclusi gli oneri erariali, come da istruzioni di Banca d'Italia: %</B></TD> 
+	<TD WIDTH=7% ALIGN="R" VALIGN="B"><valueabs>IDGFCQP00F/RECORD/IDGFCQP_TXTAEG</valueabs></TD>
+</TR> 
+</TABLE>
+<TABLE FORCEWIDTH SIZE=7.5>
+<TR>
+	<TD WIDTH=93% ALIGN=R><B>TEG calcolato includendo tutte le spese indicate sopra ,ad esclusione degli oneri erariali, come da istruzioni di Banca d'Italia: %</B></TD> 
+	<TD WIDTH=7% ALIGN="R" VALIGN="B"><valueabs>IDGFCQP00F/RECORD/IDGFCQP_TXTEG</valueabs></TD>
+</TR> 
+</TABLE>
+</TD></TR></TABLE>
+<TABLE FORCEWIDTH SIZE=7.5>
+<TR>
+	<TD WIDTH=40%></TD> 
+	<TD WIDTH=40%></TD>
+	<TD WIDTH=20% ALIGN=R BORDER=1><B>Da erogare:</B> &euro <valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMPNETRIC</valueabs></TD> 
+</TR> 
+</TABLE>
+
+<BR>
+ <BR>
+
+<TEXT SIZE=7.5 ALIGN=L>
+Con la presente dichiaro di aver ricevuto il modulo SECCI, come da conferma data anche sul modulo di richiesta in caso si decida di procedere con formale richiesta.<BR>
+Inoltre, dichiaro espressamente di non aver versato alcuna somma di denaro per l'istruzione della pratica.<BR>
+<BR>
+<BR>
+<BR>
+Firma del cliente ________________________</TEXT>
+
+</BODY>
+</PDF>

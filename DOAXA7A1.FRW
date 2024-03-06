@@ -1,0 +1,27 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize5.5">
+
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headerallegato7a">			
+</HEADER>
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestatasigla">
+</FOOTER>
+
+<BODY>
+<TEXT ALIGN=J SIZE=11>	
+<BR><BR>
+Ai sensi delle disposizioni del D.Lgs n. 209/2005 (Codice delle Assicurazioni private) e del Regolamento ISVAP n. 5/2006 in tema di norme di comportamento che devono essere osservate nell’esercizio dell’attività di intermediazione assicurativa, gli Intermediari:<BR><BR>
+a) prima della sottoscrizione della proposta di assicurazione o, qualora non prevista, del contratto, consegnano al contraente copia del documento (Allegato n. 7B del Regolamento ISVAP) che contiene notizie sull’Intermediario stesso, sulle potenziali situazioni di conflitto di interessi e sulle forme di tutela del contraente;<BR><BR><BR>
+b) prima della sottoscrizione della proposta di assicurazione o, qualora non prevista, del contratto, illustrano al contraente - in modo corretto, esauriente e facilmente comprensibile - gli elementi essenziali del contratto con particolare riguardo alle caratteristiche, alla durata, ai costi, ai limiti di copertura, agli eventuali rischi finanziari connessi alla sua sottoscrizione ed ad ogni altro elemento utile a fornire un’informativa completa e corretta;<BR><BR><BR>
+c) sono tenuti a proporre o consigliare contratti adeguati alle esigenze di copertura assicurativa e previdenziale del contraente, nonché, ove appropriato in relazione alla tipologia del contratto, alla sua propensione al rischio; a tal fine acquisiscono dal contraente stesso ogni informazione che ritengono utile;<BR><BR><BR>
+d) informano il contraente della circostanza che il suo rifiuto di fornire una o più delle informazioni richieste pregiudica la capacità di individuare il contratto più adeguato alle sue esigenze; nel caso di volontà espressa dal contraente di acquisire comunque un contratto assicurativo ritenuto dall’Intermediario non adeguato, lo informano per iscritto dei motivi dell’inadeguatezza;<BR><BR><BR>
+e) consegnano al contraente copia della documentazione precontrattuale e contrattuale prevista dalle vigenti disposizioni, copia del contratto stipulato e di ogni altro atto o documento da esso sottoscritto;<BR><BR><BR>
+f) possono ricevere dal contraente, a titolo di versamento dei premi assicurativi, i seguenti mezzi di pagamento:<BR><BR><BR>
+<X VALUE=1>1. assegni bancari, postali o circolari, muniti della clausola di non trasferibilità, intestati o girati all’impresa di assicurazione oppure all’Intermediario, espressamente in tale qualità;<BR><BR>
+2. ordini di bonifico, altri mezzi di pagamento bancario o postale, sistemi di pagamento elettronico, che abbiano quale beneficiario uno dei soggetti indicati al precedente punto 1;<BR><BR>
+3. denaro contante, esclusivamente per i contratti di assicurazione contro i danni del ramo responsabilità civile auto e relative garanzie accessorie (se ed in quanto riferite allo stesso veicolo assicurato per la responsabilità civile auto), nonché per i contratti degli altri rami danni con il limite di settecentocinquanta euro annui per ciascun contratto.<BR><BR>
+</TEXT>
+</BODY>
+</PDF>

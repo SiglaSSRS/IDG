@@ -1,0 +1,159 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize8.5">
+
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3">			
+</HEADER>
+
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestcqsstd">
+</FOOTER>
+
+<BODY>	
+<TEXT X=16.5 Y=-1.5><FONT SIZE=6></TEXT> 
+<TEXT X=16.5 Y=-1 ><FONT SIZE=6>N° Pratica: <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs></TEXT> 
+
+	<SUBFOOTER>
+		<TABLE WIDTH=100%>
+			<TR>
+				<TD WIDTH=50%>_____________________________________</TD>
+				<TD WIDTH=50%>__________________________________________________</TD>
+			</TR>
+			<TR>
+				<TD WIDTH=50%>Luogo e data</TD>
+				<TD WIDTH=50%>Firma per presa visione e accettazione</TD>
+			</TR>
+		</TABLE>
+		<BR>
+	</SUBFOOTER>
+
+	<BR><BR>
+
+	<TEXT SIZE=14.0><X VALUE=10><FONT COLOR=#0070D0><B>PIANO D'AMMORTAMENTO</B></FONT></TEXT>
+
+	<BR><HR><BR>
+
+	<TABLE WIDTH=100%>
+		<TR>
+			<TD>
+				<TABLE SIZE=9 WIDTH=100%>
+					<TR>
+						<TD><B>Amministrazione</B>: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs></TD>
+					</TR>
+				</TABLE>
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<TABLE SIZE=9 WIDTH=100%>
+					<TR>
+						<TD><B>Cliente</B>: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></TD>
+					</TR>
+				</TABLE>
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<TABLE SIZE=9 WIDTH=100%>
+					<TR>
+						<TD WIDTH=13%><B>Data decorrenza</B>: </TD>
+						<TD WIDTH=14% ALIGN=RIGHT><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT</valueabs></TD>
+						<TD WIDTH=8%>  </TD>
+						<TD WIDTH=13%><B>N° rate</B>: </TD>
+						<TD WIDTH=14% ALIGN=RIGHT><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs></TD>
+						<TD WIDTH=8%>  </TD>
+						<TD WIDTH=15%><B>Importo</B>:</TD>
+						<TD WIDTH=15% ALIGN=RIGHT>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPCAN</valueabs></TD>
+					</TR>
+					<TR>
+						<TD ALIGN=LEFT><B>Montante lordo</B>:</TD>
+						<TD ALIGN=RIGHT>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPMUTLRD</valueabs></TD>
+						<TD> </TD>
+						<TD ALIGN=LEFT><B>Imp. totale credito</B>:</TD>
+						<TD ALIGN=RIGHT>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPFIN</valueabs></TD>
+						<TD> </TD>
+						<TD ALIGN=LEFT><B>Netto ricavo</B>:</TD>
+						<TD ALIGN=RIGHT>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPNETRIC</valueabs></TD>
+					</TR>
+					<TR>
+						<TD ALIGN=LEFT><B>Spese comunic. period.</B>:</TD>
+						<TD ALIGN=RIGHT>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_SPINCBAN</valueabs></TD>
+						<TD> </TD>
+						<TD ALIGN=LEFT><B>Commissioni Sigla:</B></TD>
+						<TD ALIGN=RIGHT>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMCOMM</valueabs></TD>
+						<TD> </TD>
+						<TD ALIGN=LEFT><B>Comm. rete distributiva:</B></TD>
+						<TD ALIGN=RIGHT>&euro <if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_FLG_IMPROV1</valueabs>==S</ifcond>
+<then><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPROV1</valueabs></then>
+<else><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMCOMM</valueabs></else>
+</if></TD>
+					</TR>
+					<TR>
+						<TD ALIGN=LEFT><B>Oneri erariali / imposta di bollo</B>:</TD>
+						<TD ALIGN=RIGHT>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMRIVALSA</valueabs></TD>
+						<TD> </TD>
+						<TD ALIGN=LEFT><B>Spese Rata ATC</B>:</TD>
+						<TD ALIGN=RIGHT>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_SPINCFIN</valueabs></TD>
+						<TD> </TD>
+						<TD ALIGN=LEFT><B>Interessi</B>:</TD>
+						<TD ALIGN=RIGHT>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPINTER</valueabs></TD>
+						<TD> </TD>
+					</TR>
+					<TR>
+						<TD ALIGN=LEFT><B>TAN</B>:</TD>
+						<TD ALIGN=RIGHT><valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTAN</valueabs> %</TD>
+						<TD> </TD>
+						<TD ALIGN=LEFT><B>TAEG</B>:</TD>
+						<TD ALIGN=RIGHT><valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTAEG</valueabs> %</TD>
+						<TD> </TD>
+						<TD ALIGN=LEFT><B>TEG</B>:</TD>
+						<TD ALIGN=RIGHT><valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTEG</valueabs> %</TD>
+						<TD> </TD>
+					</TR>
+				</TABLE>
+			</TD>
+		</TR>
+	</TABLE>
+
+	<BR><HR><BR>
+
+	<BR><BR><BR>
+	<BR><BR><BR>
+
+	<BR><HR><BR>
+	<TABLE WIDTH=100% SIZE=7>
+		<TR>
+			<TD WIDTH=4% ALIGN=RIGHT><B>N° rata</B></TD>
+			<TD WIDTH=18% ALIGN=RIGHT><B>Capitale residuo</B></TD>
+			<TD WIDTH=3%></TD>
+			<TD WIDTH=5% ALIGN=RIGHT><B>N° rata</B></TD>
+			<TD WIDTH=18% ALIGN=RIGHT><B>Capitale residuo</B></TD>
+			<TD WIDTH=3%></TD>
+			<TD WIDTH=5% ALIGN=RIGHT><B>N° rata</B></TD>
+			<TD WIDTH=18% ALIGN=RIGHT><B>Capitale residuo</B></TD>
+			<TD WIDTH=3%></TD>
+			<TD WIDTH=5% ALIGN=RIGHT><B>N° rata</B></TD>
+			<TD WIDTH=18% ALIGN=RIGHT><B>Capitale residuo</B></TD>
+		</TR>
+		<loop>
+		<loopda>1</loopda>
+		<looproot>IDGFPA400F/RECORD</looproot>
+			<TR>
+			<TD ALIGN=RIGHT><value>IDGFPA4_RATA_1</value></TD>
+			<TD ALIGN=RIGHT><value>IDGFPA4_RES_RATA_1</value></TD>
+			<TD></TD>
+			<TD ALIGN=RIGHT><value>IDGFPA4_RATA_2</value></TD>
+			<TD ALIGN=RIGHT><value>IDGFPA4_RES_RATA_2</value></TD>
+			<TD></TD>
+			<TD ALIGN=RIGHT><value>IDGFPA4_RATA_3</value></TD>
+			<TD ALIGN=RIGHT><value>IDGFPA4_RES_RATA_3</value></TD>
+			<TD></TD>
+			<TD ALIGN=RIGHT><value>IDGFPA4_RATA_4</value></TD>
+			<TD ALIGN=RIGHT><value>IDGFPA4_RES_RATA_4</value></TD>
+			</TR>
+		</loop>
+	</TABLE>
+
+</BODY>
+</PDF>

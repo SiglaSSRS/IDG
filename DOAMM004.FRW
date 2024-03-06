@@ -1,0 +1,291 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize8.5">
+
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintsiglasigla">			
+</HEADER>
+
+<SUBFOOTER>
+<if><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQS191</ifcond><then>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT"><if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs><72</ifcond><then>Pag. 10 di 12</then><else>Pag. 10 di 13</else></if></TD> 
+</TR> 
+</TABLE>
+</then></if>
+</SUBFOOTER>
+
+<BODY>	
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>==FEA</ifcond><or><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>==FSE</ifcond><or><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>==FSP</ifcond>
+<then></then>
+<else>
+<if>(<ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CODENTE</valueabs>!=2483748</ifcond>
+<and><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CODENTE</valueabs>!=82207</ifcond>)
+<or>(<ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CODENTE</valueabs><in>(2483748,82207)</ifcond>
+    <and>(<ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP042 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP043 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP044 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP0421 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP0431 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP0441 </ifcond>)
+)<then><ENCRYPT OWNER="soloiopossomodificare" NOCHANGE NOCOPY></then>
+</else>
+</if></if>
+<TEXT X=16.5 Y=-1.5><FONT SIZE=6></TEXT> 
+
+
+
+	<BR>
+
+	<TEXT SIZE=12.0><X VALUE=10><FONT COLOR=#0070D0><B>PIANO D'AMMORTAMENTO</B></FONT></TEXT>
+
+	<HR><BR>
+
+	<TABLE WIDTH=100%>
+		<TR>
+			<TD>
+				<TABLE size=10 WIDTH=100%>
+					<TR>
+						<TD><B>Amministrazione</B>: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs></TD>
+					</TR>
+				</TABLE>
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<TABLE size=10 WIDTH=100%>
+					<TR>
+						<TD><B>Cliente</B>: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></TD>
+					</TR>
+				</TABLE>
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<TABLE size=10 WIDTH=100%>
+					<TR>
+						<TD WIDTH=13%><B>Data decorrenza (*)</B>: </TD>
+						<TD WIDTH=14% ALIGN=RIGHT><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT</valueabs></TD>
+						<TD WIDTH=8%>  </TD>
+						<TD WIDTH=13%><B>N° rate</B>: </TD>
+						<TD WIDTH=14% ALIGN=RIGHT><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs></TD>
+						<TD WIDTH=8%>  </TD>
+						<TD WIDTH=15%><B>Importo</B>:</TD>
+						<TD WIDTH=15% ALIGN=RIGHT>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPCAN</valueabs></TD>
+					</TR>
+					<TR>
+						<TD ALIGN=LEFT><B>Montante lordo</B>:</TD>
+						<TD ALIGN=RIGHT>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPMUTLRD</valueabs></TD>
+						<TD> </TD>
+						<TD ALIGN=LEFT><B>Finanziato</B>:</TD>
+						<TD ALIGN=RIGHT>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPFIN</valueabs></TD>
+						<TD> </TD>
+						<TD ALIGN=LEFT><B>Imp. totale credito</B>:</TD>
+						<TD ALIGN=RIGHT>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPNETRIC</valueabs></TD>
+					</TR>
+					<TR>
+						<TD ALIGN=LEFT><B>Comm. Sigla:</B></TD>
+						<TD ALIGN=RIGHT>&euro <if>(<ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTRAA</valueabs>==2018</ifcond>
+<and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTRMM</valueabs>>=10</ifcond>)
+<or><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTRAA</valueabs>>=2019</ifcond>
+<or><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTRAA</valueabs>==0</ifcond>
+<then><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMCOMSGCMIT2</valueabs></then>
+<else><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMCOMR3009</valueabs></else>
+</if></TD>
+						<TD> </TD>
+						<TD ALIGN=LEFT><B>Comm. di distribuzione:</B></TD>
+						<TD ALIGN=RIGHT><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMCOMMDIS</valueabs>
+</TD>
+						<TD> </TD>
+						<TD ALIGN=LEFT><B>Interessi</B>:</TD>
+						<TD ALIGN=RIGHT>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPINTER</valueabs></TD>
+					</TR>
+<if>(<ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTRAA</valueabs>==2018</ifcond>
+<and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTRMM</valueabs><10</ifcond>)
+<or>(<ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTRAA</valueabs><2018</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTRAA</valueabs>>0</ifcond>)
+<then>
+					<TR>
+						<TD ALIGN=LEFT><B>Spese comunic. period.</B>:</TD>
+						<TD ALIGN=RIGHT>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_SPINCBAN</valueabs></TD>
+						<TD> </TD>
+						<TD ALIGN=LEFT><B>Oneri erariali / imposta di bollo</B>:</TD>
+						<TD ALIGN=RIGHT>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMRIVALSA</valueabs></TD>
+						<TD> </TD>
+						<TD ALIGN=LEFT><B>Spese Rata ATC</B>:</TD>
+						<TD ALIGN=RIGHT>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPFISSI</valueabs></TD>
+						<TD> </TD>
+					</TR>
+</then></if>
+<if>(<ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTRAA</valueabs>==2021</ifcond>
+<and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTRMM</valueabs>>7</ifcond>)
+<or><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTRAA</valueabs>>2021</ifcond>
+<or><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTRAA</valueabs>==0</ifcond><then>
+					<TR>
+						<TD ALIGN=LEFT><B>Oneri erariali / imposta di bollo</B>:</TD>
+						<TD ALIGN=RIGHT>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMRIVALSA</valueabs></TD>
+						<TD> </TD>
+						<TD ALIGN=LEFT></TD>
+						<TD ALIGN=RIGHT></TD>
+						<TD> </TD>
+						<TD ALIGN=LEFT></TD>
+						<TD ALIGN=RIGHT></TD>
+					</TR>
+</then></if>
+					<TR>
+						<TD ALIGN=LEFT><B>TAN</B>:</TD>
+						<TD ALIGN=RIGHT><valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTAN</valueabs> %</TD>
+						<TD> </TD>
+						<TD ALIGN=LEFT><B>TAEG</B>:</TD>
+						<TD ALIGN=RIGHT><valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTAEG</valueabs> %</TD>
+						<TD> </TD>
+						<TD ALIGN=LEFT><B>TEG</B>:</TD>
+						<TD ALIGN=RIGHT><valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTEG</valueabs> %</TD>
+					</TR>
+				</TABLE>
+			</TD>
+		</TR>
+	</TABLE>
+
+	
+<TEXT ALIGN=J SIZE=10>
+<BR><HR><BR><BR><HR><BR>
+Come previsto dall'art. 13 delle Condizioni Generali di Contratto, in caso di estinzione anticipata del finanziamento il cedente/delegante ha diritto al rimborso degli importi non ancora maturati
+relativi alle voci "Interessi scalari", "Commissioni Sigla" e "Commissioni di distribuzione" (vedi Frontespizio del Contratto) in misura proporzionale alla vita residua del contratto secondo la curva degli interessi del piano di ammortamento del contratto di finanziamento.<BR>
+Di seguito sono indicati gli importi che verranno rimborsati, per ciascuna delle suddette voci previste, dettagliati in base al periodo temporale in cui verrà effettuata la richiesta di estinzione anticipata, ovvero riferiti al pagamento delle singole rate come da piano di ammortamento.<BR>
+Con riferimento a ciascuna rata, viene di seguito riportato il debito residuo netto da restituire a Sigla in caso di estinzione anticipata; tale importo non comprende eventuali rate insolute.<BR>
+Il piano annuale di rimborso interessi e commissioni ha efficacia dalla data di decorrenza effettiva del contratto di finanziamento.<BR><BR>
+<P>
+<B>(*) <I>Si precisa che la data di decorrenza qui riportata deve intendersi teorica in quanto la stessa, come indicato in contratto, è fissata a decorrere dal mese successivo alla data di notifica del presente contratto al Datore di Lavoro/Ente Previdenziale.</I></B>
+</P>
+<BR><BR><BR><BR>
+
+<BR><BR><BR><BR>
+<B>Piano di ammortamento alla pagina seguente</B>
+</TEXT>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs><72</ifcond><then>
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\PIANOAMMORDOAMM004##01_01_02.png" BACKGROUND X=4 Y=-0.8 SCALE=25>
+</then><else>
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\PIANOAMMORDOAMM004##01_01_03.png" BACKGROUND X=4 Y=-0.8 SCALE=25>
+</else></if>
+<PAGE>
+<SUBFOOTER>
+<if><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQS191</ifcond><then>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT"><if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs><72</ifcond><then>Pag. 11 di 12</then><else>Pag. 11 di 13</else></if></TD> 
+</TR> 
+</TABLE>
+</then></if>
+</SUBFOOTER>
+
+	<BR>
+
+	<TEXT SIZE=12.0><X VALUE=10><FONT COLOR=#0070D0><B>PIANO D'AMMORTAMENTO</B></FONT></TEXT>
+
+	<HR><BR>
+
+
+	
+	
+	<TABLE WIDTH=100% SIZE=5 BORDER=0.1>
+		<TR>
+			<TD WIDTH=5% ALIGN=RIGHT SIZE=6><B>N° rata</B></TD>
+			<TD WIDTH=15% ALIGN=RIGHT SIZE=6><B>Montante<BR><BR>(dopo il pagamento della rata)</B></TD>
+			<TD WIDTH=15% ALIGN=RIGHT SIZE=6><B>- interessi nominali scalari<BR><BR>(dopo il pagamento della rata)</B></TD>
+			<TD WIDTH=15% ALIGN=RIGHT SIZE=6><B>= capitale residuo<BR><BR>(dopo il pagamento della rata)</B></TD>
+			<TD WIDTH=15% ALIGN=RIGHT SIZE=6><B>- commissioni Sigla ripetibili<BR><BR>(dopo il pagamento della rata)</B></TD>
+			<TD WIDTH=15% ALIGN=RIGHT SIZE=6><B>- commissioni di distribuzione ripetibili<BR><BR>(dopo il pagamento della rata)</B></TD>
+			<TD WIDTH=15% ALIGN=RIGHT SIZE=6><B>= debito residuo in caso di estinzione anticipata<BR>(dopo il pagamento della rata)</B></TD>
+		</TR>
+		<loop>
+		<loopda>1</loopda>
+		<looproot>IDGFPA400F/RECORD</looproot>
+		<TR>
+			<TD WIDTH=6% ALIGN=RIGHT SIZE=5.5><value>IDGFPA4_RATA_1</value></TD>
+			<TD WIDTH=15% ALIGN=RIGHT SIZE=5.5><value>IDGFPA4_IMPMONT1</value></TD>
+			<TD WIDTH=15% ALIGN=RIGHT SIZE=5.5><value>IDGFPA4_RESINT_RATA_1</value></TD>
+			<TD WIDTH=15% ALIGN=RIGHT SIZE=5.5><value>IDGFPA4_RES_RATA_1</value></TD>
+			<TD WIDTH=15% ALIGN=RIGHT SIZE=5.5><value>IDGFPA4_IMPCOM_RATA1</value></TD>
+			<TD WIDTH=15% ALIGN=RIGHT SIZE=5.5><value>IDGFPA4_IMCOMMDIS1</value></TD>
+			<TD WIDTH=15% ALIGN=RIGHT SIZE=5.5><value>IDGFPA4_IMPDEB1</value></TD>
+		</TR>
+		<TR>
+			<TD WIDTH=6% ALIGN=RIGHT SIZE=5.5><value>IDGFPA4_RATA_2</value></TD>
+			<TD WIDTH=15% ALIGN=RIGHT SIZE=5.5><value>IDGFPA4_IMPMONT2</value></TD>
+			<TD WIDTH=15% ALIGN=RIGHT SIZE=5.5><value>IDGFPA4_RESINT_RATA_2</value></TD>
+			<TD WIDTH=15% ALIGN=RIGHT SIZE=5.5><value>IDGFPA4_RES_RATA_2</value></TD>
+			<TD WIDTH=15% ALIGN=RIGHT SIZE=5.5><value>IDGFPA4_IMPCOM_RATA2</value></TD>
+			<TD WIDTH=15% ALIGN=RIGHT SIZE=5.5><value>IDGFPA4_IMCOMMDIS2</value></TD>
+			<TD WIDTH=15% ALIGN=RIGHT SIZE=5.5><value>IDGFPA4_IMPDEB2</value></TD>
+		</TR>
+		<if><ifcond><value>IDGFPA4_RATA_2</value>==62</ifcond><then>
+</TABLE>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs>>=72</ifcond><then>
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\PIANOAMMORDOAMM004##01_02_03.png" BACKGROUND X=4 Y=-0.8 SCALE=25>
+</then></if>
+		<PAGE>
+<SUBFOOTER>
+<if><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQS191</ifcond><then>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT">Pag. 12 di 13</TD> 
+</TR> 
+</TABLE>
+</then></if>
+</SUBFOOTER>		
+		<TABLE WIDTH=100% SIZE=5 BORDER=0.1>
+		<TR>
+			<TD WIDTH=5% ALIGN=RIGHT SIZE=6><B>N° rata</B></TD>
+			<TD WIDTH=15% ALIGN=RIGHT SIZE=6><B>Montante<BR><BR>(dopo il pagamento della rata)</B></TD>
+			<TD WIDTH=15% ALIGN=RIGHT SIZE=6><B>- interessi nominali scalari<BR><BR>(dopo il pagamento della rata)</B></TD>
+			<TD WIDTH=15% ALIGN=RIGHT SIZE=6><B>= capitale residuo<BR><BR>(dopo il pagamento della rata)</B></TD>
+			<TD WIDTH=15% ALIGN=RIGHT SIZE=6><B>- commissioni Sigla totalmente ripetibili<BR><BR>(dopo il pagamento della rata)</B></TD>
+			<TD WIDTH=15% ALIGN=RIGHT SIZE=6><B>- commissioni di distribuzione ripetibili<BR><BR>(dopo il pagamento della rata)</B></TD>
+			<TD WIDTH=15% ALIGN=RIGHT SIZE=6><B>= debito residuo in caso di estinzione anticipata<BR>(dopo il pagamento della rata)</B></TD>
+		</TR></then></if>
+		
+		<TR>
+			<TD WIDTH=6% ALIGN=RIGHT SIZE=5.5><value>IDGFPA4_RATA_3</value></TD>
+			<TD WIDTH=15% ALIGN=RIGHT SIZE=5.5><value>IDGFPA4_IMPMONT3</value></TD>
+			<TD WIDTH=15% ALIGN=RIGHT SIZE=5.5><value>IDGFPA4_RESINT_RATA_3</value></TD>
+			<TD WIDTH=15% ALIGN=RIGHT SIZE=5.5><value>IDGFPA4_RES_RATA_3</value></TD>
+			<TD WIDTH=15% ALIGN=RIGHT SIZE=5.5><value>IDGFPA4_IMPCOM_RATA3</value></TD>
+			<TD WIDTH=15% ALIGN=RIGHT SIZE=5.5><value>IDGFPA4_IMCOMMDIS3</value></TD>
+			<TD WIDTH=15% ALIGN=RIGHT SIZE=5.5><value>IDGFPA4_IMPDEB3</value></TD>
+		</TR>
+		<TR>
+			<TD WIDTH=6% ALIGN=RIGHT SIZE=5.5><value>IDGFPA4_RATA_4</value></TD>
+			<TD WIDTH=15% ALIGN=RIGHT SIZE=5.5><value>IDGFPA4_IMPMONT4</value></TD>
+			<TD WIDTH=15% ALIGN=RIGHT SIZE=5.5><value>IDGFPA4_RESINT_RATA_4</value></TD>
+			<TD WIDTH=15% ALIGN=RIGHT SIZE=5.5><value>IDGFPA4_RES_RATA_4</value></TD>
+			<TD WIDTH=15% ALIGN=RIGHT SIZE=5.5><value>IDGFPA4_IMPCOM_RATA4</value></TD>
+			<TD WIDTH=15% ALIGN=RIGHT SIZE=5.5><value>IDGFPA4_IMCOMMDIS4</value></TD>
+			<TD WIDTH=15% ALIGN=RIGHT SIZE=5.5><value>IDGFPA4_IMPDEB4</value></TD>
+		</TR>
+		
+
+			
+		</loop>
+	</TABLE>
+	<BR>
+	<BR>
+		<TABLE WIDTH=100%>
+			<TR>
+				<TD WIDTH=50%><INPUT TYPE=TEXT NAME=A-PIANOAMMORDOAMM004##-01 SIZE=8 WIDTH=8 HEIGHT=2></TD>
+				<TD WIDTH=50%><if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FEA</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FSE</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FSP</ifcond><then><INPUT TYPE=SIGNATURE NAME=C-PIANOAMMORDOAMM004##-1 WIDTH=5 HEIGHT=3></then></if></TD>
+			</TR>
+			<TR>
+				<TD WIDTH=50%>Luogo e data</TD>
+				<TD WIDTH=50%>Firma per presa visione e accettazione</TD>
+			</TR>
+		</TABLE>
+
+</BODY>
+</TEXT>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs><72</ifcond><then>
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\PIANOAMMORDOAMM004##01_02_02.png" BACKGROUND X=4 Y=1.7 SCALE=25>
+</then><else>
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\PIANOAMMORDOAMM004##01_03_03.png" BACKGROUND X=4 Y=1.7 SCALE=25>
+</else></if>
+</PDF>
+
