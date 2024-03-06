@@ -4,7 +4,7 @@
 </then><else>
 <if><ifcond><valueabs>IDGFFONT0F/RECORD/IDGFONT_CDFONTE</valueabs><in>(_YOU_CONS)</ifcond><then>
 <include file="DOCON003.frw"></then></if>
-<PDF>
+<PDF> 
 
 <include file="\INCLUDE\includedStruttura.frw" value="strutturasize5.5">
 
