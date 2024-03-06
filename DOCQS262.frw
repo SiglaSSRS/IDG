@@ -1,0 +1,122 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize10_Arial">
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3_1">
+</HEADER>
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestatalegale2">
+</FOOTER>	
+
+<BODY>
+
+<TEXT ALIGN=J LINESPACE=0.5>
+<BR><BR><BR><BR>
+
+<TABLE WIDTH=100%>
+<TR>
+<!-- AXA FRANCE VIE SA VITA -->
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_COMP_VIT</valueabs>==12002218</ifcond><then>
+<TD WIDTH=70%><br><br><br><br>
+Via e-mail: cbpitaliasinistri@actaliscertymail.it</TD>
+</then></if>
+
+<!-- AVIVA LIFE S.P.A. -->
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_COMP_VIT</valueabs>==12048971</ifcond><then>
+<TD WIDTH=70%><br><br><br><br>Via e-mail: bsitalia.cq@pec.net</TD>
+</then></if>
+
+<!-- CARDIF -->
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_COMP_VIT</valueabs>==12003816</ifcond><then>
+<TD WIDTH=70%><br><br><br><br>Via PEC: sinistricq@pec.cardif.it;</TD>
+</then></if>
+
+<!-- CARIGE -->
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_COMP_VIT</valueabs>==12002191</ifcond><then>
+<TD WIDTH=70%><br><br><br><br>Via PEC: sinistririschioimpiego.carigeassicurazioni@postecert.it<BR>
+E pc: rischioimpiego@amissima.it;</TD>
+</then></if>
+
+<!-- CATTOLICA -->
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_COMP_VIT</valueabs>==12002196</ifcond><then>
+<TD WIDTH=70%><br><br><br><br>Raccomandata A/R</TD>
+</then></if>
+
+<!-- GAIIL -->
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_COMP_VIT</valueabs>==12015729</ifcond><then>
+<TD WIDTH=70%><br><br><br><br>Via PEC: cbpitaliasinistri@actaliscertymail.it</TD>
+</then></if>
+
+<!-- HDI -->
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_COMP_VIT</valueabs>==12010402</ifcond><then>
+<TD WIDTH=70%><br><br><br><br>Via PEC: sinistriramivita@pec.hdia.it</TD>
+</then></if>
+
+
+<!-- NET INSURANCE -->
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_COMP_VIT</valueabs>==12001843</ifcond><then>
+<TD WIDTH=70%><br><br><br><br>A mezzo e-mail: sinistri@pec.netinsurance.it</TD>
+</then></if>
+
+<!-- VITTORIA -->
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_COMP_VIT</valueabs>==12002254</ifcond><then>
+<TD WIDTH=70%><br><br><br><br>
+Via PEC: pec@csa.telecompost.it<BR>
+epc: sinistri.impiego@vittoriaassicurazioni.it</TD>
+</then></if>
+
+<!-- CF -->
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_COMP_VIT</valueabs>==12032311</ifcond><then>
+<TD WIDTH=70%><br><br><br><br>
+Via PEC: cfassicurazioni-sinistri@pec.it<BR></TD>
+</then></if>
+
+<!-- ALLIANZ -->
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_COMP_VIT</valueabs>==2359656</ifcond><then>
+<TD WIDTH=70%><br><br><br><br>
+Via PEC: sinistri.allianz@bsitalia.it<BR></TD>
+</then></if>
+
+<TD WIDTH=30%>Spett.le<BR>
+<B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DES_COMP_IMP</valueabs></B><BR>
+<valueabs>IDGFCQS00F/RECORD/IDGFCQS_IND_COMP_VIT</valueabs><BR>
+<valueabs>IDGFCQS00F/RECORD/IDGFCQS_CAP_COMP_VIT</valueabs> <B><U><valueabs>IDGFCQS00F/RECORD/IDGFCQS_LOC_COMP_VIT</valueabs></U><B> (<valueabs>IDGFCQS00F/RECORD/IDGFCQS_PRV_COMP_VIT</valueabs>)<br>
+</TD>
+</TR>
+</TABLE>
+<BR><BR><BR><BR>
+Conegliano, <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs> 
+<BR><BR><BR><BR>
+<B>OGGETTO:</B> <U>Comunicazione di subentro di nuova società terza ceduta, di cui al <if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==DEL</ifcond>
+<then>Contratto di delegazione di pagamento</then>
+</if>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>!=</ifcond>
+<then>Contratto di mutuo contro cessione del quinto dello stipendio</then>
+</if>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>==</ifcond>
+<then>Contratto di mutuo contro cessione del quinto della pensione</then>
+</if>, sottoscritto tra Sigla s.r.l. e <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> in data <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTR</valueabs> Rif. pratica n° <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>. Certificato di polizza n° <valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_POL_IMP</valueabs></U>.<BR>
+<BR><BR>
+La presente per comunicarVi il trasferimento <if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond><then>del Sig.</then><else>della Sig.ra</if> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> alla società <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_STATOGIUR</valueabs> 
+con sede legale in <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_LAV</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_LAV</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_LAV</valueabs>) <valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_LAV</valueabs> -  P. Iva <valueabs>IDGFCLI00F/RECORD/IDGFCLI_PIVA_LAV</valueabs>.
+<BR><BR>
+Alleghiamo altresi alla presente copia della pattuizione sottoscritta tra Sigla e la subentrante società e confermiamo la regolare messa in quota del contratto.
+<BR><BR>
+Restiamo a disposizione per qualsiasi ulteriore chiarimento e adempimento.
+<BR><BR><BR>
+Cordiali saluti.
+<BR><BR>
+</TEXT>
+<TEXT X=14.15 Y=20><I><B>SIGLA S.R.L.</B></I><BR></TEXT>
+<TEXT X=13 Y=20.5><I><B>Ufficio Sinistri e Legale CQS</B></I></TEXT>
+<IMG SRC="<valueabs>Immagini/MAZZER/Path</valueabs><valueabs>Immagini/MAZZER/Nome</valueabs>" BACKGROUND X=13 Y=22.5 SCALE=15>
+<TEXT ALIGN=J>
+<BR><BR>
+In all:<BR>
+1.	copia denuncia cautelativa;<BR>
+2.	lettera di subentro, sottoscritta dall'ATC per accettazione.<BR>
+</TEXT>
+
+</BODY>
+
+</PDF>

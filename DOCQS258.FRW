@@ -1,0 +1,44 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize10_Arial">
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3_1">
+</HEADER>
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestatalegale2">
+</FOOTER>	
+
+<BODY>
+<TEXT ALIGN=J SIZE=8 LINESPACE=0.5>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=60%><br><br><br>Raccomandata A.R.</TD>
+<TD WIDTH=40%><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond>
+<then><B>Egr. Sig.<else>Gent.le Sig.ra</if></B> [EST/PP<valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>]<br>
+<B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></B><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs> - <B><U><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs></U></B> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs>)
+<br>
+</TD>
+</TR><br>
+<BR><BR><BR>
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRRAGSOC</valueabs>!= </ifcond><then>
+<TR>
+<TD WIDTH=60%><br><br><br>Raccomandata A.R.</TD>
+<TD WIDTH=40%>Spett.le [EST/PP<valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>]<br>
+<B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRRAGSOC</valueabs></B><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRINDIR</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRCAP</valueabs> - <B><U><valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRLOCAL</valueabs></U></B> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRPROV</valueabs>)
+<br>
+</TD>
+</TR>
+</then>
+</if>
+<BR><BR><BR>
+</TABLE>
+<BR>
+</TEXT>
+<include file="DOCQS258_body.frw">
+</BODY>
+
+</PDF>

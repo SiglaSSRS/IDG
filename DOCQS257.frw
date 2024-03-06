@@ -1,0 +1,90 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize10_Arial">
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3_1">
+</HEADER>
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestatalegale2">
+</FOOTER>	
+
+<BODY>
+
+<TEXT ALIGN=J SIZE=8 LINESPACE=0.5>
+<BR><BR>
+
+<TABLE WIDTH=100%>
+<TR>
+<!-- AXA FRANCE VIE SA VITA -->
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_COMP_VIT</valueabs>==12002218</ifcond><then>
+<TD WIDTH=70%><br><br><br><br>
+Via e-mail: cbpitaliasinistri@actaliscertymail.it<BR>
+			service.adhesionscreditor@axa.fr<br>
+	  c.c.: vincent.stefano@axa.fr</TD>
+</then></if>
+
+<!-- AVIVA LIFE S.P.A. -->
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_COMP_VIT</valueabs>==12048971</ifcond><then>
+<TD WIDTH=70%><br><br><br><br>Via e-mail: bsitalia.cq@pec.net</TD>
+</then></if>
+
+<!-- CARDIF -->
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_COMP_VIT</valueabs>==12003816</ifcond><then>
+<TD WIDTH=70%><br><br><br><br>Via PEC: sinistricq@pec.cardif.it</TD>
+</then></if>
+
+<!-- CARIGE -->
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_COMP_VIT</valueabs>==12002191</ifcond><then>
+<TD WIDTH=70%><br><br><br><br>Via PEC: sinistririschioimpiego.carigeassicurazioni@postecert.it</TD>
+</then></if>
+
+<!-- CATTOLICA -->
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_COMP_VIT</valueabs>==12002196</ifcond><then>
+<TD WIDTH=70%><br><br><br><br>Raccomandata A/R</TD>
+</then></if>
+
+<!-- GAIIL -->
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_COMP_VIT</valueabs>==12015729</ifcond><then>
+<TD WIDTH=70%><br><br><br><br>Via PEC: cbpitaliasinistri@actaliscertymail.it</TD>
+</then></if>
+
+<!-- HDI -->
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_COMP_VIT</valueabs>==12010402</ifcond><then>
+<TD WIDTH=70%><br><br><br><br>Via PEC: sinistriramivita@pec.hdia.it</TD>
+</then></if>
+
+
+<!-- NET INSURANCE -->
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_COMP_VIT</valueabs>==12001843</ifcond><then>
+<TD WIDTH=70%><br><br><br><br>A mezzo e-mail: sinistri@pec.netinsurance.it</TD>
+</then></if>
+
+<!-- VITTORIA -->
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_COMP_VIT</valueabs>==12002254</ifcond><then>
+<TD WIDTH=70%><br><br><br><br>
+Via PEC: pec@csa.telecompost.it<BR>
+CC: cqs@consorzioserviziassicurativi.it; sinistri.impiego@vittoriaassicurazioni.it</TD>
+</then></if>
+
+<!-- CF -->
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_COMP_VIT</valueabs>==12032311</ifcond><then>
+<TD WIDTH=70%><br><br><br><br>Via PEC: cfassicurazioni-sinistri@pec.it</TD>
+</then></if>
+
+<!-- GENERTEL -->
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_COMP_VIT</valueabs>==12056669</ifcond><then>
+<TD WIDTH=70%><br><br><br><br></TD>
+</then></if>
+ 
+<TD WIDTH=30%>Spett.le<BR>
+<B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DES_COMP_IMP</valueabs></B><BR>
+<valueabs>IDGFCQS00F/RECORD/IDGFCQS_IND_COMP_VIT</valueabs><BR>
+<valueabs>IDGFCQS00F/RECORD/IDGFCQS_CAP_COMP_VIT</valueabs> <B><U><valueabs>IDGFCQS00F/RECORD/IDGFCQS_LOC_COMP_VIT</valueabs></U><B> (<valueabs>IDGFCQS00F/RECORD/IDGFCQS_PRV_COMP_VIT</valueabs>)<br>
+</TD>
+</TR>
+</TABLE>
+</TEXT>
+<include file="DOCQS257_body.frw">
+</BODY>
+
+</PDF>

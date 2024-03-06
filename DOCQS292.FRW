@@ -1,0 +1,94 @@
+<PDF>
+	<include file="\INCLUDE\IncludedStruttura.frw" value="sacstrutturasize10">
+	<HEADER>
+		<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3">			
+	</HEADER>
+	<FOOTER>
+		<include file="\INCLUDE\IncludedStruttura.frw" value="footercartaintestatasac">
+	</FOOTER>
+	<BODY>
+		<TEXT LINESPACE=0.5 ALIGN=J>
+			<BR><BR><BR><BR><BR>
+			<TABLE WIDTH=100%>
+			<TR>
+				<TD WIDTH=25%>(<valueabs>IDGPCTR00F/RECORD/IDGPCTR_MED_AGENCY</valueabs><valueabs>IDGPCTR00F/RECORD/IDGPCTR_MED_OFFICE</valueabs>)</TD>
+				<TD WIDTH=25%></TD>
+				<TD WIDTH=10%></TD>
+				<TD WIDTH=40%><i>Gentilissimo/a</i></TD>
+			</TR>
+			<TR><TD><BR></TD></TR>
+			<TR>
+				<TD WIDTH=25%></TD>
+				<TD WIDTH=25%></TD>
+				<TD WIDTH=10%></TD>
+				<TD WIDTH=40%><B><valueabs>IDGPCLI00F/RECORD/IDGPCLI_RAGSOC</valueabs></B></TD>
+			</TR>
+			<if><ifcond><valueabs>IDGPCLI00F/RECORD/IDGPCLI_INDIR_RES</valueabs>==</ifcond><then>
+				<TR>
+					<TD WIDTH=25%></TD>
+					<TD WIDTH=25%></TD>
+					<TD WIDTH=10%></TD>
+					<TD WIDTH=40%><valueabs>IDGPCLI00F/RECORD/IDGPCLI_INDIR</valueabs></TD>
+				</TR>
+				<TR>
+					<TD WIDTH=25%></TD>
+					<TD WIDTH=25%></TD>
+					<TD WIDTH=10%></TD>
+					<TD WIDTH=40%><valueabs>IDGPCLI00F/RECORD/IDGPCLI_CAP</valueabs> - <valueabs>IDGPCLI00F/RECORD/IDGPCLI_LOCAL</valueabs>  (<valueabs>IDGPCLI00F/RECORD/IDGPCLI_PROV</valueabs>)</TD>
+				</TR>
+			<else>
+				<TR>
+					<TD WIDTH=25%></TD>
+					<TD WIDTH=25%></TD>
+					<TD WIDTH=10%></TD>
+					<TD WIDTH=40%><valueabs>IDGPCLI00F/RECORD/IDGPCLI_INDIR_RES</valueabs></TD>
+				</TR>
+				<TR>
+					<TD WIDTH=25%></TD>
+					<TD WIDTH=25%></TD>
+					<TD WIDTH=10%></TD>
+					<TD WIDTH=40%><valueabs>IDGPCLI00F/RECORD/IDGPCLI_CAP_RES</valueabs> - <valueabs>IDGPCLI00F/RECORD/IDGPCLI_LOCAL_RES</valueabs> (<valueabs>IDGPCLI00F/RECORD/IDGPCLI_PROV_RES</valueabs>)</TD>
+				</TR>
+			</if>
+</TABLE>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+
+ <TABLE WIDTH=100%>
+				<TR><TD WIDTH=7% ALIGN=L>Oggetto:</td>
+					<TD WIDTH=93% ALIGN=L>
+				<i><u>Richiesta di finanziamento a nome <b><valueabs>IDGPCLI00F/RECORD/IDGPCLI_RAGSOC</valueabs></B></u></i></TD></TR>
+				<TR><TD WIDTH=7%></td>
+					<TD WIDTH=93% ALIGN=L><i><u>C.F. <B><valueabs>IDGPCLI00F/RECORD/IDGPCLI_CDFIS</valueabs></B></u></i>
+				</TD></TR>
+				</TABLE>
+<BR><BR><BR>
+
+		Con riferimento alla richiesta di finanziamento in oggetto siamo a comunicarLe che, la stessa non rispetta i criteri per l’assunzione da parte <U>dell’Ente Finanziatore.</U>
+<br><br>
+		Precisiamo che per l’analisi complessiva del merito creditizio la Società utilizza un sistema di valutazione che tiene conto del complesso delle caratteristiche socio-demografiche, economiche-patrimoniali (quali ad esempio il reddito, il tipo di occupazione lavorativa, la durata del rapporto di lavoro del richiedente il finanziamento, ecc…) e degli impegni finanziari di un cliente quali risultano dalle dichiarazioni del medesimo e dalla consultazione di banche dati.
+<br><br>
+		Restando a disposizione per eventuali chiarimenti, Le porgiamo i più cordiali saluti.
+<BR><BR><BR><BR><BR><BR><BR>
+<TABLE WIDTH=100% FONT SIZE=10>
+<tr>
+<TD WIDTH=77%></TD>
+<TD WIDTH=23% ALIGN=C><i>Alberto Tacchin</i></TD>
+</TR>
+<tr>
+<TD WIDTH=77%></TD>
+<TD WIDTH=23% ALIGN=C>Direzione Prodotto</TD>
+</TR>
+<tr>
+<TD WIDTH=77%></TD>
+<TD WIDTH=23% ALIGN=C>Sigla Srl</TD>
+</TR>
+</TABLE>
+
+</TEXT>
+</BODY>
+</PDF>

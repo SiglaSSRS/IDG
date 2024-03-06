@@ -1,0 +1,359 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize5.5_times">
+
+<HEADER>
+<TEXT X=16.5 Y=-0.3>del-SC – 27.03.2023</TEXT>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintsiglasigla">
+</HEADER>
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestatasiglabollo">
+</FOOTER>
+
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT"><if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs><72</ifcond><then>Pag. 5 di 12</then><else>Pag. 5 di 13</else></if></TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+
+<BODY>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>==FEA</ifcond><or><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>==FSE</ifcond><or><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>==FSP</ifcond>
+<then></then>
+<else>
+<if>(<ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CODENTE</valueabs>!=2483748</ifcond>
+<and><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CODENTE</valueabs>!=82207</ifcond>)
+<or>(<ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CODENTE</valueabs><in>(2483748,82207)</ifcond>
+    <and>(<ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP042 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP043 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP044 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP0421 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP0431 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP0441 </ifcond>)
+)<then><ENCRYPT OWNER="soloiopossomodificare" NOCHANGE NOCOPY></then>
+</else>
+</if></if>
+<BR>
+<TEXT SIZE=7.7 ALIGN=C><B>RICHIESTA DI FINANZIAMENTO CONTRO DELEGAZIONE DI PAGAMENTO</B></TEXT>
+<BR>
+<TEXT SIZE=7.5 ALIGN=J>
+Premessa: Il sottoscritto (in seguito denominato "DELEGANTE"), presa visione delle condizioni che regolano il Contratto di finanziamento rimborsabile mediante cessione di quote della propria retribuzione mensile, di seguito riportate e che dichiara di accettare integralmente e senza riserve, 
+</TEXT>
+<BR>
+<TEXT SIZE=7.5 ALIGN=C><B>Chiede</B></TEXT>
+<BR>
+<TEXT SIZE=7.5 ALIGN=J>
+a <B><valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs></B> (in seguito denominata "SIGLA" Codice Fiscale e Partita IVA 03951740269 Sede Legale e Operativa via Cesare Battisti, 5/a – 31015 Conegliano (TV) - Indirizzo telematico <U>www.siglacredit.it</U> - Iscrizione Albo Unico degli Intermediari Finanziari ex art.106 TUB con n. 88 (codice meccanografico 33023) del D. Lgs. n. 385/93 - R.E.A. TV 311003 - Capitale Sociale Euro 600.000,00 i.v. ), la concessione di un finanziamento alle condizioni indicate nella presente domanda dichiarando, anche ai sensi dell'art. 18 del Dlgs 231/2007 (norme antiriciclaggio), che lo stesso è finalizzato a soddisfare bisogni attinenti alla vita privata ed ai consumi propri e della famiglia. Il rimborso della somma erogata verrà effettuato dal DELEGANTE mediante delegazione di pagamento a valere sulla sua retribuzione secondo le modalità sotto indicate nel rispetto delle vigenti disposizioni di legge con riguardo, particolare ma non esclusivo, al Testo Unico approvato con il DPR 05/01/1950 n. 180 e relativo regolamento di cui al DPR 28/07/1950 n. 895 e successive modifiche, nonché al disposto di cui all'art. 1198, 1269 e 1723 c.c. e ad ogni altro articolo del Codice Civile applicabile in materia.
+<BR><BR>Il DELEGANTE dichiara che:
+</TEXT>
+<BR>
+<TABLE SIZE=7.5 BORDER=0.5>
+<TR>
+<TD WIDTH=100% ALIGN=J>
+	DATI DEL DELEGANTE<BR>
+	Cognome e Nome <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></B>  nato a <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCNASC</valueabs></B>  il <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC</valueabs></B>  
+	C.F. <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs>  </B>  
+	<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs>==</ifcond><then> residente e domiciliato in <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs>)</B> c.a.p. <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs></B> via/piazza <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs>  </B></then></if>	
+	<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs>==<valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs></ifcond><then>  residente e domiciliato in <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_RES</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_RES</valueabs>)</B> c.a.p. <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_RES</valueabs></B> via/piazza <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs>  </B></then></if> 
+	<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs>!=<valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs></ifcond><and><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs>!=</ifcond><then>  residente in <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_RES</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_RES</valueabs>)</B> c.a.p. <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_RES</valueabs></B> via/piazza <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs></B> e domiciliato in <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs>)</B> c.a.p. <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs></B> via/piazza <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs>  </B></then></if> 
+	n.tel  <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_TELE_RES</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_TELE_ALT</valueabs></B>
+<BR>
+Documento di identità <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DSDOCUM</valueabs></B> n.<B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_NUM_DOCUM</valueabs></B> rilasciato da <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_ENTE</valueabs> di <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_DA</valueabs></B> data emissione <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_DA_IL</valueabs></B> valido sino al <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_SCAD_IL</valueabs></B>  
+	Dipendente da <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs>  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_LAV</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_LAV</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_LAV</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_LAV</valueabs>)</B> dal <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTASSUNZ</valueabs></B> con la qualifica di <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DSRUOLO</valueabs></B><BR>
+	con la retribuzione annua lorda di &euro <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LRDAA</valueabs></B>    mensile lordo &euro <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LRDULTBP</valueabs></B> mensile netto &euro <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_REDD_MENS</valueabs></B>
+</TD>
+</TR>
+<TR>
+<TD WIDTH=100% ALIGN=J>
+		<B>Condizioni economiche del prestito contro delegazione di pagamento: </B><BR>
+		- RATA MENSILE: &euro <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPCAN</valueabs></B> N. RATE <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs></B> CAPITALE LORDO MUTUATO &euro <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPMUTLRD</valueabs> </B> DURATA <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DURATA</valueabs></B> MESI<BR>
+		- MODALITA' DI PAGAMENTO: trattenuta sullo stipendio secondo le modalità indicate al punto 5 delle condizioni generali del contratto di prestito;<BR>
+		- SCADENZA PAGAMENTO DA PARTE DEL DATORE DI LAVORO: a decorrere dal mese successivo alla notifica del contratto entro il giorno 10 di ogni mese; la decorrenza del piano d'ammortamento è il giorno 1 del mese successivo alla notifica del presente contratto. Nel caso in cui la data di effettivo utilizzo del prestito dovesse essere successiva alla data di decorrenza del piano di ammortamento, il cliente potrà richiedere a Sigla il delta interessi calcolato al tan contrattuale, applicato sul prestito per i giorni intercorrenti tra la data di erogazione (utilizzo) e la data di decorrenza. Nel caso inverso, con data di effettivo utilizzo precedente alla data di decorrenza del piano di ammortamento, Sigla potrà richiedere al cliente il delta interessi calcolato al tan contrattuale, applicato sul prestito per i giorni intercorrenti tra la data di erogazione (utilizzo) e la data di decorrenza.<BR>
+		- TASSO NOMINALE ANNUO SCALARE (TAN) APPLICATO IN MISURA FISSA PER L'INTERA DURATA DEL PRESTITO (con riferimento all'anno commerciale, con 12 mesi da 30 giorni) <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTAN</valueabs></B> %<BR>
+<TABLE SIZE=7.0>
+<TR>
+<TD WIDTH=70% ALIGN=J>- INTERESSI SCALARI AL TAN SOPRA ESPOSTO<FONT SIZE=6.5> (1)</FONT></TD>
+<TD WIDTH=30% ALIGN=J>&euro <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPINTER</valueabs></B></TD>
+</TR>
+<TR>
+<TD WIDTH=70% ALIGN=J>- COMMISSIONI IN FAVORE DI SIGLA<FONT SIZE=6.5> (2)</FONT></TD>
+<TD WIDTH=30% ALIGN=J>&euro <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMCOMSGCMIT2</valueabs></B></TD>
+</TR>
+<TR>
+<TD WIDTH=70% ALIGN=J>- COMMISSIONI DI DISTRIBUZIONE<FONT SIZE=6.5> (2)</FONT></TD>
+<TD WIDTH=30% ALIGN=J>&euro <B><if><ifcond><valueabs>IDGFFONT0F/RECORD/IDGFONT_CDFONTE</valueabs><in>(_CRECO,_CRECO_RIN,_CREDIPER,CRECO_07,CRECO_15,CRECO_25,CRECO_30,CRECO_31,CRECO_32,CRECO_33,CRECO_34,CRECO_35,CRECO_36,CRECO_37,CRECO_38,CRECO_39,CRECO_40,CRECO_41,CRECO_42,CRECO_43,CRECO_44,CRECO_45,CRECO_46,CRECO_47,CRECO_48,CRECO_49,CRECO_50,CRECO_51,CRECO_52,CRECO_53,CRECO_54,CRECO_55,CRECO_56,CRECO_57,CRECO_58,CRECO_59,CRECO_60,CRECO_61,CRECO_62,CRECO_63,CRECO_64,CRECO_65,CRECO_66,CRECO_67,CRECO_68,CRECO_69,CRECO_70,CRECO_71,CRECO_72,CRECO_73,CRECO_74,CRECO_75,CRECO_76,CRECO_77,CRECO_78,CRECO_79,CRECO_80)</ifcond>
+<then><if><ifcond><valueabs>IDGFFONT0F/RECORD/IDGFONT_CDFONTE</valueabs>==_CREDIPER</ifcond>
+	  <then><valueabs>IDGFCQS00F/RECORD/IDGFCQS_PV_IMCOMMBA</valueabs></then>
+	  <else><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMCOMMBA</valueabs></else></if>
+</then>
+<else>
+<valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPROV1</valueabs>
+</else>
+</if></B></TD>
+</TR>
+<TR>
+<TD WIDTH=70% ALIGN=J>- ONERI ERARIALI/IMPOSTA DI BOLLO:<FONT SIZE=6.5> (3)</FONT></TD>
+<TD WIDTH=30% ALIGN=J><B>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMRIVALSA</valueabs></B></TD>
+</TR>
+<TR>
+<TD WIDTH=70% ALIGN=J>- IMPORTO TOTALE DEL CREDITO</TD>
+<TD WIDTH=30% ALIGN=J>&euro <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPNETRIC</valueabs></B></TD>
+</TR>
+<TR>
+<TD WIDTH=70% ALIGN=J>- COMMISSIONE ESTINZIONE ANTICIPATA al massimo pari all' <B>1,00 %</B>  del capitale residuo</TD>
+<TD WIDTH=30% ALIGN=J></TD>
+</TR>
+<TR>
+<TD WIDTH=70% ALIGN=J>- INTERESSI DI MORA: pari al TAN + 1 %, alternativi agli interessi corrispettivi indicati in contratto</TD>
+<TD WIDTH=30% ALIGN=J></TD>
+</TR>
+</TABLE>
+<TABLE SIZE=7.5 ALIGN=J><TR><TD>
+	  - EROGAZIONE DEL PRESTITO: L'erogazione del prestito avverrà secondo le previsioni dell'art.2 delle Condizioni Generali del contratto di prestito<BR>
+		- TAEG/ISC <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTAEG</valueabs></B> %, calcolato includendo tutte le spese indicate sopra, come da Istruzioni di Banca d'Italia e come previsto dal decreto legislativo 141/2010.<BR> 
+		- TEG <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTEG</valueabs></B> %, calcolato includendo tutte le spese indicate sopra, come da Istruzioni di Banca d'Italia.<BR>
+ 			Il TAEG e il TEG sono stati calcolati ipotizzando l'anno composto da dodici mesi uguali, sulla base del calendario civile, ai sensi del decreto 
+ 			del Ministero del Tesoro 6/5/2000, a decorrere dal primo giorno del mese successivo alla conclusione del presente contratto. Il tasso di interesse, comprensivo di ogni spesa, non potrà mai superare il limite previsto dalla normativa in materia di usura, nel momento in cui tale interesse è stato convenuto (data di sottoscrizione del contratto), dovendo intendersi che anche in caso di eventuale superamento del suddetto limite, la misura di tali interessi sarà comunque pari al limite medesimo.<BR>
+<BR>
+(1)<I> Costo ripetibile in caso di estinzione anticipata</I><BR>
+(2)<I> Costo ripetibile in caso di estinzione anticipata, in misura proporzionale alla vita residua del contratto e secondo la curva degli interessi del piano di ammortamento del contratto di finanziamento</I><BR>
+(3)<I> Costo non ripetibile in caso di estinzione anticipata</I><BR>
+</TD></TR>
+</TABLE>
+</TD></TR>
+
+<TR>
+<TD ALIGN=J>
+<B>Dichiarazione per ricezione comunicazioni periodiche e lettera di conferma del contratto</B><BR>
+Il sottoscritto <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></B> dichiara di voler ricevere le comunicazioni periodiche 
+che SIGLA invierà almeno una volta all'anno, e comunque alla scadenza del contratto, contenenti le informazioni 
+chiare e complete sullo svolgimento del rapporto e un quadro aggiornato delle condizioni applicate, nonché la 
+lettera di conferma contratto, al seguente indirizzo:<BR> 
+<IMG SRC="<valueabs>Immagini/BOX/Path</valueabs><valueabs>Immagini/BOX/Nome</valueabs>" SCALE=<valueabs>Immagini/BOX/Scale</valueabs>>  <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs>)</B> c.a.p. <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs></B><BR>
+<IMG SRC="<valueabs>Immagini/BOX/Path</valueabs><valueabs>Immagini/BOX/Nome</valueabs>" SCALE=<valueabs>Immagini/BOX/Scale</valueabs>> eventuale indirizzo e-mail su cui ricevere le comunicazioni
+periodiche per cui non sarà previsto l'addebito di alcun costo salvo l'imposta di bollo:<BR>___________________________________________________________________________________________________ 
+</TD>
+</TR>
+</TABLE>
+<BR>
+<TEXT SIZE=7.5 ALIGN=L>
+Il DELEGANTE presa visione delle condizioni generali di finanziamento di seguito riportate che accetta integralmente senza riserva alcuna, chiede a Sigla un prestito rimborsabile mediante delegazione di pagamento di quote della retribuzione mensile, per un importo e alle condizioni indicate in questo contratto.
+<BR><BR>
+Il DELEGANTE <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></B> <if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FEA</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FSE</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FSP</ifcond><then><INPUT TYPE=SIGNATURE NAME=C-CONTRATTO#DOCQSDS2##-1 WIDTH=5 HEIGHT=3></then></if>
+</TEXT>
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\CONTRATTO#DOCQSDS2##01_05_09.png" BACKGROUND X=4 Y=-0.8 SCALE=25>
+<PAGE>
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT"><if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs><72</ifcond><then>Pag. 6 di 12</then><else>Pag. 6 di 13</else></if></TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+<BR>
+<BR>
+<TEXT SIZE=7.4 ALIGN=J>
+Il DELEGANTE afferma che tutto quanto sopra dichiarato corrisponde a verità e dichiara di non aver mai subito procedure concorsuali, esecutive o azioni legali in genere, di non versare in difficoltà economica e finanziaria. Dichiara, inoltre, di non essere titolare di alcuna attività che potrebbe determinare una sua personale dichiarazione di fallimento. Il DELEGANTE dichiara altresì:<BR>
+<LI> Che gli è stata consegnata copia del documento sui tassi soglia previsti dalla legge n. 108/1996 in tema di usura nonché di essere stati informati della possibilità di rivolgersi all'ABF (procedura reclami), anche tramite la <I>Guida sull'Arbitro Bancario e Finanziario</I>, messa a disposizione, unitamente alla <I>Guida pratica al credito: il credito ai consumatori in parole semplici e la Guida la Centrale dei rischi in parole semplici.</I><BR>
+<LI> Di essere stati informati della possibilità di ottenere copia del testo del contratto idonea per la stipula, che include il modulo informazioni europee di base sul credito ai consumatori (SECCI), prima della conclusione del contratto, come da loro stessi sottoscritto nella richiesta di verifica di idoneità al finanziamento.<BR>
+<LI> Di essere stato previamente informato per iscritto, mediante presa visione dell'informativa contenuta nel modulo richiesta-consenso sottoscritto, circa gli elementi indicati dall’art.13 del D.Lgs.196/03, dagli artt. 7, 13 e 14 Reg. UE 2016/679 e dall'art. 5 del codice deontologico sui sistemi di informazioni creditizie, ed espressamente consente che i dati forniti per lo svolgimento dell'istruttoria preliminare e, in caso di accoglimento della domanda di finanziamento, i dati relativi allo svolgimento del rapporto contrattuale, siano trattati e comunicati a terzi nei termini di cui alla predetta informativa.<BR><BR>
+	<BR>
+	<BR>
+	IL DELEGANTE <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></B> <if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FEA</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FSE</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FSP</ifcond><then><INPUT TYPE=SIGNATURE NAME=C-CONTRATTO#DOCQSDS2##-2 WIDTH=5 HEIGHT=3></then></if><BR><BR>
+<LI> Di aver ricevuto e trattenuto una copia del contratto compilato in ogni sua parte, completo del modulo informazioni europee di base sul credito ai consumatori (SECCI), di aver preso visione delle condizioni generali di finanziamento che accetta integralmente senza riserva alcuna e di aver ricevuto l'estratto delle condizioni di polizza.<BR><BR>
+	<BR>
+	<BR>
+	IL DELEGANTE <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></B> <if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FEA</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FSE</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FSP</ifcond><then><INPUT TYPE=SIGNATURE NAME=C-CONTRATTO#DOCQSDS2##-3 WIDTH=5 HEIGHT=3></then></if><BR><BR>
+	<BR>
+<if>(<ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CODANAMED</valueabs><in>(696,3770136,3769837,3770556)</ifcond>
+<or>  <ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_MED_OFFICE</valueabs>==ZZ</ifcond>
+<or>  <ifcond><valueabs>IDGFFONT0F/RECORD/IDGFONT_CDFONTE</valueabs>==Z_DIREZ</ifcond>)<then></then><else>
+<I>SIGLA SRL informa il DELEGANTE che il finanziamento richiesto può essere ottenuto anche direttamente presso gli uffici della SIGLA SRL, siti in via Cesare Battisti, 5/a, tel. 0438/45990 o tramite il sito Internet www.siglacredit.it e che, pertanto, l'attività dell'intermediario del credito non è necessaria per l'ottenimento del credito. Resta, inoltre, inteso, che il compenso dovuto all'intermediario del credito per l'attività svolta per l'ottenimento del presente finanziamento (voce compresa nel taeg) è quello indicato nel SECCI e nel contratto di finanziamento alla voce “commissioni di distribuzione”, pertanto nessun altro compenso è dovuto a nessun titolo dal DELEGANTE all'intermediario del credito con riferimento al presente contratto di finanziamento.<BR>
+</I>	
+</TEXT>
+<TEXT SIZE=7.4 ALIGN=J>
+<BR><BR>
+IL DELEGANTE <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></B> <if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FEA</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FSE</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FSP</ifcond><then><INPUT TYPE=SIGNATURE NAME=C-CONTRATTO#DOCQSDS2##-4 WIDTH=5 HEIGHT=3></then></if>
+</else></if>
+<BR><BR>
+PARTE RISERVATA ALL'ACCERTATORE. Il sottoscritto, incaricato dell'identificazione (art.30, comma 8 del Dlgs 231/2007), dichiara, sotto la propria personale responsabilità,di aver provveduto ad adeguata verifica dell'identità del DELEGANTE, le cui generalità sono state desunte dai documenti d'identità esibiti in originale e sono state esattamente riportate nella presente richiesta unitamente ai riferimenti del documento esibito; dichiara inoltre che il DELEGANTE afferma, e tale appare sulla base degli elementi disponibili, di essere l'effettivo titolare del finanziamento oggetto della presente richiesta, il cui scopo è stato indicato nella premessa unitamente alle altre informazioni fornite (art. 21 del Dlgs 231/2007). Il sottoscritto dichiara inoltre che la sottoscrizione del contratto e degli allegati è avvenuta in sua presenza e che tutta la documentazione fornita ai fini dell'ottenimento del presente finanziamento è stata visionata dall'originale presentato dal DELEGANTE.<BR>
+</TEXT>
+<BR>
+<BR>
+<TABLE SIZE=7.4 WIDTH=100%>
+<TR>
+	<TD WIDTH=50%><BR>Cognome e nome accertatore <INPUT TYPE=TEXT NAME=A-CONTRATTO#DOCQSDS2##-01 SIZE=8 WIDTH=8 HEIGHT=1.5><BR>
+	<BR>	
+	(che opera per conto della società sotto indicata)<BR><BR></TD> 
+	<TD WIDTH=50%><BR> <B>Firma leggibile (accertatore)</B> ___________________________________________<BR>
+	 <BR>
+	 <TABLE>
+	 	<TR>
+	 	<TD WIDTH=28% VALIGN=B ALIGN=R SIZE=7.4><if><ifcond><valueabs>IDGFFONT0F/RECORD/IDGFONT_CDFONTE</valueabs><in>(_CRECO,_CRECO_RIN,CRECO_07,CRECO_15,CRECO_25,CRECO_30,CRECO_31,CRECO_32,CRECO_33,CRECO_34,CRECO_35,CRECO_36,CRECO_37,CRECO_38,CRECO_39,CRECO_40,CRECO_41,CRECO_42,CRECO_43,CRECO_44,CRECO_45,CRECO_46,CRECO_47,CRECO_48,CRECO_49,CRECO_50,CRECO_51,CRECO_52,CRECO_53,CRECO_54,CRECO_55,CRECO_56,CRECO_57,CRECO_58,CRECO_59,CRECO_60,CRECO_61,CRECO_62,CRECO_63,CRECO_64,CRECO_65,CRECO_66,CRECO_67,CRECO_68,CRECO_69,CRECO_70,CRECO_71,CRECO_72,CRECO_73,CRECO_74,CRECO_75,CRECO_76,CRECO_77,CRECO_78,CRECO_79,CRECO_80)</ifcond>
+<then>Timbro accertatore</then><else>Timbro intermediario del credito</else></if> </TD>
+	 	<TD WIDTH=5%></TD>
+	 	<TD WIDTH=70% BORDER=0.8><BR><BR><BR><BR><BR></TD>	
+	 	<TD WIDTH=2%></TD>	
+	 </TR>
+	 </TABLE></TD>
+</TR>
+
+</TABLE>
+
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\CONTRATTO#DOCQSDS2##01_06_09.png" BACKGROUND X=4 Y=-0.8 SCALE=25>
+<PAGE>
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT"><if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs><72</ifcond><then>Pag. 7 di 12</then><else>Pag. 7 di 13</else></if></TD>
+</TR> 
+</TABLE>
+</SUBFOOTER>
+<TEXT SIZE=7.4 ALIGN=J LINESPACE=1>
+<B>Condizioni generali del contratto di prestito contro delegazione di pagamento</B><BR>
+<B>1. Informazioni Europee di base sul credito ai consumatori (SECCI).</B> Il documento SECCI costituisce parte integrante e sostanziale del presente contratto.<BR>
+<B>2. Validità e Conclusione del contratto.</B> Il DELEGANTE richiede il prestito compilando il modulo di richiesta predisposto da Sigla. Il contratto si intende concluso con
+l'accettazione scritta della Richiesta da parte di Sigla, comunque resa nota con l'accredito dell'importo richiesto. Il DELEGANTE ha la facoltà di revocare la Richiesta di
+finanziamento in qualsiasi momento e sino all'eventuale accettazione da parte di Sigla. Detta facoltà può essere esercitata dal DELEGANTE liberamente e senza spese, penalità ed
+altri oneri, mediante richiesta scritta da inviare a SIGLA SRL VIA C.BATTISTI 5/A 31015 CONEGLIANO (TV). La concessione del finanziamento avviene ad insindacabile giudizio di Sigla 
+dopo aver effettuato le proprie discrezionali valutazioni, anche in relazione al merito creditizio del DELEGANTE e dopo aver adempiuto agli obblighi di adeguata
+verifica previsti dalla normativa in materia. Dopo la conclusione del contratto, Sigla notificherà il fascicolo contrattuale al datore di lavoro/ente previdenziale (di seguito ATC) dal
+quale il DELEGANTE dipende.<BR>
+<B>3. Prestazioni del DELEGANTE.</B> Il DELEGANTE: a) conferisce al proprio datore di lavoro mandato irrevocabile ai sensi e per gli effetti degli artt.1269 e 1723 2° comma c.c.a prelevare mensilmente dalla propria retribuzione l'importo convenuto, alla scadenza e con le modalità indicate nel frontespizio nel riquadro condizioni economiche del prestito; b) rimborsa a SIGLA, mediante la delegazione di pagamento di cui al punto che precede,
+l'intero importo convenuto alla scadenza e con le modalità indicate nel frontespizio alla voce condizioni economiche del prestito contro delegazione di pagamento; c) si obbliga a comunicare a Sigla l'esistenza di eventuali vincoli
+sulla retribuzione e di anticipazioni sul trattamento di fine rapporto o su indennità equipollenti; d) si obbliga a comunicare a Sigla qualsiasi variazione dei dati forniti.<BR>
+<B>4. Trattenute.</B> SIGLA, in sede di liquidazione del prestito verserà al DELEGANTE l’importo totale del credito, 
+pari ad <B> &euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPNETRIC</valueabs></B>  (al lordo di eventuali anticipazioni ed estinzioni). Tale somma è stata determinata trattenendo dall'importo 
+capitale lordo mutuato di <B> &euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPMUTLRD</valueabs></B>  le somme corrispondenti alle seguenti voci:<BR>
+(i) Interessi scalari pari a <B> &euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPINTER</valueabs></B>  calcolati al tasso nominale annuo (TAN) del <B> <valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTAN</valueabs> % </B> . <BR>
+(ii) COMMISSIONI IN FAVORE DI SIGLA: pari a <B> &euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMCOMSGCMIT2</valueabs></B> costi ripetibili (in misura proporzionale alla vita residua del contratto e secondo la curva degli interessi del piano di ammortamento del contratto di finanziamento) in caso di estinzione anticipata, utilizzati per altrettante competenze dovute a SIGLA, a copertura degli oneri e dei costi che non siano altrimenti disciplinati in contratto e gravanti sull'Intermediario mutuante per l'attività d'intermediazione del prestito, quali il costo del servizio, la gestione delle rate di rimborso in scadenza, le attività post vendita, l'invio di ulteriore copia di documenti, l'elaborazione dati per la gestione degli archivi, l'assistenza scritta e altri costi ripetibili.
+In caso di sinistro per decesso i costi ripetibili delle commissioni a favore dell'intermediario finanziario non potranno essere tali e diventeranno pertanto costi non ripetibili, al fine di coprire le spese sostenute da Sigla connesse alla lavorazione del sinistro.
+<BR>
+(iii) COMMISSIONI DI DISTRIBUZIONE: pari a <B> &euro <if><ifcond><valueabs>IDGFFONT0F/RECORD/IDGFONT_CDFONTE</valueabs><in>(_CRECO,_CRECO_RIN,_CREDIPER,CRECO_07,CRECO_15,CRECO_25,CRECO_30,CRECO_31,CRECO_32,CRECO_33,CRECO_34,CRECO_35,CRECO_36,CRECO_37,CRECO_38,CRECO_39,CRECO_40,CRECO_41,CRECO_42,CRECO_43,CRECO_44,CRECO_45,CRECO_46,CRECO_47,CRECO_48,CRECO_49,CRECO_50,CRECO_51,CRECO_52,CRECO_53,CRECO_54,CRECO_55,CRECO_56,CRECO_57,CRECO_58,CRECO_59,CRECO_60,CRECO_61,CRECO_62,CRECO_63,CRECO_64,CRECO_65,CRECO_66,CRECO_67,CRECO_68,CRECO_69,CRECO_70,CRECO_71,CRECO_72,CRECO_73,CRECO_74,CRECO_75,CRECO_76,CRECO_77,CRECO_78,CRECO_79,CRECO_80)</ifcond>
+<then><if><ifcond><valueabs>IDGFFONT0F/RECORD/IDGFONT_CDFONTE</valueabs>==_CREDIPER</ifcond>
+	  <then><valueabs>IDGFCQS00F/RECORD/IDGFCQS_PV_IMCOMMBA</valueabs></then>
+	  <else><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMCOMMBA</valueabs></else></if>
+</then>
+<else>
+<valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPROV1</valueabs>
+</else>
+</if> </B> costi ripetibili (in misura proporzionale alla vita residua del contratto e secondo la curva degli interessi del piano di ammortamento del contratto di finanziamento) in caso di estinzione anticipata, utilizzati dall'intermediario del credito per: acquisizione e controllo documentazione precontrattuale, predisposizione preventivo, inserimento delle informazioni e delle anagrafiche nel sistema informativo, stampa del contratto inviato da Sigla e raccolta delle firme da parte del cliente (nel solo caso di Agenti in Attività Finanziaria e Intermediari Finanziari), notifica, richiesta a finanziarie terze di eventuali conteggi estintivi, ritiro del benestare presso ATC, invio della documentazione preliminare e definitiva Sigla (nel caso di Mediatori Creditizi, tali attività potranno essere svolte solo previa richiesta specifica da parte del cliente).
+<BR>
+(iv) ONERI ERARIALI / IMPOSTA DI BOLLO: pari a <B>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMRIVALSA</valueabs></B> costo non ripetibile in caso di estinzione anticipata.<BR>
+<B>5. Autorizzazioni del DELEGANTE.</B> IL DELEGANTE autorizza: a) SIGLA a notificare al proprio Datore di lavoro il presente contratto di prestito contro delegazione di pagamento secondo quanto previsto dalla normativa vigente in materia (artt. 1269 e successivi e 1723 Codice civile); b) il Datore di Lavoro a prelevare dalla propria retribuzione la somma dovuta a 
+SIGLA ad iniziare dal mese successivo alla notifica del presente atto e così di seguito, ininterrottamente, fino alla totale estinzione del debito, 
+ed a versarla a SIGLA nei seguenti c/c: <BR><B>Bonifico bancario su Intesa Sanpaolo S.p.A., 
+IBAN: IT29A0306912711100000012670 intestato a Sigla S.r.l.<BR>
+Bonifico Postale su Poste Italiane SPA, IBAN: IT53G0760112000000073807760 intestato a Sigla S.r.l.<BR></B>
+<B>6. Riduzione della retribuzione e modifiche al piano di ammortamento.</B> Nei casi di eventuale riduzione, per qualsiasi causa, della retribuzione mensile del DELEGANTE – ferme restando le pattuizioni afferenti la copertura assicurativa – la presente delegazione di pagamento avrà effetto per quote non superiori al 50% della retribuzione ridotta e per tutto il tempo necessario all'estinzione del residuo debito del DELEGANTE. Resta sin d'ora inteso che il DELEGANTE rimarrà personalmente responsabile nei confronti di Sigla per la restituzione della differenza tra l'importo della quota originariamente previsto e quello risultante dall'eventuale riduzione di cui al precedente paragrafo, secondo le modalità e le forme che verranno comunicate da Sigla al DELEGANTE. Il DELEGANTE acconsente sin da ora ad un prolungamento della durata del piano di ammortamento inizialmente pattuito laddove, a causa di una riduzione dell'importo delle rate versate mensilmente dal debitore ceduto, Sigla fosse costretta a recuperare l' importo non versato al termine dell'ammortamento stesso.<BR>
+<B>7. Cessazione del rapporto di lavoro. Vincolo TFR.</B> In caso di cessazione, per qualsiasi causa,del rapporto di lavoro, la cessione si estenderà sul trattamento 
+di fine rapporto, sull'eventuale liquidazione della prestazione di cui agli artt. 7 e 10 D. Lgs 124/93, sull'eventuale trattamento pensionistico e sulle 
+somme dovute al DELEGANTE a qualunque titolo e sotto qualsiasi denominazione; a tal fine il DELEGANTE consente che l'Amministrazione ceduta trattenga da 
+tali somme l'importo necessario per l'estinzione della cessione e che parimenti la trattenuta venga effettuata da qualsiasi Ente di previdenza o di 
+assicurazione ai quali il DELEGANTE medesimo sia iscritto per legge, per regolamento o per contratto di lavoro. Qualora dette somme non fossero sufficienti 
+a coprire il residuo debito od il DELEGANTE non avesse diritto ad alcuna indennità o pensione, il DELEGANTE è tenuto a versare immediatamente a SIGLA in un'unica 
+soluzione il residuo debito con le modalità ed alle condizioni previste dall'art.13.Il DELEGANTE si impegna a non richiedere la liquidazione o anticipazioni 
+su dette somme durante la vigenza del presente Contratto, riconoscendo che tali somme, ivi comprese quelle di futura maturazione, costituiscono oggetto di garanzia a favore di Sigla per l'integrale rimborso del finanziamento erogato. In caso di esercizio del diritto di cui 
+al comma 6 dell'art. 2120 cod. civ., se ed in quanto a lui applicabile, il delegante e l'ente ceduto dovranno avere da parte di Sigla s.r.l. la preventiva indicazione del debito residuo sussistente in capo al DELEGANTE alla data della richiesta con assenso alla corresponsione della anticipazione, fermo restando il diritto di Sigla s.r.l. a ricevere dall'ente ceduto la 
+quota pari all'intero debito residuo sussistente in capo al DELEGANTE alla data della richiesta. Il DELEGANTE conferisce ora per allora mandato irrevocabile a Sigla per richiedere la liquidazione delle somme dovute, esercitando ove d'uopo il diritto di riscatto, 
+verso ogni ente, compresi i fondi pensione integrativi, nei cui confronti il DELEGANTE risultasse creditore, autorizzando le relative comunicazioni al Datore di lavoro 
+e agli Enti interessati. Gli eventuali oneri imposti dall'Amministrazione e dagli Enti di Previdenza per l'effettuazione delle trattenute saranno a carico del DELEGANTE. <BR>
+<B>8. Garanzia assicurativa.</B> Il DELEGANTE prende atto che Sigla ha stipulato con la Compagnia Assicurativa di proprio gradimento e provvedendo al pagamento del relativo premio:<BR>
+a) Una polizza vita a garanzia del rischio di premorienza del DELEGANTE. In caso di decesso del DELEGANTE, le rate scadute e non pagate precedenti alla data dell'evento di sinistro, non sono oggetto di copertura assicurativa e pertanto per tali rate SIGLA potrà rivalersi nei confronti degli eredi del DELEGANTE per il soddisfacimento del proprio diritto di credito;<BR>
+b) Una polizza credito, a garanzia del mancato adempimento dell' obbligazione di rimborso del finanziamento a seguito di interruzione definitiva del rapporto di lavoro. Per le somme corrisposte a Sigla dalla Compagnia di assicurazioni, questa resta surrogata in ogni diritto, ragione, privilegio ed azione di Sigla verso il DELEGANTE ed il relativo: Datore di lavoro o altro ente, quali depositari del trattamento di fine rapporto (art 2120 del c.c.) o indennità equipollente; Fondo Pensione; Istituto di previdenza obbligatoria. La Compagnia di Assicurazione, quindi, avrà il diritto di agire nei confronti del DELEGANTE per recuperare le somme pagate a Sigla a titolo di indennizzo.<BR>
+
+</TEXT>
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\CONTRATTO#DOCQSDS2##01_07_09.png" BACKGROUND X=4 Y=-0.8 SCALE=25>
+<PAGE>
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT"><if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs><72</ifcond><then>Pag. 8 di 12</then><else>Pag. 8 di 13</else></if></TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+<TEXT SIZE=7.4 ALIGN=J LINESPACE=1>
+<B>9. Richiamo alle armi.</B> In caso di richiamo alle armi del DELEGANTE, la cessione estenderà i suoi effetti anche sulle indennità che venissero in tal caso liquidate 
+al DELEGANTE medesimo, rimanendo fin da ora autorizzato il Datore di lavoro da cui dipende, o eventualmente altri Enti, non escluso l'INPS, a prelevare mensilmente da 
+dette indennità la quota prevista dal presente contratto, per versarlo a SIGLA.<BR>
+<B>10. Trasferimento ad altro impiego</B> Nel caso in cui il DELEGANTE venga a trovarsi alle dipendenze di altro Datore di lavoro autorizza sin da ora SIGLA a notificare 
+il presente contratto al nuovo Datore di lavoro perché questo possa operare sulla retribuzione che a qualsiasi titolo gli corrisponderà, la ritenuta della quota mensile 
+prevista dalla presente cessione, nonché su quanto previsto all'art.7 del presente contratto, escluso ogni effetto novativo. Agli effetti di cui sopra il DELEGANTE 
+si obbliga a denunciare immediatamente il suo trasferimento a SIGLA nonché al Datore di lavoro da cui si allontana, affinché quest'ultimo possa inviare al nuovo 
+Datore di lavoro del DELEGANTE (anche se non compreso tra quelli indicati nell'art. 1 del DPR 180/50) il conto della precedente cessione assumendo, in difetto, 
+ogni responsabilità a norma di legge. Tutte le spese, gli oneri e le perdite di valuta a cui SIGLA potrà eventualmente andare incontro per la notifica e per il fatto 
+stesso del trasferimento saranno a carico del DELEGANTE.<BR>
+<B>11. Pagamenti</B> Tutti i pagamenti devono essere eseguiti a favore di SIGLA così come indicato all'art.5 di cui sopra. Eventuali somme dovute a favore dell'intermediario del credito, cui il DELEGANTE ha discrezionalmente ritenuto di rivolgersi sono a suo esclusivo carico ed il relativo pagamento non potrà avere alcun effetto nei confronti di SIGLA.<BR>
+<B>12. Clausola di ripensamento.</B> Il DELEGANTE ha la facoltà di recedere dal presente contratto entro 14 giorni dalla data di conclusione del presente contratto. L'esercizio 
+della facoltà di recesso dovrà essere comunicato per iscritto a mezzo lettera raccomandata con avviso di ricevimento, consegnata alle PP.TT entro il termine sopra 
+indicato e indirizzata a: <B><valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs></B> <valueabs>IDGFAZI00F/RECORD/IDGFAZI_INDIR_SIG</valueabs><valueabs>IDGFAZI00F/RECORD/IDGFAZI_SIGLASRL</valueabs>. 
+L'esercizio della facoltà di recesso comporterà l'obbligo di restituzione a SIGLA da parte del DELEGANTE di quanto eventualmente ricevuto a titolo di finanziamento ed il recesso non avrà efficacia se non sarà restituita la somma corrispondente al netto ricavo dell'operazione di cui all'art. 4. Nel caso il contratto abbia avuto esecuzione, entro 30 giorni dall'invio della comunicazione sopra indicata, il cliente restituirà l'importo liquidato maggiorato degli interessi maturati fino al momento della restituzione, calcolati al tan indicato nel contratto, nonché le somme non ripetibili quali il bollo sul contratto.<BR>
+<B>13. Estinzione anticipata.</B> Anche in deroga a quanto previsto dall'art.38 del DPR 180/50, il DELEGANTE ha facoltà in ogni momento di estinguere anticipatamente il proprio debito, sempre nel pieno rispetto di quanto previsto dall'art 39 del DPR 180/50. Non verranno invece accettate, sempre in conformità all'art. 39 del DPR 180/50, estinzioni anticipate ante-termine del finanziamento proposte da altri operatori finanziari né verranno effettuate direttamente da SIGLA. La richiesta di estinzione anticipata, sottoscritta dal cliente e accompagnata da copia di un documento di riconoscimento valido e leggibile, potrà essere trasmessa a Sigla Srl - Ufficio Conformità Clienti - Via Cesare Battisti 5/a - 31015 Conegliano (TV), a mezzo posta ordinaria, raccomandata A/r, al numero di fax 0438/45926, all'indirizzo email: richiestaconteggio@siglafinanziamenti.it o alla PEC: siglacredit.assistenzaclienti@pec.it. SIGLA ricevuta la richiesta comunica al DELEGANTE l'ammontare del capitale residuo, degli interessi (calcolati al medesimo tasso annuo nominale – TAN – applicato) e degli altri oneri non maturati per la vita residua del contratto, coincidente con il periodo compreso tra la data di anticipata estinzione del rapporto e quella di scadenza dell’ultima rata prevista nel piano di ammortamento del contratto di finanziamento, come indicato di seguito:<BR>
+- <B>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMCOMSRIP</valueabs></B> pro quota, secondo la curva degli interessi del piano di ammortamento del contratto di finanziamento, delle commissioni in favore di Sigla come indicato al punto (ii) dell'art. 4 precedente (costi ripetibili).<BR>
+- <B>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMCOMMDIS</valueabs></B> pro quota, secondo la curva degli interessi del piano di ammortamento del contratto di finanziamento, delle commissioni di distribuzione come indicato al punto (iii) dell'art. 4 precedente (costi ripetibili).<BR>
+- una commissione nella misura massima dell'1% del capitale residuo, il tutto con riferimento alla data della prima rata successiva in scadenza. La commissione NON è dovuto in caso di estinzione totale del credito ed il capitale rimborsato in anticipo sia pari o inferiore ad Euro 10.000,00; tale commissione è pari a:<BR>
+- all'1% dell'importo totale del credito rimborsato in anticipo e da versare alla data della richiesta, se la vita residua del contratto è superiore ad 1 anno;<BR>
+- allo 0,5% dell'importo totale del credito rimborsato in anticipo e da versare alla data della richiesta, se la vita residua del contratto è pari o inferiore ad 1 anno.<BR>
+In ogni caso il compenso per estinzione anticipata non può superare l'importo degli interessi che il cliente avrebbe pagato per la vita residua del contratto. Entro quest'ultima data il DELEGANTE provvederà
+quindi al pagamento in un'unica soluzione delle somme dovute, determinando così l'estinzione del debito. Qualora il DELEGANTE non versi tempestivamente dette somme, l'estinzione non avrà luogo e potrà essere effettuata solo con riferimento alla data della successiva scadenza, salvo il pagamento degli interessi di mora per ritardato pagamento.<BR>
+In caso di anticipata estinzione del prestito gli importi indicati all'art. 4 come costi ripetibili (commissioni in favore di Sigla) verranno rimborsati per la parte non ancora usufruita, mentre gli altri costi indicati all'art.4 (in quanto non ripetibili) e le spese indicate all'art 16, non saranno rimborsati.
+In caso di sinistro per decesso i costi ripetibili delle commissioni a favore dell'intermediario finanziario non potranno essere tali e diventeranno pertanto costi non ripetibili, al fine di coprire le spese sostenute da Sigla connesse alla lavorazione del sinistro.
+<BR>
+Dopo il ricevimento del pagamento, SIGLA provvederà a comunicare al Datore di lavoro che il DELEGANTE ha estinto anticipatamente il proprio debito.<BR>
+In caso di estinzione parziale del finanziamento, l'importo delle rate, con riferimento alla quota non estinta, verrà mantenuto invariato, con imputazione dei successivi versamenti alle rate di più imminente scadenza e con conseguente riduzione della durata del piano di ammortamento originario.<BR>
+<B>14. Ritardo nei pagamenti.</B> in caso di ritardo nel versamento anche di una singola rata, a qualsiasi causa sia attribuibile, gli interessi di mora decorreranno di pieno diritto senza necessità di comunicazione dalla scadenza della rata non pagata fino all'effettivo pagamento. L'interesse di mora sarà applicato sulla somma capitale e calcolato in misura pari al TAN + 1 % annuo; detto importo non entra nel calcolo del TAEG e su tali interessi non si applica la capitalizzazione periodica. Il ritardato pagamento comporta, inoltre, l'obbligo di rimborsare le spese sostenute per eventuali solleciti effettuati a mezzo posta o telefono anche da soggetti terzi specificatamente incaricati, da € 5,00 fino ad un massimo di € 60,00 per rata, ed il costo di eventuali interventi domiciliari svolti anche da soggetti terzi specificatamente incaricati, da € 10,00 fino ad un massimo di € 80,00 a rata, nonché per eventuali spese legali sostenute in base alle parcelle liquidate. Gli interessi di mora previsti dal presente articolo si applicano ad ogni somma dovuta ai sensi del presente Contratto dal DELEGANTE e dai Debitori Ceduti al Finanziatore.<BR>
+<B>15. Decadenza dal beneficio del termine e risoluzione del contratto.</B> . La cessazione del rapporto di lavoro, l'eventuale cessazione, sospensione o riduzione per qualsiasi causa, dell'emolumento mensile, il mancato pagamento di almeno due rate, ovvero la mancata osservanza degli altri obblighi contrattuali previsti all'art.3, e 5, o l'infedele dichiarazione circa i dati e le informazioni forniti da parte del DELEGANTE, nonché il verificarsi delle ipotesi di cui all'art.1186 cod. civ., comporta la facoltà per SIGLA di dichiarare senz'altro la decadenza dal beneficio del termine o la risoluzione del contratto. In tal caso il DELEGANTE dovrà rimborsare in un'unica soluzione, entro 15 giorni dal ricevimento della relativa comunicazione, il capitale residuo, scaduto ed a scadere, gli interessi e gli eventuali oneri relativi alle rate scadute. In caso di mancato pagamento della predetta somma, dalla data della ricezione della dichiarazione di decadenza dal beneficio del termine o di risoluzione del contratto, decorreranno gli interessi di mora sull'intera somma non pagata.<BR>
+<B>16. Oneri e spese.</B> Le spese e tasse di bollo e di registro del presente atto, richieste dagli Uffici Fiscali, sia all'atto della registrazione sia successivamente, anche in via supplementare, nonché gli oneri erariali, le
+spese postali, di notifica e quelle eventualmente richieste da parte del Datore di lavoro per ogni esigenza anche successiva all'instaurazione del rapporto, ivi comprese le comunicazione relative al trasferimento del
+DELEGANTE sono a carico del DELEGANTE stesso, il quale autorizza, ora per allora, il Datore di lavoro dal quale dipende attualmente o dipenderà in futuro e dal quale percepirà in quell'epoca i suoi emolumenti a
+trattenere dagli emolumenti dovuti la somma che, a tale titolo, gli venisse richiesta da SIGLA o da chi per essa; tale trattenuta potrà avvenire anche in eccedenza del quinto della retribuzione. Sono inoltre a carico del
+DELEGANTE le spese sostenute per il recupero del credito, anche in dipendenza delle eventuali azioni giudiziarie e non, che dovessero rendersi necessarie.<BR>
+<B>17. Variazioni delle condizioni contrattuali.</B> Sigla si riserva la facoltà di modificare, qualora sussista un giustificato motivo, le condizioni indicate nel presente contratto, ad eccezione dei tassi di interesse, anche in senso sfavorevole al DELEGANTE, secondo le modalità previste dall'art. 118 del D. Lgs. 1° settembre 1993, n. 385 e successive modifiche. Al tal fine, a titolo esemplificativo, costituiscono giustificato motivo, tra l'altro, eventuali intervenute modifiche della disciplina civilistica e fiscale relativa ai rapporti regolati dalle presenti condizioni. Qualunque modifica unilaterale delle predette condizioni contrattuali dovrà essere comunicata espressamente al DELEGANTE secondo modalità contenenti in modo evidenziato la formula: "Proposta di modifica unilaterale del contratto", con preavviso minimo di due mesi, in forma scritta o mediante altro supporto durevole preventivamente accettato dal DELEGANTE. La modifica si intende approvata ove il DELEGANTE non receda, senza spese, dal contratto entro la data prevista per la sua applicazione. In caso di recesso, il DELEGANTE provvederà al saldo integrale del debito maturato nei confronti della Sigla sino a quel momento, con applicazione delle condizioni precedentemente praticate. In caso di variazione della normativa richiamata nel presente articolo si applicheranno le disposizioni tempo per tempo vigenti.<BR>
+<B>18. Normativa applicabile e Organo di Vigilanza.</B> Per tutto ciò che non fosse disciplinato dal presente Contratto, si applicano le disposizioni del codice civile, il DPR 180/50 ed ogni relativa modifica e integrazione. Sigla srl è soggetta ai controlli esercitati dalla Banca d'Italia, con sede in Via Nazionale, 91 – 00184 Roma..<BR>
+<B>19. Elezione domicilio e comunicazioni periodiche.</B> Ai fini di ogni comunicazione relativa al presente contratto e per la notifica di eventuali atti giudiziali, le parti eleggono domicilio presso l'indirizzo indicato nel
+frontespizio. Sigla invia al DELEGANTE una volta all'anno e, comunque, alla conclusione del rapporto, una comunicazione relativa allo svolgimento del Contratto ed alle condizioni applicate. Il contenuto di tali
+comunicazioni si intende approvato qualora, decorsi 60 giorni dal loro ricevimento, non sia pervenuta a Sigla specifica contestazione scritta.<BR>
+<B>20. Cessione del credito derivante dal contratto.</B> Il DELEGANTE prende atto ed accetta che Sigla S.r.l. ceda ai sensi degli articoli 1264 e 1265 del CC in favore di BANCA o INTERMEDIARIO FINANZIARIO, il cui nome verrà comunicato successivamente al DELEGANTE, ogni credito derivante dal presente contratto di finanziamento e tutti i crediti e diritti accessori e garanzie derivanti dallo stesso. Inoltre, il DELEGANTE (i) ai soli fini della notifica della suddetta cessione, elegge domicilio presso l'indirizzo pec di Sigla srl siglacredit.cessionequinto@pec.it e prende atto che riceverà altresì conferma all'indirizzo indicato per le comunicazioni periodiche dell'avvenuta cessione del credito alla prima occasione utile (invio comunicazione periodica annuale), (ii) prende atto ed accetta che ai sensi degli articoli 1264 e 1265 del CC ogni credito, insieme ad ogni diritto accessorio e garanzie, derivante dal presente contratto verrà incassato da Sigla S.r.l. in qualità di mandataria della BANCA o INTERMEDIARIO FINANZIARIO a cui è stato ceduto il credito,
+
+
+</TEXT>
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\CONTRATTO#DOCQSDS2##01_08_09.png" BACKGROUND X=4 Y=-0.8 SCALE=25>
+<PAGE>
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT"><if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs><72</ifcond><then>Pag. 9 di 12</then><else>Pag. 9 di 13</else></if></TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+<TEXT SIZE=7.4 ALIGN=J LINESPACE=1>
+(iii) si obbliga a corrispondere tutte le somme dovute ai sensi del presente contratto a Sigla S.r.l. salvo diversa indicazione scritta della BANCA o INTERMEDIARIO FINANZIARIO a cui è stato ceduto il credito. Sigla S.r.l .rimane in ogni caso il soggetto responsabile delle comunicazioni in materia di trasparenza.<BR>
+<B>21. Fallimento del datore di lavoro.</B> In caso di fallimento, liquidazione coatta amministrativa o apertura di altre procedure concorsuali a carico del datore di lavoro, Sigla potrà richiedere l'ammissione al
+passivo dei crediti relativi alle somme cedute in via privilegiata per le stesse qualità spettanti al DELEGANTE, il quale rinuncia espressamente a favore di Sigla e fino a completa estinzione della cessione, alla
+facoltà di richiedere l'intervento del Fondo di Garanzia previsto dalla L. 297/82.<BR>
+<B>22. Reclamo cliente e risoluzione stragiudiziale delle controversie:</B> Ogni cliente può presentare reclamo a mezzo raccomandata con ricevuta di ritorno a <U><valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs> - Ufficio Reclami - 
+<valueabs>IDGFAZI00F/RECORD/IDGFAZI_INDIR_SIG</valueabs><valueabs>IDGFAZI00F/RECORD/IDGFAZI_SIGLASRL</valueabs>, </U> mediante raccomandata A/r, posta ordinaria, fax 0438/45926, email: reclami@siglafinanziamenti.it, PEC: siglacredit.assistenzaclienti@pec.it.
+Come indicato nella Guida ai diritti del Cliente, ogni cliente ha diritto, in caso di reclamo, a ricevere risposta dall'Intermediario entro 60 giorni. Se il cliente non è soddisfatto o non ha ricevuto risposta entro i 60 giorni, prima 
+di ricorrere al giudice può rivolgersi a: a) Arbitro Bancario Finanziario (ABF), nella sede più vicina al suo domicilio (Segreteria tecnica di: Milano Via Cordusio, 5-20123
+Milano - Tel. 02 72424246; Roma Via Venti Settembre, 97/e - 00187 Roma - Tel. 06 47929235; Napoli Via Miguel Cervantes, 71 - 80133 Napoli - Tel: 081 7975350; Torino via Arsenale, 8 - 10121 - Torino - Tel. 011 5518590; Bologna Piazza Cavour, 6 - 40124 Bologna - Tel. 051 6430120; Bari Corso Cavour, 4 - 70121 Bari - Tel. 080 5731510; Palermo Via Cavour, 131/A - 90133 Palermo - Tel. 091 6074310), oppure presso le Filiali della Banca d'Italia,come 
+ampiamente indicato nella Guida ai diritti del Cliente, che ha visionato e che è consultabile al sito <U>www.arbitrobancariofinanziario.it</U>. b) Conciliatore Bancario Finanziario. Se sorge una controversia con Sigla, il cliente può attivare 
+una procedura di conciliazione che consiste nel tentativo di raggiungere un accordo con Sigla, grazie all'assistenza di un conciliatore indipendente. Detto tentativo sarà esperito, ai sensi e per gli effetti di quanto previsto dall'articolo 40, 
+comma 6, del decreto legislativo 17 gennaio 2003 n.5, dall'Organismo di conciliazione bancarie, finanziarie e societarie – ADR, iscritto al n.3 del registro, tenuto dal Ministero della Giustizia, ex articolo 38 del dlg 17 gennaio 2003, n.5. 
+Resta impregiudicata la facoltà di ricorrere all'autorità giudiziaria nel caso in cui la conciliazione si dovesse concludere senza il raggiungimento di un accordo. Per questo servizio è possibile rivolgersi al Conciliatore Bancario Finanziario 
+(Organismo iscritto nel Registro tenuto dal Ministero della Giustizia), con sede a Roma, Via delle Botteghe Oscure 54, tel 06 674821, sito internet: <U>www.conciliatorebancario.it</U>.<BR>
+<B>23. Assistenza ai clienti. </B>Il cliente può rivolgersi all'ufficio conformità clienti di Sigla, a cui risponderà personale con un'adeguata e aggiornata conoscenza dei contratti di credito offerti, nonché dei diritti dei consumatori e delle regole previste dal T.U.B., al numero telefonico 0438-45990, oppure via fax al numero 0438-45926, oppure via email all'indirizzo: <U>informazionisac@siglafinanziamenti.it</U> oppure, potrà rivolgersi all'intermediario del credito, per ottenere gratuitamente spiegazioni aventi ad oggetto: - la documentazione precontrattuale fornitagli; - le caratteristiche essenziali del prodotto offerto; - gli effetti che possono derivargli dalla conclusione del contratto, in termini di obblighi economici e conseguenze del mancato pagamento. Resta inteso che il cliente ha diritto di
+ricevere in qualsiasi momento del rapporto, su sua richiesta e senza spese, una tabella di ammortamento. Inoltre, il cliente, come già comunicato in precedenza, potrà verificare preventivamente tramite <B>Monitorata</B> (disponibile presso l'intermediario del credito a cui si è rivolto oppure nel sito <U>www.siglacredit.it</U>) se le Sue entrate ed uscite mensili attuali siano compatibili con la rata che dovrà pagare. <B>Monitorata</B> è uno strumento di analisi sofisticato che, del tutto gratuitamente, viene messo a disposizione dei clienti per aiutarli a prendere decisioni importanti. <B>Monitorata</B> fornisce un quadro preciso della situazione del cliente e lo consiglia se procedere o meno con la sottoscrizione di un ulteriore finanziamento.<BR>
+<B>24. Portabilità. </B> Il DELEGANTE può esercitare la surrogazione trasferendo il rapporto esistente dal cessionario ad altro finanziatore. Tale facoltà può essere esercitata in ogni momento dal DELEGANTE senza spese, penalità od altri oneri, mediante richiesta scritta da inviare all'indirizzo del cessionario (art.1202 C.C.).<BR>
+<BR>Il sottoscritto dichiara di aver letto e di accettare integralmente le condizioni economiche riportate sopra e le condizioni generali del prestito.<BR>
+<BR>
+Il DELEGANTE <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></B> <if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FEA</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FSE</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FSP</ifcond><then><INPUT TYPE=SIGNATURE NAME=C-CONTRATTO#DOCQSDS2##-5 WIDTH=5 HEIGHT=3></then></if><BR>
+<BR>
+Il sottoscritto dichiara di approvare espressamente i disposti di cui ai seguenti punti delle Condizioni generali di finanziamento (artt.1341 e 1342 cod.civ., nonché artt.33 e ss. del D.L. n.206 del 6.09.05 – Codice del Consumo): 2 (Validità e Conclusione del contratto); 3. (Prestazioni del DELEGANTE); 4. (Trattenute - con particolare riferimento alla parte relativa ai costi ripetibili in caso di estinzione anticipata ); 5. (Autorizzazione del DELEGANTE); 6. (Riduzione della retribuzione e modifiche al piano di ammortamento); 7. (Cessazione del rapporto di lavoro); 8. (Garanzia Assicurativa); 13. (Estinzione anticipata); 14. (Ritardo nei pagamenti); 15. (Decadenza dal beneficio del termine e risoluzione del contratto); 17. (Variazioni delle condizioni economiche e normative); 20 (Cessione del credito derivante dal contratto)<BR>
+<BR>
+Il DELEGANTE <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></B> <if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FEA</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FSE</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FSP</ifcond><then><INPUT TYPE=SIGNATURE NAME=C-CONTRATTO#DOCQSDS2##-6 WIDTH=5 HEIGHT=3></then></if><BR>
+<BR>
+</TEXT>
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\CONTRATTO#DOCQSDS2##01_09_09.png" BACKGROUND X=4 Y=-0.8 SCALE=25>
+</BODY>
+</PDF>

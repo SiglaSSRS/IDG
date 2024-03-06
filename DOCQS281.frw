@@ -1,0 +1,46 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize10">
+<include file="\INCLUDE\Percorsi.frw">
+<BODY>
+	  <PDFPAGE SRC="DOCQS281.PDF" VALUE=1 SHOWONCE >    
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\LENDING.png" BACKGROUND X=17 Y=2 SCALE=10>	  
+<PAGE><PDFPAGE SRC="DOCQS281.PDF" VALUE=2 SHOWONCE >    
+
+<PAGE><PDFPAGE SRC="DOCQS281.PDF" VALUE=3 SHOWONCE >
+<TEXT X=4 Y=4.3><valueabs>IDGFCQP00F/RECORD/IDGFCQP_RAGSCLI</valueabs></TEXT>
+
+<TEXT X=3.1 Y=4.85><valueabs>IDGFCQP00F/RECORD/IDGFCQP_LOCNSCLI</valueabs></TEXT>
+<TEXT X=11 Y=4.85><valueabs>IDGFCQP00F/RECORD/IDGFCQP_PRVNSCLI</valueabs></TEXT>
+<TEXT X=12.4 Y=4.85><valueabs>IDGFCQP00F/RECORD/IDGFCQP_DTNSCLI</valueabs></TEXT>
+<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_SESSOCLI</valueabs>==M</ifcond><then><TEXT X=16.6 Y=4.85>X</TEXT></then></if>
+<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_SESSOCLI</valueabs>==F</ifcond><then><TEXT X=17.7 Y=4.85>X</TEXT></then></if>
+
+<TEXT X=3.5 Y=5.4><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs></TEXT>
+<TEXT X=13.3 Y=5.4><valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs></TEXT>
+<TEXT X=15.6 Y=5.4><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs>!=00000</ifcond><then><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs></then></if></TEXT>
+
+<TEXT X=3.5 Y=5.95><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs></TEXT>
+
+<TEXT X=3.9 Y=6.5><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs></TEXT>
+
+<PAGE><PDFPAGE SRC="DOCQS281.PDF" VALUE=4 SHOWONCE >
+
+<TEXT X=4 Y=4.1><valueabs>IDGFCQP00F/RECORD/IDGFCQP_RAGSCLI</valueabs></TEXT>
+
+<TEXT X=3 Y=4.50><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCA_NASC</valueabs></TEXT>
+<TEXT X=10.65 Y=4.50><valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_NASC</valueabs></TEXT>
+<TEXT X=12.5 Y=4.50><valueabs>IDGFCQP00F/RECORD/IDGFCQP_DTNSCLI</valueabs></TEXT>
+<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_SESSOCLI</valueabs>==M</ifcond><then><TEXT X=17.18 Y=4.45>X</TEXT></then></if>
+<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_SESSOCLI</valueabs>==F</ifcond><then><TEXT X=17.98 Y=4.45>X</TEXT></then></if>
+
+
+<TEXT X=3.8 Y=4.9><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs></TEXT>
+<TEXT X=13.15 Y=4.9><valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs></TEXT>
+<TEXT X=16 Y=4.9><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs>!=00000</ifcond><then><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs></then></if></TEXT>
+
+<TEXT X=3.7 Y=5.30><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs></TEXT>
+
+<TEXT X=3.8 Y=5.70><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs></TEXT>
+
+</BODY>
+</PDF>

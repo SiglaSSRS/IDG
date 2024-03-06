@@ -1,0 +1,147 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize9.5_Arial">
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3_1">
+</HEADER>
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestatacontenzioso">
+</FOOTER>	
+
+<BODY>
+<BR><BR><BR>
+<TEXT ALIGN=J LINESPACE=1.5>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=55%><B>Inviata a mezzo racc. A/R</B><br>
+<i>Anticipata tramite PEC/mail: <valueabs>IDGFDTAT0F/RECORD/IDGFDTAT_EMLATCCRE</valueabs><br>
+<INPUT TYPE=text size=50 VALUE="email1@" bordercolor=white NAME=b1><br>
+<INPUT TYPE=text size=50 VALUE="email2@" bordercolor=white NAME=b2><br>
+</TD>
+<TD WIDTH=5%></TD>
+<TD WIDTH=40%>Spett.le [<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>==DEL</ifcond><then>DEL<else>CQS</if>
+/<valueabs>IDGREQ00F/RECORD/IDGREQ_JOBNAM_INI</valueabs>/<valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>]<br>
+<B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_STATOGIUR</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_LAV</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_LAV</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_LAV</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_LAV</valueabs>)
+<B>
+<br>
+</TD>
+</TR>
+<TR></TR>
+<BR><BR><BR><BR><BR>
+<TR>
+<TD WIDTH=55%><B>Posta prioritaria</B><br><br></TD>
+<TD WIDTH=5%><B>p.c.</B></TD>
+<TD WIDTH=40%><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond>
+<then><B>Egr. Sig.<else>Gent.le Sig.ra</if></B> [<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>==DEL</ifcond><then>DEL<else>CQS</if>
+/<valueabs>IDGREQ00F/RECORD/IDGREQ_JOBNAM_INI</valueabs>/<valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>]<br>
+<B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs>)
+</B>
+<br>
+</TD>
+</TR><br>
+</TABLE>
+<BR><BR><BR>
+Conegliano, <valueabs>IDGFCQP00F/RECORD/IDGFCQP_DATSYS</valueabs>
+<BR><BR><BR>
+<B>Oggetto: VERIFICA DECORRENZA - Contratto di <if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>==DEL</ifcond>
+<then>delegazione di pagamento del quinto dello stipendio </then></if>
+<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_COD_CONV_IMP</valueabs>!=</ifcond>
+<then>mutuo contro cessione del quinto dello stipendio </then></if>sottoscritto il <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTR</valueabs> tra SIGLA S.R.L. e <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> (Rif. prt. <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs> CF:<valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs>). 
+Decorrenza <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT</valueabs> ( nr. <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs> quote di € <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPCAN</valueabs> cadauna ).</U></B>
+<BR><BR>
+Con riferimento a quanto in oggetto, siamo con la presente a significarvi che la decorrenza della pratica
+risulta essere <b>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_MM</valueabs>==1</ifcond><then>GENNAIO</then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_MM</valueabs>==2</ifcond><then>FEBBRAIO</then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_MM</valueabs>==3</ifcond><then>MARZO</then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_MM</valueabs>==4</ifcond><then>APRILE</then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_MM</valueabs>==5</ifcond><then>MAGGIO</then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_MM</valueabs>==6</ifcond><then>GIUGNO</then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_MM</valueabs>==7</ifcond><then>LUGLIO</then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_MM</valueabs>==8</ifcond><then>AGOSTO</then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_MM</valueabs>==9</ifcond><then>SETTEMBRE</then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_MM</valueabs>==10</ifcond><then>OTTOBRE</then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_MM</valueabs>==11</ifcond><then>NOVEMBRE</then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_MM</valueabs>==12</ifcond><then>DICEMBRE</then></if>
+ <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_AA</valueabs> </b>
+mentre abbiamo ricevuto il primo versamento con decorrenza <B>
+<if><ifcond><valueabs>IDGFDTAT0F/RECORD/IDGFDTAT_RIFPRMRATM</valueabs>==01</ifcond><then>GENNAIO</then></if>
+<if><ifcond><valueabs>IDGFDTAT0F/RECORD/IDGFDTAT_RIFPRMRATM</valueabs>==02</ifcond><then>FEBBRAIO</then></if>
+<if><ifcond><valueabs>IDGFDTAT0F/RECORD/IDGFDTAT_RIFPRMRATM</valueabs>==03</ifcond><then>MARZO</then></if>
+<if><ifcond><valueabs>IDGFDTAT0F/RECORD/IDGFDTAT_RIFPRMRATM</valueabs>==04</ifcond><then>APRILE</then></if>
+<if><ifcond><valueabs>IDGFDTAT0F/RECORD/IDGFDTAT_RIFPRMRATM</valueabs>==05</ifcond><then>MAGGIO</then></if>
+<if><ifcond><valueabs>IDGFDTAT0F/RECORD/IDGFDTAT_RIFPRMRATM</valueabs>==06</ifcond><then>GIUGNO</then></if>
+<if><ifcond><valueabs>IDGFDTAT0F/RECORD/IDGFDTAT_RIFPRMRATM</valueabs>==07</ifcond><then>LUGLIO</then></if>
+<if><ifcond><valueabs>IDGFDTAT0F/RECORD/IDGFDTAT_RIFPRMRATM</valueabs>==08</ifcond><then>AGOSTO</then></if>
+<if><ifcond><valueabs>IDGFDTAT0F/RECORD/IDGFDTAT_RIFPRMRATM</valueabs>==09</ifcond><then>SETTEMBRE</then></if>
+<if><ifcond><valueabs>IDGFDTAT0F/RECORD/IDGFDTAT_RIFPRMRATM</valueabs>==10</ifcond><then>OTTOBRE</then></if>
+<if><ifcond><valueabs>IDGFDTAT0F/RECORD/IDGFDTAT_RIFPRMRATM</valueabs>==11</ifcond><then>NOVEMBRE</then></if>
+<if><ifcond><valueabs>IDGFDTAT0F/RECORD/IDGFDTAT_RIFPRMRATM</valueabs>==12</ifcond><then>DICEMBRE</then></if>
+ <valueabs>IDGFDTAT0F/RECORD/IDGFDTAT_RIFPRMRATA</valueabs></B>.
+<br><br>
+Vi chiediamo, quindi, di inviarci apposita comunicazione via Mail o al fax 0438/1745022 redatta su carta
+intestata e portante timbro e firma di soggetto legalmente autorizzato se la decorrenza del contratto in
+oggetto risulta variata a causa dei tempi di perfezionamento della pratica all'arrivo della liberatoria.<br><br>
+<b><u>La richiesta ha il fine di poter eseguire operazioni, anche assicurative, concernenti e susseguenti il
+contratto in oggetto</u></b>.<br><br>
+In mancanza di suddetta comunicazione la Scrivente società finanziaria <B>SOLLECITA</B> il pagamento della
+quota di 
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_MM</valueabs>==1</ifcond><then>GENNAIO</then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_MM</valueabs>==2</ifcond><then>FEBBRAIO</then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_MM</valueabs>==3</ifcond><then>MARZO</then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_MM</valueabs>==4</ifcond><then>APRILE</then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_MM</valueabs>==5</ifcond><then>MAGGIO</then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_MM</valueabs>==6</ifcond><then>GIUGNO</then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_MM</valueabs>==7</ifcond><then>LUGLIO</then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_MM</valueabs>==8</ifcond><then>AGOSTO</then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_MM</valueabs>==9</ifcond><then>SETTEMBRE</then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_MM</valueabs>==10</ifcond><then>OTTOBRE</then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_MM</valueabs>==11</ifcond><then>NOVEMBRE</then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_MM</valueabs>==12</ifcond><then>DICEMBRE</then></if>
+ <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_AA</valueabs>.<br><br>
+Il pagamento di quanto dovuto potrà essere effettuato utilizzando le seguenti coordinate:<br>
+<BR>
+<B><U>BONIFICO BANCARIO</U></B> intestato a Sigla s.r.l. c/o Financial Institutions di Parma (Banca Intesa)<br>
+C/C n.: 100000012670 - ABI; 03069 - CAB: 12711 - CIN: A<br>
+<B>IBAN: IT29A0306912711100000012670<br>
+Causale: n.<valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>, quota 
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_MM</valueabs>==1</ifcond><then>GENNAIO</then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_MM</valueabs>==2</ifcond><then>FEBBRAIO</then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_MM</valueabs>==3</ifcond><then>MARZO</then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_MM</valueabs>==4</ifcond><then>APRILE</then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_MM</valueabs>==5</ifcond><then>MAGGIO</then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_MM</valueabs>==6</ifcond><then>GIUGNO</then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_MM</valueabs>==7</ifcond><then>LUGLIO</then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_MM</valueabs>==8</ifcond><then>AGOSTO</then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_MM</valueabs>==9</ifcond><then>SETTEMBRE</then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_MM</valueabs>==10</ifcond><then>OTTOBRE</then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_MM</valueabs>==11</ifcond><then>NOVEMBRE</then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_MM</valueabs>==12</ifcond><then>DICEMBRE</then></if>
+ <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT_AA</valueabs>.
+</B><br>
+<BR>
+Restiamo in attesa, altresi, dell'anticipo a mezzo telefax di prova dell'avenuto pagamento.
+<BR><BR>
+Distinti saluti.
+<BR>
+</TEXT>
+<TEXT X=12.15 Y=23.5><I><B>SIGLA S.R.L.</B></I><BR></TEXT>
+<TEXT X=10 Y=24><I><B>Ufficio Recupero Crediti e Contenzioso</B></I></TEXT>
+<IMG SRC="<valueabs>Immagini/MAZZER/Path</valueabs><valueabs>Immagini/MAZZER/Nome</valueabs>" BACKGROUND X=11 Y=26 SCALE=15>
+<BR><BR>
+<TEXT ALIGN=J LINESPACE=1.5 size=8>
+<if><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_JOBNAM_INI</valueabs>==PS</ifcond><then>
+Rif. Stefano Piu<BR>
+Tel. diretto: 0438/372914 - Fax: 0438/1745022 - Mail: contenziosocqs@siglafinanziamenti.it</i><BR>
+</then><else>
+Rif. Paola Zanchetta<BR>
+Tel. 0438/372916 - <i>Fax: 0438/1745022 - Mail: contenziosocqs@siglafinanziamenti.it</i><BR>
+</if>
+</TEXT>
+</BODY>
+
+</PDF>

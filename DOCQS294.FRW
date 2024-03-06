@@ -1,0 +1,103 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8">
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasiglasx_c">
+
+			
+</HEADER>
+<FOOTER>
+<include file="\INCLUDE\IncludedStruttura.frw" value="footercartaintestatasacrichiestaconteggio">
+</FOOTER>
+<BODY>
+
+<BR><BR><BR>
+<TABLE>
+	<TR>
+		<TD WIDTH=80% ALIGN=R></TD>
+		<TD WIDTH=19% ALIGN=L SIZE=8><if><ifcond><valueabs>IDGPCLI00F/RECORD/IDGPCLI_SESSO</valueabs>==M</ifcond><then>Egregio Sig. </then><else>Gentile Sig.ra </else></if></TD>
+		<TD WIDTH=1% ALIGN=R SIZE=8></TD>
+	</TR>
+	<TR>
+		<TD WIDTH=80% ALIGN=R></TD>
+		<TD WIDTH=19% ALIGN=L SIZE=8><valueabs>IDGPCLI00F/RECORD/IDGPCLI_RAGSOC</valueabs>  (PPP n. <valueabs>IDGPEST00F/RECORD/IDGPEST_NRPROP</valueabs>)</TD>
+		<TD WIDTH=11% ALIGN=L SIZE=8></TD>
+	</TR>	
+	<TR>
+		<TD WIDTH=80% ALIGN=R></TD>
+		<TD WIDTH=19% ALIGN=L SIZE=8><valueabs>IDGPCLI00F/RECORD/IDGPCLI_INDIR</valueabs></TD>
+		<TD WIDTH=1% ALIGN=R SIZE=8></TD>
+	</TR>
+	<TR>
+		<TD WIDTH=80% ALIGN=R></TD>
+		<TD WIDTH=19% ALIGN=L SIZE=8><valueabs>IDGPCLI00F/RECORD/IDGPCLI_CAP</valueabs> - <valueabs>IDGPCLI00F/RECORD/IDGPCLI_LOCAL</valueabs> - <valueabs>IDGPCLI00F/RECORD/IDGPCLI_PROV</valueabs></TD>
+		<TD WIDTH=1% ALIGN=R SIZE=8></TD>
+	</TR>
+</TABLE>			
+<BR><BR><BR><BR><BR>
+<TEXT ALIGN=J LINESPACE=1.5 SIZE=9>
+Conegliano, <valueabs>IDGPCTR00F/RECORD/IDGPCTR_DATSYS</valueabs><BR><BR>
+<B>Oggetto: Richiesta recesso contratto Prestito Personale n. <valueabs>IDGPEST00F/RECORD/IDGPEST_NRPROP</valueabs> del <valueabs>IDGPCTR00F/RECORD/IDGPCTR_DTSTPCTR</valueabs> a nome <valueabs>IDGPCLI00F/RECORD/IDGPCLI_RAGSOC</valueabs></B><BR><BR>
+
+Le esponiamo qui di seguito, in ottemperanza alle condizioni generali di finanziamento, i termini e le modalità di estinzione del contratto di cui all'oggetto:<BR><BR></TEXT>
+<TABLE>
+	<TR>
+		<TD WIDTH=5% ALIGN=J></TD>
+		<TD WIDTH=95% ALIGN=J SIZE=9>a) valore recesso come previsto dal contratto di finanziamento<BR><BR></TD>
+	</TR>
+	
+</TABLE>
+
+<TABLE>
+	<TR>
+		<TD WIDTH=15% ALIGN=J></TD>
+		<TD WIDTH=45% ALIGN=J>importo erogato</TD>
+		<TD WIDTH=10% ALIGN=R>Euro</TD>
+		<TD WIDTH=15% ALIGN=R SIZE=9><valueabs>IDGPCTR00F/RECORD/IDGPCTR_IMPNETRIC</valueabs></TD>
+		<TD WIDTH=15% ALIGN=J></TD>
+	</TR>
+	<TR>
+		<TD WIDTH=15% ALIGN=J></TD>
+		<TD WIDTH=45% ALIGN=J>imposta di bollo</TD>
+		<TD WIDTH=10% ALIGN=R>Euro</TD>
+		<TD WIDTH=15% ALIGN=R SIZE=9><valueabs>IDGPCTR00F/RECORD/IDGPCTR_IMRIVALSA</valueabs></TD>
+		<TD WIDTH=15% ALIGN=J></TD>
+	</TR>
+	<TR>
+		<TD WIDTH=15% ALIGN=J></TD>
+		<TD WIDTH=45% ALIGN=J><B>importo da versare</B></TD>
+		<TD WIDTH=10% ALIGN=R><B>Euro</B></TD>
+		<TD WIDTH=15% ALIGN=R SIZE=9><B><valueabs>IDGPEST00F/RECORD/IDGPEST_TOTEST</valueabs></B></TD>
+		<TD WIDTH=15% ALIGN=J></TD>
+	</TR>
+</TABLE>
+<BR>
+<TABLE>
+	<TR>
+		<TD WIDTH=5% ALIGN=J></TD>
+		<TD WIDTH=95% ALIGN=J SIZE=9>b) validità della presente: <valueabs>IDGPEST00F/RECORD/IDGPEST_DATARIF</valueabs><BR><BR></TD>
+	</TR>
+	
+	<TR>
+		<TD WIDTH=5% ALIGN=J></TD>
+		<TD WIDTH=95% ALIGN=J SIZE=9>c) Il versamento verrà eseguito a mezzo di bonifico bancario su Intesa Sanpaolo, IBAN  IT16S0306912711100000017692<BR><BR></TD>
+	</TR>	
+</TABLE>
+
+<TEXT ALIGN=J LINESPACE=1.5 SIZE=9>
+Le ricordiamo che la data di valità della presente è il termine perentorio entro cui dovremo ricevere l'importo richiesto, pena l'impossibilità a procedere al recesso dall’operazione di finanziamento in oggetto, con le modalità qui esposte.<BR><BR>
+Alla ricezione della somma richiesta, si procederà all'emissione di regolare quietanza liberatoria.<BR><BR>
+Rimanendo a sua completa disposizione per eventuali chiarimenti al numero 0438/45990, Le porgiamo distinti saluti.<BR><BR>
+</TEXT>
+
+<TEXT X=15 Y=19.5 ALIGN=C LINESPACE=1.5 SIZE=9>
+Conformità Clienti e<BR>Monitoraggio Contratti<BR>Sigla Srl
+</TEXT>
+
+<IMG SRC="<valueabs>Immagini/FIRMABATT/Path</valueabs><valueabs>Immagini/FIRMABATT/Nome</valueabs>" BACKGROUND X=15 Y=21.5 SCALE=10>
+
+<BR><BR><BR><BR><BR><BR><BR><BR>
+
+
+
+</BODY>
+</PDF>

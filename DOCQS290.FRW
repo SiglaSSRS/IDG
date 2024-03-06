@@ -1,0 +1,10 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8">
+<include file="\INCLUDE\Percorsi.frw">
+
+
+<PDFPAGE SRC="DOCQS290.PDF" ALLPAGES SHOWONCE NOFIRSTBREAK>
+
+		
+
+</PDF>

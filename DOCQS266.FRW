@@ -1,0 +1,132 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize9.5_Arial">
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3_1">
+</HEADER>
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestatacontenzioso">
+</FOOTER>	
+
+<BODY>
+<BR><BR><BR>
+<TEXT ALIGN=J LINESPACE=1.5>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=55%><B>Inviata a mezzo racc. A/R</B><br>
+<i>Anticipata tramite PEC/mail: <valueabs>IDGFDTAT0F/RECORD/IDGFDTAT_EMLATCCRE</valueabs><br>
+<INPUT TYPE=text size=50 VALUE="email1@pec" bordercolor=white NAME=b1><br>
+<INPUT TYPE=text size=50 VALUE="email2@pec" bordercolor=white NAME=b2><br>
+</TD>
+<TD WIDTH=5%></TD>
+<TD WIDTH=40%>Spett.le [<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>==DEL</ifcond><then>DEL<else>CQS</if>
+/<valueabs>IDGREQ00F/RECORD/IDGREQ_JOBNAM_INI</valueabs>/<valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>]<br>
+<B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_STATOGIUR</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_LAV</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_LAV</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_LAV</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_LAV</valueabs>)
+<B>
+<br>
+</TD>
+</TR>
+<TR></TR>
+<BR><BR><BR><BR><BR>
+<TR>
+<TD WIDTH=55%><B>Posta prioritaria</B><br><br></TD>
+<TD WIDTH=5%><B>p.c.</B></TD>
+<TD WIDTH=40%><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond>
+<then><B>Egr. Sig.<else>Gent.le Sig.ra</if></B> [<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>==DEL</ifcond><then>DEL<else>CQS</if>
+/<valueabs>IDGREQ00F/RECORD/IDGREQ_JOBNAM_INI</valueabs>/<valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>]<br>
+<B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs>)
+</B>
+<br>
+</TD>
+</TR><br>
+</TABLE>
+<BR><BR><BR><BR><BR>
+Conegliano, <valueabs>IDGFCQP00F/RECORD/IDGFCQP_DATSYS</valueabs>
+<BR><BR><BR><BR>
+Spett.le Società,<BR><BR><BR>
+Il contratto di 
+<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>==DEL</ifcond>
+<then>delegazione di pagamento del quinto dello stipendio </then></if>
+<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_COD_CONV_IMP</valueabs>!=</ifcond>
+<then>cessione del quinto dello stipendio </then></if><b><u>n. <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs></u></b>, come espressamente previsto dalla normativa civilistica in materia di cessione del credito (artt. 1260 e ss c.c.), 
+Vi è stato notificato, in qualità di debitore ceduto e avete provveduto ad emettere relativo atto di benestare, impegnadoVi ad effettuare le trattenute 
+sullo stipendio <if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond><then>del<else>della</if> dipendente, 
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond>
+<then>il Sig. <else>la Sig.ra </if><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>
+ a versarcele sino alla fine del contratto.<BR>
+Tuttavia, a far data dal <B><valueabs>IDGFDTAT0F/RECORD/IDGFDTAT_RIFLSTRAT</valueabs></B>, ultimo versamento ricevuto, la Vostra società, con riferimento al sopra citato contratto, 
+versa in una grave situazione di insolvenza nei confronti della scrivente, per un totale di <B>€ <valueabs>IDGFDTAT0F/RECORD/IDGFDTAT_IMPSLDTOT</valueabs></B> , situazione a Voi a ben nota, 
+a seguito dei solleciti posti in essere dall’ufficio recupero credito della scrivente.<BR><BR>
+
+Tanto premesso, con la presente, siamo a rammentarVi che il credito che 
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond><then>il dipendente, sopra indicato, <else>la dipendente, sopra indicata, </if>ha ceduto alla scrivente, <b><u>è di titolarità di Sigla S.r.l.</u></b> 
+dato il perfezionamento del contratto di cessione nei Vostri confronti, che ha determinato il mutamento della titolarità attiva del medesimo: ragion per cui 
+siete obbligati, ai sensi degli artt. 1260 e ss. c.c., a continuare a dare esecuzione al contratto di cui sopra.<BR><BR>
+<b>Precisiamo, che laddove la Vostra società stia continuando ad effettuare le trattenute sullo stipendio dei dipendenti e a non versarcele, si configurerà, 
+a vostro carico, un illecito civile, fonte di responsabilità per danno ai sensi dell’art. 2043 c.c., del quale sarete chiamati a rispondere nei confronti dei 
+dipendenti e della scrivente.<BR>
+In altri termini, la Scrivente Vi riterrà responsabili, ex art. 2043 c.c., di tutte le perdite patrimoniali subite e che saranno causalmente riconducibili 
+all’omissione da parte Vostra del versamento in favore di Sigla delle trattenute regolarmente operate.</b>
+<BR><BR>
+Se, invece, la Vostra società non sta effettuando le trattenute sullo stipendio dei dipendenti, regolarmente corrisposto a questi ultimi, evidenziamo che state 
+effettuando un pagamento errato, sotto il profilo soggettivo e, in quanto tale, ripetibile nei confronti della scrivente.<BR>
+Infatti, l’art. 1264 c.c. prevede espressamente che <i>“la cessione ha effetto nei confronti del debitore ceduto quando questi l’ha accettata o quando gli è stata notificata"</i>. 
+Ad oggi, dunque, la cessione del credito sottoscritta tra Sigla e <if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond>
+<then>il Sig. <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> (vostro dipendente)
+<else>la Sig.ra <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> (vostra dipendente)</if> risulta già pienamente efficace nei Vostri confronti, posto che il requisito della notifica 
+imposto dalla legge nei confronti del debitore ceduto risulta essersi pienamente avverato.<br>
+Per l’effetto, come prescritto dal secondo comma della norma sopra richiamata, <i>“il debitore che paga al cedente non è liberato se il cessionario prova che il debitore medesimo era a conoscenza dell'avvenuta cessione”</i>.
+<br><br><b>
+Tanto precisato, a fronte del perdurante stato di insolvenza della Vostra società, con la presente, Vi diffidiamo a pagare l’importo di <valueabs>IDGFDTAT0F/RECORD/IDGFDTAT_IMPSLDTOT</valueabs> 
+in favore della scrivente, e relativo alle mensilità di:<br><br>  
+<loop>
+	<loopda>1</loopda>
+	<looproot>IDGFDTAD0F/RECORD</looproot>
+<if><ifcond><value>IDGFDTAD_SLDMMRIF</value>==01</ifcond><then>GENNAIO</then></if>
+<if><ifcond><value>IDGFDTAD_SLDMMRIF</value>==02</ifcond><then>FEBBRAIO</then></if>
+<if><ifcond><value>IDGFDTAD_SLDMMRIF</value>==03</ifcond><then>MARZO</then></if>
+<if><ifcond><value>IDGFDTAD_SLDMMRIF</value>==04</ifcond><then>APRILE</then></if>
+<if><ifcond><value>IDGFDTAD_SLDMMRIF</value>==05</ifcond><then>MAGGIO</then></if>
+<if><ifcond><value>IDGFDTAD_SLDMMRIF</value>==06</ifcond><then>GIUGNO</then></if>
+<if><ifcond><value>IDGFDTAD_SLDMMRIF</value>==07</ifcond><then>LUGLIO</then></if>
+<if><ifcond><value>IDGFDTAD_SLDMMRIF</value>==08</ifcond><then>AGOSTO</then></if>
+<if><ifcond><value>IDGFDTAD_SLDMMRIF</value>==09</ifcond><then>SETTEMBRE</then></if>
+<if><ifcond><value>IDGFDTAD_SLDMMRIF</value>==10</ifcond><then>OTTOBRE</then></if>
+<if><ifcond><value>IDGFDTAD_SLDMMRIF</value>==11</ifcond><then>NOVEMBRE</then></if>
+<if><ifcond><value>IDGFDTAD_SLDMMRIF</value>==12</ifcond><then>DICEMBRE</then></if>
+<value>IDGFDTAD_SLDAARIF</value>, 	
+</loop></B>
+<br><br>
+in quanto trattasi di un importo che la Vostra società avrebbe 
+già dovuto versare alla scrivente, nonché a procedere alla regolare esecuzione del contratto sopra menzionato</b>.<br><br>
+<br>
+Il pagamento di quanto dovuto potrà essere effettuato utilizzando le seguenti coordinate:<br><br>
+<b><u>BONIFICO BANCARIO</u></b> intestato a Sigla s.r.l. c/o Financial Institutions di Parma<br><br>
+C/C n.: 100000012670 - ABI: 3069 - CAB: 12711 <br>
+IBAN: IT29 A030 6912 7111 0000 0012 670 <br>
+Causale: n. <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs> <br>
+<br><br>
+Attendiamo il versamento di quanto dovuto <b><u>entro e non oltre 5 giorni dal ricevimento della presente</u></b>, in difetto sarà nostra cura procedere giudizialmente 
+per il recupero coattivo del credito.<br><br>
+<BR><BR>
+Distinti saluti.
+<BR><BR>
+</TEXT>
+<TEXT X=12.15 Y=17><I><B>SIGLA S.R.L.</B></I><BR></TEXT>
+<TEXT X=10 Y=17.5><I><B>Ufficio Recupero Crediti e Contenzioso</B></I></TEXT>
+<IMG SRC="<valueabs>Immagini/MAZZER/Path</valueabs><valueabs>Immagini/MAZZER/Nome</valueabs>" BACKGROUND X=11 Y=19.55 SCALE=15>
+<TEXT ALIGN=J LINESPACE=1.5 size=9><i>
+<BR><BR><BR><BR><BR><BR><BR>
+<if><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_JOBNAM_USR</valueabs>==SIGPS371</ifcond>
+<then><i>Tel. 0438/372914 - PEC: Siglacredit.Cqscontenzioso@pec.it - Mail: contenziosocqs@siglafinanziamenti.it</i><BR></then><else>
+<i>Tel. 0438/372919 - PEC: Siglacredit.Cqscontenzioso@pec.it - Mail: contenziosocqs@siglafinanziamenti.it</i><BR></else>
+</if>
+
+</TEXT>
+</BODY>
+
+</PDF>

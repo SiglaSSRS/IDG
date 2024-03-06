@@ -1,0 +1,43 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize10">
+<include file="\INCLUDE\Percorsi.frw">
+<BODY>
+<PDFPAGE SRC="DOCQS302.PDF" VALUE=1 SHOWONCE PDFOVERLAY>    
+<TEXT X=3	  	Y=2.35><valueabs>IDGFCLI00F/RECORD/IDGFCLI_COGNOME</valueabs>      </TEXT>
+<TEXT X=8.25   	Y=2.35><valueabs>IDGFCLI00F/RECORD/IDGFCLI_NOME</valueabs>			</TEXT>
+<TEXT X=14.85 	Y=2.35><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs>        </TEXT>
+
+<TEXT X=3	 	Y=3.05><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC</valueabs>       </TEXT>
+<TEXT X=8	 	Y=3.05><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCNASC</valueabs>      </TEXT>
+
+<TEXT X=2	 	Y=4><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>      </TEXT>
+<TEXT X=4	 	Y=4><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs>      </TEXT>
+<TEXT X=16.5 	Y=4><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs>      </TEXT>
+
+<TEXT X=3.5	 	Y=4.8><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs>      </TEXT>
+<TEXT X=9.5	 	Y=4.8><valueabs>IDGFCLI00F/RECORD/IDGFCLI_TELE_RES</valueabs>      </TEXT>
+<TEXT X=13.5 	Y=4.8><valueabs>IDGFCLI00F/RECORD/IDGFCLI_EMAIL</valueabs>      </TEXT>
+
+<TEXT X=6 	Y=7.75><B>OBIS M - CUD</B></TEXT>
+
+<PAGE>
+<PDFPAGE SRC="DOCQS302.PDF" VALUE=1 SHOWONCE PDFOVERLAY>
+<TEXT X=3	  	Y=2.35><valueabs>IDGFCLI00F/RECORD/IDGFCLI_COGNOME</valueabs>      </TEXT>
+<TEXT X=8.25   	Y=2.35><valueabs>IDGFCLI00F/RECORD/IDGFCLI_NOME</valueabs>			</TEXT>
+<TEXT X=14.85 	Y=2.35><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs>        </TEXT>
+
+<TEXT X=3	 	Y=3.05><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC</valueabs>       </TEXT>
+<TEXT X=8	 	Y=3.05><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCNASC</valueabs>      </TEXT>
+
+<TEXT X=2	 	Y=4><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>      </TEXT>
+<TEXT X=4	 	Y=4><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs>      </TEXT>
+<TEXT X=16.5 	Y=4><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs>      </TEXT>
+
+<TEXT X=3.5	 	Y=4.8><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs>      </TEXT>
+<TEXT X=9.5	 	Y=4.8><valueabs>IDGFCLI00F/RECORD/IDGFCLI_TELE_RES</valueabs>      </TEXT>
+<TEXT X=13.5 	Y=4.8><valueabs>IDGFCLI00F/RECORD/IDGFCLI_EMAIL</valueabs>      </TEXT>
+
+<TEXT X=6 	Y=7.75><B>ESTRATTI CONTRIBUTIVI</B></TEXT>
+
+</BODY>
+</PDF>

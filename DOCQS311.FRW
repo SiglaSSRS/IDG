@@ -1,0 +1,30 @@
+<PDF>
+
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8_MB0b">
+<include file="\INCLUDE\Percorsi.frw">
+
+<BODY>	
+
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+	<TR>
+		<TD WIDTH=100% ALIGN="RIGHT"><if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs><72</ifcond><then>Pag. 14 di 14</then><else>Pag. 15 di 15</else></if></TD> 
+	</TR> 
+</TABLE>
+</SUBFOOTER>
+
+<PDFPAGE SRC="DOCQS311.PDF" VALUE=1 SHOWONCE>
+
+<!--INSTESTAZIONE-->
+<TEXT X=9.09 Y=0.86><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></TEXT>
+<TEXT X=13.9 Y=0.86><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs></TEXT>
+<TEXT X=16.50 Y=0.86><if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTIPCTR</valueabs>==</ifcond><then><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></then><else><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTIPCTR</valueabs></else></if></TEXT>
+<TEXT X=9.75 Y=1.46><valueabs>IDGFFONT0F/RECORD/IDGFONT_DESABI</valueabs></TEXT>
+<!--<TEXT X=9.75 Y=1.46><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DESCENTE</valueabs></TEXT>-->
+
+<TEXT X=7.1 Y=2.84><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs></TEXT>
+<TEXT X=2 Y=4.90><if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTIPCTR</valueabs>==</ifcond><then><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></then><else><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTIPCTR</valueabs></else></if></TEXT>
+
+
+</BODY>
+</PDF>

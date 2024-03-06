@@ -1,0 +1,365 @@
+<if><ifcond><value>IDGFCQS00F/RECORD/IDGFCQS_IDPROJECT</value>==</ifcond><or><ifcond><value>IDGFERD00F/RECORD/IDGFERD_PROG</value>==</ifcond><then>
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize5.5_times">
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintsiglasiglappppvo">
+</HEADER>
+
+<FOOTER>
+<TEXT SIZE=6 ALIGN=C>
+Imposta di bollo assolta in modo virtuale come da autorizzazione n.20362 del 21.05.2008 dell'Agenzia delle Entrate di Conegliano - TV.
+</TEXT>
+</FOOTER>
+
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT">Pag. 1 di 3</TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+
+<BODY>
+
+<TEXT SIZE=8 ALIGN=C>
+<BR><BR><BR>
+Redatti ai sensi delle disposizioni di cui al Provvedimento di Banca d’Italia del 9 febbraio 2011 attuativo del D.Lgs. 13 agosto 2010, n. 141<BR><BR>
+È assicurata la piena coerenza fra le informazioni contenute nel presente documento e le clausole del contratto<BR><BR>
+</TEXT>
+<TEXT SIZE=8 ALIGN=J>
+
+<BR>
+<TABLE WIDTH=100% SIZE=7 ALIGN=C BGCOLOR=BLUE FCOLOR=WHITE>
+<TR>
+<TD WIDTH=100%>1.Identità e recapiti del Finanziatore/Intermediario del Credito</TD>
+</TR>
+</TABLE>
+<BR>
+
+<TABLE WIDTH=100% SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=49.5% BORDER=0.1>Finanziatore e relativi dati societari<BR>
+Indirizzo<BR>
+• Telefono • Fax • Indirizzo e-mail • Sito web
+</TD>
+<TD WIDTH=1%></TD>
+<TD WIDTH=49.5% BORDER=0.1>SIGLA SRL<BR>
+via Cesare Battisti, 5/a – 31015 Conegliano  (TV)<BR>
+0438/45990 (assistenza clienti) • 0438/372950 (interruzione rapporto di lavoro o decesso)<BR>• 0438/45917 (fax) • www.siglacredit.it •  sac@siglafinanziamenti.it
+</TD>
+</TR>
+</TABLE>
+
+<TABLE WIDTH=100% SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=49.5% BORDER=0.1>Intermediario del credito (qualora eventualmente intervenuto) e relativa qualifica<BR>
+Indirizzo<BR>
+• Telefono • Fax • Indirizzo e-mail • sito web
+</TD>
+<TD WIDTH=1%></TD>
+<TD WIDTH=49.5% BORDER=0.1><valueabs>IDGPPVO00F/RECORD/IDGPPVO_MEDRAGSOC</valueabs><BR><valueabs>IDGPPVO00F/RECORD/IDGPPVO_MEDINDIR</valueabs> - <valueabs>IDGPPVO00F/RECORD/IDGPPVO_MEDCAP</valueabs> - <valueabs>IDGPPVO00F/RECORD/IDGPPVO_MEDLOCAL</valueabs> (<valueabs>IDGPPVO00F/RECORD/IDGPPVO_MEDPROV</valueabs>) <BR>
+<valueabs>IDGPPVO00F/RECORD/IDGPPVO_TELENTE</valueabs> - <valueabs>IDGPPVO00F/RECORD/IDGPPVO_FAXENTE</valueabs> - <valueabs>IDGPPVO00F/RECORD/IDGPPVO_EMAIL_MED</valueabs>
+</TD>
+</TR>
+</TABLE>
+<BR>
+
+
+<TABLE WIDTH=100% SIZE=7 ALIGN=C BGCOLOR=BLUE FCOLOR=WHITE>	
+<TR>
+<TD WIDTH=100%>2.Caratteristiche principali del contratto di Credito:</TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE WIDTH=100% SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=49.5% BORDER=0.1><B>Tipologia del contratto di credito</B></TD>
+<TD WIDTH=1%></TD>
+<TD WIDTH=49.5% BORDER=0.1><B>Contratto di prestito personale:</B> Il contratto di finanziamento (il “<B>Finanziamento</B>”) è un contratto di credito concesso dal Finanziatore al cliente (il “<B>Cliente</B>”), il quale si impegna a restituire al Finanziatore medesimo, alla scadenza concordata e al tasso di interesse stabilito contrattualmente in <valueabs>IDGPPVO00F/RECORD/IDGPPVO_PERDUR</valueabs> rate mensili a partire dal giorno 15 del 7° mese successivo alla stipula.
+</TD>
+</TR>
+</TABLE>
+<TABLE WIDTH=100% SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=49.5% BORDER=0.1><B>Importo totale del Finanziamento (importo messo a disposizione del Cliente)</B></TD>
+<TD WIDTH=1%></TD>
+<TD WIDTH=49.5% BORDER=0.1><B>&euro <valueabs>IDGPPVO00F/RECORD/IDGPPVO_IMPNETRIC</valueabs></B><BR>Somma di denaro che il Finanziatore versa al cliente: la si ottiene prendendo come riferimento l’ “importo totale dovuto dal Cliente”, come <I>infra</I> indicata, al netto del tasso di interesse nominale annuo (TAN) e degli altri costi derivanti dal Finanziamento, come <I>infra</I> elencati.
+</TD>
+</TR>
+</TABLE>
+<TABLE WIDTH=100% SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=49.5% BORDER=0.1><B>Condizioni di prelievo.<BR>Modalità e tempi con i quali il consumatore può utilizzare il credito</B></TD>
+<TD WIDTH=1%></TD>
+<TD WIDTH=49.5% BORDER=0.1>Non ci sono condizioni di utilizzo del Finanziamento e questo viene erogato dal Finanziatore in un’unica soluzione.</TD>
+</TR>
+</TABLE>
+<TABLE WIDTH=100% SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=49.5% BORDER=0.1><B>Durata del contratto di credito</B></TD>
+<TD WIDTH=1%></TD>
+<TD WIDTH=49.5% BORDER=0.1><B>
+18 mesi</B>, con decorrenza degli interessi a partire dal giorno 15 del 7° mese successivo alla stipula (preammortamento a tasso 0)</TD>
+</TR>
+</TABLE>
+<TABLE WIDTH=100% SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=49.5% BORDER=0.1><B>Rate e loro ordine di imputazione</B></TD>
+<TD WIDTH=1%></TD>
+<TD WIDTH=49.5% BORDER=0.1>Rate da pagare:<B><valueabs>IDGPPVO00F/RECORD/IDGPPVO_CANONE</valueabs> &euro per <valueabs>IDGPPVO00F/RECORD/IDGPPVO_PERDUR</valueabs> rate</B>, con cadenza mensile a partire dal giorno 15 del 7° mese successivo alla stipula. <BR>
+Il Cliente si impegna a rimborsare al Finanziatore le somme dallo stesso erogate in esecuzione del Prestito personale, maggiorato degli eventuali interessi maturati, delle commissioni e dell’imposta di bollo con il pagamento di <valueabs>IDGPPVO00F/RECORD/IDGPPVO_PERDUR</valueabs> rate mensili consecutive e costanti a decorrere dal 15° giorno del 7° mese dalla stipula. Il cliente pagherà gli interessi 
+e le spese nel seguente ordine: capitale, interessi e spese.</TD>
+</TR>
+</TABLE>
+<TABLE WIDTH=100% SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=49.5% BORDER=0.1><B>Importo totale dovuto dal Cliente al Finanziatore (importo del capitale versato dal Finanziatore, oltre interessi e spese)</B></TD>
+<TD WIDTH=1%></TD>
+<TD WIDTH=49.5% BORDER=0.1>
+<B>&euro <valueabs>IDGPPVO00F/RECORD/IDGPPVO_MONTANTE</valueabs></B> (Detto importo è calcolato nell'ipotesi di restituzione con <valueabs>IDGPPVO00F/RECORD/IDGPPVO_PERDUR</valueabs> rate mensili con 1° rata al 15° giorno del 7° mese successivo alla stipula); comprende il totale degli interessi e dei costi
+connessi a carico del Cliente; per il dettaglio delle commissioni, spese ed altri oneri si veda la sezione "3. Costi del Credito".<BR>
+</TD>
+</TR>
+</TABLE>
+<TABLE WIDTH=100% SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=49.5% BORDER=0.1><B>Eventuali garanzie richieste</B></TD>
+<TD WIDTH=1%></TD>
+<TD WIDTH=49.5% BORDER=0.1><B>Nessuna</B></TD>
+</TR>
+</TABLE>
+<BR>
+
+<TABLE WIDTH=100% SIZE=7 ALIGN=C BGCOLOR=BLUE FCOLOR=WHITE>
+<TR>
+<TD WIDTH=100%>3.Costi del Finanziamento:</TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE WIDTH=100% SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=49.5% BORDER=0.1><B>Tasso di interesse (TAN – tasso nominale annuo)</B></TD>
+<TD WIDTH=1%></TD>
+<TD WIDTH=49.5% BORDER=0.1><B>
+<valueabs>IDGPPVO00F/RECORD/IDGPPVO_TXTAN</valueabs> % <BR>
+(tasso annuo nominale)</B>
+tasso annuo nominale scalare applicato in misura fissa per l'intera durata del prestito (con riferimento all'anno commerciale, con 12 mesi a 30 giorni).<BR>
+Il calcolo degli interessi decorre dal giorno 15 del 7° mese successivo  alla stipula (preammortamento a tasso 0), fino al giorno dell'integrale rimborso.
+</TD>
+</TR>
+</TABLE>
+</TEXT>
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\SECCIPRV##DOCQS274##01_02_04.png" BACKGROUND X=4 Y=-0.7 SCALE=25>
+<PAGE>
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT">Pag. 2 di 3</TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+
+<TEXT SIZE=8 ALIGN=J>
+<BR><BR><BR>
+
+<TABLE WIDTH=100% SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=49.5% BORDER=0.1><B>Tasso annuo effettivo globale (TAEG – costo totale del credito espresso in percentuale calcolata su base annua dell’importo totale del credito, e definito
+in base ai dati concernenti la rilevazione dei tassi di interesse effettivi globali medi ai sensi della legge antiusura)<BR><BR><BR>Il TAEG consente al Cliente di confrontare le varie offerte</B></TD>
+<TD WIDTH=1%></TD>
+<TD WIDTH=49.5% BORDER=0.1><B>
+<valueabs>IDGPPVO00F/RECORD/IDGPPVO_TXTAEG</valueabs>
+ %</B><BR>
+Il TAEG è un indicatore di costo totale convenzionale (denominato anche ISC, indicatore sintetico di costo) è comprensivo degli interessi e di tutti i costi, commissioni, imposte e tutte le spese che il Cliente deve pagare in relazione al Finanziamento e non subirà modificazioni;
+è stato calcolato ipotizzando l'anno composto da dodici mesi uguali, sulla base del calendario civile, a decorrere dal 15° giorno del 1° mese successivo alla stipula, con i primi 6 mesi senza interessi e a cui verranno solo applicate 
+le commissioni a favore dell'intermediario finanziario e il bollo.<BR>
+Il TAEG, calcolato al tasso di interesse del <valueabs>IDGPPVO00F/RECORD/IDGPPVO_TXTAN</valueabs> % su un capitale finanziato di <valueabs>IDGPPVO00F/RECORD/IDGPPVO_LITACCORD</valueabs> &euro per la durata di <valueabs>IDGPPVO00F/RECORD/IDGPPVO_RATETOT</valueabs> mesi (6 mesi di preammortamento gratuito), è comprensivo di:<BR>
+COMMISSIONI A FAVORE DELL'INTERMEDIARIO FINANZIARIO: &euro <valueabs>IDGPPVO00F/RECORD/IDGPPVO_IMCOMM</valueabs><BR>
+IMPOSTA DI BOLLO SUL CONTRATTO: &euro <valueabs>IDGPPVO00F/RECORD/IDGPPVO_IMRIVALSA</valueabs>
+</TD>
+</TR>
+</TABLE>
+<TABLE WIDTH=100% SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=49.5% BORDER=0.1><B>Per ottenere il Finanziamento o per ottenerlo alle condizioni contrattuali offerte è obbligatorio sottoscrivere:<BR>
+• un’assicurazione che garantisca il credito e/o<BR>
+• un altro contratto per un servizio accessorio
+</B></TD>
+<TD WIDTH=1%></TD>
+<TD WIDTH=49.5% BORDER=0.1><BR><BR><B>NO<BR>NO</B></TD>
+</TR>
+</TABLE>
+<BR>
+
+<TABLE WIDTH=100% SIZE=7 ALIGN=C BGCOLOR=BLUE FCOLOR=WHITE>
+<TR>
+<TD WIDTH=100%>3.1 Costi connessi</TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE WIDTH=100% SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=49.5% BORDER=0.1><B>Eventuali altri costi derivanti dal Finanziamento<BR>
+(dettaglio dei costi inclusi nel TAEG)
+</B></TD>
+<TD WIDTH=1%></TD>
+<TD WIDTH=49.5% BORDER=0.1><B>COMMISSIONI A FAVORE DELL’INTERMEDIARIO FINANZIARIO:</B> Euro <valueabs>IDGPPVO00F/RECORD/IDGPPVO_IMCOMM</valueabs> costi totalmente ripetibili in caso di estinzione anticipata, utilizzati per altrettante competenze dovute a Sigla a copertura dei costi che non siano altrimenti disciplinati in contratto.<BR>
+<B>IMPOSTA DI BOLLO</B> Euro <valueabs>IDGPPVO00F/RECORD/IDGPPVO_IMRIVALSA</valueabs><BR>
+(imposta di bollo dovuta in base alle vigenti normative in materia di finanziamenti, voce non ripetibile in caso di estinzione anticipata)
+</TD>
+</TR>
+</TABLE>
+<TABLE WIDTH=100% SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=49.5% BORDER=0.1><B>Costi in caso di ritardo nel pagamento (tardare il pagamento potrebbe avere gravi conseguenze per il Cliente, ad esempio la vendita forzata di beni, e rendere più difficile ottenere altri crediti in futuro)</B></TD>
+<TD WIDTH=1%></TD>
+<TD WIDTH=49.5% BORDER=0.1><B>Interessi di mora calcolati al tasso del TAN</B><BR>
+Interessi dovuti dal Cliente al Finanziatore nel caso di mancato pagamento del dovuto entro il termine massimo di 10 (dieci) giorni dal ricevimento della richiesta da parte del Finanziatore, inoltrata al Cliente una volta trascorso il termine di pagamento della singola rata del Finanziamento.
+Gli interessi decorrono dal termine di scadenza della singola rata del Finanziamento sino al giorno dell’effettivo pagamento.<BR>
+Il tasso effettivo globale (TEG) applicato al contratto da lei sottoscritto, comprensivo di ogni spesa, non potrà mai superare il limite previsto dalla normativa in materia di usura nel momento in cui tale interesse è stato convenuto (data di sottoscrizione del contratto), dovendo intendersi che anche in caso di eventuale superamento del suddetto limite, la misura di tali interessi sarà comunque pari al limite medesimo.
+Il TEG dovrà essere confrontato con la categoria relativa al CREDITO PERSONALE.
+</TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE WIDTH=100% SIZE=7 ALIGN=C BGCOLOR=BLUE FCOLOR=WHITE>
+<TR>
+<TD WIDTH=100%>4.Importanti aspetti legali</TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE WIDTH=100% SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=49.5% BORDER=0.1><B>Diritto di recesso</B><BR>
+Il consumatore ha il diritto di recedere dal contratto di credito entro quattordici giorni di calendario dalla conclusione del contratto.</TD>
+<TD WIDTH=1%></TD>
+<TD WIDTH=49.5% BORDER=0.1>Sì</TD>
+</TR>
+</TABLE>
+<TABLE WIDTH=100% SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=49.5% BORDER=0.1><B>Rimborso anticipato</B><BR>
+Il consumatore ha il diritto di rimborsare il credito anche prima della scadenza del contratto, in qualsiasi momento, in tutto o in parte.<BR>
+Il finanziatore ha il diritto a un indennizzo in caso di rimborso anticipato.</TD>
+<TD WIDTH=1%></TD>
+<TD WIDTH=49.5% BORDER=0.1>Si<BR>L'indennizzo è dovuto solo se il capitale rimborsato in anticipo è superiore ad Euro 10.000,00, ed è pari a:<BR>
+- all'1% dell'importo totale del credito rimborsato in anticipo e da versare alla data della richiesta, se la vita residua del contratto è superiore ad 1 anno;<BR>
+- allo 0,5% dell'importo totale del credito rimborsato in anticipo e da versare alla data della richiesta, se la vita residua del contratto è pari o inferiore ad 1 anno.<BR>
+In caso di estinzione parziale del finanziamento, l'importo delle rate, con riferimento alla quota non estinta, verrà mantenuto invariato, con imputazione dei successivi versamenti alle rate di più
+imminente scadenza e con conseguente riduzione della durata del piano di ammortamento originario.</TD>
+</TR>
+</TABLE>
+
+<TABLE WIDTH=100% SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=49.5% BORDER=0.1><B>Consultazione di una banca dati:</B><BR>
+Se il Finanziatore rifiuta la domanda di credito dopo aver consultato una banca dati, il consumatore ha il diritto di essere informato immediatamente e gratuitamente del risultato della consultazione. 
+Il consumatore non ha questo diritto se comunicare tale informazione è vietato dalla normativa comunitaria o è contrario all’ordine pubblico o alla pubblica sicurezza.
+</TD>
+<TD WIDTH=1%></TD>
+<TD WIDTH=49.5% BORDER=0.1>Nel procedimento istruttorio delle richieste di finanziamento Sigla, qualora lo ritenga opportuno, ricorre a sistemi di informazione creditizia e antifrode messi a disposizione da gestori privati
+e pubblici di sistemi informativi in tema di crediti al consumo accessibili da banche e intermediari.<BR>
+Le informazioni relative ai gestori delle banche dati sono contenute nel modello "Informativa ex art. 13-14, GDPR UE/2016/679" in materia di protezione dei dati personali.</TD>
+</TR>
+</TABLE>
+
+<TABLE WIDTH=100% SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=49.5% BORDER=0.1><B>Diritto a ricevere una copia del contratto</B><BR>
+Il Cliente ha diritto di ricevere, su sua richiesta, gratuitamente una copia del testo del contratto di Finanziamento idoneo per la stipula. Il Cliente non ha questo diritto se il Finanziatore, al momento della richiesta, non intende concludere il contratto di Finanziamento.</TD>
+<TD WIDTH=1%></TD>
+<TD WIDTH=49.5% BORDER=0.1></TD>
+</TR>
+</TABLE>
+<TABLE WIDTH=100% SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=49.5% BORDER=0.1><B>Periodo di validità dell’offerta</B></TD>
+<TD WIDTH=1%></TD>
+<TD WIDTH=49.5% BORDER=0.1>Informazione valida dal <valueabs>IDGPPVO00F/RECORD/IDGPPVO_DATSYS</valueabs> al 
+<if><ifcond><valueabs>IDGPPVO00F/RECORD/IDGPPVO_DATSYSMM</valueabs><in> (01,02,03)</ifcond><then>31/03/</then></if>
+<if><ifcond><valueabs>IDGPPVO00F/RECORD/IDGPPVO_DATSYSMM</valueabs><in> (04,05,06)</ifcond><then>30/06/</then></if>
+<if><ifcond><valueabs>IDGPPVO00F/RECORD/IDGPPVO_DATSYSMM</valueabs><in> (07,08,09)</ifcond><then>30/09/</then></if>
+<if><ifcond><valueabs>IDGPPVO00F/RECORD/IDGPPVO_DATSYSMM</valueabs><in> (10,11,12)</ifcond><then>31/12/</then></if><valueabs>IDGPPVO00F/RECORD/IDGPPVO_DATSYSAAAA</valueabs>
+</TD>
+</TR>
+</TABLE>
+
+</TEXT>
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\SECCIPRV##DOCQS274##01_03_04.png" BACKGROUND X=4 Y=-0.7 SCALE=25>
+<PAGE>
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT">Pag. 3 di 3</TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+
+<BR><BR><BR>
+<TABLE WIDTH=100% SIZE=7 ALIGN=C BGCOLOR=BLUE FCOLOR=WHITE>
+<TR>
+<TD WIDTH=100%>5.	Informazioni supplementari in caso di commercializzazione a distanza di servizi finanziari</TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE WIDTH=100% BORDER=0.1  SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=27%>a) Finanziatore<BR>
+Indirizzo<BR>
+Telefono<BR>
+Email<BR>
+Fax<BR>
+Sito web
+</TD>
+<TD WIDTH=73%>Sigla Srl<BR>
+via Cesare Battisti, 5/a - 31015 Conegliano (TV)<BR>
+0438/45990 (assistenza clienti) 0438/372950 (interruzione rapporto di lavoro o decesso) <BR>
+<U>sac@siglafinanziamenti.it</U><BR>
+0438/45917<BR>
+www.siglacredit.it<BR>
+</TD>
+</TR>
+<TR>
+<TD WIDTH=27%>Iscrizione</TD>
+<TD WIDTH=73%>Iscrizione Albo Unico degli Intermediari Finanziari ex art.106 TUB con n. 88 (codice meccanografico 33023)</TD>
+</TR>
+<TR>
+<TD WIDTH=27%>Autorità di controllo </TD>
+<TD WIDTH=73%>Banca d'Italia - Via Nazionale 91 - 00184 Roma</TD>
+</TR>
+<TR>
+<TD WIDTH=27%>b)  Contratto di credito</TD>
+<TD WIDTH=73%></TD>
+</TR>
+<TR>
+<TD WIDTH=27%>Esercizio del diritto di recesso</TD>
+<TD WIDTH=73%>Il cliente, ai sensi dell'art. 125-ter del TUB, ha facoltà di recedere dal contratto
+sottoscritto con Sigla senza alcuna penalità e senza specificarne il motivo. In tal caso, il recesso dovrà avvenire non oltre 14 (quattordici) giorni dalla data di stipula del contratto di finanziamento e a mezzo lettera raccomandata con avviso di
+ricevimento indirizzata a Intermediario al seguente indirizzo: SIGLA SRL via Cesare Battisti, 5/a - 31015 Conegliano (TV).<BR>
+L'esercizio della facoltà di recesso comporterà l'obbligo di restituire al cessionario quanto ricevuto a titolo di finanziamento ed il contratto non verrà sciolto prima dell'avvenuta restituzione in unica soluzione della somma corrispondente al netto ricavo dell'operazione. Nel caso il contratto abbia avuto esecuzione, entro 30 giorni dall'invio della comunicazione sopra indicata, il cliente restituirà l'importo liquidato maggiorato degli interessi maturati fino al momento della restituzione, calcolati al tan indicato nel contratto, nonché le somme non ripetibili quali il bollo sul contratto.</TD>
+</TR>
+<TR>
+<TD WIDTH=27%>Lingua</TD>
+<TD WIDTH=73%>Le informazioni sul contratto saranno comunicate in ITALIANO. Con l'accordo del consumatore, il finanziatore intende comunicare in ITALIANO nel corso del rapporto contrattuale.</TD>
+</TR>
+<TR>
+<TD WIDTH=27%>c)  Reclami e ricorsi</TD>
+<TD WIDTH=73%></TD>
+</TR>
+<TR>
+<TD WIDTH=27%>Strumenti di tutela stragiudiziale e modalità per accedervi.</TD>
+<TD WIDTH=73%>Ogni cliente può presentare reclamo a Sigla Srl - Ufficio Reclami - via Cesare Battisti, 5/a 31015 Conegliano TV, mediante raccomandata A/R, posta ordinaria, e-mail: reclami@siglafinanziamenti.it, PEC: siglacredit.assistenzaclienti@pec.it, fax 0438/45926. Come indicato nella Guida ai diritti del Cliente, ogni cliente ha diritto, in caso di reclamo, a ricevere risposta dall'Intermediario entro 30 giorni. Se il cliente non è soddisfatto o non ha ricevuto risposta entro i 30 giorni, prima di ricorrere al giudice può rivolgersi a: a) Arbitro Bancario Finanziario (ABF), nella sede più vicina al suo domicilio (Segreteria tecnica di: Milano Via Cordusio, 5-20123
+Milano - Tel. 02 72424246; Roma Via Venti Settembre, 97/e - 00187 Roma - Tel. 06 47929235; Napoli Via Miguel Cervantes, 71 - 80133 Napoli - Tel: 081 7975350; Torino via Arsenale, 8 - 10121 - Torino - Tel. 011 5518590; Bologna Piazza Cavour, 6 - 40124 Bologna - Tel. 051 6430120; Bari Corso Cavour, 4 - 70121 Bari - Tel. 080 5731510; Palermo Via Cavour, 131/A - 90133 Palermo - Tel. 091 6074310), oppure presso le Filiali della Banca d'Italia,come ampiamente indicato nella Guida ai diritti del Cliente, che ha visionato e che è consultabile al sito www.arbitrobancariofinanziario.it . b) Conciliatore Bancario Finanziario. Se sorge una controversia con Sigla, il cliente può attivare una procedura di conciliazione che consiste nel tentativo di raggiungere un accordo con Sigla, grazie all'assistenza di un conciliatore indipendente. Detto tentativo sarà esperito, ai sensi e per gli effetti di quanto previsto dall'articolo 40, comma 6, del decreto legislativo 17 gennaio 2003 n.5, dall'Organismo di conciliazione bancarie, finanziarie e societarie - ADR, iscritto al n.3 del registro, tenuto dal Ministero della Giustizia, ex articolo 38 del dlg 17 gennaio 2003, n.5. Resta impregiudicata la facoltà di ricorrere all'autorità giudiziaria nel caso in cui la conciliazione si dovesse concludere senza il raggiungimento di un accordo. Per questo servizio è possibile rivolgersi al Conciliatore Bancario Finanziario (Organismo iscritto nel Registro tenuto dal Ministero della Giustizia), con sede a Roma, Via delle Botteghe Oscure 54, tel 06 674821, sito internet: www.conciliatorebancario.it.<BR>
+Qualora il cliente necessiti di assistenza, potrà rivolgersi all'ufficio conformità clienti di Sigla, a cui risponderà personale con un'adeguata e aggiornata conoscenza dei contratti di credito offerti, nonché dei diritti dei consumatori e delle regole previste dal T.U.B., al numero telefonico 0438-45990, oppure via fax al numero 0438-45926, oppure via email all'indirizzo: informazionisac@siglafinanziamenti.it oppure, potrà rivolgersi all'intermediario del credito, per ottenere gratuitamente spiegazioni aventi ad oggetto: - la documentazione precontrattuale fornitagli; - le caratteristiche essenziali del prodotto offerto; - gli effetti che possono derivargli dalla conclusione del contratto, in termini di obblighi economici e conseguenze del mancato pagamento. Resta inteso che il cliente ha diritto di ricevere in qualsiasi
+momento del rapporto, su sua richiesta e senza spese, una tabella di ammortamento. Inoltre, ogni cliente potrà verificare preventivamente tramite Monitorata (disponibile presso l'intermediario del credito a cui si è rivolto oppure nel sito www.siglacredit.it) se le Sue entrate ed uscite mensili attuali siano compatibili con la rata che dovrà pagare. Monitorata è uno strumento di analisi sofisticato che, del tutto gratuitamente, viene messo a disposizione dei clienti per aiutarli a prendere decisioni importanti. Monitorata fornisce un quadro preciso della situazione del cliente e lo consiglia se procedere o meno con la sottoscrizione di un ulteriore finanziamento.
+</TD>
+</TR>
+
+</TABLE>
+
+</BODY>
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\SECCIPRV##DOCQS274##01_04_04.png" BACKGROUND X=4 Y=1.85 SCALE=25>
+</PDF>
+</then>
+</if>

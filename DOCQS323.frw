@@ -1,0 +1,17 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize9">
+<include file="\INCLUDE\Percorsi.frw">
+
+<BODY>
+<PDFPAGE SRC="DOCQS323.PDF" ALLPAGES SHOWONCE NOFIRSTBREAK>
+
+<TEXT X=5 Y=2.5><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs></TEXT>
+<TEXT X=10.5 Y=2.5>SIGLA SRL</TEXT>
+
+<TEXT X=1.0 Y=3.5><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></TEXT>
+<TEXT X=8.8 Y=3.5><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs></TEXT>
+
+<TEXT X=3.5 Y=8.6>Conegliano, <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></TEXT>
+
+</BODY>
+</PDF>

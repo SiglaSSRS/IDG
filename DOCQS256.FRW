@@ -1,0 +1,193 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8">
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasiglasx_1">
+<TABLE>
+	<TR>
+		<TD WIDTH=70% ALIGN=R></TD>
+		<TD WIDTH=30% ALIGN=R SIZE=6.5>Pratica:<valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs></TD>
+	</TR>	
+</TABLE>			
+</HEADER>
+<FOOTER>
+<include file="\INCLUDE\IncludedStruttura.frw" value="footercartaintestatalegale">
+</FOOTER>
+<BODY>
+<TEXT LINESPACE=0.5>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=100% ALIGN=R SIZE=14 FCOLOR="BLUE"><B>CONTO DEL RESIDUO DEBITO</B></TD>
+</TR>
+<TR>
+<TD WIDTH=100% ALIGN=R SIZE=4 FCOLOR="BLUE"><B>____________________________________________________________________________________________________________________________________________________________</B></TD>
+</TR>
+</TABLE>
+
+<BR><BR>
+Conegliano, lì <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>Spettabile</TD>
+</TR>
+<TR>
+<TD WIDTH=25%><if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDANAFIN</valueabs>==12001691</ifcond><then>____________________________________</then></if></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_ANA_LAVP</valueabs>==40007202</ifcond><then><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAVP</valueabs></then><else><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs></else></if></TD>
+</TR>
+<TR>
+<TD WIDTH=25%><if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDANAFIN</valueabs>==12001691</ifcond><then>Firma per accettazione</then></if></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_ANA_LAVP</valueabs>==40007202</ifcond><then><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_LAVP</valueabs><else><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_LAV</valueabs></else></if></TD>
+</TR>
+<TR>
+<TD WIDTH=25%><if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDANAFIN</valueabs>==12001691</ifcond><then>____________________________________</then></if></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_ANA_LAVP</valueabs>==40007202</ifcond><then><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_LAVP</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_LAVP</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_LAVP</valueabs>)<else><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_LAV</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_LAV</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_LAV</valueabs>)</else></if></TD>
+</TR>
+<TR>
+<TD WIDTH=25%><if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDANAFIN</valueabs>==12001691</ifcond><then>Luogo e data</then></if></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+<TEXT ALIGN=J LINESPACE=0.5>
+<B>Oggetto:</B> conto del residuo debito<BR>
+<B>Cliente:</B> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> (c.f. <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs>)<BR>
+<B>Amministrazione:</B> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_STATOGIUR</valueabs><BR>
+<B>Data di decorrenza:</B> <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATATT</valueabs><BR>
+<BR><BR>
+Con riferimento alla vostra richiesta, Vi rimettiamo il seguente conto del residuo debito, con chiusura al <valueabs>IDGFESSN0F/RECORD/IDGFESSN_DATAFIN</valueabs>.<BR>
+<BR>
+<TABLE WIDTH=100% BORDER=0.3>
+<TR>
+<TD WIDTH=70%>Il residuo debito risulta così costituito:</TD>
+<TD WIDTH=30% ALIGN=R></TD>
+</TR>
+<TR>
+<TD WIDTH=70%>N° <valueabs>IDGFESSN0F/RECORD/IDGFESSN_NRATE</valueabs> quote da &euro <valueabs>IDGFESSN0F/RECORD/IDGFESSN_IMPRATA</valueabs> <if><ifcond><valueabs>IDGFESSN0F/RECORD/IDGFESSN_NRATINA</valueabs>!=0</ifcond><then> + n° <valueabs>IDGFESSN0F/RECORD/IDGFESSN_NRATINA</valueabs> rata/e da &euro <valueabs>IDGFESSN0F/RECORD/IDGFESSN_IMPRATINA</valueabs></then></if></TD>
+<TD WIDTH=30% ALIGN=R>&euro <valueabs>IDGFESSN0F/RECORD/IDGFESSN_MONTANTE</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=70%>Quote scadute: <valueabs>IDGFESSN0F/RECORD/IDGFESSN_NUMQTSCAD</valueabs> (*)</TD>
+<TD WIDTH=30% ALIGN=R>- &euro <valueabs>IDGFESSN0F/RECORD/IDGFESSN_IMPQTSCAD</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=70%> </TD>
+<TD WIDTH=30% ALIGN=R> </TD>
+</TR>
+<TR>
+<TD WIDTH=70%>Quote residue: <valueabs>IDGFESSN0F/RECORD/IDGFESSN_NUMQTASCA</valueabs></TD>
+<TD WIDTH=30% ALIGN=R>&euro <valueabs>IDGFESSN0F/RECORD/IDGFESSN_IMPRESDIFF</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=70%>Abbuono interessi per pagamento anticipato da <valueabs>IDGFESSN0F/RECORD/IDGFESSN_INTFUTDA</valueabs> a <valueabs>IDGFCTR00F/RECORD/IDGFCTR_ULT_SCAD</valueabs> al tasso del <valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTAN</valueabs> %</TD>
+<TD WIDTH=30% ALIGN=R>- &euro <valueabs>IDGFESSN0F/RECORD/IDGFESSN_INTFUT</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=70%>Abbuono commissioni 	e provvigioni non dovuti (se valorizzati in contratto):<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDANAFIN</valueabs>==12001691</ifcond><then> COMMISSIONI BANCA APULIA</then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDANAFIN</valueabs>==12002220</ifcond><then> COMMISSIONI BANCA FINECO</then></if></TD>
+<TD WIDTH=30% ALIGN=R>- &euro <valueabs>IDGFESSN0F/RECORD/IDGFESSN_IMCOMMBA</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=70%>Abbuono spese per rata (se valorizzati in contratto):COMMISSIONI SIGLA</TD>
+<TD WIDTH=30% ALIGN=R>- &euro <if><ifcond><valueabs>IDGFESSN0F/RECORD/IDGFESSN_IMCOMM</valueabs>!=0</ifcond><then><valueabs>IDGFESSN0F/RECORD/IDGFESSN_IMCOMM</valueabs></then><else><valueabs>IDGFESSN0F/RECORD/IDGFESSN_SPINCFIN</valueabs></else></if></TD>
+</TR>
+<TR>
+<TD WIDTH=70%>Abbuono costi fissi non maturati (se valorizzati in contratto):</TD>
+<TD WIDTH=30% ALIGN=R>- &euro <valueabs>IDGFESSN0F/RECORD/IDGFESSN_IMPFISSI</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=70% ALIGN=R><B><I>Residuo debito:</I></B></TD>
+<TD WIDTH=30% ALIGN=R><B>&euro <valueabs>IDGFESSN0F/RECORD/IDGFESSN_RESNETTO</valueabs></B></TD>
+</TR>
+<TR>
+<TD WIDTH=70%>Quote insolute:<BR><FONT SIZE=6.5>
+<loop>
+	<loopda>1</loopda>
+	<looproot>IDGFESND0F/RECORD</looproot>
+		<if><ifcond><value>IDGFESND_SALDO</value>>0</ifcond><and><ifcond><value>IDGFESND_DMACROCAUSAL</value>==Quota </ifcond>
+		<then>
+		<value>IDGFESND_DSCAD</value> / 
+		</if>	
+</loop>
+</TD>
+<TD WIDTH=30% ALIGN=R>&euro <valueabs>IDGFESSN0F/RECORD/IDGFESSN_SLDINS</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=70%>Quote accodate:<BR><FONT SIZE=6.5>
+<loop>
+	<loopda>1</loopda>
+	<looproot>IDGFESND0F/RECORD</looproot>
+		<if><ifcond><value>IDGFESND_SALDO</value>>0</ifcond><and><ifcond><value>IDGFESND_DMACROCAUSAL</value>==Quota accodata </ifcond>
+		<then>
+		<value>IDGFESND_DSCAD</value> / 
+		</if>	
+</loop>
+</TD>
+<TD WIDTH=30% ALIGN=R>&euro <valueabs>IDGFESSN0F/RECORD/IDGFESSN_SLDACC</valueabs></TD>
+</TR><TR>
+<TD WIDTH=70%>Interessi di mora accumulati:</TD>
+<TD WIDTH=30% ALIGN=R>&euro <valueabs>IDGFESSN0F/RECORD/IDGFESSN_SLDMORA</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=70%>Commissioni su estinzione anticipata: <valueabs>IDGFESSN0F/RECORD/IDGFESSN_PRCPENALE</valueabs> %</TD>
+<TD WIDTH=30% ALIGN=R>&euro <valueabs>IDGFESSN0F/RECORD/IDGFESSN_TOTIMPENAL</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=70%>TFR da decurtare:</TD>
+<TD WIDTH=30% ALIGN=R></TD>
+</TR>
+<TR>
+<TD WIDTH=70%>Quote da decurtare pari a:</TD>
+<TD WIDTH=30% ALIGN=R></TD>
+</TR>
+<TR>
+<TD WIDTH=70% ALIGN=R><B>Importo da versare:</B></TD>
+<TD WIDTH=30% ALIGN=R><B>&euro <valueabs>IDGFESSN0F/RECORD/IDGFESSN_TOTEST</valueabs></B></TD>
+</TR>
+</TABLE>
+<BR><BR>
+<BR><BR>
+Il versamento verrà eseguito a mezzo di:<BR>
+[_] Bonifico bancario su Intesa Sanpaolo, IBAN IT33F0306912711100000012667 intestato a Sigla S.r.l.<BR>
+[_] Bonifico Postale n° 000073807760, CAB: 12000, ABI: 07601, CIN: G, IBAN: IT53G0760112000000073807760 intestato a Sigla S.r.l.<BR>
+[_] Assegno circolare non trasferibile intestato a Sigla S.r.l.<BR>
+<BR>
+<BR>
+<BR>
+A tale somma vanno aggiunti gli interessi al tasso del <valueabs>IDGFESSN0F/RECORD/IDGFESSN_TXMORA</valueabs> % partendo dal primo giorno successivo alla data di chiusura del conteggio <valueabs>IDGFESSN0F/RECORD/IDGFESSN_DATAFIN</valueabs> a tutto il mese dell'effettivo pagamento, pari a
+&euro <valueabs>IDGFESSN0F/RECORD/IDGFESSN_IMPDIETI30</valueabs> per ciascun mese o frazione.<BR>
+N.B.: dalla somma dovuta non vanno sottratte le quote insolute<BR><BR><BR><BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD ALIGN="R" WIDTH=100%><B>Sigla S.r.l.                     </B></TD>
+</TR>
+</TABLE>
+</TEXT>
+<IMG SRC="<valueabs>Immagini/MAZZER/Path</valueabs><valueabs>Immagini/MAZZER/Nome</valueabs>" BACKGROUND X=14.5 Y=26 SCALE=15>
+<TEXT>
+<BR>
+<BR>
+<if><ifcond><valueabs>IDGFESSN0F/RECORD/IDGFESSN_FLG_25</valueabs><in>(0,1)</ifcond><then>(*) Con riferimento all'art 39, comma 1 del DPR n. 180 del 1950 il presente contratto risulta essere rinnovabile.</then>
+<else>(*) Con riferimento all'art 39, comma 1 del DPR n. 180 del 1950 il presente contratto sarà rinnovabile allo scadere della 
+<if><ifcond><valueabs>IDGFESSN0F/RECORD/IDGFESSN_NRATE</valueabs>==36</ifcond><then>15</then></if>
+<if><ifcond><valueabs>IDGFESSN0F/RECORD/IDGFESSN_NRATE</valueabs>==48</ifcond><then>20</then></if>
+<if><ifcond><valueabs>IDGFESSN0F/RECORD/IDGFESSN_NRATE</valueabs>==60</ifcond><then>24</then></if>
+<if><ifcond><valueabs>IDGFESSN0F/RECORD/IDGFESSN_NRATE</valueabs>==72</ifcond><then>29</then></if>
+<if><ifcond><valueabs>IDGFESSN0F/RECORD/IDGFESSN_NRATE</valueabs>==84</ifcond><then>34</then></if>
+<if><ifcond><valueabs>IDGFESSN0F/RECORD/IDGFESSN_NRATE</valueabs>==96</ifcond><then>39</then></if>
+<if><ifcond><valueabs>IDGFESSN0F/RECORD/IDGFESSN_NRATE</valueabs>==108</ifcond><then>44</then></if>
+<if><ifcond><valueabs>IDGFESSN0F/RECORD/IDGFESSN_NRATE</valueabs>==120</ifcond><then>48</then></if>
+ ° rata.</else></if>
+</TEXT>
+</BODY>
+</PDF>

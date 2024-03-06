@@ -1,0 +1,642 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize8.5">
+<HEADER>
+<TEXT ALIGN=J SIZE=7>COPIA Cliente</TEXT> 
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3_1">
+</HEADER>
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestatalegale2">
+</FOOTER>	
+
+<BODY>
+
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=60%></TD>
+<TD WIDTH=40%><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond>
+<then><B>Egr. Sig.<else>Gent.le Sig.ra</if></B> [DIF.FND/PP<valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>]<br>
+<B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs> - <U><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs></U> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs>)
+</B><br>
+</TD>
+</TR>
+<BR><BR><BR>
+<TR>
+<TD WIDTH=60%><br><br><br><br></TD>
+<TD WIDTH=40%>Spett.le [DIF.FND/PP<valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>]<br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRRAGSOC</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRINDIR</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRCAP</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRLOCAL</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRPROV</valueabs>)
+<br>
+</TD>
+</TR>
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDANATFR2</valueabs>!= </ifcond><then>
+<BR><BR><BR>
+<TR>
+<TD WIDTH=60%><br><br><br><br></TD>
+<TD WIDTH=40%>Spett.le [DIF.FND/PP<valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>]<br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRRAGSOC2</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRINDIR2</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRCAP2</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRLOCAL2</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRPROV2</valueabs>)
+<br>
+</TD>
+</TR>
+</then></if>
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDANATFR3</valueabs>!= </ifcond><then>
+<BR><BR><BR>
+<TR>
+<TD WIDTH=60%><br><br><br><br></TD>
+<TD WIDTH=40%>Spett.le [DIF.FND/PP<valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>]<br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRRAGSOC3</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRINDIR3</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRCAP3</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRLOCAL3</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRPROV3</valueabs>)
+<br>
+</TD>
+</TR>
+</then></if>
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDANATFR4</valueabs>!= </ifcond><then>
+<BR><BR><BR>
+<TR>
+<TD WIDTH=60%><br><br><br><br></TD>
+<TD WIDTH=40%>Spett.le [DIF.FND/PP<valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>]<br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRRAGSOC4</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRINDIR4</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRCAP4</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRLOCAL4</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRPROV4</valueabs>)
+<br>
+</TD>
+</TR>
+</then></if>
+</TABLE>
+<text>Raccomandata A.R.</text>
+<BR><BR><TEXT ALIGN=J>
+Conegliano, <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs> 
+<BR><BR><BR>
+<B>OGGETTO:</B> <U><if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==DEL</ifcond>
+<then>Contratto di delegazione di pagamento</then>
+</if>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>!=</ifcond>
+<then>Contratto di mutuo contro cessione del quinto dello stipendio</then>
+</if>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>==</ifcond>
+<then>Contratto di mutuo contro cessione del quinto della pensione</then>
+</if>, sottoscritto tra Sigla s.r.l. e <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> in data <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTR</valueabs> Rif. pratica n° <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>. Diffida pagamento TFR.</U><BR>
+<BR><BR>
+Con riferimento al contratto in oggetto, verificatasi la risoluzione del rapporto di lavoro subordinato a far data dal 
+<if><ifcond><valueabs>IDGFSIN_DATA_CARICAM</valueabs>!=12/09/1973</ifcond><and><ifcond><valueabs>IDGFSIN_DATA_CARICAM</valueabs>!=01/01/2000</ifcond><then><valueabs>IDGFSIN_DATA_CARICAM</valueabs></if>
+, sollecitiamo il versamento del Tfr del Vostro aderente <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>.
+
+<BR><BR>
+<if><ifcond><valueabs>IDGFSIN00F/RECORD/IDGFSIN_IMP_ULT_NO_QUS</valueabs>>0</ifcond><then>
+Alleghiamo alla presente conteggio di residuo debito dell'aderente, <b><u>aggiornato a seguito del versamento delle competenze di fine rapporto effettuato dall’ex datore di lavoro</u></b> per € <valueabs>IDGFSIN00F/RECORD/IDGFSIN_TFR_TOT</valueabs>.
+</then><else>
+Precisiamo che nulla ci è stato versato dalla società terza ceduta perché il TFR risulta tutto accantonato presso di Voi.
+</if>
+<BR><BR>
+Alla luce di quanto sopra il residuo debito dell'aderente, ad oggi, ammonta da € <valueabs>IDGFESSN0F/RECORD/IDGFESSN_TOTEST</valueabs>.
+<BR><BR>
+Chiediamo, altresì, specifica dell'entità della somma di ns. spettanza e tempistiche per la liquidazione della stessa.
+<BR><BR>
+Il versamento potrà essere effettuato con bonifico sul c/c bancario nr 100000012667 ABI 3069 CAB 12711 CIN F intestato a SIGLA s.r.l. - IBAN – IT33F0306912711100000012667.
+<BR><BR>
+</TEXT>
+<TEXT ALIGN=C>
+<b>causale: contr. di mutuo contro cessione del quinto dello stipendio – rif.n° <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>.</b>
+<BR><BR>
+</TEXT>
+<TEXT ALIGN=J>
+Certi della Vs. collaborazione ed in attesa di un Vs. cortese e sollecito riscontro porgiamo cordiali saluti.
+<BR><BR>
+</TEXT>
+<TEXT X=14.15 Y=21><I><B>SIGLA S.R.L.</B></I><BR></TEXT>
+<TEXT X=13 Y=21.5><I><B>Ufficio Sinistri e Legale CQS</B></I></TEXT>
+<IMG SRC="<valueabs>Immagini/MAZZER/Path</valueabs><valueabs>Immagini/MAZZER/Nome</valueabs>" BACKGROUND X=13 Y=23.5 SCALE=15>
+<TEXT ALIGN=J>
+<BR><BR>
+In all.:<BR>
+-	Conto del residuo debito al <valueabs>IDGFESSN0F/RECORD/IDGFESSN_DATAFIN</valueabs><BR>
+</TEXT>
+</BODY>
+</PDF>
+
+
+
+
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize8.5">
+<HEADER>
+<TEXT ALIGN=J SIZE=7>COPIA Fondo</TEXT> 
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3_1">
+</HEADER>
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestatalegale2">
+</FOOTER>	
+
+<BODY>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=60%><br><br><br><br></TD>
+<TD WIDTH=40%><B>Spett.le</B> [DIF.FND/PP<valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>]<br>
+<B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRRAGSOC</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRINDIR</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRCAP</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRLOCAL</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRPROV</valueabs>)</B>
+<br>
+</TD>
+</TR>
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDANATFR2</valueabs>!= </ifcond><then>
+<BR><BR><BR>
+<TR>
+<TD WIDTH=60%><br><br><br><br></TD>
+<TD WIDTH=40%>Spett.le [DIF.FND/PP<valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>]<br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRRAGSOC2</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRINDIR2</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRCAP2</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRLOCAL2</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRPROV2</valueabs>)
+<br>
+</TD>
+</TR>
+</then></if>
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDANATFR3</valueabs>!= </ifcond><then>
+<BR><BR><BR>
+<TR>
+<TD WIDTH=60%><br><br><br><br></TD>
+<TD WIDTH=40%>Spett.le [DIF.FND/PP<valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>]<br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRRAGSOC3</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRINDIR3</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRCAP3</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRLOCAL3</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRPROV3</valueabs>)
+<br>
+</TD>
+</TR>
+</then></if>
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDANATFR4</valueabs>!= </ifcond><then>
+<BR><BR><BR>
+<TR>
+<TD WIDTH=60%><br><br><br><br></TD>
+<TD WIDTH=40%>Spett.le [DIF.FND/PP<valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>]<br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRRAGSOC4</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRINDIR4</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRCAP4</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRLOCAL4</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRPROV4</valueabs>)
+<br>
+</TD>
+</TR>
+</then></if>
+<BR><BR><BR>
+<TR>
+<TD WIDTH=60%></TD>
+<TD WIDTH=40%><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond>
+<then>Egr. Sig.<else>Gent.le Sig.ra</if> [DIF.FND/PP<valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>]<br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs> - <U><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs></U> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs>)
+<br>
+</TD>
+</TR>
+
+</TABLE>
+<text>Raccomandata A.R.</text>
+<BR><BR><TEXT ALIGN=J>
+Conegliano, <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs> 
+<BR><BR><BR>
+<B>OGGETTO:</B> <U><if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==DEL</ifcond>
+<then>Contratto di delegazione di pagamento</then>
+</if>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>!=</ifcond>
+<then>Contratto di mutuo contro cessione del quinto dello stipendio</then>
+</if>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>==</ifcond>
+<then>Contratto di mutuo contro cessione del quinto della pensione</then>
+</if>, sottoscritto tra Sigla s.r.l. e <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> in data <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTR</valueabs> Rif. pratica n° <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>. Diffida pagamento TFR.</U><BR>
+<BR><BR>
+Con riferimento al contratto in oggetto, verificatasi la risoluzione del rapporto di lavoro subordinato a far data dal 
+<if><ifcond><valueabs>IDGFSIN_DATA_CARICAM</valueabs>!=12/09/1973</ifcond><and><ifcond><valueabs>IDGFSIN_DATA_CARICAM</valueabs>!=01/01/2000</ifcond><then><valueabs>IDGFSIN_DATA_CARICAM</valueabs></if>
+, sollecitiamo il versamento del Tfr del Vostro aderente <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>.
+
+<BR><BR>
+<if><ifcond><valueabs>IDGFSIN00F/RECORD/IDGFSIN_IMP_ULT_NO_QUS</valueabs>>0</ifcond><then>
+Alleghiamo alla presente conteggio di residuo debito dell'aderente, <b><u>aggiornato a seguito del versamento delle competenze di fine rapporto effettuato dall’ex datore di lavoro</u></b> per € <valueabs>IDGFSIN00F/RECORD/IDGFSIN_TFR_TOT</valueabs>.
+</then><else>
+Precisiamo che nulla ci è stato versato dalla società terza ceduta perché il TFR risulta tutto accantonato presso di Voi.
+</if>
+<BR><BR>
+Alla luce di quanto sopra il residuo debito dell'aderente, ad oggi, ammonta da € <valueabs>IDGFESSN0F/RECORD/IDGFESSN_TOTEST</valueabs>.
+<BR><BR>
+Chiediamo, altresì, specifica dell'entità della somma di ns. spettanza e tempistiche per la liquidazione della stessa.
+<BR><BR>
+Il versamento potrà essere effettuato con bonifico sul c/c bancario nr 100000012667 ABI 3069 CAB 12711 CIN F intestato a SIGLA s.r.l. - IBAN – IT33F0306912711100000012667.
+<BR><BR>
+</TEXT>
+<TEXT ALIGN=C>
+<b>causale: contr. di mutuo contro cessione del quinto dello stipendio – rif.n° <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>.</b>
+<BR><BR>
+</TEXT>
+<TEXT ALIGN=J>
+Certi della Vs. collaborazione ed in attesa di un Vs. cortese e sollecito riscontro porgiamo cordiali saluti.
+<BR><BR>
+</TEXT>
+<TEXT X=14.15 Y=21><I><B>SIGLA S.R.L.</B></I><BR></TEXT>
+<TEXT X=13 Y=21.5><I><B>Ufficio Sinistri e Legale CQS</B></I></TEXT>
+<IMG SRC="<valueabs>Immagini/MAZZER/Path</valueabs><valueabs>Immagini/MAZZER/Nome</valueabs>" BACKGROUND X=13 Y=23.5 SCALE=15>
+<TEXT ALIGN=J>
+<BR><BR>
+In all.:<BR>
+-	Conto del residuo debito al <valueabs>IDGFESSN0F/RECORD/IDGFESSN_DATAFIN</valueabs><BR>
+</TEXT>
+</BODY>
+</PDF>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRRAGSOC2</valueabs>!= </ifcond><then>
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize8.5">
+<HEADER>
+<TEXT ALIGN=J SIZE=7>COPIA Fondo</TEXT> 
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3_1">
+</HEADER>
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestatalegale2">
+</FOOTER>	
+
+<BODY>
+<TABLE WIDTH=100%>
+
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDANATFR2</valueabs>!= </ifcond><then>
+<TR>
+<TD WIDTH=60%><br><br><br><br></TD>
+<TD WIDTH=40%><B>Spett.le</B> [DIF.FND/PP<valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>]<br>
+<B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRRAGSOC2</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRINDIR2</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRCAP2</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRLOCAL2</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRPROV2</valueabs>)</B>
+<br>
+</TD>
+</TR><BR><BR><BR>
+</then></if>
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDANATFR3</valueabs>!= </ifcond><then>
+<BR><BR><BR>
+<TR>
+<TD WIDTH=60%><br><br><br><br></TD>
+<TD WIDTH=40%>Spett.le [DIF.FND/PP<valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>]<br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRRAGSOC3</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRINDIR3</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRCAP3</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRLOCAL3</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRPROV3</valueabs>)
+<br>
+</TD>
+</TR>
+</then></if>
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDANATFR4</valueabs>!= </ifcond><then>
+<BR><BR><BR>
+<TR>
+<TD WIDTH=60%><br><br><br><br></TD>
+<TD WIDTH=40%>Spett.le [DIF.FND/PP<valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>]<br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRRAGSOC4</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRINDIR4</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRCAP4</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRLOCAL4</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRPROV4</valueabs>)
+<br>
+</TD>
+</TR><BR><BR><BR>
+</then></if>
+<TR>
+<TD WIDTH=60%><br><br><br><br></TD>
+<TD WIDTH=40%>Spett.le [DIF.FND/PP<valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>]<br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRRAGSOC</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRINDIR</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRCAP</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRLOCAL</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRPROV</valueabs>)
+<br>
+</TD>
+</TR>
+<BR><BR><BR>
+<TR>
+<TD WIDTH=60%></TD>
+<TD WIDTH=40%><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond>
+<then>Egr. Sig.<else>Gent.le Sig.ra</if> [DIF.FND/PP<valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>]<br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs> - <U><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs></U> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs>)
+<br>
+</TD>
+</TR>
+
+</TABLE>
+<text>Raccomandata A.R.</text>
+<BR><BR><TEXT ALIGN=J>
+Conegliano, <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs> 
+<BR><BR><BR>
+<B>OGGETTO:</B> <U><if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==DEL</ifcond>
+<then>Contratto di delegazione di pagamento</then>
+</if>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>!=</ifcond>
+<then>Contratto di mutuo contro cessione del quinto dello stipendio</then>
+</if>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>==</ifcond>
+<then>Contratto di mutuo contro cessione del quinto della pensione</then>
+</if>, sottoscritto tra Sigla s.r.l. e <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> in data <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTR</valueabs> Rif. pratica n° <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>. Diffida pagamento TFR.</U><BR>
+<BR><BR>
+Con riferimento al contratto in oggetto, verificatasi la risoluzione del rapporto di lavoro subordinato a far data dal 
+<if><ifcond><valueabs>IDGFSIN_DATA_CARICAM</valueabs>!=12/09/1973</ifcond><and><ifcond><valueabs>IDGFSIN_DATA_CARICAM</valueabs>!=01/01/2000</ifcond><then><valueabs>IDGFSIN_DATA_CARICAM</valueabs></if>
+, sollecitiamo il versamento del Tfr del Vostro aderente <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>.
+
+<BR><BR>
+<if><ifcond><valueabs>IDGFSIN00F/RECORD/IDGFSIN_IMP_ULT_NO_QUS</valueabs>>0</ifcond><then>
+Alleghiamo alla presente conteggio di residuo debito dell'aderente, <b><u>aggiornato a seguito del versamento delle competenze di fine rapporto effettuato dall’ex datore di lavoro</u></b> per € <valueabs>IDGFSIN00F/RECORD/IDGFSIN_TFR_TOT</valueabs>.
+</then><else>
+Precisiamo che nulla ci è stato versato dalla società terza ceduta perché il TFR risulta tutto accantonato presso di Voi.
+</if>
+<BR><BR>
+Alla luce di quanto sopra il residuo debito dell'aderente, ad oggi, ammonta da € <valueabs>IDGFESSN0F/RECORD/IDGFESSN_TOTEST</valueabs>.
+<BR><BR>
+Chiediamo, altresì, specifica dell'entità della somma di ns. spettanza e tempistiche per la liquidazione della stessa.
+<BR><BR>
+Il versamento potrà essere effettuato con bonifico sul c/c bancario nr 100000012667 ABI 3069 CAB 12711 CIN F intestato a SIGLA s.r.l. - IBAN – IT33F0306912711100000012667.
+<BR><BR>
+</TEXT>
+<TEXT ALIGN=C>
+<b>causale: contr. di mutuo contro cessione del quinto dello stipendio – rif.n° <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>.</b>
+<BR><BR>
+</TEXT>
+<TEXT ALIGN=J>
+Certi della Vs. collaborazione ed in attesa di un Vs. cortese e sollecito riscontro porgiamo cordiali saluti.
+<BR><BR>
+</TEXT>
+<TEXT X=14.15 Y=21><I><B>SIGLA S.R.L.</B></I><BR></TEXT>
+<TEXT X=13 Y=21.5><I><B>Ufficio Sinistri e Legale CQS</B></I></TEXT>
+<IMG SRC="<valueabs>Immagini/MAZZER/Path</valueabs><valueabs>Immagini/MAZZER/Nome</valueabs>" BACKGROUND X=13 Y=23.5 SCALE=15>
+<TEXT ALIGN=J>
+<BR><BR>
+In all.:<BR>
+-	Conto del residuo debito al <valueabs>IDGFESSN0F/RECORD/IDGFESSN_DATAFIN</valueabs><BR>
+</TEXT>
+</BODY>
+</PDF>
+</then>
+</if>
+
+
+
+
+
+
+
+
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRRAGSOC3</valueabs>!= </ifcond><then>
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize8.5">
+<HEADER>
+<TEXT ALIGN=J SIZE=7>COPIA Fondo</TEXT> 
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3_1">
+</HEADER>
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestatalegale2">
+</FOOTER>	
+
+<BODY>
+<TABLE WIDTH=100%>
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDANATFR3</valueabs>!= </ifcond><then>
+<TR>
+<TD WIDTH=60%><br><br><br><br></TD>
+<TD WIDTH=40%><B>Spett.le</B> [DIF.FND/PP<valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>]<br>
+<B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRRAGSOC3</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRINDIR3</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRCAP3</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRLOCAL3</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRPROV3</valueabs>)</B>
+<br>
+</TD>
+</TR><BR><BR><BR>
+</then></if>
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDANATFR4</valueabs>!= </ifcond><then>
+<TR>
+<TD WIDTH=60%><br><br><br><br></TD>
+<TD WIDTH=40%>Spett.le [DIF.FND/PP<valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>]<br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRRAGSOC4</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRINDIR4</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRCAP4</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRLOCAL4</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRPROV4</valueabs>)
+<br>
+</TD>
+</TR><BR><BR><BR>
+</then></if>
+<TR>
+<TD WIDTH=60%><br><br><br><br></TD>
+<TD WIDTH=40%>Spett.le [DIF.FND/PP<valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>]<br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRRAGSOC</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRINDIR</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRCAP</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRLOCAL</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRPROV</valueabs>)
+<br>
+</TD>
+</TR>
+<BR><BR><BR>
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDANATFR2</valueabs>!= </ifcond><then>
+<TR>
+<TD WIDTH=60%><br><br><br><br></TD>
+<TD WIDTH=40%>Spett.le [DIF.FND/PP<valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>]<br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRRAGSOC2</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRINDIR2</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRCAP2</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRLOCAL2</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRPROV2</valueabs>)
+<br>
+</TD>
+</TR><BR><BR><BR>
+</then></if>
+<TR>
+<TD WIDTH=60%></TD>
+<TD WIDTH=40%><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond>
+<then>Egr. Sig.<else>Gent.le Sig.ra</if> [DIF.FND/PP<valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>]<br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs> - <U><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs></U> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs>)
+<br>
+</TD>
+</TR>
+
+</TABLE>
+<text>Raccomandata A.R.</text>
+<BR><BR><TEXT ALIGN=J>
+Conegliano, <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs> 
+<BR><BR><BR>
+<B>OGGETTO:</B> <U><if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==DEL</ifcond>
+<then>Contratto di delegazione di pagamento</then>
+</if>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>!=</ifcond>
+<then>Contratto di mutuo contro cessione del quinto dello stipendio</then>
+</if>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>==</ifcond>
+<then>Contratto di mutuo contro cessione del quinto della pensione</then>
+</if>, sottoscritto tra Sigla s.r.l. e <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> in data <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTR</valueabs> Rif. pratica n° <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>. Diffida pagamento TFR.</U><BR>
+<BR><BR>
+Con riferimento al contratto in oggetto, verificatasi la risoluzione del rapporto di lavoro subordinato a far data dal 
+<if><ifcond><valueabs>IDGFSIN_DATA_CARICAM</valueabs>!=12/09/1973</ifcond><and><ifcond><valueabs>IDGFSIN_DATA_CARICAM</valueabs>!=01/01/2000</ifcond><then><valueabs>IDGFSIN_DATA_CARICAM</valueabs></if>
+, sollecitiamo il versamento del Tfr del Vostro aderente <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>.
+
+<BR><BR>
+<if><ifcond><valueabs>IDGFSIN00F/RECORD/IDGFSIN_IMP_ULT_NO_QUS</valueabs>>0</ifcond><then>
+Alleghiamo alla presente conteggio di residuo debito dell'aderente, <b><u>aggiornato a seguito del versamento delle competenze di fine rapporto effettuato dall’ex datore di lavoro</u></b> per € <valueabs>IDGFSIN00F/RECORD/IDGFSIN_TFR_TOT</valueabs>.
+</then><else>
+Precisiamo che nulla ci è stato versato dalla società terza ceduta perché il TFR risulta tutto accantonato presso di Voi.
+</if>
+<BR><BR>
+Alla luce di quanto sopra il residuo debito dell'aderente, ad oggi, ammonta da € <valueabs>IDGFESSN0F/RECORD/IDGFESSN_TOTEST</valueabs>.
+<BR><BR>
+Chiediamo, altresì, specifica dell'entità della somma di ns. spettanza e tempistiche per la liquidazione della stessa.
+<BR><BR>
+Il versamento potrà essere effettuato con bonifico sul c/c bancario nr 100000012667 ABI 3069 CAB 12711 CIN F intestato a SIGLA s.r.l. - IBAN – IT33F0306912711100000012667.
+<BR><BR>
+</TEXT>
+<TEXT ALIGN=C>
+<b>causale: contr. di mutuo contro cessione del quinto dello stipendio – rif.n° <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>.</b>
+<BR><BR>
+</TEXT>
+<TEXT ALIGN=J>
+Certi della Vs. collaborazione ed in attesa di un Vs. cortese e sollecito riscontro porgiamo cordiali saluti.
+<BR><BR>
+</TEXT>
+<TEXT X=14.15 Y=21><I><B>SIGLA S.R.L.</B></I><BR></TEXT>
+<TEXT X=13 Y=21.5><I><B>Ufficio Sinistri e Legale CQS</B></I></TEXT>
+<IMG SRC="<valueabs>Immagini/MAZZER/Path</valueabs><valueabs>Immagini/MAZZER/Nome</valueabs>" BACKGROUND X=13 Y=23.5 SCALE=15>
+<TEXT ALIGN=J>
+<BR><BR>
+In all.:<BR>
+-	Conto del residuo debito al <valueabs>IDGFESSN0F/RECORD/IDGFESSN_DATAFIN</valueabs><BR>
+</TEXT>
+</BODY>
+</PDF>
+</then>
+</if>
+
+
+
+
+
+
+
+
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRRAGSOC4</valueabs>!= </ifcond><then>
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize8.5">
+<HEADER>
+<TEXT ALIGN=J SIZE=7>COPIA Fondo</TEXT> 
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3_1">
+</HEADER>
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestatalegale2">
+</FOOTER>	
+
+<BODY>
+<TABLE WIDTH=100%>
+
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDANATFR4</valueabs>!= </ifcond><then>
+<TR>
+<TD WIDTH=60%><br><br><br><br></TD>
+<TD WIDTH=40%><B>Spett.le</B> [DIF.FND/PP<valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>]<br>
+<B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRRAGSOC4</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRINDIR4</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRCAP4</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRLOCAL4</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRPROV4</valueabs>)</B>
+<br>
+</TD>
+</TR><BR><BR><BR>
+</then></if>
+<TR>
+<TD WIDTH=60%><br><br><br><br></TD>
+<TD WIDTH=40%>Spett.le [DIF.FND/PP<valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>]<br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRRAGSOC</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRINDIR</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRCAP</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRLOCAL</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRPROV</valueabs>)
+<br>
+</TD>
+</TR>
+<BR><BR><BR>
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDANATFR2</valueabs>!= </ifcond><then>
+<TR>
+<TD WIDTH=60%><br><br><br><br></TD>
+<TD WIDTH=40%>Spett.le [DIF.FND/PP<valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>]<br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRRAGSOC2</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRINDIR2</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRCAP2</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRLOCAL2</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRPROV2</valueabs>)
+<br>
+</TD>
+</TR><BR><BR><BR>
+</then></if>
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDANATFR3</valueabs>!= </ifcond><then>
+<TR>
+<TD WIDTH=60%><br><br><br><br></TD>
+<TD WIDTH=40%>Spett.le [DIF.FND/PP<valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>]<br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRRAGSOC3</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRINDIR3</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRCAP3</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRLOCAL3</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRPROV3</valueabs>)
+<br>
+</TD>
+</TR><BR><BR><BR>
+</then></if>
+<TR>
+<TD WIDTH=60%></TD>
+<TD WIDTH=40%><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond>
+<then>Egr. Sig.<else>Gent.le Sig.ra</if> [DIF.FND/PP<valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>]<br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs> - <U><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs></U> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs>)
+<br>
+</TD>
+</TR>
+
+</TABLE>
+<text>Raccomandata A.R.</text>
+<BR><BR><TEXT ALIGN=J>
+Conegliano, <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs> 
+<BR><BR><BR>
+<B>OGGETTO:</B> <U><if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==DEL</ifcond>
+<then>Contratto di delegazione di pagamento</then>
+</if>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>!=</ifcond>
+<then>Contratto di mutuo contro cessione del quinto dello stipendio</then>
+</if>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>==</ifcond>
+<then>Contratto di mutuo contro cessione del quinto della pensione</then>
+</if>, sottoscritto tra Sigla s.r.l. e <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> in data <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTR</valueabs> Rif. pratica n° <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>. Diffida pagamento TFR.</U><BR>
+<BR><BR>
+Con riferimento al contratto in oggetto, verificatasi la risoluzione del rapporto di lavoro subordinato a far data dal 
+<if><ifcond><valueabs>IDGFSIN_DATA_CARICAM</valueabs>!=12/09/1973</ifcond><and><ifcond><valueabs>IDGFSIN_DATA_CARICAM</valueabs>!=01/01/2000</ifcond><then><valueabs>IDGFSIN_DATA_CARICAM</valueabs></if>
+, sollecitiamo il versamento del Tfr del Vostro aderente <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>.
+
+<BR><BR>
+<if><ifcond><valueabs>IDGFSIN00F/RECORD/IDGFSIN_IMP_ULT_NO_QUS</valueabs>>0</ifcond><then>
+Alleghiamo alla presente conteggio di residuo debito dell'aderente, <b><u>aggiornato a seguito del versamento delle competenze di fine rapporto effettuato dall’ex datore di lavoro</u></b> per € <valueabs>IDGFSIN00F/RECORD/IDGFSIN_TFR_TOT</valueabs>.
+</then><else>
+Precisiamo che nulla ci è stato versato dalla società terza ceduta perché il TFR risulta tutto accantonato presso di Voi.
+</if>
+<BR><BR>
+Alla luce di quanto sopra il residuo debito dell'aderente, ad oggi, ammonta da € <valueabs>IDGFESSN0F/RECORD/IDGFESSN_TOTEST</valueabs>.
+<BR><BR>
+Chiediamo, altresì, specifica dell'entità della somma di ns. spettanza e tempistiche per la liquidazione della stessa.
+<BR><BR>
+Il versamento potrà essere effettuato con bonifico sul c/c bancario nr 100000012667 ABI 3069 CAB 12711 CIN F intestato a SIGLA s.r.l. - IBAN – IT33F0306912711100000012667.
+<BR><BR>
+</TEXT>
+<TEXT ALIGN=C>
+<b>causale: contr. di mutuo contro cessione del quinto dello stipendio – rif.n° <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>.</b>
+<BR><BR>
+</TEXT>
+<TEXT ALIGN=J>
+Certi della Vs. collaborazione ed in attesa di un Vs. cortese e sollecito riscontro porgiamo cordiali saluti.
+<BR><BR>
+</TEXT>
+<TEXT X=14.15 Y=21><I><B>SIGLA S.R.L.</B></I><BR></TEXT>
+<TEXT X=13 Y=21.5><I><B>Ufficio Sinistri e Legale CQS</B></I></TEXT>
+<IMG SRC="<valueabs>Immagini/MAZZER/Path</valueabs><valueabs>Immagini/MAZZER/Nome</valueabs>" BACKGROUND X=13 Y=23.5 SCALE=15>
+<TEXT ALIGN=J>
+<BR><BR>
+In all.:<BR>
+-	Conto del residuo debito al <valueabs>IDGFESSN0F/RECORD/IDGFESSN_DATAFIN</valueabs><BR>
+</TEXT>
+</BODY>
+</PDF>
+</then>
+</if>

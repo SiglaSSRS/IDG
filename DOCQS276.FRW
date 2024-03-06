@@ -1,0 +1,22 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8">
+<include file="\INCLUDE\Percorsi.frw">
+
+
+<PDFPAGE SRC="DOCQS276.PDF" VALUE=1 SHOWONCE>
+	<TEXT X=2  Y=4.2><valueabs>IDGPCTR00F/RECORD/IDGPCTR_RIFMAN</valueabs></TEXT>
+	<TEXT X=6  Y=6.3 ><valueabs>IDGPCLI00F/RECORD/IDGPCLI_RAGSOC</valueabs></TEXT>
+	<TEXT X=6  Y=7 ><valueabs>IDGPCLI00F/RECORD/IDGPCLI_INDIR</valueabs></TEXT>
+	<TEXT X=2.75  Y=7.55 ><valueabs>IDGPCLI00F/RECORD/IDGPCLI_CAP</valueabs></TEXT>
+	<TEXT X=8  Y=7.55 ><valueabs>IDGPCLI00F/RECORD/IDGPCLI_LOCAL</valueabs></TEXT>
+	<TEXT X=3 Y=8.3><valueabs>IDGPCLI00F/RECORD/IDGPCLI_PROV</valueabs></TEXT>
+	<TEXT X=8 Y=8.3><valueabs>IDGPCLI00F/RECORD/IDGPCLI_SIGLANAZ</valueabs></TEXT>
+	<TEXT X=6 Y=9><valueabs>IDGPCLI00F/RECORD/IDGPCLI_IBAN</valueabs></TEXT>
+	<TEXT X=6 Y=10.5><valueabs>IDGPCLI00F/RECORD/IDGPCLI_CDFIS</valueabs></TEXT>
+	
+	<TEXT X=6.5 Y=18.55><valueabs>IDGPCLI00F/RECORD/IDGPCLI_RAGSOC</valueabs></TEXT>
+	
+	<TEXT X=4 Y=25.5><valueabs>IDGPCTR00F/RECORD/IDGPCTR_DATSYS</valueabs></TEXT>
+		
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\SEPA######DOCQS276##01_01_01.png" BACKGROUND X=7.5 Y=5 SCALE=25>
+</PDF>

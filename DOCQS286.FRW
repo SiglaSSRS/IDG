@@ -1,0 +1,65 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize10_Arial">
+<include file="\INCLUDE\Percorsi.frw">
+
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3_1">
+</HEADER>
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestatalegale3">
+</FOOTER>	
+
+<BODY>
+<TEXT ALIGN=J>
+<BR><BR><BR><BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=60%></TD>
+<TD WIDTH=40%><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond><then>Egr. Sig.<BR><else>Gent.le Sig.ra<BR></if> 
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs>(<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs>)
+</TD></TR></TABLE>
+
+<BR><BR><BR><BR>
+<B>OGGETTO: Rettifica al <if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==DEL</ifcond>
+<then>contratto di delegazione di pagamento</then>
+</if>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>!=</ifcond>
+<then>contratto di mutuo contro cessione del quinto dello stipendio</then>
+</if>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>==</ifcond>
+<then>contratto di mutuo contro cessione del quinto della pensione</then>
+</if> stipulato tra Sigla s.r.l. e <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> in data <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTIPCTR</valueabs> - Rif. pratica n. <valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs>.</B><BR><BR><BR><BR>
+
+La presente scrittura si è resa necessaria al fine di integrare i dati relativi al documento di riconoscimento da Lei fornito in fase di identificazione e risultanti nel contratto in oggetto.<BR><BR><BR>
+
+In conformità con quanto da Lei successivamente inviato, si precisa che il nuovo documento di riconoscimento che ha sostituito il precedente, in corso di validità in sede di identificazione, è il seguente:<BR><BR><BR>
+
+</TEXT>
+<TEXT ALIGN=J>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_DSDOCUM</valueabs> N. <valueabs>IDGFCLI00F/RECORD/IDGFCLI_NUM_DOCUM</valueabs> - Rilasciato da <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_ENTE</valueabs> di <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_DA</valueabs> in data <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_DA_IL</valueabs> e con scadenza <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_SCAD_IL</valueabs>
+</TEXT>
+<BR><BR><BR>
+
+<TEXT ALIGN=J>
+La invitiamo ad archiviare la presente documentazione ricevuta unitamente al <if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==DEL</ifcond>
+<then>contratto di delegazione di pagamento</then>
+</if>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>!=</ifcond>
+<then>contratto di mutuo contro cessione del quinto dello stipendio</then>
+</if>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>==</ifcond>
+<then>contratto di mutuo contro cessione del quinto della pensione</then>
+</if> n. <valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs>, già in Suo possesso, essendone parte integrante.<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+
+Conegliano, <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs><BR><BR>
+</TEXT>
+
+<TEXT X=14.15 Y=21><I><B>SIGLA S.R.L.</B></I><BR></TEXT>
+<TEXT X=14 Y=21.5><I><B>Un procuratore</B></I></TEXT>
+<IMG SRC="<valueabs>Immagini/TACCHIN01/Path</valueabs><valueabs>Immagini/TACCHIN01/Nome</valueabs>" BACKGROUND X=14 Y=23 SCALE=<valueabs>Immagini/TACCHIN01/Scale</valueabs>>
+
+</BODY>
+</PDF>

@@ -1,0 +1,441 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize7.5">
+
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla">			
+</HEADER>
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestatasigla">
+</FOOTER>
+
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="C">Pag. 3 di 7</TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+
+
+<BODY>	
+<TEXT SIZE=9 ALIGN=C>
+	<BR>
+	<B>CONTRATTO DI MUTUO RIMBORSABILE MEDIANTE DELEGAZIONE DI PAGAMENTO<BR></B>
+	<BR><BR>
+</TEXT>
+<TEXT ALIGN=J SIZE=9>
+<FONT FACE=TAHOMA>
+<B>
+<FONT SIZE=11>Distribuito da SIGLA Srl</FONT>, quale mandataria con rappresentanza di:<BR><BR>
+
+B@nca 24-7 S.p.A.<BR>
+Società per azioni<BR>
+Sede legale: Piazza Vittorio Veneto 8 - 24122 Bergamo  - Sede operativa: Stoppani, 15 - 24121 Bergamo<BR>
+Telefono: 035-3833611// Fax 035-3833799 e-mail: info@banca247.it<BR>
+Cod. Fisc., Part. IVA ed Iscrizione al Reg. Imprese di Bergamo n. 02805490162<BR>
+Cap. soc. ver. euro 316.800.000 i.v.,<BR>
+ABI 3186.4 // CAB 11100<BR>
+Aderente al Fondo Interbancario di Tutela dei Depositi<BR>
+Aderente al Fondo Nazionale di Garanzia<BR>
+Iscritta all'Albo delle Banche n. 5487<BR>
+Albo Gruppi Bancari n. 3111.2<BR>
+Società con unico socio, soggetta all’attività di direzione e coordinamento di Unione di Banche Italiane S.c.p.a.<BR><BR>
+</FONT>
+</B>
+</TEXT>
+<TEXT SIZE=9 ALIGN=C>
+	<B>GENERALITÀ DEL DELEGANTE/MUTUATARIO<BR></B>
+	<BR>
+</TEXT>
+<TABLE BORDER=1>
+	<TR>
+	  <TD WIDTH=100%>
+		<TABLE SIZE=9>
+			<TR>
+				<TD WIDTH=50%>Cognome e Nome  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></TD>
+				<TD WIDTH=50%>Cod. Fiscale  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs></TD>
+			</TR>
+		</TABLE>
+	  </TD>
+	</TR>
+	<TR>
+      <TD WIDTH=100%>  	
+		<TABLE SIZE=9>	
+			<TR>
+				<TD WIDTH=50%>Nato a <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCNASC</valueabs></TD>
+				<TD WIDTH=50%>il <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC</valueabs></TD>
+			</TR>					
+		</TABLE>
+		</TD>
+	</TR>
+	<TR>
+      <TD WIDTH=100%>
+		<TABLE SIZE=9>	
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs>==</ifcond><then>
+			<TR>
+			 	<TD WIDTH=52%>Residente in <valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs></TD>
+				<TD WIDTH=20%>C.a.p. <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs></TD>
+				<TD WIDTH=28%>Località <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs>)</TD>
+			</TR>					
+<else>
+			<TR>
+			 	<TD WIDTH=52%>Residente in <valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs></TD>
+				<TD WIDTH=20%>C.a.p. <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_RES</valueabs></TD>
+				<TD WIDTH=28%>Località <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_RES</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_RES</valueabs>)</TD>
+			</TR>					
+</if>
+			<TR>
+			 	<TD>Telefono   <valueabs>IDGFCLI00F/RECORD/IDGFCLI_TELE_RES</valueabs>  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_TELE_ALT</valueabs></TD>
+				<TD>Fax</TD>
+				<TD>Email <valueabs>IDGFCLI00F/RECORD/IDGFCLI_EMAIL</valueabs> </TD>
+			</TR>
+		</TABLE>
+	  </TD>
+	</TR>
+	<TR>
+      <TD WIDTH=100%>
+		<TABLE SIZE=9>
+			 <TR>
+				<TD WIDTH=52%>Estremi documento: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DSDOCUM</valueabs> n. <valueabs>IDGFCLI00F/RECORD/IDGFCLI_NUM_DOCUM</valueabs></TD>
+				<TD WIDTH=20%>rilasciato il <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_DA_IL</valueabs></TD>
+				<TD WIDTH=28%>da <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_ENTE</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_DA</valueabs></TD>
+			 </TR>					
+		</TABLE>
+		</TD>
+	</TR>
+	<TR>
+      <TD WIDTH=100%>
+		<TABLE SIZE=9>
+			 <TR COLSPAN=2>
+				<TD WIDTH=100%>Dipendente di <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs>  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_STATOGIUR</valueabs>  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_LAV</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_LAV</valueabs>  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_LAV</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_LAV</valueabs>)</TD>
+     		 </TR>	
+		</TABLE>
+	  </TD>
+	</TR>
+	<TR>
+      <TD WIDTH=100%>
+		<TABLE SIZE=9>
+			 <TR>
+				<TD>Assunto il <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTASSUNZ</valueabs></TD>
+				<TD>con la qualifica di <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DSRUOLO</valueabs></TD>
+     		 </TR>		
+			 <TR>
+				<TD>Reddito mensile netto &euro <valueabs>IDGFCLI00F/RECORD/IDGFCLI_NETULTBP</valueabs></TD>
+     		 </TR>
+		</TABLE>
+	  </TD>
+	</TR>
+</TABLE>
+<TEXT ALIGN=J>
+<BR>Recapito per corrispondenza se diverso dall’indirizzo del Mutuatario:<BR><BR>
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs>==<valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_COR</valueabs></ifcond>
+<then>
+Presso ________________________________ indirizzo  _________________________________ città _________________  prov ______cap______<BR><BR><BR>
+<else>
+Presso <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_COR</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CORRISPONDENZA</valueabs></B><BR><BR><BR>
+</if>
+
+ 
+<B><U>Comunicazioni periodiche – modalità di trasmissione</B></U>
+</TEXT>
+<TEXT ALIGN=J  SIZE=9>
+La Banca fornisce al Delegante una volta l’anno, una comunicazione analitica che dia completa e chiara informazione sullo
+svolgimento del rapporto e un aggiornato quadro delle condizioni economiche applicate. In mancanza di opposizione scritta da
+parte del Delegante, le condizioni si intendono approvate trascorsi 60 (sessanta) giorni dal ricevimento della predetta
+comunicazione. Tale comunicazione periodica sarà resa in forma cartacea o mediante altro supporto durevole preventivamente
+accettato dal Delegante, laddove disponibile; in tal caso, in ogni momento del rapporto il Delegante ha diritto di cambiare la
+tecnica di comunicazione utilizzata.<BR>
+Il Cliente, colui che gli succede a qualunque titolo e colui che subentra nell’amministrazione dei suoi beni possono ottenere a
+proprie spese copia di documenti inerenti singole operazioni poste in essere negli ultimi dieci anni.
+Tali spese saranno indicate al Cliente al momento della richiesta e saranno commisurate alla complessità della ricerca della
+documentazione, fermo restando che non saranno in ogni caso superiori ai costi che la Banca ha sostenuto per la relativa
+produzione, nei limiti di quanto indicato nei fogli informativi.<BR><BR><BR>
+</TEXT>
+
+<TEXT ALIGN=J SIZE=9>
+Con la presente scrittura privata il sottoscritto <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></B> (in seguito denominato “Mutuatario” o “Delegante”), conviene l’erogazione di un prestito, rimborsabile mediante conferimento di mandato irrevocabile, ai sensi e per gli effetti degli artt. 1269 e 1723, comma 2 c.c., al proprio datore di lavoro a prelevare dalla propria retribuzione quote mensili della stessa, secondo le modalità ed alle condizioni sottoindicate con <B>B@nca 24-7 (in seguito denominata “Delegataria” o “Mutuante”)</B>, con la precisazione che il finanziamento è distribuito da <B> <valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs> quale  mandataria con rappresentanza di B@nca 24-7 S.p.A.</B> Il diritto del Mutuante al rimborso del prestito è assistito da polizza assicurativa contro il rischio morte e perdita dell’impiego anche per causa di morte, il cui indennizzo è a beneficio dell’Istituto erogatore.<BR><BR><BR>
+</TEXT>
+<PAGE>
+
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="C">Pag. 4 di 7</TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+
+<TEXT>
+		<TABLE WIDTH=100% SIZE=9>
+			<TR>
+				<TD WIDTH=100% ALIGN=C><B>CONDIZIONI PARTICOLARI DEL CONTRATTO DI MUTUO RIMBORSABILE MEDIANTE DELEGAZIONE DI PAGAMENTO</B></TD>
+			</TR>
+		</TABLE>
+</TEXT>
+<TEXT ALIGN=J>
+<FONT FACE=HELVETICA SIZE=7>
+<BR>
+I)	Il Cedente, in sede di liquidazione del prestito, verserà, in un’unica soluzione, mediante trattenuta sull’anzidetto valore attualizzato del mutuo, la cifra come evdidenziata nel Documento di Sintesi, che costituisce il frontespizio del presente contratto <BR>
+II) Il Tasso Annuo Effettivo Globale (TAEG) relativo al presente contratto è pari al <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTAEG</valueabs></B> %. Si precisa inoltre che il TAEG indicato è comprensivo di tutti i costi incluso le imposte e non subirà modificazioni e che il TEG (parametro rilevante ai fini della normativa antiusura, di cui alla legge 108/96 e successive modificazioni ed integrazioni) è pari al <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTEG</valueabs></B> %. Il TAEG è stato calcolato ipotizzando l’anno composto da dodici mesi uguali ai sensi del decreto del Ministero del Tesoro del 8 luglio 1992, come successivamente modificato ed integrato dal decreto del Ministero del Tesoro del 6 maggio 2000.<BR>
+III) In caso di ritardo od omissione del versamento delle quote cedute, è facoltà della Mutuante, ovvero di sue aventi causa a qualsiasi titolo, inclusa la surroga  (ad es. l’Intermediario, a seguito di pagamento in forza della garanzia “non riscosso per riscosso”) richiedere gli interessi di mora. Tali interessi decorreranno di pieno diritto, a seguito di semplice richiesta, dalla scadenza delle singole rate fino all’effettivo pagamento. L’interesse di mora è calcolato nella misura pari a Tasso Nominale Annuo Scalare maggiorato di 1 %. Resta ferma in ogni caso la facoltà della Mutuante di risolvere il contratto ai sensi dell’art. 1456 c.c. e dell’art. 6 delle Condizioni Generali del Contratto.<BR>
+IV) Il Delegante autorizza la Delegataria, anche ai sensi e per gli effetti dell’art. 1723, comma 2, cod.civ., a destinare direttamente parte del capitale erogato al rimborso anticipato dei prestiti in corso di ammortamento indicati nel modulo di richiesta del presente prestito, ovvero a destinare parte del capitale erogato al rimborso anticipato (parziale o totale) delle altre posizioni debitorie intestate allo stesso Delegante, presso le banche/intermediari del Gruppo UBI, con correlato esonero della Delegataria da ogni responsabilità, in ogni caso nel rispetto della normativa vigente.<BR>
+V) In caso di estinzione anticipata della presente cessione, nel rispetto delle norme di legge, il Mutuatario avrà diritto, oltre alla restituzione degli interessi di cui alla lettera A) non maturati per il periodo di rateazione non goduto, alla restituzione di una parte dei costi del Finanziamento di cui alle lettere D), D1) ,F), G), il cui importo sarà determinato, in misura decrescente, con riferimento al numero delle rate scadute alla data della predetta estinzione al netto di eventuali commissioni di estinzione anticipata. La quota rimborsabile della Polizza Vita, e della eventuale Polizza Perdite Pecuniarie determinata dalla Compagnia Assicurativa al momento dell’estinzione anticipata del Finanziamento, sarà da questa riconosciuta al cliente, direttamente o per il tramite dell’Intermediario Finanziario, in funzione delle specifiche condizioni di Polizza.<BR>
+VI)  In caso di richiesta di estinzione anticipata o cessazione per qualsiasi causa del contratto, la Mutuante provvederà ad estinguere il rapporto entro il termine massimo di 30 giorni lavorativi. Tale termine decorre dal momento in cui il Delegante avrà eseguito il rimborso del proprio debito e adempiuto a tutte le proprie obbligazioni previste dal presente contratto.<BR>
+VII) Si conviene ai sensi dell’art. 120 quater D. Lgs. 1 settembre 1993 n. 385 come modificato dal D. Lgs. 13 agosto 2010, n.
+141, che nessun compenso, né altra prestazione saranno dovuti alla banca dal Cedente in caso di surrogazione per pagamento
+per volontà del Cedente. Sono fatte salve in ogni caso le disposizioni inderogabili di legge in vigore.<BR>
+VIII) Il Cedente prende atto che nessun compenso, commissione o retribuzione ulteriori  rispetto quelli riportati nelle Condizioni economiche sarà corrisposta dal Cessionario a qualsiasi soggetto. Il Delegante prende atto altresì che nessun ulteriore compenso è dallo stesso dovuto a soggetti che a vario titolo possono comporre la rete distributiva; ogni eventuale richiesta di ulteriori compensi da parte di questi ultimi verrà segnalata dal Cedente alla Cessionaria mediante formale comunicazione scritta.<BR>
+
+<TEXT>
+		<TABLE WIDTH=100% SIZE=9>
+			<TR>
+				<BR>
+				<TD WIDTH=100% ALIGN=C><B>CONDIZIONI GENERALI DEL CONTRATTO DI MUTUO RIMBORSABILE MEDIANTE DELEGAZIONE DI PAGAMENTO</B><BR></TD>
+			</TR>
+		</TABLE>
+</TEXT>
+
+<TEXT ALIGN=J SIZE=7.4><FONT FACE=HELVETICA>
+<LI> Art. 1 Il Mutuatario/Delegante  si impegna, sino all’integrale rimborso del prestito, a non avvalersi del diritto di richiedere l’anticipazione delle indennità di fine rapporto di cui al comma 6 dell’art. 2120 c.c. se ed in quanto a lui applicabile. L’Amministrazione -  datrice di lavoro del Mutuatario/Delegante - prenderà atto di tale  rinunzia - da qualificarsi irrevocabile - e vi si uniformerà.
+<BR>
+<LI> Art. 2 Qualora dopo la concessione del prestito il Mutuatario/Delegante passasse alle dipendenze di un'altra Amministrazione/datore di lavoro, lo stesso Mutuatario/Delegante dichiara, ora per allora, di conferire mandato – che ai sensi dell’art. 1723 comma 2 c.c. qualifica irrevocabile -  a prelevare mensilmente dalla sua retribuzione le rate residue al rimborso del prestito e a versarle sul c/c bancario intestato alla Sigla Srl<BR>
+<B>Bonifico bancario su Cassa di Risparmio del Veneto, IBAN: IT50H0622561620100000001913 intestato a Sigla S.r.l.<BR>
+Bonifico Postale su Poste Italiane SPA, IBAN: IT53G0760112000000073807760 intestato a Sigla S.r.l.</B><BR>
+<LI> Art. 3 Tutte le comunicazioni del Mutuante saranno effettuate al domicilio del Mutuatario indicato nel contratto o successivamente da questi indicato per iscritto.<BR>
+<LI> Art. 4 In caso di passaggio del Delegante alle dipendenze di altro datore di lavoro, senza estinzione della delegazione, il debitore si obbliga a comunicare, senza ritardo, al Delegatario l'indirizzo della nuova amministrazione, ed a quest'ultima l'esistenza del residuo debito della delegazione.<BR>
+<LI> Art. 5 Nell’eventualità di trasferimento ad altro impiego del Cedente, quest’ultimo autorizza fin da ora il Cessionario ad introitare
+la somma corrispondente al TFR, in tutto o in parte, fino a concorrenza del credito maturato. Nel caso in cui il totale introito del
+TFR estingua solo parzialmente il finanziamento, ciò comporterà solo la riduzione della durata del vincolo contrattuale sulla
+base di un nuovo piano di ammortamento del prestito, senza che ciò comporti novazione dell’originario contratto di mutuo.
+<LI> Art. 6 Ferma la possibilità di dichiarare la decadenza dal beneficio del termine ai sensi dell’art. 1186 c.c., nel caso di mancato pagamento anche di una sola rata relativa alla somma finanziata, nonché di inosservanza degli altri obblighi stabiliti dal presente contratto, la Mutuante si riserva la facoltà di dichiarare risolto il presente contratto ai sensi dell’art. 1456 c.c., con conseguente facoltà della Mutuante medesima o dell’Intermediario di esigere l’immediato pagamento di tutte le rate, anche non scadute.<BR>
+<LI> Art. 7 La Mutuante/Delegataria fornisce al Mutuatario/Delegante alla scadenza del contratto, e comunque almeno una volta
+l’anno, una comunicazione analitica che dia completa e chiara informazione sullo svolgimento del rapporto e un aggiornato
+quadro delle condizioni economiche applicate. In mancanza di opposizione scritta da parte del Mutuatario, le condizioni si
+intendono approvate trascorsi 60 (sessanta) giorni dal ricevimento della predetta comunicazione. Tale comunicazione periodica
+sarà resa in forma cartacea o mediante altro supporto durevole preventivamente accettato dal Cliente, laddove disponibile; in tal
+caso, in ogni momento del rapporto il Mutuatario ha diritto di cambiare la tecnica di comunicazione utilizzata.<BR>
+Il Cliente, colui che gli succede a qualunque titolo e colui che subentra nell’amministrazione dei suoi beni possono ottenere a
+proprie spese copia di documenti inerenti singole operazioni poste in essere negli ultimi dieci anni.<BR>
+Tali spese saranno indicate al Cliente al momento della richiesta e saranno commisurate alla complessità della ricerca della
+documentazione, fermo restando che non saranno in ogni caso superiori ai costi che la Banca ha sostenuto per la relativa
+produzione, nei limiti di quanto indicato nei fogli informativi.<BR>
+<LI> Art. 8 Qualora ne sussistano i presupposti,  ai sensi degli artt. 64 e ss. del d.lgs 206/2005 (Codice del Consumo), relativamente alle disposizioni sui contratti negoziati fuori dai locali commerciali ivi contenute, il Delegante ha facoltà di recedere dal contratto sottoscritto con la Mutuante senza alcuna penalità e senza specificarne il motivo. In tal caso, il recesso dovrà avvenire non oltre 14 (quattordici) giorni dalla data di stipula del contratto di finanziamento e a mezzo lettera raccomandata con avviso di ricevimento indirizzata all' Intermediario al seguente indirizzo <B><valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs></B> al seguente indirizzo : <valueabs>IDGFAZI00F/RECORD/IDGFAZI_INDIR_SIG</valueabs> <valueabs>IDGFAZI00F/RECORD/IDGFAZI_SIGLASRL</valueabs>.<BR>
+L’esercizio della facoltà di recesso comporterà l’obbligo di restituire al cessionario quanto ricevuto a titolo di finanziamento ed il contratto non verrà sciolto prima dell’avvenuta restituzione in unica soluzione della somma corrispondente al netto ricavo dell’operazione.
+<BR>
+<LI> Art. 9 Per eventuali contestazioni in ordine al rapporto contrattuale intrattenuto con il Cessionario, il Cedente può presentare reclamo scritto indirizzandolo a B@nca 24-7 – Ufficio Reclami - Via Stoppani, 15, 24121 Bergamo oppure, in alternativa, tramite fax al n.0353833798 o e-mail all’indirizzo: reclami@banca247.it. La Delegataria evaderà la richiesta entro un termine di 30 giorni dalla presentazione del reclamo. Ove il reclamo sia ritenuto fondato, nella risposta saranno indicati anche i tempi tecnici entro i quali la Delegataria si impegna a provvedere alla risoluzione della problematica esposta. 
+</TEXT>
+<PAGE>
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="C">Pag. 5 di 7</TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+<TEXT ALIGN=J SIZE=7.4><FONT FACE=HELVETICA>
+Qualora il Delegante sia rimasto insoddisfatto dell’esito del ricorso presentato al Servizio Reclami (perché non ha avuto risposta, ovvero ha avuto risposta negativa ovvero perché la decisione, sebbene positiva, non è stata eseguita dalla Delegataria) ha inoltre il diritto, prima di ricorrere al giudice, di rivolgersi all’Arbitro Bancario Finanziario (ABF). Per maggiori informazioni su come rivolgersi all’Arbitro Bancario Finanziario, consultare l’apposita Guida messa a disposizione della clientela da parte della Delegataria, ovvero chiedere presso le Filiali della Delegataria, oppure contattare la segreteria tecnica dell’Arbitro Bancario Finanziario i cui recapiti sono disponibili sul sito internet www.arbitrobancariofinanziario.it.<BR>
+Ove ne ricordano i presupposti, potrà essere attivato il procedimento di conciliazione avanti al “Conciliatore Bancario,– Associazione per la soluzione delle controversie bancarie, finanziarie e societarie – ADR”.
+Fermo restando quanto previsto dall’articolo 5, comma 1, del decreto legislativo 4 marzo 2010, n. 28, le disposizioni di cui ai commi
+precedenti non pregiudicano per il Cliente il ricorso a ogni altro mezzo di tutela previsto dall’ordinamento.
+<BR>
+<LI> Art. 10 Il Mutuatario/Delegante non potrà richiedere il versamento del netto ricavo della operazione di finanziamento se prima, o contestualmente, non abbia effettuato i pagamenti di cui al punto I lettere B), C), C1), D), E), F), G) delle predette Condizioni particolari, e se, a giudizio insindacabile della Mutuante B@nca 24-7 S.p.A., non saranno stati da lui forniti tutti gli atti ed i documenti necessari per la validità e la garanzia della operazione stessa e specialmente se non sarà stato rilasciato il consenso definitivo da parte dell’Amministrazione dalla quale il Mutuatario/Delegante dipende.<BR>
+<LI> Art. 11 Il Mutuatario autorizza la Mutuante e/o la mandataria ai sensi e per gli effetti dell’art.1723, comma 2, cod.civ., a destinare parte del capitale erogato al rimborso anticipato dei prestiti in corso di ammortamento indicati nel modulo di richiesta del presente prestito, ovvero a destinare parte del capitale erogato al rimborso anticipato (parziale o totale) delle altre posizioni debitorie  (indicate sempre nel presente modulo) intestate al Mutuatario in essere presso altre Banche/Società del Gruppo UBI.<BR>
+<LI> Art. 12 Le polizze assicurative, vengono stipulate a beneficio della Delegataria, e, nel caso di cessazione del rapporto di lavoro, non
+esimono in alcun modo il Delegante dall'obbligo di estinguere il finanziamento e l'Amministrazione dagli obblighi di cui all'art. 4.
+All’atto del perfezionamento del contratto di mutuo contro delegazione di pagamento vengono stipulate due polizze assicurative
+rispettivamente a copertura del rischio vita e di rischi relativi alla perdita dell’occupazione del lavoratore i cui costi vengono
+scomputati dal netto ricavo. Il Mutuante con oneri a proprio carico potrà stipulare in alternativa alla summenzionata polizza
+assicurativa relativa alla copertura dei rischi di perdite pecuniarie derivanti dalla perdita dell’occupazione, una polizza per il rischio
+“perdite patrimoniali derivanti da insolvenze” a garanzia del mancato adempimento dell’obbligazione di pagamento non derivante
+da decesso. In tal caso la compagnia di assicurazione potrà surrogarsi al mutuatario una volta che avrà rimborsato il Mutuante del
+residuo credito.<BR>
+<LI> Art. 13 Le spese e tasse di bollo e di registro del presente atto, sia all’atto della registrazione sia successivamente, anche in via supplementare, nonché la rivalsa per gli oneri erariali, le spese postali, di notifica ai sensi di legge e quelle eventualmente richieste dall’Amministrazione/datore di lavoro delegata per ogni esigenza, anche successiva all’instaurazione del rapporto, ivi comprese le comunicazioni relative al trasferimento del Mutuatario/Delegante sono a carico del medesimo Mutuatario/Delegante, il quale autorizza, ora per allora, l’Amministrazione/datore di lavoro dal quale dipende a trattenere dagli emolumenti dovutigli la somma che, a tale titolo, gli venisse richiesta dalla Mutuante/Delegataria o da chi per essa.<BR>
+<LI> Art. 14 I rapporti con il Mutuatario sono regolati dalla legge italiana e, per ogni eventuale controversia, si applica la giurisdizione italiana. Per ogni eventuale controversia relativa all’interpretazione, esecuzione, validità ed efficacia del presente contratto sarà  competente il foro nella cui circoscrizione si trova  la residenza o il domicilio elettivo del Mutuatario.<BR>
+<TEXT>
+		<TABLE WIDTH=100% SIZE=9>
+			<TR>
+				<TD WIDTH=100% ALIGN=C><B>CONDIZIONI ECONOMICHE<BR></B></TD>
+			</TR>
+		</TABLE>
+</TEXT>
+<TEXT ALIGN=J>
+<FONT FACE=HELVETICA SIZE=8>
+RATA MENSILE: <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPCAN</valueabs></B><BR>
+N. RATE: <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs></B><BR><BR>
+<B> CAPITALE LORDO MUTUATO: <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPMUTLRD</valueabs></B> <BR><BR>
+A) TASSO NOMINALE ANNUO SCALARE APPLICATO IN MISURA FISSA PER L’INTERA DURATA DEL PRESTITO: <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTAN</valueabs></B> %, pari a &euro <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPINTER</valueabs></B>.<BR><BR>
+B) COMMISSIONI BANCARIE: <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_ALQCOMMBA</valueabs></B> % sul capitale lordo mutuato, pari a &euro <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMCOMMBA</valueabs></B>.Tale costo per il Mutuante è composto da istruttoria, archiviazione fisica e ottica, oneri copertura tasso fisso, ossia componenti non rapportate alla durata del finanziamento e non restituito al Mutuatario in caso di estinzione anticipata.<BR><BR>
+C) COMMISSIONI A FAVORE DELL’INTERMEDIARIO FINANZIARIO: <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_ALQCOMM</valueabs></B> %  sul capitale lordo mutuato, pari a &euro <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMCOMM</valueabs></B>. Tale costo è composto da costi relativi all’istruttoria del finanziamento (processing pratica, info commerciali, costo interrogazione banche dati, costi finanziari per l’erogazione, costo per il personale addetto all’istruttoria dei finanziamenti, raccolta e archiviazione dei documenti) e da costi relativi all’organizzazione della società (altre spese operative, consulenze, pubblicità, Enasarco), ossia componenti non rapportate alla durata del finanziamento e non restituito al Mutuatario in caso di estinzione anticipata.<BR><BR>
+C1) COMMISSIONE A FAVORE DEL MEDIATORE CREDITIZIO A CARICO MUTUATARIO : <B>0,00</B> % sul capitale lordo mutuato, pari a &euro <B>0,00</B>. Professionista cui discrezionalmente il cliente ha ritenuto di rivolgersi, al quale viene riconosciuto il
+corrispettivo in base agli accordi intervenuti con il cliente medesimo e portati a conoscenza del Mutuante. Tale costo è
+composto da costi relativi alla vendita/distribuzione del prodotto e rappresenta componenti non rapportate alla durata del
+finanziamento e non restituito al Mutuatario in caso di estinzione anticipata. Il Mediatore Creditizio beneficia di un’ulteriore
+compenso pari a euro…….., non a carico del cliente .<BR><BR>
+D) POLIZZA VITA &euro <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMASSMRT</valueabs></B>. Tale costo, in caso di estinzione anticipata, sarà restituita al Mutuatario in relazione alle condizioni di polizza sottoscritte con le Compagnie Assicurative, o con l’INPDAP in caso di Garanzia INPDAP, o con le FS in caso di
+garanzia rilasciata dal Gruppo FS..<BR><BR>
+D1) POLIZZA PERDITE PECUNIARIE &euro <B><if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDANAFIN</valueabs>==12002203</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_FLG_RSK_IMP</valueabs>==S</ifcond><then>0,00<else><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMASSIMP</valueabs></if></B>. Tale costo, in caso di estinzione anticipata, sarà restituita al Mutuatario in relazione alle condizioni di polizza sottoscritte con le Compagnie Assicurative, o con l’INPDAP in caso di Garanzia INPDAP, o con le FS in caso di
+garanzia rilasciata dal Gruppo FS..<BR><BR>
+E) IMPOSTA SOSTITUTIVA: &euro <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMRIVALSA</valueabs></B>. Per loro natura non rimborsabili in caso di estinzione anticipata.<BR><BR>
+F) SPESE DI RISCOSSIONE RATA PER IL MUTUANTE: &euro <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_SPINCFIN</valueabs></B>. Tale costo, essendo riferito a componenti rapportate alla durata del finanziamento sarà restituita al Mutuatario in caso di estinzione anticipata in misura pari alla durata residua del finanziamento.<BR><BR>
+</TEXT>
+<PAGE>
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="C">Pag. 6 di 7</TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+<TEXT ALIGN=J>
+<FONT FACE=HELVETICA SIZE=8>
+G) SPESE DI RISCOSSIONE RATA DA CORRISPONDERE AL DATORE DI LAVORO/ENTE PREVIDENZIALE: &euro <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPFISSI</valueabs></B>. Tale costo, essendo riferito a componenti rapportate alla durata del finanziamento sarà restituita al Mutuatario in caso di estinzione anticipata in misura pari alla durata residua del finanziamento.<BR><BR>
+<X VALUE=2><B>I)	NETTO RICAVO: &euro  <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPNETRIC</valueabs> (capitale lordo mutuato-A-B-C-C1-D-D1-E-F-G)<BR><BR>
+<X VALUE=0>COSTI RIMBORSABILI *: A), D), D1) F), G)</B><BR><BR>
+- COMMISSIONE ESTINZIONE ANTICIPATA: Euro 0
+- INTERESSI DI MORA: TAN + 1%<BR>
+- VALUTA OPERAZIONE: 30 gg. antecedenti la scadenza della prima rata stabilita con il piano di ammortamento. Qualora il netto ricavo sia erogato prima dei 30 gg nulla è dovuto essendo questa circostanza ricompresa nelle commissioni Intermediario.<BR><BR>
+- TAEG: <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTAEG</valueabs></B>% (per la formazione del TAEG vedasi punto II delle Condizioni particolari del presente contratto)<BR>
+- TEG: <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTEG</valueabs></B>%  (parametro rilevante ai fini della normativa antiusura)<BR>
+PERIODICITA DI CALCOLO DEGLI INTERESSI: TAN calcolato con riferimento all’anno commerciale , con 12 mesi da 30 giorni<BR>
+SPESE PER INVIO DI OGNI COMUNICAZIONE SU SUPPORTO CARTACEO: Euro 0<BR>
+SPESE PER L’OFFERTA FUORI SEDE: Euro 0<BR><BR>
+<B>
+* In caso di estinzione anticipata della presente cessione, nel rispetto delle norme di legge, il Mutuatario avrà diritto, oltre alla
+restituzione degli interessi di cui alla lettera A) non maturati per il periodo di rateazione non goduto, alla restituzione di una parte
+dei costi del Finanziamento di cui alle lettere D), D1) ,F), G), il cui importo sarà determinato, in misura decrescente, con
+riferimento al numero delle rate scadute alla data della predetta estinzione al netto di eventuali commissioni di estinzione
+anticipata. La quota rimborsabile della Polizza Vita e della eventuale Polizza Perdite Pecuniarie, determinata dalla Compagnia
+Assicurativa al momento dell’estinzione anticipata del Finanziamento, sarà da questa riconosciuta al cliente, direttamente o per
+il tramite dell’Intermediario Finanziario, in funzione delle specifiche condizioni di Polizza .</B></FONT>
+</TEXT>
+
+<TEXT ALIGN=J>
+<FONT FACE=HELVETICA>
+<BR>
+<B>Dichiaro di aver ricevuto copia del presente contratto – comprensiva delle Condizioni Particolari, Condizioni Generali e Condizioni economiche - e, dopo attenta ponderazione, avendone riscontrato la rispondenza con la copia idonea per la stipula in precedenza consegnatami provvedo alla sua formale accettazione mediante sottoscrizione.<BR><BR>
+Dichiaro altresì, sotto la mia piena responsabilità e tenendo indenne la Banca da ogni e qualsiasi conseguenza che da tale dichiarazione possa derivare nei confronti di chiunque, che il prestito è richiesto per mio conto e nel mio interesse.<BR><BR></B>
+<TABLE SIZE=8.5>
+<TR>
+	<TD WIDTH=50% ALIGN=C>FIRMA DEL MUTUATARIO / DELEGANTE</TD>
+	<TD WIDTH=50% ALIGN=C SIZE=7>TIMBRO E FIRMA MANDATARIA<BR>
+	Sigla Srl Via Vital, 98/b 31015 Conegliano (Treviso) Italia<BR>
+	Intermediario Finanziario iscritto Elenco Speciale ex art.107 TUB n. 33023.3-Registro Imprese, codice fiscale e<BR>
+	partita IVA 03951740269- Capitale Sociale 600.000,00€</TD> 	 	
+</TR>
+<TR>
+	<TD WIDTH=50% ALIGN=L>____________________  li <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></TD>	
+	<TD WIDTH=50% ALIGN=C>Conegliano li <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></TD>	
+</TR> 
+<TR>
+	<TD WIDTH=50%>________________________________________</TD>	
+	<TD WIDTH=50% ALIGN=C><IMG SRC="<valueabs>Immagini/FIRMA/Path</valueabs><valueabs>Immagini/FIRMA/Nome</valueabs>" SCALE=<valueabs>Immagini/FIRMA/Scale</valueabs>></TD>	
+</TR> 
+</TABLE>
+<B>Ai sensi e per gli effetti degli artt. 1341, 1342 e c.c. il Mutuatario dichiara di approvare specificatamente le seguenti
+clausole: condizioni generali del contratto: art. 1 (divieto di avvalersi del diritto di cui all’art. 2120, comma 6, c.c.); art.
+art. 5 (TFR); art. 6 (decadenza dal beneficio del termine) art. 7 (approvazione tacita comunicazioni periodiche),); art. 8
+(recesso); art. 10 (discrezionale valutazione completezza documentazione); art. 11 (posizioni debitorie); art. 12
+(assicurazioni); art. 13 (spese di tasse, bollo e registro); art. 14 (foro competente); condizioni particolari del contratto:
+punto III (interessi di mora), punto IV (estinzione posizioni debitorie in essere con la Banca segnalante e delle altre
+Banche/Società del Gruppo UBI), punto V (estinzione anticipata).</B>
+<BR><BR>
+<TABLE SIZE=8.5>
+<TR>
+	<TD WIDTH=50% ALIGN=C><FONT SIZE=6>(Per autentica e riconoscimento)</FONT><BR>FIRMA DEL SOGGETTO ABILITATO PER LA MANDATARIA</TD>
+	<TD WIDTH=50% ALIGN=C><FONT SIZE=6> </FONT><BR>FIRMA DEL MUTUATARIO</TD> 	 	
+</TR>
+<TR>
+	<TD WIDTH=50% ALIGN=C>_______________________________________</TD>
+	<TD WIDTH=50% ALIGN=C>_______________________________________</TD>
+</TR>
+</TABLE>
+<BR>
+</TEXT>
+<TEXT SIZE=8 ALIGN=J><FONT FACE=HELVETICA>
+Dichiaro di aver ricevuto , in tempo utile prima della conclusione del presente contratto ed in caso di offerta fuori sede, i seguenti documenti:<BR><BR><X VALUE=1.2>
+<LI>  documento sui “Principali diritti del cliente”;
+<LI>  il Foglio informativo;
+<LI>  documento contenente i Tassi Effettivi Globali Medi (TEGM);
+<LI>  Guida pratica per la risoluzione stragiudiziale delle controversie;
+<LI>  Piano di ammortamento
+</X>
+<BR><BR>
+</TEXT>
+
+<TABLE SIZE=8.5>
+<TR><TD WIDTH=100% ALIGN=L>DATA <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></TD></TR>
+<TR><TD WIDTH=100% ALIGN=L	>___________________________________________<BR>FIRMA DEL MUTUATARIO</TD></TR>
+</TABLE>
+<PAGE>
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="C">Pag. 7 di 7</TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+
+<TEXT SIZE=9 ALIGN=C>
+	<BR><BR><BR>
+	<B>ATTO DI DELEGA</B>
+	<BR> 
+</TEXT>
+<TEXT ALIGN=J>
+Il sottoscritto, come sopra generalizzato, dipendente del <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_STATOGIUR</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_LAV</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_LAV</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_LAV</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_LAV</valueabs>)</B>
+avendo avanzato tramite la <B><valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs></B> una richiesta a B@nca 24-7 di prestito espressamente finalizzato allo scopo indicato nella presente domanda di finanziamento per l’importo nominale di <B>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPMUTLRD</valueabs></B> da estinguersi in <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs></B> rate mensili consecutive di <B>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPCAN</valueabs></B> ciascuna, autorizza irrevocabilmente l’Amministrazione/datore di lavoro da cui dipende a :<BR>
+<LI> 1) trattenere/far trattenere, con decorrenza dal mese di 
+<B>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==01</ifcond><then>Gennaio</if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==02</ifcond><then>Febbraio</if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==03</ifcond><then>Marzo</if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==04</ifcond><then>Aprile</if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==05</ifcond><then>Maggio</if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==06</ifcond><then>Giugno</if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==07</ifcond><then>Luglio</if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==08</ifcond><then>Agosto</if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==09</ifcond><then>Settembre</if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==10</ifcond><then>Ottobre</if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==11</ifcond><then>Novembre</if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==12</ifcond><then>Dicembre</if>
+</B>
+, dalle proprie competenze mensili l’importo della summenzionata rata, conferendogli fin d’ora delegazione - ai sensi degli artt. 1269 c.c. e 1723, comma 2, c.c. - a versarla sul c/c bancario intestato alla <valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs><BR>
+<B>Bonifico bancario su Cassa di Risparmio del Veneto, IBAN: IT50H0622561620100000001913 intestato a Sigla S.r.l.<BR>
+Bonifico Postale su Poste Italiane SPA, IBAN: IT53G0760112000000073807760 intestato a Sigla S.r.l.</B></BR>
+per il rimborso del prestito accordatogli da B@nca 24-7, sino al saldo del suddetto importo nominale. Qualora - prima
+dell’estinzione della suddetta obbligazione - le mie spettanze fossero, per qualsiasi ragione, temporaneamente ridotte, autorizza
+sin d’ora l’Amministrazione/datore di lavoro ad effettuare le ritenute nella misura suesposta, senza variazione alcuna, a
+condizione che al sottoscritto sia garantita la fruizione della metà dello stipendio in godimento prima della riduzione. In caso di
+sospensione della retribuzione, autorizza l’Amministrazione/datore di lavoro a trattenere le rimanenti quote mensili all’atto del
+ripristino delle spettanze. In caso di risoluzione del rapporto di lavoro, anche a seguito di dimissioni volontarie, la delega si
+intende revocata a far data dalla cessazione del rapporto;<BR>
+<LI> 2) trasmettere, in caso di trasferimento in altra struttura, il fascicolo all’ufficio di destinazione.<BR>
+<BR>
+Luogo e data _______________________<BR>
+<BR>
+Per autentica della firma del Mutuatario/Delegante ed accettazione del mandato irrevocabile da parte dell’Amministrazione/datore di lavoro che esegue/autorizza le ritenute (*)<BR>
+<BR>
+___________________________________<BR>
+(Timbro, firma e qualifica)<BR>
+<BR><BR><BR>
+FIRMA DEL MUTUATARIO/DELEGANTE<BR>
+<BR>
+___________________________________<BR>
+<BR>
+(*) L’Amministrazione/datore di lavoro trattiene due copie della presente di cui una utile per le attività dispositive delle ritenute stipendiali presso i propri uffici preposti al pagamento o, qualora previsto, presso i servizi periferici del Tesoro.
+</TEXT>
+
+
+<TEXT SIZE=8 ALIGN=J><FONT FACE=HELVETICA><BR><BR><U><B>SPAZIO RISERVATO ALLA MANDATARIA</B></U><BR><BR></TEXT>
+<TABLE BORDER=0.7>
+<TR><TD><TABLE SIZE=7.5>
+			<TR><TD WIDTH=100% ALIGN=J>Il sottoscritto___________________________________________________________Matr. __________________________________________________</TD></TR>
+			<TR><TD WIDTH=100% ALIGN=J>in qualità di ____________________ dell’ Intermediario quale mandataria con rappresentanza di B@nca 24-7 S.p.A., incaricato all’identificazione del Mutuatario, con la presente sottoscrizione attesta di aver proceduto, ai sensi della normativa in materia di antiriciclaggio, all’identificazione personale del Cedente il cui adempimento ricade sotto la propria responsabilità. </TD></TR>
+			<TR><TD WIDTH=100% ALIGN=J>Luogo e data ______________________________</TD></TR>
+			<TR><TD WIDTH=100% ALIGN=J>Firma del soggetto abilitato per la mandataria ___________________________</TD></TR>
+		</TABLE>
+	</TD>
+</TR>
+</TABLE>	
+</BODY>
+</PDF>

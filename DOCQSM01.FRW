@@ -1,0 +1,49 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize7.5">
+
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla">			
+</HEADER>
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestatasigla">
+</FOOTER>
+
+
+<BODY>	
+<TEXT SIZE=9 ALIGN=C>
+	<BR><BR><U><B>SCHEMI CONTRATTUALI</B></U><BR>1.<BR>
+	<B>DOCUMENTO DI SINTESI<BR>MUTUO RIMBORSABILE MEDIANTE DELEGAZIONE DI PAGAMENTO<BR></B>
+	<BR><BR>
+	<U>CONDIZIONI ECONOMICHE<BR></U> 
+</TEXT>
+<TEXT ALIGN=J>
+<X VALUE=1><FONT FACE=HELVETICA>
+RATA MENSILE: <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPCAN</valueabs></B><BR><BR>
+N. RATE: <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs></B><BR><BR>
+SCADENZA RATA:   <BR> 
+	<LI><B> CAPITALE LORDO MUTUATO: <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPMUTLRD</valueabs></B> <BR><BR>
+A) TASSO NOMINALE ANNUO SCALARE APPLICATO IN MISURA FISSA PER L’INTERA DURATA DEL PRESTITO: <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTAN</valueabs></B> %, pari a &euro <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPINTER</valueabs></B>.<BR><BR>
+B) COMMISSIONI BANCARIE: <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_ALQCOMMBA</valueabs></B> % sul capitale lordo mutuato, pari a &euro <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMCOMMBA</valueabs></B>.Tale costo per il Mutuante è composto da istruttoria, archiviazione fisica e ottica, oneri copertura tasso fisso, ossia componenti non rapportate alla durata del finanziamento e non restituito al Mutuatario in caso di estinzione anticipata.<BR><BR>
+C) COMMISSIONI A FAVORE DELL’INTERMEDIARIO FINANZIARIO: <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_ALQCOMM</valueabs></B> %  sul capitale lordo mutuato, pari a &euro <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMCOMM</valueabs></B>. Tale costo è composto da costi relativi all’istruttoria del finanziamento (processing pratica, info commerciali, costo interrogazione banche dati, costi finanziari per l’erogazione, costo per il personale addetto all’istruttoria dei finanziamenti, raccolta e archiviazione dei documenti) e da costi relativi all’organizzazione della società (altre spese operative, consulenze, pubblicità, Enasarco), ossia componenti non rapportate alla durata del finanziamento e non restituito al Mutuatario in caso di estinzione anticipata.<BR><BR>
+C1) COMMISSIONE A FAVORE DELL’AGENTE IN ATTIVITA’ FINANZIARIE E/O DEL MEDIATORE CREDITIZIO : <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_PCPROV1</valueabs></B> % sul capitale lordo mutuato, pari a &euro <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPROV1</valueabs></B>. Tale costo è composto da costi relativi alla vendita/distribuzione del prodotto e rappresenta componenti non rapportate alla durata del finanziamento e non restituito al Mutuatario in caso di estinzione anticipata.<BR><BR>
+D) POLIZZA VITA &euro <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMASSMRT</valueabs></B>. Tale costo, in caso di estinzione anticipata, sarà restituita al Mutuatario in relazione alle condizioni di polizza sottoscritte con le Compagnie Assicurative.<BR><BR>
+D1) POLIZZA PERDITE PECUNIARIE &euro <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMASSIMP</valueabs></B>. Tale costo, in caso di estinzione anticipata, sarà restituita al Mutuatario in relazione alle condizioni di polizza sottoscritte con le Compagnie Assicurative.<BR><BR>
+E) IMPOSTA SOSTITUTIVA: &euro <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMRIVALSA</valueabs></B>. Per loro natura non rimborsabili in caso di estinzione anticipata.<BR><BR>
+F) SPESE DI RISCOSSIONE RATA PER IL MUTUANTE : &euro <B>0,00</B>. Tale costo, essendo riferito a componenti rapportate alla durata del finanziamento sarà restituita al Mutuatario in caso di estinzione anticipata in misura pari alla durata residua del finanziamento.<BR><BR>
+G) SPESE DI RISCOSSIONE RATA DA CORRISPONDERE AL _______________________________________ : &euro <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPFISSI</valueabs></B>. Tale costo, essendo riferito a componenti rapportate alla durata del finanziamento sarà restituita al Mutuatario in caso di estinzione anticipata in misura pari alla durata residua del finanziamento.<BR><BR>
+<X VALUE=2><B>I)	NETTO RICAVO: &euro  <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPNET</valueabs>* (capitale lordo mutuato -A-B-C-C1-D-E-F-G)<BR><BR>
+<X VALUE=1>COSTI RIMBORSABILI *: D), D1), F), G)</B><BR><BR>
+<LI> COMMISSIONE ESTINZIONE ANTICIPATA: &euro 0
+<LI> INTERESSI DI MORA: <B>TAN + 1%</B>
+<LI> VALUTA OPERAZIONE: 30 gg. antecedenti la scadenza della prima rata stabilita con il piano di ammortamento. Qualora il netto ricavo sia erogato prima dei 30 gg nulla è dovuto essendo circostanza ricompresa nelle commissioni Intermediario.
+<LI> TAEG: <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTAEG</valueabs></B>% (per la formazione del TAEG vedasi punto II delle Condizioni particolari del presente contratto)
+<LI> TEG: <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTEG</valueabs></B>%  (parametro rilevante ai fini della normativa antiusura)<BR>
+PRIMA SCADENZA: <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD</valueabs></B><BR>
+SPESE PER INVIO DI COMUNICAZIONI PERIODICHE: <B>&euro 0</B><BR>
+SPESE PER L’OFFERTA FUORI SEDE: <B>&euro 0</B><BR><BR>
+</FONT>
+<FONT FACE=TIMES>* In caso di estinzione anticipata della presente cessione, nel rispetto delle norme di legge, il Mutuatario avrà diritto, oltre alla restituzione degli interessi di cui alla lettera A) non maturati per il periodo di rateazione non goduto, alla restituzione di una parte dei costi del Finanziamento di cui alle lettere D), D1) ,F), G), il cui importo sarà determinato, in misura decrescente, con riferimento al numero delle rate scadute alla data della predetta estinzione al netto di eventuali commissioni di estinzione anticipata. La quota rimborsabile della Polizza Vita, determinata dalla Compagnia Assicurativa al momento dell’estinzione anticipata del Finanziamento, sarà da questa riconosciuta al cliente, direttamente o per il tramite dell’Intermediario Finanziario, in funzione delle specifiche condizioni di Polizza.</FONT>
+</TEXT>		
+</BODY>
+</PDF>

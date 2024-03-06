@@ -1,0 +1,41 @@
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDPRD</valueabs>==QSM</ifcond>
+<then>
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize12">
+<include file="\INCLUDE\Percorsi.frw">
+
+<BODY>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>==FEA</ifcond><or><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>==FSE</ifcond><or><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>==FSP</ifcond>
+<then></then>
+<else>
+<if>(<ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CODENTE</valueabs>!=2483748</ifcond>
+<and><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CODENTE</valueabs>!=82207</ifcond>)
+<or>(<ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CODENTE</valueabs><in>(2483748,82207)</ifcond>
+    <and>(<ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP042 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP043 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP044 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP0421 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP0431 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP0441 </ifcond>)
+)<then><ENCRYPT OWNER="soloiopossomodificare" NOCHANGE NOCOPY></then>
+</else>
+</if></if>
+<PDFPAGE SRC="DOCQS264.PDF" ALLPAGES SHOWONCE NOFIRSTBREAK>
+
+<TEXT X=4.4 Y=5.7><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></TEXT> 
+<TEXT X=12.4 Y=5.7><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCA_NASC</valueabs></TEXT> 
+<TEXT X=16.7 Y=5.7><valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_NASC</valueabs></TEXT> 
+
+<TEXT X=1.45 Y=6.45><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC_GG</valueabs></TEXT>
+<TEXT X=2.45 Y=6.45><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC_MM</valueabs></TEXT> 
+<TEXT X=3.3 Y=6.45><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC_AA</valueabs></TEXT> 
+
+<TEXT X=4.2 Y=7.75><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></TEXT> 
+
+<TEXT X=16.15 Y=8.45><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPMUTLRD</valueabs></TEXT> 
+ 
+<TEXT X=1.8 Y=23.75><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></TEXT> 
+
+</BODY>
+</PDF>
+</then></if>

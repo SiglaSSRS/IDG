@@ -1,0 +1,160 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize5.5">
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestatasigla">
+</FOOTER>
+
+<BODY>	
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<TABLE SIZE=9.5>
+<TR>
+<TD WIDTH=70%></TD>	
+<TD WIDTH=30%>
+<B>Spett.le Istituto</B><BR>
+<B>________________________</B><BR>
+<BR>
+<B>Via _____________________</B><BR>
+<BR>
+<B>Città ____________________</B><BR>
+<BR>
+</TD> 	
+</TR> 
+</TABLE>
+<BR>
+<BR>
+<BR>
+<BR>
+<TABLE SIZE=9.5><TR>
+<TD WIDTH=70%><U>OGGETTO: Richiesta conteggio estintivo a nome <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> -</B></U></TD>	
+<TD WIDTH=30%></TD></TR>
+</TABLE>
+<BR>
+<BR>
+<BR>
+<TEXT SIZE=9.5 ALIGN=J>
+Il sottoscritto/a  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>, nato a <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCNASC</valueabs> il <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC</valueabs>, C.F. <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs> , 
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs>==</ifcond><then>
+residente e domiciliato in <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs> c.a.p. <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs>, via/piazza <valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs> 
+<else>
+residente in <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_RES</valueabs> c.a.p. <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_RES</valueabs>, via/piazza <valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs> 
+e domiciliato in <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs> c.a.p. <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs>, via/piazza <valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs> 
+</if>
+, dipendente da <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_STATOGIUR</valueabs>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_LAV</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_LAV</valueabs><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_LAV</valueabs>(<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_LAV</valueabs>) dal <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTASSUNZ</valueabs> con la qualifica di <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DSRUOLO</valueabs>, contraente di un finanziamento contro cessione di quota della retribuzione 
+presso il Vostro Istituto con una rata mensile pari a &euro ____________________________ <BR> 
+</TEXT>
+<BR>
+<BR>
+<BR>
+<TEXT SIZE=9.5 ALIGN=C>
+<B><U>AUTORIZZA E DELEGA</U></B><BR> 
+</TEXT>
+<BR>
+<BR>
+<TEXT SIZE=9.5 ALIGN=J>
+<valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs>, direttamente o mediante i suoi incaricati, a richiedere in suo nome e per suo conto al Vostro Istituto il conto del residuo debito relativo al finanziamento 
+in essere con chiusura al _______________________________, estinguendo il residuo debito di cui al conteggio che sarà comunicato a <valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs>, <valueabs>IDGFAZI00F/RECORD/IDGFAZI_INDIR_SIG</valueabs> – <valueabs>IDGFAZI00F/RECORD/IDGFAZI_SIGLASRL</valueabs> - 
+fax 0438/45917 - indirizzo email: contratticqs@siglafinanziamenti.it, computando gli interessi fino a tutto il mese nel quale sarà effettuato il 
+pagamento.<BR> 
+</TEXT>
+<BR>
+<BR>
+<BR>
+<TABLE SIZE=9.5><TR>
+<TD WIDTH=70%></TD>	
+<TD WIDTH=30%></TD></TR> 
+</TABLE>
+<BR>
+<BR>
+<TABLE SIZE=9.5><TR>
+<TD WIDTH=70%></TD>	
+<TD WIDTH=30% VALIGN=B>__________________________________</TD></TR>
+</TABLE>	
+<TABLE SIZE=9.5><TR>
+<TD WIDTH=70%></TD>	
+<TD WIDTH=30% VALIGN=T>Firma <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></B><I>(firma leggibile)</I></TD></TR>		 
+</TABLE>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</TABLE>	
+<TABLE SIZE=9.5><TR>
+<TD WIDTH=70%>Luogo, ______________________, <if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS_MM</valueabs><in>(01,1)</ifcond><then>30/12/2011</then><else></else><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></if></TD>	
+<TD WIDTH=30%></TD></TR>		 
+</TABLE>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<TABLE SIZE=9.5><TR>
+<TD WIDTH=70%>
+<TABLE SIZE=9.5><TR>
+<TD WIDTH=10% BORDER=0.8>Pratica</TD>
+<TD WIDTH=25% BORDER=0.8><B><valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs><B></TD> 
+<TD WIDTH=65%></TD>
+</TR></TABLE>	
+</TD>	
+<TD WIDTH=30%></TD></TR>		 
+</TABLE>
+<PAGE>
+<TEXT SIZE=10.5 ALIGN=J>
+<TABLE WIDTH=100% SIZE=9.5>
+<TR>
+<TD WIDTH=80%></TD>
+<TD WIDTH=20%>N° pratica: <valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs></TD> 
+</TR>
+</TABLE>
+<BR><BR><BR><BR>
+RICHIESTA DI ESTINZIONE<BR>
+<BR>
+<BR>
+Oggetto: allegato n. 1 al contratto n. <valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs> del <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSTS</valueabs>, richiesta di estinzione.<BR>
+<BR>
+Io sottoscritto <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>, nato a <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCNASC</valueabs>, il <BR>
+<BR>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC</valueabs>, dipendente presso <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs><BR>
+<BR>
+nel prosieguo indicato come richiedente, con la presente autorizzo Sigla a richiedere in mio nome e conto il conteggio estintivo relativo al finanziamento in essere estinguendo il precedente finanziamento da me sottoscritto con altra società al fine di concludere l'operazione di prestito indicata in oggetto e in corso di perfezionamento con questa società. <BR>
+Autorizzo, con espresso esonero da ogni responsabilità, Sigla S.r.l. a trattenere, sulla liquidazione del citato contratto, l'importo richiesto comprensivo di una commissione pari allo 0,00% sull'importo nominale dell'acconto, per un TAEG pari allo 0,00 %. <BR>
+Qualora, per qualsiasi ragione, il contratto di cessione (o Delegazione di Pagamento) non venisse regolarmente adempiuto, mi impegno a restituire immediatamente a Sigla S.r.l., dietro sua semplice richiesta da inviarsi a mezzo lettera raccomandata, l'importo richiesto a titolo di estinzione del precedente finanziamento, maggiorato degli interessi come previsto in contratto e delle spese e oneri, compresi quelli assicurativi, sostenuti da Sigla S.r.l., in relazione al contratto non onorato. <BR>
+Le obbligazioni assunte con la presente richiesta si intendono solidali ed indivisibili anche nei confronti di eventuali eredi ed aventi causa. In espressa deroga al disposto dell'art. 190 c.c. Sigla S.r.l. è autorizzata ad agire in via principale, anziché sussidiaria, per il recupero di metà del suo credito sui beni personali del coniuge coobbligato.<BR>
+In caso di risoluzione dell'attuale rapporto di lavoro, delego irrevocabilmente Sigla S.r.l., esonerando da qualsiasi responsabilità il mio datore di lavoro, a riscuotere l'indennità di fine rapporto e quant'altro a qualsiasi titolo mi competesse a seguito dell'anzidetta risoluzione del rapporto di lavoro, e ciò fino alla concorrenza dell'importo come innanzi da me dovuto alla Sigla S.r.l. stessa.<BR><BR><BR>
+<TABLE WIDTH=100% SIZE=9.5>
+<TR>
+<TD WIDTH=50%></TD>
+<TD WIDTH=50% ALIGN="L">Il Richiedente <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></TD> 
+</TR>
+</TABLE>
+<BR><BR>
+PARTE RISERVATA ALL'ACCERTATORE. Il sottoscritto, incaricato dell'identificazione (art.30, comma 8 del Dlgs 231/2007), dichiara, sotto la propria personale responsabilità, di aver provveduto ad adeguata verifica dell'identità del Richiedente, le cui generalità sono state desunte dai documenti d'identità esibiti in originale e sono state esattamente riportate nel contratto qui richiamato unitamente ai riferimenti del documento esibito; dichiara inoltre che il Richiedente afferma, e tale appare sulla base degli elementi disponibili, di essere l'effettivo titolare del finanziamento oggetto del contratto, il cui scopo è stato indicato nella premessa unitamente alle altre informazioni fornite (art. 21 del Dlgs 231/2007). Il sottoscritto dichiara inoltre che la sottoscrizione della presente quietanza è avvenuta in sua presenza.
+<TABLE WIDTH=100% SIZE=9.5>
+<TR>
+<TD WIDTH=50%></TD>
+<TD WIDTH=50% ALIGN="L">L'Accertatore ___________________________</TD> 
+</TR>
+</TABLE>
+<BR><BR>
+Specifica approvazione per iscritto
+Richiamando quanto sopra si riporta la seguente clausola al fine della specifica approvazione tra le parti:
+"In espressa deroga al disposto dell'art. 190 c.c. Sigla S.r.l. è autorizzata ad agire in via principale, anziché sussidiaria, per il recupero di metà del suo credito sui beni personali del coniuge coobbligato".<BR>
+<BR><BR>
+<TABLE WIDTH=100% SIZE=9.5>
+<TR>
+<TD WIDTH=50% ALIGN="L">Il Richiedente <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></TD>
+<TD WIDTH=50% ALIGN="L">L'Accertatore __________________________</TD>
+</TR>
+<TR>
+</TR>
+</TABLE>
+
+</TEXT>		
+</BODY>
+</PDF>

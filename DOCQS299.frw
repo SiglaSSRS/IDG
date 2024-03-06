@@ -1,0 +1,19 @@
+<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_COD_COMP_VIT</valueabs>!=12161706 </ifcond>
+<then></then>
+<else>
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize7">
+<include file="\INCLUDE\Percorsi.frw">
+<BODY>
+
+<PDFPAGE SRC="DOCQS297.PDF" ALLPAGES SHOWONCE NOFIRSTBREAK></PAGE><PAGE>
+<PDFPAGE SRC="DOCQS298.PDF" ALLPAGES SHOWONCE NOFIRSTBREAK>
+
+
+
+</PAGE>
+
+</BODY>
+</PDF>
+</else>
+</if>

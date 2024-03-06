@@ -1,0 +1,103 @@
+	<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize5.5">
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestatasigla">
+</FOOTER>
+
+<BODY>	
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<TABLE SIZE=9.5>
+<TR>
+<TD WIDTH=70%></TD>	
+<TD WIDTH=30%>
+<B>Spett.le Istituto</B><BR>
+<B>________________________</B><BR>
+<BR>
+<B>Via _____________________</B><BR>
+<BR>
+<B>Città ____________________</B><BR>
+<BR>
+</TD> 	
+</TR> 
+</TABLE>
+<BR>
+<BR>
+<BR>
+<BR>
+<TABLE SIZE=9.5><TR>
+<TD WIDTH=70%><U>OGGETTO: Richiesta conteggio estintivo a nome <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> -</B></U></TD>	
+<TD WIDTH=30%></TD></TR>
+</TABLE>
+<BR>
+<BR>
+<BR>
+<TEXT SIZE=9.5 ALIGN=J>
+Il sottoscritto/a  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>, nato a <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCNASC</valueabs> il <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC</valueabs>, C.F. <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs> , residente e 
+domiciliato in <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_RES</valueabs> c.a.p. <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_RES</valueabs>, via/piazza <valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs> , dipendente da <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs>  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_STATOGIUR</valueabs>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_LAV</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_LAV</valueabs><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_LAV</valueabs>(<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_LAV</valueabs>) dal <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTASSUNZ</valueabs> con la qualifica di <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DSRUOLO</valueabs>, contraente di un finanziamento contro cessione di quota della retribuzione 
+presso il Vostro Istituto con una rata mensile pari a &euro ____________________________ <BR> 
+</TEXT>
+<BR>
+<BR>
+<BR>
+<TEXT SIZE=9.5 ALIGN=C>
+<B><U>AUTORIZZA E DELEGA</U></B><BR> 
+</TEXT>
+<BR>
+<BR>
+<TEXT SIZE=9.5 ALIGN=J>
+<valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs>, direttamente o mediante i suoi incaricati, a richiedere in suo nome e per suo conto al Vostro Istituto il conto del residuo debito relativo al finanziamento 
+in essere con chiusura al _______________________________, estinguendo il residuo debito di cui al conteggio che sarà comunicato a <valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs>, <valueabs>IDGFAZI00F/RECORD/IDGFAZI_INDIR_SIG</valueabs> – <valueabs>IDGFAZI00F/RECORD/IDGFAZI_SIGLASRL</valueabs> - 
+fax <valueabs>IDGFAZI00F/RECORD/IDGFAZI_FAX_SIG</valueabs> - indirizzo email: contratticqs@siglafinanziamenti.it, computando gli interessi fino a tutto il mese nel quale sarà effettuato il 
+pagamento.<BR> 
+</TEXT>
+<BR>
+<BR>
+<BR>
+<TABLE SIZE=9.5><TR>
+<TD WIDTH=70%></TD>	
+<TD WIDTH=30% ALIGN=C>In fede</TD></TR> 
+</TABLE>
+<BR>
+<BR>
+<TABLE SIZE=9.5><TR>
+<TD WIDTH=70%></TD>	
+<TD WIDTH=30% VALIGN=B>__________________________________</TD></TR>
+</TABLE>	
+<TABLE SIZE=9.5><TR>
+<TD WIDTH=70%></TD>	
+<TD WIDTH=30% VALIGN=T>Firma <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></B><I>(firma leggibile)</I></TD></TR>		 
+</TABLE>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</TABLE>	
+<TABLE SIZE=9.5><TR>
+<TD WIDTH=70%>Luogo,_______________________________ <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></TD>	
+<TD WIDTH=30%></TD></TR>		 
+</TABLE>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<TABLE SIZE=9.5><TR>
+<TD WIDTH=70%>
+<TABLE SIZE=9.5><TR>
+<TD WIDTH=10% BORDER=0.8>Pratica</TD>
+<TD WIDTH=25% BORDER=0.8><B><valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs><B></TD> 
+<TD WIDTH=65%></TD>
+</TR></TABLE>	
+</TD>	
+<TD WIDTH=30%></TD></TR>		 
+</TABLE>
+		
+</BODY>
+</PDF>

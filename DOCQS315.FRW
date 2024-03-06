@@ -1,0 +1,359 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize7">
+
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headersiglarischio">
+</TABLE>
+</HEADER>
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestcqsstd">
+</FOOTER>
+
+<BODY>
+<SUBHEADER>
+<TEXT>
+<X VALUE=10>
+<BR><BR>
+<B>Spettabile</B><BR>
+AFI ESCA S.A.<BR>
+VIA VITTOR PISANI, 5<BR>
+20124 MILANO<BR>
+<X VALUE=0>
+</TEXT>
+</SUBHEADER>
+<SUBFOOTER>
+<TEXT>
+<BR>
+Allegati:<BR>
+1) Certificato di stipendio<BR>
+2) Copia busta paga<BR>
+3) Copia documento di identità e codice fiscale<BR>
+4) Proposta di assicurazione in originale<BR>
+5) Schermata Garf<BR>
+<BR>
+</TEXT>
+<TABLE BORDER=0>
+	<TR>
+		<TD WIDTH=45%></TD>
+		<TD WIDTH=10%></TD>
+		<TD ALIGN=C WIDTH=45%><B>Sigla S.r.l.</B><BR><BR></TD>
+	</TR>
+	<TR>
+		<TD WIDTH=45%>Data: <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></TD>
+		<TD WIDTH=10%></TD>
+		<TD WIDTH=45% ALIGN=C>___________________________________________</TD>
+	</TR>
+	<TR><TD><BR></TD></TR>
+	
+</TABLE>
+
+</SUBFOOTER>
+
+<TEXT>
+<TABLE SIZE=9>
+	<TR>
+		<TD SIZE=11  WIDTH=100% BGCOLOR="SILVER"><B>Dati Pratica</B></TD>
+	</TR>
+	<TR>
+		<TD WIDTH=100%>
+			<TABLE >
+				<TR>
+					<TD WIDTH=20%><B>Numero pratica</B>: <valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs></TD>
+					<TD WIDTH=10%><B>Rate</B>: <valueabs>IDGFCTR00F/RECORD/IDGFCTR_PERDUR</valueabs></TD>
+					<TD WIDTH=20%><B>Importo</B>: <valueabs>IDGFCTR00F/RECORD/IDGFCTR_CANONE</valueabs> &euro</TD>
+					<TD WIDTH=30%><B>Montante lordo</B>: <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPMUTLRD</valueabs> &euro</TD>
+					<TD WIDTH=20%><B>TAN</B>: <valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTAN</valueabs> %</TD>
+				</TR>
+			</TABLE>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=100%>
+			<TABLE >			
+				<TR>
+					<TD WIDTH=35%><B>Data decorrenza</B>: <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT</valueabs></TD>
+					<TD WIDTH=30%><B>Data scadenza</B>: <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTULTSCAD</valueabs></TD>
+					<TD WIDTH=35%><B>Data inser. pratica</B>: <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></TD>
+				</TR>
+			</TABLE>	
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=100%>
+			<TABLE >			
+				<TR>
+					<TD WIDTH=50%><B>Prodotto</B>: <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DES_CONV_VIT</valueabs> - <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DES_CONV_IMP</valueabs></TD>
+					<TD WIDTH=50%><B>Tipologia</B>: <valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs></TD>
+				</TR>
+			</TABLE>	
+		</TD>
+	</TR>
+	<TR>
+		<TD SIZE=11  WIDTH=100% BGCOLOR="SILVER"><B>Dati Assicurato</B></TD>
+	</TR>
+	<TR>
+		<TD WIDTH=100%>
+			<TABLE >
+				<TR>
+					<TD WIDTH=50%><B>Cognome e nome</B>: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></TD>
+					<TD WIDTH=35%><B>Codice fiscale</B>: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs></TD>
+					<TD WIDTH=15%><B>Sesso</B>: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs></TD>
+				</TR>
+			</TABLE>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=100%>
+			<TABLE >			
+				<TR>
+					<TD WIDTH=20%><B>Data di nascita:</B>: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC</valueabs></TD>
+					<TD WIDTH=25%><B>Comune di nascita</B>: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCNASC</valueabs></TD>
+					<TD WIDTH=55%></TD>
+				</TR>
+			</TABLE>	
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=100%>
+			<TABLE >			
+				<TR>
+					<TD WIDTH=50%><B>Indirizzo</B>: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs>, <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs>)</TD>
+					<TD WIDTH=50%></TD>
+					</TR>
+			</TABLE>	
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=100%>
+			<TABLE >			
+				<TR> 
+					<TD WIDTH=30%><B>Documento di identità</B>: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DSDOCUM</valueabs></TD>
+					<TD WIDTH=20%><B>N°</B>: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_NUM_DOCUM</valueabs></TD>
+					<TD WIDTH=50%><B>Rilasciato da</B>: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_ENTE</valueabs>  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_DA</valueabs></TD>
+					</TR>
+			</TABLE>	
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=100%>
+			<TABLE >			
+				<TR>
+					<TD WIDTH=20%></TD>
+					<TD WIDTH=40%><B>Data rilascio</B>: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_DA_IL</valueabs></TD>
+					<TD WIDTH=40%><B>Data scadenza</B>: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_SCAD_IL</valueabs></TD>
+					</TR>
+			</TABLE>	
+		</TD>
+	</TR>
+	<TR>
+		<TD SIZE=11  WIDTH=100% BGCOLOR="SILVER"><B>Dati Beneficiario</B></TD>
+	</TR>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDANAFIN</valueabs><in>(72000376,12026045,12026810,12028424,10000037)</ifcond><then>	
+	<TR>
+		<TD WIDTH=100%>
+			<TABLE >			
+				<TR>
+					<TD WIDTH=50%><valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs></TD>
+					<TD WIDTH=50% ALIGN=L><B>P.iva</B>: <valueabs>IDGFAZI00F/RECORD/IDGFAZI_IVA_SIG</valueabs></TD>
+				</TR>
+			</TABLE>	
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=100%>
+			<TABLE >			
+				<TR>
+					<TD WIDTH=50%><valueabs>IDGFAZI00F/RECORD/IDGFAZI_INDIR_SIG</valueabs>, <valueabs>IDGFAZI00F/RECORD/IDGFAZI_SIGLASRL</valueabs></TD>
+					<TD WIDTH=50%></TD>
+				</TR>
+			</TABLE>	
+		</TD>
+	</TR>
+</then><else>
+	<TR>
+		<TD WIDTH=100%>
+			<TABLE>
+				<TR>
+					<TD WIDTH=50%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DESCFIN</valueabs></TD>
+					<TD WIDTH=50% ALIGN=L><B>P.iva</B>: <valueabs>IDGFCQS00F/RECORD/IDGFCQS_PIVA_FIN</valueabs></TD>
+				</TR>
+			</TABLE>	
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=100%>
+			<TABLE >			
+				<TR>
+					<TD WIDTH=50%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_INDIR_FIN</valueabs>, <valueabs>IDGFCQS00F/RECORD/IDGFCQS_INDIRIZZO_FIN</valueabs></TD>
+					<TD WIDTH=50%></TD>
+				</TR>
+			</TABLE>	
+		</TD>
+	</TR>
+
+</else></if>	
+	<TR>
+		<TD SIZE=11  WIDTH=100% BGCOLOR="SILVER"><B>Dati Contraente</B></TD>
+	</TR>
+	<TR>
+		<TD WIDTH=100%>
+			<TABLE >			
+				<TR>
+					<TD WIDTH=50%><valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs></TD>
+					<TD WIDTH=50% ALIGN=L><B>P.iva</B>: <valueabs>IDGFAZI00F/RECORD/IDGFAZI_IVA_SIG</valueabs></TD>
+				</TR>
+			</TABLE>	
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=100%>
+			<TABLE >			
+				<TR>
+					<TD WIDTH=50%><valueabs>IDGFAZI00F/RECORD/IDGFAZI_INDIR_SIG</valueabs>, <valueabs>IDGFAZI00F/RECORD/IDGFAZI_SIGLASRL</valueabs></TD>
+					<TD WIDTH=50%></TD>
+				</TR>
+			</TABLE>	
+		</TD>
+	</TR>
+	<TR>
+		<TD SIZE=11  WIDTH=100% BGCOLOR="SILVER"><B>Dati Amministrazione</B></TD>
+	</TR>
+	<TR>
+		<TD WIDTH=100%>
+			<TABLE >			
+				<TR>
+					<TD WIDTH=50%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs></TD>
+					<TD WIDTH=50%></TD>
+				</TR>
+			</TABLE>	
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=100%>
+			<TABLE >			
+				<TR>
+					<TD WIDTH=50%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_LAV</valueabs>, <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_LAV</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_LAV</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_LAV</valueabs>)</TD>
+					<TD WIDTH=50%></TD>
+				</TR>
+			</TABLE>	
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=100%>
+			<TABLE >			
+				<TR>
+					<TD WIDTH=30%><B>Cod. fiscale</B>: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CODFIS_LAV</valueabs></TD>
+					<TD WIDTH=30%><B>P.iva</B>: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_PIVA_LAV</valueabs></TD>
+					<TD WIDTH=40%><B>Netto mensile</B>: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_NETULTBP</valueabs></TD>
+				</TR>
+			</TABLE>	
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=100%>
+			<TABLE >			
+				<TR>
+					<TD WIDTH=30%><B>Data ass.</B>: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTASSUNZ</valueabs></TD>
+					<TD WIDTH=30%><B>TFR</B>: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRDATLAV</valueabs> &euro</TD>
+					<TD WIDTH=40%><B>TFR Fondo</B>: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRFONDI</valueabs> &euro</TD>
+				</TR>
+			</TABLE>	
+		</TD>
+	</TR>
+</TABLE>
+<BR>
+<TABLE BORDER=0.7>
+	<TR>
+		<TD WIDTH=100%>
+			<TABLE SIZE=7.5>			
+				<TR>
+					<TD ALIGN=C SIZE=9 WIDTH=15%><U>RISCHIO CREDITO</U></TD>
+					<TD ALIGN=C WIDTH=7%></TD>
+					<TD ALIGN=C WIDTH=7%></TD>
+					<TD ALIGN=C WIDTH=7.5%></TD>
+					<TD ALIGN=C WIDTH=9%></TD>
+					<TD ALIGN=C WIDTH=7%></TD>
+					<TD ALIGN=C WIDTH=11.5%></TD>
+					<TD ALIGN=C WIDTH=13%></TD>
+					<TD ALIGN=C WIDTH=8%></TD>
+					<TD ALIGN=C WIDTH=7%></TD>
+					<TD ALIGN=C WIDTH=9%></TD>
+				</TR>		
+				<TR>
+					<TD ALIGN=C WIDTH=15%>Aliquota<BR>%</TD>
+					<TD ALIGN=C WIDTH=7%>P.Netto &euro</TD>
+					<TD ALIGN=C WIDTH=7%>Spesa<BR>&euro</TD>
+					<TD ALIGN=C WIDTH=7.5%>Imposta &euro</TD>
+					<TD ALIGN=C WIDTH=9%>Accessori &euro</TD>
+					<TD ALIGN=C WIDTH=7%>Sconto</TD>
+					<TD ALIGN=C WIDTH=11.5%>Sovrappremio &euro</TD>
+					<TD ALIGN=C WIDTH=13%>Sopravvenienze</TD>
+					<TD ALIGN=C WIDTH=8%>Variazioni Utente</TD>
+					<TD ALIGN=C WIDTH=7%>P.lordo &euro</TD>
+					<TD ALIGN=C WIDTH=9%>N°Polizza</TD>
+				</TR>
+				<TR>
+					<TD ALIGN=C WIDTH=15%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_PERC_ASS_IMP</valueabs></TD>
+					<TD ALIGN=C WIDTH=7%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NET_ASS_IMP</valueabs></TD>
+					<TD ALIGN=C WIDTH=7%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_SPE_ASS_IMP</valueabs></TD>
+					<TD ALIGN=C WIDTH=7.5%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMP_ASS_IMP</valueabs></TD>
+					<TD ALIGN=C WIDTH=9%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_SPE_ACC_IMP</valueabs></TD>
+					<TD ALIGN=C WIDTH=7%>NO</TD>
+					<TD ALIGN=C WIDTH=11.5%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IM_SOVR_IMP</valueabs></TD>
+					<TD ALIGN=C WIDTH=13%>NO</TD>
+					<TD ALIGN=C WIDTH=8%>NO</TD>
+					<TD ALIGN=C WIDTH=7%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMASSIMP</valueabs></TD>
+					<TD ALIGN=C WIDTH=9%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_POL_IMP</valueabs></TD>
+				</TR>
+			</TABLE>
+		</TD>
+	</TR>
+</TABLE>
+<BR>
+<TABLE BORDER=0>
+	<TR>
+		<TD WIDTH=50%>
+			<TABLE BORDER=0>
+				<TR>
+					<TD WIDTH=100%><B>Estinzione altri prestiti:</B></TD>
+				</TR>
+				
+				<loop>
+				<loopda>1</loopda>
+				<looproot>IDGFDEB00F/RECORD</looproot>
+					<if><ifcond><value>IDGFDEB_FLAGESTIN</value>==S</ifcond><and><ifcond><value>IDGFDEB_CDTIPIMP</value>!=PPP</ifcond>
+					<then>
+						<TR>
+							<TD ALIGN=LEFT><value>IDGFDEB_DESTIPIMP</value> <value>IDGFDEB_DESANACON</value> di rata <value>IDGFDEB_IMPCAN</value> per un residuo di <value>IDGFDEB_IMMONRES</value></TD>
+						</TR>
+					</if>	
+				</loop>
+				
+			</TABLE>
+		</TD>
+		<TD WIDTH=50%>
+			<TABLE BORDER=0>
+				<TR>
+					<TD WIDTH=100%><B>Coesistenza altri prestiti:</B></TD>
+				</TR>
+				
+				<loop>
+				<loopda>1</loopda>
+				<looproot>IDGFDEB00F/RECORD</looproot>
+					<if><ifcond><value>IDGFDEB_FLAGESTIN</value>==N</ifcond><and><ifcond><value>IDGFDEB_IMMONRES</value>!=<valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPFIN</valueabs></ifcond><and><ifcond><value>IDGFDEB_CDTIPIMP</value>!=MRS</ifcond><and><ifcond><value>IDGFDEB_CDTIPIMP</value>!=PPP</ifcond>
+					<then>
+						<TR>
+							<TD ALIGN=LEFT><value>IDGFDEB_DESTIPIMP</value> <value>IDGFDEB_DESANACON</value> di rata <value>IDGFDEB_IMPCAN</value> per un residuo di <value>IDGFDEB_IMMONRES</value></TD>
+						</TR>
+					</if>	
+				</loop>
+				
+			</TABLE>
+		</TD>
+	</TR>
+</TABLE>
+
+</TEXT>
+</BODY>
+</PDF>
