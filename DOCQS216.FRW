@@ -1,0 +1,92 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize7">
+<include file="\INCLUDE\Percorsi.frw">
+<BODY>
+<PDFPAGE SRC="DOCQS216.PDF" VALUE=1 SHOWONCE> 
+	
+	<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>==CQS</ifcond><then><TEXT X=1 Y=4.5><B>X</B></TEXT></if>		
+	<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>!=CQS</ifcond><then><TEXT X=3.3 Y=4.5><B>X</B></TEXT></if>		
+	
+	<TEXT X=3 Y=5.4><valueabs>IDGFCQP00F/RECORD/IDGFCQP_DURATA</valueabs></TEXT>
+	<TEXT X=6.5 Y=5.4><valueabs>IDGFCQP00F/RECORD/IDGFCQP_DATATT</valueabs></TEXT>
+	<TEXT X=9.7 Y=5.4><valueabs>IDGFCQP00F/RECORD/IDGFCQP_DTULTSCAD</valueabs></TEXT>
+	<TEXT X=15.5 Y=5.4><valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMPCAN</valueabs></TEXT>
+
+	<TEXT X=3.8 Y=5.7><valueabs>IDGFCQP00F/RECORD/IDGFCQP_DURATA</valueabs></TEXT>
+	<TEXT X=7.7 Y=5.7><valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMPMUTLRD</valueabs></TEXT>
+	<TEXT X=15.5 Y=5.7><valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMASSMRT</valueabs></TEXT>
+	
+
+	
+	<TEXT X=3.2 Y=18.4><valueabs>IDGFCQP00F/RECORD/IDGFCQP_DATSYS</valueabs></TEXT>	
+		
+	<TEXT X=3.2 Y=19.4><valueabs>IDGFCQP00F/RECORD/IDGFCQP_DATSYS</valueabs></TEXT>	
+
+
+
+<PAGE>
+<PDFPAGE SRC="DOCQS216.PDF" VALUE=2 SHOWONCE> 
+	<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>==CQS</ifcond><then><TEXT X=1 Y=4.5><B>X</B></TEXT></if>		
+	<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>!=CQS</ifcond><then><TEXT X=3.3 Y=4.5><B>X</B></TEXT></if>		
+	
+	<TEXT X=3 Y=5.4><valueabs>IDGFCQP00F/RECORD/IDGFCQP_DURATA</valueabs></TEXT>
+	<TEXT X=6.5 Y=5.4><valueabs>IDGFCQP00F/RECORD/IDGFCQP_DATATT</valueabs></TEXT>
+	<TEXT X=9.7 Y=5.4><valueabs>IDGFCQP00F/RECORD/IDGFCQP_DTULTSCAD</valueabs></TEXT>
+	<TEXT X=15.5 Y=5.4><valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMPCAN</valueabs></TEXT>
+
+
+	<TEXT X=3.8 Y=5.7><valueabs>IDGFCQP00F/RECORD/IDGFCQP_DURATA</valueabs></TEXT>
+	<TEXT X=7.7 Y=5.7><valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMPMUTLRD</valueabs></TEXT>
+	<TEXT X=15.5 Y=5.7><valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMASSMRT</valueabs></TEXT>
+	
+
+	
+	<TEXT X=3.2 Y=18.4><valueabs>IDGFCQP00F/RECORD/IDGFCQP_DATSYS</valueabs></TEXT>	
+		
+	<TEXT X=3.2 Y=19.4><valueabs>IDGFCQP00F/RECORD/IDGFCQP_DATSYS</valueabs></TEXT>	
+<PAGE>
+<PDFPAGE SRC="DOCQS216.PDF" VALUE=3 SHOWONCE> 
+	<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>==CQS</ifcond><then><TEXT X=1 Y=4.5><B>X</B></TEXT></if>		
+	<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>!=CQS</ifcond><then><TEXT X=3.3 Y=4.5><B>X</B></TEXT></if>		
+	
+	<TEXT X=3 Y=5.4><valueabs>IDGFCQP00F/RECORD/IDGFCQP_DURATA</valueabs></TEXT>
+	<TEXT X=6.5 Y=5.4><valueabs>IDGFCQP00F/RECORD/IDGFCQP_DATATT</valueabs></TEXT>
+	<TEXT X=9.7 Y=5.4><valueabs>IDGFCQP00F/RECORD/IDGFCQP_DTULTSCAD</valueabs></TEXT>
+	<TEXT X=15.5 Y=5.4><valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMPCAN</valueabs></TEXT>
+
+
+	<TEXT X=3.8 Y=5.7><valueabs>IDGFCQP00F/RECORD/IDGFCQP_DURATA</valueabs></TEXT>
+	<TEXT X=7.7 Y=5.7><valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMPMUTLRD</valueabs></TEXT>
+	<TEXT X=15.5 Y=5.7><valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMASSMRT</valueabs></TEXT>
+	
+
+	
+	<TEXT X=3.2 Y=18.4><valueabs>IDGFCQP00F/RECORD/IDGFCQP_DATSYS</valueabs></TEXT>	
+		
+	<TEXT X=3.2 Y=19.4><valueabs>IDGFCQP00F/RECORD/IDGFCQP_DATSYS</valueabs></TEXT>	
+	
+	<PAGE>
+<PDFPAGE SRC="DOCQS216.PDF" VALUE=4 SHOWONCE>
+	<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>==CQS</ifcond><then><TEXT X=1 Y=4.5><B>X</B></TEXT></if>		
+	<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>!=CQS</ifcond><then><TEXT X=3.3 Y=4.5><B>X</B></TEXT></if>		
+	
+	<TEXT X=3 Y=5.4><valueabs>IDGFCQP00F/RECORD/IDGFCQP_DURATA</valueabs></TEXT>
+	<TEXT X=6.5 Y=5.4><valueabs>IDGFCQP00F/RECORD/IDGFCQP_DATATT</valueabs></TEXT>
+	<TEXT X=9.7 Y=5.4><valueabs>IDGFCQP00F/RECORD/IDGFCQP_DTULTSCAD</valueabs></TEXT>
+	<TEXT X=15.5 Y=5.4><valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMPCAN</valueabs></TEXT>
+
+
+	<TEXT X=3.8 Y=5.7><valueabs>IDGFCQP00F/RECORD/IDGFCQP_DURATA</valueabs></TEXT>
+	<TEXT X=7.7 Y=5.7><valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMPMUTLRD</valueabs></TEXT>
+	<TEXT X=15.5 Y=5.7><valueabs>IDGFCQP00F/RECORD/IDGFCQP_IMASSMRT</valueabs></TEXT>
+	
+
+	
+	<TEXT X=3.2 Y=18.4><valueabs>IDGFCQP00F/RECORD/IDGFCQP_DATSYS</valueabs></TEXT>	
+		
+	<TEXT X=3.2 Y=19.4><valueabs>IDGFCQP00F/RECORD/IDGFCQP_DATSYS</valueabs></TEXT>	
+
+
+</PAGE>
+</BODY>
+</PDF>

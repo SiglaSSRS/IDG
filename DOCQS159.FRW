@@ -1,0 +1,180 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize9">
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3">
+</HEADER>
+<FOOTER>
+<include file="\INCLUDE\IncludedStruttura.frw" value="footercartaintestatalegale">
+</FOOTER>
+<BODY>
+<TEXT LINESPACE=0.5>
+<BR><BR><BR>
+Conegliano, <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs><BR><BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>Spett.le Società</TD>
+</TR>
+<TR>
+<TD WIDTH=25% SIZE=7><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_PEC_LAV</valueabs>!=</ifcond><then>e-mail: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_PEC_LAV</valueabs></then><else>Raccomandata A.R.</else></if></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_STATOGIUR</valueabs></B></TD>
+</TR>
+<TR>
+<TD WIDTH=25% SIZE=7>P. IVA: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_PIVA_LAVP</valueabs></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_LAV</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_LAV</valueabs> - <U><B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_LAV</valueabs></B></U>  (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_LAV</valueabs>)</TD>
+</TR>
+<TR>
+<TD WIDTH=25%><if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDANAFIN</valueabs>==12001691</ifcond><then>Luogo e data</then></if></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%></TD>
+</TR>
+<BR><BR><BR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><B><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond><then>Egr. Signor</then></if>
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==F</ifcond><then>Gent.le Signora</then></if>
+</B></TD>
+</TR>
+<TR>
+<TD WIDTH=25%>Raccomandata A/R</TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></B></TD>
+</TR>
+<TR>
+<TD WIDTH=25% SIZE=6></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs> - <U><B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs></B></U>  (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs>)</TD>
+</TR>
+<TR>
+<TD WIDTH=25% SIZE=6></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+<TEXT ALIGN=J LINESPACE=0.5>
+<B><U>Oggetto:Contratto di <if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==DEL</ifcond><then>delegazione di pagamento del quinto dello stipendio</then></if>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>!=</ifcond><then>mutuo contro cessione del quinto dello stipendio</then></if>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>==</ifcond><then>mutuo contro cessione del quinto della pensione</then>
+</if> del <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTR</valueabs>, sottoscritto tra SIGLA S.R.L. e <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> (Rif. n°<valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs>).</U></B>
+</TEXT>
+<TEXT ALIGN=J LINESPACE=0.5>
+<BR><BR>
+Alleghiamo alla presente ai fini di notifica ex D.P.R. n°180/1950 e successive modificazioni, nonché ex artt. 1260 e ss. c.c., il contratto di mutuo contro cessione del quinto dello stipendio di cui all’oggetto, concluso tra <if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond><then>il Vostro dipendente</then></if>
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==F</ifcond><then>la Vostra dipendente</then></if> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> e la scrivente SIGLA s.r.l. in data <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTR</valueabs>.
+</TEXT>
+<TEXT ALIGN=J LINESPACE=0.5>
+<BR>
+<BR>
+A tutt’oggi il montante residuo è pari ad  <B>&euro <valueabs>IDGFSUB00F/RECORD/IDGSUB_MONTRES</valueabs></B> e costituito dalle seguenti voci:<BR>
+<B>n° <valueabs>IDGFSUB00F/RECORD/IDGSUB_NUMRAT</valueabs> quote mensili ciascuna da &euro <valueabs>IDGFSUB00F/RECORD/IDGSUB_IMP_QUOTA_NEW</valueabs> e n° 1 quota mensile da &euro <valueabs>IDGFSUB00F/RECORD/IDGSUB_IMP_QUOTINA_N</valueabs>.</B><BR>
+<BR>
+Alla luce di quanto sopra, Vi preghiamo:<BR>
+<B>1.</B> di effettuare la trattenuta mensile di &euro <valueabs>IDGFSUB00F/RECORD/IDGSUB_IMP_QUOTA_NEW</valueabs>, sullo stipendio di <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>, a partire dal mese di 
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs><in>(01,1)</ifcond><then>Gennaio</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs><in>(02,2)</ifcond><then>Febbraio</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs><in>(03,3)</ifcond><then>Marzo</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs><in>(04,4)</ifcond><then>Aprile</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs><in>(05,5)</ifcond><then>Maggio</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs><in>(06,6)</ifcond><then>Giugno</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs><in>(07,7)</ifcond><then>Luglio</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs><in>(08,8)</ifcond><then>Agosto</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs><in>(09,9)</ifcond><then>Settembre</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs>==10</ifcond><then>Ottobre</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs>==11</ifcond><then>Novembre</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs>==12</ifcond><then>Dicembre</if>
+ <valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_AA</valueabs>, per <valueabs>IDGFSUB00F/RECORD/IDGSUB_NUMRAT</valueabs> mensilità, ossia fino al mese di 
+ <if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAU_MM</valueabs><in>(01,1)</ifcond><then>Gennaio</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAU_MM</valueabs><in>(02,2)</ifcond><then>Febbraio</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAU_MM</valueabs><in>(03,3)</ifcond><then>Marzo</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAU_MM</valueabs><in>(04,4)</ifcond><then>Aprile</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAU_MM</valueabs><in>(05,5)</ifcond><then>Maggio</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAU_MM</valueabs><in>(06,6)</ifcond><then>Giugno</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAU_MM</valueabs><in>(07,7)</ifcond><then>Luglio</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAU_MM</valueabs><in>(08,8)</ifcond><then>Agosto</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAU_MM</valueabs><in>(09,9)</ifcond><then>Settembre</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAU_MM</valueabs>==10</ifcond><then>Ottobre</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAU_MM</valueabs>==11</ifcond><then>Novembre</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAU_MM</valueabs>==12</ifcond><then>Dicembre</if>
+  <valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAU_AA</valueabs> in adempimento al contratto allegatoVi; <BR>
+<BR>
+<B>2.</B> di effettuare la trattenuta mensile di &euro <valueabs>IDGFSUB00F/RECORD/IDGSUB_IMP_QUOTINA_O</valueabs>, sullo stipendio di <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>, per la mensilità di 
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAQ_MM</valueabs><in>(01,1)</ifcond><then>Gennaio</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAQ_MM</valueabs><in>(02,2)</ifcond><then>Febbraio</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAQ_MM</valueabs><in>(03,3)</ifcond><then>Marzo</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAQ_MM</valueabs><in>(04,4)</ifcond><then>Aprile</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAQ_MM</valueabs><in>(05,5)</ifcond><then>Maggio</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAQ_MM</valueabs><in>(06,6)</ifcond><then>Giugno</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAQ_MM</valueabs><in>(07,7)</ifcond><then>Luglio</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAQ_MM</valueabs><in>(08,8)</ifcond><then>Agosto</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAQ_MM</valueabs><in>(09,9)</ifcond><then>Settembre</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAQ_MM</valueabs>==10</ifcond><then>Ottobre</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAQ_MM</valueabs>==11</ifcond><then>Novembre</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAQ_MM</valueabs>==12</ifcond><then>Dicembre</if>
+  <valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAQ_AA</valueabs>, sempre in adempimento al contratto allegatoVi;<BR>
+<BR>
+<B>3.</B> di versare tale trattenuta a Sigla s.r.l., a mezzo bonifico bancario su c/c nr 100000012670 ABI 03069 CAB 12711 CIN A intestato a SIGLA SRL – <B>IBAN: IT29A0306912711100000012670</B>, entro il giorno 10 del mese successivo a quello relativo alla mensilità maturata, così come pattuito in contratto e fino alla scadenza dell’ultima rata.<BR>
+<BR>
+La destinataria società sarà altresì tenuta, in caso di cessazione del rapporto di lavoro, a trattenere le indennità di fine rapporto a lui dovute fino alla concorrenza del saldo del residuo debito, giusta art. 7 contratto in allegato.<BR>
+<BR>
+La medesima si impegna, inoltre, a non concedere anticipazioni sulle sopraccitate indennità fino a completa estinzione della cessione.<BR>
+<BR>
+<B>Inviamo la presente comunicazione in duplice originale, chiedendoVi di restituircene copia sottoscritta, nell’apposito spazio, dal Vostro legale rappresentante “pro tempore”, per accettazione delle condizioni nella stessa esplicate, a mezzo PEC.</B><BR>
+<BR>
+A disposizione per qualsiasi chiarimento al seguente numero telefonico 0438.372950, porgiamo i nostri più cordiali saluti.<BR>
+<BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=80%></TD>
+<TD ALIGN="C" WIDTH=20%><B>Sigla S.r.l.</B></TD>
+</TR>
+<TR>
+<TD WIDTH=80%></TD>
+<TD ALIGN="C" WIDTH=20%><B><I>un procuratore</I></B></TD>
+</TR>
+</TABLE>
+</TEXT>
+<IMG SRC="<valueabs>Immagini/MAZZER/Path</valueabs><valueabs>Immagini/MAZZER/Nome</valueabs>" BACKGROUND X=15.3 Y=24.25 SCALE=15>
+<TEXT>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=80%></TD>
+<TD WIDTH=20%><BR><BR><BR></TD>
+</TR>
+<TR>
+<TD WIDTH=80%>__________________________________________________________________</TD>
+<TD WIDTH=20%></TD>
+</TR>
+<TR>
+<TD WIDTH=80%><B>Timbro/Firma del legale rappresentante "pro tempore".</B></TD>
+<TD WIDTH=20%></TD>
+</TR>
+</TABLE>
+</TEXT>
+</BODY>
+</PDF>

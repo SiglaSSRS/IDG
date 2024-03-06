@@ -1,0 +1,69 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize9">
+<include file="\INCLUDE\Percorsi.frw">
+<BODY>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>==FEA</ifcond><or><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>==FSE</ifcond><or><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>==FSP</ifcond>
+<then></then>
+<else>
+<if>(<ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CODENTE</valueabs>!=2483748</ifcond>
+<and><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CODENTE</valueabs>!=82207</ifcond>)
+<or>(<ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CODENTE</valueabs><in>(2483748,82207)</ifcond>
+    <and>(<ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP042 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP043 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP044 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP0421 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP0431 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP0441 </ifcond>)
+)<then><ENCRYPT OWNER="soloiopossomodificare" NOCHANGE NOCOPY></then>
+</else>
+</if></if>
+<PDFPAGE SRC="DOCQS225.PDF" VALUE=1 SHOWONCE> 
+
+<TEXT X=3 Y=5.2><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></TEXT>
+<TEXT X=13 Y=5.2><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs></TEXT>
+
+<TEXT X=13.3 Y=5.65><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC</valueabs></TEXT>
+<TEXT X=3 Y=5.65><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCA_NASC</valueabs></TEXT>
+<TEXT X=9.7 Y=5.65><valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_NASC</valueabs></TEXT>
+<TEXT X=16.8 Y=5.65><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs></TEXT>
+
+<TEXT X=2 Y=6.6><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs></TEXT>
+<TEXT X=11.2 Y=6.6><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs>)</TEXT>
+<TEXT X=17.3 Y=6.6><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs></TEXT>
+
+<TEXT X=3 Y=7.4>
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_TIPO_DOCUM</valueabs><in>(CAI,C20,CDN,DIV)</ifcond><then>01</then>
+<else><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_TIPO_DOCUM</valueabs><in>(PAT,P1,P2)</ifcond><then>02</then>
+<else><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_TIPO_DOCUM</valueabs>==PAS</ifcond><then>03</then></if>
+<else><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_TIPO_DOCUM</valueabs>==PDA</ifcond><then>04</then></else></if></else></if></else></if></TEXT>
+<TEXT X=5.3 Y=7.4><valueabs>IDGFCLI00F/RECORD/IDGFCLI_NUM_DOCUM</valueabs></TEXT>
+<TEXT X=11.3 Y=7.4><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_ENTE</valueabs></TEXT>
+
+<TEXT X=2.5 Y=7.85><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_DA_IL</valueabs></TEXT>
+<TEXT X=8 Y=7.85><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_DA</valueabs></TEXT>
+
+
+<TEXT X=6 Y=9.75><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs></TEXT>
+
+<TEXT X=3 Y=10.15><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT</valueabs></TEXT>
+<TEXT X=10 Y=10.15>01/<valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTULTSCAD_MM</valueabs>/<valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTULTSCAD_AA</valueabs></TEXT>
+<TEXT X=16 Y=10.15><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DURATA</valueabs></TEXT>
+
+<TEXT X=3 Y=10.6><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DURATA</valueabs></TEXT>
+<TEXT X=9 Y=10.6><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPCAN</valueabs></TEXT>
+
+<TEXT X=15 Y=10.6><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPMUTLRD</valueabs></TEXT>
+
+<TEXT X=13 Y=11.05><valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTAN02</valueabs></TEXT>
+
+<PAGE>
+<PDFPAGE SRC="DOCQS225.PDF" VALUE=2 SHOWONCE> 
+
+<TEXT X=2.3 Y=10.3><INPUT TYPE=TEXT NAME=A-PROPASSICUDOCQS225##-01 SIZE=8 WIDTH=6.25 HEIGHT=1.5 BORDERCOLOR=WHITE></TEXT>
+
+<TEXT X=12.7 Y=10.3><if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FEA</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FSE</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>!=FSP</ifcond><then><INPUT TYPE=SIGNATURE BORDERCOLOR=WHITE NAME=C-PROPASSICUDOCQS225##-01 WIDTH=5.5 HEIGHT=1.5 BORDERCOLOR=WHITE></then></if></TEXT>
+
+
+</PAGE>
+</BODY>
+</PDF>

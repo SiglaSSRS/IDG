@@ -1,0 +1,34 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8">
+<include file="\INCLUDE\Percorsi.frw">
+
+<PDFPAGE SRC="DOCQS180.PDF" VALUE=1>
+<TEXT X=4 Y=4.6><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs></TEXT>
+<TEXT X=13 Y=4.6><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPMUTLRD</valueabs></TEXT>
+
+
+<TEXT X=4 Y=5><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DURATA</valueabs></TEXT>
+<TEXT X=13 Y=5><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPCAN</valueabs></TEXT>
+
+<TEXT X=3 Y=6.1><valueabs>IDGFCLI00F/RECORD/IDGFCLI_NOME</valueabs></TEXT>
+<TEXT X=10.5 Y=6.1><valueabs>IDGFCLI00F/RECORD/IDGFCLI_COGNOME</valueabs></TEXT>
+
+<TEXT X=3 Y=6.55><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCA_NASC</valueabs>  (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_NASC</valueabs>)</TEXT>
+<TEXT X=12.5 Y=6.55><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC</valueabs></TEXT>
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond><then><TEXT X=16.85 Y=6.55>X</TEXT></then>
+<else><TEXT X=17.85 Y=6.55>X</TEXT></else></if>
+
+<TEXT X=3 Y=6.95><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs></TEXT>
+
+<TEXT X=3 Y=7.4><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs></TEXT>
+<TEXT X=10 Y=7.4><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs></TEXT>
+<TEXT X=13 Y=7.4><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs>)</TEXT>
+
+<TEXT X=3.5 Y=13.35><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></TEXT>
+<TEXT X=3.5 Y=15.55><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></TEXT>
+<TEXT X=3.5 Y=21.05><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></TEXT>
+<TEXT X=3.5 Y=24.45><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></TEXT>
+
+
+</BODY>
+</PDF>

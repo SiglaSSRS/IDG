@@ -1,0 +1,83 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="sacstrutturasize10">
+<FOOTER>
+<include file="\INCLUDE\IncludedStruttura.frw" value="footercartaintestatasigla">
+</FOOTER>
+<BODY>
+<TEXT>
+<BR><BR><BR><BR><BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>Spettabile</TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>AXERIA PREVOYANCE</TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>Via Vittor Pisani, 19</TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>20124 Milano (MI)</TD>
+</TR>
+<BR><BR>
+</TABLE>
+<BR>
+<BR>
+<TEXT ALIGN=J SIZE=7>
+(Luogo e data)<BR>
+_________________________, _______________<BR><BR>
+<FONT SIZE=10>
+Oggetto: Richiesta rimborso premio non goduto delle polizze del contratto nr. <valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs> a nome <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> estinto alla data del <valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN</valueabs>.<BR><BR>
+<BR>
+<TEXT ALIGN=J>
+Io sottoscritt<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond><then>o<else>a</if>:<BR>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>  nat<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond><then>o<else>a</if> a <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCNASC</valueabs> il <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC</valueabs> e residente in 
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs> a CAP <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs>  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs>  (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs>),<BR>
+<BR>
+titolare del contratto in oggetto, estinto anticipatamente, <B>chiedo il rimborso del premio non goduto delle polizze relative al contratto in oggetto</B> da effettuarsi possibilmente a mezzo:<BR>
+<BR>
+<BR>
+<TABLE WIDTH=100% ALIGN="J">
+<TR>
+<TD WIDTH=5%><IMG SRC="<valueabs>Immagini/BOX/Path</valueabs><valueabs>Immagini/BOX/Nome</valueabs>" SCALE=<valueabs>Immagini/BOX/Scale</valueabs>></TD>
+<TD WIDTH=95% ALIGN=L>Bonifico bancario alle seguenti coordinate:<BR>
+IBAN:    IT  _____ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __<BR>
+Intestato a ____________________________________</TD>
+</TR>
+<TR>
+<TD WIDTH=5%><IMG SRC="<valueabs>Immagini/BOX/Path</valueabs><valueabs>Immagini/BOX/Nome</valueabs>" SCALE=<valueabs>Immagini/BOX/Scale</valueabs>></TD>
+<TD WIDTH=95% ALIGN=L>Assegno Circolare da inviare all’ indirizzo sopra indicato.</TD>
+</TR>
+</TABLE>
+<BR>
+Distinti saluti.
+
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=50% ALIGN="C"></TD>
+<TD WIDTH=50% ALIGN="C">In fede</TD>
+</TR>
+<TR>
+<TD WIDTH=50% ALIGN="C"></TD>
+<TD WIDTH=50% ALIGN="C">______________________________<BR><FONT SIZE=7>(firma leggibile)</TD>
+</TR>
+<TR>
+<TD WIDTH=50% ALIGN="L"><BR><BR><BR><BR><BR><BR>All.: documento identità valido<BR>- copia conteggio estintivo;<BR>- copia lettera liberatoria.</TD>
+<TD WIDTH=50%></TD>
+</TR>
+</TABLE>
+</TEXT>
+</BODY>
+</PDF>

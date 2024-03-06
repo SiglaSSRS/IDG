@@ -1,0 +1,170 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize10">
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3">
+</HEADER>
+<FOOTER>
+<include file="\INCLUDE\IncludedStruttura.frw" value="footercartaintestatalegale">
+</FOOTER>
+<BODY>
+<BR>
+<BR>
+<BR>
+<BR>
+<TEXT LINESPACE=0.5>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond><then>Egr. Signor</then></if>
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==F</ifcond><then>Gent.le Signora</then></if></TD>
+</TR>
+<TR>
+<TD WIDTH=25%>Raccomandata A.R.</TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></B></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs> - <U><B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs></B></U>  (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs>)</TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+Conegliano, lì <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs><BR>
+<BR>
+<BR>
+<TEXT ALIGN=J LINESPACE=0.5>
+<B><U>Oggetto:Contratto <if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==DEL</ifcond>
+	<then>delega di pagamento</then>
+	</if>
+	<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>!=</ifcond>
+		<then>cessione del quinto dello stipendio</then>
+	</if>
+	<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>==</ifcond>
+		<then>cessione del quinto della pensione</then>
+</if> sottoscritto tra Sigla s.r.l. e <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> in data <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTR</valueabs> Rif. pratica n° <valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs>. </U></B>
+</TEXT>
+<TEXT ALIGN=J LINESPACE=0.5>
+<BR>
+<BR>Acconsentiamo alla Sua richiesta di pagare personalmente la rata mensile del contratto in oggetto e con la presente siamo ad precisarne le modalità di attuazione.
+</TEXT>
+<TEXT ALIGN=J LINESPACE=0.5>
+<BR>
+<BR>
+A tutt’oggi il residuo debito, è di complessivi <B>&euro <valueabs>IDGFSUB00F/RECORD/IDGSUB_MONTRES</valueabs></B>, estinguibile con versamento di:<BR>
+<BR>
+n° <valueabs>IDGFSUB00F/RECORD/IDGSUB_NUMRAT</valueabs> rate mensili dell’importo di &euro <valueabs>IDGFSUB00F/RECORD/IDGSUB_IMP_QUOTA_NEW</valueabs>, dal mese di 
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs><in>(01,1)</ifcond><then>Gennaio</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs><in>(02,2)</ifcond><then>Febbraio</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs><in>(03,3)</ifcond><then>Marzo</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs><in>(04,4)</ifcond><then>Aprile</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs><in>(05,5)</ifcond><then>Maggio</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs><in>(06,6)</ifcond><then>Giugno</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs><in>(07,7)</ifcond><then>Luglio</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs><in>(08,8)</ifcond><then>Agosto</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs><in>(09,9)</ifcond><then>Settembre</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs>==10</ifcond><then>Ottobre</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs>==11</ifcond><then>Novembre</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs>==12</ifcond><then>Dicembre</if>
+ <valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_AA</valueabs> e fino al mese di 
+ <if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAU_MM</valueabs><in>(01,1)</ifcond><then>Gennaio</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAU_MM</valueabs><in>(02,2)</ifcond><then>Febbraio</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAU_MM</valueabs><in>(03,3)</ifcond><then>Marzo</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAU_MM</valueabs><in>(04,4)</ifcond><then>Aprile</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAU_MM</valueabs><in>(05,5)</ifcond><then>Maggio</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAU_MM</valueabs><in>(06,6)</ifcond><then>Giugno</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAU_MM</valueabs><in>(07,7)</ifcond><then>Luglio</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAU_MM</valueabs><in>(08,8)</ifcond><then>Agosto</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAU_MM</valueabs><in>(09,9)</ifcond><then>Settembre</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAU_MM</valueabs>==10</ifcond><then>Ottobre</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAU_MM</valueabs>==11</ifcond><then>Novembre</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAU_MM</valueabs>==12</ifcond><then>Dicembre</if>
+ <valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAU_AA</valueabs> compresi e<BR>
+<BR>
+n° 1 rata dell’importo di &euro <valueabs>IDGFSUB00F/RECORD/IDGSUB_IMP_QUOTINA_N</valueabs>,  per la mensilità di 
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAQ_MM</valueabs><in>(01,1)</ifcond><then>Gennaio</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAQ_MM</valueabs><in>(02,2)</ifcond><then>Febbraio</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAQ_MM</valueabs><in>(03,3)</ifcond><then>Marzo</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAQ_MM</valueabs><in>(04,4)</ifcond><then>Aprile</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAQ_MM</valueabs><in>(05,5)</ifcond><then>Maggio</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAQ_MM</valueabs><in>(06,6)</ifcond><then>Giugno</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAQ_MM</valueabs><in>(07,7)</ifcond><then>Luglio</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAQ_MM</valueabs><in>(08,8)</ifcond><then>Agosto</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAQ_MM</valueabs><in>(09,9)</ifcond><then>Settembre</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAQ_MM</valueabs>==10</ifcond><then>Ottobre</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAQ_MM</valueabs>==11</ifcond><then>Novembre</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAQ_MM</valueabs>==12</ifcond><then>Dicembre</if>
+  <valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAQ_AA</valueabs>.<BR>
+<BR>
+<B>Le chiediamo di provvedere al versamento delle rate mensili sopra specificate entro e non oltre il giorno 15 del mese, a far data dal mese di 
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs><in>(01,1)</ifcond><then>Gennaio</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs><in>(02,2)</ifcond><then>Febbraio</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs><in>(03,3)</ifcond><then>Marzo</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs><in>(04,4)</ifcond><then>Aprile</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs><in>(05,5)</ifcond><then>Maggio</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs><in>(06,6)</ifcond><then>Giugno</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs><in>(07,7)</ifcond><then>Luglio</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs><in>(08,8)</ifcond><then>Agosto</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs><in>(09,9)</ifcond><then>Settembre</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs>==10</ifcond><then>Ottobre</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs>==11</ifcond><then>Novembre</if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs>==12</ifcond><then>Dicembre</if>
+ <valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_AA</valueabs></B>, nonché di inviarci a mezzo fax copia della ricevuta del versamento.<BR>
+<BR>
+All’uopo inviamo le coordinate: <BR>
+<BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=100% ALIGN="C">C/C BANCARIO  nr 100000012670 ABI 03069 CAB 12711 CIN A intestato a SIGLA SRL.<BR>IBAN - IT29A0306912711100000012670<BR>o<BR><I>BOLLETTINO  POSTALE  intestato a Sigla s.r.l. sul c/c  000073807760<BR>CAB 12000   ABI 07601   CIN G<BR>IBAN:   IT53G0760112000000073807760<BR>causale: contr. di mutuo contro cessione del quinto dello stipendio – rif.n° <valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs>.</I></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+<BR>
+<BR>
+<B>Da ultimo La pregherei di inviarci a mezzo fax la presente comunicazione, dopo che l’avrà datata e sottoscritta nell’apposito spazio in basso a sinistra, per accettazione delle condizioni in essa esplicate.</B><BR>
+<BR>
+<BR>
+Restiamo in attesa di ricevere il pagamento della  1° rata dell’importo di &euro <valueabs>IDGFSUB00F/RECORD/IDGSUB_IMP_QUOTA_NEW</valueabs> entro e non oltre il <valueabs>IDGFSUB00F/RECORD/IDGSUB_DTSCAD_PRIMA</valueabs> 
+<B>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==01</ifcond><then>Gennaio</if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==02</ifcond><then>Febbraio</if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==03</ifcond><then>Marzo</if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==04</ifcond><then>Aprile</if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==05</ifcond><then>Maggio</if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==06</ifcond><then>Giugno</if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==07</ifcond><then>Luglio</if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==08</ifcond><then>Agosto</if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==09</ifcond><then>Settembre</if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==10</ifcond><then>Ottobre</if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==11</ifcond><then>Novembre</if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_MM</valueabs>==12</ifcond><then>Dicembre</if>
+</B> <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTPRISCAD_AA</valueabs> e porgiamo i nostri più cordiali saluti.<BR>
+<BR>
+<BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=80%></TD>
+<TD ALIGN="C" WIDTH=20%><B>Sigla S.r.l.</B></TD>
+</TR>
+<TR>
+<TD WIDTH=80%></TD>
+<TD ALIGN="C" WIDTH=20%><B><I>un procuratore</I></B></TD>
+</TR>
+</TABLE>
+..............................<BR><FONT SIZE=8>Data e sottoscrizione del <if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond><then>Sig.</then></if>
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==F</ifcond><then>Sig.ra</then></if> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> per accettazione.
+</TEXT>
+</BODY>
+</PDF>

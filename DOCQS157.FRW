@@ -1,0 +1,146 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8">
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasiglasx">
+<TABLE>
+	<TR>
+		<TD WIDTH=70% ALIGN=R></TD>
+		<TD WIDTH=30% ALIGN=R SIZE=6.5>Pratica:<valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs></TD>
+	</TR>	
+</TABLE>			
+</HEADER>
+<FOOTER>
+<include file="\INCLUDE\IncludedStruttura.frw" value="footercartaintestatasac">
+</FOOTER>
+<BODY>
+<TEXT LINESPACE=0.5>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=100% ALIGN=R SIZE=14 FCOLOR="BLUE"><B>CONTO DEL RESIDUO DEBITO</B></TD>
+</TR>
+<TR>
+<TD WIDTH=100% ALIGN=R SIZE=4 FCOLOR="BLUE"><B>____________________________________________________________________________________________________________________________________________________________</B></TD>
+</TR>
+</TABLE>
+
+<BR><BR>
+Conegliano, lì <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>Spett.le<BR></TD>
+</TR>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDANAFIN</valueabs>==12002203</ifcond><then>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>BANCA 24-7 S.p.a.</TD>
+</TR>
+<TR>
+<TD WIDTH=25% SIZE=6></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>VIA STOPPANI, 15</TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>24100 - BERGAMO (BG)</TD>
+</TR>
+</then>
+<else>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DESCFIN</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25% SIZE=6></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_INDIR_FIN</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_INDIRIZZO_FIN</valueabs></TD>
+</TR>
+</else>
+</if>
+</TABLE>
+<BR>
+<BR>
+<TEXT ALIGN=J LINESPACE=0.5>
+<B>Oggetto:</B> conto del residuo debito<BR>
+<B>Cliente:</B> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> (c.f. <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs>)<BR>
+<B>Amministrazione:</B> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_STATOGIUR</valueabs><BR>
+<B>Data di decorrenza:</B> <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATATT</valueabs><BR>
+<BR><BR>
+Con riferimento alla vostra richiesta, Vi rimettiamo il seguente conto del residuo debito, con chiusura al <valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN</valueabs>.<BR>
+<BR>
+<TABLE WIDTH=100% BORDER=0.3>
+<TR>
+<TD WIDTH=70%>Il residuo debito risulta così costituito:</TD>
+<TD WIDTH=30% ALIGN=R></TD>
+</TR>
+<TR>
+<TD WIDTH=70%>N° <valueabs>IDGFEST00F/RECORD/IDGFEST_NRATE</valueabs> quote da &euro <valueabs>IDGFEST00F/RECORD/IDGFEST_IMPRATA</valueabs></TD>
+<TD WIDTH=30% ALIGN=R>&euro <valueabs>IDGFEST00F/RECORD/IDGFEST_MONTANTE</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=70%>Quote scadute: <valueabs>IDGFEST00F/RECORD/IDGFEST_NUMQTSCAD</valueabs></TD>
+<TD WIDTH=30% ALIGN=R>- &euro <valueabs>IDGFEST00F/RECORD/IDGFEST_IMPQTSCAD</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=70%> </TD>
+<TD WIDTH=30% ALIGN=R> </TD>
+</TR>
+<TR>
+<TD WIDTH=70%>Quote residue: <valueabs>IDGFEST00F/RECORD/IDGFEST_NUMQTASCA</valueabs></TD>
+<TD WIDTH=30% ALIGN=R>&euro <valueabs>IDGFEST00F/RECORD/IDGFEST_IMPRESDIFF</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=70%>Abbuono interessi per pagamento anticipato da <valueabs>IDGFEST00F/RECORD/IDGFEST_INTFUTDA</valueabs> a <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTULTSCAD</valueabs> al tasso del <valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTAN</valueabs> %</TD>
+<TD WIDTH=30% ALIGN=R>- &euro <valueabs>IDGFEST00F/RECORD/IDGFEST_INTFUT</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=70%>Abbuono commissioni 	e provvigioni non dovuti (se valorizzati in contratto):</TD>
+<TD WIDTH=30% ALIGN=R>- &euro </TD>
+</TR>
+<TR>
+<TD WIDTH=70%>Abbuono spese per rata (se valorizzati in contratto):</TD>
+<TD WIDTH=30% ALIGN=R>- &euro</TD>
+</TR>
+<TR>
+<TD WIDTH=70%>Abbuono costi fissi non maturati (se valorizzati in contratto):</TD>
+<TD WIDTH=30% ALIGN=R>- &euro <valueabs>IDGFEST00F/RECORD/IDGFEST_IMPFISSI</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=70% ALIGN=R><B><I>Residuo debito:</I></B></TD>
+<TD WIDTH=30% ALIGN=R><B>&euro <valueabs>IDGFEST00F/RECORD/IDGFEST_IMPRESBANC</valueabs></B></TD>
+</TR>
+</TABLE>
+<BR><BR>
+Le ricordiamo che la data di validità della presente è il <valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN</valueabs>, termine perentorio entro cui dovremo ricevere la somma dovuta, pena
+l'impossibilità a procedere all'estinzione con le modalità qui esposte.<BR><BR>
+Il versamento verrà eseguito a mezzo di:<BR>
+[_] Bonifico bancario su Cassa di Risparmio del Veneto, c.c. n° 100000001913, CAB: 61620, ABI: 06225, CIN: H, IBAN:<BR>
+IT50H0622561620100000001913 intestato a Sigla S.r.l.<BR>
+<BR>
+<BR>
+<BR>
+N.B.: dalla somma dovuta non è considerata la competenza relativa al mese di chiusura del conto estintivo.<BR><BR><BR><BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD ALIGN="R" WIDTH=100%><B>Sigla S.r.l.                     </B></TD>
+</TR>
+</TABLE>
+</TEXT>
+</BODY>
+</PDF>

@@ -1,0 +1,11 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize7">
+<include file="\INCLUDE\Percorsi.frw">
+<BODY>
+<PDFPAGE SRC="DOCQS200.PDF" VALUE=1 SHOWONCE>
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\SCHEDAATC#DOCQS200##01_01_01.png" BACKGROUND X=14.3 Y=2 SCALE=25>
+
+
+</PAGE>
+</BODY>
+</PDF>

@@ -1,0 +1,40 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize11_times_x">
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3_1">
+</HEADER>
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestatacontenzioso">
+</FOOTER>	
+
+<BODY>
+<TEXT ALIGN=J>
+<BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=55%>Inviata a mezzo PEC: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_PEC_LAV</valueabs></TD>
+<TD WIDTH=45%>Spett.le	[CQS/<if><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_JOBNAM_USR</valueabs>==SIGST259</ifcond><then>ST259<else>PE014</if>/<valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>]<BR><BR>
+<B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_STATOGIUR</valueabs></B><BR>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_LAV</valueabs><BR>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_LAV</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_LAV</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_LAV</valueabs>)<BR>
+<U>C/A UFF. DEL PERSONALE</U>
+</TD>
+</TR>
+</TABLE>
+<BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=55%>Inviata a mezzo raccomandata A.R.</TD>
+<TD WIDTH=45%><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond><then>Egr. Sig.<else>Gent.le Sig.ra</if>	[CQS/<if><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_JOBNAM_USR</valueabs>==SIGST259</ifcond><then>ST259<else>PE014</if>/<valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>]<BR><BR>
+<B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></B><BR>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs><BR>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs>)<BR>
+</TD>
+</TR>
+</TABLE>
+</TEXT>
+<include file="DOCQS252_body.frw">
+</BODY>
+
+</PDF>

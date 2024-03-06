@@ -1,0 +1,87 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize10_Arial">
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3_1">
+</HEADER>
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestatacontenzioso">
+</FOOTER>
+
+<BODY>
+
+<BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=60%><br>Raccomandata A.R.<br><br></TD>
+<TD WIDTH=40%>Egregi Sig.ri	[DOC.ERD/PP<valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>]<br>
+<B>Eredi di <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></B><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs> - <U><B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs></B></U> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs>)
+</TD></TR>
+</TABLE>
+<BR><BR><BR><BR>
+<TEXT ALIGN=J>
+<BR>Conegliano, <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs> 
+<BR><BR><BR>
+<B>OGGETTO:</B> <U><if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==DEL</ifcond>
+<then>Contratto di delegazione di pagamento</then>
+</if>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>!=</ifcond>
+<then>Contratto di mutuo contro cessione del quinto dello stipendio</then>
+</if>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>==</ifcond>
+<then>Contratto di mutuo contro cessione del quinto della pensione</then>
+</if>, sottoscritto tra Sigla s.r.l. e <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> in data <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTR</valueabs> Rif. n° <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs></U>. 
+<BR><BR><BR>
+Egregi Signori,<BR><BR>
+in qualità di eredi del ns. cliente <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>, <if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond><then>deceduto<else>deceduta</if> 
+in data <loop><looproot>IDGFSIN00F/RECORD</looproot>
+<if><ifcond><value>IDGFSIN_PROGRESSIVO</value>==<valueabs>IDGFSIN00F/DATI</valueabs></ifcond>
+<then><value>IDGFSIN_DATA_CARICAM</value>,</then></if></loop> siamo a chiederVi in nome e per conto della compagnia di assicurazione 
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_COMP_VIT</valueabs>==12003816</ifcond><then>Cardif Assurance Vie</then><else>HDI ASS.NI SPA</else></if> 
+l’invio di documentazione attestante le cause del decesso <if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_COMP_VIT</valueabs>==12003816</ifcond><then>
+(a titolo esemplificativo, il Modulo Istat, Relazione del medico curante, la cartella clinica).</then><else>
+(cartella clinica e relazione del medico).</else></if>
+<BR><BR>
+Si necessita che tale documentazione al fine di poter richiedere copertura assicurativa, <u>venga da Voi inviata direttamente alla compagnia assicurativa:</u>
+<BR><BR>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_COMP_VIT</valueabs>==12003816</ifcond><then>
+<B>
+Cardif Assurance Vie – Back Office Protezione – Ufficio Sinistri <BR>
+Piazza Lina Bo Bardi, 3 <BR>
+20124 Milano (MI)<BR>
+</B>
+</then><else>
+<B>
+HDI ASS.NI SPA - Ufficio Sinistri<BR>
+Via Abruzzi, 10<BR>
+00187 ROMA (RM)<BR>
+</B>
+</else></if> 
+<BR>
+Alleghiamo, altresì, <I>Modulo di accettazione copertura assicurativa contro il rischio decesso</I> comprensivo del 
+<I>Consenso al trattamento dei dati personali</I> sottoscritto 
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond><then>
+dal Sig <else>dalla Sig.ra </if><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>.
+<BR><BR>
+In attesa di Vs. cortese e sollecito riscontro, restiamo a disposizione per chiarimenti e porgiamo cordiali saluti.
+<BR><BR>
+</TEXT>
+<TEXT X=14.15 Y=20><I><B>SIGLA S.R.L.</B></I><BR></TEXT>
+<TEXT X=13 Y=20.5><I><B>Ufficio Sinistri e Legale CQS</B></I></TEXT>
+<IMG SRC="<valueabs>Immagini/MAZZER/Path</valueabs><valueabs>Immagini/MAZZER/Nome</valueabs>" BACKGROUND X=13 Y=22.65 SCALE=15>
+<BR><BR>
+<TEXT ALIGN=J>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_COMP_VIT</valueabs>==12003816</ifcond><then>
+In all:<br>
+	-	copia mod. di accettazione copertura assicurativa<br>
+<else>
+In all:<br>
+	-	Relazione del medico da compilare e sottoscrivere<br>
+	-	Modulo di adesione alla copertura assicurativa<br>
+</if>
+</TEXT>
+</BODY>
+
+</PDF>

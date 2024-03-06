@@ -1,0 +1,163 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize10_Arial">
+<HEADER>
+<TEXT ALIGN=J SIZE=7>COPIA CLIENTE</TEXT> 
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3_1">
+</HEADER>
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestatalegale2">
+</FOOTER>	
+
+<BODY>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=60%><br><br><br>Raccomandata A.R.</TD>
+<TD WIDTH=40%><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond>
+<then><B>Egr. Sig.<else>Gent.le Sig.ra</if></B> [DIF.TFR/PP<valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>]<br>
+<B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs> - <U><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs></U> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs>)
+</B>
+<br>
+</TD>
+</TR><br>
+<BR><BR><BR>
+<TR>
+<TD WIDTH=60%><br><br><br>Raccomandata A.R.</TD>
+<TD WIDTH=40%>Spett.le [DIF.TFR/PP<valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>]<br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_STATOGIUR</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_LAV</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_LAV</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_LAV</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_LAV</valueabs>)
+<br>
+</TD>
+</TR>
+<BR><BR><BR>
+<BR>
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRRAGSOC</valueabs>!= </ifcond><then>
+<TR>
+<TD WIDTH=60%><br><br><br>Raccomandata A.R.</TD>
+<TD WIDTH=40%>Spett.le [DIF.TFR/PP<valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>]<br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRRAGSOC</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRINDIR</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRCAP</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRLOCAL</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRPROV</valueabs>)
+<br>
+</TD>
+</TR>
+</then>
+</if>
+</TABLE>
+<BR>
+</TEXT>
+<include file="DOCQS250_body.frw">
+</BODY>
+
+</PDF>
+
+
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize10_Arial">
+<HEADER>
+<TEXT ALIGN=J SIZE=7>COPIA ATC</TEXT> 
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3_1">
+</HEADER>
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestatalegale2">
+</FOOTER>	
+
+<BODY>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=60%><br><br><br>Raccomandata A.R.</TD>
+<TD WIDTH=40%><b>Spett.le</b> [DIF.TFR/PP<valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>]<br>
+<B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_STATOGIUR</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_LAV</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_LAV</valueabs> - <U><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_LAV</valueabs></U> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_LAV</valueabs>)</B>
+<br>
+</TD>
+<BR><BR><BR>
+
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRRAGSOC</valueabs>!= </ifcond><then>
+<TR>
+<TD WIDTH=60%><br><br><br>Raccomandata A.R.</TD>
+<TD WIDTH=40%>Spett.le [DIF.TFR/PP<valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>]<br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRRAGSOC</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRINDIR</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRCAP</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRLOCAL</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRPROV</valueabs>)
+<br>
+</TD>
+</TR>
+</then>
+</if>
+<BR><BR><BR>
+<TR>
+<TD WIDTH=60%><br><br><br>Raccomandata A.R.</TD>
+<TD WIDTH=40%><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond><then><BR>Egr. Sig.<else><BR>Gent.le Sig.ra</if> 
+[DIF.TFR/PP<valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>]<br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs>)
+<br>
+</TD>
+</TR></TABLE>
+
+</TEXT>
+<BR>
+<include file="DOCQS250_body.frw">
+</BODY>
+
+</PDF>
+
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRRAGSOC</valueabs>!= </ifcond><then>
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize10_Arial">
+<HEADER>
+<TEXT ALIGN=J SIZE=7>COPIA FONDO</TEXT> 
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3_1">
+</HEADER>
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestatalegale2">
+</FOOTER>	
+
+<BODY>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=60%><br><br><br>Raccomandata A.R.</TD>
+<TD WIDTH=40%><B>Spett.le</B> [DIF.TFR/PP<valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>]<br>
+<B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRRAGSOC</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRINDIR</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRCAP</valueabs> - <U><valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRLOCAL</valueabs></U> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRPROV</valueabs>)</B>
+<br>
+</TD>
+</TR>
+<BR><BR><br>
+<TR>
+<TD WIDTH=60%><br><br><br>Raccomandata A.R.</TD>
+<TD WIDTH=40%>Spett.le [DIF.TFR/PP<valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>]<br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_STATOGIUR</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_LAV</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_LAV</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_LAV</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_LAV</valueabs>)<br>
+</TD>
+</TR>
+<BR><BR><BR>
+
+<TR>
+<TD WIDTH=60%><br><br><br>Raccomandata A.R.</TD>
+<TD WIDTH=40%><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond><then><BR>Egr. Sig.<else><BR>Gent.le Sig.ra</if> [DIF.TFR/PP<valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>]
+<br><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs>)
+<br></TD>
+</TR></TABLE>
+
+<BR>
+</TEXT>
+
+<include file="DOCQS250_body.frw">
+</BODY>
+
+</PDF>
+</then>
+</if>

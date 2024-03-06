@@ -1,0 +1,30 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize7.5">
+<include file="\INCLUDE\Percorsi.frw">
+<BODY>
+<PDFPAGE SRC="DOCQS194.PDF" VALUE=1>
+
+<TEXT X=3.5 Y=5.3>
+<if>
+<ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_RAGSCLI</valueabs>></ifcond>
+<then><valueabs>IDGFCQP00F/RECORD/IDGFCQP_RAGSCLI</valueabs></then>
+<else><valueabs>IDGFCQP00F/RECORD/IDGFCQP_COGNCLI</valueabs> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_NOMECLI</valueabs></else>
+</if>
+</TEXT>
+
+<TEXT X=6 Y=8.25>
+<valueabs>IDGFCQP00F/RECORD/IDGFCQP_DESCAGE</valueabs>  <valueabs>IDGFCQP00F/RECORD/IDGFCQP_INDIRENTE</valueabs> - CAP - <valueabs>IDGFCQP00F/RECORD/IDGFCQP_CAPENTE</valueabs> - <valueabs>IDGFCQP00F/RECORD/IDGFCQP_LOCALENTE</valueabs> (<valueabs>IDGFCQP00F/RECORD/IDGFCQP_PROVENTE</valueabs>)
+</TEXT>
+
+<TEXT X=11.3 Y=18>
+<if>
+<ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_RAGSCLI</valueabs>></ifcond>
+<then><valueabs>IDGFCQP00F/RECORD/IDGFCQP_RAGSCLI</valueabs></then>
+<else><valueabs>IDGFCQP00F/RECORD/IDGFCQP_COGNCLI</valueabs> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_NOMECLI</valueabs></else>
+</if>
+</TEXT>
+
+</PAGE>
+</BODY>
+</PDF>
+	

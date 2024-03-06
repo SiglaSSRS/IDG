@@ -1,0 +1,96 @@
+<PDF>
+	<include file="\INCLUDE\IncludedStruttura.frw" value="sacstrutturasize10">
+	<HEADER>
+		<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3">			
+	</HEADER>
+	<FOOTER>
+		<include file="\INCLUDE\IncludedStruttura.frw" value="footercartaintestatasac">
+	</FOOTER>
+	<BODY>
+	<font face="Times New Roman" size="10">Times New Roman</font><br />
+		<TEXT>
+			<BR><BR><BR><BR><BR>
+			<TABLE WIDTH=100%>
+			<TR>
+				<TD WIDTH=25%>RACCOMANDATA AR</TD>
+				<TD WIDTH=25%></TD>
+				<TD WIDTH=10%></TD>
+				<TD WIDTH=40%><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond><then>Egr. Sig.<else>Gent.le Sig.ra</if></TD>
+			</TR>
+			<TR>
+				<TD WIDTH=25%></TD>
+				<TD WIDTH=25%></TD>
+				<TD WIDTH=10%></TD>
+				<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></TD>
+			</TR>
+			
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs>==</ifcond><then>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs>  (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs>)</TD>
+</TR>
+<else>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_RES</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_RES</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_RES</valueabs>)</TD>
+</TR>
+</if>
+</TABLE>
+<BR>
+<BR>
+<BR>
+<BR>
+<TABLE WIDTH=100%><TR>
+<TD WIDTH=100% ALIGN="J">
+Conegliano, <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS_AAAA</valueabs>/<valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS_MM</valueabs> <BR><BR>
+<b><i>Oggetto: POSIZIONE A NOME <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></i></b><BR>
+<b><i>Informativa preventiva di segnalazione di “inadempimento persistente” nella Centrale dei Rischi di Banca d’Italia</i></b><BR>
+Con riferimento al credito in capo a Sigla Srl derivante dal contratto di finanziamento ns. rif.<valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs><BR><BR>
+La Banca d’Italia, con circolare n. 139 dell'11/02/1991 in tema di <i>“Centrale dei Rischi. Istruzioni per gli intermediari creditizi”</i> e successive modifiche, ha stabilito l’obbligo in capo agli Intermediari Finanziari di provvedere a segnalare alla Centrale Rischi della Banca d’Italia stessa le posizioni con riferimento alle quali sussista uno stato di insolvenza non sanato dal debitore.<BR><BR>
+Con la presente siamo pertanto a informarLa che Sigla Srl, in qualità di Società Finanziaria iscritta all’Albo Unico degli Intermediari Finanziari ex art 106 TUB, sta per segnalare il Suo nominativo in Centrale Rischi, nella categoria di censimento degli “inadempimenti persistenti”.<br><br>
+Nel restare a disposizione per eventuali necessità di chiarimenti, precisiamo che nel caso non venga fornita alcuna diversa indicazione entro 15 giorni dal ricevimento della presente comunicazione, la Vostra posizione verrà segnalata in Centrale Rischi senza ulteriori preavvisi.
+<BR><BR></TD>
+</TR>
+</TABLE>
+<P ALIGN="J">
+<BR><BR>
+Distinti saluti.</P><BR><BR>
+
+<TABLE WIDTH=100% FONT SIZE=12>
+<TR HEIGHT=3%>
+<TD WIDTH=77%></TD>
+<TD WIDTH=23% ALIGN="C"><b>Sigla Srl</b></TD>
+</TR>
+</TABLE>
+<TABLE WIDTH=100% FONT SIZE=9>
+<tr>
+<TD WIDTH=100%>Rif.</td>
+</TR>
+<tr>
+<TD WIDTH=100%>Telefono: 0438.372914</td>
+</TR>
+<tr>
+<TD WIDTH=100%>E-mail: contenziosocqs@siglafinanziamenti.it</td>
+</TR>
+</TABLE>
+
+
+</TEXT>
+</BODY>
+</PDF>

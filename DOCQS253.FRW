@@ -1,0 +1,99 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize5.5_times">
+
+<HEADER>
+
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintsiglasigla">
+</HEADER>
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestatasiglabollo">
+</FOOTER>
+
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT"><if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs><72</ifcond><then>Pag. 12 di 12</then><else>Pag. 13 di 13</else></if></TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+
+<BODY>
+<BR><BR>
+<BR>
+<TEXT SIZE=16 ALIGN=C>CONCLUSIONE DEL CONTRATTO
+</TEXT>
+<BR>
+<BR>
+<BR>
+<TEXT SIZE=9 ALIGN=J>
+Facciamo riferimento alla presente richiesta di prestito n° <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs> per comunicare la nostra accettazione alle condizioni previste nella stessa.
+</TEXT>
+<BR>
+<BR>
+<BR>
+<BR>
+<TABLE WIDTH=100% ALIGN=C SIZE=7.8>
+<TR>
+	<TD WIDTH=40% ALIGN=L>Conegliano, <if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTIPCTR</valueabs>==</ifcond><then><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></then><else><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTIPCTR</valueabs></else></if></TD> 
+	<TD WIDTH=60% ALIGN=C><B><valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs> (un procuratore)</B><BR>
+	<valueabs>IDGFAZI00F/RECORD/IDGFAZI_INDIR_SIG</valueabs> <valueabs>IDGFAZI00F/RECORD/IDGFAZI_SIGLASRL</valueabs>  <valueabs>IDGFAZI00F/RECORD/IDGFAZI_DSNAZ_SIG</valueabs> -
+	<BR>Intermediario Finanziario iscritto nell’Albo Unico ex art. 106 TUB con n. 88 (cod. mecc. 33023)<BR>
+	Registro Imprese, codice fiscale e partita IVA <valueabs>IDGFAZI00F/RECORD/IDGFAZI_IVA_SIG</valueabs> - Capitale Sociale  <valueabs>IDGFAZI00F/RECORD/IDGFAZI_CAPSOC_SIG</valueabs> &euro  
+	<BR><BR><BR></TD>
+</TR>
+</TABLE>
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<TEXT SIZE=16 ALIGN=C>NOTIFICA DEL CONTRATTO
+</TEXT>
+<BR>
+<BR>
+<BR>
+
+<TEXT SIZE=7.4 ALIGN=J>
+<BR><BR>
+Si specifica che la notifica potrà avvenire tramite Ufficiale Giudiziario (vedi Relazione di notifica qui sotto riportata) oppure tramite altro mezzo (raccomandata a/r, PEC, ecc.) 
+in conformità all'art. 1264, c.1 CC.	
+</TEXT>
+<BR>
+<TABLE WIDTH=100% ALIGN=C>
+<TR>
+<TD WIDTH=90% SIZE=7.4 BORDER=0.7 ALIGN=L>
+RELAZIONE DI NOTIFICA:<BR>
+a richiesta di <valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs> io sottoscritto Ufficiale Giudiziario addetto al Tribunale di Treviso sezione di Conegliano ho notificato il su esteso atto a:<BR>
+Al Legale Rappresentante del <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs><BR> nella sua sede di <valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_LAV</valueabs> - <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_LAV</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_LAV</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_LAV</valueabs>)<BR>
+A mezzo del servizio postale come per Legge<BR>
+</TD>
+<TD WIDTH=10%></TD>
+</TR>
+</TABLE>
+<BR><BR><BR><BR><BR><BR>
+
+
+<IMG SRC="<valueabs>Immagini/TACCHIN01/Path</valueabs><valueabs>Immagini/TACCHIN01/Nome</valueabs>" BACKGROUND X=12 Y=6 SCALE=<valueabs>Immagini/TACCHIN01/Scale</valueabs>>
+
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\CONCLUSCTR##########01_01_01.png"  BACKGROUND X=4 Y=-0.8 SCALE=25>
+</BODY>
+</PDF>

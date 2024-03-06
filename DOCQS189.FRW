@@ -1,0 +1,110 @@
+<if><ifcond><value>IDGFCQS00F/RECORD/IDGFCQS_IDPROJECT</value>==</ifcond><or><ifcond><value>IDGFERD00F/RECORD/IDGFERD_PROG</value>==1</ifcond><then>
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize9">
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3">			
+</HEADER>
+<FOOTER>
+<include file="\INCLUDE\IncludedStruttura.frw" value="footercartaintestcqsstd">
+</FOOTER>
+<BODY>
+<TEXT>
+<TEXT X=16.5 Y=-1 ><FONT SIZE=6>N° Pratica: <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs></TEXT> 
+<BR><BR><BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><B>SPETTABILE</B></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCTR00F/RECORD/IDGFCTR_RAGSOC_MED</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCTR00F/RECORD/IDGFCTR_INDIR_MED</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCTR00F/RECORD/IDGFCTR_MEDIATORE</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCTR00F/RECORD/IDGFCTR_MED_AGENCY</valueabs></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+<BR>
+<BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=100% ALIGN="J">
+Conegliano, lì &date <BR><BR>
+<B>Oggetto: anticipo su contratto n. <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs> del <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTR</valueabs> , richiedente <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></B><BR><BR><BR></TD>
+</TR>
+<TR>
+<TD WIDTH=100% ALIGN="J">Come da documentazione contrattuale sottoscritta, trasmettiamo di seguito:<BR><BR></TD>
+</TR>
+</TABLE>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=5%>1)</TD>
+<TD WIDTH=95% ALIGN="J">Ricevuta dell'anticipo<BR><BR></TD>
+</TR>
+<loop>
+<loopda>1</loopda>
+<looproot>IDGFERD00F/RECORD</looproot>
+<TR>
+<TD WIDTH=5%><if><ifcond><value>IDGFERD_PROG</value>==1</ifcond><then>2)</if></TD>
+<TD WIDTH=95% ALIGN=L> - <value>IDGFERD_DESCPAG</value> <if><ifcond><value>IDGFERD_CODPAG</value>==006</ifcond><then> N° <value>IDGFERD_NASSEGNO</value></then></if> a favore del richiedente emesso da Banca Intesa San Paolo di € <value>IDGFERD_IMPERG</value></TD>
+</TR>
+</loop>
+<BR><BR>
+</TABLE>
+<BR><BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=100% ALIGN="J">Vi raccomandiamo pertanto di ritornarci a stretto giro di posta la ricevuta dell'anticipo in originale debitamente sottoscritta dal cliente.</TD>
+</TR><BR>
+<TR>
+<TD WIDTH=100% ALIGN="J">Distinti Saluti</TD>
+</TR>
+</TABLE>
+<BR><BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=65%></TD>
+<TD WIDTH=25% ALIGN="C">Sigla Srl</TD>
+<TD WIDTH=5%></TD>
+<TD WIDTH=5%></TD>
+</TR>
+<TR>
+<TD WIDTH=65%></TD>
+<TD WIDTH=25% ALIGN="C">Direzione Cessione Quinto</TD>
+<TD WIDTH=5%></TD>
+<TD WIDTH=5%></TD>
+</TR>
+<TR>
+<TD WIDTH=65%></TD>
+<TD WIDTH=25% ALIGN="C">Tacchin Alberto<BR><BR><BR></TD>
+<TD WIDTH=5%></TD>
+<TD WIDTH=5%></TD>
+</TR>
+</TABLE>
+</TEXT>
+<IMG SRC="<valueabs>Immagini/TACCHIN01/Path</valueabs><valueabs>Immagini/TACCHIN01/Nome</valueabs>" BACKGROUND X=14 Y=20 SCALE=<valueabs>Immagini/TACCHIN01/Scale</valueabs>>
+</BODY>
+</PDF>
+</then>
+</if>

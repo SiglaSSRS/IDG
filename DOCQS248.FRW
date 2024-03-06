@@ -1,0 +1,89 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize10.5">
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3">
+</HEADER>
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestatalegale2">
+</FOOTER>	
+
+<BODY>
+<BR><BR><BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=70%></TD>
+<TD WIDTH=30%>Egr. Sig. [ANT.TFR/CF <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>]
+</TD>
+</TR>
+<TR>
+<TD WIDTH=70%>Via mail: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_EMAIL</valueabs></TD>
+<TD WIDTH=30%><B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></B><BR>
+			  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs><BR>
+			  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs> 
+			  <B><U><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs></U></B> 
+			   (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs>)<BR>
+</TD>
+</TR>
+
+<TR>
+<TD WIDTH=70%><BR></TD><TD WIDTH=30%><BR></TD>
+</TR>
+<TR>
+<TD WIDTH=70%><BR></TD><TD WIDTH=30%><BR></TD>
+</TR>
+<TR>
+<TD WIDTH=70%></TD>
+<TD WIDTH=30%>Spett.le</TD>
+</TR>
+<TR>
+<if>
+	<ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRRAGSOC</valueabs>!= </ifcond>
+	<then>
+		<TD WIDTH=70%>Via PEC: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFR_EMAIL</valueabs></TD>
+		<TD WIDTH=30%>	<B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRRAGSOC</valueabs><BR></B>
+						<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRINDIR</valueabs><BR>
+						<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRCAP</valueabs> 
+						<B><U><valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRLOCAL</valueabs></U></B> 
+						(<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRPROV</valueabs>)<BR>
+		</TD>
+	</then>
+	<else>
+		<TD WIDTH=70%>Via PEC: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_PEC_LAV</valueabs></TD>
+		<TD WIDTH=30%>	<B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs><BR></B>
+						<valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_LAV</valueabs><BR>
+						<valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_LAV</valueabs> 
+						<B><U><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_LAV</valueabs></U></B> 
+						(<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_LAV</valueabs>)<BR>
+		</TD>
+	</else>
+</if>
+</TR>
+</TABLE>
+<BR><BR><BR>
+<TEXT ALIGN=J LINESPACE=0.5>
+<BR><BR><BR><BR>
+Conegliano, <valueabs>IDGFCQP00F/RECORD/IDGFCQP_DATSYS</valueabs>
+<BR><BR><BR><BR>
+<B><U>Oggetto: contratto di <if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>==DEL</ifcond>
+<then>delegazione di pagamento del quinto dello stipendio </then></if>
+<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_COD_CONV_IMP</valueabs>!=</ifcond>
+<then>mutuo contro cessione del quinto dello stipendio </then></if>sottoscritto tra Sigla Srl e <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> in data <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTR</valueabs>, Rif. n° <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>, CF. <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs></U>.</B>
+<BR><BR><BR>
+Con riferimento alla richiesta di anticipazione della posizione maturata 
+<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_SESSOCLI</valueabs>==M</ifcond>
+<then>dal signor </then></if>
+<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_SESSOCLI</valueabs>==F</ifcond>
+<then>dalla signora </then></if>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>, 
+<B><U>si acconsente</U></B> all'anticipazione del TFR richiesta dal cliente, per l'importo netto massimo pari a € <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPTFROST</valueabs>	(<valueabs>IDGFCQS00F/RECORD/IDGFCQS_DESTFROST</valueabs>).
+
+<BR><BR><BR>
+Rimanendo a disposizione per eventuali chiarimenti allo 0438/372950, fax 0438/1745032 e-mail <U>anticipitfr@siglafinanziamenti.it</U> , porgiamo distinti saluti.
+</TEXT>
+
+<TEXT X=14.15 Y=21><B>SIGLA S.R.L.</B><BR></TEXT>
+<TEXT X=13 Y=21.5>Ufficio Sinistri e Legale CQS</TEXT>
+<IMG SRC="<valueabs>Immagini/MAZZER/Path</valueabs><valueabs>Immagini/MAZZER/Nome</valueabs>" BACKGROUND X=13.5 Y=23 SCALE=15>
+</BODY>
+</PDF>

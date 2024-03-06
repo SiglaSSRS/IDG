@@ -1,0 +1,29 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize10">
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3_1">
+</HEADER>
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestatalegale2">
+</FOOTER>	
+
+<BODY>
+<BR>
+<include file="INDIR_ASSIC_DOC247.frw">
+
+
+<TEXT ALIGN=J LINESPACE=0.5>
+<BR><BR><BR><BR><BR><BR><BR>
+Conegliano, <valueabs>IDGFCQP00F/RECORD/IDGFCQP_DATSYS</valueabs>
+<BR><BR><BR><BR><BR>
+<B>Oggetto: Denuncia "cautelativa" di sinistro con riferimento al contratto di <if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>==DEL</ifcond>
+<then>delegazione di pagamento del quinto dello stipendio </then></if>
+<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_COD_CONV_IMP</valueabs>!=</ifcond>
+<then>mutuo contro cessione del quinto dello stipendio </then></if>sottoscritto tra SIGLA S.R.L. e <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> in data <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTR</valueabs>, certificato di polizza n° <valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_POL_IMP</valueabs>, prat. n° <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>.</B>
+<BR><BR>
+
+</TEXT>
+<include file="Cont_body_DOC247.FRW">
+</BODY>
+</PDF>

@@ -1,0 +1,104 @@
+<if>((<ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTRAA</valueabs>==2021</ifcond>
+	<and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTRMM</valueabs>==7</ifcond>
+	<and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTRGG</valueabs>>=25</ifcond>)
+	<or>
+	(<ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTRAA</valueabs>==2021</ifcond>
+	<and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTRMM</valueabs>>7</ifcond>)
+	<or>
+	<ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTRAA</valueabs>>2021</ifcond>
+	<or>
+	<ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDANAFIN</valueabs><in>(12002203,72000314,12001691,12002220)</ifcond>)
+<then><include file="DOCQS178_RIMBORSO_RATE.frw"></then>
+<else>
+
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="sacstrutturasize9">
+<include file="\INCLUDE\Percorsi.frw">
+<BODY>
+<TEXT ALIGN=C>
+
+<P><B>QUIETANZA LIBERATORIA</B></P>
+
+</TEXT>
+<TEXT ALIGN=J>
+<P></P>
+<P>
+<B>Io sottoscritt<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==F</ifcond><then>a</then><else>o</else></if> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>, titolare del contratto di finanziamento n. <valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs>, che ha previsto a carico del cliente i seguenti costi iniziali:</B>
+</P>
+</TEXT>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDANAFIN</valueabs>==12002203</ifcond><then>
+<include file="DOCQS178_BANCA_24_7.frw">
+</then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDANAFIN</valueabs>==72000314</ifcond><then>
+<include file="DOCQS178_CONSUM_IT.frw">
+</then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDANAFIN</valueabs>==12001691</ifcond><then>
+<include file="DOCQS178_APULIA.frw">
+</then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDANAFIN</valueabs>==12002220</ifcond><then>
+<include file="DOCQS178_FINECO.frw">
+</then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDANAFIN</valueabs><in>(12028424,10000037,12026810,12059830,72000376,12090075,12105654,12156396)</ifcond><then>
+<include file="DOCQS178_DIRETTO.frw">
+</then></if>
+
+<TEXT ALIGN=J>
+
+<P></P><P></P>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=40% ALIGN=J>X________________________, 
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_MM</valueabs>==1</ifcond><then>01/02/</then></if>
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_MM</valueabs>==2</ifcond><then>01/03/</then></if>
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_MM</valueabs>==3</ifcond><then>01/04/</then></if>
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_MM</valueabs>==4</ifcond><then>01/05/</then></if>
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_MM</valueabs>==5</ifcond><then>01/06/</then></if>
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_MM</valueabs>==6</ifcond><then>01/07/</then></if>
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_MM</valueabs>==7</ifcond><then>01/08/</then></if>
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_MM</valueabs>==8</ifcond><then>01/09/</then></if>
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_MM</valueabs>==9</ifcond><then>01/10/</then></if>
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_MM</valueabs>==10</ifcond><then>01/11/</then></if>
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_MM</valueabs>==11</ifcond><then>01/12/</then></if>
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_MM</valueabs>==12</ifcond><then>01/01/</then></if>
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_MM</valueabs>==12</ifcond><and><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_AA</valueabs>==2019</ifcond><then>2020</then></if>
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_MM</valueabs>==12</ifcond><and><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_AA</valueabs>==2020</ifcond><then>2021</then></if>
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_MM</valueabs>==12</ifcond><and><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_AA</valueabs>==2021</ifcond><then>2022</then></if>
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_MM</valueabs>==12</ifcond><and><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_AA</valueabs>==2022</ifcond><then>2023</then></if>
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_MM</valueabs>==12</ifcond><and><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_AA</valueabs>==2023</ifcond><then>2024</then></if>
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_MM</valueabs>==12</ifcond><and><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_AA</valueabs>==2024</ifcond><then>2025</then></if>
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_MM</valueabs>==12</ifcond><and><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_AA</valueabs>==2025</ifcond><then>2026</then></if>
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_MM</valueabs>==12</ifcond><and><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_AA</valueabs>==2026</ifcond><then>2027</then></if>
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_MM</valueabs>==12</ifcond><and><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_AA</valueabs>==2027</ifcond><then>2028</then></if>
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_MM</valueabs>==12</ifcond><and><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_AA</valueabs><2019</ifcond><then><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_AA</valueabs></then></if>
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_MM</valueabs>!=12</ifcond><then><valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN_AA</valueabs></then></if>
+</TD>
+<TD WIDTH=60% ALIGN=C>X______________________________________</TD>
+</TR>
+<TR>
+<TD WIDTH=40% ALIGN=C>LUOGO E DATA</TD>
+<TD WIDTH=60% ALIGN=C>FIRMA CLIENTE</TD>
+</TR>
+</TABLE>
+</TEXT>
+
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDANAFIN</valueabs><in>(12002203,12002220,12001691)</ifcond>
+<or>
+(<ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDANAFIN</valueabs>==72000314</ifcond>
+<and>((<ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTRAA</valueabs>==2012</ifcond>
+<and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTRMM</valueabs><=3</ifcond>)
+<or>(<ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTRAA</valueabs>==2012</ifcond>
+<and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTRMM</valueabs>==4</ifcond>
+<and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTRGG</valueabs>==1</ifcond>)
+<or><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTRAA</valueabs><2012</ifcond>))
+<then>
+
+<include file="DOCQS152_RICH_RIMB_PREMIO_2_NO_NET.frw">
+
+<include file="DOCQS152_RICH_RIMB_PREMIO_2_NET.frw">
+
+</then></if>
+	
+</BODY>
+</PDF>
+
+</else></if>

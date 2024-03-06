@@ -1,0 +1,80 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="sacstrutturasize9">
+
+<FOOTER>
+<include file="\INCLUDE\IncludedStruttura.frw" value="footercartaintestatasigla">
+</FOOTER>
+<BODY>
+<TEXT>
+<BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>Spett.le</TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>Unicredit Spa</TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>Via Alessandro Specchi 16</TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>00186   Roma  RM</TD>
+</TR>
+<BR><BR><BR>
+<TR>
+<TD WIDTH=25%>E p.c.</TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>Sigla Srl </TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>via Cesare Battisti, 5/a</TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>31015 Conegliano TV</TD>
+</TR>
+<BR><BR><BR>
+</TABLE>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</TEXT>
+<TEXT ALIGN=J LINESPACE=12>
+Egregi Signori,<BR><BR>
+faccio riferimento alla richiesta di prestito personale assistita da cessione del quinto dello stipendio/delegazione di pagamento a 
+Voi trasmessa e da me sottoscritta in data __________, per conferirVi mandato irrevocabile a trattenere dal netto ricavo di tale operazione 
+la somma netta di euro <valueabs>IDGFERT00F/RECORD/IDGFERT_IMPERG</valueabs>, a cui si aggiungono gli interessi maturati al tan e l’imposta di bollo, che vorrete corrispondere direttamente alla Sigla Srl affinché questa possa utilizzarla a 
+completa estinzione del prestito personale n. <valueabs>IDGFERT00F/RECORD/IDGFERT_NRPROPSON</valueabs> dalla medesima erogato in mio favore in data <valueabs>IDGFERT00F/RECORD/IDGFERT_DTPAG</valueabs>.
+Il presente mandato si intende irrevocabile anche ai sensi dell’art. 1723, secondo comma, cod. civ. in quanto conferito anche nell’interesse della menzionata Sigla Srl.<BR>
+<BR>
+Distinti saluti.<BR>
+<BR>
+_______________, lì _____________<BR>
+<BR>
+[NOME E COGNOME]<BR>
+<BR>
+________________________________
+</TEXT>
+</BODY>
+</PDF>

@@ -1,0 +1,81 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="sacstrutturasize10">
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3">			
+</HEADER>
+<FOOTER>
+<include file="\INCLUDE\IncludedStruttura.frw" value="footercartaintestatalegale2">
+</FOOTER>
+<BODY>
+<TEXT ALIGN=J>
+<BR><BR><BR><BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><U><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond><then>Egr. Sig.<else>Gent.le Sig.ra</if></U></TD><BR>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></B></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs>  <B><U><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs></U></B>  (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs>)</TD>
+</TR></TABLE>
+<BR>
+<BR>
+<BR>
+<TABLE WIDTH=100%>
+<TR><TD WIDTH=100% ALIGN="J">Conegliano, <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs><BR><BR><BR></TD></TR><TR>
+<TD WIDTH=100% ALIGN="J">
+<B>Oggetto: <U>Contratto di <if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==DEL</ifcond>
+	<then>delegazione di pagamento del quinto dello stipendio </then>
+	</if>
+	<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>!=</ifcond>
+		<then>mutuo contro cessione del quinto dello stipendio </then>
+	</if>
+	<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>==</ifcond>
+		<then>mutuo contro cessione del quinto della pensione </then>
+	</if> sottoscritto tra Sigla S.r.l. e <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>, in data <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTR</valueabs> Rif. pratica n° <valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs>.</U></B></TD>
+</TR>
+</TABLE>
+<BR><BR><BR>
+Con riferimento all’operazione in oggetto, siamo a comunicarLe che il  Suo ex datore di lavoro ci ha inviato, l’importo di € <valueabs>IDGFINC00F/RECORD/IDGFINC_TOTTFRECE</valueabs>, a titolo di competenze da Lei maturate fino alla cessazione del rapporto di lavoro subordinato.<BR>
+<BR>
+Tale somma va a coprire, interamente, il residuo debito risultante nel conteggio estintivo in allegato.<BR>
+<BR>
+Comunichiamo la risoluzione del contratto e l’estinzione della pratica di finanziamento.<BR>
+<BR><BR><BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=50%>Distinti saluti.<BR><BR><BR></TD>
+<TD WIDTH=50%></TD>
+</TR>
+<TR>
+<TD WIDTH=50%></TD>
+<TD WIDTH=50% ALIGN=C><I><B>Sigla S.r.l.</B><BR>Direzione Recupero Crediti<BR>Ufficio Legale  CQS e Prestito Personale<BR><B>Dr.ssa Silvia Donadel</B></I></TD>
+</TR>
+<TR><TD><BR><BR>In all:<BR>- conteggio estintivo chiuso al <valueabs>IDGFEST00F/RECORD/IDGFEST_DTQTSCMAX</valueabs></TD>
+</TR>
+<TR><TD SIZE=8><BR><BR>
+<B><I>Rif. Cristina Foltran<BR>
+Tel. 0438.372950 dalle 10.30 alle 12.30 (dal lunedì al giovedì)<BR>
+Fax.  0438.45917
+</I></B></TD>
+</TR>
+</TABLE>
+</TEXT>
+</BODY>
+</PDF>

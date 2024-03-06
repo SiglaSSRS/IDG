@@ -1,0 +1,151 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="sacstrutturasize8">
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3">			
+</HEADER>
+<FOOTER>
+<include file="\INCLUDE\IncludedStruttura.frw" value="footercartaintestatalegale2">
+</FOOTER>
+<BODY>
+<TEXT ALIGN=J>
+<BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>Spett.le</TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_STATOGIUR</valueabs></B></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_LAV</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%>Raccomandata A.R.</TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_LAV</valueabs> - <U><B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_LAV</valueabs></B></U>  (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_LAV</valueabs>)</TD>
+</TR>
+<TR>
+<TD WIDTH=25%><BR></TD>
+<TD WIDTH=25%><BR></TD>
+<TD WIDTH=10%><BR></TD>
+<TD WIDTH=40%><BR></TD>
+</TR>
+
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRRAGSOC</valueabs>!= </ifcond><then>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>Spett.le</TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRRAGSOC</valueabs></B></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRINDIR</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%>Raccomandata A.R.</TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRCAP</valueabs> - <U><B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRLOCAL</valueabs></B></U>  (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRPROV</valueabs>)</TD>
+</TR>
+<TR>
+<TD WIDTH=25%><BR></TD>
+<TD WIDTH=25%><BR></TD>
+<TD WIDTH=10%><BR></TD>
+<TD WIDTH=40%><BR></TD>
+</TR>
+</then>
+</if>
+
+
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond><then>Egr. Sig.<else>Gent.le Sig.ra</if></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></B></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%>Raccomandata A.R.</TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs> - <B><U><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs></U></B>  (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs>)</TD>
+</TR></TABLE>
+<BR>
+<BR>
+<BR>Conegliano, <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs> 
+<BR><BR>
+<B><I>OGGETTO:</I></B> <U><if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==DEL</ifcond>
+<then>Contratto di delegazione di pagamento</then>
+</if>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>!=</ifcond>
+<then>Contratto di mutuo contro cessione del quinto dello stipendio</then>
+</if>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>==</ifcond>
+<then>Contratto di mutuo contro cessione del quinto della pensione</then>
+</if>, sottoscritto tra Sigla s.r.l. e <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>  in data <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTR</valueabs> Rif. n° <valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs>– sollecito versamento TFR e/o quote insolute.</U><BR>
+<BR>
+Con riferimento al contratto in oggetto, verificatasi la risoluzione del rapporto di lavoro subordinato a far data dal 
+___<loop>
+<looproot>IDGFSIN00F/RECORD</looproot>
+<if><ifcond><value>IDGFSIN_DATA_FINE</value>==17/26/1973</ifcond><and><ifcond><value>IDGFSIN_DATA_CARICAM</value>!=01/01/2000</ifcond><then><value>IDGFSIN_DATA_CARICAM</value></if>
+</loop>___ con il Vostro dipendente <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> sollecitiamo il versamento delle competenze di fine rapporto e/o il pagamento delle quote insolute maturate in pendenza contrattuale, ex art. 1260 e ss. c.c, DPR 180/1950 e successive modificazioni ed infine, giusta  art. _____ delle condizioni generali  del sopraccitato contratto.<BR>
+<BR>
+<B>Chiediamo, inoltre, il versamento di insoluti per complessivi  € <valueabs>IDGFEST00F/RECORD/IDGFEST_SLDINS</valueabs>.</B><BR>
+<BR>
+Per l’effetto, alleghiamo alla presente, il conteggio per l’estinzione della pratica, con precisazione che qualora le spettanze non coprano il nostro credito, rimarrà a carico del cedente la somma residua.<BR>
+<BR>
+Il versamento potrà essere effettuato con bonifico sul c/c bancario nr 100000004722 ABI 06225 CAB 61620 CIN S intestato a SIGLA s.r.l. - IBAN – IT08S0622561620100000004722 .<BR>
+<BR>
+Ricordiamo, inoltre, al nostro Cliente che l’interruzione del rapporto di lavoro subordinato non determina la sospensione del contratto di finanziamento e che egli è responsabile in via sussidiaria dell’adempimento del proprio datore di lavoro in forza del contratto in oggetto quale “cessione pro solvendo”. <BR>
+La presente viene, altresì, inviata ai sensi  e per gli effetti dell’art. 1219 e c.c.<BR>
+<BR>
+Attendiamo quanto sopra entro e non oltre di 15 giorni dal ricevimento della presente, in difetto procederemo a tutela del nostro credito con l’ausilio del ns. legale di fiducia, senza ulteriore avviso.<BR>
+Non saranno concessi ulteriori termini o dilazioni.<BR>
+<BR>
+<BR>
+Espressamente riservata la richiesta di risarcimento dei danni patiti e patiendi, derivanti dal ritardo ovvero dal mancato Vs. adempimento, anche ai sensi dell’art. 2043 c.c..<BR>
+<BR>
+<BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=77%>Distinti saluti.<BR><BR><BR></TD>
+<TD WIDTH=23% ALIGN=C><I><B>Sigla S.r.l.</B><BR>Direzione Recupero Crediti<BR>Ufficio Legale  CQS e Prestito Personale</I></TD>
+</TR>
+<TR>
+<TD WIDTH=77%>All.c.s.</TD>
+<TD WIDTH=23% ALIGN=C CELLBACKGROUND="<valueabs>Immagini/DONADEL/Path</valueabs><valueabs>Immagini/DONADEL/Nome</valueabs>"><I><B>Dr.ssa Silvia Donadel<BR><BR></B></I></TD>
+</TR>
+</TABLE>
+</TEXT>
+</BODY>
+</PDF>

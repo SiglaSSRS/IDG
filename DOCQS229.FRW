@@ -1,0 +1,52 @@
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_BRPR_TYPE</valueabs><in>(MAQ,MEA)</ifcond><then>
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize7">
+<include file="\INCLUDE\Percorsi.frw">
+<BODY>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>==FEA</ifcond><or><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>==FSE</ifcond><or><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>==FSP</ifcond>
+<then></then>
+<else>
+<if>(<ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CODENTE</valueabs>!=2483748</ifcond>
+<and><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CODENTE</valueabs>!=82207</ifcond>)
+<or>(<ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CODENTE</valueabs><in>(2483748,82207)</ifcond>
+    <and>(<ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP042 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP043 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP044 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP0421 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP0431 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP0441 </ifcond>)
+)<then><ENCRYPT OWNER="soloiopossomodificare" NOCHANGE NOCOPY></then>
+</else>
+</if></if>
+<PDFPAGE SRC="DOCQS229.PDF" VALUE=1 SHOWONCE>
+<TEXT X=7 Y=1.6><valueabs>IDGFCTR00F/RECORD/IDGFCTR_RAGSOC_MED</valueabs></TEXT>
+<TEXT X=7 Y=2.25><valueabs>IDGFCTR00F/RECORD/IDGFCTR_INDIR_MED</valueabs></TEXT>
+<TEXT X=7 Y=2.9>CF <valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDFIS_MED</valueabs>        PI <valueabs>IDGFCTR00F/RECORD/IDGFCTR_PIVA_MED</valueabs></TEXT>
+<TEXT X=7 Y=3.6>
+<valueabs>IDGFCTR00F/RECORD/IDGFCTR_BRPR_SIGN_NUMBER</valueabs>
+</TEXT>
+
+
+<TEXT X=0.5 Y=6.8><valueabs>IDGFCLI00F/RECORD/IDGFCLI_COGNOME</valueabs></TEXT>
+<TEXT X=6.5 Y=6.8><valueabs>IDGFCLI00F/RECORD/IDGFCLI_NOME</valueabs></TEXT>
+<TEXT X=12.7 Y=6.8><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs></TEXT>
+
+
+<TEXT X=0.5 Y=7.7><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCA_NASC</valueabs></TEXT>
+<TEXT X=6.5 Y=7.7><valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_NASC</valueabs></TEXT>
+<TEXT X=12.7 Y=7.7><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC</valueabs></TEXT>
+
+<TEXT X=0.5 Y=8.65><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs>==</ifcond><then><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOMICILIO</valueabs></then>
+<else><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RESIDENZA</valueabs></else></if></TEXT>
+
+
+<PAGE>
+<PDFPAGE SRC="DOCQS229.PDF" VALUE=2 SHOWONCE>
+
+<TEXT X=13.55 Y=12.45><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPROV1</valueabs></TEXT>
+
+<TEXT X=2 Y=23.05 SIZE=12><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTAMPA_SECCIPR</valueabs></TEXT>
+</PAGE>
+</BODY>
+</PDF>
+</then></if>

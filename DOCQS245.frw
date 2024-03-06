@@ -1,0 +1,33 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize10_test">
+<include file="\INCLUDE\Percorsi.frw">
+
+<BODY>
+<PDFPAGE SRC="DOCQS245.PDF" VALUE=1 SHOWONCE PDFOVERLAY>
+
+
+<TEXT X=3.7  Y=6.5><valueabs>IDGFCQP00F/RECORD/IDGFCQP_RAGSCLI</valueabs></TEXT>
+<TEXT X=11 Y=6.5><valueabs>IDGFCQP00F/RECORD/IDGFCQP_DTNSCLI</valueabs></TEXT>
+<TEXT X=15 Y=6.5><valueabs>IDGFCQP00F/RECORD/IDGFCQP_LOCNSCLI</valueabs></TEXT>
+<TEXT X=3 Y=7.25><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs></TEXT>
+
+<TEXT>
+<if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_COD_CONV_IMP</valueabs>==</ifcond>
+	<then><TEXT X=1.05 Y=9.1><B>X</B></TEXT></then>
+	<else><if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDCATEG</valueabs><in>(PUB,STA)</ifcond><then><TEXT X=1.05 Y=8.15><B>X</B></TEXT></then>
+		  <else><if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CDCATEG</valueabs><in>(PRI,PAP,PRG,PRP)</ifcond><then><TEXT X=1.05 Y=8.6><B>X</B></TEXT></then></else>
+	</else>
+</if></if></if>
+</TEXT>
+
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\VALMERCRE#DOCQS245##01_01_03.png" BACKGROUND X=-0.5 Y=1.7 SCALE=25>
+<PAGE><PDFPAGE SRC="DOCQS245.PDF" VALUE=2 SHOWONCE PDFOVERLAY>
+
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\VALMERCRE#DOCQS245##01_02_03.png" BACKGROUND X=-0.5 Y=1.6 SCALE=25>
+
+<PAGE><PDFPAGE SRC="DOCQS245.PDF" VALUE=3 SHOWONCE PDFOVERLAY>
+<TEXT X=2.3 Y=10><valueabs>IDGFCQP00F/RECORD/IDGFCQP_DATSYS</valueabs></TEXT>
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\VALMERCRE#DOCQS245##01_03_03.png" BACKGROUND X=-0.5 Y=1.6 SCALE=25>
+
+</BODY>
+</PDF>

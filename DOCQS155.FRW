@@ -1,0 +1,37 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="sacstrutturasize10">
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3">			
+</HEADER>
+<FOOTER>
+<include file="\INCLUDE\IncludedStruttura.frw" value="footercartaintestatasac">
+</FOOTER>
+<BODY>
+<TEXT SIZE=16>
+<BR><BR><BR><BR><B>COMUNICAZIONE IMPORTANTE</B></TEXT>
+<BR><BR><BR><BR>
+<TEXT ALIGN=J>Gentile cliente, La informiamo che per ottenere l’eventuale rimborso del premio non goduto, per quanto riguarda la polizza assicurativa <B>AXERIA</B> collegata al Suo contratto, qualora dovesse decidere di portare a termine l’estinzione come da conteggio allegato, <U><B>dovrà necessariamente inviare alla società AXERIA PREVOYANCE</B></U> la seguente documentazione:<BR>
+•	Richiesta rimborso (vedi esempio allegato) riportante i Suoi dati anagrafici compreso il Suo indirizzo di residenza, il numero del Suo contratto estinto, la data di estinzione del Suo contratto e la modalità con la quale desidera ottenere tale eventuale rimborso (assegno circolare o bonifico bancario, in quest’ultimo caso dovrà indicare le Sue coordinate ove la società Axeria possa effettuarLe il rimborso);<BR>
+•	copia del Suo Documento d’ Identità in corso di validità e copia del Codice Fiscale;<BR>
+•	copia del conteggio estinto inviatoLe;<BR>
+•	copia della lettera liberatoria che Le sarà inviata ad estinzione conclusa.<BR>
+<BR>
+Tale documentazione, dovrà essere da Lei spedita tramite raccomandata A/r a:<BR>
+<B>AXERIA PREVOYANCE<BR>
+VIA VITTOR PISANI, 19<BR>
+20124 MILANO (MI)</B><BR>
+<BR><BR>
+Rimanendo a disposizione per eventuali chiarimenti al nr. 0438/45990, porgiamo distinti saluti.
+<BR><BR><BR><BR><BR><BR>
+
+
+<TABLE WIDTH=100% FONT SIZE=9>
+<TR HEIGHT=3%>
+<TD WIDTH=77%></TD>
+<TD WIDTH=23% ALIGN="C" CELLBACKGROUND="<valueabs>Immagini/FIRMACM1/Path</valueabs><valueabs>Immagini/FIRMACM1/Nome</valueabs>"><BR><BR>Conformità Clienti e<BR>Monitoraggio Contratti<BR><BR>Sigla Srl</TD>
+</TR>
+</TABLE>
+
+</TEXT>
+</BODY>
+</PDF>

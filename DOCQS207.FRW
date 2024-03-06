@@ -1,0 +1,10 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="sacstrutturasize7">
+<include file="\INCLUDE\Percorsi.frw">
+<BODY>
+<PDFPAGE SRC="DOCQS207.PDF" VALUE=1 SHOWONCE> <PAGE>
+<PDFPAGE SRC="DOCQS207.PDF" VALUE=2 SHOWONCE>
+
+</PAGE>
+</BODY>
+</PDF>

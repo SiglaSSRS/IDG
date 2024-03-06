@@ -1,0 +1,145 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize7.5">
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3">			
+</HEADER>
+<FOOTER>
+<include file="\INCLUDE\IncludedStruttura.frw" value="footercartaintestcqsstd">
+</FOOTER>
+<SUBFOOTER>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=50%>Data</TD>
+<TD WIDTH=50%></TD>
+</TR>
+<BR><BR>
+<TR>
+<TD WIDTH=50% ALIGN="C">________________________________</TD>
+<TD WIDTH=50% ALIGN="C">________________________________</TD>
+</TR>
+<TR>
+<TD WIDTH=30% ALIGN="C">Per ricevuta del titolo, Il Finanziato</TD>
+<TD WIDTH=30% ALIGN="C">Il Collaboratore (timbro e firma)</TD>
+</TR>
+<TR>
+<TD WIDTH=30%></TD>
+<TD WIDTH=30% ALIGN="C" SIZE=7>La firma del soggetto finanziato, da me identificato, è stata apposta in mia presenza</TD>
+</TR>
+<TR>
+<TD WIDTH=30%></TD>
+<TD WIDTH=30% ALIGN="C"><B>Sigla S.r.l.</B></TD>
+</TR>
+</TABLE>
+</SUBFOOTER>
+<BODY>
+<ENCRYPT OWNER="soloiopossomodificare" NOCHANGE NOCOPY>
+<TEXT X=16.5 Y=-1.2 ><FONT SIZE=6><valfoot/></TEXT>
+<TEXT>
+<TEXT X=16.5 Y=-0.8 ><FONT SIZE=6>N° Pratica: <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs></TEXT> 
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=50%></TD>
+<TD WIDTH=50% FCOLOR="BLUE" SIZE=14>ATTO DI QUIETANZA</TD>
+</TR>
+<TR>
+<TD WIDTH=50% FCOLOR="BLUE">__________________________________________________</TD>
+<TD WIDTH=50%></TD>
+</TR>
+<BR><BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=25%><B>Io sottoscritto</B> </TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%></TD>
+</TR>
+<TR>
+<TD WIDTH=25%><B>Signor/a:</B> </TD>
+<TD WIDTH=25%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%></TD>
+</TR>
+<TR>
+<TD WIDTH=25%><B>Dipendente presso:</B> </TD>
+<TD WIDTH=25%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%></TD>
+</TR>
+<TR>
+<TD WIDTH=25%><B>Contratto:</B> </TD>
+<TD WIDTH=25%><if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==DEL</ifcond>
+	<then>DELEGAZIONE DI PAGAMENTO N°</then>
+	</if>
+	<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>!=</ifcond>
+		<then>CESSIONE QUINTO STIPENDIO N° </then>
+	</if>
+	<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>==</ifcond>
+		<then>CESSIONE QUINTO PENSIONE N°</then>
+	</if> <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%></TD>
+</TR>
+</TABLE><BR><BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=100% ALIGN="C">PRESO ATTO E CONFERMATO</TD>
+</TR>
+</TABLE>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=100% ALIGN="J"><if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>==</ifcond>
+		<then>- di percepire reddito da pensione come risulta dalla documentazione reddituale che vi è stata fornita e che non sussistono cause di sospensione o riduzione della stessa;</then><else>- di essere tuttora alle dipendenze e in servizio effettivo presso il Datore di lavoro sopra indicato;</else>
+	</if><BR><BR>
+- di aver ricevuto copia del contratto di mutuo completo di ogni sua parte, conforme a quello da me sottoscritto;<BR><BR>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_FLG_STMVAR</valueabs>==2</ifcond><then><B>
+<BR>
+- che le condizioni economiche applicate al suddetto contratto sono state oggetto di successiva modifica a me comunicata e da me accettata, e pertanto sono attualmente le seguenti:<BR>
+<BR>
+- COMMISSIONI INTERMEDIARIO FINANZIARIO: <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMCOMSRIP</valueabs> € costo ripetibile in caso di estinzione anticipata, pro quota, secondo la curva degli interessi;<BR>
+- COMMISSIONI DI DISTRIBUZIONE: <if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDANAFIN</valueabs>!=12002203</ifcond><then>&euro <if><ifcond><valueabs>IDGFFONT0F/RECORD/IDGFONT_CDFONTE</valueabs><in>(_CRECO,_CRECO_RIN,_CREDIPER,CRECO_07,CRECO_15,CRECO_25,CRECO_30,CRECO_31,CRECO_32,CRECO_33,CRECO_34,CRECO_35,CRECO_36,CRECO_37,CRECO_38,CRECO_39,CRECO_40,CRECO_41,CRECO_42,CRECO_43,CRECO_44,CRECO_45,CRECO_46,CRECO_47,CRECO_48,CRECO_49,CRECO_50,CRECO_51,CRECO_52,CRECO_53,CRECO_54,CRECO_55,CRECO_56,CRECO_57,CRECO_58,CRECO_59,CRECO_60,CRECO_61,CRECO_62,CRECO_63,CRECO_64,CRECO_65,CRECO_66,CRECO_67,CRECO_68,CRECO_69,CRECO_70,CRECO_71,CRECO_72,CRECO_73,CRECO_74,CRECO_75,CRECO_76,CRECO_77,CRECO_78,CRECO_79,CRECO_80)</ifcond>
+<then><if><ifcond><valueabs>IDGFFONT0F/RECORD/IDGFONT_CDFONTE</valueabs>==_CREDIPER</ifcond>
+	  <then><valueabs>IDGFCQS00F/RECORD/IDGFCQS_PV_IMCOMMBA</valueabs></then>
+	  <else><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMCOMMBA</valueabs></else></if>
+</then>
+<else>
+<valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPROV1</valueabs>
+</else>
+</if></then></if> € costo ripetibile in caso di estinzione anticipata, pro quota, secondo la curva degli interessi;<BR>
+- NETTO RICAVO: <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPNETRIC</valueabs> € <BR>
+<BR>
+- che in occasione di tale modifica sono stato informato in merito alla conseguente variazione dei tassi di interesse applicati al contratto di mutuo da me sottoscritto, che in ragione di ciò sono i seguenti: TAN <valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTAN</valueabs>, TAEG/ISC <valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTAEG</valueabs>, TEG <valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTEG</valueabs>;<BR>
+<BR>
+<BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=100% ALIGN="C">DICHIARO</TD>
+</TR>
+</TABLE>
+<BR>
+- di aver compreso che, per effetto delle sopra riportate modifiche gli importi da considerare quanto alle voci “COMMISSIONI IN FAVORE DELL’INTERMEDIARIO FINANZIARIO”, “COMMISSIONI DI DISTRIBUZIONE”,  “NETTO RICAVO”, TAN, TAEG e TEG sono quelli indicati nel presente Atto di Quietanza e nel Piano di Ammortamento, del quale ho ricevuto copia;<BR> 
+<BR>
+</B>
+</then>
+</if>
+- di accettare pertanto, senza avere null'altro a pretendere, a tacitazione di ogni mio diritto, la somma di <valueabs>IDGFERT00F/RECORD/IDGFERT_IMPERG</valueabs> € quale saldo dell'importo erogatomi a titolo di mutuo riconoscendo, come riconosco, pienamente  valide ed efficaci le obbligazioni derivanti dallo stesso.</TD><BR><BR><BR>
+</TR>
+<TR>
+<TD WIDTH=100%>Le somme da me ricevute sono state così corrisposte:</TD><BR><BR><BR>
+</TR>
+
+<loop>
+<loopda>1</loopda>
+<looproot>IDGFERB00F/RECORD</looproot>
+<TR>
+<TD WIDTH=100% ALIGN=L><if><ifcond><value>IDGFERB_DTCONTAB</value>!=</ifcond><and><ifcond><value>IDGFERB_CODPAG</value>!=</ifcond><then>- &euro <value>IDGFERB_IMPERG</value> per <value>IDGFERB_CAUSALE</value> a mezzo di <value>IDGFERB_DESCPAG</value> tratto/emesso da Cassa di Risparmio del Veneto</then></if></TD><BR>
+</TR>
+</loop>
+
+</TABLE>
+<BR>
+<BR><BR><BR><BR>
+<BR><BR><BR><BR><BR>
+
+</TEXT>
+</BODY>
+</PDF>

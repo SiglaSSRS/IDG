@@ -1,0 +1,133 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize9">
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3">			
+</HEADER>
+<FOOTER>
+<include file="\INCLUDE\IncludedStruttura.frw" value="footercartaintestcqsstd">
+</FOOTER>
+<BODY>
+<ENCRYPT OWNER="soloiopossomodificare" NOCHANGE NOCOPY>
+<TEXT>
+<TEXT X=16.5 Y=-1 ><FONT SIZE=6>N° Pratica: <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs></TEXT> 
+<BR><BR><BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><B>SPETTABILE</B></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCTR00F/RECORD/IDGFCTR_RAGSOC_MED</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCTR00F/RECORD/IDGFCTR_INDIR_MED</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCTR00F/RECORD/IDGFCTR_MEDIATORE</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCTR00F/RECORD/IDGFCTR_MED_AGENCY</valueabs> - <valueabs>IDGFCTR00F/RECORD/IDGFCTR_MED_OFFICE</valueabs></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=100% ALIGN="J">
+<BR><BR>
+<B>Oggetto: Liquidazione pratica <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs> del <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSTS</valueabs> , richiedente <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></B><BR><BR><BR></TD>
+</TR>
+<TR>
+<TD WIDTH=100% ALIGN="J">Come da accordi, trasmettiamo documentazione relativa alla pratica in oggetto:<BR><BR></TD>
+</TR>
+</TABLE>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=5%>1)</TD>
+<TD WIDTH=95% ALIGN="J">Atto di quietanza (da far firmare al cliente)<BR><BR></TD>
+</TR>
+<TR>
+<TD WIDTH=5%>2)</TD>
+<TD WIDTH=95% ALIGN="J">Piano di ammortamento (da far firmare al cliente)<BR><BR></TD>
+</TR>
+<TR>
+<TD WIDTH=5%>3)</TD>
+<TD WIDTH=95% ALIGN="J">€ <valueabs>IDGFERT00F/RECORD/IDGFERT_IMPERG</valueabs> a mezzo di:<BR></TD>
+</TR>
+<loop>
+<loopda>1</loopda>
+<looproot>IDGFERD00F/RECORD</looproot>
+<TR>
+<TD WIDTH=5%></TD>
+<TD WIDTH=95% ALIGN=L><value>IDGFERD_DESCPAG</value> - <value>IDGFERD_IMPERG</value> <if><ifcond><value>IDGFERD_DESCPAG</value>==ASSEGNO CIRCOLARE</ifcond><then>da consegnare al cliente</then></if></TD><BR>
+</TR>
+</loop>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>==12026045</ifcond><then>
+<TR>
+<TD WIDTH=5%>4)</TD>
+<TD WIDTH=100% ALIGN="J">Prospetto analitico di liquidazione da consegnare al cliente<BR></TD>
+</TR>
+</then></if>
+</TABLE>
+<BR><BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=100% ALIGN="J">Vi raccomandiamo pertanto di ritornarci a stretto giro di posta i documenti in originale debitamente sottoscritti dal cliente.</TD>
+</TR><BR>
+<TR>
+<TD WIDTH=100% ALIGN="J">Distinti Saluti</TD>
+</TR>
+<TR>
+<TD WIDTH=100% ALIGN="J"><BR><BR></TD>
+</TR>
+</TABLE>
+<BR><BR><BR><BR><BR><BR><BR><BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=65%>Conegliano, li &date</TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=5%></TD>
+<TD WIDTH=5%></TD>
+</TR>
+<TR>
+<TD WIDTH=65%></TD>
+<TD WIDTH=25% ALIGN="C">Sigla Srl</TD>
+<TD WIDTH=5%></TD>
+<TD WIDTH=5%></TD>
+</TR>
+<TR>
+<TD WIDTH=65%></TD>
+<TD WIDTH=25% ALIGN="C">Direzione Cessione Quinto</TD>
+<TD WIDTH=5%></TD>
+<TD WIDTH=5%></TD>
+</TR>
+<TR>
+<TD WIDTH=65%></TD>
+<TD WIDTH=25% ALIGN="C">Tacchin Alberto</TD>
+<TD WIDTH=5%></TD>
+<TD WIDTH=5%></TD>
+</TR>
+</TABLE>
+</TEXT>
+<IMG SRC="<valueabs>Immagini/TACCHIN01/Path</valueabs><valueabs>Immagini/TACCHIN01/Nome</valueabs>" BACKGROUND X=13.4 Y=23 SCALE=<valueabs>Immagini/TACCHIN01/Scale</valueabs>>
+</BODY>
+</PDF>

@@ -1,0 +1,72 @@
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_BRPR_TYPE</valueabs><in>(MAQ,MEA)</ifcond>
+<then>
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize5.5_times">
+
+
+
+<BODY>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>==FEA</ifcond><or><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>==FSE</ifcond><or><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>==FSP</ifcond>
+<then></then>
+<else>
+<if>(<ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CODENTE</valueabs>!=2483748</ifcond>
+<and><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CODENTE</valueabs>!=82207</ifcond>)
+<or>(<ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CODENTE</valueabs><in>(2483748,82207)</ifcond>
+    <and>(<ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP042 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP043 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP044 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP0421 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP0431 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP0441 </ifcond>)
+)<then><ENCRYPT OWNER="soloiopossomodificare" NOCHANGE NOCOPY></then>
+</else>
+</if></if>
+
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\IDECLIMED#DOCQS164##01_01_01.png" BACKGROUND X=14.3 Y=1.2 SCALE=25>
+<TEXT ALIGN=C><BR><BR><BR><FONT size=11><B>MODULO PER IDENTIFICAZIONE DELLA CLIENTELA DA PARTE DEL MEDIATORE</B></TEXT>
+<TEXT ALIGN=J><FONT SIZE=11>
+<BR>
+<BR>
+<B>DATI CLIENTE : </B><BR>
+<BR><BR>
+<B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_NOME</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_COGNOME</valueabs></B> (di seguito chiamato CLIENTE)<BR>
+<B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs></B><BR>
+Cap <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs></B> Città <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs>)</B><BR>
+<BR>
+Il Mediatore Creditizio <B><valueabs>IDGFCTR00F/RECORD/IDGFCTR_RAGSOC_MED</valueabs></B> , destinatario presso la propria sede dell’invio da parte di Sigla del  plico contrattuale relativo  al contratto di finanziamento n. <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs></B>, dichiara, sotto la propria personale responsabilità, di aver consegnato il suddetto plico tramite la propria struttura al cliente sopra indicato e di aver provveduto, in occasione della consegna, all’identificazione del cliente stesso mediante esibizione in originale del documento di identità tipo <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DSDOCUM</valueabs></B> numero <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_NUM_DOCUM</valueabs></B> rilasciato in data <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_DA_IL</valueabs></B> dall’ente <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_ENTE</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_DA</valueabs></B>.<BR>
+Si considerano di conseguenza adempiuti gli obblighi di identificazione della clientela ai sensi e per gli effetti del disposto di cui al D.lgs. 231/2007 in materia di contrasto al riciclaggio, con particolare riferimento all’art. 30 comma 7, del sopra citato decreto. <BR>
+<BR>
+<BR>
+<TABLE WIDTH=100% SIZE=11>
+<TR>
+<TD WIDTH=50% ALIGN=C></TD><TD WIDTH=50% ALIGN=C>Il Mediatore (timbro e firma)</TD>
+</TR>
+<TR>
+<TD WIDTH=50% ALIGN=C>Data _____________________________</TD><TD WIDTH=50% ALIGN=C>_______________________</TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+<BR>
+</TEXT>
+<TEXT ALIGN=C><FONT SIZE=11>
+<B>************<BR>
+MODULO DICHIARAZIONE DEL CLIENTE</B></TEXT>
+<TEXT ALIGN=J><FONT SIZE=11>
+<BR>
+<BR>
+Il sottoscritto <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_NOME</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_COGNOME</valueabs></B>, nato il <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC</valueabs> a <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCNASC</valueabs></B> e residente in <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs></B>, Città <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs></B>, Prov. (<B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs></B>) Cap <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs></B> dichiara con la presente di aver ricevuto da parte del Mediatore Creditizio <B><valueabs>IDGFCTR00F/RECORD/IDGFCTR_RAGSOC_MED</valueabs></B>, il plico contrattuale relativo  al contratto di finanziamento n. <B><valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs></B>, di essere l’effettivo destinatario della documentazione oggetto di spedizione e di avere effettivamente inoltrato a Sigla Srl formale richiesta di finanziamento, cui è seguita la consegna della documentazione sopra richiamata. Il sottoscritto dichiara inoltre di aver provveduto personalmente al ritiro del plico contrattuale e di aver successivamente provveduto, autonomamente, alla verifica delle condizioni in esso riportate e relative al finanziamento richiesto e quindi alla sottoscrizione del contratto di finanziamento e di tutta la documentazione allo stesso inerente  e oggetto di consegna da parte del mediatore creditizio sopra citato, il cui scopo si dichiara essere connesso a finalità di natura personale e pertanto estranee all’attività imprenditoriale o professionale eventualmente svolta dal sottoscritto. Il sottoscritto dichiara altresì di agire in qualità di titolare effettivo dell’operazione.<BR>
+Il sottoscritto, preso atto che il plico contrattuale in originale deve essere trasmesso a Sigla srl tramite il servizio postale a mezzo raccomandata a/r, dichiara di essersi recato, dopo aver provveduto alla sottoscrizione del contratto di finanziamento e di tutta la documentazione allo stesso inerente, presso la sede del sopra citato Mediatore Creditizio fornendo a quest’ultimo l’incarico di spedire a Sigla Srl la documentazione precedentemente sottoscritta e/o provvedere alla notifica del contratto presso l'atc <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs></B> a mezzo posta raccomandata / pec.<BR>
+Il sottoscritto dichiara, infine, che il Mediatore Creditizio non ha partecipato in alcun modo alla fase relativa alla conclusione del contratto di finanziamento, essendosi limitato a metterlo in contatto con Sigla nel corso dello svolgimento delle attività di istruttoria della pratica di finanziamento.<BR>
+In fede.<BR>
+
+<BR><BR>
+Firma CLIENTE (leggibile) __________________________________________________<BR>
+<BR>
+Data _____________________________
+		
+</TEXT>
+
+</BODY>
+</PDF>
+</then></if>

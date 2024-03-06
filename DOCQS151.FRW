@@ -1,0 +1,285 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8">
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasiglasx">
+<TABLE>
+	<TR>
+		<TD WIDTH=70% ALIGN=R></TD>
+		<TD WIDTH=30% ALIGN=R SIZE=6.5>Pratica:<valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs></TD>
+	</TR>	
+</TABLE>			
+</HEADER>
+<FOOTER>
+<include file="\INCLUDE\IncludedStruttura.frw" value="footercartaintestatalegale">
+</FOOTER>
+<BODY>
+<TEXT LINESPACE=0.5>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=100% ALIGN=R SIZE=14 FCOLOR="BLUE"><B>CONTO DEL RESIDUO DEBITO</B></TD>
+</TR>
+<TR>
+<TD WIDTH=100% ALIGN=R SIZE=4 FCOLOR="BLUE"><B>____________________________________________________________________________________________________________________________________________________________</B></TD>
+</TR>
+</TABLE>
+
+<BR><BR>
+Conegliano, lì <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>Spettabile</TD>
+</TR>
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_ATTIVITA</valueabs>==PEN</ifcond><then>
+<TR>
+<TD WIDTH=25%><if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDANAFIN</valueabs>==12001691</ifcond><then>____________________________________</then></if></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DES_COMP_VIT</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%><if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDANAFIN</valueabs>==12001691</ifcond><then>Firma per accettazione</then></if></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IND_COMP_VIT</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%><if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDANAFIN</valueabs>==12001691</ifcond><then>____________________________________</then></if></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CAP_COMP_VIT</valueabs> - <valueabs>IDGFCQS00F/RECORD/IDGFCQS_LOC_COMP_VIT</valueabs>  (<valueabs>IDGFCQS00F/RECORD/IDGFCQS_PRV_COMP_VIT</valueabs>)</TD>
+</TR>
+</then><else>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_COMP_IMP</valueabs><in>(12048970, 12014937, 12223036)</ifcond><then>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></TD>
+</TR><TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs></TD>
+</TR><TR>
+<TD WIDTH=25%>Assicurazione: <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DES_COMP_IMP</valueabs></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOMICILIO</valueabs></TD>
+</TR>
+</then><else>
+<TR>
+<TD WIDTH=25%><if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDANAFIN</valueabs>==12001691</ifcond><then>____________________________________</then></if></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DES_COMP_IMP</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%><if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDANAFIN</valueabs>==12001691</ifcond><then>Firma per accettazione</then></if></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IND_COMP_IMP</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%><if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDANAFIN</valueabs>==12001691</ifcond><then>____________________________________</then></if></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CAP_COMP_IMP</valueabs> - <valueabs>IDGFCQS00F/RECORD/IDGFCQS_LOC_COMP_IMP</valueabs>  (<valueabs>IDGFCQS00F/RECORD/IDGFCQS_PRV_COMP_IMP</valueabs>)</TD>
+</TR></else></if></else></if>
+<TR>
+<TD WIDTH=25%><if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDANAFIN</valueabs>==12001691</ifcond><then>Luogo e data</then></if></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+<TEXT ALIGN=J LINESPACE=0.5>
+<B>Oggetto:</B> conto del residuo debito<BR>
+<B>Cliente:</B> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> (c.f. <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs>)<BR>
+<B>Amministrazione:</B> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_STATOGIUR</valueabs><BR>
+<B>Data di decorrenza:</B> <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATATT</valueabs><BR>
+<B>Numero rate previste da contratto:</B> <valueabs>IDGFCTR00F/RECORD/IDGFCTR_PERDUR</valueabs><BR>
+<BR><BR>
+Con riferimento alla vostra richiesta, Vi rimettiamo il seguente conto del residuo debito, con chiusura al <valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN</valueabs>.<BR>
+<BR>
+<TABLE WIDTH=100% BORDER=0.3>
+<TR>
+<TD WIDTH=70%>Il residuo debito risulta così costituito:</TD>
+<TD WIDTH=30% ALIGN=R></TD>
+</TR>
+<TR>
+<TD WIDTH=70%>N° <valueabs>IDGFEST00F/RECORD/IDGFEST_NRATE</valueabs> quote da &euro <valueabs>IDGFEST00F/RECORD/IDGFEST_IMPRATA</valueabs> <if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_NRATINA</valueabs>!=0</ifcond><then> + n° <valueabs>IDGFEST00F/RECORD/IDGFEST_NRATINA</valueabs> rata/e da &euro <valueabs>IDGFEST00F/RECORD/IDGFEST_IMPRATINA</valueabs></then></if></TD>
+<TD WIDTH=30% ALIGN=R>&euro <valueabs>IDGFEST00F/RECORD/IDGFEST_MONTANTE</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=70%>Quote scadute: <valueabs>IDGFEST00F/RECORD/IDGFEST_NUMQTSCAD</valueabs> (*)</TD>
+<TD WIDTH=30% ALIGN=R>- &euro <valueabs>IDGFEST00F/RECORD/IDGFEST_IMPQTSCAD</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=70%> </TD>
+<TD WIDTH=30% ALIGN=R> </TD>
+</TR>
+<TR>
+<TD WIDTH=70%>Quote residue: <valueabs>IDGFEST00F/RECORD/IDGFEST_NUMQTASCA</valueabs></TD>
+<TD WIDTH=30% ALIGN=R>&euro <valueabs>IDGFEST00F/RECORD/IDGFEST_IMPRESDIFF</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=70%>Abbuono interessi su quote residue al tasso del <valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTAN</valueabs> %</TD>
+<TD WIDTH=30% ALIGN=R>- &euro <valueabs>IDGFEST00F/RECORD/IDGFEST_INTFUT</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=70%>Abbuono commissioni e provvigioni non dovuti (se valorizzati in contratto):<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDANAFIN</valueabs>==12001691</ifcond><then> COMMISSIONI BANCA APULIA</then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDANAFIN</valueabs>==12002220</ifcond><then> COMMISSIONI BANCA FINECO</then></if></TD>
+<TD WIDTH=30% ALIGN=R>- &euro <valueabs>IDGFEST00F/RECORD/IDGFEST_IMCOMMBA</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=70%>Abbuono provvigioni non dovute (se valorizzate in contratto):
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_IMPROV</valueabs>>0</ifcond><then> COMMISSIONI AGENTE</then></if></TD>
+<TD WIDTH=30% ALIGN=R>- &euro <valueabs>IDGFEST00F/RECORD/IDGFEST_IMPROV</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=70%>Abbuono spese per rata (se valorizzati in contratto):COMMISSIONI SIGLA</TD>
+<TD WIDTH=30% ALIGN=R>- &euro <if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_IMCOMM</valueabs>!=0</ifcond><then><valueabs>IDGFEST00F/RECORD/IDGFEST_IMCOMM</valueabs></then><else><valueabs>IDGFEST00F/RECORD/IDGFEST_SPINCFIN</valueabs></else></if></TD>
+</TR>
+<TR>
+<TD WIDTH=70%>Abbuono costi fissi non maturati (se valorizzati in contratto):</TD>
+<TD WIDTH=30% ALIGN=R>- &euro <valueabs>IDGFEST00F/RECORD/IDGFEST_IMPFISSI</valueabs></TD>
+</TR>
+<if>(<ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDGSTCTR</valueabs><in>(CPS,CQB,CQD)</ifcond><or><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDANAFIN</valueabs><in>(10000037,12026045,12026810,12028424,12059830,12090075,12105654,12156396)</ifcond>)<and><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_SPINCBAN</valueabs>!=0</ifcond><then>
+<TR>
+<TD WIDTH=70%>Abbuono spese invio comunicazioni periodiche:</TD>
+<TD WIDTH=30% ALIGN=R>- &euro <valueabs>IDGFEST00F/RECORD/IDGFEST_SPINCBAN</valueabs></TD>
+</TR>
+</then></if>
+<TR>
+<TD WIDTH=70% ALIGN=R><B><I>Residuo debito:</I></B></TD>
+<TD WIDTH=30% ALIGN=R><B>&euro <valueabs>IDGFEST00F/RECORD/IDGFEST_RESNETTOP</valueabs></B></TD>
+</TR>
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_STAMPA_INS</valueabs>==N</ifcond><then>
+<TR>
+<TD WIDTH=70%>Quote insolute:<BR><FONT SIZE=6.5>
+<loop>
+	<loopda>1</loopda>
+	<looproot>IDGFDEF00F/RECORD</looproot>
+		<if><ifcond><value>IDGFDEF_SALDO</value>>0</ifcond><and><ifcond><value>IDGFDEF_DMACROCAUSAL</value>==Quota </ifcond>
+		<then>
+		<value>IDGFDEF_DSCAD</value> / 
+		</if>	
+</loop>
+</TD>
+<TD WIDTH=30% ALIGN=R>&euro <valueabs>IDGFEST00F/RECORD/IDGFEST_SLDINS</valueabs></TD>
+</TR>
+</then></if>
+<TR>
+<TD WIDTH=70%>Quote accodate:<BR><FONT SIZE=6.5>
+<loop>
+	<loopda>1</loopda>
+	<looproot>IDGFDEF00F/RECORD</looproot>
+		<if><ifcond><value>IDGFDEF_SALDO</value>>0</ifcond><and><ifcond><value>IDGFDEF_DMACROCAUSAL</value>==Quota accodata </ifcond>
+		<then>
+		<value>IDGFDEF_DSCAD</value> / 
+		</if>	
+</loop>
+</TD>
+<TD WIDTH=30% ALIGN=R>&euro <valueabs>IDGFEST00F/RECORD/IDGFEST_SLDACC</valueabs></TD>
+</TR><TR>
+<TD WIDTH=70%>Interessi di mora accumulati:</TD>
+<TD WIDTH=30% ALIGN=R>&euro <valueabs>IDGFEST00F/RECORD/IDGFEST_SLDMORA</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=70%>Commissioni su estinzione anticipata: <valueabs>IDGFEST00F/RECORD/IDGFEST_PRCPENALE</valueabs> %</TD>
+<TD WIDTH=30% ALIGN=R>&euro <valueabs>IDGFEST00F/RECORD/IDGFEST_TOTIMPENAL</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=70%>TFR da decurtare:</TD>
+<TD WIDTH=30% ALIGN=R><loop>
+	<loopda>1</loopda>
+	<looproot>IDGFDEF00F/RECORD</looproot>
+		<if><ifcond><value>IDGFDEF_SALDO</value>!=0</ifcond><and><ifcond><value>IDGFDEF_RIFNUM</value>==ESP</ifcond>
+		<then>- &euro <value>IDGFDEF_SALDO_ABS</value></then>
+		</if>
+</loop>
+<loop>
+	<loopda>1</loopda>
+	<looproot>IDGFDEF00F/RECORD</looproot>
+		<if><ifcond><value>IDGFDEF_SALDO</value>!=0</ifcond><and><ifcond><value>IDGFDEF_RIFNUM</value>==PagAtt</ifcond>
+		<then>- &euro <value>IDGFDEF_SALDO_ABS</value></then>
+		</if>
+</loop></TD>
+</TR>
+<TR>
+<TD WIDTH=70%>Quote da decurtare pari a:</TD>
+<TD WIDTH=30% ALIGN=R></TD>
+</TR>
+<TR>
+<TD WIDTH=70% ALIGN=R><B>Importo da versare:</B></TD>
+<TD WIDTH=30% ALIGN=R><B>&euro <if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_STAMPA_INS</valueabs>==N</ifcond><then><valueabs>IDGFEST00F/RECORD/IDGFEST_TOTEST</valueabs></then><else><valueabs>IDGFEST00F/RECORD/IDGFEST_TOTEST_NINS</valueabs></else></if></B></TD>
+</TR>
+</TABLE>
+<BR><BR>
+
+
+<if>
+	<ifcond><valueabs>IDGFABB00F/RECORD/IDGFABB_FLGPIANO</valueabs>==2</ifcond><and>
+	<ifcond><valueabs>IDGFABB00F/RECORD/IDGFABB_RATA</valueabs>!=0</ifcond>
+<then>
+
+
+Il presente conteggio rappresenta il piano pagamenti attualmente in essere, come rimodulato post incasso TFR, del quale si fornisce il dettaglio:
+
+<BR><BR>
+
+<TABLE WIDTH=40% SIZE=6 ALIGN=C TBLALIGN=C BORDER=0.1>
+	<TR>
+		<TD WIDTH=20%>DATA</TD>
+		<TD WIDTH=20%>ABBATTIMENTO</TD>
+	</TR>
+
+	<loop>
+	<loopda>1</loopda>
+	<looproot>IDGFABB00F/RECORD</looproot>
+
+		<TR>
+			<TD><value>IDGFABB_DATCON</value></TD>
+			<TD><value>IDGFABB_ABBATTIMENTO</value></TD>
+		</TR>
+
+	</loop>
+</TABLE>
+
+</then></if>
+
+
+<BR><BR>
+Il versamento verrà eseguito a mezzo di:<BR>
+[_] Bonifico bancario su Intesa Sanpaolo, IBAN IT33F0306912711100000012667 intestato a Sigla S.r.l.<BR>
+[_] Bonifico Postale n° 000073807760, CAB: 12000, ABI: 07601, CIN: G, IBAN: IT53G0760112000000073807760 intestato a Sigla S.r.l.<BR>
+[_] Assegno circolare non trasferibile intestato a Sigla S.r.l.<BR>
+<BR>
+A tale somma vanno aggiunti gli interessi al tasso del <valueabs>IDGFEST00F/RECORD/IDGFEST_TXMORA</valueabs> % partendo dal primo giorno successivo alla data di chiusura del conteggio <valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN</valueabs> a tutto il mese dell'effettivo pagamento, pari a
+&euro <valueabs>IDGFEST00F/RECORD/IDGFEST_IMPDIETI30</valueabs> per ciascun mese o frazione.<BR>
+N.B.: dalla somma dovuta non vanno sottratte le quote insolute
+</TEXT>
+
+<TEXT X=14.75 Y=26><B>Sigla S.r.l.</B></TEXT>
+<IMG SRC="<valueabs>Immagini/MAZZER/Path</valueabs><valueabs>Immagini/MAZZER/Nome</valueabs>" BACKGROUND X=13.50 Y=27.5 SCALE=15>
+
+<TEXT X=0 Y=27><B>
+<if><ifcond><valueabs>IDGFEST00F/RECORD/IDGFEST_FLG_25</valueabs><in>(0,1)</ifcond><then>(*) Con riferimento all'art 39, comma 1 del DPR n. 180 del 1950 il presente contratto risulta essere rinnovabile.</then>
+<else>(*) Con riferimento all'art 39, comma 1 del DPR n. 180 del 1950 il presente contratto sarà rinnovabile allo scadere della 
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs>==36</ifcond><then>15</then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs>==48</ifcond><then>20</then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs>==60</ifcond><then>24</then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs>==72</ifcond><then>29</then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs>==84</ifcond><then>34</then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs>==96</ifcond><then>39</then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs>==108</ifcond><then>44</then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs>==120</ifcond><then>48</then></if>
+ ° rata.</else></if>
+</TEXT>
+</BODY>
+</PDF>

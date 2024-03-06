@@ -1,0 +1,123 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="sacstrutturasize8">
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3">			
+</HEADER>
+<FOOTER>
+<include file="\INCLUDE\IncludedStruttura.frw" value="footercartaintestatalegale2">
+</FOOTER>
+<BODY>
+<TEXT ALIGN=J>
+<BR><BR><BR>
+Conegliano, <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs> <BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>Spett.le</TD><BR>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_STATOGIUR</valueabs></B></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_LAV</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%><U><B>Raccomandata A.R.</B></U></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_LAV</valueabs> - <U><B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_LAV</valueabs></B></U> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_LAV</valueabs>)</TD>
+</TR>
+<TR>
+<TD WIDTH=25%><BR><BR></TD>
+<TD WIDTH=25%><BR></TD>
+<TD WIDTH=10%><BR></TD>
+<TD WIDTH=40%><BR></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond><then>Egr. Sig.<else>Gent.le Sig.ra</if></TD><BR>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></B></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%><U><B>Raccomandata A.R.</B></U></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs> - <B><U><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs></U></B> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs>)</TD>
+</TR></TABLE>
+<BR>
+<BR>
+<BR>
+<BR><BR><BR>
+OGGETTO: <B>INTIMAZIONE AD ADEMPIERE e DIFFIDA DI PAGAMENTO <if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==DEL</ifcond>
+	<then>contratto di prestito contro delegazione di pagamento</then>
+	</if>
+	<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>!=</ifcond>
+		<then>contratto di mutuo contro cessione del quinto dello stipendio</then>
+	</if>
+	<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>==</ifcond>
+		<then>contratto di mutuo contro cessione del quinto della pensione</then>
+	</if> sottoscritto tra Sigla s.r.l. e <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> in data <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTR</valueabs>, notificato al terzo debitore ceduto, <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_STATOGIUR</valueabs> (Rif. contr. n° <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>). </B><BR>
+<BR>
+Il contratto di cui sopra, decorrente dal 01/<valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs>/<valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_AA</valueabs>, è disciplinato dal D.P.R. n° 180 del 1950 e successive modificazioni, nonché dalle norme codicistiche riservate alle fattispecie del contratto di mutuo e di cessione del credito (artt. 1260 e ss. c. c.). <BR>
+Sulla base di tali previsioni legislative il creditore può trasferire a titolo oneroso o gratuito il suo credito, anche senza il consenso del debitore e la cessione ha effetto nei confronti di quest’ultimo quando gli viene notificata.<BR>
+Pertanto, con la notifica, la scrivente <I>"(...) cessionaria è legittimata a pretendere la prestazione del debitore ceduto (...)"</I> – Cass.Civ. 7919/04.<BR>
+Ne consegue che l’esecuzione del contratto, concretizzatasi nella trattenuta mensile di € <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPCAN</valueabs>, sulla busta paga del Vs. dipendente <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> è, per il terzo ceduto, un atto dovuto, in ottemperanza a quanto prescritto dall’ordinamento giuridico e con decorrenza dal mese di <if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs>==1</ifcond><then>Gennaio</then></if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs>==2</ifcond><then>Febbraio</then></if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs>==3</ifcond><then>Marzo</then></if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs>==4</ifcond><then>Aprile</then></if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs>==5</ifcond><then>Maggio</then></if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs>==6</ifcond><then>Giugno</then></if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs>==7</ifcond><then>Luglio</then></if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs>==8</ifcond><then>Agosto</then></if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs>==9</ifcond><then>Settembre</then></if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs>==10</ifcond><then>Ottobre</then></if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs>==11</ifcond><then>Novembre</then></if>
+<if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_MM</valueabs>==12</ifcond><then>Dicembre</then></if> <valueabs>IDGFSUB00F/RECORD/IDGSUB_DATSCAP_AA</valueabs>, come già specificatoVi.<BR>
+<BR>
+Con la presente, precisando che il contratto <I>de quo</I> è pienamente valido ed efficace, sia tra le parti che nei Vostri confronti dalla notifica ex art. 1264 co.1 c.c., <B>Vi intimiamo a darne esecuzione nel termine di 10 giorni dal ricevimento della presente comunicazione <if><ifcond><valueabs>IDGFSUB00F/RECORD/IDGSUB_DURPRIM</valueabs>==0</ifcond><then>.</then><else>, nonché a pagare, sempre nel predetto termine, le rate già maturate e scadute, ossia le <valueabs>IDGFSUB00F/RECORD/IDGSUB_DURPRIM</valueabs> mensilità a partire da <valueabs>IDGFSUB00F/RECORD/IDGSUB_DTSCAD_PRIMA</valueabs>, per € <valueabs>IDGFSUB00F/RECORD/IDGSUB_IMPRATSC</valueabs>, in difetto provvederemo a girare la posizione al nostro legale di fiducia, per l'adempimento coattivo.</else></if></B><BR>
+Il versamento potrà essere effettuato con bonifico sul c/c bancario nr 100000012670 ABI 03069 CAB 12711 CIN A intestato a SIGLA s.r.l., IBAN - IT29A0306912711100000012670. <BR>
+<BR>
+Restiamo in attesa, altresì, dell’anticipo a mezzo email di prova dell’avvenuto pagamento. <BR>
+<BR>
+Ci riserviamo di richiedere, inoltre, nei modi e sedi opportuni, il risarcimento dei danni patiti e patiendi, derivanti dal mancato adempimento al contratto in oggetto.<BR>
+<BR><BR><BR><BR>
+
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=70%>Distinti saluti.<BR><BR></TD>
+<TD WIDTH=30% ALIGN=C><I><B>Sigla S.r.l.</B><BR>Ufficio sinistri e legale CQS</I>
+</TD>
+</TR>
+</TABLE>
+</TEXT>
+<IMG SRC="<valueabs>Immagini/MAZZER/Path</valueabs><valueabs>Immagini/MAZZER/Nome</valueabs>" BACKGROUND X=14 Y=23.5 SCALE=15>
+<TEXT>
+<TABLE WIDTH=100%>
+<TR><TD SIZE=8><BR><BR>
+<B>Rif.</B></TD>
+</TR>
+</TABLE>
+</TEXT>
+</BODY>
+</PDF>

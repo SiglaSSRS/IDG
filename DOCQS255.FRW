@@ -1,0 +1,119 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize10_Arial">
+<include file="\INCLUDE\Percorsi.frw">
+
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3_1">
+</HEADER>
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestatalegale2">
+</FOOTER>	
+
+<BODY>
+<TEXT ALIGN=J>
+<BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=60%><br><br><br><br>Raccomandata A/R</TD>
+<TD WIDTH=40%><if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond><then><BR>Egr. Sig.<else><BR>Gent.le Sig.ra</if> 
+[L2/<valueabs>IDGREQ00F/RECORD/IDGREQ_JOBNAM_INI</valueabs>/<valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>]<br>
+<B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></B><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs><br>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs> - <B><U><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs></U></B> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs>)
+</TD>
+</TR>
+</TABLE>
+<BR>
+<BR>Conegliano, <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs> 
+<BR><BR><BR>
+<B>OGGETTO:</B> <U><if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==DEL</ifcond>
+<then>Contratto di delegazione di pagamento</then>
+</if>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>!=</ifcond>
+<then>Contratto di mutuo contro cessione del quinto dello stipendio</then>
+</if>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>==</ifcond>
+<then>Contratto di mutuo contro cessione del quinto della pensione</then>
+</if>, sottoscritto tra Sigla s.r.l. e <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> in data <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTR</valueabs> Rif. pratica n° <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs>.</U><BR>
+<BR><BR>
+<if><ifcond><valueabs>IDGFSIN00F/RECORD/IDGFSIN_LETT2_DT_EMIS</valueabs>!=</ifcond><then>
+Facciamo seguito alla ns. del <valueabs>IDGFSIN00F/RECORD/IDGFSIN_LETT2_DT_EMIS</valueabs> al fine di comunicarLe che
+</then><else>Con riferimento all'operazione in oggetto siamo a comunicarLe che
+</if><if><ifcond><valueabs>IDGFSIN00F/RECORD/IDGFSIN_TIPO_TESTATA</valueabs>==FON</ifcond><then> il fondo pensione,<else>
+il Suo ex datore di lavoro,</if> a fronte dell'interruzione del rapporto di lavoro subordinato a far data <valueabs>IDGFSIN00F/RECORD/IDGFSIN_DATA_CARICAM</valueabs>, 
+ <if><ifcond><valueabs>IDGFSIN00F/RECORD/IDGFSIN_TFR_QUS_TOT</valueabs>!=0,00</ifcond><then>ci ha versato l'importo di €
+<valueabs>IDGFSIN00F/RECORD/IDGFSIN_TFR_QUS_PST_L2</valueabs></then><else>
+nulla ci ha versato a titolo di competenze da Lei maturate fino alla cessazione dello stesso. 
+</if> 
+<if><ifcond><valueabs>IDGFSIN00F/RECORD/IDGFSIN_ULTQUSMM</valueabs>!=</ifcond><then>
+di cui:<br>
+<loop>
+<loopda>1</loopda>
+<looproot>IDGFSINI0F/RECORD</looproot>
+<if><ifcond><value>IDGFSINI_RIFMM</value>!=00</ifcond><then>
+- € <value>IDGFSINI_IMPORT</value> a saldo della quota insoluta di 
+<if><ifcond><value>IDGFSINI_RIFMM</value>==1</ifcond><then>gennaio</then></if>
+<if><ifcond><value>IDGFSINI_RIFMM</value>==2</ifcond><then>febbraio</then></if>
+<if><ifcond><value>IDGFSINI_RIFMM</value>==3</ifcond><then>marzo</then></if>
+<if><ifcond><value>IDGFSINI_RIFMM</value>==4</ifcond><then>aprile</then></if>
+<if><ifcond><value>IDGFSINI_RIFMM</value>==5</ifcond><then>maggio</then></if>
+<if><ifcond><value>IDGFSINI_RIFMM</value>==6</ifcond><then>giugno</then></if>
+<if><ifcond><value>IDGFSINI_RIFMM</value>==7</ifcond><then>luglio</then></if>
+<if><ifcond><value>IDGFSINI_RIFMM</value>==8</ifcond><then>agosto</then></if>
+<if><ifcond><value>IDGFSINI_RIFMM</value>==9</ifcond><then>settembre</then></if>
+<if><ifcond><value>IDGFSINI_RIFMM</value>==10</ifcond><then>ottobre</then></if>
+<if><ifcond><value>IDGFSINI_RIFMM</value>==11</ifcond><then>novembre</then></if>
+<if><ifcond><value>IDGFSINI_RIFMM</value>==12</ifcond><then>dicembre</then></if>
+ <value>IDGFSINI_RIFAA</value>;<br></then></if></loop>
+- € <valueabs>IDGFSIN00F/RECORD/IDGFSIN_TFR_TOT</valueabs> a titolo di competenze da lei maturate fino alla cessazione dello stesso.
+</then><else></if>
+<BR>
+
+<if><ifcond><valueabs>IDGFSIN00F/RECORD/IDGFSIN_FLGFON</valueabs>==N</ifcond><and><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_TFRFONDI</valueabs>!=0,00</ifcond>
+<and><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDANATFR </valueabs>!=12052635</ifcond>
+<and><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDANATFR2</valueabs>!=12052635</ifcond>
+<and><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDANATFR3</valueabs>!=12052635</ifcond>
+<and><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDANATFR4</valueabs>!=12052635</ifcond><then>
+Precisiamo che siamo in attesa di ricevere dal fondo pensione l'ammontare del TFR a loro versato, fino a concorrenza del credito vantato ad oggi dalla scrivente nei Suoi confronti.<BR><BR>
+</then></if>
+<BR>Alla luce di quanto sopra, al <valueabs>IDGFESSN0F/RECORD/IDGFESSN_DATAFIN</valueabs>, il Suo residuo debito (al netto degli interessi futuri) ammonta ad € <valueabs>IDGFESSN0F/RECORD/IDGFESSN_TOTEST</valueabs>.
+<BR><BR>
+Qualora fosse <if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond><then>intenzionato<else>intenzionata</then></if> ad estinguere in un'unica soluzione, La invitiamo a comunicarci tale volontà inviando il modulo per la richiesta del conteggio 
+estintivo, debitamente compilato e sottoscritto; nel qual caso provvederemo ad inoltrarle il conteggio estintivo come da normativa in vigore.
+<BR><BR>
+<if><ifcond><valueabs>IDGFSIN00F/RECORD/IDGFSIN_COD_AMM_SUB</valueabs>!=0</ifcond><then>
+In alternativa, provvederemo a rinotificare il contratto in oggetto alla nuova amministrazione presso la quale attualmente lei lavora, 
+continuando cosi ad effettuare le trattenute mensili sulla Sua busta paga. Rileviamo, infatti, che ad oggi risulta dipendente presso la 
+società <valueabs>IDGFSIN00F/RECORD/IDGFSIN_ATC_SUB_RAGSOC</valueabs> con sede legale in 
+<valueabs>IDGFSIN00F/RECORD/IDGFSIN_ATC_SUB_CAP</valueabs> <valueabs>IDGFSIN00F/RECORD/IDGFSIN_ATC_SUB_LOCAL</valueabs> <valueabs>IDGFSIN00F/RECORD/IDGFSIN_ATC_SUB_INDIR</valueabs> - P.I. <valueabs>IDGFSIN00F/RECORD/IDGFSIN_ATC_SUB_IVA</valueabs>.
+</then>
+<else>
+In difetto è <if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond><then>tenuto<else>tenuta</then></if> a comunicarci il Suo nuovo datore di lavoro, al fine di provvedere alla notifica del contratto in oggetto, attualmente ancora in vigore 
+tra le parti, e proseguire con le trattenute sulla Sua busta paga, pari all'importo della rata mensile pattuita.
+</if>
+<BR><BR>
+Restiamo in attesa di un Suo sollecito e tempestivo riscontro <b>entro e non oltre 15 giorni dal ricevimento della presente</b>, in difetto ci vedremo 
+costretti a tutelare i nostri interessi con le modalità prescritte dall'ordinamento giuridico.
+<BR><BR>
+Distinti saluti.
+<BR><BR><BR>
+</TEXT>
+<TEXT X=14.15 Y=21><I><B>SIGLA S.R.L.</B></I><BR></TEXT>
+<TEXT X=13 Y=21.5><I><B>Ufficio Sinistri e Legale CQS</B></I></TEXT>
+<IMG SRC="<valueabs>Immagini/MAZZER/Path</valueabs><valueabs>Immagini/MAZZER/Nome</valueabs>" BACKGROUND X=13.5 Y=23 SCALE=15>
+
+<TEXT ALIGN=J>
+<BR><BR>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDANAFIN</valueabs><in>(12026810,12028424,12059830)</ifcond><and><ifcond><valueabs>IDGFSIN00F/RECORD/IDGFSIN_TIPSIN</valueabs>==DEF</ifcond><and><ifcond><valueabs>IDGFSIN00F/RECORD/IDGFSIN_FLG1DEF</valueabs>!=N</ifcond><then>
+In all.:<BR>
+- modulo di richiesta del conteggio estintivo per l'estinzione anticipata;<BR>
+- conto del residuo debito al <valueabs>IDGFESSN0F/RECORD/IDGFESSN_DATAFIN</valueabs>.<BR>
+</then><else>
+In all.:<BR>
+- modulo di richiesta del conteggio estintivo per l'estinzione anticipata.<BR></else>
+</if>
+</TEXT>
+<PAGE><PDFPAGE SRC="DOCQS256.PDF" VALUE=1 SHOWONCE>
+</BODY>
+</PDF>

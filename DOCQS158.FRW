@@ -1,0 +1,112 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="sacstrutturasize10">
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3">			
+</HEADER>
+<FOOTER>
+<include file="\INCLUDE\IncludedStruttura.frw" value="footercartaintestatasac">
+</FOOTER>
+<BODY>
+<TEXT ALIGN=J>
+<BR><BR><BR><BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=100% ALIGN=R SIZE=14 FCOLOR="BLUE"><B>LIBERATORIA BANCA</B></TD>
+</TR>
+<TR>
+<TD WIDTH=100% ALIGN=R SIZE=4 FCOLOR="BLUE"><B>____________________________________________________________________________________________________________________________________________________________</B></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>Spett.le<BR></TD>
+</TR>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDANAFIN</valueabs>==12002203</ifcond><then>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>BANCA 24-7 S.p.a.</TD>
+</TR>
+<TR>
+<TD WIDTH=25% SIZE=6></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>VIA STOPPANI, 15</TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>24100 - BERGAMO (BG)</TD>
+</TR>
+</then>
+<else>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DESCFIN</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25% SIZE=6></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_INDIR_FIN</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_INDIRIZZO_FIN</valueabs></TD>
+</TR>
+</else>
+</if>
+</TABLE>
+<BR><BR><BR><BR><BR><BR><BR>
+<B>Oggetto:</B> estinzione anticipata <if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==DEL</ifcond>
+	<then>DEL</then>
+	</if>
+	<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>!=</ifcond>
+		<then>CQS</then>
+	</if>
+	<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>==</ifcond>
+		<then>CQP</then>
+	</if> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> pratica n° <valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs>
+<BR><BR><BR><BR>
+Con la presente siamo a comunicarvi l'avvenuta estinzione anticipata della pratica n° <valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs> contratta dal nominativo in oggetto,
+di n° <valueabs>IDGFEST00F/RECORD/IDGFEST_NRATE</valueabs> rate da &euro <valueabs>IDGFEST00F/RECORD/IDGFEST_IMPRATA</valueabs> cadauna.<BR>
+<BR><BR>
+Pertanto il prestito deve ritenersi estinto dal <valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN</valueabs>, con conseguente addebito di &euro <valueabs>IDGFEST00F/RECORD/IDGFEST_IMPRESBANC</valueabs>, come da conto estintivo allegato, sul c/c:<BR>
+Cassa di Risparmio del Veneto - n° 100000001913<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+La data di valuta dell'addebito è il <BR>
+Si sottolinea che nel residuo debito non è considerata la quota di competenza.<BR>
+Resta inteso che dal                 mon matureranno altri ratei per la pratica in oggetto.
+<BR><BR><BR><BR><BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=50%></TD>
+<TD WIDTH=40% ALIGN="C">Distinti saluti</TD>
+<TD WIDTH=5%></TD>
+<TD WIDTH=5%></TD>
+</TR>
+<TR>
+<TD WIDTH=50%></TD>
+<TD WIDTH=40% ALIGN="C"><B>Sigla Srl</B></TD>
+<TD WIDTH=5%></TD>
+<TD WIDTH=5%></TD>
+</TR><BR><BR><BR>
+</TABLE>
+</BODY>
+</PDF>

@@ -1,0 +1,533 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize5.5_times">
+
+<SUBHEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintsiglacpx">
+</SUBHEADER>
+
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT">Pag. 1 di 3</TD> 
+</TR>	
+<TR>
+	<TD WIDTH=100% ALIGN="CENTER">Imposta di bollo assolta in modo virtuale come da autorizzazione n.20362 del 21.05.2008 dell'Agenzia delle Entrate di Conegliano - TV.</TD>
+</TR>	
+</TABLE>
+</SUBFOOTER>
+
+<BODY>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>==FEA</ifcond><or><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>==FSE</ifcond><or><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDFONTEB</valueabs>==FSP</ifcond>
+<then></then>
+<else>
+<if>(<ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CODENTE</valueabs>!=2483748</ifcond>
+<and><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CODENTE</valueabs>!=82207</ifcond>)
+<or>(<ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CODENTE</valueabs><in>(2483748,82207)</ifcond>
+    <and>(<ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP042 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP043 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP044 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP0421 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP0431 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP0441 </ifcond>)
+)<then><ENCRYPT OWNER="soloiopossomodificare" NOCHANGE NOCOPY></then>
+</else>
+</if></if>
+<TEXT SIZE=8 ALIGN=C>
+<BR><BR><BR>
+Redatti ai sensi delle disposizioni di cui al Provvedimento di Banca d’Italia del 9 febbraio 2011 attuativo del D.Lgs. 13 agosto 2010, n. 141<BR><BR>
+È assicurata la piena coerenza fra le informazioni contenute nel presente documento e le clausole del contratto<BR><BR>
+</TEXT>
+<TEXT SIZE=8 ALIGN=J>
+<TABLE WIDTH=100% SIZE=7 ALIGN=C>
+<TR>
+<TD WIDTH=34%></TD>
+<TD WIDTH=33%></TD>
+<TD WIDTH=33%>Data <U><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></U>   N° <U><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs></U> <BR><BR></TD>
+</TR>
+<TR>
+<TD WIDTH=34%></TD>
+<TD WIDTH=33%>Dati del consumatore</TD>
+<TD WIDTH=33%><BR><BR></TD>
+</TR>
+<TR ALIGN=L>
+<TD WIDTH=34%>Nome <U><valueabs>IDGFCLI00F/RECORD/IDGFCLI_NOME</valueabs></U></TD>
+<TD WIDTH=33%>Cognome <U><valueabs>IDGFCLI00F/RECORD/IDGFCLI_COGNOME</valueabs></U></TD>
+<TD WIDTH=33%>Data Nascita <U><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC</valueabs></U><BR><BR></TD>
+</TR>
+</TABLE>
+<BR><BR>
+<TABLE WIDTH=100% SIZE=7 ALIGN=C BGCOLOR=BLUE FCOLOR=WHITE>
+<TR>
+<TD WIDTH=100%>1.Identità e recapiti del Finanziatore/Intermediario del Credito</TD>
+</TR>
+</TABLE>
+<BR>
+
+<TABLE WIDTH=100% SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=49.5% BORDER=0.1>Finanziatore e relativi dati societari<BR>
+Indirizzo<BR>
+• Telefono • Fax • Indirizzo e-mail • Sito web
+</TD>
+<TD WIDTH=1%></TD>
+<TD WIDTH=49.5% BORDER=0.1>SIGLA SRL<BR>
+via Cesare Battisti, 5/a – 31015 Conegliano  (TV)<BR>
+0438/45990 (assistenza clienti) • 0438/372950 (interruzione rapporto di lavoro o decesso)<BR>• 0438/45917 (fax) • www.siglacredit.it •  sac@siglafinanziamenti.it
+</TD>
+</TR>
+</TABLE>
+
+<TABLE WIDTH=100% SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=49.5% BORDER=0.1>Intermediario del credito (qualora eventualmente intervenuto) e relativa qualifica<BR>
+Indirizzo<BR>
+• Telefono • Fax • Indirizzo e-mail • sito web
+</TD>
+<TD WIDTH=1%></TD>
+<TD WIDTH=49.5% BORDER=0.1><valueabs>IDGFCTR00F/RECORD/IDGFCTR_RAGSOC_MED</valueabs><BR><valueabs>IDGFCTR00F/RECORD/IDGFCTR_INDIR_MED</valueabs> <valueabs>IDGFCTR00F/RECORD/IDGFCTR_CAP_MED</valueabs> <valueabs>IDGFCTR00F/RECORD/IDGFCTR_LOCAL_MED</valueabs> (<valueabs>IDGFCTR00F/RECORD/IDGFCTR_PROV_MED</valueabs>)
+</TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+
+<TABLE WIDTH=100% SIZE=7 ALIGN=C BGCOLOR=BLUE FCOLOR=WHITE>
+<TR>
+<TD WIDTH=100%>2.Caratteristiche principali del contratto di Credito:</TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE WIDTH=100% SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=49.5% BORDER=0.1>Tipologia del contratto di credito</TD>
+<TD WIDTH=1%></TD>
+<TD WIDTH=49.5% BORDER=0.1><B>Contratto di prestito personale:</B> Il contratto di finanziamento (il “<B>Finanziamento</B>”) è un contratto di credito concesso dal Finanziatore al cliente (il “<B>Cliente</B>”), il quale si impegna a restituire al Finanziatore medesimo, alla scadenza concordata e al tasso di interesse stabilito contrattualmente, la somma da quest’ultimo erogata, in un’unica soluzione.<BR>
+<B>Principali rischi connessi con l’operazione e il servizio:</B><BR>
+In considerazione della breve durata del Finanziamento, come infra indicata, non esistono particolari rischi connessi al medesimo, salvo il fatto che, poiché il Finanziamento è a tasso fisso, esiste un generico rischio di tasso di interesse per l’impossibilità di beneficiare delle eventuali fluttuazioni dei tassi al ribasso.
+</TD>
+</TR>
+</TABLE>
+<TABLE WIDTH=100% SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=49.5% BORDER=0.1><B>Importo totale del Finanziamento (importo messo a disposizione del Cliente)</B></TD>
+<TD WIDTH=1%></TD>
+<TD WIDTH=49.5% BORDER=0.1>Somma di denaro che il Finanziatore versa all’Ente Finanziatore per estinguere il precedente contratto di cessione di quota dello stipendio/pensione in essere, come da delega ricevuta: la si ottiene prendendo come riferimento l’ “importo totale dovuto dal Cliente”, come <I>infra</I> indicata, al netto del tasso di interesse nominale annuo (TAN) e degli altri costi derivanti dal Finanziamento, come <I>infra</I> elencati.
+</TD>
+</TR>
+</TABLE>
+<TABLE WIDTH=100% SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=49.5% BORDER=0.1><B>Condizioni per la concessione del Finanziamento</B></TD>
+<TD WIDTH=1%></TD>
+<TD WIDTH=49.5% BORDER=0.1>Non ci sono condizioni di utilizzo del Finanziamento e questo viene erogato dal Finanziatore in un’unica soluzione.</TD>
+</TR>
+</TABLE>
+<TABLE WIDTH=100% SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=49.5% BORDER=0.1><B>Durata del  Finanziamento</B></TD>
+<TD WIDTH=1%></TD>
+<TD WIDTH=49.5% BORDER=0.1><B>3 (tre) mesi</B></TD>
+</TR>
+</TABLE>
+<TABLE WIDTH=100% SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=49.5% BORDER=0.1><B>Rate e loro ordine di imputazione</B></TD>
+<TD WIDTH=1%></TD>
+<TD WIDTH=49.5% BORDER=0.1>Nel Finanziamento non è prevista una rateizzazione in quanto, in considerazione della breve durata, l’importo dovuto dal Cliente al Finanziatore verrà restituito alla scadenza in un’unica soluzione per sorte capitale, interessi calcolati come infra indicato ed eventuali altri oneri maturati.</TD>
+</TR>
+</TABLE>
+<TABLE WIDTH=100% SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=49.5% BORDER=0.1><B>Importo totale dovuto dal Cliente al Finanziatore (importo del capitale versato dal Finanziatore, oltre interessi e spese)</B></TD>
+<TD WIDTH=1%></TD>
+<TD WIDTH=49.5% BORDER=0.1>Importo versato all'Ente finanziatore per l'estinzione del contratto in essere oltre agli interessi al tan indicato e alle spese di bollo<BR>
+(in ipotesi di restituzione decorsi tre mesi dall’erogazione)
+</TD>
+</TR>
+</TABLE>
+<TABLE WIDTH=100% SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=49.5% BORDER=0.1><B>Eventuali garanzie richieste</B></TD>
+<TD WIDTH=1%></TD>
+<TD WIDTH=49.5% BORDER=0.1><B>Nessuna</B></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+<TABLE WIDTH=100% SIZE=7 ALIGN=C BGCOLOR=BLUE FCOLOR=WHITE>
+<TR>
+<TD WIDTH=100%>3.Costi del Finanziamento:</TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE WIDTH=100% SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=49.5% BORDER=0.1><B>Tasso di interesse (TAN – tasso nominale annuo)</B></TD>
+<TD WIDTH=1%></TD>
+<TD WIDTH=49.5% BORDER=0.1><B>6%<BR>
+(fisso per l’intera durata del finanziamento).</B><BR>
+Il calcolo degli interessi decorre dalla data di erogazione del Finanziamento da parte del Finanziatore, fino al giorno dell’integrale rimborso.
+</TD>
+</TR>
+</TABLE>
+</TEXT>
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\CTRESTANTTDOCQS190##01_01_03.png" BACKGROUND X=7.5 Y=-0.3 SCALE=25>
+<PAGE>
+
+<SUBHEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintsiglacpx">
+</SUBHEADER>
+
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT">Pag. 2 di 3</TD> 
+</TR>	
+<TR>
+	<TD WIDTH=100% ALIGN="CENTER">Imposta di bollo assolta in modo virtuale come da autorizzazione n.20362 del 21.05.2008 dell'Agenzia delle Entrate di Conegliano - TV.</TD>
+</TR>	
+</TABLE>
+</SUBFOOTER>
+<TEXT SIZE=8 ALIGN=J>
+<BR><BR><BR>
+
+<TABLE WIDTH=100% SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=49.5% BORDER=0.1><B>Tasso annuo effettivo globale (TAEG – costo totale del credito espresso in percentuale calcolata su base annua dell’importo totale del credito, e definito
+in base ai dati concernenti la rilevazione dei tassi di interesse effettivi globali medi ai sensi della legge antiusura)<BR><BR><BR>Il TAEG consente al Cliente di confrontare le varie offerte</B></TD>
+<TD WIDTH=1%></TD>
+<TD WIDTH=49.5% BORDER=0.1><B>7,8448%<BR>
+(esempio: importo erogato euro 4.000,00 + 60,24 TAN + 16 imposta di bollo = TAEG 7,8448%)</B><BR>
+Il TAEG è un indicatore sintetico e convenzionale del costo totale del credito calcolato ai sensi dell’allegato 5B al Provvedimento della Banca d’Italia del 9 febbraio 2011 e successive modifiche. Il TAEG è comprensivo degli interessi e di tutti i costi, commissioni, imposte e tutte le spese che il Cliente deve pagare in relazione al Finanziamento, come <I>infra</I> elencate, esclusi:<BR>
+• interessi di mora dovuti dal Cliente in caso di mancato pagamento entro i termini stabiliti nel contratto, come <I>infra</I> riepilogati.<BR>
+Per conoscere nel dettaglio i costi inclusi nel TAEG si veda quanto riportato nella relativa casella. Il TAEG è denominato anche ISC (indicatore sintetico di costo).
+</TD>
+</TR>
+</TABLE>
+<TABLE WIDTH=100% SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=49.5% BORDER=0.1><B>Per ottenere il Finanziamento o per ottenerlo alle condizioni contrattuali offerte è obbligatorio sottoscrivere:<BR>
+• un’assicurazione che garantisca il credito e/o<BR>
+• un altro contratto per un servizio accessorio
+</B></TD>
+<TD WIDTH=1%></TD>
+<TD WIDTH=49.5% BORDER=0.1><BR><BR><B>NO<BR>NO</B></TD>
+</TR>
+</TABLE>
+<TABLE WIDTH=100% SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=49.5% BORDER=0.1><B>Altri costi derivanti dal Finanziamento<BR>
+(dettaglio dei costi inclusi nel TAEG)
+</B></TD>
+<TD WIDTH=1%></TD>
+<TD WIDTH=49.5% BORDER=0.1><B>Oneri erariali: Euro 16<BR></B>
+(imposta di bollo dovuta in base alle vigenti normative in materia di finanziamenti)
+</TD>
+</TR>
+</TABLE>
+<TABLE WIDTH=100% SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=49.5% BORDER=0.1><B>Costi in caso di ritardo nel pagamento (tardare il pagamento potrebbe avere gravi conseguenze per il Cliente, ad esempio la vendita forzata di beni, e rendere più difficile ottenere altri crediti in futuro)</B></TD>
+<TD WIDTH=1%></TD>
+<TD WIDTH=49.5% BORDER=0.1><B>Interessi di mora calcolati al tasso del TAN</B><BR>
+Interessi dovuti dal Cliente al Finanziatore nel caso di mancato pagamento del dovuto entro il termine massimo di 10 (dieci) giorni dal ricevimento della richiesta da parte del Finanziatore, inoltrata al Cliente una volta trascorso il termine di durata del Finanziamento.<BR>
+Gli interessi decorrono dal termine di scadenza del Finanziamento sino al giorno dell’effettivo pagamento.<BR>
+Il tasso effettivo globale (TEG) applicato al contratto da lei sottoscritto, comprensivo di ogni spesa, non potrà mai superare il limite previsto dalla normativa in materia di usura nel momento in cui tale interesse è stato convenuto (data di sottoscrizione del contratto), dovendo intendersi che anche in caso di eventuale superamento del suddetto limite, la misura di tali interessi sarà comunque pari al limite medesimo. Il TEG dovrà essere confrontato con la categoria relativa agli ALTRI FINANZIAMENTI.
+</TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+<TABLE WIDTH=100% SIZE=7 ALIGN=C BGCOLOR=BLUE FCOLOR=WHITE>
+<TR>
+<TD WIDTH=100%>4.Importanti aspetti legali</TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE WIDTH=100% SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=49.5% BORDER=0.1><B>Diritto di recesso</B></TD>
+<TD WIDTH=1%></TD>
+<TD WIDTH=49.5% BORDER=0.1>Il Cliente ha diritto di recedere entro 14 giorni dalla data di conclusione del contratto di Finanziamento, inviando apposita raccomandata a.r. all’indirizzo SIGLA SRL via Cesare Battisti, 5/a, 31015 – Conegliano (TV), o mezzo si telegramma, telex, posta elettronica e fax al seguenti numeri e indirizzi (Tel 0438/45990, Fax 0438/45917 – sac@siglafinanziamenti.it) a condizione che sia confermata mediante invio di racc.a.r. entro le 48 (quarantotto) ore successive.</TD>
+</TR>
+</TABLE>
+<TABLE WIDTH=100% SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=49.5% BORDER=0.1><B>Rimborso anticipato e portabilità</B></TD>
+<TD WIDTH=1%></TD>
+<TD WIDTH=49.5% BORDER=0.1>Il Cliente può rimborsare anticipatamente il Finanziamento prima della scadenza del medesimo, corrispondendo al Finanziatore l’importo erogato oltre interessi maturati al saldo e gli altri oneri maturati indicati nel presente documento sotto la voce “Altri costi derivanti dal Finanziamento”, senza ulteriore addebito.</TD>
+</TR>
+</TABLE>
+
+<TABLE WIDTH=100% SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=49.5% BORDER=0.1><B>Consultazione di una banca dati:</B><BR>
+Se il Finanziatore rifiuta la domanda di Finanziamento dopo aver consultato una banca dati, il Cliente ha il diritto di essere informato immediatamente e gratuitamente del risultato della consultazione.<BR>
+Il Cliente non ha questo diritto se comunicare tale informazione è vietato dalla normativa comunitaria o è contrario all’ordine pubblico o alla pubblica sicurezza
+</TD>
+<TD WIDTH=1%></TD>
+<TD WIDTH=49.5% BORDER=0.1>SIGLA SRL non si avvale per l’istruttoria del Finanziamento della consultazione di banche dati.</TD>
+</TR>
+</TABLE>
+
+<TABLE WIDTH=100% SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=49.5% BORDER=0.1><B>Diritto a ricevere una copia del contratto</B><BR>
+Il Cliente ha diritto di ricevere, su sua richiesta, gratuitamente una copia del testo del contratto di Finanziamento idoneo per la stipula. Il Cliente non ha questo diritto se il Finanziatore, al momento della richiesta, non intende concludere il contratto di Finanziamento.</TD>
+<TD WIDTH=1%></TD>
+<TD WIDTH=49.5% BORDER=0.1></TD>
+</TR>
+</TABLE>
+<TABLE WIDTH=100% SIZE=7 ALIGN=J>
+<TR>
+<TD WIDTH=49.5% BORDER=0.1><B>Periodo di validità dell’offerta</B></TD>
+<TD WIDTH=1%></TD>
+<TD WIDTH=49.5% BORDER=0.1>Informazione valida dal <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs> al 
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS_MM</valueabs><in> (01,02,03)</ifcond><then>31/03/</then></if>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS_MM</valueabs><in> (04,05,06)</ifcond><then>30/06/</then></if>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS_MM</valueabs><in> (07,08,09)</ifcond><then>30/09/</then></if>
+<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS_MM</valueabs><in> (10,11,12)</ifcond><then>31/12/</then></if><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS_AAAA</valueabs>
+</TD>
+</TR>
+</TABLE>
+</TEXT>
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\CTRESTANTTDOCQS190##01_02_03.png" BACKGROUND X=7.5 Y=-0.3 SCALE=25>
+<PAGE>
+
+<SUBHEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintsiglacpx">
+</SUBHEADER>
+
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT">Pag. 3 di 3</TD> 
+</TR>	
+<TR>
+	<TD WIDTH=100% ALIGN="CENTER">Imposta di bollo assolta in modo virtuale come da autorizzazione n.20362 del 21.05.2008 dell'Agenzia delle Entrate di Conegliano - TV.</TD>
+</TR>	
+</TABLE>
+</SUBFOOTER>
+<TEXT SIZE=8 ALIGN=R><BR>n° prot <U><valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs></U><BR><BR>
+</TEXT>
+<TEXT SIZE=7 ALIGN=C>
+Con la presente scrittura privata tra SIGLA SRL, via Cesare Battisti, 5/a - 31015 – Conegliano, codice fiscale, partita Iva e iscrizione nel Registro delle Imprese di Treviso<BR>
+n. 03951740269 – Iscrizione Albo Unico degli Intermediari Finanziari ex art.106 TUB con n. 88 (codice meccanografico 33023) (di seguito “SIGLA”)<BR><BR>
+</TEXT>
+
+<TEXT SIZE=8 ALIGN=J>
+<BR><B>
+e il Sig./Sig.ra   <U><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></U> (in seguito detto “Mutuatario”) nato/a <U><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCNASC</valueabs></U> il <U><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC</valueabs></U>
+
+ CF: <U><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs></U> residente in <if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs>==</ifcond><then><U><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs></U> in via/piazza <U><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs></U></then><else><U><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_RES</valueabs></U> in via/piazza <U><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs></U></else></if>
+
+ Documento d’identità <U><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DSDOCUM</valueabs></U> N. <U><valueabs>IDGFCLI00F/RECORD/IDGFCLI_NUM_DOCUM</valueabs></U> Rilasciato da <U><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_ENTE</valueabs></U> il <U><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_DA_IL</valueabs></U> scad.<U><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_SCAD_IL</valueabs></U>
+
+ richiede a SIGLA di estinguere per suo nome e conto il precedente finanziamento in essere con altra Società finanziaria , il tutto alle condizioni particolari e generali di cui al presente contratto.
+</B>
+<BR><BR>
+<TABLE WIDTH=100% SIZE=7 ALIGN=C BGCOLOR=BLUE FCOLOR=WHITE>
+<TR>
+<TD WIDTH=100%>TUTTO CIÒ PREMESSO, SI CONVIENE QUANTO SEGUE:</TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE WIDTH=100% SIZE=6 ALIGN=J>
+<TR>
+<TD WIDTH=49.5%>a) Finanziamento e durata. SIGLA accorda al Mutuatario l'importo richiesto per la durata di tre mesi.<BR>
+<BR>
+b) Utilizzo. Il mutuatario autorizza Sigla a richiedere alla Società Finanziaria / Banca, a proprio nome e conto il conteggio del residuo debito<BR>
+<BR>
+c) Rimborso. Il mutuatario autorizza Sigla a trattenere l'importo erogato, al lordo degli interessi pari al tan e dell'imposta di bollo, dalla cessione di quota della retribuzione in corso di perfezionamento con Sigla stessa.<BR>
+<BR>
+d) Interessi. Sull'importo erogato verranno calcolati interessi al tasso nominale annuo del 6 % (esempio: importo erogato euro 4.000,00 + 60,24 TAN + 16 imposta di bollo = TAEG 7,8448%), a decorrere dalla data di erogazione del finanziamento fino al giorno dell'integrale rimborso<BR>
+<BR>
+e) Imposta di  bollo. Il versamento dell’importo  anticipato  verrà effettuato a diretto favore del Mutuatario al netto dell’imposta di bollo dovuta per legge pari a euro 16.<BR>
+<BR>
+f) Diritto di recesso. Il Mutuatario ha diritto di recedere entro 14 giorni dalla data di conclusione del presente contratto. Il diritto di recesso si esercita mediante comunicazione scritta da inviare a SIGLA, entro il termine anzidetto, a mezzo raccomandata a.r. La comunicazione può essere inviata, entro lo stesso termine, anche mediante telegramma, telex, posta elettronica e fax, a condizione che sia confermata mediante lettera raccomandata a.r. entro le quarantotto ore successive; la raccomandata si intende spedita in tempo utile se consegnata all'ufficio postale accettante entro il termine anzidetto.<BR>
+<BR>
+g) Rimborso anticipato. Il Mutuatario può rimborsare anticipatamente in qualunque momento il finanziamento corrispondendo a SIGLA l’importo da questa erogato per sorte capitale oltre agli interessi, calcolati al tasso indicato alla lett. d che precede, e agli altri eventuali oneri maturati alla data del rimborso, senza ulteriore addebito.<BR>
+<BR>
+h) Mancato rimborso. Trascorso il termine indicato alla lett. a che precede, le somme dovute a titolo di rimborso del finanziamento diventeranno senz’altro esigibili e saranno pagate dal Mutuatario a semplice richiesta di SIGLA da trasmettersi all'indirizzo di residenza da questi dichiarato nel presente contratto. In caso di mancato pagamento del dovuto entro dieci giorni dal ricevimento della richiesta, su tale importo matureranno interessi di mora calcolati al tasso del TAN annuo.<BR>
+</TD>
+<TD WIDTH=1%></TD>
+<TD WIDTH=49.5%>Il tasso effettivo globale (TEG) applicato al contratto da lei sottoscritto, comprensivo di ogni spesa, non potrà mai superare il limite previsto dalla normativa in materia di usura nel momento in cui tale interesse è stato convenuto (data di sottoscrizione del contratto), dovendo intendersi che anche in caso di eventuale superamento del suddetto limite, la misura di tali interessi sarà comunque pari al limite medesimo.
+Il TEG dovrà essere confrontato con la categoria relativa agli ALTRI FINANZIAMENTI<BR><BR>
+Le obbligazioni assunte con la presente richiesta si intendono solidali ed indivisibili anche nei confronti di eventuali eredi ed aventi causa.<BR>
+In espressa deroga al disposto dell'art. 190 c.c. Sigla S.r.l. è autorizzata ad agire in via principale, anzichè sussidiaria, per il recupero di metà del suo credito sui beni personali del coniuge coobbligato.<BR>
+In caso di risoluzione dell'attuale rapporto di lavoro, il mutuatario delega, irrevocabilmente Sigla S.r.l., esonerando da qualsiasi responsabilità il suo datore di lavoro, a riscuotere l'indennità di fine rapporto e quant'altro a qualsiasi titolo gli competesse a seguito dell'anzidetta risoluzione del rapporto di lavoro , e ciò fino alla concorrenza dell'importo come innanzi da lui dovuto a Sigla S.r.l..<BR>
+<BR>
+i) Quietanza. Con la sottoscrizione del presente accordo il Mutuatario dichiara:<BR>
+• di aver autorizzato l'estinzione del contratto precedente in essere<BR>
+• di aver ricevuto il documento denominato “Informazioni europee di base sul credito ai consumatori”;<BR>
+• di aver ottenuto informativa circa le condizioni che regolano il prestito cui il presente contratto si riferisce<BR>
+<BR>
+l) Reclami e controversie. Il Mutuatario può inviare i propri reclami ai seguenti recapiti:<BR>
+• via posta a: SIGLA SRL, via Cesare Battisti, 5/a, 31015 Conegliano (TV)<BR>
+• via e-mail a: sac@siglafinanziamenti.it<BR>
+• via fax al n. 0438/45926<BR>
+Nel caso di mancata risposta da parte di SIGLA SRL entro 30 giorni, o di risposta insoddisfacente, nei limiti di competenza previsti dalla legge, il Mutuatario prima di ricorrere alla giustizia ordinaria potrà rivolgersi all’Arbitro Bancario Finanziario. Per maggiori informazioni è possibile consultare il sito www.arbitrobancariofinanziario.it o chiedere e ottenere gratuitamente presso gli uffici di Sigla srl e dei propri agenti in attività finanziaria una copia cartacea della “Guida Pratica Conoscere l’Arbitro Bancario Finanziario e capire come tutelare i propri diritti”.<BR>
+<BR>
+m) Controlli. Sigla Srl  è soggetta ai controlli esercitati dalla Banca d’Italia, con sede in<BR>
+Via Nazionale, 91 – 00184 Roma.</TD>
+</TR>
+</TABLE>
+<TEXT SIZE=6 ALIGN=J>
+<BR>ATTENZIONE:  con la sottoscrizione, il Mutuatario dichiara di essere informato  circa il fatto che  il mancato rimborso dell’importo mutuato comporta l’obbligo di pagamento degli  interessi moratori nella  misura indicata alla  lett. h che  precede.<BR>
+<BR>
+Il Mutuatario conferma la veridicità forniti e sopra riportati sia ai fini di consentire a Sigla Srl il corretto apprezzamento del merito creditizio, sia ai sensi del d. lgs. 231/2007.
+<BR><BR><BR>
+<TABLE WIDTH=100% SIZE=6>
+<TR>
+	<TD WIDTH=50% ALIGN=L>> Il Mutuatario  ________________________________ <BR>Ai sensi degli artt. 1341 comma 2 e 1342 cc.: c) (rimborso con trattenuta);h) (interessi di mora).</TD> 
+	<TD WIDTH=50% ALIGN=C SIZE=5.5><B><valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs></B>
+	<valueabs>IDGFAZI00F/RECORD/IDGFAZI_INDIR_SIG</valueabs> <valueabs>IDGFAZI00F/RECORD/IDGFAZI_SIGLASRL</valueabs>  <valueabs>IDGFAZI00F/RECORD/IDGFAZI_DSNAZ_SIG</valueabs> -
+	<BR>Intermediario Finanziario iscritto nell’Albo Unico ex art. 106 TUB con n. 88 (cod. mecc. 33023) Registro Imprese, codice fiscale 
+	<BR>e partita IVA <valueabs>IDGFAZI00F/RECORD/IDGFAZI_IVA_SIG</valueabs> - Capitale Sociale  
+	<valueabs>IDGFAZI00F/RECORD/IDGFAZI_CAPSOC_SIG</valueabs> &euro  
+	<BR><BR></TD>
+</TR>
+</TABLE>
+<BR><BR>
+> Il Mutuatario ________________________________ <BR>
+Dichiaro di aver ricevuto copia del presente contratto e del documento denominato “Informazioni Europee di base sul credito ai consumatori”<BR>
+<BR>
+<BR>
+> Data <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs>
+<BR>
+<BR>
+> Il Mutuatario ________________________________ <BR><BR>
+PARTE RISERVATA ALL'ACCERTATORE. Il sottoscritto, incaricato dell'identificazione (art.30, comma 8 del Dlgs 231/2007), dichiara, sotto la propria personale responsabilità, di aver provveduto ad adeguata verifica dell'identità del MUTUATARIO, le cui generalità sono state desunte dai documenti d'identità esibiti in originale e sono state esattamente riportate nel contratto qui richiamato unitamente ai riferimenti del documento esibito; dichiara inoltre che il MUTUATARIO afferma, e tale appare sulla base degli elementi disponibili, di essere l'effettivo titolare del finanziamento oggetto del contratto, il cui scopo è attinente alla sfera privata (art. 21 del Dlgs 231/2007). Il sottoscritto dichiara inoltre che la sottoscrizione del contratto e degli allegati è avvenuta in sua presenza e che tutta la documentazione fornita ai fini dell'ottenimento del presente finanziamento è stata visionata dall'originale presentato dal MUTUATARIO.<BR>
+<BR>
+<BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=50%>Cognome e nome accertatore <INPUT TYPE=TEXT NAME=A-CTRESTANTTDOCQS190#-01 SIZE=8 WIDTH=8 HEIGHT=1.5><BR><BR>(che opera per conto della società di fianco indicata)</TD>
+<TD WIDTH=50% ALIGN="L" SIZE=6><B>Firma leggibile (accertatore) ________________________________</B></TD>
+</TR>
+<TR>
+<TD WIDTH=50%><BR><BR><BR><BR><BR></TD>
+<TD WIDTH=50% BORDER=0.1></TD>
+</TR>
+<TR>
+<TD WIDTH=50%></TD>
+<TD WIDTH=50%>Timbro agente</TD>
+</TR>
+</TABLE>
+</TEXT>
+<IMG SRC="<valueabs>Immagini/TACCHIN01/Path</valueabs><valueabs>Immagini/TACCHIN01/Nome</valueabs>" BACKGROUND X=13 Y=20 SCALE=<valueabs>Immagini/TACCHIN01/Scale</valueabs>>
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\CTRESTANTTDOCQS190##01_03_03.png" BACKGROUND X=7.5 Y=-0.3 SCALE=25>
+
+
+
+
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDANAFIN</valueabs>==10000037</ifcond>
+<then>
+<PAGE>
+
+<SUBHEADER>
+</SUBHEADER>
+ 
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT">Pag. 1 di 1</TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<TABLE SIZE=9.5>
+<TR>
+<TD WIDTH=70%></TD>	
+<TD WIDTH=30%>
+Spett.le<BR><BR>
+<B>Sigla Srl</B><BR><BR>
+Via Cesare Battisti, 5/A<BR><BR>
+31015 – Conegliano (TV) <BR><BR> 
+</TD> 	
+</TR> 
+</TABLE>
+<BR>
+<BR> 
+<BR> 
+<BR> 
+<BR>
+<TABLE SIZE=9.5>
+<TR>  
+	<TD WIDTH=70%><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs>,  
+		<if><ifcond> <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTRAA</valueabs>==0</ifcond>
+		<then> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_DATSYS</valueabs> </then>
+		<else> <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTR</valueabs> </else>
+		</if>	
+	</TD>	
+</TR>	
+<TR>
+	<TD WIDTH=70%><B>Oggetto: contratto Cessione del Quinto Sigla Nr <valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs> (</B>per il seguito il <B>“Contratto”)</B></TD>	
+</TR>	
+</TABLE>
+<BR>
+<BR>
+<BR>
+<BR>  
+<TABLE SIZE=9.5>
+<TR>  
+<TD WIDTH=100%> 
+Spett.le Sigla S.r.l.,<BR><BR>	
+</TD>	
+</TR>	
+<TR>    
+<TD WIDTH=100% ALIGN=J>      
+facendo seguito a quanto mi avete rappresentato,   ai fini della cessione a terzi del credito relativo al 
+Contratto in oggetto,   il sottoscritto   <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></B>, nato
+<B>
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_NASC</valueabs>==SE</ifcond><or><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_NASC</valueabs>==EE</ifcond>
+<then> in <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCA_NASC</valueabs> </then>
+<else> a  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCNASC</valueabs> </else>
+</if>
+</B> 
+il <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC</valueabs></B>, codice fiscale 
+<B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs></B>, prende atto e autorizza che, <U><B>in deroga all’art.20. Cessione del credito derivante dal 
+contratto</U></B> del Condizioni Generali, il <B>CEDENTE (i) ai soli fini della notifica della suddetta cessione, riceverà 
+la comunicazione presso l’indirizzo indicato nel frontespizio del contratto.</B>	
+<BR><BR>	
+Distinti Saluti.
+</TD>	
+</TR>	
+</TABLE>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<TABLE SIZE=9.5><TR>
+<TD WIDTH=70%></TD>	
+<TD WIDTH=30% VALIGN=B ALIGN=C>__________________________________</TD></TR>
+</TABLE>	
+<TABLE SIZE=9.5><TR>
+<TD WIDTH=70%></TD>	
+<TD WIDTH=30% VALIGN=B ALIGN=C>Firma</TD></TR>
+</TABLE>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</then>
+<else>
+</else>
+</if>
+
+
+
+</BODY>
+</PDF>

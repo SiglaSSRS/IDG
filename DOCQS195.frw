@@ -1,0 +1,71 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize9">
+<include file="\INCLUDE\Percorsi.frw">
+<BODY>
+<ENCRYPT OWNER="soloiopossomodificare" NOCHANGE NOCOPY>
+<TEXT ALIGN=C SIZE=11 FCOLOR=BLUE>
+<BR>
+<BR>
+AUTORIZZAZIONE ALLE VERIFICHE POSIZIONI CONTRIBUTIVE e DELEGA PER ACQUISIZIONE DATI 
+<BR>
+<BR>
+</TEXT>
+<TABLE WIDTH=100% BGCOLOR=BLUE>
+<TR>
+<TD WIDTH=100%></TD>
+</TR>
+</TABLE>
+<TEXT ALIGN=J>
+<BR><BR>
+Ai sensi dell'art. 13 D.Lgs 196/2003 e dell'art. 5 del "Codice di deontologia e buona condotta per i sistemi informativi gestiti da soggetti privati
+in tema di crediti al consumo, affidabilità  e puntualità  nei pagamenti"<BR>
+<BR>
+<BR>
+Io sottoscritto  <if>
+<ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_RAGSCLI</valueabs>></ifcond>
+<then><valueabs>IDGFCQP00F/RECORD/IDGFCQP_RAGSCLI</valueabs></then>
+<else><valueabs>IDGFCQP00F/RECORD/IDGFCQP_COGNCLI</valueabs> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_NOMECLI</valueabs></else>
+</if><BR>
+<BR>
+Codice Fiscale ______________________________________________________________________________________________<BR>
+<BR>
+Posizione contributiva presso (ente presso cui vengono versati i contributi)_______________________________________________<BR>
+<BR>
+Presa visione dell'informativa fornita da <valueabs>IDGFCQP00F/RECORD/IDGFCQP_DESCAGE</valueabs>  <valueabs>IDGFCQP00F/RECORD/IDGFCQP_INDIRENTE</valueabs> - CAP - <valueabs>IDGFCQP00F/RECORD/IDGFCQP_CAPENTE</valueabs> - <valueabs>IDGFCQP00F/RECORD/IDGFCQP_LOCALENTE</valueabs> (<valueabs>IDGFCQP00F/RECORD/IDGFCQP_PROVENTE</valueabs>)<BR>
+<BR>
+ai sensi dell'art. 13 D.Lgs 196/2003 e dell'art. 5 del "Codice di deontologia e buona condotta per i sistemi informativi gestiti da soggetti privati in tema di crediti al consumo, affidabilità  e puntualità  nei pagamentì e consapevole di poter in qualunque momento modificare la propria decisione con immediatezza e semplicità <BR>
+<BR>
+<BR>
+</TEXT>
+<TEXT ALIGN=C>
+AUTORIZZO
+</TEXT>
+<TEXT ALIGN=J>
+<BR>
+<BR>
+Sigla s.r.l. ,  a   richiedere per mio nome e conto tutti dati inerenti la mia posizione contributiva, necessari per la valutazione della mia richiesta di finanziamento, presso INPS, INPDAP, ENPALS o altro ente previdenziale o Amministrazione di pertinenza, anche tramite enti terzi abilitati (Patronati / altro), nonchè presso qualsivoglia altro soggetto che effettui operazioni che la riguardano.<BR>
+<BR>
+<BR>
+Con  tale accesso autorizzo la predetta Sigla s.r.l a  prendere visione dei dati  presenti nelle banche  dati  sopra indicate relativamente alla mia posizione contributiva ed anagrafica, nonchè per le richieste degli estratti contributivi, modelli CUD, modelli pensionistici e OBIS/M, dando il consenso al trattamento dei dati personali in essi contenuti.<BR>
+<BR>
+Tali dati potranno essere trattati unicamente per le finalità  strettamente collegate all'erogazione di un prestito contro cessione di quota dello stipendio.<BR>
+<BR>
+<BR>
+<BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=50% ALIGN=L>Data ____________________________________</TD>
+<TD WIDTH=50% ALIGN=C>____________________________________<BR>Firma <if><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_RAGSCLI</valueabs>></ifcond>
+<then><valueabs>IDGFCQP00F/RECORD/IDGFCQP_RAGSCLI</valueabs></then>
+<else><valueabs>IDGFCQP00F/RECORD/IDGFCQP_COGNCLI</valueabs> <valueabs>IDGFCQP00F/RECORD/IDGFCQP_NOMECLI</valueabs></else>
+</if></TD>
+</TR>
+</TABLE>
+
+
+</TEXT>
+
+
+</BODY>
+</PDF>
+	

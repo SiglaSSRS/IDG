@@ -1,0 +1,33 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="sacstrutturasize13">
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3">			
+</HEADER>
+<FOOTER>
+<include file="\INCLUDE\IncludedStruttura.frw" value="footercartaintestatasac">
+</FOOTER>
+<BODY>
+<TEXT SIZE=17>
+<BR><BR><BR><BR><BR><BR><B><U>AVVISO IMPORTANTE</U></B><BR><BR><BR><BR></TEXT>
+<TEXT ALIGN=J SIZE=13>Gentile cliente, qualora decida di portare a termine l’estinzione del Suo contratto, <U>dovrà necessariamente restituirci il presente conteggio e la relativa accompagnatoria da Lei firmati</U> per accettazione, <U> pena l’impossibilità a procedere con l’estinzione stessa</U>, il tutto preferibilmente anticipato al numero di fax 0438/45926 o all’indirizzo e-mail sac@siglafinanziamenti.it o al nostro indirizzo:
+<BR>
+<BR>
+<BR><B>
+Sigla Srl c/o Conformità Clienti<BR>
+Via Vital 98/B<BR>
+31015 Conegliano (TV)</B><BR>
+<BR>
+Distinti saluti.
+<BR><BR><BR><BR>
+
+
+<TABLE WIDTH=100% FONT SIZE=9>
+<TR HEIGHT=3%>
+<TD WIDTH=77%></TD>
+<TD WIDTH=23% ALIGN="C" CELLBACKGROUND="<valueabs>Immagini/FIRMACM1/Path</valueabs><valueabs>Immagini/FIRMACM1/Nome</valueabs>"><BR><BR>Conformità Clienti e<BR>Monitoraggio Contratti<BR><BR>Sigla Srl</TD>
+</TR>
+</TABLE>
+
+</TEXT>
+</BODY>
+</PDF>

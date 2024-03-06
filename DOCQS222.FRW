@@ -1,0 +1,91 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="sacstrutturasize9">
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3">			
+</HEADER>
+<FOOTER>
+<include file="\INCLUDE\IncludedStruttura.frw" value="footercartaintestatasac">
+</FOOTER>
+<BODY>
+<TEXT>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=25%>Trasmissione a mezzo fax/email</TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>Spettabile</TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DES_COMP_VIT</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IND_COMP_VIT</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CAP_COMP_VIT</valueabs> - <valueabs>IDGFCQS00F/RECORD/IDGFCQS_LOC_COMP_VIT</valueabs> (<valueabs>IDGFCQS00F/RECORD/IDGFCQS_PRV_COMP_VIT</valueabs>)</TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<TABLE WIDTH=100%><TR>
+<TD WIDTH=100% ALIGN="J">
+Conegliano,<valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs> <BR><BR>
+Oggetto: Contratto di <if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==DEL</ifcond>
+	<then>DELEGAZIONE DI PAGAMENTO </then>
+	</if>
+	<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>!=</ifcond>
+		<then>CESSIONE DEL QUINTO DELLO STIPENDIO </then>
+	</if>
+	<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>==</ifcond>
+		<then>CESSIONE DEL QUINTO DELLA PENSIONE </then>
+	</if> nr. <valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs> a nome <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> , nat<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs>==M</ifcond><then>o<else>a</if> a <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCNASC</valueabs> il <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC</valueabs>, C.F. <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs>.<BR>
+<BR>
+<BR>
+Spettabile Compagnia Assicurativa, con la presente si dichiara che a seguito dell'avvenuta estinzione del contratto in oggetto di n° <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs> quote da &euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPCAN</valueabs>  cadauna, il prestito deve ritenersi, ad ogni effetto, estinto anticipatamente alla data del <valueabs>IDGFEST00F/RECORD/IDGFEST_DATAFIN</valueabs>.<BR>
+<BR>
+<BR>
+Restando a completa disposizione allo 0438/45990, porgiamo distinti saluti.<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</TD>
+</TR>
+</TABLE>
+<TABLE WIDTH=100% FONT SIZE=9>
+<TR HEIGHT=3%>
+<TD WIDTH=77%></TD>
+<TD WIDTH=23% ALIGN="C"><BR><BR><BR>Sigla Srl</TD>
+</TR>
+</TABLE>
+</TEXT>
+
+<IMG SRC="<valueabs>Immagini/FIRMAGER1/Path</valueabs><valueabs>Immagini/FIRMAGER1/Nome</valueabs>" BACKGROUND X=15 Y=20.0 SCALE=10>
+
+</BODY>
+</PDF>

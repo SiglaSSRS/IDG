@@ -1,0 +1,87 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="sacstrutturasize10">
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla3">			
+</HEADER>
+<FOOTER>
+<include file="\INCLUDE\IncludedStruttura.frw" value="footercartaintestatalegale2">
+</FOOTER>
+<BODY>
+<TEXT ALIGN=J>
+<BR><BR><BR><BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%>Spett.le</TD><BR>
+</TR>
+<TR>
+<TD WIDTH=25% ALIGN SIZE=8>A MEZZO EMAIL __________________</TD>
+<TD WIDTH=25% ALIGN=L></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DES_COMP_VIT</valueabs></B></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IND_COMP_VIT</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=25%></TD>
+<TD WIDTH=25%></TD>
+<TD WIDTH=10%></TD>
+<TD WIDTH=40%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CAP_COMP_VIT</valueabs>  <B><U><valueabs>IDGFCQS00F/RECORD/IDGFCQS_LOC_COMP_VIT</valueabs></U></B>  (<valueabs>IDGFCQS00F/RECORD/IDGFCQS_PRV_COMP_VIT</valueabs>)</TD>
+</TR></TABLE>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=100%><if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_COMP_VIT</valueabs>==12002254</ifcond><then>A mezzo pec: <U>sinistrivittoria@legalmail.it</U></then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_COMP_VIT</valueabs>==12001843</ifcond><then>A mezzo pec: <U>sinistri@pec.netinsurance.it</U></then></if>
+<if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_COMP_VIT</valueabs>==12002191</ifcond><then>A mezzo pec: <U>sinistricarige@legalmail.it</U></then></if></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+<BR>
+<TABLE WIDTH=100%>
+<TR><TD WIDTH=100% ALIGN="J">Conegliano, <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs><BR><BR><BR></TD></TR><TR>
+<TD WIDTH=100% ALIGN="J">
+<B>Oggetto: <U>Contratto di <if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==DEL</ifcond>
+	<then>delegazione di pagamento del quinto dello stipendio </then>
+	</if>
+	<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>!=</ifcond>
+		<then>mutuo contro cessione del quinto dello stipendio </then>
+	</if>
+	<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>==</ifcond>
+		<then>mutuo contro cessione del quinto della pensione </then>
+	</if> sottoscritto tra Sigla S.r.l. e <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>, in data <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTR</valueabs> Rif. pratica n° <valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs>.<BR>
+Rif. polizza n° <valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_POL_VIT</valueabs> del <loop> <loopda>1</loopda>
+				<looproot>IDGFDAT00F/RECORD</looproot>
+					<if><ifcond><value>IDGFDAT_CODICE</value>==RITPOL</ifcond>
+					<then>
+					<value>IDGFDAT_DATA</value>
+					</if>	
+				</loop>. Estinzione pratica.</U></B></TD>
+</TR>
+</TABLE>
+<BR><BR><BR>
+La presente per comunicarVi che a seguito dell'interruzione del rapporto di lavoro subordinato del cliente <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>, si riceveva l'importo di € <valueabs>IDGFEST00F/RECORD/IDGFEST_TOTEST</valueabs> in data <valueabs>IDGFINC00F/RECORD/IDGFINC_DTVALTFR</valueabs> a titolo di TFR.<BR>
+<BR>
+Tale somma copre per intero il residuo debito, determinando l'estinzione del contratto al <valueabs>IDGFEST00F/RECORD/IDGFEST_DTQTSCMAX</valueabs>.<BR>
+<BR>
+Per l’effetto consideriamo, quindi, il contratto risolto e la pratica estinta.<BR>
+<BR><BR><BR><BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=50%>Cordiali saluti.<BR><BR><BR></TD>
+<TD WIDTH=50%></TD>
+</TR>
+<TR>
+<TD WIDTH=50%></TD>
+<TD WIDTH=50% ALIGN=C><I><B>Sigla S.r.l.</B><BR>Direzione Recupero Crediti<BR>Ufficio Legale  CQS e Prestito Personale<BR><B>Dr.ssa Silvia Donadel</B></I></TD>
+</TR>
+</TABLE>
+</TEXT>
+</BODY>
+</PDF>

@@ -1,0 +1,64 @@
+<if><ifcond><value>IDGFCQS00F/RECORD/IDGFCQS_IDPROJECT</value>==</ifcond><or><ifcond><value>IDGFERD00F/RECORD/IDGFERD_PROG</value>==1</ifcond><then>
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize9">
+
+<BODY>
+<TEXT SIZE=10 ALIGN=C>
+<BR><BR><BR>
+<B>RICEVUTA DELL'ANTICIPO</B><BR><BR><BR><BR><BR><BR>
+</TEXT>
+<TEXT ALIGN=J>
+A fronte della richiesta di prefinanziamento sottoscritta, con la presente dichiaro di ricevere:<BR><BR><BR>
+<loop>
+<loopda>1</loopda>
+<looproot>IDGFERD00F/RECORD</looproot>
+- <value>IDGFERD_DESCPAG</value><if><ifcond><value>IDGFERD_CODPAG</value>==006</ifcond><then> N° <value>IDGFERD_NASSEGNO</value></then></if> di &euro  <value>IDGFERD_IMPERG</value> che rimborserò con trattenuta dal netto ricavo del contratto di cessione 
+n° <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs> del <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTCTR</valueabs> sottoscritto dalle parti.<BR>
+</loop>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+Data <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs>
+                                                                          ______________________________________________<BR>
+                                                                                      Firma del richiedente  per ricevuta e quietanza dell'anticipo e del contratto di prefinanziamento<BR>
+<BR>
+<BR>
+<BR>
+PARTE RISERVATA ALL'ACCERTATORE. Il sottoscritto, incaricato dell'identificazione (art.30, comma 8 del Dlgs 231/2007), dichiara, sotto la propria personale responsabilità, di aver provveduto ad adeguata verifica dell'identità del CEDENTE, le cui generalità sono state desunte dai documenti d'identità esibiti in originale e sono state esattamente riportate nel contratto qui richiamato unitamente ai riferimenti del documento esibito; dichiara inoltre che il CEDENTE afferma, e tale appare sulla base degli elementi disponibili, di essere l'effettivo titolare del finanziamento oggetto del contratto, il cui scopo è attinente alla sfera privata (art. 21 del Dlgs 231/2007). Il sottoscritto dichiara inoltre che la sottoscrizione del contratto e degli allegati è avvenuta in sua presenza e che tutta la documentazione fornita ai fini dell'ottenimento del presente finanziamento è stata visionata dall'originale presentato dal CEDENTE.<BR>
+<BR>
+<BR>
+<BR>
+<TABLE WIDTH=100%>
+<TR>
+<TD WIDTH=50%>Cognome e nome accertatore ________________________________<BR><BR>(che opera per conto della società di fianco indicata)</TD>
+<TD WIDTH=50% ALIGN="L" SIZE=6><B>Firma leggibile (accertatore) ________________________________</B></TD>
+</TR>
+<TR>
+<TD WIDTH=50% ALIGN=R><BR><BR><BR><BR><BR>Timbro agente</TD>
+<TD WIDTH=50% BORDER=0.1></TD>
+</TR>
+</TABLE>
+</TEXT>
+</BODY>
+</PDF>
+</then>
+</if>

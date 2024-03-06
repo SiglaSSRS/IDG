@@ -1,0 +1,56 @@
+<PDF>
+<include file="\INCLUDE\IncludedStruttura.frw" value="strutturasize8_MB0b">
+<include file="\INCLUDE\Percorsi.frw">
+
+<BODY>
+<ENCRYPT OWNER="soloiopossomodificare" NOCHANGE NOCOPY>
+<PDFPAGE SRC="docqs175.PDF" VALUE=1 SHOWONCE>
+
+<TEXT X=3.5 Y=5.95><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></TEXT>
+<TEXT X=13.3 Y=5.95><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs></TEXT>
+
+<TEXT X=3.5 Y=6.4><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC</valueabs></TEXT>
+<TEXT X=7 Y=6.4><valueabs>IDGFCLI00F/RECORD/IDGFCLI_SESSO</valueabs></TEXT>
+<TEXT X=11 Y=6.4><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCA_NASC</valueabs></TEXT>
+<TEXT X=17 Y=6.4><valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_NASC</valueabs></TEXT>
+
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs>==</ifcond><then>
+<TEXT X=5.2 Y=6.85><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs></TEXT>
+<TEXT X=11.6 Y=6.85><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs></TEXT>
+<TEXT X=15.3 Y=6.85><valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs></TEXT>
+<TEXT X=16.5 Y=6.85><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs></TEXT>
+</then>
+<else>
+<TEXT X=5.2 Y=6.85><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs></TEXT>
+<TEXT X=11.6 Y=6.85><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_RES</valueabs></TEXT>
+<TEXT X=15.3 Y=6.85><valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_RES</valueabs></TEXT>
+<TEXT X=16.5 Y=6.85><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_RES</valueabs></TEXT>
+</else></if>
+
+<TEXT X=3.4 Y=7.3>
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_TIPO_DOCUM</valueabs><in>(CAI,CDN,C20,DIV)</ifcond><then>01</then></if>
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_TIPO_DOCUM</valueabs><in>(PAT,P1,P2)</ifcond><then>02</then></if>
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_TIPO_DOCUM</valueabs><in>(PAS)</ifcond><then>03</then></if>
+</TEXT>
+
+<TEXT X=5.2 Y=7.3><valueabs>IDGFCLI00F/RECORD/IDGFCLI_NUM_DOCUM</valueabs></TEXT>
+<TEXT X=8.7 Y=7.3><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_ENTE</valueabs></TEXT>
+<TEXT X=12.6 Y=7.3><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_DA_IL</valueabs></TEXT>
+<TEXT X=16.5 Y=7.3 SIZE=6><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_DA</valueabs></TEXT>
+
+<TEXT X=10.5 Y=8.5><valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs></TEXT>
+<TEXT X=16 Y=8.5><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs></TEXT>
+
+<TEXT X=3 Y=9><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs></TEXT>
+<TEXT X=6 Y=9><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPMUTLRD</valueabs></TEXT>
+<TEXT X=16 Y=9><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPCAN</valueabs></TEXT>
+
+
+<PAGE> <PDFPAGE SRC="docqs175.PDF" VALUE=2 SHOWONCE>
+<PAGE> <PDFPAGE SRC="docqs175.PDF" VALUE=3 SHOWONCE>
+<PAGE> <PDFPAGE SRC="docqs175.PDF" VALUE=4 SHOWONCE>
+
+
+</BODY>
+</PDF>
+	
