@@ -25,7 +25,7 @@
 	<BR>
 	<B>Via <INPUT TYPE=TEXT NAME=A-AUTEDEL###DOCQS120##-02 SIZE=8 WIDTH=3.5 HEIGHT=1.5 ></B><BR>
 	<BR>
-	<B>Citt‡ <INPUT TYPE=TEXT NAME=A-AUTEDEL###DOCQS120##-03 SIZE=8 WIDTH=3.3 HEIGHT=1.5 ></B><BR>
+	<B>Citt√† <INPUT TYPE=TEXT NAME=A-AUTEDEL###DOCQS120##-03 SIZE=8 WIDTH=3.3 HEIGHT=1.5 ></B><BR>
 	<BR>
 	</TD> 	
 	</TR> 
@@ -55,10 +55,10 @@ titolare del contratto di cessione di quota di stipendio/delegazione di pagament
 </TEXT>
 <BR><BR>
 <TEXT SIZE=9.5 ALIGN=J>
-<valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs>, direttamente o mediante i suoi incaricati, affinchÈ in suo nome e per suo conto provveda a richiedere al Vostro Istituto il conto del residuo debito relativo al finanziamento in essere con chiusura al _______________________. <BR><BR>
-Il/la sottoscritto/a autorizza Codesta Spettabile Societ‡ ad inviare il conteggio estintivo, entro e non oltre 10 giorni, ai sensi dellíart. 17 D.P.R. 895/1950, alla societ‡ <B><valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs></B>
+<valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs>, direttamente o mediante i suoi incaricati, affinch√© in suo nome e per suo conto provveda a richiedere al Vostro Istituto il conto del residuo debito relativo al finanziamento in essere con chiusura al _______________________. <BR><BR>
+Il/la sottoscritto/a autorizza Codesta Spettabile Societ√† ad inviare il conteggio estintivo, entro e non oltre 10 giorni, ai sensi dell‚Äôart. 17 D.P.R. 895/1950, alla societ√† <B><valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs></B>
 ai seguenti recapiti <B>contratticqs@siglafinanziamenti.it</B> oppure <B>siglacredit.cessionequinto@pec.it</B><BR><BR>
-<B>Si precisa che Ë mia volont‡ procedere al rinnovo dellíoperazione di finanziamento per il tramite della societ‡ <valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs></B>
+<B>Si precisa che √® mia volont√† procedere al rinnovo dell‚Äôoperazione di finanziamento per il tramite della societ√† <valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs></B>
 <BR> 
 </TEXT>
 <BR>
@@ -88,12 +88,12 @@ ai seguenti recapiti <B>contratticqs@siglafinanziamenti.it</B> oppure <B>siglacr
 </TABLE>	
 <TABLE SIZE=9.5>
 	<TR>
-	<TD WIDTH=100%>Agente in attivit‡ finanziaria Sigla ( timbro e firma)<BR></TD>	
+	<TD WIDTH=100%>Agente in attivit√† finanziaria Sigla ( timbro e firma)<BR></TD>	
 	</TR>
 	<TR><TD WIDTH=100%><BR></TD>
 	</TR>		
 	<TR>
-	<TD WIDTH=100%>____________________________________________________________________<BR><BR><BR></TD>
+	<TD WIDTH=100%><FONT FACE="Arial" SIZE=10 FCOLOR=white>{{Sig1_ev_:signer1:signature:dimension(width=80mm, height=15mm):mandatory=true}}></FONT><BR><BR><BR></TD>
 	</TR>		  
 </TABLE>	
 <TABLE SIZE=9.5>

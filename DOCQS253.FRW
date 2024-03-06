@@ -41,7 +41,7 @@ Facciamo riferimento alla presente richiesta di prestito n° <valueabs>IDGFCQS00
 	<BR>Intermediario Finanziario iscritto nell’Albo Unico ex art. 106 TUB con n. 88 (cod. mecc. 33023)<BR>
 	Registro Imprese, codice fiscale e partita IVA <valueabs>IDGFAZI00F/RECORD/IDGFAZI_IVA_SIG</valueabs> - Capitale Sociale  <valueabs>IDGFAZI00F/RECORD/IDGFAZI_CAPSOC_SIG</valueabs> &euro  
 	<BR><BR><BR><BR><BR>
-	<FONT FACE="Arial" SIZE=10 FCOLOR=white>{{Sig1_ev_:signer1:signature:dimension(width=80mm, height=15mm):mandatory=true}}
+	<FONT FACE="Arial" SIZE=10 FCOLOR=white>{{Sig1_ev_:signer1:signature:dimension(width=80mm, height=15mm):mandatory=true}}</FONT>
 	</TD>
 </TR>
 </TABLE>
