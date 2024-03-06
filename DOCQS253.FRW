@@ -27,7 +27,7 @@
 <BR>
 <BR>
 <TEXT SIZE=9 ALIGN=J>
-Facciamo riferimento alla presente richiesta di prestito n° <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs> per comunicare la nostra accettazione alle condizioni previste nella stessa.
+Facciamo riferimento alla presente richiesta di prestito nÂ° <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs> per comunicare la nostra accettazione alle condizioni previste nella stessa.
 </TEXT>
 <BR>
 <BR>
@@ -38,9 +38,11 @@ Facciamo riferimento alla presente richiesta di prestito n° <valueabs>IDGFCQS00F
 	<TD WIDTH=40% ALIGN=L>Conegliano, <if><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTIPCTR</valueabs>==</ifcond><then><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></then><else><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTSTIPCTR</valueabs></else></if></TD> 
 	<TD WIDTH=60% ALIGN=C><B><valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs> (un procuratore)</B><BR>
 	<valueabs>IDGFAZI00F/RECORD/IDGFAZI_INDIR_SIG</valueabs> <valueabs>IDGFAZI00F/RECORD/IDGFAZI_SIGLASRL</valueabs>  <valueabs>IDGFAZI00F/RECORD/IDGFAZI_DSNAZ_SIG</valueabs> -
-	<BR>Intermediario Finanziario iscritto nell’Albo Unico ex art. 106 TUB con n. 88 (cod. mecc. 33023)<BR>
+	<BR>Intermediario Finanziario iscritto nellâ€™Albo Unico ex art. 106 TUB con n. 88 (cod. mecc. 33023)<BR>
 	Registro Imprese, codice fiscale e partita IVA <valueabs>IDGFAZI00F/RECORD/IDGFAZI_IVA_SIG</valueabs> - Capitale Sociale  <valueabs>IDGFAZI00F/RECORD/IDGFAZI_CAPSOC_SIG</valueabs> &euro  
-	<BR><BR><BR></TD>
+	<BR><BR><BR><BR><BR>
+	<FONT FACE="Arial" SIZE=10 FCOLOR=white>{{Sig1_ev_:signer1:signature:dimension(width=80mm, height=15mm):mandatory=true}}
+	</TD>
 </TR>
 </TABLE>
 
@@ -74,8 +76,8 @@ Facciamo riferimento alla presente richiesta di prestito n° <valueabs>IDGFCQS00F
 
 <TEXT SIZE=7.4 ALIGN=J>
 <BR><BR>
-Si specifica che la notifica potrà avvenire tramite Ufficiale Giudiziario (vedi Relazione di notifica qui sotto riportata) oppure tramite altro mezzo (raccomandata a/r, PEC, ecc.) 
-in conformità all'art. 1264, c.1 CC.	
+Si specifica che la notifica potrÃ  avvenire tramite Ufficiale Giudiziario (vedi Relazione di notifica qui sotto riportata) oppure tramite altro mezzo (raccomandata a/r, PEC, ecc.) 
+in conformitÃ  all'art. 1264, c.1 CC.	
 </TEXT>
 <BR>
 <TABLE WIDTH=100% ALIGN=C>
