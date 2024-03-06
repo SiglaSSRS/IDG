@@ -1,0 +1,280 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize5.5">
+
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla">			
+</HEADER>
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestatasigla">
+</FOOTER>
+
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT">Pag. 1 di 6</TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+
+<BODY>	
+<BR>
+<BR>
+<TEXT SIZE=7.2 ALIGN=J><B>DOCUMENTO DI SINTESI delle condizioni economiche del PRESTITO CONTRO CESSIONE DEL QUINTO DELLA PENSIONE (parte integrante del contratto)</B></TEXT>
+<BR>
+<BR>
+<TABLE><TR>
+<TD WIDTH=100% ALIGN=J SIZE=8.0>
+    - RATA MENSILE: &euro <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPCAN</valueabs></B> N. RATE <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs></B> CAPITALE LORDO MUTUATO &euro <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPMUTLRD</valueabs></B> DURATA <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_DURATA</valueabs></B> MESI<BR></DD>
+		- MODALITA’ DI PAGAMENTO : trattenuta sulla pensione secondo le modalità indicate al punto 5 e 6 delle condizioni generali del contratto di prestito;<BR>
+		- SCADENZA PAGAMENTO DA PARTE DEL DATORE DI LAVORO : a decorrere dal mese successivo alla notifica del contratto entro il giorno 10 di ogni mese; la decorrenza del piano d’ammortamento è il giorno 1 del mese successivo alla notifica del presente contratto<BR>
+		- TASSO NOMINALE ANNUO SCALARE (TAN) APPLICATO IN MISURA FISSA PER L'INTERA DURATA DEL PRESTITO (con riferimento all’anno commerciale, con 12 mesi da 30 giorni) <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTAN</valueabs></B> % <BR>
+</TD></TR>
+</TABLE>
+<TABLE>
+<TR>
+<TD WIDTH=75% ALIGN=J SIZE=8.0>- INTERESSI SCALARI AL TAN SOPRA ESPOSTO</TD>
+<TD WIDTH=25% ALIGN=J SIZE=8.0>&euro <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPINTER</valueabs></B></TD>
+</TR>
+<TR>
+<TD WIDTH=75% ALIGN=J SIZE=8.0>- COMMISSIONI IN FAVORE DI BANCA 24-7<FONT SIZE=4>(1)</FONT></TD>
+<TD WIDTH=25% ALIGN=J SIZE=8.0>&euro <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMCOMMBA</valueabs></B></TD>
+</TR>
+<TR>
+<TD WIDTH=75% ALIGN=J SIZE=8.0>- COMMISSIONI IN FAVORE DI SIGLA<FONT SIZE=4 VALIGN=TOP>(2)</FONT></TD>
+<TD WIDTH=25% ALIGN=J SIZE=8.0>&euro <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMCOMM</valueabs></B></TD>
+</TR>
+<TR>
+<TD WIDTH=75% ALIGN=J SIZE=8.0>- COMMISSIONI IN FAVORE DELL’AGENTE</TD>
+<TD WIDTH=25% ALIGN=J SIZE=8.0>&euro <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPROVTOT</valueabs></B></TD>
+</TR>
+<TR>
+<TD WIDTH=75% ALIGN=J SIZE=8.0>- COSTO DEL SERVIZIO ADDEBITATO DAL DATORE DI LAVORO O ENTE PREVIDENZIALE<FONT SIZE=4 VALIGN=TOP>(3)</FONT></TD>
+<TD WIDTH=25% ALIGN=J SIZE=8.0>&euro <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPFISSI</valueabs></B></TD>
+</TR>
+<TR>
+<TD WIDTH=75% ALIGN=J SIZE=8.0>- COSTI PREMIO ASSICURATIVO GARANZIA CASO MORTE<FONT SIZE=4 VALIGN=TOP>(4)</FONT></TD>
+<TD WIDTH=25% ALIGN=J SIZE=8.0>&euro <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMASSMRT</valueabs></B></TD>
+</TR>
+<TR>
+<TD WIDTH=75% ALIGN=J SIZE=8.0>- ONERI ERARIALI/IMPOSTA DI BOLLO<FONT SIZE=4 VALIGN=TOP>(1)</FONT></TD>
+<TD WIDTH=25% ALIGN=J SIZE=8.0>&euro <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMRIVALSA</valueabs></B></TD>
+</TR>
+<TR>
+<TD WIDTH=75% ALIGN=J SIZE=8.0>- NETTO RICAVO</TD>
+<TD WIDTH=25% ALIGN=J SIZE=8.0>&euro <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPNET</valueabs></B></TD>
+</TR>
+<TR>
+<TD WIDTH=75% ALIGN=J SIZE=8.0>- COMMISSIONE ESTINZIONE ANTICIPATA <B>1 %</B>  del capitale residuo</TD>
+<TD WIDTH=25% ALIGN=J SIZE=8.0></TD>
+</TR>
+<TR>
+<TD WIDTH=75% ALIGN=J SIZE=8.0>- INTERESSI DI MORA : pari all’<B>1.25</B> % in ragione di ogni mese o frazione di mese</TD>
+<TD WIDTH=25% ALIGN=J SIZE=8.0></TD>
+</TR>
+</TABLE>
+<TABLE><TR><TD ALIGN=J SIZE=8.0>
+		- EROGAZIONE DEL PRESTITO : L’erogazione del prestito avverrà secondo le previsioni dell’art.2 delle Condizioni Generali del contratto di prestito<BR>
+		- TAEG/ISC <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTAEG</valueabs></B> %,  calcolato includendo tutte le spese  indicate sopra, inclusi gli oneri erariali, come da Istruzioni di Banca d’Italia <BR>
+		- TEG <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTEG</valueabs></B> % calcolato includendo tutte le spese indicate sopra ad esclusione degli oneri erariali, come da Istruzioni di Banca d’Italia <BR>
+		Il TAEG e il TEG sono stati calcolati ipotizzando l’anno composto da dodici mesi uguali, sulla base del calendario civile, ai sensi del decreto del 
+		Ministero del Tesoro 6/5/2000, a decorrere dal primo giorno del mese successivo alla conclusione del presente contratto.<BR>	
+</TD></TR>		
+</TABLE>
+<BR>
+<TABLE>
+<TR>
+<TD WIDTH=5% SIZE=4>(1)</TD>
+<TD WIDTH=95% SIZE=8.0><i>Costo non ripetibile in caso di estinzione anticipata</i></TD>
+</TR>
+<TR>
+<TD WIDTH=5% SIZE=4>(2)</TD>
+<TD WIDTH=95% SIZE=8.0><i>Di cui la quota ripetibile è quantificata in 1,7 € a rata</i></TD>
+</TR>
+<TR>
+<TD WIDTH=5% SIZE=4>(3)</TD>
+<TD WIDTH=95% SIZE=8.0><i>Costo ripetibile in caso di estinzione anticipata</i></TD>
+</TR>
+<TR>
+<TD WIDTH=5% SIZE=4>(4)</TD>
+<TD WIDTH=95% SIZE=8.0><i>Costo di cui una parte ripetibile e l’altra no, come indicato all’art. 4 delle cond. Generali</i></TD>
+</TR>
+</TABLE>
+<TABLE BORDER=0.7>
+<TR>
+<TD WIDTH=100% ALIGN=J>
+	
+<TABLE>
+<TR>
+	<TD WIDTH=100% ALIGN=J SIZE=7.5><B>ALTRE SPESE A CARICO DEL CEDENTE</B></TD>
+</TR>
+</TABLE>
+
+<TABLE SIZE=6.5 ALIGN=J>
+	<TR>
+	<TD WIDTH=50%><LI>   Interessi di mora</LI></TD>
+	<TD WIDTH=50%><BR>1.25 % in ragione di mese o frazione di mese</TD>		
+  </TR>
+  <TR>	
+  <TD WIDTH=50%><LI>   Spese postali per comunicazioni ai clienti:</LI></TD>
+	<TD WIDTH=50%><BR>a carico del cliente in base alle tariffe vigenti</TD>		
+  </TR>
+  <TR>
+	<TD WIDTH=50%><LI>   Spese per emissione duplicati di documenti:</LI></TD>
+	<TD WIDTH=50%><BR>10,33&euro</TD>		
+  </TR>
+  <TR>
+	<TD WIDTH=50%><LI>   Commissioni estinzione anticipata:</LI></TD>
+	<TD WIDTH=50%><BR>1 % del capitale residuo</TD>		
+  </TR>
+  <TR>
+	<TD WIDTH=50%><LI>   Penale per la decadenza dal beneficio del termine:</LI></TD>
+	<TD WIDTH=50%><BR>5 % del capitale residuo</TD>		
+  </TR>
+  <TR>
+	<TD WIDTH=50%><LI> Eventuali oneri fiscali (imposta di bollo o imposta sostitutiva sul contratto,
+	imposta di bollo sulle comunicazioni periodiche alla clientela): </LI></TD>
+	<TD WIDTH=50%><BR><BR>a  carico del cliente in base alle tariffe vigenti</TD>		
+  </TR>
+  <TR>
+	<TD WIDTH=50%><LI>   Eventuali spese di esazione: </LI></TD>
+	<TD WIDTH=50%><BR>spese sostenute per eventuali solleciti effettuati a mezzo posta o telefono, 
+	da  	5,00&euro   fino  ad  un  massimo di  &euro 60,00  per  rata e  per  eventuali interventi 
+  domiciliari svolti da 10,00&euro fino ad un massimo di &euro 80,00 a rata.</TD>		
+  </TR>
+  <TR>
+	<TD WIDTH=50%><LI>   Eventuali spese legali:</LI></TD>
+	<TD WIDTH=50%><BR>a carico del cliente in base alle parcelle liquidate</TD>		
+  </TR>
+  <TR>
+	<TD WIDTH=50%><LI>   Eventuale tasso di rinegoziazione:</LI></TD>
+	<TD WIDTH=50%><BR>15 % annuo</TD>		
+  </TR>
+</TABLE>
+	
+</TD>
+</TR>
+</TABLE>
+<BR>
+<PAGE>
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT">Pag. 2 di 6</TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+<BR>
+<BR>
+<TEXT SIZE=7.2 ALIGN=J>
+<B>DOCUMENTO DI SINTESI DELLE PIU' SIGNIFICATIVE CONDIZIONI CONTRATTUALI DEL  PRESTITO CONTRO CESSIONE DEL QUINTO DELLA PENSIONE</B><BR>
+</TEXT>
+<TEXT SIZE=7.0 ALIGN=J>
+<LI>  Sigla comunica in forma scritta al CEDENTE, mediante sottoscrizione della presente scrittura o 
+altri mezzi equipollenti, l’eventuale accoglimento della domanda di prestito contro cessione del quinto. 
+L’erogazione del finanziamento è comunque subordinata all’approvazione degli Organi aziendali preposti alla delibera e
+alla ricezione di tutti gli atti e dei documenti 
+necessari per la validità e garanzia della cessione della pensione e, in particolare, del benestare 
+all’effettuazione delle trattenute da parte dell’ Ente Previdenziale o atto ad esso equipollente. 
+Sigla è autorizzata a trattenere e compensare tutte le somme eventualmente corrisposte al CEDENTE a titolo
+di acconti sull’importo da erogare con il finanziamento nonché, nell’ipotesi di concorrenza con altri 
+prestiti e/o pignoramenti sulla pensione, tutte le somme occorrenti per l’estinzione di tali operazioni.
+Ai fini dell’applicazione al contratto delle condizioni economiche pro-tempore vigenti, come da foglio 
+informativo consegnato al cedente e dei tassi debitori di cui alla L.108/1996, si fa riferimento alla data
+della presente proposta contrattuale.</LI>
+<LI>  Il CEDENTE si obbliga : a) a cedere a SIGLA tutta la quota di pensione disponibile fino ad un massimo
+di 1/5,  fatto salvo l’importo corrispondente al trattamento minimo , secondo leggi, decreti e regolamenti
+vigenti in materia di cessione dello stipendio/pensione ed in base a quanto previsto dal codice civile per 
+la cessione pro-solvendo; b) a rimborsare a SIGLA, mediante la cessione pro-solvendo della propria quota di 
+pensione, l’intero importo convenuto alla scadenza e con le modalità indicate nel frontespizio alla voce 
+condizioni economiche del prestito contro cessione del quinto; c) a comunicare a Sigla l’esistenza di 
+eventuali vincoli sulla pensione; d) a versare direttamente e personalmente a Sigla la somma a conguaglio 
+delle rate eventualmente corrisposte dall’Ente Previdenziale in misura inferiore  alla rata contrattuale, 
+entro e non oltre il 31 gennaio dell’anno successivo alla scadenza delle rate stesse; e) a comunicare a 
+Sigla qualsiasi variazione dei dati forniti ed in particolare l’eventuale variazione dell’Ente Previdenziale
+durante la vigenza del presente rapporto.</LI>
+<LI>  Il CEDENTE autorizza: a) SIGLA a notificare al proprio Ente Previdenziale il presente contratto di 
+prestito contro cessione del quinto secondo quanto previsto dalla normativa vigente in materia; b) l’ Ente 
+Previdenziale a prelevare dalla propria pensione la somma dovuta a SIGLA ad iniziare dal mese successivo 
+alla notifica del presente atto e così di seguito, ininterrottamente, fino alla totale estinzione del debito, 
+ed a versarla a SIGLA nei seguenti c/c: <BR><B>Bonifico bancario su Cassa di Risparmio del Veneto, 
+IBAN: IT50H0622561620100000001913 intestato a Sigla S.r.l.<BR>
+Bonifico Postale su Poste Italiane SPA, IBAN: IT53G0760112000000073807760 intestato a Sigla S.r.l.<BR><BR></B></LI>
+<LI>  Ai sensi dell’art.4 del D.M. 27/12/06 n. 313, la cessione ha effetto immediato a decorrere dalla data di 
+notifica della stessa, salvo per quelle relative a pensioni erogate dagli Enti Previdenziali di cui all’art.1, 
+comma 2, del D.Lgs.165/01, per le quali l’effetto decorre dal primo giorno del mese successivo a quello in 
+cui ha avuto luogo la notifica. L’Ente Previdenziale effettua le ritenute sulla pensione entro il terzo mese
+successivo alla notifica. Le eventuali rate già scadute vengono recuperate mediante l’applicazione di una 
+ritenuta aggiuntiva mensile, nei limiti di cui all’art.2 del DPR 05/01/1950 n. 180, per il tempo necessario 
+al recupero dei mesi arretrati.</LI>
+<LI>  In caso di cessazione, per qualsiasi causa, del trattamento previdenziale la presente cessione si estenderà 
+anche a quanto spetti al CEDENTE per effetto di tale cessazione. In tal caso, il CEDENTE autorizza sin d’ora
+l’Ente Previdenziale a trattenere, versando immediatamente a SIGLA l’importo necessario per l’estinzione 
+dell’obbligazione, le somme che, a qualunque titolo e sotto qualsiasi denominazione  gli venissero 
+corrisposte tanto dallo stesso Ente Previdenziale quanto da qualsiasi altro Ente o Cassa Pensioni, Istituto 
+di Previdenza o di Assicurazione ai quali fosse iscritto per legge o regolamento. Qualora dette somme non 
+fossero sufficienti a coprire il residuo debito od il CEDENTE non avesse diritto ad alcuna indennità o 
+pensione, il CEDENTE è tenuto a versare immediatamente a SIGLA in un’unica soluzione il residuo debito con 
+le modalità ed alle condizioni previste dall’art.11.</LI>
+<LI>  Il CEDENTE si impegna a non richiedere la liquidazione o anticipazioni su dette somme durante la vigenza
+del presente Contratto, riconoscendo che tali somme, ivi comprese quelle di futura maturazione, costituiscono
+oggetto di garanzia a favore di Sigla per l’integrale rimborso del finanziamento erogato. Il CEDENTE si 
+impegna, quindi, per la durata della cessione, a non avvalersi del diritto di cui al comma 6 dell’art. 2120 
+cod. civ., come modificato dalla legge 29.05.1982 n. 297 se ed in quanto a lui applicabile. Il CEDENTE 
+conferisce ora per allora mandato irrevocabile a Sigla per richiedere la liquidazione delle somme dovute, 
+esercitando ove d’uopo il diritto di riscatto, verso ogni ente, compresi i fondi pensione integrativi, nei 
+cui confronti il CEDENTE risultasse creditore, autorizzando le relative comunicazioni al Datore di lavoro 
+e agli Enti interessati. Gli eventuali oneri imposti dall’Amministrazione e dagli Enti di Previdenza per</LI>
+<LI>  Il CEDENTE potrà sottoscrivere contratti  assicurativi contro il rischio vita secondo le modalità 
+previste dall’ articolo 9 delle condizioni generali di finanziamento.</LI>
+<LI>  Tutti i pagamenti devono essere eseguiti a favore di SIGLA; eventuali somme versate a favore dell’agente,
+cui il CEDENTE ha discrezionalmente ritenuto di rivolgersi sono a suo esclusivo carico ed il relativo 
+pagamento non potrà avere alcun effetto nei confronti di SIGLA.</LI>
+<LI>  Il ritardo nel rimborso delle rate determina l’applicazione, da parte di SIGLA, di interessi moratori. 
+L’interesse di mora sarà applicato sulla somma capitale e  calcolato in misura pari all’1.25% in ragione di 
+mese o frazione di mese.</LI>
+<LI>  Il CEDENTE ha la facoltà di recedere dal presente contratto secondo i termini e con le modalità in esso 
+previste.</LI>
+<LI>  Il CEDENTE ha facoltà di estinguere anticipatamente il proprio debito. In tal caso sarà dovuta una 
+commissione nella misura massima del 1% del capitale residuo oltre l’importo determinato ai sensi dell’art.13 
+delle Condizioni generali del prestito.</LI>
+<LI>  Il mancato pagamento di almeno due rate ovvero la mancata osservanza degli altri obblighi contrattuali, 
+comporta la facoltà per SIGLA di dichiarare il CEDENTE decaduto dal beneficio del termine o la risoluzione 
+del contratto.</LI>
+<LI>  Ogni onere fiscale, presente e futuro, relativo alla singola operazione è a carico del CEDENTE.</LI>
+<LI>  Fermo restando che il presente finanziamento è a tasso fisso, nel rispetto della normativa vigente, Sigla
+può modificare unilateralmente le condizioni economiche e normative del presente contratto 
+(inclusi, a titolo esemplificativo, spese e oneri accessori) in  caso di giustificato motivo 
+(a titolo esemplificativo costituiscono giustificato motivo, tra l’altro, le variazioni generalizzate dei 
+tassi di interesse e delle condizioni di mercato nonché i mutamenti della disciplina civilistica e fiscale 
+relativa ai rapporti regolati nelle presenti condizioni). Le variazioni delle condizioni economiche e 
+normative dovranno essere comunicate espressamente al Cedente con lettera ovvero mediante supporto durevole 
+preventivamente accettato dal Cedente. La comunicazione dovrà contenere l’indicazione del giustificato 
+motivo, la data di decorrenza della modifica e le modalità ed i termini per l’esercizio del diritto di 
+recesso in capo al Cedente. Il termine di decorrenza delle variazioni non potrà essere inferiore a 30 giorni
+dalla data della comunicazione. In caso di variazioni sfavorevoli, il Cedente avrà diritto di recedere dal 
+contratto entro 60 giorni dalla ricezione della relativa comunicazione, senza penalità e con applicazione 
+delle condizioni precedentemente praticate, saldando contestualmente ogni suo debito verso Sigla. 
+Se il cedente non esercita tale diritto nel termine indicato, le variazioni si intendono accettate.</LI>
+<LI>  Ogni cliente può presentare reclamo a mezzo raccomandata con ricevuta di ritorno a <U><valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs> - Ufficio 
+Assistenza clienti - <valueabs>IDGFAZI00F/RECORD/IDGFAZI_INDIR_SIG</valueabs> <valueabs>IDGFAZI00F/RECORD/IDGFAZI_SIGLASRL</valueabs></U>. Come indicato nella Guida ai diritti del Cliente, 
+ogni cliente ha diritto, in caso di reclamo, a ricevere risposta dall’Intermediario entro 30 giorni. 
+Se il cliente non è soddisfatto o non ha ricevuto risposta entro i 30 giorni, prima di ricorrere al giudice 
+può rivolgersi a :a)Arbitro Bancario Finanziario (ABF), nella sede più vicina al suo domicilio (Segreteria 
+tecnica del Collegio di Milano Via Cordusio, 5-20123 Milano-Telefono: 02 724241; Segreteria tecnica del 
+Collegio di Roma Via Venti Settembre, 97/e- 00187 Roma- Telefono: 06 47921;Segreteria tecnica del Collegio 
+di Napoli Via Miguel Cervantes, 71- 80133 Napoli- Telefono: 081 7975111), oppure presso le Filiali della 
+Banca d’Italia,come ampiamente indicato nella Guida ai diritti del Cliente, che ha visionato e che è consultabile 
+al sito <U>www.arbitrobancariofinanziario.it</U>. b) Conciliatore Bancario Finanziario. Se sorge una controversia 
+con Sigla, il cliente può attivare una procedura di conciliazione che consiste nel tentativo di raggiungere 
+un accordo con Sigla, grazie all’assistenza di un conciliatore indipendente.  Detto tentativo sarà esperito,
+ai sensi e per gli effetti di quanto previsto dall’articolo 40, comma 6, del decreto legislativo 17 gennaio 
+2003 n.5, dall’Organismo di conciliazione bancarie, finanziarie e societarie – ADR, iscritto al n.3 del registro, 
+tenuto dal Ministero della Giustizia, ex articolo 38 del dlg 17 gennaio 2003, n.5. Resta impregiudicata la 
+facoltà di ricorrere all’autorità giudiziaria nel caso in cui la conciliazione si dovesse concludere senza 
+il raggiungimento di un accordo.Per questo servizio è possibile rivolgersi al Conciliatore Bancario Finanziario 
+(Organismo iscritto nel Registro tenuto dal Ministero della Giustizia), con sede a Roma, Via delle Botteghe 
+Oscure 54, tel 06 674821, sito internet: <U>www.conciliatorebancario.it</U>.</LI>
+</TEXT>		
+</BODY>
+</PDF>

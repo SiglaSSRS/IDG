@@ -1,0 +1,31 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize10">
+<include file="\INCLUDE\Percorsi.frw">
+<BODY>
+<PDFPAGE SRC="DOTFS007.PDF" VALUE=1 SHOWONCE PDFOVERLAY>    
+<TEXT X=3	  	Y=2.65><valueabs>IDGTCLI00F/RECORD/IDGTCLI_COGNOME</valueabs>      </TEXT>
+<TEXT X=8.25   	Y=2.65><valueabs>IDGTCLI00F/RECORD/IDGTCLI_NOME</valueabs>			</TEXT>
+<TEXT X=14.85 	Y=2.65><valueabs>IDGTCLI00F/RECORD/IDGTCLI_CDFIS</valueabs>        </TEXT>
+
+<TEXT X=3	 	Y=3.35><valueabs>IDGTCLI00F/RECORD/IDGTCLI_DTNASC</valueabs>       </TEXT>
+<TEXT X=8	 	Y=3.35><valueabs>IDGTCLI00F/RECORD/IDGTCLI_LOCNASC</valueabs>      </TEXT>
+
+<TEXT X=2	 	Y=4><valueabs>IDGTCLI00F/RECORD/IDGTCLI_SESSO</valueabs>      </TEXT>
+<TEXT X=4	 	Y=4><valueabs>IDGTCLI00F/RECORD/IDGTCLI_INDIR</valueabs>      </TEXT>
+<TEXT X=16.5 	Y=4><valueabs>IDGTCLI00F/RECORD/IDGTCLI_CAP</valueabs>      </TEXT>
+
+<TEXT X=3.5	 	Y=4.8><valueabs>IDGTCLI00F/RECORD/IDGTCLI_LOCAL</valueabs>      </TEXT>
+<TEXT X=9.5	 	Y=4.8><valueabs>IDGTCLI00F/RECORD/IDGTCLI_TELE_RES</valueabs>      </TEXT>
+<TEXT X=13.5 	Y=4.8><valueabs>IDGTCLI00F/RECORD/IDGTCLI_EMAIL</valueabs>      </TEXT>
+
+
+<PAGE><PDFPAGE SRC="DOTFS007.PDF" VALUE=2 SHOWONCE PDFOVERLAY>    
+
+<TEXT X=4.75   	Y=6><valueabs>IDGTCLI00F/RECORD/IDGTCLI_RAGSOC</valueabs>			</TEXT>
+<TEXT X=13	 	Y=6><valueabs>IDGTCLI00F/RECORD/IDGTCLI_CDFIS</valueabs>        </TEXT>
+
+
+<TEXT X=1.5 Y=24.3><valueabs>IDGTPVO00F/RECORD/IDGTPVO_DATSYS</valueabs>   </TEXT>
+
+</BODY>
+</PDF>

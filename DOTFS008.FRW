@@ -1,0 +1,116 @@
+<PDF>
+
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize5.5">
+
+<FOOTER>
+</FOOTER>
+<BODY>	
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<TABLE SIZE=9.5>
+	<TR>
+	<TD WIDTH=70%></TD>	
+	<TD WIDTH=30%>
+	<B>SPETTABILE</B><BR>
+	<B><INPUT TYPE=TEXT NAME=A-AUTEDEL###DOTFS008##-01 SIZE=5 WIDTH=4 HEIGHT=1.5 ></B><BR>
+	<BR>
+	<B>Via <INPUT TYPE=TEXT NAME=A-AUTEDEL###DOTFS008##-02 SIZE=8 WIDTH=3.5 HEIGHT=1.5 ></B><BR>
+	<BR>
+	<B>Città <INPUT TYPE=TEXT NAME=A-AUTEDEL###DOTFS008##-03 SIZE=8 WIDTH=3.3 HEIGHT=1.5 ></B><BR>
+	<BR>
+	</TD> 	
+	</TR> 
+</TABLE>
+<BR>
+<BR>
+<TABLE SIZE=9.5>
+	<TR>
+		<TD WIDTH=70%>Data: <valueabs>IDGTCTR00F/RECORD/IDGTCTR_DATSYS</valueabs></TD>
+		<TD WIDTH=30%></TD>
+	</TR>
+	<TR>
+	</TR>	
+	<TR>
+		<TD WIDTH=70%><B>OGGETTO: Richiesta conteggio estintivo a nome <valueabs>IDGTCLI00F/RECORD/IDGTCLI_RAGSOC</valueabs></B></TD>	
+		<TD WIDTH=30%></TD>
+	</TR>
+</TABLE>
+<BR><BR><BR>
+<TEXT SIZE=9.5 ALIGN=J>
+Il sottoscritto/a  <valueabs>IDGTCLI00F/RECORD/IDGTCLI_RAGSOC</valueabs>, nato a <valueabs>IDGTCLI00F/RECORD/IDGTCLI_LOCNASC</valueabs> il <valueabs>IDGTCLI00F/RECORD/IDGTCLI_DTNASC</valueabs>, C.F. <valueabs>IDGTCLI00F/RECORD/IDGTCLI_CDFIS</valueabs>, 
+<BR>
+</TEXT>
+<BR><BR><BR>
+<TEXT SIZE=9.5 ALIGN=C>
+<B><U>AUTORIZZA E DELEGA</U></B><BR> 
+</TEXT>
+<BR><BR>
+<TEXT SIZE=9.5 ALIGN=J>
+SIGLA SRL, direttamente o mediante i suoi incaricati, affinché in suo nome e per suo conto provveda a richiedere al Vostro Istituto il conto del residuo debito relativo al finanziamento in essere con chiusura al _______________________. <BR><BR>
+Il/la sottoscritto/a autorizza Codesta Spettabile Società ad inviare il conteggio estintivo, entro e non oltre 10 giorni, ai sensi dell’art. 17 D.P.R. 895/1950, alla società <B>SIGLA SRL</B> 
+ai seguenti recapiti <B>contratticqs@siglafinanziamenti.it</B> oppure <B>siglacredit.cessionequinto@pec.it</B><BR><BR>
+<BR> 
+</TEXT>
+<BR>
+<BR>
+<BR>
+<TABLE SIZE=9.5>
+	<TR>
+		<TD WIDTH=70%></TD>	
+		<TD WIDTH=30% ALIGN=C></TD>
+	</TR> 
+</TABLE>
+<BR>
+<BR>
+<TABLE SIZE=9.5>
+	<TR>
+		<TD WIDTH=70%>
+		</TD>	
+		<TD WIDTH=30% VALIGN=B>
+				
+		</TD>
+	</TR>
+	<BR>
+	<BR>
+	<BR>
+	<BR>
+	<BR>
+</TABLE>	
+<TABLE SIZE=9.5>
+	<TR>
+	<TD WIDTH=100%>Agente in attività finanziaria Sigla ( timbro e firma)<BR></TD>	
+	</TR>
+	<TR><TD WIDTH=100%><BR></TD>
+	</TR>		
+	<TR>
+	<TD WIDTH=100%>____________________________________________________________________<BR><BR><BR></TD>
+	</TR>		  
+</TABLE>	
+<TABLE SIZE=9.5>
+	<TR>
+		<TD WIDTH=70%></TD>	
+		<TD WIDTH=30% VALIGN=T>Firma richiedente</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=70%></TD>	
+		<TD WIDTH=30% VALIGN=T><INPUT TYPE=SIGNATURE NAME=C-AUTEDEL###DOTFS008##-1 WIDTH=5 HEIGHT=3></then></if></TD>
+	</TR>		 
+</TABLE>
+
+
+
+<BR>
+<BR>
+<BR>
+<TEXT SIZE=9.5 ALIGN=J>
+All.: copia documento di riconoscimento
+</TEXT>
+
+</TEXT>
+<!--<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\AUTEDEL###DOTFS008##01_01_01.png" BACKGROUND X=2.3 Y=2.2 SCALE=25>-->
+</BODY>
+</PDF>
+</else></if>

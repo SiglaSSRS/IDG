@@ -1,0 +1,213 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize7_times">
+<include file="\INCLUDE\Percorsi.frw">
+
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintsiglaconsel">
+</HEADER>
+
+<FOOTER>
+<TEXT SIZE=6 ALIGN=C>
+Imposta di bollo assolta in modo virtuale come da autorizzazione <B>n. 20362 del 21.05.2008 </B> dell'Agenzia delle Entrate di Conegliano –TV
+</TEXT>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestcqsstd">
+</FOOTER>
+
+<BODY>
+
+<TEXT SIZE=8 ALIGN=C>
+<BR><BR>
+<B>CONTRATTO DI MUTUO RIMBORSABILE MEDIANTE <if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==DEL</ifcond>
+	<then>DELEGAZIONE DI PAGAMENTO</then>
+	</if>
+	<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>!=</ifcond>
+		<then>CESSIONE DEL QUINTO DELLO STIPENDIO</then>
+	</if>
+	<if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_COD_CONV_IMP</valueabs>==</ifcond>
+		<then>CESSIONE DEL QUINTO DELLA PENSIONE</then>	
+	</if></B><BR><BR>
+<BR>
+</TEXT>
+
+<TEXT SIZE=8 ALIGN=J>
+Conegliano, <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs><BR><BR>
+Oggetto: PROSPETTO ANALITICO DI LIQUIDAZIONE CONTRATTO DI PRESTITO N. <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs> del <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSTS</valueabs><BR><BR>
+Gentile Cliente,<BR>
+Le inviamo il presente prospetto analitico di liquidazione, conforme al contratto in oggetto al quale La rimandiamo per tutte le condizioni, completo degli ulteriori importi relativi a eventuali interessi non dovuti, e/o estinzione di Prefinanziamento e/o altri impegni da estinguere all'atto dell'erogazione del finanziamento.<BR>
+Le comunichiamo che la somma indicata alla sottoriportata riga "Somma erogata al Consumatore" è già  stata inviata a Suo favore nella modalità  da Lei indicata.<BR>
+<BR>
+<B>Finanziatore:</B> Sigla S.r.l.<BR>
+<BR>
+<B>Cedente:</B> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_COGNOME</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_NOME</valueabs>		<B>Cod.Fis.:</B> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs><BR>
+<B>Data di nascita:</B> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC</valueabs>	<B>Età :</B> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_ETA</valueabs>		<B>Luogo di nascita:</B> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCNASC</valueabs><BR>
+<B>Indirizzo:</B> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs><BR>
+<B>Cap/Località :</B> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs>)<BR>
+<BR>
+<B>Amministrazione:</B> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAVP</valueabs><BR>
+<B>In servizio presso:</B> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs><BR>
+<B>Data decorrenza piano di ammortamento:</B> <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT</valueabs><BR>
+<BR>
+<B>Rate n.:</B> <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs>	<B>pari ad Euro:</B> <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPCAN</valueabs>	<B>TAN:</B> <valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTAN</valueabs> % 	<B>TAEG:</B> <valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTAEG</valueabs> %	<B>TEG:</B> <valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTEG</valueabs> %<BR>
+</TEXT>
+
+<TEXT SIZE=8 ALIGN=C>
+<BR>
+<B>PROSPETTO ANALITICO DI LIQUIDAZIONE</B><BR><BR>
+</TEXT>
+
+<TEXT SIZE=8 ALIGN=J>
+<TABLE WIDTH=100% BORDER=0.1 BORDERSTYLE=D>
+<TR>
+<TD WIDTH=70% ALIGN=R><B>Dettaglio</B></TD>
+<TD WIDTH=30% ALIGN=R><B>Importo</B></TD>
+</TR>
+<TR>
+<TD WIDTH=70% ALIGN=R>Importo totale dovuto dal Consumatore</TD>
+<TD WIDTH=30% ALIGN=R>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPMUTLRD</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=70% ALIGN=R>Interessi</TD>
+<TD WIDTH=30% ALIGN=R>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPINTER</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=70% ALIGN=R>Capitale finanziato</TD>
+<TD WIDTH=30% ALIGN=R>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPFIN</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=70% ALIGN=R>Commissioni Sigla</TD>
+<TD WIDTH=30% ALIGN=R>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMCOMM</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=70% ALIGN=R>Oneri erariali</TD>
+<TD WIDTH=30% ALIGN=R>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMRIVALSA</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=70% ALIGN=R>Spese di riscossione rata da corrispondere al datore di lavoro</TD>
+<TD WIDTH=30% ALIGN=R>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPFISSI</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=70% ALIGN=R>Importo totale del credito/Netto ricavo messo a disposizione del Consumatore</TD>
+<TD WIDTH=30% ALIGN=R>&euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPNETRIC</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=70% ALIGN=R>Interessi non dovuti</TD>
+<TD WIDTH=30% ALIGN=R>&euro 0,00</TD>
+</TR>
+<TR>
+<TD WIDTH=70% ALIGN=R>Importo recupero quote</TD>
+<TD WIDTH=30% ALIGN=R>&euro 0,00</TD>
+</TR>
+<TR>
+<TD WIDTH=70% ALIGN=R>Numero totale prefinanziamenti da estinguere</TD>
+<TD WIDTH=30% ALIGN=R><valueabs>IDGFERC00F/RECORD/IDGFERC_NUMACC_ERG</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=70% ALIGN=R>Erogato totale prefinanziamenti da estinguere <if><ifcond><valueabs>IDGFERC00F/RECORD/IDGFERC_IMPTOT_ERG</valueabs>>0</ifcond><then>(1)</then></if></TD>
+<TD WIDTH=30% ALIGN=R>&euro <valueabs>IDGFERC00F/RECORD/IDGFERC_IMPTOT_ERG</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=70% ALIGN=R>Interessi totali prefinanziamenti da estinguere</TD>
+<TD WIDTH=30% ALIGN=R>&euro <valueabs>IDGFERC00F/RECORD/IDGFERC_IMPTOT_INT</valueabs></TD>
+</TR>
+<TR>
+<TD WIDTH=70% ALIGN=R>Oneri erariali totali su prefinanziamenti da estinguere</TD>
+<TD WIDTH=30% ALIGN=R>&euro <valueabs>IDGFERC00F/RECORD/IDGFERC_IMPTOT_SPB</valueabs></TD>
+</TR>
+
+
+
+
+<TR>
+<TD WIDTH=70% ALIGN=R>Valore totale impegni da estinguere</TD>
+<TD WIDTH=30% ALIGN=R>&euro <valueabs>IDGFERC00F/RECORD/IDGFERC_IMPTOT_EST</valueabs></TD>
+</TR>
+
+<loop>
+<loopda>1</loopda>
+<looproot>IDGFERA00F/RECORD</looproot>
+<if>
+<ifcond><value>IDGFERA_CDANABEN</value>!=<valueabs>IDGFCQS00F/RECORD/IDGFCQS_CODCLI</valueabs></ifcond>
+<and>
+<ifcond><value>IDGFERA_INTIPERG</value>==A</ifcond>
+<and>
+<ifcond><value>IDGFERA_DTANNERG</value>==</ifcond>
+<and>
+<ifcond><value>IDGFERA_DTPAG</value>!=</ifcond>
+<then>
+
+<TR>
+<TD WIDTH=70% ALIGN=R><I>di cui:          <value>IDGFERA_RAGSOCBEN</value></I></TD>
+<TD WIDTH=30% ALIGN=R>
+	<TABLE WIDTH=30%>
+	<TR>
+		<TD WIDTH=15% ALIGN=C><I>Data erogazione</I></TD>
+		<TD WIDTH=15% ALIGN=C><I>Importo erogato</I></TD>
+	</TR>
+	<TR>
+		<TD WIDTH=15% ALIGN=C><I><value>IDGFERA_DTPAG</value></I></TD>
+		<TD WIDTH=15% ALIGN=C><I><value>IDGFERA_IMPERG</value></I></TD>
+	</TR>
+	</TABLE>
+</TD>
+</TR>
+
+</then>
+</if>
+</loop>
+
+<TR>
+<TD WIDTH=70% ALIGN=R><B>Somma erogata al Consumatore</B></TD>
+<TD WIDTH=30% ALIGN=R><B>&euro <valueabs>IDGFERT00F/RECORD/IDGFERT_IMPERG</valueabs></B></TD>
+</TR>
+</TABLE>
+<BR><BR>
+<loop>
+<loopda>1</loopda>
+<looproot>IDGFERA00F/RECORD</looproot>
+<if>
+<ifcond><value>IDGFERA_CDANABEN</value>==<valueabs>IDGFCQS00F/RECORD/IDGFCQS_CODCLI</valueabs></ifcond>
+<and>
+<ifcond><value>IDGFERA_INTIPERG</value>==A</ifcond>
+<and>
+<ifcond><value>IDGFERA_DTANNERG</value>==</ifcond>
+<and>
+<ifcond><value>IDGFERA_DTPAG</value>!=</ifcond>
+<then>
+	<U>(1) - dettaglio acconti</U>
+	<TABLE WIDTH=60%>
+	<TR>
+		<TD WIDTH=20% ALIGN=C><I>Beneficiario</I></TD>
+		<TD WIDTH=20% ALIGN=C><I>Data erogazione</I></TD>
+		<TD WIDTH=20% ALIGN=C><I>Importo erogato</I></TD>
+	</TR>
+	<TR>
+		<TD WIDTH=20% ALIGN=C><I><value>IDGFERA_RAGSOCBEN</value></I></TD>
+		<TD WIDTH=20% ALIGN=C><I><value>IDGFERA_DTPAG</value></I></TD>
+		<TD WIDTH=20% ALIGN=C><I><value>IDGFERA_IMPERG</value></I></TD>
+	</TR>
+	</TABLE>
+
+
+</then>
+</if>
+</loop>
+
+<BR>
+<BR>
+Il mese <valueabs>IDGFCTR00F/RECORD/IDGFCTR_PRIMA_SCAD_MM</valueabs>/<valueabs>IDGFCTR00F/RECORD/IDGFCTR_PRIMA_SCAD_AA</valueabs> è stato indicato dall’amministrazione quale inizio delle trattenute sulla retribuzione pertanto Le comunichiamo che la durata del finanziamento verrà calcolata con decorrenza dal <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATATT</valueabs>, mese di avvio del piano di rimborso.<BR>
+<BR><BR>
+	<TABLE WIDTH=100%>
+	<TR>
+		<TD WIDTH=70% ALIGN=C><I></I></TD>
+		<TD WIDTH=30% ALIGN=C>Sigla S.r.l.</TD>
+	</TR>
+	</TABLE>
+	
+<BR>
+<BR>
+</TEXT>
+	<IMG SRC="<valueabs>Immagini/TACCHIN01/Path</valueabs><valueabs>Immagini/TACCHIN01/Nome</valueabs>" BACKGROUND X=15.2 Y=26 SCALE=<valueabs>Immagini/TACCHIN01/Scale</valueabs>>
+
+</PAGE>
+</BODY>
+</PDF>

@@ -1,0 +1,350 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize10">
+
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headersiglarischio">
+</HEADER>
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestcqsstd">
+</FOOTER>
+
+<BODY>
+<SUBFOOTER>
+<TABLE>	
+	<TR>
+		<TD WIDTH=100%>
+			<TABLE  >
+				<TR>
+					<TD WIDTH=25%><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></TD>
+					<TD WIDTH=50%></TD>
+					<TD WIDTH=25% ALIGN=C>Distinti saluti<BR><B>Sigla S.r.l.<B></TD>
+				</TR>
+				<TR>
+					<TD WIDTH=25%></TD>
+					<TD WIDTH=50%></TD>
+					<TD WIDTH=25%></TD>
+				</TR>
+				<TR>
+					<TD WIDTH=25%></TD>
+					<TD WIDTH=50%></TD>
+					<TD WIDTH=25%></TD>
+				</TR>
+				<TR>
+					<TD WIDTH=25%></TD>
+					<TD WIDTH=50%></TD>
+					<TD WIDTH=25%></TD>
+				</TR>
+			</TABLE>
+		</TD>
+	</TR>
+</TABLE>
+</SUBFOOTER>
+<SUBHEADER>
+<TABLE WIDTH=100% ALIGN=C SIZE=9>
+	<TR>
+		<TD SIZE=5  ALIGN=R>n° pratica <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs></TD>
+	</TR>
+</TABLE>
+<TABLE WIDTH=100% ALIGN=C SIZE=9>
+	<TR>
+		<TD SIZE=15 FCOLOR=2995 ALIGN=C ><B>CONTO DEFINITIVO DI LIQUIDAZIONE</B></TD>
+	</TR>
+</TABLE>
+<TABLE WIDTH=100% ALIGN=C SIZE=9>
+	<TR>
+		<TD SIZE=15 FCOLOR=2995 ALIGN=C >________________________________________________________</TD>
+	</TR>
+</TABLE>
+<TEXT>
+<X VALUE=10>
+<BR><BR>
+<B>Spettabile</B><BR>
+<valueabs>IDGFCQS00F/RECORD/IDGFCQS_DESCFIN</valueabs> <BR>
+<valueabs>IDGFCQS00F/RECORD/IDGFCQS_INDIR_FIN</valueabs> <BR>
+<valueabs>IDGFCQS00F/RECORD/IDGFCQS_INDIRIZZO_FIN</valueabs> <BR>
+<X VALUE=0>
+</TEXT>
+</SUBHEADER>
+<BR><BR><BR>
+<TEXT>
+<TABLE SIZE=9>
+	<TR>
+		<TD SIZE=11  WIDTH=100% ALIGN=C><B>
+		<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_ATTIVITA</valueabs>==PEN</ifcond><then>FINANZIAMENTO CONTRO CESSIONE DI QUOTA DELLA PENSIONE</then></if>
+		
+		<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_ATTIVITA</valueabs>!=PEN</ifcond><and><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==CQS</ifcond>
+			<then>CESSIONE DEL QUINTO DELLO STIPENDIO</then>
+	    </if>
+
+		<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_ATTIVITA</valueabs>!=PEN</ifcond><and><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CDRAGPRD</valueabs>==DEL</ifcond>
+			<then>DELEGAZIONE DI PAGAMENTO</then>
+	    </if>
+
+		</B><BR><BR></TD>
+		
+		
+		
+	</TR>
+	<TR>
+		<TD WIDTH=100%>
+			<TABLE>
+				<TR>
+					<TD WIDTH=50%>N° pratica: <valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs> </TD>
+					<TD WIDTH=50%>Cliente: <valueabs>IDGFCLI00F/RECORD/IDGFCLI_COGNOME</valueabs>  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_NOME</valueabs> </TD>
+				</TR>
+			</TABLE>
+		</TD>
+	</TR>
+	<TR>	
+		<TD WIDTH=100%>
+			<TABLE>
+				<TR> 
+					<TD WIDTH=35%>Quota mensile: &euro <valueabs>IDGFCTR00F/RECORD/IDGFCTR_CANONE</valueabs></TD>
+					<TD WIDTH=35%>Durata: <valueabs>IDGFCTR00F/RECORD/IDGFCTR_PERDUR</valueabs> mesi </TD>
+					<TD WIDTH=30%>Data di decorrenza: <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DATATT</valueabs></TD>
+				</TR>
+			</TABLE>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE  >	
+	<TR>
+		<TD WIDTH=100%>
+			<TABLE>
+				<TR>
+					<TD WIDTH=70%>Importo lordo del prestito:</TD>
+					<TD ALIGN=L WIDTH=5%>&euro + </TD>
+					<TD ALIGN=R WIDTH=25%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPMUTLRD</valueabs></TD>
+				</TR>
+			</TABLE>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=100%>
+			<TABLE>
+				<TR>
+					<TD WIDTH=70%>Interessi bancari (al tasso annuo nominale del <valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTAN</valueabs> % a scalare mensilmente)</TD>
+					<TD ALIGN=L WIDTH=5%>&euro - </TD>
+					<TD ALIGN=R WIDTH=25%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPINTER</valueabs></TD>
+				</TR>
+			</TABLE>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=100%>
+			<TABLE>	
+				<TR>
+					<TD WIDTH=70%>Commissione bancaria pari a <valueabs>IDGFCQS00F/RECORD/IDGFCQS_ALQCOMMBA</valueabs> %</TD>
+					<TD ALIGN=L WIDTH=5%>&euro - </TD>
+					<TD ALIGN=R WIDTH=25%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMCOMMBA</valueabs></TD>
+				</TR>
+			</TABLE>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=100%>
+			<TABLE>	
+				<TR>
+					<TD WIDTH=70%>Imposta di rivalsa del 2,50 ‰</TD>
+					<TD ALIGN=L WIDTH=5%>&euro - </TD>
+					<TD ALIGN=R WIDTH=25%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMRIVALSA</valueabs></TD>
+				</TR>
+			</TABLE>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=100%>
+			<TABLE>	
+				<TR>
+					<TD WIDTH=70%></TD>
+					<TD ALIGN=L WIDTH=5%></TD>
+					<TD ALIGN=R WIDTH=25%><U>________________________</U></TD>
+				</TR>
+			</TABLE>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=100%>
+			<TABLE>	
+				<TR>
+					<TD WIDTH=70%>IMPORTO DA EROGARE:</TD>
+					<TD ALIGN=L WIDTH=5%>&euro </TD>
+					<TD ALIGN=R WIDTH=25%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPERGLIQ</valueabs></TD>
+				</TR>
+			</TABLE>
+		</TD>
+	</TR>
+	
+	<TR>
+		<TD WIDTH=100%>
+			<TABLE>	
+				<TR>
+					<TD WIDTH=70%>Commissione di intermediazione:</TD>
+					<TD ALIGN=L WIDTH=5%>&euro - </TD>
+					<TD ALIGN=R WIDTH=25%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMCOMM</valueabs></TD>
+				</TR>
+			</TABLE>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=100%>
+			<TABLE>		
+				<TR>
+					<TD WIDTH=70%>Premi relativi alla polizza Vita:</TD>
+					<TD ALIGN=L WIDTH=5%>&euro - </TD>
+					<TD ALIGN=R WIDTH=25%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMASSMRT</valueabs></TD>
+				</TR>
+			</TABLE>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=100%>
+			<TABLE>		
+				<TR>
+					<TD WIDTH=70%>Premi relativi alla polizza Impiego:</TD>
+					<TD ALIGN=L WIDTH=5%>&euro - </TD>
+					<TD ALIGN=R WIDTH=25%><if>(<ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDANAFIN</valueabs>==12002203</ifcond><and><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_FLG_RSK_IMP</valueabs>==S</ifcond>)<or><ifcond><valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDANAFIN</valueabs>==12001691</ifcond><then>0,00<else><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMASSIMP</valueabs></if></TD>
+				</TR>
+			</TABLE>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=100%>	
+			<TABLE>	
+				<TR>
+					<TD WIDTH=70%>Spese istruttoria, notifica, bolli, ecc... :</TD>
+					<TD ALIGN=L WIDTH=5%>&euro - </TD>
+					<TD ALIGN=R WIDTH=25%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMSPIST</valueabs></TD>
+				</TR>
+			</TABLE>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=100%>	
+			<TABLE>	
+				<TR>
+					<TD WIDTH=70%>Spese Incasso ATC :</TD>
+					<TD ALIGN=L WIDTH=5%>&euro - </TD>
+					<TD ALIGN=R WIDTH=25%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPFISSI</valueabs></TD>
+				</TR>
+			</TABLE>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=100%>	
+			<TABLE>	
+				<TR>
+					<TD WIDTH=70%>Spese Incasso Finanziaria :</TD>
+					<TD ALIGN=L WIDTH=5%>&euro - </TD>
+					<TD ALIGN=R WIDTH=25%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_SPINCFIN</valueabs></TD>
+				</TR>
+			</TABLE>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=100%>
+			<TABLE>	
+				<TR>
+					<TD WIDTH=70%></TD>
+					<TD ALIGN=L WIDTH=5%></TD>
+					<TD ALIGN=R WIDTH=25%><U>________________________</U></TD>
+				</TR>
+			</TABLE>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=100%>
+			<TABLE>		
+				<TR>
+					<TD WIDTH=70%>NETTO RICAVO DELLA CESSIONE: </TD>
+					<TD ALIGN=L WIDTH=5%>&euro  </TD>
+					<TD ALIGN=R WIDTH=25%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPNETRIC</valueabs></TD>
+				</TR>
+			</TABLE>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=100%>	
+			<TABLE>		
+				<TR>
+					<TD WIDTH=70%>Acconto lordo:</TD>
+					<TD ALIGN=L WIDTH=5%>&euro - </TD>
+					<TD ALIGN=R WIDTH=25%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMTOTANT</valueabs></TD>
+				</TR>
+			</TABLE>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=100%>	
+			<TABLE>		
+				<TR>
+					<TD WIDTH=70%>Estinzione/i anticipata/e:</TD>
+					<TD ALIGN=L WIDTH=5%>&euro - </TD>
+					<TD ALIGN=R WIDTH=25%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMESTINZ</valueabs></TD>
+				</TR>
+			</TABLE>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=100%>
+			<TABLE>	
+				<TR>
+					<TD WIDTH=70%></TD>
+					<TD ALIGN=L WIDTH=5%></TD>
+					<TD ALIGN=R WIDTH=25%><U>________________________</U></TD>
+				</TR>
+			</TABLE>
+		</TD>
+	</TR>
+	
+				<loop>
+				<loopda>1</loopda>
+				<looproot>IDGFERT00F/RECORD</looproot>
+					<if><ifcond><value>IDGFERT_INTIPERG</value>==S</ifcond><and><ifcond><value>IDGFERT_DTANNERG</value>==</ifcond><and><ifcond><value>IDGFERT_IMPTOTASS</value>>0,00</ifcond>
+					    <and>(<ifcond><value>IDGFERT_DLTASSVIT</value>>0,00</ifcond><or><ifcond><value>IDGFERT_DLTASSIMP</value>>0,00</ifcond>)
+					<then>
+	<TR>
+		<TD WIDTH=100%>	
+			<TABLE>		
+				<TR>
+					<TD WIDTH=70%>Abbuono:</TD>
+					<TD ALIGN=L WIDTH=5%>&euro  </TD>
+					<TD ALIGN=R WIDTH=25%><valueabs>IDGFERT_IMPTOTASS</valueabs></TD>
+				</TR>
+			</TABLE>
+		</TD>
+	</TR>
+					</if>	
+				</loop>	
+	<TR>
+		<TD WIDTH=100%>	
+			<TABLE>
+				<BR><BR>
+				<TR>
+					<TD WIDTH=70%>NETTO AL CEDENTE:</TD>
+					<TD ALIGN=L WIDTH=5%>&euro </TD>
+					<TD ALIGN=R WIDTH=25%><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPNETNOANT</valueabs></TD>
+				</TR>
+			</TABLE>
+		</TD>
+	<TR>		
+</TABLE>
+<BR><BR><BR>
+<TABLE  >	
+	<TR>
+		<TD WIDTH=100%>
+			<TABLE>
+				<TR>
+					<TD WIDTH=25%>TAEG: <valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTAEG</valueabs> %</TD>
+					<TD WIDTH=25%>TEG: <valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTEG</valueabs> %</TD>
+					<TD WIDTH=50%></TD>
+				</TR>
+			</TABLE>
+		</TD>
+	</TR>
+</TABLE>
+<BR>
+</TEXT>
+</BODY>
+</PDF>

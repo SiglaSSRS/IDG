@@ -1,0 +1,77 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize10.5">
+
+<HEADER>
+</HEADER>
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestatasigla">
+</FOOTER>
+
+<BODY>	
+
+	<SUBFOOTER>
+		<TABLE SIZE=7.5 BORDER=0.5>
+			<TR>
+				<TD><B>Pratica</B></TD>
+				<TD><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs></TD>
+			</TR>
+		</TABLE>
+		<BR>
+	</SUBFOOTER>
+
+	<SUBHEADER>
+		<BR><BR><BR><BR><BR><BR>
+		<TEXT>
+		<X VALUE=13>
+Spettabile
+<BR>
+<B>SIGLA S.R.L.</B>
+<BR>
+<valueabs>IDGFAZI00F/RECORD/IDGFAZI_INDIR_SIGF</valueabs>
+<BR>
+<valueabs>IDGFAZI00F/RECORD/IDGFAZI_CAP_SIGF</valueabs> - <valueabs>IDGFAZI00F/RECORD/IDGFAZI_LOCAL_SIGF</valueabs> (<valueabs>IDGFAZI00F/RECORD/IDGFAZI_PROV_SIGF</valueabs>)
+		</TEXT>
+		<BR><BR><BR><BR><BR><BR>
+		<TEXT>
+		<X VALUE=13>
+<U>Ufficio Cessioni del Quinto</U>
+		</TEXT>
+	</SUBHEADER>
+
+	<BR><BR><BR><BR><BR><BR>
+
+<TEXT ALIGN=JUSTIFIED>
+<B>OGGETTO:
+Sottoscrizione contratto di cessione di quota di pensione pratica n.
+<valueabs>IDGFCQS00F/RECORD/IDGFCQS_NRPROP</valueabs></B>
+</TEXT>
+
+	<BR><BR><BR><BR><BR><BR>
+
+<TEXT ALIGN=JUSTIFIED>
+Il sottoscritto/a  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>,
+nato a <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCNASC</valueabs> il <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC</valueabs>, C.F. <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs>,
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs>==</ifcond><then>
+residente e domiciliato in <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs> c.a.p. <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs>, via/piazza <valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs> 
+<else>
+residente in <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_RES</valueabs> c.a.p. <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_RES</valueabs>, via/piazza <valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs> 
+e domiciliato in <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs> c.a.p. <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs>, via/piazza <valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs> 
+</if>
+dichiara, sotto la propria responsabilità, di essere pienamente consapevole dei costi collegati al finanziamento in oggetto e dettagliati nel contratto di cessione di pensione sottoscritto, con particolare riferimento al costo della polizza assicurativa rischio morte pari a € <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMASSMRT</valueabs>.
+<BR><BR><BR><BR>
+In fede
+	</TEXT>
+
+	<BR><BR><BR><BR><BR><BR>
+
+		<TABLE WIDTH=100%>
+		<TR>
+			<TD WIDTH=50%><BR><BR><BR><BR><BR><BR>Luogo, __________________, <valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></TD>
+			<TD WIDTH=50%>____________________________________<BR>Firma <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> <I>(leggibile)</I></TD>
+		</TR>
+		
+	</TABLE>
+
+</BODY>
+</PDF>

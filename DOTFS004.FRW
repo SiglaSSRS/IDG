@@ -1,0 +1,339 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize5.5_times">
+
+<HEADER>
+<TEXT X=16.5 Y=-0.3>TFS-SC – 10.01.2022</TEXT>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintsiglasiglatfs">
+</HEADER>
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestatasiglabollo">
+</FOOTER>
+
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT">Pag. 5 di 12</TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+
+<BODY>
+<if><ifcond><valueabs>IDGTCTR00F/RECORD/IDGTCTR_CDFONTEB</valueabs>==FEA</ifcond><or><ifcond><valueabs>IDGTCTR00F/RECORD/IDGTCTR_CDFONTEB</valueabs>==FSE</ifcond><or><ifcond><valueabs>IDGTCTR00F/RECORD/IDGTCTR_CDFONTEB</valueabs>==FSP</ifcond>
+<then></then>
+<else>
+<if>(<ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CODENTE</valueabs>!=2483748</ifcond>
+<and><ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CODENTE</valueabs>!=82207</ifcond>)
+<or>(<ifcond><valueabs>IDGFCQP00F/RECORD/IDGFCQP_CODENTE</valueabs><in>(2483748,82207)</ifcond>
+    <and>(<ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP042 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP043 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP044 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP0421 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP0431 </ifcond>
+    <and><ifcond><valueabs>IDGREQ00F/RECORD/IDGREQ_CDDOCSET</valueabs>!=DOCQP0441 </ifcond>)
+)<then><ENCRYPT OWNER="soloiopossomodificare" NOCHANGE NOCOPY></then>
+</else>
+</if></if>
+<BR>
+<BR>
+<TEXT SIZE=7.7 ALIGN=C><B>RICHIESTA DI FINANZIAMENTO CONTRO CESSIONE “PRO-<BR>SOLVENDO” DEL TRATTAMENTO DI FINE SERVIZIO MATURATO</B></TEXT>
+<BR>
+<TEXT SIZE=7.5 ALIGN=J>
+<B>Premessa:</B><BR>
+Il sottoscritto (in seguito denominato "CEDENTE"), presa visione delle condizioni che regolano il Contratto di finanziamento rimborsabile mediante cessione di quote della propria retribuzione mensile, di seguito riportate e che dichiara di accettare integralmente e senza riserve,
+</TEXT>
+<BR>
+<TEXT SIZE=7.5 ALIGN=C><B>Chiede</B></TEXT>
+<BR>
+<TEXT SIZE=7.5 ALIGN=J>
+a <B>SIGLA SRL</B> (in seguito denominata "SIGLA" Codice Fiscale e Partita IVA 03951740269 Sede Legale e Operativa via Cesare Battisti, 5/a – 31015 Conegliano (TV) - Indirizzo telematico www.siglacredit.it - Iscrizione Albo Unico degli Intermediari Finanziari ex art.106 TUB con n. 88 (codice meccanografico 33023) del D. Lgs. n. 385/93 - R.E.A. TV 311003 - Capitale Sociale Euro 600.000,00 i.v.), la concessione di un finanziamento alle condizioni indicate nella presente domanda dichiarando, anche ai sensi dell'art. 18 del Dlgs 231/2007 (norme antiriciclaggio), che lo stesso è finalizzato a soddisfare bisogni attinenti alla vita privata ed ai consumi propri e della famiglia. Il rimborso della somma erogata verrà effettuato dal CEDENTE mediante cessione 
+pro solvendo del suo Trattamento di Fine Servizio “TFS” maturato e dal medesimo vantato nei confronti dell’Ente pensionistico. 
+<BR><BR>Il Cedente dichiara che:
+</TEXT>
+<BR>
+<TABLE SIZE=7.5 BORDER=0.5>
+<TR>
+<TD WIDTH=100% ALIGN=J>
+	DATI DEL CEDENTE<BR>
+	Cognome e Nome <B><valueabs>IDGTCLI00F/RECORD/IDGTCLI_RAGSOC</valueabs></B> nato a <B><valueabs>IDGTCLI00F/RECORD/IDGTCLI_LOCNASC</valueabs></B> il <B><valueabs>IDGTCLI00F/RECORD/IDGTCLI_DTNASC</valueabs></B>   
+	 C.F. <B><valueabs>IDGTCLI00F/RECORD/IDGTCLI_CDFIS</valueabs>  </B>  
+	<if><ifcond><valueabs>IDGTCLI00F/RECORD/IDGTCLI_INDIR_RES</valueabs>==</ifcond><then> residente e domiciliato in <B><valueabs>IDGTCLI00F/RECORD/IDGTCLI_LOCAL</valueabs> (<valueabs>IDGTCLI00F/RECORD/IDGTCLI_PROV</valueabs>)</B> c.a.p. <B><valueabs>IDGTCLI00F/RECORD/IDGTCLI_CAP</valueabs></B> via/piazza <B><valueabs>IDGTCLI00F/RECORD/IDGTCLI_INDIR</valueabs>  </B></then></if>	
+	<if><ifcond><valueabs>IDGTCLI00F/RECORD/IDGTCLI_INDIR_RES</valueabs>==<valueabs>IDGTCLI00F/RECORD/IDGTCLI_INDIR</valueabs></ifcond><then>  residente e domiciliato in <B><valueabs>IDGTCLI00F/RECORD/IDGTCLI_LOCAL_RES</valueabs> (<valueabs>IDGTCLI00F/RECORD/IDGTCLI_PROV_RES</valueabs>)</B> c.a.p. <B><valueabs>IDGTCLI00F/RECORD/IDGTCLI_CAP_RES</valueabs></B> via/piazza <B><valueabs>IDGTCLI00F/RECORD/IDGTCLI_INDIR_RES</valueabs>  </B></then></if> 
+	<if><ifcond><valueabs>IDGTCLI00F/RECORD/IDGTCLI_INDIR_RES</valueabs>!=<valueabs>IDGTCLI00F/RECORD/IDGTCLI_INDIR</valueabs></ifcond><and><ifcond><valueabs>IDGTCLI00F/RECORD/IDGTCLI_INDIR_RES</valueabs>!=</ifcond><then>  residente in <B><valueabs>IDGTCLI00F/RECORD/IDGTCLI_LOCAL_RES</valueabs> (<valueabs>IDGTCLI00F/RECORD/IDGTCLI_PROV_RES</valueabs>)</B> c.a.p. <B><valueabs>IDGTCLI00F/RECORD/IDGTCLI_CAP_RES</valueabs></B> via/piazza <B><valueabs>IDGTCLI00F/RECORD/IDGTCLI_INDIR_RES</valueabs></B> e domiciliato in <B><valueabs>IDGTCLI00F/RECORD/IDGTCLI_LOCAL</valueabs> (<valueabs>IDGTCLI00F/RECORD/IDGTCLI_PROV</valueabs>)</B> c.a.p. <B><valueabs>IDGTCLI00F/RECORD/IDGTCLI_CAP</valueabs></B><BR>via/piazza <B><valueabs>IDGTCLI00F/RECORD/IDGTCLI_INDIR</valueabs>  </B></then></if> 
+	n.tel  <B><valueabs>IDGTCLI00F/RECORD/IDGTCLI_TELE_RES</valueabs> <valueabs>IDGTCLI00F/RECORD/IDGTCLI_TELE_ALT</valueabs></B>
+<BR>
+Documento di identità <B><valueabs>IDGTCLI00F/RECORD/IDGTCLI_DSDOCUM</valueabs></B> n.<B><valueabs>IDGTCLI00F/RECORD/IDGTCLI_NUM_DOCUM</valueabs></B> rilasciato da <B><valueabs>IDGTCLI00F/RECORD/IDGTCLI_DOCUM_RIL_ENTE</valueabs> di <valueabs>IDGTCLI00F/RECORD/IDGTCLI_DOCUM_RIL_DA</valueabs></B> data emissione <B><valueabs>IDGTCLI00F/RECORD/IDGTCLI_DOCUM_RIL_DA_IL</valueabs></B> valido sino al <B><valueabs>IDGTCLI00F/RECORD/IDGTCLI_DOCUM_RIL_SCAD</valueabs></B><BR>
+	
+</TD>
+</TR>
+<TR>
+<TD WIDTH=100% ALIGN=J>
+		<B>CONDIZIONI ECONOMICHE DEL PRESTITO CONTRO CESSIONE “PRO-SOLVENDO” DEL TRATTAMENTO DI FINE SERVIZIO MATURATO:</B><BR><BR>
+		- CAPITALE LORDO MUTUATO &euro <valueabs>IDGTCTR00F/RECORD/IDGTCTR_MONTANTE</valueabs> DURATA <valueabs>IDGTCTR00F/RECORD/IDGTCTR_DURATAMM</valueabs> MESI<BR>
+		- MODALITA' DI PAGAMENTO: le scadenze delle rate sono determinate secondo il Prospetto di Liquidazione rilasciato dall’Ente pensionistico<BR>
+		<TABLE WIDTH=100% SIZE=5 BORDER=0>
+
+			<TR>
+				<TD WIDTH=5% ALIGN=RIGHT SIZE=6><B>N° rata</B></TD>
+				<TD WIDTH=19% ALIGN=RIGHT SIZE=6><B>Scadenza</B></TD>
+				<TD WIDTH=19% ALIGN=RIGHT SIZE=6><B>Rata</B></TD>
+				<TD WIDTH=19% ALIGN=RIGHT SIZE=6><B>Capitale</B></TD>
+				<TD WIDTH=19% ALIGN=RIGHT SIZE=6><B>Interessi</B></TD>
+				<TD WIDTH=19% ALIGN=RIGHT SIZE=6><B>Capitale Residuo</B></TD>
+			</TR>
+			<loop>
+			<loopda>1</loopda>
+			<looproot>IDGTPFIN0F/RECORD</looproot>
+			<TR>
+				<TD WIDTH=5% ALIGN=RIGHT SIZE=5.5><value>IDGTPFIN_NUMRATA</value></TD>
+				<TD WIDTH=19% ALIGN=RIGHT SIZE=5.5><value>IDGTPFIN_DTSCAD</value></TD>
+				<TD WIDTH=19% ALIGN=RIGHT SIZE=5.5><value>IDGTPFIN_IMPRATA</value></TD>
+				<TD WIDTH=19% ALIGN=RIGHT SIZE=5.5><value>IDGTPFIN_QTACAP</value></TD>
+				<TD WIDTH=19% ALIGN=RIGHT SIZE=5.5><value>IDGTPFIN_QTAINT</value></TD>
+				<TD WIDTH=19% ALIGN=RIGHT SIZE=5.5><value>IDGTPFIN_CAPRES</value></TD>
+			</TR>
+			</loop>
+				
+		</TABLE>
+		<BR>- TASSO NOMINALE ANNUO SCALARE (TAN) APPLICATO IN MISURA FISSA PER L'INTERA DURATA DEL PRESTITO (con riferimento all’anno solare, di complessivi 365 giorni) <B><valueabs>IDGTCTR00F/RECORD/IDGTCTR_TXTAN</valueabs></B> %<BR>
+<TABLE SIZE=7.5>
+<TR>
+<TD WIDTH=70% ALIGN=J>- INTERESSI SCALARI AL TAN SOPRA ESPOSTO<FONT SIZE=6.5> (1)</FONT></TD>
+<TD WIDTH=30% ALIGN=J>&euro <B><valueabs>IDGTCTR00F/RECORD/IDGTCTR_IMPINTER</valueabs></B></TD>
+</TR>
+<TR>
+<TD WIDTH=70% ALIGN=J>- SPESE DI ISTRUTTORIA<FONT SIZE=6.5> (2)</FONT></TD>
+<TD WIDTH=30% ALIGN=J>&euro <B><valueabs>IDGTCTR00F/RECORD/IDGTCTR_IMSPIST</valueabs></B></TD>
+</TR>
+<TR>
+<TD WIDTH=70% ALIGN=J>- ONERI FISCALI<FONT SIZE=6.5></FONT></TD>
+<TD WIDTH=30% ALIGN=J>&euro <B><valueabs>IDGTCTR00F/RECORD/IDGTCTR_IMRIVALSA</valueabs></B></TD>
+</TR>
+<TR>
+<TD WIDTH=70% ALIGN=J>- IMPORTO TOTALE DEL CREDITO</TD>
+<TD WIDTH=30% ALIGN=J>&euro <B><valueabs>IDGTCTR00F/RECORD/IDGTCTR_IMPNETRIC</valueabs></B></TD>
+</TR>
+<TR>
+<TD WIDTH=70% ALIGN=J>- COMMISSIONE ESTINZIONE ANTICIPATA al massimo pari all' <B>1,00 %</B> del capitale residuo</TD>
+<TD WIDTH=30% ALIGN=J></TD>
+</TR>
+<TR>
+<TD WIDTH=70% ALIGN=J>- INTERESSI DI MORA: pari al TAN</TD>
+<TD WIDTH=30% ALIGN=J></TD>
+</TR>
+</TABLE>
+<TABLE SIZE=7.5 ALIGN=J><TR><TD>
+	  - EROGAZIONE DEL PRESTITO: L'erogazione del prestito avverrà secondo le previsioni dell'art.2 delle Condizioni Generali del contratto di prestito<BR>
+		- TAEG/ISC <B><valueabs>IDGTCTR00F/RECORD/IDGTCTR_TXTAEG</valueabs></B> %, calcolato includendo tutte le spese indicate sopra, come da Istruzioni di Banca d'Italia e come previsto dal decreto legislativo 141/2010.<BR> 
+		- TEG <B><valueabs>IDGTCTR00F/RECORD/IDGTCTR_TXTEG</valueabs></B> %, calcolato includendo tutte le spese indicate sopra, come da Istruzioni di Banca d'Italia.<BR>
+ 			Il TAEG e il TEG sono stati calcolati ipotizzando l'anno composto da dodici mesi uguali, sulla base del calendario civile, ai sensi del decreto del Ministero del Tesoro 6/5/2000, a decorrere dal primo giorno del mese successivo alla conclusione del presente contratto. Il tasso di interesse, comprensivo di ogni spesa, non potrà mai superare il limite previsto dalla normativa in materia di usura, nel momento in cui tale interesse è stato convenuto (data di sottoscrizione del contratto), dovendo intendersi che anche in caso di eventuale superamento del suddetto limite, la misura di tali interessi sarà comunque pari al limite medesimo.<BR>
+<BR>
+(1)<I> Costo ripetibile in caso di estinzione anticipata</I><BR>
+(2)<I> Costo ripetibile in caso di estinzione anticipata secondo la curva degli interessi</I><BR>
+</TD></TR>
+</TABLE>
+</TD></TR>
+
+<TR>
+<TD ALIGN=J>
+<B>Dichiarazione per ricezione comunicazioni periodiche e lettera di conferma del contratto</B><BR>
+Il sottoscritto <B><valueabs>IDGTCLI00F/RECORD/IDGTCLI_RAGSOC</valueabs></B> dichiara di voler ricevere le comunicazioni periodiche 
+che SIGLA invierà almeno una volta all'anno, e comunque alla scadenza del contratto, contenenti le informazioni 
+chiare e complete sullo svolgimento del rapporto e un quadro aggiornato delle condizioni applicate, nonché la 
+lettera di conferma contratto, al seguente indirizzo:<BR> 
+<IMG SRC="<valueabs>Immagini/BOX/Path</valueabs><valueabs>Immagini/BOX/Nome</valueabs>" SCALE=<valueabs>Immagini/BOX/Scale</valueabs>>  <B><valueabs>IDGTCLI00F/RECORD/IDGTCLI_INDIR</valueabs> - <valueabs>IDGTCLI00F/RECORD/IDGTCLI_LOCAL</valueabs> (<valueabs>IDGTCLI00F/RECORD/IDGTCLI_PROV</valueabs>)</B> c.a.p. <B><valueabs>IDGTCLI00F/RECORD/IDGTCLI_CAP</valueabs></B><BR>
+<IMG SRC="<valueabs>Immagini/BOX/Path</valueabs><valueabs>Immagini/BOX/Nome</valueabs>" SCALE=<valueabs>Immagini/BOX/Scale</valueabs>> eventuale indirizzo e-mail su cui ricevere le comunicazioni
+periodiche per cui non sarà previsto l'addebito di alcun costo salvo l'imposta di bollo:<BR>___________________________________________________________________________________________________ 
+</TD>
+</TR>
+</TABLE>
+<BR><BR>
+<TEXT SIZE=7.5 ALIGN=L>
+Il CEDENTE presa visione delle condizioni generali di finanziamento di seguito riportate che accetta integralmente senza riserva alcuna, chiede a Sigla un prestito rimborsabile mediante cessione "pro solvendo" di quote del Trattamento di fine servizio (“TFS”)  maturato, per un importo e alle condizioni indicate in questo contratto.
+<BR><BR><BR>
+Il CEDENTE <B><valueabs>IDGTCLI00F/RECORD/IDGTCLI_RAGSOC</valueabs> </B> <if><ifcond><valueabs>IDGTCTR00F/RECORD/IDGTCTR_CDFONTEB</valueabs>!=FEA</ifcond><and><ifcond><valueabs>IDGTCTR00F/RECORD/IDGTCTR_CDFONTEB</valueabs>!=FSE</ifcond><and><ifcond><valueabs>IDGTCTR00F/RECORD/IDGTCTR_CDFONTEB</valueabs>!=FSP</ifcond><then><INPUT TYPE=SIGNATURE NAME=C-CONTRATTO#DOCQSQS2##-1 WIDTH=5 HEIGHT=3></then></if>
+</TEXT>
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\CONTRATTO#DOTFS004##01_01_05.png" BACKGROUND X=5.5 Y=-0.5 SCALE=15>
+<PAGE>
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT">Pag. 6 di 12</TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+<BR>
+<BR>
+<TEXT SIZE=7.4 ALIGN=J>
+Il CEDENTE afferma che tutto quanto sopra dichiarato corrisponde a verità e dichiara di non aver mai subito procedure concorsuali, esecutive o azioni legali in genere, di non versare in difficoltà economica e finanziaria. Dichiara, inoltre, di non essere titolare di alcuna attività che potrebbe determinare una sua personale dichiarazione di fallimento. Il CEDENTE dichiara altresì:<BR>
+<LI> Che gli è stata consegnata copia del documento sui tassi soglia previsti dalla legge n. 108/1996 in tema di usura nonché di essere stati informati della possibilità di rivolgersi all'ABF (procedura reclami), anche tramite la <I>Guida sull'Arbitro Bancario e Finanziario</I>, messa a disposizione, unitamente alla <I>Guida pratica al credito: il credito ai consumatori in parole semplici e la Guida la Centrale dei rischi in parole semplici.</I><BR>
+<LI> Di essere stati informati della possibilità di ottenere copia del testo del contratto idonea per la stipula, che include il modulo informazioni europee di base sul credito ai consumatori (SECCI), prima della conclusione del contratto, come da loro stessi sottoscritto nella richiesta di verifica di idoneità al finanziamento.<BR>
+<LI> Di essere stato previamente informato per iscritto, mediante presa visione dell'informativa contenuta nel modulo richiesta-consenso sottoscritto, circa gli elementi indicati dall’art.13 del D.Lgs.196/03, dagli artt. 7, 13 e 14 Reg. UE 2016/679 e dall'art. 5 del codice deontologico sui sistemi di informazioni creditizie, ed espressamente consente che i dati forniti per lo svolgimento dell'istruttoria preliminare e, in caso di accoglimento della domanda di finanziamento, i dati relativi allo svolgimento del rapporto contrattuale, siano trattati e comunicati a terzi nei termini di cui alla predetta informativa.<BR><BR>
+	<BR>
+	<BR>
+	IL CEDENTE <B><valueabs>IDGTCLI00F/RECORD/IDGTCLI_RAGSOC</valueabs> </B><if><ifcond><valueabs>IDGTCTR00F/RECORD/IDGTCTR_CDFONTEB</valueabs>!=FEA</ifcond><and><ifcond><valueabs>IDGTCTR00F/RECORD/IDGTCTR_CDFONTEB</valueabs>!=FSE</ifcond><and><ifcond><valueabs>IDGTCTR00F/RECORD/IDGTCTR_CDFONTEB</valueabs>!=FSP</ifcond><then><INPUT TYPE=SIGNATURE NAME=C-CONTRATTO#DOCQSQS2##-2 WIDTH=5 HEIGHT=3></then></if><BR><BR>
+<LI> Di aver ricevuto e trattenuto una copia del contratto compilato in ogni sua parte, completo del modulo informazioni europee di base sul credito ai consumatori (SECCI), di aver preso visione delle condizioni generali di finanziamento che accetta integralmente senza riserva alcuna e di aver ricevuto l'estratto delle condizioni di polizza.<BR><BR>
+	<BR>
+	<BR>
+	IL CEDENTE <B><valueabs>IDGTCLI00F/RECORD/IDGTCLI_RAGSOC</valueabs> </B><if><ifcond><valueabs>IDGTCTR00F/RECORD/IDGTCTR_CDFONTEB</valueabs>!=FEA</ifcond><and><ifcond><valueabs>IDGTCTR00F/RECORD/IDGTCTR_CDFONTEB</valueabs>!=FSE</ifcond><and><ifcond><valueabs>IDGTCTR00F/RECORD/IDGTCTR_CDFONTEB</valueabs>!=FSP</ifcond><then><INPUT TYPE=SIGNATURE NAME=C-CONTRATTO#DOCQSQS2##-3 WIDTH=5 HEIGHT=3></then></if><BR><BR>
+	<BR>
+<if>(<ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_CODANAMED</valueabs><in>(696,3770136,3769837,3770556)</ifcond>
+<or>  <ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_MED_OFFICE</valueabs>==ZZ</ifcond>
+<or>  <ifcond><valueabs>IDGFFONT0F/RECORD/IDGFONT_CDFONTE</valueabs>==Z_DIREZ</ifcond>)<then></then><else>
+<I>SIGLA SRL informa il CEDENTE che il finanziamento richiesto può essere ottenuto anche direttamente presso gli uffici della SIGLA SRL, siti in via Cesare Battisti, 5/a, tel. 0438/45990 o tramite il sito Internet www.siglacredit.it e che, pertanto, l'attività dell'intermediario del credito non è necessaria per l'ottenimento del credito. Resta, inoltre, inteso, che il compenso dovuto all'intermediario del credito per l'attività svolta per l'ottenimento del presente finanziamento (voce compresa nel taeg) è quello indicato nel SECCI e nel contratto di finanziamento alla voce “commissioni di distribuzione”, pertanto nessun altro compenso è dovuto a nessun titolo dal DELEGANTE all'intermediario del credito con riferimento al presente contratto di finanziamento.<BR>
+</I>	
+</TEXT>
+<TEXT SIZE=7.4 ALIGN=J>
+<BR><BR>
+IL CEDENTE <B><valueabs>IDGTCLI00F/RECORD/IDGTCLI_RAGSOC</valueabs> </B><if><ifcond><valueabs>IDGTCTR00F/RECORD/IDGTCTR_CDFONTEB</valueabs>!=FEA</ifcond><and><ifcond><valueabs>IDGTCTR00F/RECORD/IDGTCTR_CDFONTEB</valueabs>!=FSE</ifcond><and><ifcond><valueabs>IDGTCTR00F/RECORD/IDGTCTR_CDFONTEB</valueabs>!=FSP</ifcond><then><INPUT TYPE=SIGNATURE NAME=C-CONTRATTO#DOCQSQS2##-4 WIDTH=5 HEIGHT=3></then></if><BR><BR>
+</else></if>
+PARTE RISERVATA ALL'ACCERTATORE. Il sottoscritto, incaricato dell'identificazione (art.30, comma 8 del Dlgs 231/2007), dichiara, sotto la propria personale responsabilità, di aver provveduto ad adeguata verifica dell'identità del CEDENTE, le cui generalità sono state desunte dai documenti d'identità esibiti in originale e sono state esattamente riportate nella presente richiesta unitamente ai riferimenti del documento esibito; dichiara inoltre che il CEDENTE afferma, e tale appare sulla base degli elementi disponibili, di essere l'effettivo titolare del finanziamento oggetto della presente richiesta, il cui scopo è stato indicato nella premessa unitamente alle altre informazioni fornite (art. 21 del Dlgs 231/2007). Il sottoscritto dichiara inoltre che la sottoscrizione del contratto e degli allegati è avvenuta in sua presenza e che tutta la documentazione fornita ai fini dell'ottenimento del presente finanziamento è stata visionata dall'originale presentato dal CEDENTE.<BR>
+</TEXT>
+<BR>
+<BR>
+<TABLE SIZE=7.4 WIDTH=100%>
+<TR>
+	<TD WIDTH=50%><BR>Cognome e nome accertatore <INPUT TYPE=TEXT NAME=A-CONTRATTO#DOCQSQS2##-01 SIZE=8 WIDTH=8 HEIGHT=1.5><BR>
+	<BR>	
+	(che opera per conto della società sotto indicata)<BR><BR></TD> 
+	<TD WIDTH=50%><BR> <B>Firma leggibile (accertatore)</B> ___________________________________________<BR>
+	 <BR>
+	 <TABLE>
+	 	<TR>
+	 	<TD WIDTH=28% VALIGN=B ALIGN=R SIZE=7.4><if><ifcond><valueabs>IDGFFONT0F/RECORD/IDGFONT_CDFONTE</valueabs><in>(_CRECO,_CRECO_RIN,CRECO_07,CRECO_15,CRECO_25,CRECO_30,CRECO_31,CRECO_32,CRECO_33,CRECO_34,CRECO_35,CRECO_36,CRECO_37,CRECO_38,CRECO_39,CRECO_40,CRECO_41,CRECO_42,CRECO_43,CRECO_44,CRECO_45,CRECO_46,CRECO_47,CRECO_48,CRECO_49,CRECO_50,CRECO_51,CRECO_52,CRECO_53,CRECO_54,CRECO_55,CRECO_56,CRECO_57,CRECO_58,CRECO_59,CRECO_60,CRECO_61,CRECO_62,CRECO_63,CRECO_64,CRECO_65,CRECO_66,CRECO_67,CRECO_68,CRECO_69,CRECO_70,CRECO_71,CRECO_72,CRECO_73,CRECO_74,CRECO_75,CRECO_76,CRECO_77,CRECO_78,CRECO_79,CRECO_80)</ifcond>
+<then>Timbro accertatore</then><else>Timbro intermediario del credito</else></if> </TD>
+	 	<TD WIDTH=5%></TD>
+	 	<TD WIDTH=70% BORDER=0.8><BR><BR><BR><BR><BR></TD>	
+	 	<TD WIDTH=2%></TD>	
+	 </TR>
+	 </TABLE></TD>
+</TR>
+
+</TABLE>
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\CONTRATTO#DOTFS004##01_02_05.png" BACKGROUND X=5.5 Y=-0.5 SCALE=15>
+<PAGE>
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT">Pag. 7 di 12</TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+<TEXT SIZE=7.4 ALIGN=J LINESPACE=1>
+<B>Condizioni generali del contratto di finanziamento rimborsabile mediante cessione pro solvendo del Trattamento di Fine Servizio (TFS)</B><BR>
+<B>Informazioni Europee di base sul credito ai consumatori (SECCI).</B> Il documento SECCI costituisce parte integrante e sostanziale del presente contratto.<BR>
+<B>1. Oggetto, conclusione ed efficacia del contratto.<BR></B>
+1.1 Il Cliente, che rientri nella definizione di Consumatore ai sensi dell’art. 121, co. 1, d.lgs. 1° settembre 1993 n. 385 (il “TUB”) e che sia dipendente pubblico o statale in quiescenza, richiede a Sigla, compilando il modulo di richiesta predisposto da Sigla, la concessione di prestito personale, che intende rimborsare mediante cessione pro solvendo del suo Trattamento di Fine Servizio “TFS” maturato e dal medesimo vantato nei confronti dell’Ente pensionistico.<BR>
+1.2. Il contratto si intende concluso con la comunicazione al Cliente dell'accettazione della richiesta da parte di Sigla, che si considera comunque resa nota con l'accredito dell'importo richiesto.<BR>
+1.3. Il Cliente ha la facoltà di revocare la richiesta di finanziamento sino all'eventuale accettazione (ovvero accredito dell’importo, secondo quanto di cui al comma precedente) da parte di Sigla. Detta facoltà può essere esercitata dal Cliente liberamente e senza spese, penalità ed altri oneri, mediante richiesta scritta da inviare a mezzo raccomandata A/R a SIGLA SRL VIA C.BATTISTI 5/A 31015 CONEGLIANO (TV) ovvero tramite PEC all’indirizzo di posta elettronica certificata siglacredit.cessionequinto@pec.it.<BR>
+1.4. La concessione del finanziamento avviene ad insindacabile giudizio di Sigla dopo aver effettuato le proprie discrezionali valutazioni, anche in relazione al merito creditizio del Cliente e dopo aver adempiuto agli obblighi di adeguata verifica previsti dalla normativa in materia (d.lgs. 21 novembre 2007 n. 231).<BR>
+1.5. Dopo la conclusione del contratto, Sigla notificherà il fascicolo contrattuale all’ente previdenziale di appartenenza.<BR>
+1.6. L’efficacia del contratto e, quindi, l’erogazione del finanziamento restano comunque subordinati alla ricezione da parte di Sigla della dichiarazione di “benestare” o “nulla osta” rilasciata dall’Ente pensionistico.<BR>
+<B>2. Cessione del credito relativo al TFS e obblighi delle parti.</B><BR>
+2.1. Il Cliente cede pro solvendo a Sigla, che accetta, i crediti vantati nei confronti dell’Ente Previdenziale relativi al TFS maturato, quantificato secondo il Prospetto di Liquidazione e confermato nella Dichiarazione di benestare.<BR>
+2.2. La cessione comprende anche ogni eventuale importo ad integrazione del TFS – e sempre nei limiti del debito residuo del Cliente verso Sigla -  e rimane ferma, valida ed efficace anche in caso di modifica delle modalità di pagamento del TFS da parte dell’Ente Previdenziale.<BR>
+2.3. Il Cliente si obbliga in ogni caso a rimettere a Sigla ogni e qualsiasi somma dovesse ricevere dall’Ente previdenziale a titolo di liquidazione, totale o parziale, del TFS ceduto. Tali somme saranno imputate da Sigla a deconto del proprio credito e a titolo di adempimento delle obbligazioni previste.<BR>
+2.4. Sigla provvede all’erogazione del finanziamento solo all’esito delle attività e verifiche di cui all’articolo 1.<BR>
+2.5. A seguito del pagamento dell’ultima rata del prestito e, dunque, una volta estinto il debito del Cliente, Sigla si impegna a versare al Cliente l’eventuale eccedenza che dovesse pervenire rispetto al Capitale Lordo Mutuato, come definito all’articolo successivo.<BR>
+<B>3. Trattenute.</B><BR>
+Sigla, in sede di liquidazione del finanziamento versa al Cliente l’importo totale del credito, pari ad € <valueabs>IDGTCTR00F/RECORD/IDGTCTR_IMPNETRIC</valueabs> (al lordo di eventuali anticipazioni ed estinzioni – anche il “Capitale Lordo Mutuato”). Tale somma è stata determinata trattenendo dall'importo capitale lordo mutuato di € <valueabs>IDGTCTR00F/RECORD/IDGTCTR_MONTANTE</valueabs> le somme corrispondenti alle seguenti voci:<BR>
+3.1. Interessi scalari pari a € <valueabs>IDGTCTR00F/RECORD/IDGTCTR_IMPINTER</valueabs> calcolati al tasso nominale annuo (TAN) del <valueabs>IDGTCTR00F/RECORD/IDGTCTR_TXTAN</valueabs> % .<BR>
+3.2. Spese di istruttoria pari a: € <valueabs>IDGTCTR00F/RECORD/IDGTCTR_IMSPIST</valueabs> costi ripetibili, in caso di estinzione anticipata, secondo la curva degli interessi, costituiti tutte le attività collegate e strumentali alla stipula contrattuale e, più nello specifico, consistono in: raccolta dati e documenti e loro archiviazione; interrogazione e consultazione banche dati; controllo, analisi ed elaborazioni a fini istruttori; adempimenti connessi alle attività antiriciclaggio e di adeguata verifica (D.lgs. 231/2007); adempimenti connessi al trattamento dei dati personali (Reg. UE/2016/679); attività di delibera del finanziamento; notifica degli atti; attività di perfezionamento dell’operazione di finanziamento, fino alla erogazione del prestito a favore del Cliente;<BR>
+3.3. Oneri fiscali pari a € <valueabs>IDGTCTR00F/RECORD/IDGTCTR_IMRIVALSA</valueabs><BR>
+<B>4. Autorizzazioni del CEDENTE.</B><BR>
+4.1. Il Cliente autorizza Sigla a notificare al proprio Ente Previdenziale il presente contratto di prestito contro cessione pro solvendo del suo Trattamento di Fine Servizio “TFS” maturato.<BR>
+4.2. Sempre per espressa autorizzazione del Cliente, l’Ente ceduto preleverà dal TFS maturato, secondo le scadenze di cui al presente contratto, l’importo della quota come prevista nel piano di ammortamento e, ai sensi di legge, provvederà a versarla a SIGLA mediante accredito su uno dei seguenti c/c:<BR>
+<B>Bonifico bancario su Banca Popolare di Milano, IBAN: IT62X0503401647000000018713 intestato a Sigla S.r.l.</B><BR>
+<B>5. Pagamenti. Ritardo ed interessi di mora. Solidarietà dell’obbligazione. </B><BR>
+5.1. In conseguenza della cessione, il finanziamento è rimborsato dall’Ente erogatore, che è obbligato, dal momento della notifica del Contratto, a trattenere, alle scadenze stabilite dal prospetto di liquidazione rilasciato dall’Ente erogatore, dal TFS del Cliente l'importo della/e rata/e indicata/e nel Modulo Secci, sino alla totale estinzione del finanziamento.<BR>
+5.2. In caso di ritardo nei pagamenti protrattosi per oltre novanta giorni rispetto alle scadenze previste nel piano di ammortamento del finanziamento, contenuto nella Richiesta di prestito personale, il Cliente e l'Ente Pensionistico debitore ceduto sono solidalmente tenuti a corrispondere a Sigla le rate di finanziamento scadute e non pagate, gli interessi di mora in misura pari al TAN e come specificato nel Modulo IEBCC/SECCI e le spese sostenute per eventuali solleciti effettuati a mezzo posta o telefono anche da soggetti terzi specificatamente incaricati, da € 5,00 fino ad un massimo di € 60,00 per rata, ed il costo di eventuali interventi domiciliari svolti anche da soggetti terzi specificatamente incaricati, da € 10,00 fino ad un massimo di € 80,00 a rata, nonché per eventuali spese legali sostenute in base alle parcelle liquidate.<BR>
+5.3. Il Cliente rimane in ogni caso obbligato in solido con l’Ente previdenziale per la restituzione del finanziamento e provvederà direttamente al rimborso nel caso in cui l’Ente previdenziale, per qualsiasi causa o ragione, non vi provveda.<BR>
+<B>6. Piano di ammortamento</B><BR>
+Il Cliente ha diritto di ricevere gratuitamente, su richiesta in qualsiasi momento del rapporto, un piano di ammortamento che indichi gli importi dovuti, le relative scadenze, le condizioni di pagamento, gli interessi e gli eventuali costi aggiuntivi. Il Cliente ha diritto di ottenere in qualsiasi momento copia del presente Contratto, aggiornato con le condizioni economiche in vigore.<BR>
+In caso di erogazione anticipata rispetto al piano di ammortamento saranno calcolati gli interessi di preammortamento allo stesso tasso di interesse, senza maggiorazioni.<BR>
+<B>7. Riduzione, revoca o sospensione del TFS. Garanzie integrative.</B><BR>
+7.1. Nei casi di eventuale revoca, riduzione o sospensione per qualsiasi causa delle quote di cessione del TFS, il Cliente è tenuto a versare a Sigla - con le modalità che gli verranno comunicate - la totalità delle quote, ovvero, a seconda dei casi, la differenza tra la quota prevista nel presente Contratto ed il minore importo versato a Sigla da parte dell'Ente Previdenziale, per tutti i mesi nei quali è stata effettuata la predetta riduzione o sospensione della quota prevista contrattualmente da parte dell'Ente o Istituto stesso.<BR>
+Qualora il verificarsi degli eventi sopra descritti comportasse l’obbligo della restituzione di tutto o parte delle somme già incassate da Sigla in virtù della presente cessione, l’onere del rimborso graverà esclusivamente sul Cliente, il quale si impegna sin da ora a provvedervi direttamente con pieno esonero da ogni responsabilità per Sigla.<BR>
+7.2. In caso di riduzione dell’importo del TFS ovvero al verificarsi di uno degli eventi previsti dal presente articolo, il Cliente si impegna a costituire a favore di Sigla, su richiesta del medesimo, idonee garanzie integrative. In caso il Cliente non provveda a prestare le garanzie integrative richieste da Sigla, è concessa a Sigla la facoltà di risolvere il contratto, laddove gli eventi di cui al comma 1 del presente articolo comportino una rimodulazione del piano di ammortamento con postergazione dell’ultima rata di oltre 180 giorni rispetto al piano di ammortamento originario.<BR>
+<B>8. Clausola di ripensamento.</B><BR>
+8.1. Il Cliente ha la facoltà di recedere dal presente contratto entro 14 giorni dalla data di conclusione del presente contratto, senza che ciò comporti l’addebito di ulteriori spese e salvo quanto appresso.<BR>
+8.2. L'esercizio della facoltà di recesso comporterà l'obbligo di restituzione a SIGLA da parte del Cliente di quanto eventualmente ricevuto a titolo di finanziamento ed il recesso non avrà efficacia se non sarà restituita la somma corrispondente al netto ricavo dell'operazione di cui all'art. 4. <BR>
+8.3. Nel caso il contratto abbia avuto esecuzione, entro 30 giorni dall'invio della comunicazione sopra indicata, il cliente restituirà l'importo liquidato maggiorato degli interessi maturati fino al momento della restituzione, calcolati al TAN indicato nel contratto, nonché le somme non ripetibili quali il bollo sul contratto.<BR>
+8.4. L'esercizio della facoltà di recesso dovrà essere comunicato per iscritto a mezzo lettera raccomandata con avviso di ricevimento, consegnata alle PP.TT entro il termine sopra indicato e indirizzata a: <B>SIGLA SRL</B> VIA BATTISTI, 5/A31015 CONEGLIANO (TV).<BR>
+<B>9. Estinzione anticipata. </B><BR>
+9.1. Il Cliente ha facoltà in ogni momento di estinguere anticipatamente il proprio debito, previa richiesta dei conteggi estintivi. In tale ipotesi, il Cliente ha diritto ad una riduzione del costo totale del credito, pari all’importo degli interessi e dei costi dovuti per la vita residua del Contratto.<BR>
+9.2. La richiesta di estinzione anticipata, sottoscritta dal cliente e accompagnata da copia di un documento di riconoscimento valido e leggibile, potrà essere trasmessa a Sigla Srl - Ufficio Conformità Clienti - Via Cesare Battisti 5/a - 31015 Conegliano (TV), a mezzo posta ordinaria, raccomandata A/r, al numero di fax 0438/45926, all'indirizzo email: richiestaconteggio@siglafinanziamenti.it o alla PEC: siglacredit.assistenzaclienti@pec.it.<BR>
+9.3. SIGLA, ricevuta la richiesta, comunica al Cliente l'ammontare del capitale residuo, degli interessi (calcolati al medesimo tasso annuo nominale – TAN – applicato) e degli altri <BR>
+</TEXT>
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\CONTRATTO#DOTFS004##01_03_05.png" BACKGROUND X=5.5 Y=-0.5 SCALE=15>
+<PAGE>
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT">Pag. 8 di 12</TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+<TEXT SIZE=7.4 ALIGN=J LINESPACE=1>
+oneri non maturati per la vita residua del contratto, come di seguito indicato 
+-	€ <valueabs>IDGTCTR00F/RECORD/IDGTCTR_IMSPIST</valueabs> pro quota, secondo la curva degli interessi a titolo di spese di istruttoria, come indicato al precedente art. 3 punto (3.2) e dell’indennizzo (nella misura massima dell'1%) dovuto sul capitale residuo, il tutto con riferimento alla data della prima rata successiva in scadenza. <BR>
+9.4.  L'indennizzo è dovuto solo se il capitale rimborsato in anticipo è superiore ad Euro 10.000,00, ed è pari a:<BR>
+all'1% dell'importo totale del credito rimborsato in anticipo e da versare alla data della richiesta, se la vita residua del contratto è superiore ad 1 anno;<BR>
+allo 0,5% dell'importo totale del credito rimborsato in anticipo e da versare alla data della richiesta, se la vita residua del contratto è pari o inferiore ad 1 anno.<BR>
+In ogni caso il compenso per estinzione anticipata non può superare l'importo degli interessi che il cliente avrebbe pagato per la vita residua del contratto. <BR>
+9.5. L’indennizzo non si applica nei casi previsti dalla legge. <BR>
+9.6. In caso di estinzione parziale del finanziamento, l'importo delle rate, con riferimento alla quota non estinta, verrà mantenuto invariato, con imputazione dei successivi versamenti alle rate di più imminente scadenza e con conseguente riduzione della durata del piano di ammortamento originario.<BR>
+<B>10. Decadenza dal beneficio del termine e risoluzione del contratto.</B> <BR>
+10.1. Sigla potrà comunicare al Cliente la decadenza dal beneficio del termine e/o la risoluzione del presente Contratto, oltre che nelle ipotesi previste dall’art. 1186 cod. civ., nei seguenti casi:<BR>
+a) declaratoria di inefficacia o risoluzione della Cessione “pro solvendo”;<BR>
+b) in caso di sospensione o riduzione delle rate del TFS, che comportino una rimodulazione del piano di ammortamento con dilazione di oltre 180 giorni;<BR>
+c) in caso di ritardato pagamento protrattosi per oltre novanta giorni rispetto alle scadenze previste nel piano di ammortamento del finanziamento contenuto nella presente Richiesta di prestito personale, nonché riportate nella Certificazione TFS rilasciata dall’Ente/Fondo Pensionistico;<BR>
+d) revoca da parte dell’Ente/Fondo Pensionistico dell’efficacia della cessione di credito (revoca Presa d’Atto);<BR>
+e) dichiarazione infedele, da parte del Cliente, in relazione ai dati ed informazioni forniti a Sigla per la stipula del contratto.<BR>
+10.2. In tal caso il Cliente dovrà rimborsare in un'unica soluzione, entro 15 giorni dal ricevimento della relativa comunicazione, il capitale residuo, scaduto ed a scadere, gli interessi e gli eventuali oneri relativi alle rate scadute. In caso di mancato pagamento della predetta somma, dalla data della ricezione della dichiarazione di decadenza dal beneficio del termine o di risoluzione del contratto, decorreranno gli interessi di mora sull'intera somma non pagata.<BR>
+<B>11. Oneri e spese.</B><BR>
+Le spese e tasse di bollo e di registro del presente atto, richieste dagli Uffici Fiscali, sia all'atto della registrazione sia successivamente, anche in via supplementare, sono a carico esclusivo del Cliente.<BR>
+Sono sempre gratuite per il Cliente:<BR>
+a) le comunicazioni effettuate da Sigla, in esecuzione di disposizioni di legge o trasmesse con strumenti di comunicazione telematica;<BR>
+b) le comunicazioni effettuate da Sigla di modifica unilaterale delle condizioni contrattuali.<BR>
+<B>12. Variazioni delle condizioni contrattuali.</B> 
+Sigla si riserva la facoltà di modificare, qualora sussista un giustificato motivo (quale, a mero titolo esemplificativo e non esaustivo: modifiche legislative, disposizioni delle Pubbliche Autorità, variazioni relative a decisioni di politica monetaria, parametri e condizioni finanziarie di mercato, ragioni di sicurezza o di maggiore efficienza), le condizioni indicate nel presente contratto, ad eccezione dei tassi di interesse, anche in senso sfavorevole al Cedente, secondo le modalità previste dall'art. 118 TUB. Al tal fine, a titolo esemplificativo, costituiscono giustificato motivo, tra l'altro, eventuali intervenute modifiche della disciplina civilistica e fiscale relativa ai rapporti regolati dalle presenti condizioni. Qualunque modifica unilaterale delle predette condizioni contrattuali dovrà essere comunicata espressamente al Cedente secondo modalità contenenti in modo evidenziato la formula: "Proposta di modifica unilaterale del contratto", con preavviso minimo di due mesi, in forma scritta o mediante altro supporto durevole preventivamente accettato dal Cedente. La modifica si intenderà approvata ove il Cedente non receda, senza spese, dal contratto entro la data prevista per la sua applicazione. In caso di recesso, il Cedente provvederà al saldo integrale del debito maturato nei confronti della Sigla sino a quel momento, con applicazione delle condizioni precedentemente praticate. In caso di variazione della normativa richiamata nel presente articolo si applicheranno le disposizioni tempo per tempo vigenti.<BR>
+<B>13. Normativa applicabile e Organo di Vigilanza. </B> 
+Per tutto ciò che non fosse disciplinato dal presente Contratto, si applicano le disposizioni del codice civile, il DPR 180/50, il TUB ed ogni relativa modifica e integrazione. Sigla srl è soggetta ai controlli esercitati dalla Banca d'Italia, con sede in Via Nazionale, 91 – 00184 Roma.<B>14. Ritardo nei pagamenti.</B> in caso di ritardo nel versamento anche di una singola rata, a qualsiasi causa sia attribuibile, gli interessi di mora decorreranno di pieno diritto senza necessità di comunicazione dalla scadenza della rata non pagata fino all'effettivo pagamento. L'interesse di mora sarà applicato sulla somma capitale e calcolato in misura pari al TAN + 1 % annuo; detto importo non entra nel calcolo del TAEG e su tali interessi non si applica la capitalizzazione periodica. Il ritardato pagamento comporta, inoltre, l'obbligo di rimborsare le spese sostenute per eventuali solleciti effettuati a mezzo posta o telefono anche da soggetti terzi specificatamente incaricati, da € 5,00 fino ad un massimo di € 60,00 per rata, ed il costo di eventuali interventi domiciliari svolti anche da soggetti terzi specificatamente incaricati, da € 10,00 fino ad un massimo di € 80,00 a rata, nonché per eventuali spese legali sostenute in base alle parcelle liquidate. Gli interessi di mora previsti dal presente articolo si applicano ad ogni somma dovuta ai sensi del presente Contratto dal Cedente e dai Debitori Ceduti al Finanziatore.<BR>
+<B>14.	Elezione domicilio e comunicazioni periodiche.</B><BR>
+14.1. Ai fini di ogni comunicazione relativa al presente contratto e per la notifica di eventuali atti giudiziali, le parti eleggono domicilio presso l'indirizzo indicato nel frontespizio.<BR>
+14.2. Sigla invia al Cedente una volta all'anno e, comunque, alla conclusione del rapporto, una comunicazione relativa allo svolgimento del Contratto ed alle condizioni applicate. Il contenuto di tali comunicazioni si intende approvato qualora, decorsi 60 giorni dal loro ricevimento, non sia pervenuta a Sigla specifica contestazione scritta.<BR>
+<B>15. Cessione del credito o del contratto.</B><BR>
+15.1. Il Cliente prende atto ed accetta, ora per allora, che Sigla possa cedere in tutto o in parte a favore di BANCA o INTERMEDIARIO FINANZIARIO, il cui nome verrà comunicato successivamente al CEDENTE, i diritti e tutti i crediti e diritti accessori e garanzie derivanti dal presente contratto, anche ai sensi e per effetto dell’art. 125 septies TUB. 15.2. La semplice comunicazione al Cliente del trasferimento del credito equivale a notifica, anche ai sensi dell’art. 1264 cod. civ.. <BR>
+15.3. E’ fatto, invece, divieto al Cliente di cedere a terzi il contratto o le obbligazioni rivenienti dal medesimo.<BR>
+<B>16. Reclamo cliente e risoluzione stragiudiziale delle controversie:</B><BR>
+Ogni cliente può presentare reclamo a Sigla Srl - Ufficio Reclami - via Cesare Battisti, 5/a 31015 Conegliano TV, mediante raccomandata A/R, posta ordinaria, e-mail: reclami@siglafinanziamenti.it, PEC: siglacredit.assistenzaclienti@pec.it, fax 0438/45926. Come indicato nella Guida ai diritti del Cliente, ogni cliente ha diritto, in caso di reclamo, a ricevere risposta dall'Intermediario entro 60 giorni. Se il cliente non è soddisfatto o non ha ricevuto risposta nei termini, prima di ricorrere al giudice può rivolgersi: a) all’Arbitro Bancario Finanziario (ABF). Per sapere come: consultare il sito www.arbitrobancariofinanziario.it o chiedere presso le Filiali della Banca d’Italia o a Sigla stessa (anche su www.siglacredit.it).  b) Conciliatore Bancario Finanziario. Per informazioni sul Conciliatore Bancario Finanziario, consultare il sito www.conciliatorebancario.it; c) ad Organismo di Mediazione iscritto nel registro tenuto dal ministero della Giustizia ai sensi del d.lgs. 28/2010..<BR>
+Qualora il cliente necessiti di assistenza, potrà rivolgersi all'ufficio conformità clienti di Sigla, a cui risponderà personale con un'adeguata e aggiornata conoscenza dei contratti di credito offerti, nonché dei diritti dei consumatori e delle regole previste dal T.U.B., al numero telefonico 0438-45990, oppure via fax al numero 0438-45926, oppure via email all'indirizzo: informazionisac@siglafinanziamenti.it oppure, potrà rivolgersi all'intermediario del credito, per ottenere gratuitamente spiegazioni aventi ad oggetto: - la documentazione precontrattuale fornitagli; - le caratteristiche essenziali del prodotto offerto; - gli effetti che possono derivargli dalla conclusione del contratto, in termini di obblighi economici e conseguenze del mancato pagamento. Resta inteso che il cliente ha diritto di ricevere in qualsiasi momento del rapporto, su sua richiesta e senza spese, una tabella di ammortamento. Inoltre, ogni cliente potrà verificare preventivamente tramite Monitorata (disponibile presso l'intermediario del credito a cui si è rivolto oppure nel sito www.siglacredit.it) se le Sue entrate ed uscite mensili attuali siano compatibili con la rata che dovrà pagare. Monitorata è uno strumento di analisi sofisticato che, del tutto gratuitamente, viene messo a disposizione dei clienti per aiutarli a prendere decisioni importanti. Monitorata fornisce un quadro preciso della situazione del cliente e lo consiglia se procedere o meno con la sottoscrizione di un ulteriore finanziamento.<BR>
+<B>17. Assistenza ai clienti.</B> <BR>
+Il cliente può rivolgersi all'ufficio conformità clienti di Sigla, a cui risponderà personale con un'adeguata e aggiornata conoscenza dei contratti di credito offerti, nonché dei diritti dei consumatori e delle regole previste dal T.U.B., al numero telefonico 0438-45990, oppure via fax al numero 0438-45926, oppure via email all'indirizzo: sac@siglafinanziamenti.it oppure, potrà rivolgersi all'intermediario del credito, per ottenere gratuitamente spiegazioni aventi ad oggetto: - la documentazione precontrattuale fornitagli; - le caratteristiche essenziali del prodotto offerto; - gli effetti che possono derivargli dalla conclusione del contratto, in termini di obblighi economici e conseguenze del mancato pagamento. Resta inteso che il cliente ha diritto di ricevere in qualsiasi momento del rapporto, su sua richiesta e senza spese, una tabella di ammortamento. Inoltre, il cliente, come già comunicato in precedenza, potrà verificare preventivamente tramite <B>Monitorata</B> (disponibile presso l'intermediario del credito a cui si è rivolto oppure nel sito www.siglacredit.it) se le Sue entrate ed uscite mensili attuali siano compatibili con la rata che dovrà pagare. <B>Monitorata</B> è uno strumento di analisi sofisticato che, del tutto gratuitamente, viene messo a disposizione dei clienti per aiutarli a prendere decisioni importanti. <B>Monitorata</B> fornisce un quadro preciso della situazione del cliente e lo consiglia se procedere o meno con la sottoscrizione di un ulteriore finanziamento.<BR>
+<B>18. Portabilità.</B><BR>
+Il Cliente può esercitare la surrogazione trasferendo il rapporto esistente dal cessionario ad altro finanziatore. Tale facoltà può essere esercitata in ogni momento dal cedente senza spese, penalità od altri oneri, mediante richiesta scritta da inviare all'indirizzo del cessionario (art.1202 C.C.).<BR>
+</TEXT>
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\CONTRATTO#DOTFS004##01_04_05.png" BACKGROUND X=5.5 Y=-0.5 SCALE=15>
+<PAGE>
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="RIGHT">Pag. 9 di 12</TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+<TEXT SIZE=7.4 ALIGN=J LINESPACE=1>
+Il sottoscritto dichiara di aver letto e di accettare integralmente le condizioni economiche riportate sopra e le condizioni generali del prestito.<BR>
+<BR>
+Il CEDENTE <B><valueabs>IDGTCLI00F/RECORD/IDGTCLI_RAGSOC</valueabs> </B><if><ifcond><valueabs>IDGTCTR00F/RECORD/IDGTCTR_CDFONTEB</valueabs>!=FEA</ifcond><and><ifcond><valueabs>IDGTCTR00F/RECORD/IDGTCTR_CDFONTEB</valueabs>!=FSE</ifcond><and><ifcond><valueabs>IDGTCTR00F/RECORD/IDGTCTR_CDFONTEB</valueabs>!=FSP</ifcond><then><INPUT TYPE=SIGNATURE NAME=C-CONTRATTO#DOCQSQS2##-5 WIDTH=5 HEIGHT=3></then></if><BR>
+<BR>
+Il sottoscritto dichiara di approvare espressamente i disposti di cui ai seguenti punti delle Condizioni generali di finanziamento (artt.1341 e 1342 cod. civ., nonché artt.33 e ss. del D.L. n.206 del 6.09.05 – Codice del Consumo): 1 (Oggetto, conclusione ed efficacia del contratto); 2 (Cessione del credito relativo al TFS e obblighi delle parti.); 3. (Trattenute - con particolare riferimento alla parte relativa ai costi ripetibili in caso di estinzione anticipata); 4. (Autorizzazioni del Cliente); 5. (Pagamenti. Ritardo ed interessi di mora. Solidarietà dell’obbligazione); 7. (Riduzione, revoca o sospensione del TFS. Garanzie integrative.); 9. (Estinzione anticipata); 10. (Decadenza dal beneficio del termine e risoluzione del contratto); 12. (Variazioni delle condizioni contrattuali); 15. (Cessione del credito o del contratto)<BR>
+<BR>
+Il CEDENTE <B><valueabs>IDGTCLI00F/RECORD/IDGTCLI_RAGSOC</valueabs></B> <if><ifcond><valueabs>IDGTCTR00F/RECORD/IDGTCTR_CDFONTEB</valueabs>!=FEA</ifcond><and><ifcond><valueabs>IDGTCTR00F/RECORD/IDGTCTR_CDFONTEB</valueabs>!=FSE</ifcond><and><ifcond><valueabs>IDGTCTR00F/RECORD/IDGTCTR_CDFONTEB</valueabs>!=FSP</ifcond><then><INPUT TYPE=SIGNATURE NAME=C-CONTRATTO#DOCQSQS2##-6 WIDTH=5 HEIGHT=3></then></if><BR>
+<BR>
+</TEXT>
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\CONTRATTO#DOTFS004##01_05_05.png" BACKGROUND X=5.5 Y=-0.5 SCALE=15>
+
+</BODY>
+</PDF>

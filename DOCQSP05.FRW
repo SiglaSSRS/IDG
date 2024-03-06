@@ -1,0 +1,106 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize5.5">
+	
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestatasigla2">	
+</HEADER>		
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestcqsstd">	
+</FOOTER>
+
+<BODY>	
+<BR>
+<BR>
+<BR>
+
+<TABLE SIZE=9.5>
+<TR>
+<TD WIDTH=70%></TD>	
+<TD WIDTH=30%>
+Spett.le<BR>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs><BR>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_LAV</valueabs><BR>
+<valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_LAV</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_LAV</valueabs> (<valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_LAV</valueabs>)<BR>
+<BR>
+</TD> 	
+</TR> 
+</TABLE>
+<BR>
+<BR>
+<BR>
+<TABLE SIZE=9.5>
+<TR>
+<TD WIDTH=70%>Conegliano, <if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS_MM</valueabs><in>(01,1)</ifcond><then>30/12/2011</then><else></else><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></if></TD>	
+<TD WIDTH=30%></TD> 	
+</TR> 
+</TABLE>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<TEXT SIZE=9.5 ALIGN=J>
+Oggetto: COSTO DEL SERVIZIO – Riferimento contratto n. <valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs> – a nome <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs> –
+con C.F <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs>
+</TEXT>
+<BR>
+<BR>
+<BR>
+<BR>
+<TEXT SIZE=9.5 ALIGN=J>
+Con riferimento all’oggetto, come richiesto nella Vostra comunicazione del 29 dicembre 2009 diramata dalla Vs. Direzione Centrale Pensioni, Vi precisiamo che l’addebito al cliente 
+relativo agli oneri in argomento (costo del servizio) è pari a &euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPFISSI</valueabs><BR> 
+</TEXT>
+<BR>
+<BR>
+<BR>
+<TEXT SIZE=9.5 ALIGN=J>
+A disposizione per ulteriori chiarimenti, inviamo distinti saluti.<BR> 
+</TEXT>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<TABLE SIZE=6.5><TR>
+<TD WIDTH=50%></TD>	
+<TD WIDTH=40% ALIGN=J>
+<valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs> – <valueabs>IDGFAZI00F/RECORD/IDGFAZI_INDIR_SIG</valueabs> <valueabs>IDGFAZI00F/RECORD/IDGFAZI_SIGLASRL</valueabs> <valueabs>IDGFAZI00F/RECORD/IDGFAZI_DSNAZ_SIG</valueabs>  – 
+Iscrizione presso Banca d’Italia n. <valueabs>IDGFAZI00F/RECORD/IDGFAZI_UFFCAM_SIG</valueabs> - Registro Imprese, codice
+fiscale  e partita IVA <valueabs>IDGFAZI00F/RECORD/IDGFAZI_IVA_SIG</valueabs> - Capitale Sociale <valueabs>IDGFAZI00F/RECORD/IDGFAZI_CAPSOC_SIG</valueabs> &euro </TD>
+<TD WIDTH=10%></TD>
+</TR> 
+</TABLE>
+<BR>
+<BR>
+<TABLE SIZE=6.5><TR>
+<TD WIDTH=50%></TD>	
+<TD WIDTH=40% ALIGN=C>TIMBRO E FIRMA <valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs></TD>
+<TD WIDTH=10%></TD>	
+</TR>
+<TR>
+	<TD WIDTH=50%></TD>	
+	<TD WIDTH=50% ALIGN=C><IMG SRC="<valueabs>Immagini/FIRMA/Path</valueabs><valueabs>Immagini/FIRMA/Nome</valueabs>" SCALE=<valueabs>Immagini/FIRMA/Scale</valueabs>></TD>	
+</TR> 
+</TABLE>
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<TABLE SIZE=8.5><TR>
+<TD WIDTH=70%>
+<TABLE SIZE=9.5><TR>
+<TD WIDTH=10% BORDER=0.8>Pratica</TD>
+<TD WIDTH=25% BORDER=0.8><B><valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs><B></TD> 
+<TD WIDTH=65%></TD>
+</TR></TABLE>	
+</TD>	
+<TD WIDTH=30%></TD></TR>		 
+</TABLE>
+		
+</BODY>
+</PDF>

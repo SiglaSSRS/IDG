@@ -1,0 +1,323 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize5.5_times">
+
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headercartaintestataapulia">			
+</HEADER>
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footerapuliactrcqp">
+</FOOTER>
+
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="C">Pag. 1 di 6</TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+
+<BODY>	
+<TABLE WIDTH=100% BORDER=0.5 SIZE=9>
+	<TR>
+		<TD ALIGN=C><B>RICHIESTA DI FINANZIAMENTO CON CESSIONE DEL QUINTO DELLA PENSIONE</B></TD>
+	</TR>
+</TABLE>
+<BR>
+<TABLE>
+	 <TR>
+		<TD WIDTH=100% ALIGN="J"  SIZE=7><I>Questa operazione è soggetta a imposta di bollo, assolta in modo virtuale come da autorizzazione n. 16120/2005 del 17/03/2005 dell'Agenzia delle Entrate di San Severo (FG).</I></TD>
+	 </TR>		
+	 <TR>
+		<TD WIDTH=100% ALIGN="J"  SIZE=10>Il sottoscritto (di seguito anche solo "Il Richiedente" o "Il Cedente"), dopo aver preso visione e dichiarato di accettare integralmente e senza riserve le condizioni generali, di seguito riportate, che regolano il Contratto di finanziamento rimborsabile mediante cessione "salvo buon fine" (o "pro-solvendo") di quote della propria pensione mensile,</TD>
+	 </TR>		
+	 <TR>
+		<TD WIDTH=100% ALIGN="C"  SIZE=10><B>chiede</B></TD>
+	 </TR>		
+	 <TR>
+		<TD WIDTH=100% ALIGN="J"  SIZE=10>a <B><valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs></B>, che agisce in nome e per conto <B>dell'Ente Finanziatore</B> Apulia prontoprestito Spa (Cessionaria), giusta procura per Atto a rogito Notaio dott. Lucia D' Erminio di Termoli del 24/06/2009 Rep. n. 11662 Racc n. 5514:
+un finanziamento alle condizioni indicate in questo modulo di richiesta, con riferimento, in ogni caso e per quanto non espressamente previsto,  alla vigente normativa di settore (contratti di prestito contro cessione di quote di pensione - D.P.R. 5 gennaio 1950, n. 180 e successive modifiche ed integrazioni, tra cui l'art. 13-bis del d.l. 14/3/2005 n. 35 convertito nella legge n. 80 del 14/05/2005 , con cui è stato modificato ed integrato l'art. 1 - commi 2-bis e ss. del DPR n. 180/1950; Regolamento esecutivo di cui al D.P.R. 28 luglio 1950 n. 895 e dal D.M. 27/12/2006, n. 313 ).
+Il sottoscritto dichiara e conferma di aver letto attentamente questo modulo di richiesta e che tutti i dati riportati sono completi e veritieri. Per tutto quanto non espressamente indicato, il sottoscritto dichiara e conferma di fare riferimento alla documentazione prodotta, che viene allegata alla richiesta per formarne parte integrante e sostanziale.
+</TD>
+	 </TR>		
+</TABLE>
+
+<BR>
+<TABLE BORDER=0.5>
+	<TR>
+	  <TD WIDTH=100%>
+		<TABLE SIZE=9>
+			<TR>
+				<TD WIDTH=100%><B>IL CLIENTE</B> (Richiedente, Cedente):<BR></TD>
+			</TR>
+			<TR>
+				<TD WIDTH=100%><BR>Cognome e Nome  <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></B></TD>
+			</TR>
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs>==</ifcond><then>
+			<TR>
+				<TD WIDTH=100%><BR>Nato a <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCA_NASC</valueabs> (<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_NASC</valueabs>==SE</ifcond><then>EE<else><valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_NASC</valueabs></if>)</B>                 il <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC</valueabs></B> residente in               <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs></B></TD>			</TR>
+			<TR>
+				<TD WIDTH=100%><BR>Prov.<B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs></B>                  C.a.p. <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs></B>             Via/Piazza: <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs></B>             telefono n. <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_TELE_RES</valueabs>  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_TELE_ALT</valueabs></B></TD>
+			</TR>
+<else>
+			<TR>
+				<TD WIDTH=100%><BR>Nato a <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCNASC</valueabs></B>                 il <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC</valueabs></B> residente in               <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_RES</valueabs></B></TD>
+			</TR>
+			<TR>
+				<TD WIDTH=100%><BR>Prov.<B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_RES</valueabs></B>                  C.a.p. <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_RES</valueabs></B>             Via/Piazza: <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs></B>             telefono n. <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_TELE_RES</valueabs>  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_TELE_ALT</valueabs></B></TD>
+			</TR>
+</if>
+			<TR>
+				<TD WIDTH=100%><BR>CF. <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs></B>              Documento di identità <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DSDOCUM</valueabs></B>          n. <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_NUM_DOCUM</valueabs></B>           emesso il <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_DA_IL</valueabs></B></TD>
+			</TR>
+			<TR>
+				<TD WIDTH=100%><BR>Da  <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_ENTE</valueabs> <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DOCUM_RIL_DA</valueabs></B> (come da allegati)</TD>
+			</TR>
+		</TABLE>
+	</TD>
+	</TR>
+	<TR>
+	  <TD WIDTH=100%>
+		<TABLE SIZE=9>
+			<TR>
+				<TD WIDTH=100%>Pensionato dal <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTASSUNZ</valueabs></B>            (cfr. allegato)</TD>
+			</TR>
+		</TABLE>
+	  </TD>
+	</TR>
+	<TR>
+	  <TD WIDTH=100%>
+		<TABLE SIZE=9>
+			<TR>
+				<TD WIDTH=100%><BR>Quota cedibile <B>€  <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPCAN</valueabs></B> (come da allegato)</TD>
+			</TR>
+		</TABLE>
+	  </TD>
+	</TR>
+	<TR>
+	  <TD WIDTH=100%>
+		<TABLE SIZE=9>
+			<TR>
+				<TD WIDTH=100%><B>ELEGGO DOMICILIO PRESSO:</B></TD>
+			</TR>
+			<TR>
+			<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs>==</ifcond><or><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs>==<valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs></ifcond><then>
+				<TD WIDTH=100%>[<B>X</B>] la residenza sopra riportata</TD>
+			</if>
+			<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs>!=</ifcond><and><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs>!=<valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs></ifcond><then>
+				<TD WIDTH=100%>[ ] la residenza sopra riportata</TD>
+			</if>
+			</TR>
+			<TR>
+			<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs>==</ifcond><or><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs>==<valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs></ifcond><then>
+				<TD WIDTH=100%>[ ] indirizzo diverso dalla residenza:</TD>
+			</if>
+			<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs>!=</ifcond><and><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs>!=<valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs></ifcond><then>
+				<TD WIDTH=100%>[<B>X</B>] indirizzo diverso dalla residenza  <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs></B>    Via/Piazza <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs></B>  Prov.<B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV</valueabs></B>   C.a.p. <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs></B></TD>
+			</if>
+			</TR>
+			<TR>
+				<TD WIDTH=100%>[ ] Ente previdenziale come sotto riportato</TD>
+			</TR>
+			<TR>
+				<TD WIDTH=100%>[ ] Email:</TD>
+			</TR>
+			<TR>
+				<TD WIDTH=100%><BR>Il Richiedente_____________________________________________________</TD>
+			</TR>
+		</TABLE>
+	</TD>
+	</TR>
+	<TR>
+	  <TD WIDTH=100%>
+		<TABLE SIZE=9>
+			<TR>
+				<TD WIDTH=100%><B>DEBITORE CEDUTO</B> :<BR></TD>
+			</TR>
+			<TR>
+				<TD WIDTH=100%><BR><U>Ente Previdenziale</U>: denominazione <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_DATORE_LAV</valueabs>  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_STATOGIUR</valueabs></B>                            con codice fiscale <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CODFIS_LAV</valueabs></B>             e sede in</TD>
+			</TR>
+			<TR>
+				<TD WIDTH=100%><B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_LAV</valueabs></B>                 prov <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_PROV_LAV</valueabs></B>        C.a.p. <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_LAV</valueabs></B>      via/Piazza <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_LAV</valueabs></B>    tel <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_TELE_LAV</valueabs></B>      fax <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_FAX_LAV</valueabs></B></TD>
+			</TR>
+			<TR>
+				<TD WIDTH=100%>(come da allegati)</TD>
+			</TR>
+		</TABLE>
+	</TD>
+	</TR>
+	<TR>
+	  <TD WIDTH=100%>
+		<TABLE SIZE=9>
+			<TR>
+				<TD WIDTH=100% ALIGN="J"><B>CESSIONARIA - ENTE FINANZIATORE: Apulia pronto<I>prestito</I> S.p.a.</B> (anche "Apulia p.p") - con sede legale in San Severo alla Via Tiberio Solis 40, Telefono 0882-240066, Fax 0882-201839, e-mail <U>apuliaprontoprestito@bancapulia.it</U>; iscritta al n. 32387 dell'elenco generale degli intermediari finanziari (art. 106 del D.Lgs. 385/93) e iscritta nell'elenco speciale degli intermediari finanziari (art. 107 del D.Lgs. 385/93); Codice Fiscale, Partita Iva ed iscrizione nel Registro delle Imprese n. 02875460244; appartenente al gruppo bancario Veneto Banca, direzione e coordinamento: Veneto Banca Holding S.c.p.A., Capitale sociale Euro 236.000.000,00 interamente versato (art. 2497 e ss c.c.).</TD>
+			</TR>
+		</TABLE>
+	</TD>
+	</TR>
+	<TR>
+	  <TD WIDTH=100%>
+		<TABLE SIZE=9>
+			<TR>
+				<TD WIDTH=100% ALIGN="J"><B>MANDATARIA DELL'ENTE FINANZIATORE - INTERMEDIARIO:</B> <B><valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs></B> - Intermediario Finanziario iscritto Elenco Speciale ex art.107 TUB n. 33023.3, che agisce in nome e per conto della cessionaria Apulia prontoprestito Spa, giusta procura per Atto a rogito Notaio dott. Lucia D' Erminio di Termoli del 24/06/2009 Rep. n. 11662 Racc n. 5514.</TD>
+			</TR>
+		</TABLE>
+	</TD>
+	</TR>
+</TABLE>
+<TABLE SIZE=9>
+	<TR>
+		<TD WIDTH=100%>Il finanziamento sarà regolato dal <I>Documento di sintesi</I> e dalle <I>Condizioni generali di contratto</I>.</TD>
+	</TR>
+</TABLE>
+
+<PAGE>
+<SUBFOOTER>
+<TABLE SIZE=5.5>
+<TR>
+	<TD WIDTH=100% ALIGN="C">Pag. 2 di 6</TD> 
+</TR> 
+</TABLE>
+</SUBFOOTER>
+<TABLE SIZE=9>
+	<TR>
+		<TD WIDTH=100%><BR>Il presente documento di sintesi, che è unito al contratto per formarne parte integrante e sostanziale, riporta le condizioni economiche praticate.</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER=0.5 SIZE=8>
+	<TR>
+		<TD COLSPAN=4 ALIGN=C><B>DOCUMENTO DI SINTESI<BR>PROSPETTO MODALITÀ DI RIMBORSO DEL FINANZIAMENTO<BR>CESSIONE DEL QUINTO DELLA PENSIONE</B></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=4 ALIGN=J>Le condizioni economiche ed i tassi debitori  applicati al presente contratto dall'Ente Finanziatore  sono quelli in vigore alla data dell'erogazione in Suo favore, come da Foglio Informativo allegato (L. 108/96). I tassi debitori sono indicati per pronto riscontro alla voce "TASSI" riportata sul frontespizio.<BR>
+Il <I>Tasso di interesse Nominale Annuo</I> (TAN), pari a quanto indicato al punto "IV" del frontespizio, è espresso in percentuale su base annua ed è applicato in misura scalare mensile sull'importo totale del credito pari alla somma indicata al punto "VIII" del frontespizio. <BR>
+Il <I>Tasso Annuo Effettivo Globale</I> (TAEG), pari a quanto indicato al punto "V" del frontespizio, è calcolato ipotizzando l'anno composto da 12 mesi uguali (Decreto Ministero del Tesoro 6 maggio 2000) e comprende tutti gli oneri di seguito indicati, incluse le spese e le commissioni per la rivalsa degli oneri fiscali.</TD>
+	</TR>
+	<TR>
+		<TD  ROWSPAN=3 COLSPAN=2></TD>
+		<TD><B>I.</B>  Importo rata mensile</TD>
+		<TD><B>Euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPCAN</valueabs></B></TD>
+	</TR>
+	<TR>
+		<TD><B>II.</B> Numero rate</TD>
+		<TD><B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_NUMCAN</valueabs></B></TD>
+	</TR>
+	<TR>
+		<TD><B>III. IMPORTO LORDO DA RIMBORSARE</B></TD>
+		<TD><B>Euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPMUTLRD</valueabs></B></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=4 COLSPAN=2></TD>
+		<TD><B>IV.</B> TAN</TD>
+		<TD><B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTAN</valueabs> %</B></TD>
+	</TR>
+	<TR>
+		<TD><B>V.</B>  TAEG</TD>
+		<TD><B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTAEG</valueabs> %</B></TD>
+	</TR>
+	<TR>
+		<TD><B>VI.</B>TEG</TD>
+		<TD><B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_TXTEG</valueabs> %</B></TD>
+	</TR>
+	<TR>
+		<TD><B>VII.</B> Tasso di mora</TD>
+		<TD><B>TAN + 4%</B></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=8 ROTATE=90 VALIGN2=M SIZE=8><B>SPESE<BR>sostenute alla stipula del contratto                    </B></TD>
+		<TD ROWSPAN=3 ROTATE=90 VALIGN2=M SIZE=8><B>Maturate      </B></TD>
+		<TD><B>A. Commissione dell'Intermediario</B><BR>comprendente le provvigioni riconosciute a<BR>
+		- Agente in attività finanziaria eventualmente intervenuto per <B>Euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMCOMINT2</valueabs></B><BR>
+        - Mediatore Creditizio eventualmente intervenuto per             <B>Euro 0</B>                           
+	</TD>
+		<TD><B>Euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMCOMINT1</valueabs></B></TD>
+	</TR>
+	<TR>
+		<TD><B>B.</B> Spese istruttoria sostenute dall'Intermediario</TD>
+		<TD><B>Euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMSPIST</valueabs></B></TD>
+	</TR>
+	<TR>
+		<TD>C. Onere fiscale in rivalsa (imposta di bollo in misura fissa su contratto)</TD>
+		<TD><B>Euro 14,62</B></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=5 ROTATE=90 ALIGN=C VALIGN2=M SIZE=8><B>Soggette a maturazione             </B></TD>
+		<TD><B>D.</B> Interessi al TAN</TD>
+		<TD><B>Euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPINTER</valueabs></B></TD>
+	</TR>
+	<TR>
+		<TD><B>E. Commissione di gestione dell'Intermediario</B><BR>comprendente<BR>
+		- i costi per l'incasso delle rate per  Euro 1 per  n. rate  indicate al punto II di questo prospetto<BR>
+		- provvigioni riconosciute all'Agente in attività finanziaria eventualmente intervenuto per                                                                          <B>Euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMCOMINT1</valueabs></B></TD>
+		<TD><B>Euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMCOMGST1</valueabs></B> </TD>
+	</TR>
+	<TR>
+		<TD><B>F.</B> Costo assicurativo e/o di garanzia "Caso Morte" obbligatorio<BR>
+		comprendente le <U>provvigioni non soggette a maturazione</U> riconosciute a<BR>
+      - Ente Finanziatore         <B>3% del premio</B><BR>
+      - Intermediario               <B>22% del premio</B><BR>
+	</TD>
+		<TD><B>Euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMASSMRT</valueabs></B></B></TD>
+	</TR>
+	<TR>
+		<TD><B>G</B>  Imposta di bollo connessa alle Comunicazioni alla Clientela trattenute   (Euro 1,81 per n. anni finanziamento)</TD>
+		<TD><B>Euro 0</B></TD>
+	</TR>
+	<TR>
+		<TD><B>H.</B> Onere relativo al rimborso dei costi sostenuti dall'Ente Previdenziale per l'effettuazione delle trattenute                                                                                      
+	(onere totale in funzione della durata del finanziamento)   
+	</TD>
+		<TD><B>Euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPFISSI</valueabs></B></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=3 ALIGN=C VALIGN2=M><B>VIII. IMPORTO TOTALE DEL CREDITO (III - D)</B></TD>
+		<TD><B>Euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPFIN</valueabs></B></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=3 ALIGN=C VALIGN2=M><B>IX.   IMPORTO NETTO DEL CREDITO (VIII - A - B - C- E - F - G - H)</B></TD>
+		<TD><B>Euro <valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPNETRIC</valueabs></B></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=6 COLSPAN=2 ALIGN=C VALIGN2=M ROTATE=90 SIZE=8><B>ALTRE SPESE                 </B><BR>(eventuali)</TD>
+		<TD>Compenso massimo per estinzione anticipata<BR>NON è dovuto in caso di estinzione totale del debito e l'importo rimborsato in anticipo è pari o inferiore ad 10.000,00</TD>
+		<TD>1,00% dell'importo rimborsato in anticipo <BR>per durata residua  maggiore ai 1 anno <BR>0,50% dell'importo rimborsato in anticipo<BR>per durata residua  pari o inferiore a 1 anno</TD>
+	</TR>
+	<TR>
+		<TD>Recupero spese per invio singola comunicazione<BR>
+      - invio cartaceo<BR>
+      - invio on-line</TD>
+		<TD><BR>Euro 5,00 max<BR>
+		Euro 0,00</TD>
+	</TR>
+	<TR>
+		<TD>Spese emissione duplicato documento</TD>
+		<TD>Euro 10,00 max</TD>
+	</TR>
+	<TR>
+		<TD>Recupero per invio duplicato documenti</TD>
+		<TD>Euro 5,00 max</TD>
+	</TR>
+	<TR>
+		<TD>Spese emissione conteggio estintivo (in caso di richiesta)<BR> 
+ 		- di cui imposta di bollo in misura fissa Euro 1,81</TD>
+		<TD>Euro 10,00 max<BR></TD>
+	</TR>
+	<TR>
+		<TD>Spese ed imposte fiscali e di registro per ulteriori comunicazioni ed informazioni richieste  oltre alle comunicazioni previste dalla legge </TD>
+		<TD>Costi effettivamente sostenuti</TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=2 ALIGN=C VALIGN2=M SIZE=8><B>PIANO DI AMMORTAMENTO</B></TD>
+		<TD>Tipo di ammortamento<BR>Tipologia di rata<BR>Periodicità delle rate</TD>
+		<TD>Francese<BR>Costante<BR>Mensile</TD>
+	</TR>
+</TABLE>
+<BR><BR>
+<TABLE>
+	<TR>
+		<TD SIZE=8><B>Luogo e data...................................<valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs>              Il Richiedente ....................................................</B></TD>
+	</TR>
+<TABLE>
+
+</BODY>
+</PDF>

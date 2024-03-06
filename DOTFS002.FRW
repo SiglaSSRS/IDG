@@ -1,0 +1,67 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize5.5_times">
+<HEADER>
+
+</HEADER>
+<BODY>
+
+<TEXT SIZE=7.5 ALIGN=J>
+<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+<TABLE WIDTH=100% BORDER=0 SIZE=10 ALIGN=J>
+<TR>
+<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+<TD WIDTH=15%>
+</TD>
+<TD WIDTH=75%>
+Spett.le<BR>
+Sigla Srl<BR>
+via Cesare Battisti, 5/a<BR>
+31015 Conegliano (TV)<BR>
+</TD>
+<TD WIDTH=10%>
+</TD>
+</TR>
+<BR><BR>
+
+<TR>
+<TD WIDTH=15%>
+</TD>
+<TD WIDTH=75%>
+<B>Oggetto: Richiesta di contratto n. <valueabs>IDGTCTR00F/RECORD/IDGTCTR_NRPROP</valueabs> - Erogazione anticipata del trattamento di fine servizio.</B><BR><BR>
+</TD>
+<TD WIDTH=10%>
+</TD>
+</TR>
+
+<TR>
+<TD WIDTH=15%>
+</TD>
+<TD WIDTH=75%>
+Io sottoscritto <valueabs>IDGTCLI00F/RECORD/IDGTCLI_RAGSOC</valueabs> nato a <valueabs>IDGTCLI00F/RECORD/IDGTCLI_LOCNASC</valueabs> il <valueabs>IDGTCLI00F/RECORD/IDGTCLI_DTNASC</valueabs>, codice fiscale <valueabs>IDGTCLI00F/RECORD/IDGTCLI_CDFIS</valueabs> richiedo che, ove la presa d'atto da parte dell'Ente Previdenziale intervenga antecedentemente rispetto alla data di decorrenza indicata nel Documento di Sintesi frontespizio della richiesta di contratto di cui in oggetto,
+Sigla Srl provveda ad erogare l'importo del finanziamento in via anticipata trattenendo dall'importo erogato i relativi interessi di preammortamento.<BR>
+Prendo atto ed autorizzo che l'ammontare dei suddetti interessi di preammortamento mi venga comunicato nell'ambito della lettera di conferma contratto.
+</TD>
+<TD WIDTH=10%>
+</TD>
+</TR>
+
+<BR><BR>
+
+<TR>
+<TD WIDTH=15%>
+</TD>
+<TD WIDTH=75%>
+Luogo e data _________________<BR>
+Firma per esteso _________________
+<BR><BR>
+</TD>
+<TD WIDTH=10%>
+</TD>
+</TR>
+
+</TABLE>
+</TEXT>
+<IMG SRC="C:\Programmi\Trebi\IDG\Elaboratore\Livello\PRODUZIONE_SISEDEFFIL\Immagini\LTANTDECTFDOTFS002##01_01_01.png" BACKGROUND X=5.5 Y=-0.8 SCALE=15>
+
+</BODY>
+</PDF>

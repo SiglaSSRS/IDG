@@ -1,0 +1,113 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize5.5">
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestatasigla">
+</FOOTER>
+
+<BODY>	
+<BR>
+<BR>
+<TABLE SIZE=9.5>
+<TR>
+<TD WIDTH=70%></TD>	
+<TD WIDTH=30%>
+Spett.le<BR>
+<B><valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs></B><BR>
+<valueabs>IDGFAZI00F/RECORD/IDGFAZI_INDIR_SIG</valueabs><BR>
+<valueabs>IDGFAZI00F/RECORD/IDGFAZI_SIGLASRL</valueabs><BR>
+</TD> 	
+</TR> 
+</TABLE>
+<BR>
+<BR>
+<BR>
+<TABLE SIZE=9.5><TR>
+<TD WIDTH=68% ALIGN=R>Pc:</TD>
+<TD WIDTH=2%></TD>		
+<TD WIDTH=30%>
+<B>BANCA 24-7</B><BR>
+Via Don Battistoni 4<BR>
+60035 Jesi (AN)<BR></TD></TR>
+<BR>
+<BR>
+<BR>
+<TABLE SIZE=9.5><TR>
+<TD WIDTH=70%></TD>	
+<TD WIDTH=30%><U>Ufficio Cessioni del Quinto</U></TD></TR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<TABLE SIZE=9.5><TR>
+<TD WIDTH=70%><B>OGGETTO: Riconoscimento compensi di mediazione</B></TD>	
+<TD WIDTH=30%></TD></TR>
+</TABLE>
+<BR>
+<BR>
+<BR>
+<TEXT SIZE=9.5 ALIGN=J>
+Il sottoscritto/a  <valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs>, nato a <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCNASC</valueabs> il <valueabs>IDGFCLI00F/RECORD/IDGFCLI_DTNASC</valueabs>, C.F. <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CDFIS</valueabs> , 
+<if><ifcond><valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs>==</ifcond><then>
+residente e domiciliato in <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs> c.a.p. <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs>, via/piazza <valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs> 
+<else>
+residente in <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL_RES</valueabs> c.a.p. <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP_RES</valueabs>, via/piazza <valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR_RES</valueabs> 
+e domiciliato in <valueabs>IDGFCLI00F/RECORD/IDGFCLI_LOCAL</valueabs> c.a.p. <valueabs>IDGFCLI00F/RECORD/IDGFCLI_CAP</valueabs>, via/piazza <valueabs>IDGFCLI00F/RECORD/IDGFCLI_INDIR</valueabs> 
+</if>
+, dichiara, sotto la propria responsabilità, 
+che non sono stati, né verranno riconosciuti, compensi di mediazione o di altro genere ulteriori a quanto previsto nel contratto relativo al finanziamento di cessione del 
+quinto/delegazione per l’importo di  &euro <B><valueabs>IDGFCQS00F/RECORD/IDGFCQS_IMPNETRIC</valueabs></B> erogato a Ns favore da Sigla Srl ed intermediato<BR> 
+da____________________________________________________________________________________________________<BR>
+<I>(indicare Ragione sociale Agente Sigla o collaboratore Sigla  che ha intermediato il contratto)</I>
+</TEXT>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<TABLE SIZE=9.5><TR>
+<TD WIDTH=70%></TD>	
+<TD WIDTH=30% ALIGN=C>In fede</TD></TR> 
+</TABLE>
+<BR>
+<BR>
+<TABLE SIZE=9.5><TR>
+<TD WIDTH=70%></TD>	
+<TD WIDTH=30% VALIGN=B>__________________________________</TD></TR>
+</TABLE>	
+<TABLE SIZE=9.5><TR>
+<TD WIDTH=70%></TD>	
+<TD WIDTH=30% VALIGN=T>Firma <B><valueabs>IDGFCLI00F/RECORD/IDGFCLI_RAGSOC</valueabs></B><I>(firma leggibile)</I></TD></TR>		 
+</TABLE>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</TABLE>	
+<TABLE SIZE=9.5><TR>
+<TD WIDTH=70%>Luogo, ______________________, <if><ifcond><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS_MM</valueabs><in>(01,1)</ifcond><then>30/12/2011</then><else></else><valueabs>IDGFCTR00F/RECORD/IDGFCTR_DATSYS</valueabs></if></TD>	
+<TD WIDTH=30%></TD></TR>		 
+</TABLE>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<TABLE SIZE=9.5><TR>
+<TD WIDTH=70%>
+<TABLE SIZE=9.5><TR>
+<TD WIDTH=10% BORDER=0.8>Pratica</TD>
+<TD WIDTH=25% BORDER=0.8><B><valueabs>IDGFCTR00F/RECORD/IDGFCTR_NRPROP</valueabs><B></TD> 
+<TD WIDTH=65%></TD>
+</TR></TABLE>	
+</TD>	
+<TD WIDTH=30%></TD></TR>		 
+</TABLE>
+		
+</BODY>
+</PDF>

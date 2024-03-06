@@ -1,0 +1,62 @@
+<PDF>
+<include file="\INCLUDE\includedStruttura.frw" value="strutturasize5.5">
+
+<HEADER>
+<include file="\INCLUDE\includedStruttura.frw" value="headerallegato7bsigla">			
+</HEADER>
+
+<FOOTER>
+<include file="\INCLUDE\includedStruttura.frw" value="footercartaintestcqsstd">
+</FOOTER>
+
+<BODY>
+<TEXT ALIGN=J SIZE=10><B>INTERMEDIARI DI ASSICURAZIONE ISCRITTI ALLA SEZIONE “E“ DI CUI ALL’ ART. 4, PAR. 2 DEL
+REGOLAMENTO ISVAP N.5 / 2006<BR><BR>
+</TEXT>
+<TEXT ALIGN=J SIZE=9.5>
+Informazioni da rendere al consumatore prima della sottoscrizione della proposta di assicurazione / scheda di
+adesione a polizza / convenzione collettiva, nonché in caso di modifiche di rilievo o di rinnovo del contratto di
+assicurazione che comporti tali modifiche.<BR><BR></B>
+Ai sensi della vigente normativa, l’intermediario assicurativo ha l’obbligo di consegnare al consumatore il presente
+documento che contiene notizie sull’intermediario stesso e sugli strumenti di tutela del consumatore. L’inosservanza
+dell’obbligo di consegna è punita con sanzioni amministrative, pecuniarie e disciplinari.<BR><BR>
+<B>PARTE I - <U>Informazioni generali sull’intermediario che entra in contatto con il consumatore</U></B><BR><BR>
+<X VALUE=1>a) cognome e nome: <valueabs>IDGFCQS00F/RECORD/IDGFCQS_RGSISVAP</valueabs><BR>
+b) n. iscrizione registro, Sezione E, <valueabs>IDGFCQS00F/RECORD/IDGFCQS_CDISVAP</valueabs> del <valueabs>IDGFCQS00F/RECORD/IDGFCQS_DTISVAP</valueabs> responsabile/ collaboratore di <valueabs>IDGFAZI00F/RECORD/IDGFAZI_RAGSOC_SIG</valueabs>  n.
+iscrizione registro, Sezione E, E000201535 del 24/07/2007;<BR>
+c) sede operativa: <valueabs>IDGFAZI00F/RECORD/IDGFAZI_INDIR_SIG</valueabs> <valueabs>IDGFAZI00F/RECORD/IDGFAZI_SIGLASRL</valueabs>;<BR>
+d) recapito telefonico: 0438/45908; sito internet <valueabs>IDGFAZI00F/RECORD/IDGFAZI_SITO_SIG</valueabs>; e.mail: <U>sigla@siglafinanziamenti.it</U>;<BR>
+e) denominazione sociale dell’impresa di cui sono offerti i prodotti:
+( X ) NET INSURANCE LIFE S.p.A. – Via dei Giuochi Istmici n.40, 00135 Roma
+Tel. 06 36724.1 - fax 06.36724800 - e.mail <U>info@netinsurancelife.it</U> ;<BR>
+f) attività svolta per conto dell’Intermediario di Assicurazione NET INSURANCE SERVIZI ASSICURATIVI S.p.A., Via
+dei Giuochi Istmici n.40, 00135 Roma, n. iscrizione registro ISVAP A000057168 Sezione A del 26 marzo 2007 - Tel. 06
+36724.1 - fax 06.36724500 - e.mail <U>info@netinsurance.it</U> ;<BR>
+g) autorità competente alla vigilanza sull’attività svolta: ISVAP, Via del Quirinale 21, 00187 Roma;<BR><BR>
+<B>Nota bene: estremi identificativi e di iscrizione dell’intermediario possono essere verificati consultando il registro
+unico degli intermediari assicurativi e riassicurativi sul sito internet dell’ISVAP</B>(<U>www.isvap.it</U>).<BR><BR>
+<X VALUE=0>
+<B>PARTE II - <U>Informazioni relative a potenziali situazioni di conflitto d’interesse<BR>
+</B>INDICARE</U>:<BR><BR>
+<X VALUE=1>a) SIGLA S.r.l. non è detentore di una partecipazione diretta o indiretta superiore al 10% del capitale sociale o dei
+diritti di voto della Net Insurance Life S.p.A. o della controllante Net Insurance S.p.A.;<BR><BR>
+b) NET INSURANCE LIFE S.p.A. e la controllante NET INSURANCE S.p.A. non sono detentrici di una
+partecipazione diretta o indiretta superiore al 10% del capitale sociale o dei diritti di voto della società di
+intermediazione per la quale l’intermediario opera;<BR><BR>
+c) con riguardo al contratto proposto, l’intermediario che entra in contatto con il cliente fornisce consulenze basate
+su un’analisi imparziale e non è vincolato da obblighi contrattuali a proporre esclusivamente i contratti della
+NET INSURANCE LIFE S.p.A. e della controllante NET INSURANCE S.p.A..<BR><BR>
+<X VALUE=0>
+<B>PARTE III - <U>Informazioni sugli strumenti di tutela del consumatore</B></U><BR><BR>
+<X VALUE=1>a) i premi pagati dal consumatore agli intermediari e le somme destinate ai risarcimenti o ai pagamenti dovuti
+dalle imprese, se regolati per il tramite dell’intermediario, costituiscono patrimonio autonomo e separato dal
+patrimonio dell’intermediario stesso;<BR><BR>
+b) il consumatore, ferma restando la possibilità di rivolgersi all’Autorità Giudiziaria, di inoltrare reclamo
+scritto all’ Impresa di Assicurazioni crocesegnata alla Parte I qualora non dovesse ritenersi soddisfatto
+dall’esito del reclamo o in caso di assenza di riscontro da parte dell’Impresa di Assicurazioni entro il termine
+massimo di quarantacinque giorni, può rivolgersi all’ISVAP, Servizio Tutela degli Utenti, Via del
+Quirinale n. 21 - 00187 Roma, allegando la documentazione relativa al reclamo trattato dall’ Impresa di
+Assicurazioni.<BR>
+</TEXT>
+</BODY>
+</PDF>
